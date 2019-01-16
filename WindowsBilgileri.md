@@ -31,7 +31,7 @@
 * `WİNDOWS TUŞU (SUPER)` + `V` Son kopyalananları gösterir (Clipboard / Pano)
 * `WİNDOWS TUŞU (SUPER)` + `Ş` veya `.` Emoji ekleme 👌
 
-## Menü Kısayolları
+### Menü Kısayolları
 
 * `WİNDOWS TUŞU (SUPER)` + `I` Ayarlar menüsü
 * `WİNDOWS TUŞU (SUPER)` + `U` Görünüm ayarları
@@ -40,6 +40,34 @@
 * `WİNDOWS TUŞU (SUPER)` + `A` Aksiyon Merkezi (Action Center) menüsü
 * `WİNDOWS TUŞU (SUPER)` + `Q` veya `S` Arama penceresini açma
 * `WİNDOWS TUŞU (SUPER)` + `W` Windows INK çalışma alanını açma
+
+## Command Promp (CMD)
+
+### CMD Komutları
+
+* `cd <path>` Dizin değiştirme
+* `mkdir <dirname>` Klasör oluşturma
+* `start <file | folder>` Dosya veya dizin açma
+
+### CMD Değişkenleri
+
+Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tıklayabilirsin.
+
+### Temel Kullanım
+
+```cmd
+<command> %<env_var>%
+```
+
+> Enviroment Variables kontrolü  için `Bilgisayarım` - `Sağ Tık` - `Özellikleri` - `Gelişmiş Sistem Seçenenekleri` - `Ortam Değişkenleri`
+
+### Sık Kullanılanlar
+
+* `.` Bulunan dizin (working directory)
+* `..` Bir üst dizin (parent directory)
+* `%username` Kullanıcı adı
+* `%appdata%` Uygulama verileri dizini
+
 
 
 
