@@ -8,6 +8,8 @@
 
 ### Uygulama İşlemleri
 
+* `CTRL` + `W` Pencereyi kapatır
+* `ALT` + `F4` Uygulamayı ve pencerelerini kapatır
 * `WİNDOWS TUŞU (SUPER)` + `E` File explorer'ı açar (Dosya Gezgini)
 * `WİNDOWS TUŞU (SUPER)` + `R` Komutla uygulama çalıştırma penceresi
 * `WİNDOWS TUŞU (SUPER)` + `<SAYI>` Taskbardaki (görev çubuğu / alttaki bar) sıralamaya göre uygulamları  gösterir | çalıştırır / gizler
@@ -45,23 +47,26 @@
 
 ### CMD Komutları
 
+* `cls` Konsolu temizleme
 * `cd <path>` Dizin değiştirme
 * `mkdir <dirname>` Klasör oluşturma
 * `start <file | folder>` Dosya veya dizin açma
+
+> Komut kullanımı CMD üzerinden öğrenmek için `<command> /?` yazabilirsin.
 
 ### CMD Değişkenleri
 
 Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tıklayabilirsin.
 
-### Temel Kullanım
+####  Temel Kullanım
 
 ```cmd
 <command> %<env_var>%
 ```
 
-> Enviroment Variables kontrolü  için `Bilgisayarım` - `Sağ Tık` - `Özellikleri` - `Gelişmiş Sistem Seçenenekleri` - `Ortam Değişkenleri`
+> Enviroment Variables yönetimi için `Bilgisayarım` - `Sağ Tık` - `Özellikleri` - `Gelişmiş Sistem Seçenenekleri` - `Ortam Değişkenleri`
 
-### Sık Kullanılanlar
+#### Sık Kullanılanlar
 
 * `.` Bulunan dizin (working directory)
 * `..` Bir üst dizin (parent directory)
@@ -69,5 +74,17 @@ Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tı
 * `%appdata%` Uygulama verileri dizini
 
 
+## Görsellik
 
+Kendime özgü görsellik ayarlarım
 
+### Command Promt
+
+![cmd](./images/cmd.png)
+
+* `**Font:**` *14 - Consolas*
+* **Layout:** *Windows Size - w: 120 h: 30*
+* **Color**
+  * **Screen Text:** *R: 242 G: 242 B: 242*
+  * **Screen Background** *R: 50 G: 47 B: 65* 
+  * **Opacity** *%89*
