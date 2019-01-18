@@ -88,3 +88,24 @@ Kendime özgü görsellik ayarlarım
   * **Screen Text:** *R: 242 G: 242 B: 242*
   * **Screen Background** *R: 50 G: 47 B: 65* 
   * **Opacity** *%89*
+  
+## Windows Features
+
+> Aramaya alanına `Turn Windows Feature On or Off` veya `Windows Özelliklerini Aç veya Kapat` yazarak erişebilirsin. 
+
+### Default Windows Features
+
+* `.NET Framework 4.7 Advanced Services`
+  * `WCF Services`
+    * `TCP Port Sharing`
+* `Internet Explorer 11`
+* `Media Features`
+* `Microsoft Print to PDF`
+* `Microsoft XPS Document Writer`
+* `Print and Document Services`
+  * `Internet Printing Client`
+  * `Windows Fax and Scan`
+* `Remote Differential Compression API Support`
+* `SMB Direct`
+* `Windows PowerShell 2.0`
+* `Work Folders Client`
