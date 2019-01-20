@@ -58,7 +58,7 @@
 
 Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tıklayabilirsin.
 
-####  Temel Kullanım
+#### Temel Kullanım
 
 ```cmd
 <command> %<env_var>%
@@ -86,7 +86,7 @@ Kendime özgü görsellik ayarlarım
 * **Layout:** *Windows Size - w: 120 h: 30*
 * **Color**
   * **Screen Text:** *R: 242 G: 242 B: 242*
-  * **Screen Background** *R: 50 G: 47 B: 65* 
+  * **Screen Background** *R: 50 G: 47 B: 65*
   * **Opacity** *%89*
   
 ## Windows Features

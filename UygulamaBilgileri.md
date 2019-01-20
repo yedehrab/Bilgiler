@@ -17,6 +17,8 @@ Sık kullandığım uygulamalar için öneri ayarlarım (bir nevi kendime de yed
 
 > Sol alt köşedeki `ayarlar` simgesi -> Sağ üst köşedeki `{}` simgesine tıklayıp oraya bunlardan istediklerini kopyalayabilirsin.
 
+#### Görüntü Ayarları
+
 ```json
 {
     "telemetry.enableTelemetry": false,
@@ -30,6 +32,16 @@ Sık kullandığım uygulamalar için öneri ayarlarım (bir nevi kendime de yed
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
     "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
 }
+```
+
+#### Code Runner Ayarları
+
+Path değiştirme örneği detayına [buraya](https://stackoverflow.com/questions/50689210/how-to-setup-code-runner-in-visual-studio-code-for-python) tıklayarak ulaşabilirsin.
+
+```json
+"code-runner.executorMap": {
+    "python": "$pythonPath -u $fullFileName",
+},
 ```
 
 ### Kısayollar
@@ -70,11 +82,55 @@ Sık kullandığım uygulamalar için öneri ayarlarım (bir nevi kendime de yed
 
 ## Jetbrains IDEs
 
+### Kısayolar
+
+* `SHIFT` + `SHIFT` Kod içerisinde arama yapma
+
+### Pluginler (Eklenti gibi)
+
+Plugin kurma detayı için [buraya](https://www.jetbrains.com/help/idea/managing-plugins.html) tıklayabilirsin.
+
+* `CTRL` + `ALT` + `S` kısmından `Plugin` sekmesinde istediğiniz iklentileri bulabilirsiniz.
+
 ### Faydalı Ayarlar
 
-* `CTRL` + `ALT` + `S` yaptıktan sonra `Editor` > `General`, `Other` başlığı altında `Show quick documentation on mouse move` kısmını seçin ve süreyi `500` yapın.
+#### Font Ayarları
 
-> Fareyle kodun üzerinize geldiğiniz *açıklamalarını* ve dökümantasyonlarını gösterecektir.
+* `CTRL` + `ALT` + `S` yaptıktan sonra `Editor | Font` kısmında
+  * *Font:* `Consolas`
+  * *Size:* `12`
+  * *Line spacing:* `1.0`
 
+#### Interpreter (Derleyici) Değiştirme
 
+Sanal environment gibi durumlarda system yerine onların derleyicisini kullanma
 
+* `CTRL` + `ALT` + `S` yaptıktan sonra `Project: <project name> | Project Interpreter` sayfasında `Ayarlar Butonu | Add` kısmına basarak derleyicinizi değiştirebilirsiniz.
+
+#### Configuration (Yapılandırma) Ayarları 
+
+> Projenizi IDE üzerinde çalıştırabilmek için bu ayarı yapmanız gerekmekte.
+
+* Sağ üst kısımdaki yeşin `Run` butonunun solundaki alandan `Edit Configuration`ı seçin.
+* Sol üst köşedeki `+` butonuna basın
+* Derlemek istediğiniz dili | uygulamayı seçin (*Örn: Python | PyCharm için*)
+* Dosya derleyeceksiniz *Script* kısmına `dosyanın yolunu` yazın.
+* *Python Interpreter* kısmında yorumlayıcıyı seçin, ayarlanmadıysa `Interpreter (Derleyici) Değiştirme` aşamasında (üst aşamada) nasıl ayarlayacağınıza bakabilirsiniz.
+
+#### Dökümantasyon Önizle
+
+Fareyle kodun üzerinize geldiğiniz *açıklamalarını* ve dökümantasyonlarını gösterecektir.
+
+* `CTRL` + `ALT` + `S` yaptıktan sonra `Editor | General | Other` başlığı altında `Show quick documentation on mouse move` kısmını seçin ve süreyi `500` yapın.
+
+#### Dictionaries
+
+Dillere özgü sözlükleri indirmek için [buraya](https://drive.google.com/open?id=1UAGLGvwv_zLBzH7zH1oGRvYhzzP67M4k) tıklayabilirsin.
+
+* `CTRL` + `ALT` + `S` yaptıktan sonra `Editor | Spelling | Dictionaries | Custom Dictionaries` başlığı altında `+` butonuna basıp `.dic` uzantılı sözlük dosyanı ekleyin.
+
+> Sözlüğün çalışabilmesi için `hunspell` plugin'ini indirmeniz gerekmekte. Plugin kurma detayı için [buraya](https://www.jetbrains.com/help/idea/managing-plugins.html) tıklayabilirsin.
+
+#### Spellcheck Kaldırma
+
+* `CTRL` + `ALT` + `S` yaptıktan sonra `Editor | Inspection | Spelling | Typo | Process comments` ile yorum satırlarını kontrol etmesini kaldırabilirsin.
