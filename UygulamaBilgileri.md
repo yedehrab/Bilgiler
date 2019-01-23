@@ -9,7 +9,9 @@ Sık kullandığım uygulamalar için öneri ayarlarım (bir nevi kendime de yed
 * `Base16 Tomorrow Dark+` Karanlık tema
 * `Code Runner` Run butonu ekleme
 * `Material Icon Theme` Dosya ikon teması
-* `Docker` Docker :)
+* `Visual Studio IntelliCode - Preview` AI ile en sık kullanılan metodları önerir
+  * 2 kez `CTRL` + `SPACE` yaparsanız detaylarını da gösterir
+* `Docker` Docker
 * *Code Snippets* eklentileri
   * Dil'e özel kısaltmalar
 
