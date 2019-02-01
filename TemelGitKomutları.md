@@ -2,6 +2,18 @@
 
 İstersen [buraya](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) tıklayarak GitLab'ın hazırladığı özet bilgiye erişebilirsin.
 
+> Sayfanın en altındaki özet git komutlarına bakabilirsin. (*Git Cheat Sheet*)
+
+## Git'in Kullanıldığı Siteler
+
+* [Github](https://www.github.com)
+  * En sık kullanılandır.
+  * Gizli repolar için ücret talep etmekte.
+* [GitLab](https://gitlab.com/)
+  * Github alternatifi olan bu site gizli repoları ücretsiz sunar.
+* [Bitbucket](https://bitbucket.org/)
+
+
 ## Git Kimlik Bilgilerini Ayarlama
 
 ```bash
@@ -9,9 +21,11 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
-### Git deposunu başlatma
+### Git Deposunu Oluşturma
 
-#### Yeni git için
+Detaylı bilgi için [buraya](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone) bakabilirisin.
+
+#### Yeni repository oluşturma
 
 ```bash
 git init
@@ -19,7 +33,7 @@ git init
 
 > Git için gerkeli olan dosyaları oluşturur.
 
-#### Var olan git için
+#### Yerel repo klonlama
 
 ```bash
 git clone [url] [kopyalanacağı yol]
@@ -30,6 +44,19 @@ git clone [url] [kopyalanacağı yol]
 
 > Var olan git'i istenen dizine kopyalar
 
+#### Belli branch'i klonlama
+
+Çoklu değişimin olduğu projelerde sadece kendi branch'imiz üzerinden işlem yapmak isteyebilir ve diğer değişikliklerle uğraşmaya biliriz.
+
+```bash
+git clone -branch [branch_name] [url]
+```
+
+#### Uzak repo klonlama
+
+```bash
+git clone [username]@[host]:[url]
+```
 
 ### Proje dosyalarımızın depoya eklenmesi
 
@@ -72,7 +99,7 @@ git push -u origin [branch]
 
 ## Branch İşlemleri
 
-Branch (dal) git yığıtlarında imleç görevi gören araçlardır. Ek bilgi için [buraya](https://git-scm.com/book/tr/v1/Git-te-Dallanma-Dal-Nedir%3F) tıklayabilirsin. 
+Branch (dal) git yığıtlarında imleç görevi gören araçlardır. Ek bilgi için [buraya](https://git-scm.com/book/tr/v1/Git-te-Dallanma-Dal-Nedir%3F) tıklayabilirsin.
 
 > Genelde master işlemi (projenin aslı) ile test işlemlerini birbirinden ayrı yerlerde saklamak amaçlı kullanılırlar
 
@@ -140,3 +167,7 @@ gir reset HEAD~
 ```
 
 > Son yüklemeyi kaldırır. Bu işlemden sonra tekrar commit etmeniz gerekmekte. Detay için [link](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-commits-in-git)
+
+## Git Cheat Sheet
+
+![git](./images/git-cheet-sheet.jpeg)
