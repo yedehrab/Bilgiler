@@ -23,7 +23,7 @@ NODE_VERBOSE=false
 > Heroku aldığı node.js uygulamasındaki **start scriptini** çalıştırır. Yani "npm run start" komutunu işler.
 > Bu sebeple **package.json** dosyası olmak zorunda ve **start scriptini** içermek zorundadır.
 
-Örnek package.json dosyası 
+Örnek package.json dosyası
 
 ```javascript
 {
@@ -48,10 +48,11 @@ NODE_VERBOSE=false
 ```javascript
 port = process.env.PORT || 5000
 ```
+
 > Heroku kendiliğinden port atama işlemi yapmaktadır. Bu sebeple dinlediğimiz portu **process.env.PORT** yapmak zorundayız.
 
-
 ## Heroku Komutları
+
 ---
 
 ### Bu komutların çalışması için heroku-cli'nin yüklü olması lazım
@@ -59,6 +60,7 @@ port = process.env.PORT || 5000
 ```cmd 
 npm install -g heroku
 ```
+
 > Npm üzerinden heroku yükleme işlemi
 
 ### Heroku'ya giriş yapma
@@ -99,7 +101,7 @@ heroku open
 
 ### Hata raporlarını görüntüleme
 
-```cmd 
+```cmd
 heroku logs --tail -a [uygulama adı]
 ```
 
@@ -109,6 +111,7 @@ heroku logs --tail -a [uygulama adı]
 
 
 ## Heroku Ek Ayarlar
+
 ---
 Babel gibi ek uygulamalar kullanıyorsanız bu kısım sizin için oldukça önemlidir.
 

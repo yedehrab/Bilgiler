@@ -24,6 +24,7 @@ git init
 ```bash
 git clone [url] [kopyalanacağı yol]
 ```
+
 * `url` Github'daki projenin adresi (https://...)
 * `kopyalanacağı yol` Bilgisayardaki özel bir yol (C:\Desktop\Temp)
 
@@ -35,6 +36,7 @@ git clone [url] [kopyalanacağı yol]
 ```bash
 git add .
 ```
+
 > Bütün dosyalar (. dizindeki tüm dosyalar demektir.) eklenir.
 
 ### Teslim etme hazırlığı ve yorum ekleme
@@ -42,6 +44,7 @@ git add .
 ```bash
 git commit -m "Yorum" -m "Açıklama"
 ```
+
 * -`m` message anlamına gelmektedir.
 
 > Mesaj ve açıklama ile ile depoya teslim için hazırlama
@@ -82,6 +85,7 @@ Branch (dal) git yığıtlarında imleç görevi gören araçlardır. Ek bilgi i
 ![detailed-branch-pic](https://git-scm.com/figures/18333fig0309-tn.png)
 
 ## Branch (Dal) Oluşturma
+
 ```bash
 git branch [branch_ismi]
 ```
@@ -118,13 +122,14 @@ git config --global credential.helper 'cache --timeout=3600'
 ```bash
 git remote -v
 ```
-- `-v` Verbose, kontrol edilenleri gösterir.
+
+* `-v` Verbose, kontrol edilenleri gösterir.
 
 ```bash
 git remote rm [branch]
 ```
 
-- `branch` Kontrol türü. Mesela origin
+* `branch` Kontrol türü. Mesela origin
 
 > Detaylı açıklama için [buraya](https://help.github.com/articles/removing-a-remote/) tıklayabilirsin.
 
