@@ -2,7 +2,7 @@
 
 İstersen [buraya](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) tıklayarak GitLab'ın hazırladığı özet bilgiye erişebilirsin.
 
-> Sayfanın en altındaki özet git komutlarına bakmak için [buraya](##git-cheat-sheet) tıklayabilirsin. (*Git Cheat Sheet*)
+> Sayfanın en altındaki özet git komutlarına bakmak için [buraya](#git-cheat-sheet) tıklayabilirsin. (*Git Cheat Sheet*)
 
 ## Git'in Kullanıldığı Siteler
 
