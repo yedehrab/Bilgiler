@@ -84,9 +84,12 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 
 ## Jetbrains IDEs
 
+* [DataGrid](https://www.jetbrains.com/datagrip/)
+
 ### Kısayolar
 
 * `SHIFT` + `SHIFT` Kod içerisinde arama yapma
+* `ALT` + `F8` Dobug modunda iken kod derleme arayüzü
 
 ### Pluginler (Eklenti gibi)
 
