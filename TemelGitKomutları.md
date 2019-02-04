@@ -38,7 +38,7 @@ git init
 git clone [url] [kopyalanacağı yol]
 ```
 
-* `url` Github'daki projenin adresi (https://...)
+* `url` Github'daki projenin adresi <https://...>
 * `kopyalanacağı yol` Bilgisayardaki özel bir yol (C:\Desktop\Temp)
 
 > Var olan git'i istenen dizine kopyalar
@@ -142,7 +142,6 @@ Branch (dal) git yığıtlarında imleç görevi gören araçlardır. Ek bilgi i
 ![branch-pic](https://git-scm.com/figures/18333fig0305-tn.png)
 
 > `HEAD` üzerinde bulunduğumuz branch'i (imleci | dalı) gösterir.
-
 > `Yeşil renkli kareler` Commit işlemlerini gösterir.
 
 ![detailed-branch-pic](https://git-scm.com/figures/18333fig0309-tn.png)
@@ -165,7 +164,6 @@ git checkout [branch]
   * git checkout master
 
 > Seçili branch'i değiştiri. (Master iken test'e geçmek gibi)
-
 
 ## Faydalı git komutları
 
