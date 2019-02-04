@@ -1,5 +1,7 @@
 # Bilgiler
 
+> Orjinal dosya [gitlab](https://gitlab.com/yedehrab/bilgiler) üzerindeki dosyadır.
+
 ## Programlama Dilleri & Yardımcı Diller
 
 * [Javascript](Javascript.md)

@@ -13,7 +13,6 @@
   * Github alternatifi olan bu site gizli repoları ücretsiz sunar.
 * [Bitbucket](https://bitbucket.org/)
 
-
 ## Git Kimlik Bilgilerini Ayarlama
 
 ```bash
@@ -79,12 +78,49 @@ git commit -m "Yorum" -m "Açıklama"
 ### Teslim edilecek URL'i belirleme
 
 ```bash
-git remote add origin [url]
+git remote add [remote_name] [url]
 ```
 
+* `remote_name` Kontrol ismi. *Örn: origin*
 * `url` Yüklemek istediğimiz yerin adresi
 
 > Github için, projenizin konumuna gelip, *download kısmındaki kopyalama resmine* basarak, projenizin url'ini kopyalabilirsiniz.
+
+### Birden fazla teslim URL'i belirleme
+
+Detaylı bilgi için [buraya](https://stackoverflow.com/a/14290145) bakabilirsin.
+
+#### Teslim URL'i ekleme
+
+```bash
+git remote set-url --add --push [remote_name] [url1]
+git remote set-url --add --push [remote_name] [url2]
+```
+
+* `--push` yerine diğer git işlemlerini de kullanabilirsiniz. *Örn: fetch*
+
+> Uzaktan kontrol (remote) eklemek için `git remote add [remote_name] [url]` ile oluşturulması gerekir. Aksi halde hata verir.
+
+#### Teslim URL'i kaldırma
+
+```bash
+git remote set-url --delete --push [remote_name] [url]
+```
+
+#### Teslim URL'lerini kontrol etme
+
+```bash
+git remote -v
+```
+
+#### Örnek Çıktı
+
+```bash
+> git remote -v
+origin  https://gitlab.com/yedehrab/bilgiler.git (fetch)
+origin  https://github.com/yedehrab/Bilgiler.git (push)
+origin  https://gitlab.com/yedehrab/bilgiler.git (push)
+```
 
 ### Teslim Etme
 
