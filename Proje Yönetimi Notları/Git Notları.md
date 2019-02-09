@@ -1,4 +1,4 @@
-# Temel Git Komutları
+# Git Notları
 
 İstersen [buraya](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) tıklayarak GitLab'ın hazırladığı özet bilgiye erişebilirsin.
 
@@ -192,6 +192,28 @@ git checkout [branch]
 
 > Seçili branch'i değiştiri. (Master iken test'e geçmek gibi)
 
+### Branch (Dal) Kaldırma
+
+Eklenen branch'i kaldırmak için uygulanır. Detaylara [buraya](https://koukia.ca/delete-a-local-and-a-remote-git-branch-61df0b10d323) tıklayarak erişebilirsin.
+
+
+#### Yerel branch silme
+
+```bash
+git branch [param] [branch]
+```
+
+**Parametreler:**
+
+* `-d` Silme parametresi
+* `-D` Zorla silme parametresi
+
+#### Uzaktaki (remote) branch'ı silme
+
+```bash
+git push [url] --delete [branch]
+```
+
 ## Faydalı git komutları
 
 Zaman zaman gerekebilecek git komutları
@@ -237,6 +259,11 @@ gir reset HEAD~
   * Bu alan açık iken klavyen ile *arama* yapabilirsin.
   * `New Branch` kısmından yeni *yerel branch* oluşturabilirsin.
   * `Remote branch` kısmındaki herhangi bir branch üzerine tıklayarak `Merge Into Current` ile kendi projene dahil edebilirsin.
+
+
+## Kaynaklar
+
+* [Sık kullanılan git komutları](https://github.com/joshnh/Git-Commands)
 
 ## Git Cheat Sheet
 

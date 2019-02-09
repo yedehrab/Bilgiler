@@ -29,7 +29,9 @@
 * [Türkçe Yapay Zeka Kaynakları](Yapay%20Zeka%20Notlar%C4%B1.md/T%C3%BCrk%C3%A7e%20Yapay%20Zeka%20Kaynaklar%C4%B1.md) | [Orjinal İçerik](https://github.com/deeplearningturkiye/turkce-yapay-zeka-kaynaklari)
 * [Yapay Zeka Notları](Yapay%20Zeka%20Notlar%C4%B1.md/Yapay%20Zeka%20Notlar%C4%B1.md)
 
----
+## Yapılacaklar
+
+* Git notlarındaki komutları tablosal olarak göster.
 
 ## Yazar & Alıntılayan
 
