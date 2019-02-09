@@ -4,7 +4,7 @@
 
 Click [here](https://www.jetbrains.com/help/phpstorm/configuring-xdebug.html) from setup instructions.
 
-**Xdebug Remote Debug via Chrome**
+### Xdebug Remote Debug via Chrome
 
 Install extension from [this](https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=tr) link, and after do these;
 

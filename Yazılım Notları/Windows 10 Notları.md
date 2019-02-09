@@ -1,4 +1,4 @@
-# Windows Bilgileri
+# Windows 10 Notları
 
 ![win](./images/win.png)
 

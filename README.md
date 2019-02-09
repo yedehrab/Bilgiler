@@ -1,34 +1,33 @@
 # Bilgiler
 
+İçeriklerin işaretlenmiş (*indexed*) hallerini aşağıda görebilirsin.
+
 > Orjinal dosya [gitlab](https://gitlab.com/yedehrab/bilgiler) üzerindeki dosyadır.
 
-## Programlama Dilleri & Yardımcı Diller
+## Programlama Notları
 
-* [Javascript](Javascript.md)
-* [Php](Php.md)
-* [MySQL](MySQL.md)
-* [Markdown](Markdown.md)
-* [NodeJs Çok Kullanılan Kütüphaneler](NodejsCokKullanilanKutuphaneler.md)
+* [Javascript](Programlama%20Notlar%C4%B1/Javascript.md)
+* [Php](Programlama%20Notlar%C4%B1/Php.md)
+* [MySQL](Programlama%20Notlar%C4%B1/MySQL.md)
+* [Markdown](Programlama%20Notlar%C4%B1/Markdown.md)
+* [NodeJs Çok Kullanılan Kütüphaneler](Programlama%20Notlar%C4%B1/Nodejs%20%C3%87ok%20Kullan%C4%B1lan%20K%C3%BCt%C3%BCphaneler.md)
 
-## Uygulama Bilgileri
+## Yazılım Notları
 
-* [Windows](WindowsBilgileri.md)
-* [Uygulama Bilgileri](UygulamaBilgileri.md)
+* [Windows 10 Notları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Windows%2010%20Notlar%C4%B1.md)
+* [Uygulama Notları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Uygulama%20Notlar%C4%B1.md)
 
-## Proje Yönetimi
+## Proje Yönetimi Notları
 
-* [Proje Yönetimi](ProjeYönetimi.md)
-* [Karaca Notları](Krcreadme.md)
+* [Proje Yönetimi](Proje%20Y%C3%B6netimi%20Notlar%C4%B1/Proje%20Y%C3%B6netimi.md)
+* [Git Notları](Proje%20Y%C3%B6netimi%20Notlar%C4%B1/Git%20Notlar%C4%B1.md)
+* [Git için Emojiler](Proje%20Y%C3%B6netimi%20Notlar%C4%B1/Git%20i%C3%A7in%20Emojiler.md)
+* [Heroku Notları](Proje%20Y%C3%B6netimi%20Notlar%C4%B1/Heroku%20Notlar%C4%B1.md)
 
-## Git & Heroku
+## Yapay Zeka Notları
 
-* [Temel Git Komutları](TemelGitKomutları.md)
-* [Heroku](Heroku.md)
-* [Emojies](Emojies.md)
-
-## Ek Kaynaklar
-
-* [Türkçe Yapay Zeka Kaynakları](TurkceYapayZekaKaynakları.md) | [Orjinal İçerik](https://github.com/deeplearningturkiye/turkce-yapay-zeka-kaynaklari)
+* [Türkçe Yapay Zeka Kaynakları](Yapay%20Zeka%20Notlar%C4%B1.md/T%C3%BCrk%C3%A7e%20Yapay%20Zeka%20Kaynaklar%C4%B1.md) | [Orjinal İçerik](https://github.com/deeplearningturkiye/turkce-yapay-zeka-kaynaklari)
+* [Yapay Zeka Notları](Yapay%20Zeka%20Notlar%C4%B1.md/Yapay%20Zeka%20Notlar%C4%B1.md)
 
 ---
 

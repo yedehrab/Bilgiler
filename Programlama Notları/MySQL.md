@@ -2,11 +2,24 @@
 
 MySQL workbench üzerinden SQL editörünü kullanabilirsin.
 
+## Veri tipleri
+
+| Değişken Tipi | Açıklama | Not | Örnek |
+|---------------|----------|-----|-------|
+| `BIT` |  0-1 (True - False) verilerini tutar. | Değer atanırken tırnaksız atanır | *secili_mi = 0;* |
+| `INT([Basamak Sayısı])` | Tam sayı değeri tutar | Basmak sayısı 1 için 0-9 arası | Int(2), Int(9), Int(1) |
+
 ## Where Operatörleri
 
----
-
 Detaylar için [buraya](https://www.tutorialspoint.com/sql/sql-operators.htm) tıklayabilirsin.
+
+## Tablo İşlemleri
+
+* [Ekleme](http://www.mysqltutorial.org/mysql-add-column/)
+
+### Karma Notlar
+
+* [Var olan tabloya varsayılan değerli bir sütun ekleme](https://stackoverflow.com/a/92123)
 
 ## Temel Fonksiyonlar
 
@@ -125,7 +138,7 @@ Optimizasyon sorgunun hızlı sonuç vermesi için gereklidir. Optimizasyon işl
 
 gibi işlemlere başvurulur.
 
-> 5s'den kısa sorgular kabul edilebilir hızdadır. 
+> 5s'den kısa sorgular kabul edilebilir hızdadır.
 
 ### Ek Kaynaklar
 

@@ -4,6 +4,11 @@ Sık kullandığım uygulamalar için öneri ayarlarım (bir nevi kendime de yed
 
 ## VS Code
 
+### Kısayollar
+
+* `CTRL` + `I` Satırı seçme
+* `CTRL` + `X` Satırı kesme
+
 ### Faydalı Eklentiler
 
 * `Base16 Tomorrow Dark+` Karanlık tema
@@ -84,12 +89,38 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 
 ## Jetbrains IDEs
 
-* [DataGrid](https://www.jetbrains.com/datagrip/)
+* [DataGrip](https://www.jetbrains.com/datagrip/)
 
 ### Kısayolar
 
+Detaylar için [buraya](https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html) tıklayabilirsin.
+
+* `CTRL` + `CTRL` Komut çalıştırma
 * `SHIFT` + `SHIFT` Kod içerisinde arama yapma
+* `CTRL` + `SHUFT` + `ALT` + `L` Açık olan dosyayı formatlama / biçimlendirme
+* `CTRL` + `SHUFT` + `L` Tüm kodu otamatik derleme
+
+#### Metin Kısayolları
+
+* `CTRL` + `X` Satırı kesme 
+* `CTRL` + `D` Satırı hemen altına kopyalam (dublicate)
+* `CTRL` + `SHIFT` + `/` Yorum satırına çevirme
+
+#### Denıg Kısayolları
+
 * `ALT` + `F8` Dobug modunda iken kod derleme arayüzü
+
+#### Git Kısayolları
+
+* `CTRL` + `K` Commit
+* `CTRL` + `SHIFT` + `K` Push
+
+### Git Yönetimi
+
+* `JetBrain IDE` - `Check out from Version Control` - `Git`
+  * *Url:* Proje URL'idir. (Adress çubuğunda yazan metin)
+  * *Directory:* Proje yolunudur. (projenin/konumu)
+* `Test` & `Clone`
 
 ### Pluginler (Eklenti gibi)
 
@@ -139,3 +170,7 @@ Dillere özgü sözlükleri indirmek için [buraya](https://drive.google.com/ope
 #### Spellcheck Kaldırma
 
 * `CTRL` + `ALT` + `S` yaptıktan sonra `Editor | Inspection | Spelling | Typo | Process comments` ile yorum satırlarını kontrol etmesini kaldırabilirsin.
+
+#### Karma Notlar
+
+* [Şifre değiştirme](https://stackoverflow.com/a/37959112)

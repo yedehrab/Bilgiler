@@ -13,18 +13,45 @@
   * Github alternatifi olan bu site gizli repoları ücretsiz sunar.
 * [Bitbucket](https://bitbucket.org/)
 
-## Git Kimlik Bilgilerini Ayarlama
+## Git Kimlik Bilgileri
+
+Kimlik bilgileri ayarı ile git işlemlerinin her birinde giriş yapmanız gerekmez.
+
+### Git Kimlik Bilgilerini Ayarlama
 
 ```bash
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
-### Git Deposunu Oluşturma
+### Git Kimlik Bilgilerini Sıfırlama
+
+Detaylar için [buraya](https://stackoverflow.com/a/15382950) tıklayabilirsin.
+
+*Windows:*
+
+```bash
+git config --system --unset credential.helper
+```
+
+*Diğerleri:*
+
+```bash
+git config --global --unset credential.helper
+```
+
+## Git Deposunu Oluşturma & Güncelleme
+
+### Git Deposunu Güncelleme
+
+```bash
+git fetch --all
+git pull
+```
 
 Detaylı bilgi için [buraya](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-clone) bakabilirisin.
 
-#### Yeni repository oluşturma
+### Yeni repository oluşturma
 
 ```bash
 git init
@@ -32,7 +59,7 @@ git init
 
 > Git için gerkeli olan dosyaları oluşturur.
 
-#### Yerel repo klonlama
+### Yerel repo klonlama
 
 ```bash
 git clone [url] [kopyalanacağı yol]
@@ -43,7 +70,7 @@ git clone [url] [kopyalanacağı yol]
 
 > Var olan git'i istenen dizine kopyalar
 
-#### Belli branch'i klonlama
+### Belli branch'i klonlama
 
 Çoklu değişimin olduğu projelerde sadece kendi branch'imiz üzerinden işlem yapmak isteyebilir ve diğer değişikliklerle uğraşmaya biliriz.
 
@@ -51,7 +78,7 @@ git clone [url] [kopyalanacağı yol]
 git clone -branch [branch_name] [url]
 ```
 
-#### Uzak repo klonlama
+### Uzak repo klonlama
 
 ```bash
 git clone [username]@[host]:[url]
@@ -201,6 +228,15 @@ gir reset HEAD~
 ```
 
 > Son yüklemeyi kaldırır. Bu işlemden sonra tekrar commit etmeniz gerekmekte. Detay için [link](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-commits-in-git)
+
+## Uygulamalar Üzerinde Git
+
+### JetBrains IDEs
+
+* Branch kontrollerini sağ alt köşedeki git alanından yapabilirsin.
+  * Bu alan açık iken klavyen ile *arama* yapabilirsin.
+  * `New Branch` kısmından yeni *yerel branch* oluşturabilirsin.
+  * `Remote branch` kısmındaki herhangi bir branch üzerine tıklayarak `Merge Into Current` ile kendi projene dahil edebilirsin.
 
 ## Git Cheat Sheet
 

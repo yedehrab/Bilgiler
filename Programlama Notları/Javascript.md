@@ -9,6 +9,45 @@ Javascript DOM komutlarını özetleyen bir derlemedir.
 
 ## DOM Bilgileri
 
+Notların linklerine bakmak için [buraya](#Ek%20Notlar) tıklayabilirsin.
+
+### Dosya İndirme İşlemleri
+
+> **Chrome** `click()` metodunu  desteklememektedir. 😭 (*Edge kullanınız.* 😏)
+
+#### JSON olarak indirme
+
+Verilen json objesi istenen isimle indiren fonksiyon. Detayları için [buraya](https://stackoverflow.com/a/30800715) tıklayabilirsin.
+
+```javascript
+/**
+ * JSON objesi indirme
+ * @param {JSON} exportObj İndirilecek JSON objesi
+ * @param {string} exportName İndirilen dosyanın ismi
+ */
+function downloadObjectAsJson(exportObj, exportName){
+    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
+    var downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href",     dataStr);
+    downloadAnchorNode.setAttribute("download", exportName + ".json");
+    document.body.appendChild(downloadAnchorNode); // required for firefox
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+}
+```
+
+**Kullanımı:**
+
+```js
+var exampleData = {
+    "name" : "temp"
+}
+
+downloadObjectAsJson(exampleData, "champs.json");
+```
+
+#### Ek Notlar
+
 * [Dosya indirme](https://www.w3schools.com/jsref/prop_anchor_download.asp) | [URL ile indirme](https://stackoverflow.com/a/34694012)
 
 ## HTML Elemanı Alma
