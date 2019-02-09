@@ -260,11 +260,10 @@ gir reset HEAD~
   * `New Branch` kısmından yeni *yerel branch* oluşturabilirsin.
   * `Remote branch` kısmındaki herhangi bir branch üzerine tıklayarak `Merge Into Current` ile kendi projene dahil edebilirsin.
 
-
 ## Kaynaklar
 
 * [Sık kullanılan git komutları](https://github.com/joshnh/Git-Commands)
 
 ## Git Cheat Sheet
 
-![git](./images/git-cheet-sheet.jpeg)
+![git](../images/git-cheet-sheet.jpeg)
