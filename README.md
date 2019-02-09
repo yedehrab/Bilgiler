@@ -16,6 +16,7 @@
 
 * [Windows 10 Notları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Windows%2010%20Notlar%C4%B1.md)
 * [Uygulama Notları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Uygulama%20Notlar%C4%B1.md)
+* [Karma Notlar](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Karma%20Notlar)
 
 ## Proje Yönetimi Notları
 
