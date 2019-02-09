@@ -82,3 +82,8 @@ array.forEach(element => { // Arraydeki her bir elemanı işleme
 ```javascript
 document.getElementById('id').getAttribute('attribute') // Özelliğin değerini döndürür (string)
 ```
+
+## Karma Linkler
+
+* [Callback yerine Async Kullanma](https://medium.freecodecamp.org/javascript-from-callbacks-to-async-await-1cc090ddad99)
+* [Async & Await](https://medium.com/@tkssharma/writing-neat-asynchronous-node-js-code-with-promises-async-await-fa8d8b0bcd7c)
