@@ -13,7 +13,54 @@ Notların linklerine bakmak için [buraya](#Ek%20Notlar) tıklayabilirsin.
 
 ### Dosya İndirme İşlemleri
 
-> **Chrome** `click()` metodunu  desteklememektedir. 😭 (*Edge kullanınız.* 😏)
+> **Chrome** `click()` metodunu  destekleyemeyebiliyor.. 😭 (*Edge kullanınız.* 😏) 
+
+>**Popup Blocker** gibi eklentiler ekliyse kapatmanız gerekmekte.
+
+
+#### URI ile indirme
+
+Geçici HTMLElement ile bu işlemi yapabiliriz.
+
+```js
+function downloadURI(uri, name) {
+    const link = document.createElement("a");
+
+    link.download = name;
+    link.href = uri;
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+
+    delete link;
+}
+```
+
+**Çoklu URL indirme:**
+
+```js
+function downloadArrayUrlWithKey(array, key) {
+    array.forEach(element => {
+        const url = element[key];
+        const fileName = url.split("/").pop();
+
+        downloadURI(url, fileName);  
+        sleep(100); // Bekleme olmazsa chrome her dosyayı indirmiyor
+    });
+}
+
+function sleep(milliseconds) {
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+        if ((new Date().getTime() - start) > milliseconds){
+            break;
+        }
+    }
+}
+```
 
 #### JSON olarak indirme
 
