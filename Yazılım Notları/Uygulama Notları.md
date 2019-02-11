@@ -6,6 +6,9 @@ Sık kullandığım uygulamalar için öneri ayarlarım (bir nevi kendime de yed
 
 ### Kısayollar
 
+* `CTRL` + `P` Dosya arama
+  * `#` İle çalışma dizininde arayabilirsin
+  * `?` ile yardım alabilirsin
 * `CTRL` + `I` Satırı seçme
 * `CTRL` + `X` Satırı kesme
 
