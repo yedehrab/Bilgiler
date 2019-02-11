@@ -119,10 +119,10 @@ Adres çubuğuna `chrome://settings/searchEngines` yazaeak gerekli ayarların ol
 
 * Tureng
 * -t
-* http://tureng.com/tr/turkce-ingilizce/%s
+* `http://tureng.com/tr/turkce-ingilizce/%s`
 
 > %s sonrasındaki metin anlamına gelmekte. Örn; -t Help (*Help `%s` olan yere yazılır.*)
-
+>
 > Sayfa başındaki işaretçilere yönlenmek için [buraya](#Y%C3%B6nlendirme) tıklayabilirsin.
 
 ## Jetbrains IDEs
@@ -140,7 +140,7 @@ Detaylar için [buraya](https://www.jetbrains.com/help/idea/mastering-keyboard-s
 
 #### Metin Kısayolları
 
-* `CTRL` + `X` Satırı kesme 
+* `CTRL` + `X` Satırı kesme
 * `CTRL` + `D` Satırı hemen altına kopyalam (dublicate)
 * `CTRL` + `SHIFT` + `/` Yorum satırına çevirme
 
@@ -181,7 +181,7 @@ Sanal environment gibi durumlarda system yerine onların derleyicisini kullanma
 
 * `CTRL` + `ALT` + `S` yaptıktan sonra `Project: <project name> | Project Interpreter` sayfasında `Ayarlar Butonu | Add` kısmına basarak derleyicinizi değiştirebilirsiniz.
 
-#### Configuration (Yapılandırma) Ayarları 
+#### Configuration (Yapılandırma) Ayarları
 
 > Projenizi IDE üzerinde çalıştırabilmek için bu ayarı yapmanız gerekmekte.
 
