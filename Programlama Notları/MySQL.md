@@ -4,10 +4,13 @@ MySQL workbench üzerinden SQL editörünü kullanabilirsin.
 
 ## Veri tipleri
 
-| Değişken Tipi | Açıklama | Not | Örnek |
-|---------------|----------|-----|-------|
-| `BIT` |  0-1 (True - False) verilerini tutar. | Değer atanırken tırnaksız atanır | *secili_mi = 0;* |
-| `INT([Basamak Sayısı])` | Tam sayı değeri tutar | Basmak sayısı 1 için 0-9 arası | Int(2), Int(9), Int(1) |
+| Değişken Tipi | Açıklama | Not |
+|---------------|----------|-----|
+| `BIT` |  0-1 (True - False) verilerini tutar. | Değer atanırken tırnaksız atanır |
+| `INT` | Tam sayı değeri tutar | Basmak sayısı 1 için 0-9 arası |
+| `ENUM` | Özel değişken oluşturma | Değerler tırnaklı olarak atanır |
+
+> Örnekler için [değişkenler](#De%C4%9Fi%C5%9Fkenler) kısmına bakabilirsin.
 
 ## Where Operatörleri
 
@@ -23,31 +26,16 @@ Detaylar için [buraya](https://www.tutorialspoint.com/sql/sql-operators.htm) t�
 
 ## Temel Fonksiyonlar
 
----
+| Fonksiyon | Özelliği |
+|:---------:|----------|
+| `MAX` | En yüksek değeri bulur |
+| `MİN` | En düşük değeri bulur |
+| `AVG` | Ortalama değeri bulur |
+| `COUNT` | Adet saysını hesaplar |
+| `SUM` | Toplam değeri hesaplar |
+| `CONCAT` | Verilen metinleri birleştirir |
 
-* `MAX` & `MIN` & `AVG`
-* `COUNT` & `SUM`
-* `CONCAT`
-
-### Temel Fonksiyon Örnekleri
-
-#### COUNT
-
-Sayı hesaplama fonkisyonudur. If ile kullanımı alttaki gibidir.
-
-```SQL
-SELECT COUNT(if(`crr`.`return_reason_id` = 14, `crr`.`return_reason_id`, null)) from ...
-```
-
-> Koşul sağlanırsa sayar.
-
-#### Concat
-
-Verilen stringleri birleştirir. (*Excel fonksiyonudur*)
-
-```SQL
-SELECT ... WHERE CONCAT("product_id=", "208") = "product_id=208";
-```
+> Örnekler için [temel fonksiyon örnekleri](#Temel%20Fonksiyon%20%C3%96rnekleri) kısmına bakabilirsin.
 
 ## Gruplama
 
@@ -157,6 +145,35 @@ Optimizasyon hakkında detaylı bilgi için [buraya](https://www.sitepoint.com/o
 
 ## Örnekler
 
-Karma MySQL sorgusu örnekleri
+### Değişkenler
+
+```sql
+ALTER TABLE [tablo ismi] ADD COLUMN [sütun ismi] BIT DEFAULT 0; -- veya False
+ALTER TABLE [tablo ismi] ADD COLUMN [sütun ismi] INT(1) DEFAULT 1;
+ALTER TABLE [tablo ismi] ADD COLUMN [sütun ismi] ENUM('0', '1') DEFAULT '0';
+```
+
+> Yönelmek için [veri tipleri](#Veri%20tipleri) linkine tıklayabilirsin.
+
+### Temel Fonksiyon Örnekleri
+
+```SQL
+SELECT MAX(*) FROM Ogrenci;
+SELECT MIN(*) FROM Ogrenci;
+SELECT AVG(*) FROM Ogrenci;
+SELECT COUNT(*) FROM Ogrenci;
+SELECT ... WHERE CONCAT("product_id=", "208") = "product_id=208";
+```
+
+> Yönelmek için [temel fonksiyonlar](#Temel%20Fonksiyonlar) yazısına bakabilirsin.
+
+### Karma MySQL sorgusu örnekleri
+
+```SQl
+SELECT COUNT(if(`crr`.`return_reason_id` = 14, `crr`.`return_reason_id`, null)) from ...
+```
+
+> Koşul sağlanırsa sayar.
+
 
 ![mysql-ex1](/images/mysql-ex-1.jpg)
