@@ -32,7 +32,7 @@
 
 ## Yapılacaklar
 
-* Her sayfanın en üst kısmına işaretçi ekle.
+* Her sayfanın en üst ve en alt kısmına (?) işaretçi ekle.
 * Git notlarındaki komutları tablosal olarak göster.
 
 ## Yazar & Alıntılayan
