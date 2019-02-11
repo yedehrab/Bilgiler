@@ -4,6 +4,15 @@
 
 > Sayfanın en altındaki özet git komutlarına bakmak için [buraya](#git-cheat-sheet) tıklayabilirsin. (*Git Cheat Sheet*)
 
+## Git İşleme Yapısı
+
+> Terimlerin üzerine tıklayarak, açıklamalarının yapıldığı yazıya yönelebilirsin.
+
+* Her yenilik için **değişikliği açıklayan yorumla birlikte**  ayrı ayrı [commit](#Teslim%20etme%20haz%C4%B1rl%C4%B1%C4%9F%C4%B1%20ve%20yorum%20ekleme) yapılır.
+* Eğer farklı alanda değişiklikler yapılıyor ise yeni bir [branch](#Branch%20İşlemleri) oluşturulur.
+  * Yeni branch kontrol edildikten sonra orjinal (master) branch'ine dahil edilir. ( *Alakalı: [merge request](https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html)* )
+  * Bu sistemle hataların orjinal projeyi bozması engellenmeye çalışılır.
+
 ## Git'in Kullanıldığı Siteler
 
 * [Github](https://www.github.com)
