@@ -41,6 +41,46 @@
 }
 ```
 
+### SCSS
+
+```scss
+.circle-text {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #444444;
+  border: 2px solid #EDEDED;
+
+  div {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  &:hover {
+    font-weight: bolder;
+    font-size: 12px;
+    color: #ffffff;
+    background: #ffb0b0;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+  }
+}
+```
+
 ### HTML
 
 ```html
