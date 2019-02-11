@@ -8,36 +8,53 @@
 
 ```css
 .circle-text {
-    width: 100%;
-    background: #FFFFFF;
-    border-radius: 50%;
-    -moz-border-radius: 50%; 
-    -webkit-border-radius: 50%;
-    color: #444444;
-    border: 2px solid #EDEDED;
-}
-.circle-text:after {
-    content: "";
+    position: relative;
     display: block;
-    width: 100%;
-    height:0;
-    padding-bottom: 100%; 
-}
-
-.circle-text div {
-    float:left;
-    width:100%;
-    padding-top:50%;
-    line-height:1em;
-    margin-top:-0.5em;
-    text-align:center;
-    font: medium 12px;
+    margin: 2em 0;
+    background: #FFFFFF;
+    border: 2px solid #EDEDED;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: normal;
 }
 
 .circle-text:hover {
-    font: bolder 12px;
+    font-weight: bolder;
+    font-size: 12px;
     color: #ffffff;
     background: #ffb0b0;
+}
+
+.circle-text:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+}
+  
+.circle-text__inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-text__wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-text__content {
+  display: table-cell;
+  padding: 1em;
+  vertical-align: middle;
 }
 ```
 
@@ -45,24 +62,17 @@
 
 ```scss
 .circle-text {
-  width: 100%;
+  position: relative;
+  display: block;
+  margin: 2em 0;
   background: #FFFFFF;
+  border: 2px solid #EDEDED;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  color: #444444;
-  border: 2px solid #EDEDED;
-
-  div {
-    float:left;
-    width:100%;
-    padding-top:50%;
-    line-height:1em;
-    margin-top:-0.5em;
-    text-align:center;
-    font-size: 12px;
-    font-weight: normal;
-  }
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
 
   &:hover {
     font-weight: bolder;
@@ -74,10 +84,31 @@
   &:after {
     content: "";
     display: block;
-    width: 100%;
-    height:0;
     padding-bottom: 100%;
+    width: 100%;
+    height: 0;
   }
+}
+
+.circle-text__inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-text__wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-text__content {
+  display: table-cell;
+  padding: 1em;
+  vertical-align: middle;
 }
 ```
 
@@ -103,62 +134,20 @@
     <div class="row">
         <div class="col-md-1 col-xs-3">
             <div class="circle-text">
-                <div>I'm a Circle!</div>
+                <div class="circle-text__inner">
+                    <div class="circle-text__wrapper">
+                        <div class="circle-text__content">A circle-text with a lot more text inside</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-md-1 col-xs-3">
             <div class="circle-text">
-                <div>I'm a Circle!</div>
-            </div>
-        </div>
-        <div class="col-md-1 col-xs-3">
-            <div class="circle-text">
-                <div>I'm a Circle!</div>
-            </div>
-        </div>
-        <div class="col-md-1 col-xs-3">
-            <div class="circle-text">
-                <div>I'm a Circle!</div>
-            </div>
-        </div>
-        <div class="col-md-1 col-xs-3">
-            <div class="circle-text">
-                <div>I'm a Circle!</div>
-            </div>
-        </div>
-        <div class="col-md-1 col-xs-3">
-            <div class="circle-text">
-                <div>I'm a Circle!</div>
-            </div>
-        </div>
-        <div class="col-md-1 col-xs-3">
-            <div class="circle-text">
-                <div>I'm a Circle!</div>
-            </div>
-        </div>
-        <div class="col-md-1 col-xs-3">
-            <div class="circle-text">
-                <div>I'm a Circle!</div>
-            </div>
-        </div>
-        <div class="col-md-1 col-xs-3">
-            <div class="circle-text">
-                <div>I'm a Circle!</div>
-            </div>
-        </div>
-        <div class="col-md-1 col-xs-3">
-            <div class="circle-text">
-                <div>I'm a Circle!</div>
-            </div>
-        </div>
-        <div class="col-md-1 col-xs-3">
-            <div class="circle-text">
-                <div>I'm a Circle!</div>
-            </div>
-        </div>
-        <div class="col-md-1 col-xs-3">
-            <div class="circle-text">
-                <div>I'm a Circle!</div>
+                <div class="circle-text__inner">
+                    <div class="circle-text__wrapper">
+                        <div class="circle-text__content">A circle-text with a lot more text inside</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
