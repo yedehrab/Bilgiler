@@ -105,9 +105,9 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 
 ### Adress Çubuğu Anahtarları
 
-[Buraya](chrome://settings/searchEngines) tıklayarak gerekli ayarların olduğu kısma girin.
+Adres çubuğuna `chrome://settings/searchEngines` yazaeak gerekli ayarların olduğu kısma girin.
 
-> Çıkan ekranda Diğer arama motorları kısmında `Ekle` butonuna basın.
+> Çıkan ekranda diğer arama motorları kısmında `Ekle` butonuna basın.
 
 **Çıkan Menüde:**
 
