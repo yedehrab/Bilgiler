@@ -1,5 +1,23 @@
 # Proje Yönetimi
 
+## Model View Controller Yapısı
+
+Ek kaynak için [buraya](https://blog.koddit.com/yazilim/mvc-nedir-gercek-orneklerle-mvc-nedir-anlayalim/) tıklayabilirsin.
+
+> Temel amaç *model* ile *view* katmanını ayırmaktır. Bu sayede tasarımı değiştireceğimiz zaman yapısal kodlarla uğraşmak zorunda kalmayız. (*model: back-end view: front-end denebilir*)
+
+| Yapı Ögesi | Özet | Örnek |
+|:------------:|:-------|:------|
+| Model | Veriler ile ilgili işlemler | Veritabanına veri kaydedilmesi ve veritabanından alınması |
+| View | Kullanıcıya görünen kısım | Anasayfa gibi web sayfaları |
+| Controller | Model ile View arası bağlantı | Verinin web sayfasına aktarılması |
+
+### Yapı düzenleme sırası
+
+* **Model** kısmı düzenlenir.
+* **Controller** üzerinde bağlantılar oluşturulur.
+* **View** ile kullanıcıya sunulur.
+
 ## Proje Oluşturma & Güncelleme Yapısı
 
 > Globallik adına ingilizce dili tercih edilmektedir.
