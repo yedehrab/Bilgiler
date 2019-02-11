@@ -1,6 +1,6 @@
 # Windows 10 Notları
 
-![win](./images/win.png)
+![win](../images/win.png)
 
 ## Kısayollar
 
@@ -74,14 +74,13 @@ Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tı
 * `%username` Kullanıcı adı
 * `%appdata%` Uygulama verileri dizini
 
-
 ## Görsellik
 
 Kendime özgü görsellik ayarlarım
 
 ### Command Promt
 
-![cmd](./images/cmd.png)
+![cmd](../images/cmd.png)
 
 * `**Font:**` *14 - Consolas*
 * **Layout:** *Windows Size - w: 120 h: 30*
@@ -92,7 +91,7 @@ Kendime özgü görsellik ayarlarım
   
 ## Windows Features
 
-> Aramaya alanına `Turn Windows Feature On or Off` veya `Windows Özelliklerini Aç veya Kapat` yazarak erişebilirsin. 
+> Aramaya alanına `Turn Windows Feature On or Off` veya `Windows Özelliklerini Aç veya Kapat` yazarak erişebilirsin.
 
 ### Default Windows Features
 
@@ -110,3 +109,9 @@ Kendime özgü görsellik ayarlarım
 * `SMB Direct`
 * `Windows PowerShell 2.0`
 * `Work Folders Client`
+
+## Ayarlar
+
+| Ayar | Ulaşım | Açıklama | Kaynak |
+|------|--------|----------|--------|
+| Altyazı | Options - Ease of Access -  Hearing / Closed captions | Yerel uygulamalardaki altyazı metnini özelleştirme | [Microsoft](https://support.microsoft.com/en-us/help/3078107/closed-captions-in-movies-tv-content-on-windows-10)
