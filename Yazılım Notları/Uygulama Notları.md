@@ -2,11 +2,17 @@
 
 Sık kullandığım uygulamalar için öneri ayarlarım (bir nevi kendime de yedek :D)
 
-## VS Code
+## Yönlendirme
 
-### Kısayollar
+* [VsCode](#VsCode)
+* [Chrome](#Chrome)
+* [JetBrain IDEs](#Jetbrains%20IDEs)
 
-* `CTRL` + `P` Dosya arama
+## VsCode
+
+### VsCode kısayolları
+
+* `CTRL` + `P` Dosya arama (*read only açar*)
   * `#` İle çalışma dizininde arayabilirsin
   * `?` ile yardım alabilirsin
 * `CTRL` + `I` Satırı seçme
@@ -54,12 +60,39 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 },
 ```
 
-### Kısayollar
+### Code runner kısayollar
 
 * `ALT` + `SHIFT` + `F` Yazıları uzantıya göre formatlama
 * `CTRL` + `"` Gömülü terminali gösterme / gizleme
 
+> Sayfa başındaki işaretçilere yönlenmek için [buraya](#Y%C3%B6nlendirme) tıklayabilirsin.
+
 ## Chrome
+
+### Chrome kısayolları
+
+#### Chrome sekme işlemleri
+
+| Kısayol | Açıklama |
+|---------|----------|
+| `CTRL` + `T` | Yeni sekme açma
+| `CTRL` + `SHIFT` + `T` | Son kapatılan sekmeyi açma |
+| `CTRL` + `W` | Sekmeyi kapatma |
+
+#### Sayfa işlemleri
+
+| Kısayol | Açıklama |
+|---------|----------|
+| `CTRL` + `R` | Sayfayı yenileme
+| `CTRL` + `SHIFT` + `R` | Sayfayı komple yenileme (önbelleği temizler) |
+| `CTRL` + `S` | Sayfayı kaydetme |
+
+#### Geliştirici kısayolları
+
+| Kısayol | Açıklama |
+|---------|----------|
+| `CTRL` + `SHIFT` + `I` | Dom konsolunu açma |
+| `CTRL` + `SHIFT` + `C` | HTML eleman seçiciyi aktif etme |
 
 ### Ektension
 
@@ -70,9 +103,9 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 * [Run Javascript](https://chrome.google.com/webstore/detail/run-javascript/lmilalhkkdhfieeienjbiicclobibjao) `->` Seçtiğiniz sayfalara girdiğinizde otomatik olarak JS derleme
 * [Google Çeviri](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb) `->` Çeviri
 
-## Adress Çubuğu Anahtarları
+### Adress Çubuğu Anahtarları
 
-[Buraya](chrome://settings/searchEngines) tıklayarak gerekli ayarların olduğu kısma girin. 
+[Buraya](chrome://settings/searchEngines) tıklayarak gerekli ayarların olduğu kısma girin.
 
 > Çıkan ekranda Diğer arama motorları kısmında `Ekle` butonuna basın.
 
@@ -89,6 +122,8 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 * http://tureng.com/tr/turkce-ingilizce/%s
 
 > %s sonrasındaki metin anlamına gelmekte. Örn; -t Help (*Help `%s` olan yere yazılır.*)
+
+> Sayfa başındaki işaretçilere yönlenmek için [buraya](#Y%C3%B6nlendirme) tıklayabilirsin.
 
 ## Jetbrains IDEs
 
@@ -177,3 +212,5 @@ Dillere özgü sözlükleri indirmek için [buraya](https://drive.google.com/ope
 #### Karma Notlar
 
 * [Şifre değiştirme](https://stackoverflow.com/a/37959112)
+
+> Sayfa başındaki işaretçilere yönlenmek için [buraya](#Y%C3%B6nlendirme) tıklayabilirsin.
