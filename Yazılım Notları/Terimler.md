@@ -13,3 +13,5 @@ Yazılımda kullanılan genel terimler.
 | Register | Yazmaç | |
 | Cache | Önbellek | Verileri hafızada tutup hızlı açmak için önbellek kullanılır |
 | Cookie | Çerez | Bir siteye tekrardan girdiğimizde giriş bilgilerimiz gibi bilgileri koruması, çerezlerle sağlanır |
+| Run | Çalıştırma | Yazılan kodu derleyici üzerinde çalıştırma |
+| Debug | Hata Ayıklama | Kodu derleyici üzerinde adım adım gerekli yerlerde duracak şekilde çıktılarla çalıştırma |
