@@ -89,7 +89,7 @@ $results = $this->model_sale_order->getOrders($data);
   * *Örn: C:\xampp\htdocs\ecommerce2\webadmin\controller\sale\order.php*
 
 * **View** kısmında filtre ekleme alanı oluştulur. Kaynak kod için [buraya](#Filtre%20Alan%C4%B1%20Ekleme) tıklayabilirsin.
-  * Filtreleme butonunun js kısmındaki `filter()` metodunda güncelleme yapılır. Kaynak kod için [buraya](#) tıklayabilirsin.
+  * Filtreleme butonunun js kısmındaki `filter()` metodunda güncelleme yapılır. Kaynak kod için [buraya](#Filtreleme%20filter%28%29%20metodu) tıklayabilirsin.
 
 ## Karma Kodlar
 
