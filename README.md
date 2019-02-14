@@ -41,3 +41,5 @@ Yunus Emre
 
 * [Github](https://github.com/yedehrab)
 * [GitLab](https://gitlab.com/yedehrab)
+
+> Yardım veya destek için [iletişime](mailto::yyunussemree@gmail.com) geçebilrsiniz 😇
