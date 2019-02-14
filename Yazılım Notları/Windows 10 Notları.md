@@ -20,7 +20,6 @@ Siteye girdiğinizde sırasıyla alttaki ayarları açamınız | seçmeniz gerek
 
 > Detaaylı bilgi için [buraya](https://pureinfotech.com/download-windows-10-iso-without-media-creation-tool/) tıklayabilirsin.
 
-
 ## Kısayollar
 
 > Bu kısayollar tüm ekranlara baskınkın, her yerde çalışır.
