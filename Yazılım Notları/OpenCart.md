@@ -18,9 +18,9 @@
     * *...\model*
     * *...\webadmin\model \ `dizin` \ `dosya adı`.php*
 * **Controller** dizinindeki uygun dosyadan model yüklenir.
-  * Modeli yüklenir. Kod örneği için [buraya](#Modeli%20y%C3%BCkleme) tıklayabilirsin.
+  * Model yüklenir. Kod örneği için [buraya](#Modeli%20y%C3%BCkleme) tıklayabilirsin.
   * Veri modelden alınır. Kod örneği için [buraya](#Veriyi%20modelden%20alma) tıklayabilirsin.
-  * View'a veriyi gönderme: `$this->data['[name]'];`
+  * View'a veriyi gönderme: Kod örneği için [buraya](#Veriyi%20view%27a%20g%C3%B6nderme) tıklayabilirsin.
   * Dosya ve dizin yolları:
     * *...\webadmin\controller*
     * *...\controller*
@@ -107,11 +107,23 @@ OpenCard form verisine checkbox ekleme yapısı
 $this->load->model('catalog/manufacturer');
 ```
 
+> MVC yapısına yönelmek için [buraya](#Model%20View%20Controller%20Yap%C4%B1s%C4%B1) tıklayabilirsin.
+
 #### Veriyi modelden alma
 
 ```php
 $[veri adı] = $this->[model]->[get metodu]();
 ```
+
+> MVC yapısına yönelmek için [buraya](#Model%20View%20Controller%20Yap%C4%B1s%C4%B1) tıklayabilirsin.
+
+#### Veriyi view'a gönderme
+
+```php
+$this->data['[name]'];
+```
+
+> MVC yapısına yönelmek için [buraya](#Model%20View%20Controller%20Yap%C4%B1s%C4%B1) tıklayabilirsin.
 
 ### Form Kodları
 
@@ -130,13 +142,18 @@ $this->data['entry_[name]'] = $this->language->get('entry_[name]');
 if (isset($this->request->post['[name]'])) {
     $this->data['[name]'] = $this->request->post['[name]'];
 } elseif (!empty($special_promotion)) {
-    $this->data['[name]'] = $[tablo değişkeni]['[name]'];
+    $this->data['[name]'] = $[değişken]['[name]'];
 } else {
     $this->data['[name]'] = 0; // Default value
 }
 ```
 
-> Veri oluşturulmazsa `TLP` (front-end) kısmında görmez. Tablo değişkeni için `$special_promotion` veya `$order_info` örnek olabilir.
+* `[değişken]` Model ile alınan mySQL verilerini tutan değişken
+  > Tablo değişkeni için `$special_promotion` veya `$order_info` örnek olabilir.
+* `[name]` MySQL sütun ismi
+  > Sütun ismi için `$product_info` örnek olabilir.
+
+> Veri oluşturulmazsa `TLP` (front-end) kısmında görmez.
 
 ### Controller'da view için değişken oluşturma
 
