@@ -25,6 +25,7 @@
     * *...\webadmin\controller*
     * *...\controller*
     * *...\webadmin\controller\ `dizin` \ `dosya adı`.php*
+  > `$data` değikeni içindeki veriler *view*'a iletilir.
 * **View** dizinindeki TPL uzantılı dosya üzerinde görsel düzenleme yapılır.
   * Dosya ve dizin yolları:
     * *...\webadmin\view*
@@ -69,6 +70,26 @@ C:\xampp\htdocs\ecommerce2\catalog\view\asset\style\custom.scss
   > Front-end kısmıdır.
   * `tr` satırı kopyalanıp, `name` değerleri `entry_[name]` yapısı ile alınır
   * *Örn: ecommerce2\webadmin\view\template\sale\special_promotions_form.tpl*
+
+## Filtreleme
+
+$results = $this->model_sale_order->getOrders($data);
+
+* **Model** dizinindeki gerekli veri tabanı metodlarını güncelleme
+  > MySQL üzerindeki verileri sorgular yardımıyla projeye ekleyen yapıdır.
+  * `get*s`, `getTotal*s` metodlarındaki mySQL sorguları güncellenir. Kaynak kodu için [buraya](#Filtreleme%20Sorgusu) tıklayabilirsin.
+    > `$data` değişkeninin kullanıldığı alanlar güncellenir.
+  * *Örnek Yol: webadmin\model*
+  * *Örn: C:\xampp\htdocs\ecommerce2\webadmin\model\sale\order.php*
+* **Controller** dizinindeki Uygun dosyanın `getList` metodunda filtreleme değişkenlerini (filters) ve verileri oluşturma
+  > Veriler $data değişkeni ile *.tpl* uzantılı dosyaya aktarılır.
+  * Filtreleme değişkeni (filter) eklenir. Kaynak kodu için [buraya](#Filtreleme%20de%C4%9Fi%C5%9Fkeni%20olu%C5%9Fturma) tıklayabilirsin.
+  * Veri (data) oluşturma. Kaynak kod için [buraya](#Filtreleme%20verisini%20olu%C5%9Fturma) tıklayabilirsin.
+  * *Örnek Yol: webadmin\controller*
+  * *Örn: C:\xampp\htdocs\ecommerce2\webadmin\controller\sale\order.php*
+
+* **View** kısmında filtre ekleme alanı oluştulur. Kaynak kod için [buraya](#Filtre%20Alan%C4%B1%20Ekleme) tıklayabilirsin.
+  * Filtreleme butonunun js kısmındaki `filter()` metodunda güncelleme yapılır. Kaynak kod için [buraya](#) tıklayabilirsin.
 
 ## Karma Kodlar
 
@@ -167,3 +188,99 @@ foreach ($[veri ismi] as $[veri parçası]) {
     );
 }
 ```
+
+## Filtreleme Kodları
+
+> Filtre ekleme alanına gitmek için [buraya](#Filtreleme) tıklayabilirsin.
+
+### Filtre Alanı Ekleme
+
+```php
+<td>
+    <select name="filter_payment_method">
+        <option value=""></option>
+        <?php foreach ($[payment_methods] as $payment_method) { ?>
+        <option value="<?php echo $payment_method[modeid]; ?>" <?php echo ( ( $filter_payment_method == $payment_method )?('selected'):('') ); ?> > <?php echo $payment_method['name']; ?> </option>
+        <?php } ?>
+    </select>
+</td>
+```
+
+### Filtreleme değişkeni oluşturma
+
+```php
+if (isset($this->request->get['[filter_name]'])) {
+    $[filter_[name]] = $this->request->get['filter_name'];
+} else {
+    $filter_store_id = null;
+}
+```
+
+* `[name]` MySQL sütununua eş değer değişken ismidir.
+
+### Filtreleme verisini oluşturma
+
+```php
+$data = array(
+    'filter_[name]' => $filter_[name];
+);
+```
+
+* `[name]` MySQL sütununua eş değer değişken ismidir.
+
+> Data verisinde birden fazla değişken olabilir. Örn:
+
+```php
+$data = array(
+    'filter_store_id'        => $filter_store_id,
+    'filter_store_name'      => $filter_store_name,
+    'filter_order_id'        => $filter_order_id,
+    'filter_customer'        => $filter_customer,
+    'filter_order_status_id' => $filter_order_status_id,
+    'filter_total'           => $filter_total,
+    'filter_date_added'      => $filter_date_added,
+    'filter_date_modified'   => $filter_date_modified,
+    'filter_payment_method'  => $filter_payment_method,
+    'filter_[name]'          => $filter_[name],
+    'sort'                   => $sort,
+    'order'                  => $order,
+    'start'                  => ($page - 1) * $this->config->get('config_admin_limit'),
+    'limit'                  => $this->config->get('config_admin_limit')
+);
+```
+
+### Filtreleme URL'i oluşturma
+
+```php
+if (isset($this->request->get['filter_[name]'])) {
+    $url .= '&filter_[name]=' . $this->request->get['filter_[name]'];
+}
+```
+
+> Her `$url = '';` aşaması için üstteki yapılır.
+
+```php
+$this->data['filter_[name]'] = $filter_[name];
+```
+
+* `[name]` MySQL sütununua eş değer değişken ismidir.
+
+### Filtreleme Sorgusu
+
+```php
+if (!empty($data['filter_[name]'])) {
+    $sql .= " AND [tablo].[name] = '" . $this->db->escape($data['filter_[name]']) . "'";
+}
+```
+
+### Filtreleme filter() metodu
+
+```php
+var filter_[name] = $('select[name=\'filter_[name]\']').val();
+
+if (filter_[name]) {
+    url += '&filter_[name]=' + encodeURIComponent(filter_[name]);
+}
+```
+
+* `[name]` MySQL sütununua eş değer değişken ismidir.
