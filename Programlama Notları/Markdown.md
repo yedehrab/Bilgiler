@@ -43,15 +43,7 @@ Link işlemleri için bilgiler. Kaynak için [buraya](https://css-tricks.com/sni
 | Bir üst dizinden | ../... |
 | Telefon | <tel:> |
 
-> Bağlantı verme işlemlerinde özel karakter kullanmak için kodlama yapmanız gerekmekte. Kodlama yapan online site için [buraya](https://www.urlencoder.org/) tıklaytabilirsin.
-
-## Ek Notlar
-
-### Linklerde Özel Karakter Sorunu
-
-Linklerde özel karakter kullanımı için ek bir şifrelemeye gerek vardır.
-
-> Onilne kodlama sitesi için [buraya](https://www.urlencoder.org/) tıklayabilirsin. Siteye yol verini kopyalayıp *encoded* demeniz yeterli
+> Bağlantı verme işlemlerinde özel karakter kullanmak için kodlama yapmanız gerekmekte. Kodlama yapan online site için [buraya](https://www.urlencoder.org/) tıklaytabilirsin. Siteye yol verini kopyalayıp *encoded* demeniz yeterli
 
 * `%20` Boşluk karakteri
 
