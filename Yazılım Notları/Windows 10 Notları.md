@@ -4,6 +4,7 @@
 
 ## İndirme
 
+*Windows 10 October 2019 EN* orjinal dosyasını [buradan](https://drive.google.com/open?id=1uzLjabuUUVYaOuRM2f5fX4HtHrb9XMgI) indirebilirsin.
 Wİndows 10 son sürümünü indirmek için [buraya](https://www.microsoft.com/tr-tr/software-download/windows10) tıklayabilirsin.
 
 ### Media creating tools kullanmadan indirme
