@@ -18,8 +18,8 @@
     * *...\model*
     * *...\webadmin\model \ `dizin` \ `dosya adı`.php*
 * **Controller** dizinindeki uygun dosyadan model yüklenir.
-  * Modeli yükleme: `$this->load->model('catalog/manufacturer');`
-  * Veriyi modeldan alma: `$[veri adı] = $this->[model]->[get metodu]();`
+  * Modeli yüklenir. Kod örneği için [buraya](#Modeli%20y%C3%BCkleme) tıklayabilirsin.
+  * Veri modelden alınır. Kod örneği için [buraya](#Veriyi%20modelden%20alma) tıklayabilirsin.
   * View'a veriyi gönderme: `$this->data['[name]'];`
   * Dosya ve dizin yolları:
     * *...\webadmin\controller*
@@ -93,7 +93,25 @@ OpenCard form verisine checkbox ekleme yapısı
 
 > `name` Değişken ismi
 
+### MVC Yapısı
+
+> MVC yapısına yönelmek için [buraya](#Model%20View%20Controller%20Yap%C4%B1s%C4%B1) tıklayabilirsin.
+
+#### Modeli yükleme
+
+```php
+$this->load->model('catalog/manufacturer');
+```
+
+#### Veriyi modelden alma
+
+```php
+$[veri adı] = $this->[model]->[get metodu]();
+```
+
 ### Form Kodları
+
+> Form Ekleme alnına yönelmek için [buraya](#Form%20Ekleme) tıklayabilirsin.
 
 #### Entry ekleme
 
