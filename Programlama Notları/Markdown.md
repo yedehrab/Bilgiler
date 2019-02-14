@@ -1,5 +1,7 @@
 # Markdowns
 
+Ek kaynak için [buraya](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) tıklayabilirsin.
+
 ## Kullanım Örnekleri
 
 Detaylar için [buraya](https://guides.github.com/features/mastering-markdown/) tıklayabilirsin.
@@ -29,6 +31,20 @@ Detaylar için [buraya](https://guides.github.com/features/mastering-markdown/) 
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
+### Bağlantı Verme
+
+Link işlemleri için bilgiler. Kaynak için [buraya](https://css-tricks.com/snippets/html/mailto-links/) tıklayabilirsin.
+
+| İstek | Anahtar |
+|---------|----------|
+| Site | <https://...> |
+| Mail | <mailto:...> |
+| Aynı dizinden | ./... |
+| Bir üst dizinden | ../... |
+| Telefon | <tel:> |
+
+> Bağlantı verme işlemlerinde özel karakter kullanmak için kodlama yapmanız gerekmekte. Kodlama yapan online site için [buraya](https://www.urlencoder.org/) tıklaytabilirsin.
+
 ## Ek Notlar
 
 ### Linklerde Özel Karakter Sorunu
@@ -48,3 +64,7 @@ Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Y
 #### Örnek Çıktı
 
 *Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Yapısı) tıklayın.*
+
+## Kaynaklar
+
+* <https://html.com/attributes/a-href/>
