@@ -125,7 +125,7 @@ $this->data['entry_[name]'] = $this->language->get('entry_[name]');
 // special_promotion için örnek kod parçası
 if (isset($this->request->post['[name]'])) {
     $this->data['[name]'] = $this->request->post['[name]'];
-} elseif (!empty($special_promotion)) { 
+} elseif (!empty($special_promotion)) {
     $this->data['[name]'] = $special_promotion['[name]'];
 } else {
     $this->data['[name]'] = 0; // Default value
