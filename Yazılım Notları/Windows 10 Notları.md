@@ -2,6 +2,24 @@
 
 ![win](../images/win.png)
 
+## İndirme
+
+Wİndows 10 son sürümünü indirmek için [buraya](https://www.microsoft.com/tr-tr/software-download/windows10) tıklayabilirsin.
+
+### Media creating tools kullanmadan indirme
+
+Siteye girdiğinizde sırasıyla alttaki ayarları açamınız | seçmeniz gerekmekte:
+
+* Geliştirici Ayarları
+* *Network conditions*
+* *User Agent* başlığı altında
+  * *Select automatically* seçimini kaldırın
+  * *Safari – iPad iOS 9*
+* Sayfayı yenileyin
+
+> Detaaylı bilgi için [buraya](https://pureinfotech.com/download-windows-10-iso-without-media-creation-tool/) tıklayabilirsin.
+
+
 ## Kısayollar
 
 > Bu kısayollar tüm ekranlara baskınkın, her yerde çalışır.
