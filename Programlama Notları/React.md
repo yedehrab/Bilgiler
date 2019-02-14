@@ -10,5 +10,6 @@ Facebook'un çıkarmış olduğu bir web programlama framework'udür.
 ## Faydalı Bağlantılar
 
 * [Dökümantasyon](https://reactjs.org/docs/getting-started.html)
+* [Ana Kavramlar](https://reactjs.org/docs/hello-world.html)
 * [Hosting](https://www.roast.io/for/react)
 * [Online IDE](https://codesandbox.io/s/new)
