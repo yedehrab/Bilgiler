@@ -50,19 +50,23 @@ C:\xampp\htdocs\ecommerce2\catalog\view\asset\style\custom.scss
   > `[Name]` bir değişken ismidir. *Örn: product_info*
 
 * **Model** dizinindeki gerekli veri tabanı metodlarını güncelleme
+  > MySQL üzerindeki verileri sorgular yardımıyla projeye ekleyen yapıdır.
   * `add*`, `edit*` metodlarındaki mySQL sorguları (*Insert, Update*) güncellenir
   * *Örnek Yol: webadmin\model*
   * *Örn: C:\xampp\htdocs\ecommerce2\webadmin\model\sale\special_promotions.php*
 
 * **Controller** dizinindeki Uygun dosyanın `getForm` metodunda entry değişkenlerini ve verileri oluşturma
+  > Veriler $data değişkeni ile *.tpl* uzantılı dosyaya aktarılır.
   * Entry eklenir. Kaynak kodu için [buraya](#Entry%20ekleme) tıklayabilirsin.
   * Veri oluşturma. Kaynak kod için [buraya](#Form%20verisi%20olu%C5%9Fturma) tıklayabilirsin.
   * *Örnek Yol: webadmin\controller*
   * *Örn: C:\xampp\htdocs\ecommerce2\webadmin\controller\sale\special_promotions.php*
 * **Languages** dizinindeki PHP uzantılı dil dosyası üzerinde değişken oluşturulur.
+  > Dillere özgü metinler oluşturmak adına kullanılır.
   * *Örnek Yol: webadmin\language\turkish*
   * *Örn: ecommerce2\webadmin\language\turkish\sale\special_promotions.php*
-* **View template** dizinindeki TPL uzantılı dosya üzerinde görsel düzenleme yapılır.
+* **View template** dizinindeki *.tpl* uzantılı dosya üzerinde görsel düzenleme yapılır.
+  > Front-end kısmıdır.
   * `tr` satırı kopyalanıp, `name` değerleri `entry_[name]` yapısı ile alınır
   * *Örn: ecommerce2\webadmin\view\template\sale\special_promotions_form.tpl*
 
@@ -126,13 +130,13 @@ $this->data['entry_[name]'] = $this->language->get('entry_[name]');
 if (isset($this->request->post['[name]'])) {
     $this->data['[name]'] = $this->request->post['[name]'];
 } elseif (!empty($special_promotion)) {
-    $this->data['[name]'] = $special_promotion['[name]'];
+    $this->data['[name]'] = $[tablo değişkeni]['[name]'];
 } else {
     $this->data['[name]'] = 0; // Default value
 }
 ```
 
-> Veri oluşturulmazsa `TLP` (front-end) kısmında görmez. `$special_promotion` geçici örnektir.
+> Veri oluşturulmazsa `TLP` (front-end) kısmında görmez. Tablo değişkeni için `$special_promotion` veya `$order_info` örnek olabilir.
 
 ### Controller'da view için değişken oluşturma
 
