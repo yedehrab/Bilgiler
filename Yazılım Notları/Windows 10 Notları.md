@@ -66,10 +66,17 @@ Siteye girdiğinizde sırasıyla alttaki ayarları açamınız | seçmeniz gerek
 
 ### CMD Komutları
 
-* `cls` Konsolu temizleme
-* `cd <path>` Dizin değiştirme
-* `mkdir <dirname>` Klasör oluşturma
-* `start <file | folder>` Dosya veya dizin açma
+| Komut | Açıklama |
+|-------|----------|
+| `cls` | Konsolu temizleme |
+| `cd <path>` | Dizin değiştirme |
+| `mkdir <dirname>` | Klasör oluşturma |
+| `start <file | folder>` | Dosya veya dizin açma |
+| `del <switch> <file>` | Dosya silme |
+| `rd <switch> <folder>` | Dizin silme |
+
+* `<switch>` **/?** yazdığınızda çıkan /'li karakterler.
+* `<file | folder>` Dosya ve veya dizin yolu
 
 > Komut kullanımı CMD üzerinden öğrenmek için `<command> /?` yazabilirsin.
 
