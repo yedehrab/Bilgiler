@@ -109,7 +109,7 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 | Link | Açıklama |
 |---------|----------|
 | [Lone Tree](https://chrome.google.com/webstore/detail/lone-tree/gdcbilggakcddojcadnfeckbpoomdmii) | Güzel bir tema |
- 
+
 ### Adress Çubuğu Anahtarları
 
 Adres çubuğuna `chrome://settings/searchEngines` yazaeak gerekli ayarların olduğu kısma girin.
