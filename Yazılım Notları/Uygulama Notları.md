@@ -20,14 +20,16 @@ Sık kullandığım uygulamalar için öneri ayarlarım (bir nevi kendime de yed
 
 ### Faydalı Eklentiler
 
-* `Base16 Tomorrow Dark+` Karanlık tema
-* `Code Runner` Run butonu ekleme
-* `Material Icon Theme` Dosya ikon teması
-* `Visual Studio IntelliCode - Preview` AI ile en sık kullanılan metodları önerir
-  * 2 kez `CTRL` + `SPACE` yaparsanız detaylarını da gösterir
-* `Docker` Docker
-* *Code Snippets* eklentileri
-  * Dil'e özel kısaltmalar
+| Eklenti | Açıklama |
+|---------|----------|
+| `Base16 Tomorrow Dark+` | Karanlık tema |
+| `Code Runner` | Editör üzerinden projeleri derleme & çalıştırma |
+| `Material Icon Theme` | Dosya ikon teması |
+| `Visual Studio IntelliCode - Preview` | AI ile en sık kullanılan metodları önerir. 2 kez `CTRL` + `SPACE` yaparsanız detaylarını da gösterir |
+| `markdownlint` |  |
+| `Path Intellisense` | Dosya yollarını yazarken yardımcı olur |
+| `Docker` | Docker için uyumluluk |
+| *Code Snippets* | Dil'e özel anahtar kelimeler ile kod tamamlama |
 
 ### Editör ayarlarım
 
