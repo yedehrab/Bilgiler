@@ -106,6 +106,10 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 | [Google Çeviri](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb) | Çeviri |
 | [Instagram Veri İndirici](https://chrome.google.com/webstore/detail/batch-media-saver-from-in/plmnmnpijgncjompjiccojbccinacefh) | Instagramdaki verilerini indiren eklenti |
 
+| Link | Açıklama |
+|---------|----------|
+| [Lone Tree](https://chrome.google.com/webstore/detail/lone-tree/gdcbilggakcddojcadnfeckbpoomdmii) | Güzel bir tema |
+ 
 ### Adress Çubuğu Anahtarları
 
 Adres çubuğuna `chrome://settings/searchEngines` yazaeak gerekli ayarların olduğu kısma girin.
@@ -217,3 +221,8 @@ Dillere özgü sözlükleri indirmek için [buraya](https://drive.google.com/ope
 * [Şifre değiştirme](https://stackoverflow.com/a/37959112)
 
 > Sayfa başındaki işaretçilere yönlenmek için [buraya](#Y%C3%B6nlendirme) tıklayabilirsin.
+
+## Ek Notlar
+
+* [Google Sync Verisi Kaldırma](https://www.cnet.com/how-to/how-to-clear-google-chrome-sync-data/) | [Direkt Yönelendirme](https://chrome.google.com/sync)
+* [Windows Sync Verisi Kaldırma](https://www.tenforums.com/tutorials/106159-delete-sync-settings-windows-10-devices-microsoft-account.html) | [Direkt Yönlendirme](https://onedrive.live.com/win8personalsettingsprivacy)
