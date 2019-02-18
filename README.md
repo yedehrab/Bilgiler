@@ -16,7 +16,6 @@
 ## Yazılım Notları
 
 * [Windows 10 Notları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Windows%2010%20Notlar%C4%B1.md)
-* [Uygulama Notları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Uygulama%20Notlar%C4%B1.md)
 * [Karma Notlar](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Karma%20Notlar.md)
 * [ADB Komutları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Adb%20Komutlar%C4%B1.md)
 * [Terimler](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Terimler.md)
@@ -29,6 +28,13 @@
 * [Git Notları](Proje%20Y%C3%B6netimi%20Notlar%C4%B1/Git%20Notlar%C4%B1.md)
 * [Git için Emojiler](Proje%20Y%C3%B6netimi%20Notlar%C4%B1/Git%20i%C3%A7in%20Emojiler.md)
 * [Heroku Notları](Proje%20Y%C3%B6netimi%20Notlar%C4%B1/Heroku%20Notlar%C4%B1.md)
+
+## Uygulama Notları
+
+* [Chrome](Uygulama%20Notlar%C4%B1/Chrome.md)
+* [JetBrains IDE](Uygulama%20Notlar%C4%B1/JetBrains%20IDE.md)
+* [Karma Notlar](Uygulama%20Notlar%C4%B1/Karma%20Notlar.md)
+* [VsCode](Uygulama%20Notlar%C4%B1/VsCode.md)
 
 ## Yapay Zeka Notları
 
