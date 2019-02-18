@@ -21,6 +21,7 @@
 * [ADB Komutları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Adb%20Komutlar%C4%B1.md)
 * [Terimler](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Terimler.md)
 * [Web Programlama](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Web%20Programlama.md)
+* [VsCode](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/#VsCode.md)
 
 ## Proje Yönetimi Notları
 
