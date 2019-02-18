@@ -205,7 +205,6 @@ git checkout [branch]
 
 Eklenen branch'i kaldırmak için uygulanır. Detaylara [buraya](https://koukia.ca/delete-a-local-and-a-remote-git-branch-61df0b10d323) tıklayarak erişebilirsin.
 
-
 #### Yerel branch silme
 
 ```bash
