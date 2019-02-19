@@ -1,40 +1,50 @@
+# ADB Komutları
+
 ## Adb Server
+
 * adb kill-server
-* adb start-server 
+* adb start-server
 
 ## Adb Reboot
+
 * adb reboot
-* adb reboot recovery 
+* adb reboot recovery
 * adb reboot-bootloader
 
 ## Shell
+
 adb shell    > Open or run commands in a terminal on the host Android device.
 
 ## Devices
+
 * adb usb
 * adb devices   >show devices attached
 * adb connect ip_address_of_device
 
 ## Get device android version
+
 adb shell getprop ro.build.version.release 
 
 ## LogCat
+
 * adb logcat
 * adb logcat -c > clear > The parameter -c will clear the current logs on the * device.
 * adb logcat -d > [path_to_file] > Save the logcat output to a file on the local * system.
 * adb bugreport > [path_to_file] > Will dump the whole device information like dumpstate, dumpsys and logcat output.
 
 ## Files
+
 * adb push [source] [destination]    > Copy files from your computer to your phone.
 * adb pull [device file location] [local file location] > Copy files from your phone to your computer.
  
 ## App install
+
 * adb -e install path/to/app.apk
 
-  * -d                        - directs command to the only connected USB device...
-  * -e                        - directs command to the only running emulator...
-  * -s <serial number>        ...
-  * -p <product name or path> ...
+  * `-d`                        - directs command to the only connected USB device...
+  * `-e`                       - directs command to the only running emulator...
+  * `-s <serial number>`        ...
+  * `-p <product name or path>` ...
 
 The flag you decide to use has to come before the actual adb command:
 
