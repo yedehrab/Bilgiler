@@ -214,14 +214,16 @@ foreach ($[veri ismi] as $[veri parçası]) {
 ### Filtre Alanı Ekleme
 
 ```php
-<td>
-    <select name="filter_payment_method">
-        <option value=""></option>
-        <?php foreach ($[payment_methods] as $payment_method) { ?>
-        <option value="<?php echo $payment_method[modeid]; ?>" <?php echo ( ( $filter_payment_method == $payment_method )?('selected'):('') ); ?> > <?php echo $payment_method['name']; ?> </option>
+<?php
+<select name="filter_[names]">
+    <?php foreach ($[names] as $[name]) { ?>
+        <?php if ($[name]['[name_id]'] == $[name_id]) { ?>
+        <option value="<?php echo $[name][[name_id]]; ?>" selected="selected"><?php echo $[name]['name']; ?></option>
+        <?php } else { ?>
+        <option value="<?php echo $[name][[name_id]]; ?>"><?php echo $[name]['name']; ?></option>
         <?php } ?>
-    </select>
-</td>
+    <?php } ?>
+</select>
 ```
 
 ### Filtreleme değişkeni oluşturma
