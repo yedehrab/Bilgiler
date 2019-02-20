@@ -17,12 +17,12 @@ Detaylar için [buraya](https://guides.github.com/features/mastering-markdown/) 
 
 > HTML etiketlerini destekler.
 
-* `CTRL` + `Ü` ve * `CTRL` + `Ğ` İle *.md* uzantılı dosyalarda maddesel hale sokabilirsiniz. ( `Ğ` girinti azaltma, `Ü` gitinti arttırma.)
-* `*[metin]*` Metni italik (eğik) yazma
-* `**[metin]**` Metni bold (kalın) yazma
-* `` karakteri ile metni biçimlendirmeden uzak tutup, özel gösterebilirsin. (`örnek`)
-* `[metin](url)` yapısı ile metne link verebilirsin.
-* `![resim_açıklaması][resim_urli]` yapısı ile yazına resim yerleştirebilirsin.
+- `CTRL` + `Ü` ve - `CTRL` + `Ğ` İle *.md* uzantılı dosyalarda maddesel hale sokabilirsiniz. ( `Ğ` girinti azaltma, `Ü` gitinti arttırma.)
+- `*[metin]*` Metni italik (eğik) yazma
+- `**[metin]**` Metni bold (kalın) yazma
+- `` karakteri ile metni biçimlendirmeden uzak tutup, özel gösterebilirsin. (`örnek`)
+- `[metin](url)` yapısı ile metne link verebilirsin.
+- `![resim_açıklaması][resim_urli]` yapısı ile yazına resim yerleştirebilirsin.
 
 ### Tablo Oluşturma
 
@@ -54,7 +54,7 @@ Link işlemleri için bilgiler. Kaynak için [buraya](https://css-tricks.com/sni
 
 > Bağlantı verme işlemlerinde özel karakter kullanmak için kodlama yapmanız gerekmekte. Kodlama yapan online site için [buraya](https://www.urlencoder.org/) tıklaytabilirsin. Siteye yol verini kopyalayıp *encoded* demeniz yeterli
 
-* `%20` Boşluk karakteri
+- `%20` Boşluk karakteri
 
 #### Kullanım Kodu
 
@@ -68,4 +68,4 @@ Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Y
 
 ## Kaynaklar
 
-* <https://html.com/attributes/a-href/>
+- <https://html.com/attributes/a-href/>
