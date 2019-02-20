@@ -1,5 +1,7 @@
 # Protocol Buffer (Protobuf) <!-- omit in toc -->
 
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
 - [Nedir](#nedir)
 - [JSON Hangi Durumlarda Kullanılmalı](#json-hangi-durumlarda-kullan%C4%B1lmal%C4%B1)
 - [XML yerine neden protobuf kullanılmalı](#xml-yerine-neden-protobuf-kullan%C4%B1lmal%C4%B1)

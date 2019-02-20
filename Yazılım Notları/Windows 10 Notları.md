@@ -1,6 +1,26 @@
-# Windows 10 Notları
+# Windows 10 Notları <!-- omit in toc -->
 
 ![win](../images/win.png)
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [İndirme](#i%CC%87ndirme)
+  - [Media creating tools kullanmadan indirme](#media-creating-tools-kullanmadan-indirme)
+- [Kısayollar](#k%C4%B1sayollar)
+  - [Uygulama İşlemleri](#uygulama-i%CC%87%C5%9Flemleri)
+  - [Gezimti](#gezimti)
+  - [Girdi İşlemleri](#girdi-i%CC%87%C5%9Flemleri)
+  - [Menü Kısayolları](#men%C3%BC-k%C4%B1sayollar%C4%B1)
+- [Command Promp (CMD)](#command-promp-cmd)
+  - [CMD Komutları](#cmd-komutlar%C4%B1)
+  - [CMD Değişkenleri](#cmd-de%C4%9Fi%C5%9Fkenleri)
+    - [Temel Kullanım](#temel-kullan%C4%B1m)
+    - [Sık Kullanılanlar](#s%C4%B1k-kullan%C4%B1lanlar)
+- [Görsellik](#g%C3%B6rsellik)
+  - [Command Promt](#command-promt)
+- [Windows Features](#windows-features)
+  - [Default Windows Features](#default-windows-features)
+- [Ayarlar](#ayarlar)
 
 ## İndirme
 

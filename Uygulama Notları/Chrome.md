@@ -1,4 +1,13 @@
-# Chrome
+# Chrome <!-- omit in toc -->
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [Chrome kısayolları](#chrome-k%C4%B1sayollar%C4%B1)
+  - [Chrome sekme işlemleri](#chrome-sekme-i%C5%9Flemleri)
+  - [Sayfa işlemleri](#sayfa-i%C5%9Flemleri)
+  - [Geliştirici kısayolları](#geli%C5%9Ftirici-k%C4%B1sayollar%C4%B1)
+- [Ektension](#ektension)
+- [Adress Çubuğu Anahtarları](#adress-%C3%A7ubu%C4%9Fu-anahtarlar%C4%B1)
 
 ## Chrome kısayolları
 

@@ -1,4 +1,10 @@
-# Veri Kümeleri
+# Veri Kümeleri <!-- omit in toc -->
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [Linkler](#linkler)
+  - [Resim Veri Kümeleri](#resim-veri-k%C3%BCmeleri)
+- [Referanslar](#referanslar)
 
 Yapay zeka için olmazsa olmaz olan veri kümeleri (dataset) hakkında bilgiler içermektedir.
 

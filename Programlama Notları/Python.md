@@ -1,4 +1,9 @@
-# Python
+# Python <!-- omit in toc -->
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [Anahtar Kelimeler](#anahtar-kelimeler)
+- [Karma Linkler](#karma-linkler)
 
 ## Anahtar Kelimeler
 
@@ -9,4 +14,4 @@
 
 ## Karma Linkler
 
-* [String işlemleri](https://sites.google.com/site/egitimbilgileri/home/a---python---twisted---qt/03---string-islemleri)
+- [String işlemleri](https://sites.google.com/site/egitimbilgileri/home/a---python---twisted---qt/03---string-islemleri)

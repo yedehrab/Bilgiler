@@ -1,4 +1,13 @@
-# VsCode
+# VsCode <!-- omit in toc -->
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [VsCode kısayolları](#vscode-k%C4%B1sayollar%C4%B1)
+- [Faydalı Eklentiler](#faydal%C4%B1-eklentiler)
+- [Editör ayarlarım](#edit%C3%B6r-ayarlar%C4%B1m)
+  - [Görüntü Ayarları](#g%C3%B6r%C3%BCnt%C3%BC-ayarlar%C4%B1)
+  - [Code Runner Ayarları](#code-runner-ayarlar%C4%B1)
+    - [Code runner kısayollar](#code-runner-k%C4%B1sayollar)
 
 ## VsCode kısayolları
 

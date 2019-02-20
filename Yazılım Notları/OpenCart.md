@@ -1,6 +1,24 @@
-# OpenCart
+# OpenCart <!-- omit in toc -->
 
 **PHP** dilini baz alan E-Ticaret uygulamasının sitesine erişmek için  [buraya](https://www.opencart.com/index.php?route=common/home) tıklayabilirsin.
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [Model View Controller Yapısı](#model-view-controller-yap%C4%B1s%C4%B1)
+- [CSS dosyaları](#css-dosyalar%C4%B1)
+- [Ana sayfaya satır ekleme](#ana-sayfaya-sat%C4%B1r-ekleme)
+- [Form Ekleme](#form-ekleme)
+- [Filtreleme](#filtreleme)
+- [Karma Kodlar](#karma-kodlar)
+  - [MySQL Yapısı](#mysql-yap%C4%B1s%C4%B1)
+  - [Checkbox Kullanımı](#checkbox-kullan%C4%B1m%C4%B1)
+  - [MVC Yapısı](#mvc-yap%C4%B1s%C4%B1)
+    - [Modeli yükleme](#modeli-y%C3%BCkleme)
+    - [Veriyi modelden alma](#veriyi-modelden-alma)
+    - [Veriyi view'a gönderme](#veriyi-viewa-g%C3%B6nderme)
+  - [Form Kodları](#form-kodlar%C4%B1)
+    - [Entry ekleme](#entry-ekleme)
+    - [Form verisi oluşturma](#form-verisi-olu%C5%9Fturma)
 
 ## Model View Controller Yapısı
 

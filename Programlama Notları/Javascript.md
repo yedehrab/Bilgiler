@@ -1,24 +1,44 @@
-# Javascript
+# Javascript <!-- omit in toc -->
 
 Javascript DOM komutlarını özetleyen bir derlemedir.
 
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [İndeksleme](#i%CC%87ndeksleme)
+- [Temel Bilgiler](#temel-bilgiler)
+- [DOM Bilgileri](#dom-bilgileri)
+  - [Dosya İndirme İşlemleri](#dosya-i%CC%87ndirme-i%CC%87%C5%9Flemleri)
+    - [URI ile dosya indirme](#uri-ile-dosya-indirme)
+    - [Çoklu URL ile indirme](#%C3%A7oklu-url-ile-indirme)
+    - [JSON olarak indirme](#json-olarak-indirme)
+    - [Ek Notlar](#ek-notlar)
+  - [HTML Elemanı Alma](#html-eleman%C4%B1-alma)
+  - [HTML elemanının alt elemanlarını alma](#html-eleman%C4%B1n%C4%B1n-alt-elemanlar%C4%B1n%C4%B1-alma)
+  - [HTMLCollection'u array'e dönüştürmek](#htmlcollectionu-arraye-d%C3%B6n%C3%BC%C5%9Ft%C3%BCrmek)
+  - [HTML Attribute Alma](#html-attribute-alma)
+  - [HTML Elemanının Konumunu Alma](#html-eleman%C4%B1n%C4%B1n-konumunu-alma)
+  - [Sayfa İşlemleri](#sayfa-i%CC%87%C5%9Flemleri)
+  - [Zamanlayıcı](#zamanlay%C4%B1c%C4%B1)
+- [Karma Linkler](#karma-linkler)
+
 ## İndeksleme
 
-* [Temel Bilgiler](#Temel%20Bilgiler)
-* [DOM Bilgileri](#DOM%20Bilgileri)
-  * [Dosya İndirme İşlemleri](#Dosya%20%C4%B0ndirme%20%C4%B0%C5%9Flemleri)
-    * [URI ile indirme](#URI%20ile%20dosya%20indirme)
-    * [Çoklu URL ile indirme](#%C3%87oklu%20URL%20ile%20indirme)
-    * [JSON olarak indirme](#JSON%20olarak%20indirme)
-    * [Ek Notlar](#Ek%20Notlar)
-  * [HTML Elemanı Alma](#HTML%20Eleman%C4%B1%20Alma)
-    * [HTMLCollection'u array'e dönüştürmek](#HTMLCollection%27u%20array%27e%20d%C3%B6n%C3%BC%C5%9Ft%C3%BCrmek)
-    * [HTML Attribute Alma](#HTML%20Attribute%20Alma)
-    * [HTML elemanının alt elemanlarını alma](#HTML%20eleman%C4%B1n%C4%B1n%20alt%20elemanlar%C4%B1n%C4%B1%20alma)
-    * [HTML Elemanının Konumunu Alma](#HTML%20Eleman%C4%B1n%C4%B1n%20Konumunu%20Alma)
-  * [Sayfa İşlemleri](#Sayfa%20%C4%B0%C5%9Flemleri)
-  * [Zamanlayıcı](#Zamanlay%C4%B1c%C4%B1)
-* [Karma Linkler](#Karma%20Linkler)
+- [İndeksleme](#i%CC%87ndeksleme)
+- [Temel Bilgiler](#temel-bilgiler)
+- [DOM Bilgileri](#dom-bilgileri)
+  - [Dosya İndirme İşlemleri](#dosya-i%CC%87ndirme-i%CC%87%C5%9Flemleri)
+    - [URI ile dosya indirme](#uri-ile-dosya-indirme)
+    - [Çoklu URL ile indirme](#%C3%A7oklu-url-ile-indirme)
+    - [JSON olarak indirme](#json-olarak-indirme)
+    - [Ek Notlar](#ek-notlar)
+  - [HTML Elemanı Alma](#html-eleman%C4%B1-alma)
+  - [HTML elemanının alt elemanlarını alma](#html-eleman%C4%B1n%C4%B1n-alt-elemanlar%C4%B1n%C4%B1-alma)
+  - [HTMLCollection'u array'e dönüştürmek](#htmlcollectionu-arraye-d%C3%B6n%C3%BC%C5%9Ft%C3%BCrmek)
+  - [HTML Attribute Alma](#html-attribute-alma)
+  - [HTML Elemanının Konumunu Alma](#html-eleman%C4%B1n%C4%B1n-konumunu-alma)
+  - [Sayfa İşlemleri](#sayfa-i%CC%87%C5%9Flemleri)
+  - [Zamanlayıcı](#zamanlay%C4%B1c%C4%B1)
+- [Karma Linkler](#karma-linkler)
 
 ## Temel Bilgiler
 

@@ -1,6 +1,26 @@
-# MySQL
+# MySQL <!-- omit in toc -->
 
 MySQL workbench üzerinden SQL editörünü kullanabilirsin.
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [Veri tipleri](#veri-tipleri)
+- [Where Operatörleri](#where-operat%C3%B6rleri)
+- [Tablo İşlemleri](#tablo-i%CC%87%C5%9Flemleri)
+  - [Tablo işlemleri karma Notlar](#tablo-i%C5%9Flemleri-karma-notlar)
+- [Temel Fonksiyonlar](#temel-fonksiyonlar)
+- [Gruplama](#gruplama)
+- [Stored Function](#stored-function)
+- [Debug Bilgileri](#debug-bilgileri)
+  - [Join](#join)
+  - [Explain](#explain)
+- [Optimizasyon](#optimizasyon)
+  - [Ek Kaynaklar](#ek-kaynaklar)
+- [Karma Notlar](#karma-notlar)
+- [Örnekler](#%C3%B6rnekler)
+  - [Değişkenler](#de%C4%9Fi%C5%9Fkenler)
+  - [Temel Fonksiyon Örnekleri](#temel-fonksiyon-%C3%B6rnekleri)
+  - [Karma MySQL sorgusu örnekleri](#karma-mysql-sorgusu-%C3%B6rnekleri)
 
 ## Veri tipleri
 
@@ -18,11 +38,11 @@ Detaylar için [buraya](https://www.tutorialspoint.com/sql/sql-operators.htm) t�
 
 ## Tablo İşlemleri
 
-* [Ekleme](http://www.mysqltutorial.org/mysql-add-column/)
+-[Ekleme](http://www.mysqltutorial.org/mysql-add-column/)
 
-### Karma Notlar
+### Tablo işlemleri karma Notlar
 
-* [Var olan tabloya varsayılan değerli bir sütun ekleme](https://stackoverflow.com/a/92123)
+-[Var olan tabloya varsayılan değerli bir sütun ekleme](https://stackoverflow.com/a/92123)
 
 ## Temel Fonksiyonlar
 
@@ -43,8 +63,8 @@ Detaylar için [buraya](https://www.tutorialspoint.com/sql/sql-operators.htm) t�
 
 `GROUP BY` ile yapılır.
 
-* Tekrarlı verileri göstermez.
-* `DISTINCT` anahtar kelimesini kullanmaya gerek kalmaz.
+- Tekrarlı verileri göstermez.
+- `DISTINCT` anahtar kelimesini kullanmaya gerek kalmaz.
 
 > Gruplama yapılmazsa tek sorgu ekrana basılır.
 
@@ -75,22 +95,22 @@ FROM
 
 ---
 
-* `DROP FUNCTION IF EXIST` Fonksiyon daha önceden var ise kaldırır.
-* `CREATE FUNCTION` Fonksiyon oluşturma
-* `RETURNS` Fonksiyonun değer döndürmesi
-* `BEGIN` Fonksiyon başlangıcı
-* `DECLARE` Fonksiyona özgü değişken tanımlama alanı
-* `END` Fonksiyon sonu
+- `DROP FUNCTION IF EXIST` Fonksiyon daha önceden var ise kaldırır.
+- `CREATE FUNCTION` Fonksiyon oluşturma
+- `RETURNS` Fonksiyonun değer döndürmesi
+- `BEGIN` Fonksiyon başlangıcı
+- `DECLARE` Fonksiyona özgü değişken tanımlama alanı
+- `END` Fonksiyon sonu
 
 ---
 
-* **[FunctionName]**: *Fonksiyonun ismi, örn: GetProductName*
-* **[ParamName]**: *Parametre ismi, örn: name*
-* **[ParamType]**: *Int, Varchar, Float ...*
-* **[ReturnType]**: *Fonksiyonun döndüreceği sütunun özelliği, Örn: Varchar(64), int(11), double*
-* **Deterministic**: *Aynı girdiler için her zaman aynı değeri üretir.*
-* **[select_query]**: *Örn: SELECT * from table;*
-  * ***[ReturnType]** ile aynı olmak zorundadır.*
+-**[FunctionName]**: *Fonksiyonun ismi, örn: GetProductName*
+-**[ParamName]**: *Parametre ismi, örn: name*
+-**[ParamType]**: *Int, Varchar, Float ...*
+-**[ReturnType]**: *Fonksiyonun döndüreceği sütunun özelliği, Örn: Varchar(64), int(11), double*
+-**Deterministic**: *Aynı girdiler için her zaman aynı değeri üretir.*
+-**[select_query]**: *Örn: SELECT * from table;*
+  -***[ReturnType]** ile aynı olmak zorundadır.*
 
 ## Debug Bilgileri
 
@@ -100,7 +120,7 @@ FROM
 
 `INNER JOIN` hataları test etmek için `LEFT JOIN` kullanılır. Bu hatalar:
 
-* Boş veri döndürmesi
+-Boş veri döndürmesi
 
 olabilir.
 
@@ -119,10 +139,10 @@ explain SELECT * from table;
 
 Optimizasyon sorgunun hızlı sonuç vermesi için gereklidir. Optimizasyon işlemleri için:
 
-* Indexleme
-* Key ile birleştirme (inner join)
-* Ek fonksiyonları kaldırma
-* `explain` anahtar kelimesi ile sorgu detaylarına bakma
+-Indexleme
+-Key ile birleştirme (inner join)
+-Ek fonksiyonları kaldırma
+-`explain` anahtar kelimesi ile sorgu detaylarına bakma
 
 gibi işlemlere başvurulur.
 
@@ -132,16 +152,16 @@ gibi işlemlere başvurulur.
 
 Optimizasyon hakkında detaylı bilgi için [buraya](https://www.sitepoint.com/optimize-mysql-indexes-slow-queries-configuration/) tıklayabilirsiniz.
 
-* [MySQL'de sorguların hızlı çalışması için ne yapılmalıdır?](https://uzmanim.net/soru/mysql-de-sorgularin-hizli-calismasi-icin-ne-yapilabilir/790)
-* [Indexleme neden yapılır?](https://www.sinanbozkus.com/veritabanlarinda-indexleme-mantigi/#more-78)
+-[MySQL'de sorguların hızlı çalışması için ne yapılmalıdır?](https://uzmanim.net/soru/mysql-de-sorgularin-hizli-calismasi-icin-ne-yapilabilir/790)
+-[Indexleme neden yapılır?](https://www.sinanbozkus.com/veritabanlarinda-indexleme-mantigi/#more-78)
 
 ## Karma Notlar
 
-* [Getting Last Record](https://dzone.com/articles/get-last-record-in-each-mysql-group)
-* [Select içinde if kullanma](https://stackoverflow.com/a/63480)
-* [Koşullu Sayma](https://stackoverflow.com/a/9798978)
-* [En yüksek değer sahip satırı alma](https://stackoverflow.com/a/11913444)
-* [Sadece en yüksek değere eşit olan satırları alma](https://stackoverflow.com/a/7745635) <- Optimize Edilmiş
+-[Getting Last Record](https://dzone.com/articles/get-last-record-in-each-mysql-group)
+-[Select içinde if kullanma](https://stackoverflow.com/a/63480)
+-[Koşullu Sayma](https://stackoverflow.com/a/9798978)
+-[En yüksek değer sahip satırı alma](https://stackoverflow.com/a/11913444)
+-[Sadece en yüksek değere eşit olan satırları alma](https://stackoverflow.com/a/7745635) <- Optimize Edilmiş
 
 ## Örnekler
 

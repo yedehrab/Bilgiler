@@ -1,6 +1,14 @@
-# Yapay Zeka Notları
+# Yapay Zeka Notları <!-- omit in toc -->
 
 Python ile derin öğrenme notlarımı bu alanda derleyeceğim.
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [Derin Öğrenme Notları](#derin-%C3%B6%C4%9Frenme-notlar%C4%B1)
+  - [Aktivasyon Fonksiyonları](#aktivasyon-fonksiyonlar%C4%B1)
+  - [Aktivasyon Fonksiyonlarının Özellikleri](#aktivasyon-fonksiyonlar%C4%B1n%C4%B1n-%C3%B6zellikleri)
+- [Kaynaklar](#kaynaklar)
+  - [Derin Öğrenme Kaynakları](#derin-%C3%B6%C4%9Frenme-kaynaklar%C4%B1)
 
 ## Derin Öğrenme Notları
 

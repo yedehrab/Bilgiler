@@ -1,6 +1,14 @@
-# Youtube
+# Youtube <!-- omit in toc -->
 
 Youtube üzerinde faydalı bulduğum linkler
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [Programlama](#programlama)
+- [Zihin Açıcı](#zihin-a%C3%A7%C4%B1c%C4%B1)
+- [Matematik](#matematik)
+- [Verimlilik](#verimlilik)
+- [Yapılacaklar](#yap%C4%B1lacaklar)
 
 ## Programlama
 

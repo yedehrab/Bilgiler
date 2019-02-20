@@ -1,5 +1,7 @@
 # GittiGidiyor Entegrasyon <!-- omit in toc -->
 
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
 - [API İşlemleri](#api-i%CC%87%C5%9Flemleri)
   - [Diller](#diller)
 

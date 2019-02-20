@@ -1,6 +1,15 @@
-# Markdowns
+# Markdowns <!-- omit in toc -->
 
 Ek kaynak için [buraya](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) tıklayabilirsin.
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [Kullanım Örnekleri](#kullan%C4%B1m-%C3%B6rnekleri)
+  - [Tablo Oluşturma](#tablo-olu%C5%9Fturma)
+  - [Bağlantı Verme](#ba%C4%9Flant%C4%B1-verme)
+    - [Kullanım Kodu](#kullan%C4%B1m-kodu)
+    - [Örnek Çıktı](#%C3%B6rnek-%C3%A7%C4%B1kt%C4%B1)
+- [Kaynaklar](#kaynaklar)
 
 ## Kullanım Örnekleri
 

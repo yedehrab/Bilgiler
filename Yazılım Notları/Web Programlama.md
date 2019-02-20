@@ -1,8 +1,11 @@
-# Web Programlama
+# Web Programlama <!-- omit in toc -->
 
-* [Merkeze Konumlandırma](#Merkeze%20konumland%C4%B1rma)
-* [VsCode Eklentileri](#VsCode%20Eklentileri)
-* [Karma Linkler](#Karma%20Linkler)
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [Merkeze konumlandırma](#merkeze-konumland%C4%B1rma)
+- [VsCode Eklentileri](#vscode-eklentileri)
+  - [Code runner ek ayarı](#code-runner-ek-ayar%C4%B1)
+- [Karma Linkler](#karma-linkler)
 
 ## Merkeze konumlandırma
 
