@@ -10,7 +10,7 @@
   - [Veriyi view'a gönderme](#veriyi-viewa-g%C3%B6nderme)
 - [CSS dosyaları](#css-dosyalar%C4%B1)
 - [Ana sayfaya satır ekleme](#ana-sayfaya-sat%C4%B1r-ekleme)
-- [Form Ekleme](#form-ekleme)
+- [Form / List Ekleme](#form--list-ekleme)
   - [Form için entry ekleme](#form-i%C3%A7in-entry-ekleme)
   - [Form verisi oluşturma](#form-verisi-olu%C5%9Fturma)
 - [Filtreleme](#filtreleme)
@@ -21,9 +21,10 @@
   - [Filtreleme Sorgusu](#filtreleme-sorgusu)
   - [Filtreleme filter() metodu](#filtreleme-filter-metodu)
 - [Karma Kodlar](#karma-kodlar)
-  - [MySQL Yapısı](#mysql-yap%C4%B1s%C4%B1)
-  - [Checkbox Kullanımı](#checkbox-kullan%C4%B1m%C4%B1)
-  - [Controller'da view için değişken oluşturma](#controllerda-view-i%C3%A7in-de%C4%9Fi%C5%9Fken-olu%C5%9Fturma)
+  - [MySQL Kodları](#mysql-kodlar%C4%B1)
+  - [Checkbox kodu](#checkbox-kodu)
+  - [Controller'da view için değişken oluşturma kodu](#controllerda-view-i%C3%A7in-de%C4%9Fi%C5%9Fken-olu%C5%9Fturma-kodu)
+  - [Selection box kodu](#selection-box-kodu)
 
 ## Model View Controller Yapısı
 
@@ -75,7 +76,8 @@ $this->data['[name]'];
 
 ## CSS dosyaları
 
-C:\xampp\htdocs\ecommerce2\catalog\view\asset\style\custom.scss
+- Örnek dizin: `...\catalog\view\asset\style\`
+- Tam dizin: `C:\xampp\htdocs\ecommerce2\catalog\view\asset\style\custom.scss`
 
 ## Ana sayfaya satır ekleme
 
@@ -84,7 +86,7 @@ C:\xampp\htdocs\ecommerce2\catalog\view\asset\style\custom.scss
 - View için değişken oluşturma. Kaynak kod örneği için [buraya](#Controller%27da%20view%20i%C3%A7in%20de%C4%9Fi%C5%9Fken%20olu%C5%9Fturma) tıklayabilirsin.
   - View kısmında  `$[veri ismi]` olarak kullanabilirsin.
 
-## Form Ekleme
+## Form / List Ekleme
 
 - Veri tabanında `[name]` adı verilen sütun oluşturulur.
   - MySQL sorgu örneği için [buraya](#MySQL%20Yapısı) tıklayın.
@@ -97,9 +99,9 @@ C:\xampp\htdocs\ecommerce2\catalog\view\asset\style\custom.scss
   - *Örnek Yol: webadmin\model*
   - *Örn: C:\xampp\htdocs\ecommerce2\webadmin\model\sale\special_promotions.php*
 
-- **Controller** dizinindeki Uygun dosyanın `getForm` metodunda entry değişkenlerini ve verileri oluşturma
+- **Controller** dizinindeki Uygun dosyanın `getForm` / `getList` metodunda entry değişkenlerini ve verileri oluşturma
   > Veriler $data değişkeni ile *.tpl* uzantılı dosyaya aktarılır.
-  - Entry eklenir. Kaynak kodu için [buraya](#Entry%20ekleme) tıklayabilirsin.
+  - Entry eklenir. Kaynak kodu için [buraya](#Form%20i%C3%A7in%20entry%20ekleme) tıklayabilirsin.
   - Veri oluşturma. Kaynak kod için [buraya](#Form%20verisi%20olu%C5%9Fturma) tıklayabilirsin.
   - *Örnek Yol: webadmin\controller*
   - *Örn: C:\xampp\htdocs\ecommerce2\webadmin\controller\sale\special_promotions.php*
@@ -256,17 +258,24 @@ if (filter_[name]) {
 
 ## Karma Kodlar
 
-### MySQL Yapısı
+### MySQL Kodları
 
 ```SQL
-ALTER TABLE [Tablo] ADD COLUMN [Sütun] [Değişken Tipi] DEFAULT [Varsayılan Değeri] AFTER [Önceki Sütun];
-ALTER TABLE [Tablo] DROP COLUMN [Sütun];
-
 SELECT [ID], [Sütun] FROM [Tablo] WHERE [ID] = [Sayı];
 UPDATE [Tablo] SET [Sütun] = [Değişken Tipine Uygun Değer] WHERE [ID] = [Sayı];
+INSERT INTO [Tablo] VALUES ([Sütun1 Değeri], [Sütun2 Değeri]);
+
+CREATE TABLE IF NOT EXISTS [Tablo] (
+    [ID Sütunu] [Değişken Tipi] DEFAULT [Varsayılan Değer] PRIMARY KEY,
+    [Sütun] [Değişken Tipi]
+);
+
+ALTER TABLE [Tablo] ADD COLUMN [Sütun] [Değişken Tipi] DEFAULT [Varsayılan Değeri] AFTER [Önceki Sütun];
+ALTER TABLE [Tablo] DROP COLUMN [Sütun];
+ALTER TABLE `cookplus_order` ADD COLUMN `cancel_status_id` int(1) DEFAULT '0';
 ```
 
-### Checkbox Kullanımı
+### Checkbox kodu
 
 OpenCard form verisine checkbox ekleme yapısı
 
@@ -281,7 +290,7 @@ OpenCard form verisine checkbox ekleme yapısı
 
 > `name` Değişken ismi
 
-### Controller'da view için değişken oluşturma
+### Controller'da view için değişken oluşturma kodu
 
 ```php
 $[veri ismi] = $this->model_catalog_manufacturer->getManufacturers();
@@ -294,3 +303,17 @@ foreach ($[veri ismi] as $[veri parçası]) {
 }
 ```
 
+### Selection box kodu
+
+```php
+<?php
+<select name="filter_[names]">
+    <?php foreach ($[names] as $[name]) { ?>
+        <?php if ($[name]['[name_id]'] == $[name_id]) { ?>
+        <option value="<?php echo $[name][[name_id]]; ?>" selected="selected"><?php echo $[name]['name']; ?></option>
+        <?php } else { ?>
+        <option value="<?php echo $[name][[name_id]]; ?>"><?php echo $[name]['name']; ?></option>
+        <?php } ?>
+    <?php } ?>
+</select>
+```
