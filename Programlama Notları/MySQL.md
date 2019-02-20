@@ -17,8 +17,12 @@ MySQL workbench üzerinden SQL editörünü kullanabilirsin.
 - [Optimizasyon](#optimizasyon)
   - [Ek Kaynaklar](#ek-kaynaklar)
 - [Karma Notlar](#karma-notlar)
+  - [MySQL yapılandırma dosyası](#mysql-yap%C4%B1land%C4%B1rma-dosyas%C4%B1)
 - [Örnekler](#%C3%B6rnekler)
-  - [Değişkenler](#de%C4%9Fi%C5%9Fkenler)
+  - [Temel örnekler](#temel-%C3%B6rnekler)
+  - [Tablo işlemleri](#tablo-i%C5%9Flemleri)
+    - [Tablo Oluşturma](#tablo-olu%C5%9Fturma)
+    - [Tablo değiştirme](#tablo-de%C4%9Fi%C5%9Ftirme)
   - [Temel Fonksiyon Örnekleri](#temel-fonksiyon-%C3%B6rnekleri)
   - [Karma MySQL sorgusu örnekleri](#karma-mysql-sorgusu-%C3%B6rnekleri)
 
@@ -157,17 +161,48 @@ Optimizasyon hakkında detaylı bilgi için [buraya](https://www.sitepoint.com/o
 
 ## Karma Notlar
 
--[Getting Last Record](https://dzone.com/articles/get-last-record-in-each-mysql-group)
--[Select içinde if kullanma](https://stackoverflow.com/a/63480)
--[Koşullu Sayma](https://stackoverflow.com/a/9798978)
--[En yüksek değer sahip satırı alma](https://stackoverflow.com/a/11913444)
--[Sadece en yüksek değere eşit olan satırları alma](https://stackoverflow.com/a/7745635) <- Optimize Edilmiş
+- [Getting Last Record](https://dzone.com/articles/get-last-record-in-each-mysql-group)
+- [Select içinde if kullanma](https://stackoverflow.com/a/63480)
+- [Koşullu Sayma](https://stackoverflow.com/a/9798978)
+- [En yüksek değer sahip satırı alma](https://stackoverflow.com/a/11913444)
+- [Sadece en yüksek değere eşit olan satırları alma](https://stackoverflow.com/a/7745635) <- Optimize Edilmiş
+
+### MySQL yapılandırma dosyası
+
+Yapılandırma dosyası olan `my.ini` dosyasını bulmak için:
+
+- `CTRL` + `R` ile çalıştır uygulamasını açın
+- `services.msc` yazıp `ENTER`'a basın
+- Servis ekranında MySQL servisini bulup çift tıklayın
+- `Genel` sekmesi altında `Path to Executable` kısmında `ini` ile biten yol
+- Örnek Yol: *C:\ProgramData\MySQL\MySQL Server 8.0\my.ini*
 
 ## Örnekler
 
-### Değişkenler
+### Temel örnekler
 
 ```sql
+SELECT [ID], [Sütun] FROM [Tablo] WHERE [ID] = [Sayı];
+UPDATE [Tablo] SET [Sütun] = [Değişken Tipine Uygun Değer] WHERE [ID] = [Sayı];
+INSERT INTO [Tablo] VALUES ([Sütun1 Değeri], [Sütun2 Değeri]);
+```
+
+### Tablo işlemleri
+
+#### Tablo Oluşturma
+
+```sql
+CREATE TABLE IF NOT EXISTS [Tablo] (
+    [ID Sütunu] [Değişken Tipi] DEFAULT [Varsayılan Değer] PRIMARY KEY,
+    [Sütun] [Değişken Tipi]
+);
+```
+
+#### Tablo değiştirme
+
+```sql
+ALTER TABLE [Tablo] ADD COLUMN [Sütun] [Değişken Tipi] DEFAULT [Varsayılan Değeri] AFTER [Önceki Sütun];
+ALTER TABLE [Tablo] DROP COLUMN [Sütun];
 ALTER TABLE [tablo ismi] ADD COLUMN [sütun ismi] BIT DEFAULT 0; -- veya False
 ALTER TABLE [tablo ismi] ADD COLUMN [sütun ismi] INT(1) DEFAULT 1;
 ALTER TABLE [tablo ismi] ADD COLUMN [sütun ismi] ENUM('0', '1') DEFAULT '0';
@@ -194,6 +229,5 @@ SELECT COUNT(if(`crr`.`return_reason_id` = 14, `crr`.`return_reason_id`, null)) 
 ```
 
 > Koşul sağlanırsa sayar.
-
 
 ![mysql-ex1](/images/mysql-ex-1.jpg)
