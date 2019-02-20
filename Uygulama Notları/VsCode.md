@@ -6,8 +6,10 @@
 - [Faydalı Eklentiler](#faydal%C4%B1-eklentiler)
   - [Verimlilik eklentileri](#verimlilik-eklentileri)
   - [Verimli Kodlama](#verimli-kodlama)
-  - [Farkındalık](#fark%C4%B1ndal%C4%B1k)
+  - [Farkındalık eklentileri](#fark%C4%B1ndal%C4%B1k-eklentileri)
   - [Görsellik eklentileri](#g%C3%B6rsellik-eklentileri)
+  - [Web programlama eklentileri](#web-programlama-eklentileri)
+  - [Yapılandırma eklentileri](#yap%C4%B1land%C4%B1rma-eklentileri)
 - [Editör ayarlarım](#edit%C3%B6r-ayarlar%C4%B1m)
   - [Görüntü Ayarları](#g%C3%B6r%C3%BCnt%C3%BC-ayarlar%C4%B1)
   - [Code Runner Ayarları](#code-runner-ayarlar%C4%B1)
@@ -29,6 +31,7 @@
 | Eklenti                                                                                                                           | Açıklama                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)                                   | Anlık olarak kod paylaşma                                                                            |
+| [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) | Proje kısayolları, sık kullanılanlar vs. |
 | [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)                             | Markdown için gerekli tüm içeriklere, kısayollara ve formatlayıcıya sahip                            |
 | [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | AI ile en sık kullanılan metodları önerir. 2 kez `CTRL` + `SPACE` yaparsanız detaylarını da gösterir |
 | [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)                                | Markdown hatalarının altını çizme ve uyarma                                                          |
@@ -37,7 +40,11 @@
 | [vscode-spotify](https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify)                                 | Spotify ile müzik desteği                                                                            |
 | [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)                           | Chrome için hata ayıklama özelliği                                                                   |
 | [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)                                         | Docker için uyumluluk                                                                                |
-| [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | Git yönetimi arayüzü |
+| [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)                                | Git yönetimi arayüzü                                                                                 |
+| [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)                                     | JSON'ı koda uyarlama                                                                                 |
+| [jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint)                                                     | Javascript imla kontrolcüsü                                                                          |
+| [Visual Studio Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings)                              | Kısayollar üzerine bir eklenti                                                                       |
+| [Open File](https://marketplace.visualstudio.com/items?itemName=Fr43nk.seito-openfile)                                            | Yolu verilen dosyayı vscode içinde açma                                                              |
 | *Code Snippets*                                                                                                                   | Dil'e özel anahtar kelimeler ile kod tamamlama                                                       |
 
 ### Verimli Kodlama
@@ -48,7 +55,7 @@
 | [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | İmla kontrolü                   |
 | [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)         | Kod formatlama ve güzelleştirme |
 
-### Farkındalık
+### Farkındalık eklentileri
 
 | Eklenti                                                                                  | Açıklama                             |
 | ---------------------------------------------------------------------------------------- | ------------------------------------ |
@@ -56,12 +63,28 @@
 
 ### Görsellik eklentileri
 
-| Eklenti                                                                                                           | Açıklama          |
-| ----------------------------------------------------------------------------------------------------------------- | ----------------- |
-| [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark) | En sık kullanılan karanlık tema |
-| [Base16 Tomorrow Dark+](https://marketplace.visualstudio.com/items?itemName=Shurelia.base16-tomorrow-dark-vscode) | Karanlık tema     |
-| [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)              | Dosya ikon teması |
-| [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)               | Karanlık bir tema |
+| Eklenti                                                                                                           | Açıklama                        |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)            | En sık kullanılan karanlık tema |
+| [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)              | Popüler tema seti               |
+| [Base16 Tomorrow Dark+](https://marketplace.visualstudio.com/items?itemName=Shurelia.base16-tomorrow-dark-vscode) | Karanlık tema                   |
+| [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)              | Dosya ikon teması               |
+| [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)               | Karanlık bir tema               |
+
+### Web programlama eklentileri
+
+| Eklenti                                                                                                                         | Açıklama                                     |
+| ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion) | CSS classlarını önerme                       |
+| [Icon Fonts](https://marketplace.visualstudio.com/items?itemName=idleberg.icon-fonts)                                           | İkon kısayolları sağlar                      |
+| [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)                                            | Postman gibi istemci istekleri arayüzü sunar |
+
+
+### Yapılandırma eklentileri
+
+| Eklenti                                                                                                   | Açıklama |
+| --------------------------------------------------------------------------------------------------------- | -------- |
+| [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) |          |
 
 ## Editör ayarlarım
 
