@@ -1,8 +1,41 @@
-# Git Notları
+# Git Notları <!-- omit in toc -->
 
 İstersen [buraya](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) tıklayarak GitLab'ın hazırladığı özet bilgiye erişebilirsin.
 
-> Sayfanın en altındaki özet git komutlarına bakmak için [buraya](#git-cheat-sheet) tıklayabilirsin. (*Git Cheat Sheet*)
+- [Git İşleme Yapısı](#git-i%CC%87%C5%9Fleme-yap%C4%B1s%C4%B1)
+- [Git'in Kullanıldığı Siteler](#gitin-kullan%C4%B1ld%C4%B1%C4%9F%C4%B1-siteler)
+- [Git Kimlik Bilgileri](#git-kimlik-bilgileri)
+  - [Git Kimlik Bilgilerini Ayarlama](#git-kimlik-bilgilerini-ayarlama)
+  - [Git Kimlik Bilgilerini Sıfırlama](#git-kimlik-bilgilerini-s%C4%B1f%C4%B1rlama)
+- [Git Deposunu Oluşturma & Güncelleme](#git-deposunu-olu%C5%9Fturma--g%C3%BCncelleme)
+  - [Git Deposunu Güncelleme](#git-deposunu-g%C3%BCncelleme)
+  - [Yeni repository oluşturma](#yeni-repository-olu%C5%9Fturma)
+  - [Yerel repo klonlama](#yerel-repo-klonlama)
+  - [Belli branch'i klonlama](#belli-branchi-klonlama)
+  - [Uzak repo klonlama](#uzak-repo-klonlama)
+  - [Proje dosyalarımızın depoya eklenmesi](#proje-dosyalar%C4%B1m%C4%B1z%C4%B1n-depoya-eklenmesi)
+  - [Teslim etme hazırlığı ve yorum ekleme](#teslim-etme-haz%C4%B1rl%C4%B1%C4%9F%C4%B1-ve-yorum-ekleme)
+  - [Teslim edilecek URL'i belirleme](#teslim-edilecek-urli-belirleme)
+  - [Birden fazla teslim URL'i belirleme](#birden-fazla-teslim-urli-belirleme)
+    - [Teslim URL'i ekleme](#teslim-urli-ekleme)
+    - [Teslim URL'i kaldırma](#teslim-urli-kald%C4%B1rma)
+    - [Teslim URL'lerini kontrol etme](#teslim-urllerini-kontrol-etme)
+    - [Örnek Çıktı](#%C3%B6rnek-%C3%A7%C4%B1kt%C4%B1)
+  - [Teslim Etme](#teslim-etme)
+- [Branch İşlemleri](#branch-i%CC%87%C5%9Flemleri)
+- [Branch (Dal) Oluşturma](#branch-dal-olu%C5%9Fturma)
+  - [Branch (Dal) Değiştirme](#branch-dal-de%C4%9Fi%C5%9Ftirme)
+  - [Branch (Dal) Kaldırma](#branch-dal-kald%C4%B1rma)
+    - [Yerel branch silme](#yerel-branch-silme)
+    - [Uzaktaki (remote) branch'ı silme](#uzaktaki-remote-branch%C4%B1-silme)
+- [Faydalı git komutları](#faydal%C4%B1-git-komutlar%C4%B1)
+- [Git Üzerinde Kullanıcı Bilgilerini Saklama](#git-%C3%BCzerinde-kullan%C4%B1c%C4%B1-bilgilerini-saklama)
+  - [Remote Kaldırma & Gösterme](#remote-kald%C4%B1rma--g%C3%B6sterme)
+  - [Son hatalı yüklemeyi kaldırma](#son-hatal%C4%B1-y%C3%BCklemeyi-kald%C4%B1rma)
+- [Uygulamalar Üzerinde Git](#uygulamalar-%C3%BCzerinde-git)
+  - [JetBrains IDEs](#jetbrains-ides)
+- [Kaynaklar](#kaynaklar)
+- [Git Cheat Sheet](#git-cheat-sheet)
 
 ## Git İşleme Yapısı
 
