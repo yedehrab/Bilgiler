@@ -5,20 +5,25 @@
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
 - [Model View Controller Yapısı](#model-view-controller-yap%C4%B1s%C4%B1)
+  - [Modeli yükleme](#modeli-y%C3%BCkleme)
+  - [Veriyi modelden alma](#veriyi-modelden-alma)
+  - [Veriyi view'a gönderme](#veriyi-viewa-g%C3%B6nderme)
 - [CSS dosyaları](#css-dosyalar%C4%B1)
 - [Ana sayfaya satır ekleme](#ana-sayfaya-sat%C4%B1r-ekleme)
 - [Form Ekleme](#form-ekleme)
+  - [Form için entry ekleme](#form-i%C3%A7in-entry-ekleme)
+  - [Form verisi oluşturma](#form-verisi-olu%C5%9Fturma)
 - [Filtreleme](#filtreleme)
+  - [Filtre Alanı Ekleme](#filtre-alan%C4%B1-ekleme)
+  - [Filtreleme değişkeni oluşturma](#filtreleme-de%C4%9Fi%C5%9Fkeni-olu%C5%9Fturma)
+  - [Filtreleme verisini oluşturma](#filtreleme-verisini-olu%C5%9Fturma)
+  - [Filtreleme URL'i oluşturma](#filtreleme-urli-olu%C5%9Fturma)
+  - [Filtreleme Sorgusu](#filtreleme-sorgusu)
+  - [Filtreleme filter() metodu](#filtreleme-filter-metodu)
 - [Karma Kodlar](#karma-kodlar)
   - [MySQL Yapısı](#mysql-yap%C4%B1s%C4%B1)
   - [Checkbox Kullanımı](#checkbox-kullan%C4%B1m%C4%B1)
-  - [MVC Yapısı](#mvc-yap%C4%B1s%C4%B1)
-    - [Modeli yükleme](#modeli-y%C3%BCkleme)
-    - [Veriyi modelden alma](#veriyi-modelden-alma)
-    - [Veriyi view'a gönderme](#veriyi-viewa-g%C3%B6nderme)
-  - [Form Kodları](#form-kodlar%C4%B1)
-    - [Entry ekleme](#entry-ekleme)
-    - [Form verisi oluşturma](#form-verisi-olu%C5%9Fturma)
+  - [Controller'da view için değişken oluşturma](#controllerda-view-i%C3%A7in-de%C4%9Fi%C5%9Fken-olu%C5%9Fturma)
 
 ## Model View Controller Yapısı
 
@@ -49,6 +54,24 @@
     - *...\webadmin\view*
     - *...\view*
     - *...\webadmin\view\ `dizin`\ `dosya adı`.tpl*
+
+### Modeli yükleme
+
+```php
+$this->load->model('catalog/manufacturer');
+```
+
+### Veriyi modelden alma
+
+```php
+$[veri adı] = $this->[model]->[get metodu]();
+```
+
+### Veriyi view'a gönderme
+
+```php
+$this->data['[name]'];
+```
 
 ## CSS dosyaları
 
@@ -89,94 +112,15 @@ C:\xampp\htdocs\ecommerce2\catalog\view\asset\style\custom.scss
   - `tr` satırı kopyalanıp, `name` değerleri `entry_[name]` yapısı ile alınır
   - *Örn: ecommerce2\webadmin\view\template\sale\special_promotions_form.tpl*
 
-## Filtreleme
-
-$results = $this->model_sale_order->getOrders($data);
-
-- **Model** dizinindeki gerekli veri tabanı metodlarını güncelleme
-  > MySQL üzerindeki verileri sorgular yardımıyla projeye ekleyen yapıdır.
-  - `get*s`, `getTotal*s` metodlarındaki mySQL sorguları güncellenir. Kaynak kodu için [buraya](#Filtreleme%20Sorgusu) tıklayabilirsin.
-    > `$data` değişkeninin kullanıldığı alanlar güncellenir.
-  - *Örnek Yol: webadmin\model*
-  - *Örn: C:\xampp\htdocs\ecommerce2\webadmin\model\sale\order.php*
-- **Controller** dizinindeki Uygun dosyanın `getList` metodunda filtreleme değişkenlerini (filters) ve verileri oluşturma
-  > Veriler $data değişkeni ile *.tpl* uzantılı dosyaya aktarılır.
-  - Filtreleme değişkeni (filter) eklenir. Kaynak kodu için [buraya](#Filtreleme%20de%C4%9Fi%C5%9Fkeni%20olu%C5%9Fturma) tıklayabilirsin.
-  - Veri (data) oluşturma. Kaynak kod için [buraya](#Filtreleme%20verisini%20olu%C5%9Fturma) tıklayabilirsin.
-  - *Örnek Yol: webadmin\controller*
-  - *Örn: C:\xampp\htdocs\ecommerce2\webadmin\controller\sale\order.php*
-
-- **View** kısmında filtre ekleme alanı oluştulur. Kaynak kod için [buraya](#Filtre%20Alan%C4%B1%20Ekleme) tıklayabilirsin.
-  - Filtreleme butonunun js kısmındaki `filter()` metodunda güncelleme yapılır. Kaynak kod için [buraya](#Filtreleme%20filter%28%29%20metodu) tıklayabilirsin.
-
-## Karma Kodlar
-
-### MySQL Yapısı
-
-```SQL
-ALTER TABLE [Tablo] ADD COLUMN [Sütun] [Değişken Tipi] DEFAULT [Varsayılan Değeri] AFTER [Önceki Sütun];
-ALTER TABLE [Tablo] DROP COLUMN [Sütun];
-
-SELECT [ID], [Sütun] FROM [Tablo] WHERE [ID] = [Sayı];
-UPDATE [Tablo] SET [Sütun] = [Değişken Tipine Uygun Değer] WHERE [ID] = [Sayı];
-```
-
-### Checkbox Kullanımı
-
-OpenCard form verisine checkbox ekleme yapısı
-
-```html
-<tr>
-    <td><?php echo $entry_[name]; ?></td>
-    <td>
-        <input type="checkbox" name="[name]" value="1" <?php if($[name]) echo 'checked="checked"'; ?> />
-    </td>
-</tr>
-```
-
-> `name` Değişken ismi
-
-### MVC Yapısı
-
-> MVC yapısına yönelmek için [buraya](#Model%20View%20Controller%20Yap%C4%B1s%C4%B1) tıklayabilirsin.
-
-#### Modeli yükleme
-
-```php
-$this->load->model('catalog/manufacturer');
-```
-
-> MVC yapısına yönelmek için [buraya](#Model%20View%20Controller%20Yap%C4%B1s%C4%B1) tıklayabilirsin.
-
-#### Veriyi modelden alma
-
-```php
-$[veri adı] = $this->[model]->[get metodu]();
-```
-
-> MVC yapısına yönelmek için [buraya](#Model%20View%20Controller%20Yap%C4%B1s%C4%B1) tıklayabilirsin.
-
-#### Veriyi view'a gönderme
-
-```php
-$this->data['[name]'];
-```
-
-> MVC yapısına yönelmek için [buraya](#Model%20View%20Controller%20Yap%C4%B1s%C4%B1) tıklayabilirsin.
-
-### Form Kodları
-
-> Form Ekleme alnına yönelmek için [buraya](#Form%20Ekleme) tıklayabilirsin.
-
-#### Entry ekleme
+### Form için entry ekleme
 
 ```php
 $this->data['entry_[name]'] = $this->language->get('entry_[name]');
 ```
 
-#### Form verisi oluşturma
+### Form verisi oluşturma
 
- ```php
+```php
 // special_promotion için örnek kod parçası
 if (isset($this->request->post['[name]'])) {
     $this->data['[name]'] = $this->request->post['[name]'];
@@ -194,22 +138,27 @@ if (isset($this->request->post['[name]'])) {
 
 > Veri oluşturulmazsa `TLP` (front-end) kısmında görmez.
 
-### Controller'da view için değişken oluşturma
+## Filtreleme
 
 ```php
-$[veri ismi] = $this->model_catalog_manufacturer->getManufacturers();
-
-foreach ($[veri ismi] as $[veri parçası]) {
-    $this->data['[veri ismi]'][$[veri parçası]['[özellik1]']] = array(
-        '[özellik2]' => $[veri parçası]['[özellik]'],
-        '[özellik3]' => $[veri parçası]['[özellik]']
-    );
-}
+$results = $this->model_sale_order->getOrders($data);
 ```
 
-## Filtreleme Kodları
+- **Model** dizinindeki gerekli veri tabanı metodlarını güncelleme
+  > MySQL üzerindeki verileri sorgular yardımıyla projeye ekleyen yapıdır.
+  - `get*s`, `getTotal*s` metodlarındaki mySQL sorguları güncellenir. Kaynak kodu için [buraya](#Filtreleme%20Sorgusu) tıklayabilirsin.
+    > `$data` değişkeninin kullanıldığı alanlar güncellenir.
+  - *Örnek Yol: webadmin\model*
+  - *Örn: C:\xampp\htdocs\ecommerce2\webadmin\model\sale\order.php*
+- **Controller** dizinindeki Uygun dosyanın `getList` metodunda filtreleme değişkenlerini (filters) ve verileri oluşturma
+  > Veriler $data değişkeni ile *.tpl* uzantılı dosyaya aktarılır.
+  - Filtreleme değişkeni (filter) eklenir. Kaynak kodu için [buraya](#Filtreleme%20de%C4%9Fi%C5%9Fkeni%20olu%C5%9Fturma) tıklayabilirsin.
+  - Veri (data) oluşturma. Kaynak kod için [buraya](#Filtreleme%20verisini%20olu%C5%9Fturma) tıklayabilirsin.
+  - *Örnek Yol: webadmin\controller*
+  - *Örn: C:\xampp\htdocs\ecommerce2\webadmin\controller\sale\order.php*
 
-> Filtre ekleme alanına gitmek için [buraya](#Filtreleme) tıklayabilirsin.
+- **View** kısmında filtre ekleme alanı oluştulur. Kaynak kod için [buraya](#Filtre%20Alan%C4%B1%20Ekleme) tıklayabilirsin.
+  - Filtreleme butonunun js kısmındaki `filter()` metodunda güncelleme yapılır. Kaynak kod için [buraya](#Filtreleme%20filter%28%29%20metodu) tıklayabilirsin.
 
 ### Filtre Alanı Ekleme
 
@@ -304,3 +253,44 @@ if (filter_[name]) {
 ```
 
 - `[name]` MySQL sütununua eş değer değişken ismidir.
+
+## Karma Kodlar
+
+### MySQL Yapısı
+
+```SQL
+ALTER TABLE [Tablo] ADD COLUMN [Sütun] [Değişken Tipi] DEFAULT [Varsayılan Değeri] AFTER [Önceki Sütun];
+ALTER TABLE [Tablo] DROP COLUMN [Sütun];
+
+SELECT [ID], [Sütun] FROM [Tablo] WHERE [ID] = [Sayı];
+UPDATE [Tablo] SET [Sütun] = [Değişken Tipine Uygun Değer] WHERE [ID] = [Sayı];
+```
+
+### Checkbox Kullanımı
+
+OpenCard form verisine checkbox ekleme yapısı
+
+```html
+<tr>
+    <td><?php echo $entry_[name]; ?></td>
+    <td>
+        <input type="checkbox" name="[name]" value="1" <?php if($[name]) echo 'checked="checked"'; ?> />
+    </td>
+</tr>
+```
+
+> `name` Değişken ismi
+
+### Controller'da view için değişken oluşturma
+
+```php
+$[veri ismi] = $this->model_catalog_manufacturer->getManufacturers();
+
+foreach ($[veri ismi] as $[veri parçası]) {
+    $this->data['[veri ismi]'][$[veri parçası]['[özellik1]']] = array(
+        '[özellik2]' => $[veri parçası]['[özellik]'],
+        '[özellik3]' => $[veri parçası]['[özellik]']
+    );
+}
+```
+
