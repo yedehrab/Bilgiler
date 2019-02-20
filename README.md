@@ -22,6 +22,7 @@
 * [Web Programlama](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Web%20Programlama.md)
 * [VsCode](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/VsCode.md)
 * [GittiGidiyor Entegrasyon](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/GittiGidiyor%20Entegrasyon.md)
+* [Protocol Buffer (Protobuf)](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Protocol%20Buffer%20%28Protobuf%29.md)
 
 ## Proje Yönetimi Notları
 
