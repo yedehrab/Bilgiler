@@ -36,4 +36,5 @@
 ## Kaynaklar
 
 - [5 Reasons to Use Protocol Buffers Instead of JSON For Your Next Service](https://codeclimate.com/blog/choose-protocol-buffers/)
-- [Google Developerss](https://developers.google.com/protocol-buffers/docs/overview)
+- [Google Developer Guide](https://developers.google.com/protocol-buffers/docs/overview)
+- [Google Protocol Buffers](https://developers.google.com/protocol-buffers/)
