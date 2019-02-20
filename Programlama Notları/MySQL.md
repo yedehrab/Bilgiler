@@ -16,8 +16,10 @@ MySQL workbench üzerinden SQL editörünü kullanabilirsin.
   - [Explain](#explain)
 - [Optimizasyon](#optimizasyon)
   - [Ek Kaynaklar](#ek-kaynaklar)
-- [Karma Notlar](#karma-notlar)
+- [MySQL Yapılandırması](#mysql-yap%C4%B1land%C4%B1rmas%C4%B1)
   - [MySQL yapılandırma dosyası](#mysql-yap%C4%B1land%C4%B1rma-dosyas%C4%B1)
+  - [Karma yapılandırma notları](#karma-yap%C4%B1land%C4%B1rma-notlar%C4%B1)
+- [Karma Notlar](#karma-notlar)
 - [Örnekler](#%C3%B6rnekler)
   - [Temel örnekler](#temel-%C3%B6rnekler)
   - [Tablo işlemleri](#tablo-i%C5%9Flemleri)
@@ -128,7 +130,6 @@ FROM
 
 olabilir.
 
-
 ### Explain
 
 Sorgu ile ilgili detayları gösterir.
@@ -159,13 +160,9 @@ Optimizasyon hakkında detaylı bilgi için [buraya](https://www.sitepoint.com/o
 -[MySQL'de sorguların hızlı çalışması için ne yapılmalıdır?](https://uzmanim.net/soru/mysql-de-sorgularin-hizli-calismasi-icin-ne-yapilabilir/790)
 -[Indexleme neden yapılır?](https://www.sinanbozkus.com/veritabanlarinda-indexleme-mantigi/#more-78)
 
-## Karma Notlar
+## MySQL Yapılandırması
 
-- [Getting Last Record](https://dzone.com/articles/get-last-record-in-each-mysql-group)
-- [Select içinde if kullanma](https://stackoverflow.com/a/63480)
-- [Koşullu Sayma](https://stackoverflow.com/a/9798978)
-- [En yüksek değer sahip satırı alma](https://stackoverflow.com/a/11913444)
-- [Sadece en yüksek değere eşit olan satırları alma](https://stackoverflow.com/a/7745635) <- Optimize Edilmiş
+- [DNS sorunu yüzünden yavaşlamayı engelleme](https://stackoverflow.com/a/1292882)
 
 ### MySQL yapılandırma dosyası
 
@@ -176,6 +173,18 @@ Yapılandırma dosyası olan `my.ini` dosyasını bulmak için:
 - Servis ekranında MySQL servisini bulup çift tıklayın
 - `Genel` sekmesi altında `Path to Executable` kısmında `ini` ile biten yol
 - Örnek Yol: *C:\ProgramData\MySQL\MySQL Server 8.0\my.ini*
+
+### Karma yapılandırma notları
+
+- `default-character-set=utf8`
+
+## Karma Notlar
+
+- [Getting Last Record](https://dzone.com/articles/get-last-record-in-each-mysql-group)
+- [Select içinde if kullanma](https://stackoverflow.com/a/63480)
+- [Koşullu Sayma](https://stackoverflow.com/a/9798978)
+- [En yüksek değer sahip satırı alma](https://stackoverflow.com/a/11913444)
+- [Sadece en yüksek değere eşit olan satırları alma](https://stackoverflow.com/a/7745635) <- Optimize Edilmiş
 
 ## Örnekler
 
