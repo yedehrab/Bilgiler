@@ -2,6 +2,8 @@
 
 İstersen [buraya](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) tıklayarak GitLab'ın hazırladığı özet bilgiye erişebilirsin.
 
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
 - [Git İşleme Yapısı](#git-i%CC%87%C5%9Fleme-yap%C4%B1s%C4%B1)
 - [Git'in Kullanıldığı Siteler](#gitin-kullan%C4%B1ld%C4%B1%C4%9F%C4%B1-siteler)
 - [Git Kimlik Bilgileri](#git-kimlik-bilgileri)
