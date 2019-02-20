@@ -18,6 +18,7 @@ MySQL workbench üzerinden SQL editörünü kullanabilirsin.
   - [Ek Kaynaklar](#ek-kaynaklar)
 - [MySQL Yapılandırması](#mysql-yap%C4%B1land%C4%B1rmas%C4%B1)
   - [MySQL yapılandırma dosyası](#mysql-yap%C4%B1land%C4%B1rma-dosyas%C4%B1)
+  - [MySQL workbench üzerinden yapılandırma](#mysql-workbench-%C3%BCzerinden-yap%C4%B1land%C4%B1rma)
   - [Karma yapılandırma notları](#karma-yap%C4%B1land%C4%B1rma-notlar%C4%B1)
 - [Karma Notlar](#karma-notlar)
 - [Örnekler](#%C3%B6rnekler)
@@ -173,6 +174,15 @@ Yapılandırma dosyası olan `my.ini` dosyasını bulmak için:
 - Servis ekranında MySQL servisini bulup çift tıklayın
 - `Genel` sekmesi altında `Path to Executable` kısmında `ini` ile biten yol
 - Örnek Yol: *C:\ProgramData\MySQL\MySQL Server 8.0\my.ini*
+
+### MySQL workbench üzerinden yapılandırma
+
+```sql
+SET GLOBAL [Ayar]=[Değer];
+SET GLOBAL connect_timeout=28800;
+SET GLOBAL wait_timeout=28800;
+SET GLOBAL interactive_timeout=28800;
+```
 
 ### Karma yapılandırma notları
 
