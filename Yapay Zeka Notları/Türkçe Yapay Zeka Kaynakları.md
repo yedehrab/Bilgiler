@@ -1,8 +1,24 @@
 # Türkçe Yapay Zeka Kaynakları <!-- omit in toc -->
 
-> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+Bu bir alıntılı içeriktir. Orjinali üzerinde ufak geliştirme yapmış bulunmaktayım.
 
-- [Alıntı İçerik](#al%C4%B1nt%C4%B1-i%CC%87%C3%A7erik)
+> Orjinali için [buraya](https://github.com/deeplearningturkiye/turkce-yapay-zeka-kaynaklari) ziyaret edebilirsin.
+
+## Giriş
+
+Bu sayfada Türkiye'de derin öğrenme (deep learning) ve makine öğrenmesi (machine learning) alanında yapılan çalışmaları (blog yazısı, video ders, bilimsel makale, kodlar, verisetleri) bulabilirsiniz. 
+
+Sayfa, **Deep Learning Türkiye** topluluğu tarafından desteklenmektedir. Derin öğrenme ve makine öğrenmesiyle ilgili **çalışmalarınız var ise** Deep Learning Türkiye topluluğuna katılmak için [başvuru formunu](https://docs.google.com/forms/d/e/1FAIpQLScUmwLsWTl-Xj5E4Ble2jtaSlezZ_gklQNA2fylYQ7KGH4DNQ/viewform) doldurabilirsiniz.
+
+Bizi [LinkedIn](http://linkedin.com/company/deep-learning-turkiye), [Facebook](https://www.facebook.com/deeplearningtr/) ve [Twitter](https://twitter.com/deeplearningtr)'da takip edebilir, [Medium-Türkçe](https://medium.com/deep-learning-turkiye) ve [Medium-İngilizce](https://medium.com/deep-learning-turkey) platformunda da blog yazılarımızı okuyabilir, isterseniz katkı sağlayabilirsiniz:
+
+Sayfaya yeni kaynak eklemek için: [Katkıda bulunma rehberi](contributing.md) adresindeki talimatları izleyin.
+
+## İçerikler
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz
+
+- [Giriş](#giri%C5%9F)
 - [İçerikler](#i%CC%87%C3%A7erikler)
 - [TEMEL KONULAR](#temel-konular)
 - [ALGORİTMALAR](#algori%CC%87tmalar)
@@ -61,50 +77,10 @@
 - [Kitaplar](#kitaplar)
 - [Yarışmalar](#yar%C4%B1%C5%9Fmalar)
 - [Mobil Uygulamalar](#mobil-uygulamalar)
-
-Orjinal kaynak için [buraya](https://github.com/deeplearningturkiye/turkce-yapay-zeka-kaynaklari) bakabilirsin.
-
-## Alıntı İçerik
-
-Bu sayfada Türkiye'de derin öğrenme (deep learning) ve makine öğrenmesi (machine learning) alanında yapılan çalışmaları (blog yazısı, video ders, bilimsel makale, kodlar, verisetleri) bulabilirsiniz. 
-
-Sayfa, **Deep Learning Türkiye** topluluğu tarafından desteklenmektedir. Derin öğrenme ve makine öğrenmesiyle ilgili **çalışmalarınız var ise** Deep Learning Türkiye topluluğuna katılmak için [başvuru formunu](https://docs.google.com/forms/d/e/1FAIpQLScUmwLsWTl-Xj5E4Ble2jtaSlezZ_gklQNA2fylYQ7KGH4DNQ/viewform) doldurabilirsiniz.
-
-Bizi [LinkedIn](http://linkedin.com/company/deep-learning-turkiye), [Facebook](https://www.facebook.com/deeplearningtr/) ve [Twitter](https://twitter.com/deeplearningtr)'da takip edebilir, [Medium-Türkçe](https://medium.com/deep-learning-turkiye) ve [Medium-İngilizce](https://medium.com/deep-learning-turkey) platformunda da blog yazılarımızı okuyabilir, isterseniz katkı sağlayabilirsiniz:
-
-Sayfaya yeni kaynak eklemek için: [Katkıda bulunma rehberi](contributing.md) adresindeki talimatları izleyin.
-
-## İçerikler
-
-* **[Temel Konular](#temel-konular)**  
-
-* **[Algoritmalar](#algorİtmalar)**  
-
-* **[Kullanım Alanları](#kullanim-alanlari)**  
-
-* **[Frameworks](#frameworks)**  
-
-* **[Donanım ve Bulut Destekleri](#donanim-ve-bulut-destekleri)**
-
-* **[Bilimsel Makaleler](#bİlİmsel-makaleler)**  
-
-* **[Verisetleri](#verİsetlerİ)**  
-
-* **[Video Dersler](#vİdeo-dersler)**  
-
-* **[Sunumlar](#sunumlar)**  
-
-* **[Github](#github)**  
-
-* **[Bloglar](#bloglar)**
-
-* **[Kitaplar](#kitaplar)**
-
-* **[Yarışmalar (Kaggle vb.)](#yarışmalar)**
-
-* **[Mobil Uygulamalar](#mobil-uygulamalar)**
+- [Düzenleyen](#d%C3%BCzenleyen)
 
 ## TEMEL KONULAR
+
 * [Temel: Şu Kara Kutuyu Açalım: Yapay Sinir Ağları](https://medium.com/deep-learning-turkiye/%C5%9Fu-kara-kutuyu-a%C3%A7alim-yapay-sinir-a%C4%9Flar%C4%B1-7b65c6a5264a) (Merve Ayyüce Kızrak)
 * [Motivasyon: Yapay Zeka ve Derin Öğrenmenin Hikayesi](https://medium.com/deep-learning-turkiye/motivasyon-yapay-zeka-ve-derin-%C3%B6%C4%9Frenme-48d09355388d) (Merve Ayyüce Kızrak)
 * [Derin Öğrenme Başlangıç Seti - Donanım Ve Yazılım](http://www.ardamavi.com/2017/10/derin-ogrenme-baslangic-seti.html) (Arda Mavi)
@@ -386,7 +362,6 @@ Tieche, Nabil Ouerhani, Hazım Kemal Ekenel, Jean-Philippe Thiran)
 * [Makine Ogrenmesi](https://github.com/SerayBeser/Makine-Ogrenmesi) (Seray Beşer)
 
 ## Bloglar
-* [Deep Learning Türkiye Blog](http://medium.com/deep-learning-turkiye)
 * [veridefteri.com](http://veridefteri.com/)
 * [zekimakine.com](http://zekimakine.com/)
 * [veribilimcisi.com](https://veribilimcisi.com/)
@@ -396,7 +371,6 @@ Tieche, Nabil Ouerhani, Hazım Kemal Ekenel, Jean-Philippe Thiran)
 
 ## Kitaplar
 * [Yapay Öğrenme - Ethem Alpaydın](http://www.idefix.com/Kitap/Yapay-Ogrenme/Ethem-Alpaydin/Bilim/Populer-Bilim/urunno=0000000362293)
-* [Derin Öğrenme - Ian Goodfellow, Yoshua Bengio, Aaron Courville](https://www.kitapyurdu.com/kitap/derin-ogrenme-ciltli/480279.html)
 * [OpenCv Görüntü İşleme ve Yapay Öğrenme - Birol Kuyumcu](http://www.kitapyurdu.com/kitap/opencv-goruntu-isleme-ve-yapay-ogrenme/376463.html)
 * [Yapay Zeka - Vasif Vagifoğlu Nabiyev](http://www.dr.com.tr/Kitap/Yapay-Zeka-Problemler-Yontemler-Algoritma-/Vasif-Vagifoglu-Nabiyev/Bilim/Populer-Bilim/urunno=0000000435115)
 
@@ -407,3 +381,12 @@ Tieche, Nabil Ouerhani, Hazım Kemal Ekenel, Jean-Philippe Thiran)
 ## Mobil Uygulamalar
 * [Görme Engelliler için Para Okuyucu](https://itunes.apple.com/tr/app/para-okuyucu/id1334298365?l=tr&mt=8) (Özgür Şahin)
 * [VisionDict](https://itunes.apple.com/tr/app/visiondict/id1299943619?mt=8) (Kadir Mert Barutçuoğlu)
+
+## Düzenleyen
+
+Yunus Emre
+
+* [Github](https://github.com/yedehrab)
+* [GitLab](https://gitlab.com/yedehrab)
+
+> Yardım veya destek için [iletişime](mailto::yyunussemree@gmail.com) geçebilrsiniz 😇
