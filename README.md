@@ -12,6 +12,7 @@
 * [Markdown](Programlama%20Notlar%C4%B1/Markdown.md)
 * [NodeJs Çok Kullanılan Kütüphaneler](Programlama%20Notlar%C4%B1/Nodejs%20%C3%87ok%20Kullan%C4%B1lan%20K%C3%BCt%C3%BCphaneler.md)
 * [React](Programlama%20Notlar%C4%B1/React.md)
+* [Web Programlama](Programlama%20Notlar%C4%B1/Web%20Programlama.md)
 
 ## Yazılım Notları
 
@@ -19,10 +20,9 @@
 * [Karma Notlar](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Karma%20Notlar.md)
 * [ADB Komutları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Adb%20Komutlar%C4%B1.md)
 * [Terimler](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Terimler.md)
-* [Web Programlama](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Web%20Programlama.md)
-* [VsCode](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/VsCode.md)
 * [GittiGidiyor Entegrasyon](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/GittiGidiyor%20Entegrasyon.md)
 * [Protocol Buffer (Protobuf)](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Protocol%20Buffer%20%28Protobuf%29.md)
+* [OpenCart](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/OpenCart.md)
 
 ## Proje Yönetimi Notları
 
@@ -37,6 +37,7 @@
 * [JetBrains IDE](Uygulama%20Notlar%C4%B1/JetBrains%20IDE.md)
 * [Karma Notlar](Uygulama%20Notlar%C4%B1/Karma%20Notlar.md)
 * [VsCode](Uygulama%20Notlar%C4%B1/VsCode.md)
+* [Youtube](Uygulama%20Notlar%C4%B1/Youtube.md)
 
 ## Yapay Zeka Notları
 
