@@ -23,6 +23,9 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
   - [Sanal Ortamı Aktif Etme](#sanal-ortam%C4%B1-aktif-etme)
   - [Sanal Ortamı Pasif Etme](#sanal-ortam%C4%B1-pasif-etme)
   - [Sanal Ortamı Kaldırma](#sanal-ortam%C4%B1-kald%C4%B1rma)
+- [Karma Paketler ve Kurulumları](#karma-paketler-ve-kurulumlar%C4%B1)
+  - [Tesseract](#tesseract)
+  - [Selenium](#selenium)
 
 ## Faydaları
 
@@ -126,3 +129,22 @@ conda env remove --name <ortam_ismi>
 ```
 
 > Anaconda Prompt `base` ortamına geri döner.
+
+## Karma Paketler ve Kurulumları
+
+### Tesseract
+
+Resimden yazıyı çekmek için kullanılır.
+
+```cmd
+conda install -c mcs07 tesseract
+conda install -c jim-hart pytesseract
+```
+
+### Selenium
+
+Web siteleri üzerinde işlem yapmak için kullanılır.
+
+```cmd
+conda install -c conda-forge selenium
+```
