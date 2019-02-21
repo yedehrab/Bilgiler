@@ -4,7 +4,7 @@ Bu bir alıntılı içeriktir. Orjinali üzerinde ufak geliştirme yapmış bulu
 
 > Orjinali için [buraya](https://github.com/deeplearningturkiye/turkce-yapay-zeka-kaynaklari) ziyaret edebilirsin.
 
-## Giriş
+## Giriş <!-- omit in toc -->
 
 Bu sayfada Türkiye'de derin öğrenme (deep learning) ve makine öğrenmesi (machine learning) alanında yapılan çalışmaları (blog yazısı, video ders, bilimsel makale, kodlar, verisetleri) bulabilirsiniz. 
 
@@ -14,12 +14,10 @@ Bizi [LinkedIn](http://linkedin.com/company/deep-learning-turkiye), [Facebook](h
 
 Sayfaya yeni kaynak eklemek için: [Katkıda bulunma rehberi](contributing.md) adresindeki talimatları izleyin.
 
-## İçerikler
+## İçerikler  <!-- omit in toc -->
 
 > `HOME` tuşu ile yukarı yönlenebilrsiniz
 
-- [Giriş](#giri%C5%9F)
-- [İçerikler](#i%CC%87%C3%A7erikler)
 - [TEMEL KONULAR](#temel-konular)
 - [ALGORİTMALAR](#algori%CC%87tmalar)
   - [Algoritmalar için Püf Noktaları](#algoritmalar-i%C3%A7in-p%C3%BCf-noktalar%C4%B1)
