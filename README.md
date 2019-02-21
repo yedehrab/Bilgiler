@@ -38,6 +38,7 @@
 * [Karma Notlar](Uygulama%20Notlar%C4%B1/Karma%20Notlar.md)
 * [VsCode](Uygulama%20Notlar%C4%B1/VsCode.md)
 * [Youtube](Uygulama%20Notlar%C4%B1/Youtube.md)
+* [Anaconda](Uygulama%20Notlar%C4%B1/Anaconda.md)
 
 ## Yapay Zeka Notları
 
