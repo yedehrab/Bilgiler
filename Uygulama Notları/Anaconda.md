@@ -12,6 +12,7 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
 - [Anaconda Kurulumu](#anaconda-kurulumu)
 - [Paket ve Kütüphane Kullanımı](#paket-ve-k%C3%BCt%C3%BCphane-kullan%C4%B1m%C4%B1)
   - [Conda Yardımcısını Güncelleme](#conda-yard%C4%B1mc%C4%B1s%C4%B1n%C4%B1-g%C3%BCncelleme)
+  - [Conda ile Tüm Paketleri Güncelleme](#conda-ile-t%C3%BCm-paketleri-g%C3%BCncelleme)
   - [Temel Condo Kullanımı](#temel-condo-kullan%C4%B1m%C4%B1)
     - [Condo Örnek Kullanımı](#condo-%C3%B6rnek-kullan%C4%B1m%C4%B1)
   - [Numpy Kurulumu](#numpy-kurulumu)
@@ -26,6 +27,12 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
 - [Karma Paketler ve Kurulumları](#karma-paketler-ve-kurulumlar%C4%B1)
   - [Tesseract](#tesseract)
   - [Selenium](#selenium)
+- [Hata Notları](#hata-notlar%C4%B1)
+  - [Conda SSL Hatası](#conda-ssl-hatas%C4%B1)
+    - [Windows Üzerinden Ağ Sıfırlama](#windows-%C3%BCzerinden-a%C4%9F-s%C4%B1f%C4%B1rlama)
+    - [Manuel OpenSSL Kurulumu](#manuel-openssl-kurulumu)
+    - [Conda ile Networkx İndirme](#conda-ile-networkx-i%CC%87ndirme)
+    - [SSL Ek Hata Linkleri](#ssl-ek-hata-linkleri)
 
 ## Faydaları
 
@@ -54,6 +61,12 @@ Paket kurulumları `conda` komutu yardımıyla yapılır.
 
 ```cmd
 conda update -n base -c defaults conda
+```
+
+### Conda ile Tüm Paketleri Güncelleme
+
+```cmd
+conda update --all
 ```
 
 ### Temel Condo Kullanımı
@@ -148,3 +161,37 @@ Web siteleri üzerinde işlem yapmak için kullanılır.
 ```cmd
 conda install -c conda-forge selenium
 ```
+
+## Hata Notları
+
+### Conda SSL Hatası
+
+#### Windows Üzerinden Ağ Sıfırlama
+
+Windows 10'daki  `Ağı Sıfırla` ayarını deneyin
+
+- Ayarlar (*Options*)
+- Ağ ve İnternet (*Network & Internet*)
+- Durum sekmesi (*Status tab*)
+- Sayfanın en altına bakın (*Ağı Sıfırla / Network Reset*)
+- Şimdi Sıfırla (*Reset Now*)
+
+> Bu işlem kaydedilmiş WI-FI şifrelerini de silecektir.
+
+#### Manuel OpenSSL Kurulumu
+
+Kurulum sayfasına gitmek için [buraya](https://slproweb.com/products/Win32OpenSSL.html) tıklayabilirsin.
+
+> Kaynak için [buraya](https://github.com/conda/conda/issues/8046#issuecomment-450515815) tıklayabilirsin.
+
+#### Conda ile Networkx İndirme
+
+```cmd
+conda install -c anaconda networkx
+```
+
+#### SSL Ek Hata Linkleri
+
+- [How to install the most recent version of OpenSSL on Windows 10 in 64 Bit](https://www.cloudinsidr.com/content/how-to-install-the-most-recent-version-of-openssl-on-windows-10-in-64-bit/)
+- [Conda update failed: SSL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed](https://stackoverflow.com/a/35804869/9770490)
+- [Setting SSL Verify](https://github.com/ContinuumIO/anaconda-issues/issues/494#issuecomment-155097614)
