@@ -79,7 +79,6 @@
 | [Icon Fonts](https://marketplace.visualstudio.com/items?itemName=idleberg.icon-fonts)                                           | İkon kısayolları sağlar                      |
 | [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)                                            | Postman gibi istemci istekleri arayüzü sunar |
 
-
 ### Yapılandırma eklentileri
 
 | Eklenti                                                                                                   | Açıklama |
