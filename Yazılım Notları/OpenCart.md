@@ -2,6 +2,8 @@
 
 **PHP** dilini baz alan E-Ticaret uygulamasının sitesine erişmek için  [buraya](https://www.opencart.com/index.php?route=common/home) tıklayabilirsin.
 
+## İçerikler <!-- omit in toc -->
+
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
 - [Model View Controller Yapısı](#model-view-controller-yap%C4%B1s%C4%B1)

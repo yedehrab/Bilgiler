@@ -1,6 +1,8 @@
 # Windows 10 Notları <!-- omit in toc -->
 
-![win](../images/win.png)
+Sık kullanılan işletim sistemi notlarım.
+
+## İçerikler <!-- omit in toc -->
 
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 

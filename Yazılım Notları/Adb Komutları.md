@@ -2,7 +2,7 @@
 
 Android telefonları için komutları barındırır.
 
-## İçerik <!-- omit in toc -->
+## İçerikler <!-- omit in toc -->
 
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
