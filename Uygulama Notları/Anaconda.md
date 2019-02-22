@@ -19,6 +19,7 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
   - [OpenCV Kurulumu](#opencv-kurulumu)
   - [Tensorflow Kurulumu](#tensorflow-kurulumu)
   - [Keras Kurulumu](#keras-kurulumu)
+  - [Python Utils Kurulumu](#python-utils-kurulumu)
 - [Sanal Ortam İşlemleri](#sanal-ortam-i%CC%87%C5%9Flemleri)
   - [Sanal Ortam Oluşturma](#sanal-ortam-olu%C5%9Fturma)
   - [Sanal Ortamı Aktif Etme](#sanal-ortam%C4%B1-aktif-etme)
@@ -105,6 +106,12 @@ conda install -c conda-forge tensorflow
 
 ```cmd
 conda install -c conda-forge keras
+```
+
+### Python Utils Kurulumu
+
+```cmd
+pip install utils
 ```
 
 ## Sanal Ortam İşlemleri
