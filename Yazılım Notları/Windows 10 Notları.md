@@ -33,12 +33,12 @@ Wİndows 10 son sürümünü indirmek için [buraya](https://www.microsoft.com/t
 
 Siteye girdiğinizde sırasıyla alttaki ayarları açamınız | seçmeniz gerekmekte:
 
-* Geliştirici Ayarları
-* *Network conditions*
-* *User Agent* başlığı altında
-  * *Select automatically* seçimini kaldırın
-  * *Safari – iPad iOS 9*
-* Sayfayı yenileyin
+- Geliştirici Ayarları
+- *Network conditions*
+- *User Agent* başlığı altında
+  - *Select automatically* seçimini kaldırın
+  - *Safari – iPad iOS 9*
+- Sayfayı yenileyin
 
 > Detaaylı bilgi için [buraya](https://pureinfotech.com/download-windows-10-iso-without-media-creation-tool/) tıklayabilirsin.
 
@@ -48,41 +48,41 @@ Siteye girdiğinizde sırasıyla alttaki ayarları açamınız | seçmeniz gerek
 
 ### Uygulama İşlemleri
 
-* `CTRL` + `W` Pencereyi kapatır
-* `ALT` + `F4` Uygulamayı ve pencerelerini kapatır
-* `WİNDOWS TUŞU (SUPER)` + `E` File explorer'ı açar (Dosya Gezgini)
-* `WİNDOWS TUŞU (SUPER)` + `R` Komutla uygulama çalıştırma penceresi
-* `WİNDOWS TUŞU (SUPER)` + `<SAYI>` Taskbardaki (görev çubuğu / alttaki bar) sıralamaya göre uygulamları gösterir | çalıştırır / gizler
-* `WİNDOWS TUŞU (SUPER)` + `SHIFT` + `<SAYI>` Üsttekine ek olarak, yeni bir tane açar
-* `WİNDOWS TUŞU (SUPER)` + `G` Kayıt işlemleri, ekran görüntüsü vs.
-* `WİNDOWS TUŞU (SUPER)` + `X` Windows araçları bölümü
-* `WİNDOWS TUŞU (SUPER)` + `YUKARI YONU` Uygulamayı tam ekran yapma
-* `WİNDOWS TUŞU (SUPER)` + `AŞAĞI YONU` Uygulamayı küçük ekran yapma
+- `CTRL` + `W` Pencereyi kapatır
+- `ALT` + `F4` Uygulamayı ve pencerelerini kapatır
+- `WİNDOWS TUŞU (SUPER)` + `E` File explorer'ı açar (Dosya Gezgini)
+- `WİNDOWS TUŞU (SUPER)` + `R` Komutla uygulama çalıştırma penceresi
+- `WİNDOWS TUŞU (SUPER)` + `<SAYI>` Taskbardaki (görev çubuğu / alttaki bar) sıralamaya göre uygulamları gösterir | çalıştırır / gizler
+- `WİNDOWS TUŞU (SUPER)` + `SHIFT` + `<SAYI>` Üsttekine ek olarak, yeni bir tane açar
+- `WİNDOWS TUŞU (SUPER)` + `G` Kayıt işlemleri, ekran görüntüsü vs.
+- `WİNDOWS TUŞU (SUPER)` + `X` Windows araçları bölümü
+- `WİNDOWS TUŞU (SUPER)` + `YUKARI YONU` Uygulamayı tam ekran yapma
+- `WİNDOWS TUŞU (SUPER)` + `AŞAĞI YONU` Uygulamayı küçük ekran yapma
 
 ### Gezimti
 
-* `ALT` + `TAB (Sola Sağa Ok Tuşu)` Uygulamalar arası gezinti
-* `CTRL` + `WİNDOWS TUŞU (SUPER)` + `<YON TUŞLARI>` Masaüstleri arası gezinti
-* `WİNDOWS TUŞU (SUPER)` + `D` Masaüstünü gösterme / geri alam
-* `WİNDOWS TUŞU (SUPER)` + `M` Tüm uygulamaları gizleme (masaüstünü gösterme gibi)
-* `WİNDOWS TUŞU (SUPER)` + `,` Anlık masaüstüne bakma
-* `WİNDOWS TUŞU (SUPER)` + `L` Oturumu kitleme
+- `ALT` + `TAB (Sola Sağa Ok Tuşu)` Uygulamalar arası gezinti
+- `CTRL` + `WİNDOWS TUŞU (SUPER)` + `<YON TUŞLARI>` Masaüstleri arası gezinti
+- `WİNDOWS TUŞU (SUPER)` + `D` Masaüstünü gösterme / geri alam
+- `WİNDOWS TUŞU (SUPER)` + `M` Tüm uygulamaları gizleme (masaüstünü gösterme gibi)
+- `WİNDOWS TUŞU (SUPER)` + `,` Anlık masaüstüne bakma
+- `WİNDOWS TUŞU (SUPER)` + `L` Oturumu kitleme
 
 ### Girdi İşlemleri
 
-* `WİNDOWS TUŞU (SUPER)` + `V` Son kopyalananları gösterir (Clipboard / Pano)
-* `WİNDOWS TUŞU (SUPER)` + `Ş` veya `.` Emoji ekleme 👌
-* `WİNDOWS TUŞU (SUPER)` + `SHIFT` + `S` Bell bir alanın ekran görüntüsü alma
+- `WİNDOWS TUŞU (SUPER)` + `V` Son kopyalananları gösterir (Clipboard / Pano)
+- `WİNDOWS TUŞU (SUPER)` + `Ş` veya `.` Emoji ekleme 👌
+- `WİNDOWS TUŞU (SUPER)` + `SHIFT` + `S` Bell bir alanın ekran görüntüsü alma
 
 ### Menü Kısayolları
 
-* `WİNDOWS TUŞU (SUPER)` + `I` Ayarlar menüsü
-* `WİNDOWS TUŞU (SUPER)` + `U` Görünüm ayarları
-* `WİNDOWS TUŞU (SUPER)` + `P` Ekran yansıtma ayarları
-* `WİNDOWS TUŞU (SUPER)` + `K` Ağdaki cihaza bağlanma
-* `WİNDOWS TUŞU (SUPER)` + `A` Aksiyon Merkezi (Action Center) menüsü
-* `WİNDOWS TUŞU (SUPER)` + `Q` veya `S` Arama penceresini açma
-* `WİNDOWS TUŞU (SUPER)` + `W` Windows INK çalışma alanını açma
+- `WİNDOWS TUŞU (SUPER)` + `I` Ayarlar menüsü
+- `WİNDOWS TUŞU (SUPER)` + `U` Görünüm ayarları
+- `WİNDOWS TUŞU (SUPER)` + `P` Ekran yansıtma ayarları
+- `WİNDOWS TUŞU (SUPER)` + `K` Ağdaki cihaza bağlanma
+- `WİNDOWS TUŞU (SUPER)` + `A` Aksiyon Merkezi (Action Center) menüsü
+- `WİNDOWS TUŞU (SUPER)` + `Q` veya `S` Arama penceresini açma
+- `WİNDOWS TUŞU (SUPER)` + `W` Windows INK çalışma alanını açma
 
 ## Command Promp (CMD)
 
@@ -97,8 +97,8 @@ Siteye girdiğinizde sırasıyla alttaki ayarları açamınız | seçmeniz gerek
 | `del <switch> <file>` | Dosya silme |
 | `rd <switch> <folder>` | Dizin silme |
 
-* `<switch>` **/?** yazdığınızda çıkan /'li karakterler.
-* `<file | folder>` Dosya ve veya dizin yolu
+- `<switch>` **/?** yazdığınızda çıkan /'li karakterler.
+- `<file | folder>` Dosya ve veya dizin yolu
 
 > Komut kullanımı CMD üzerinden öğrenmek için `<command> /?` yazabilirsin.
 
@@ -116,10 +116,10 @@ Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tı
 
 #### Sık Kullanılanlar
 
-* `.` Bulunan dizin (working directory)
-* `..` Bir üst dizin (parent directory)
-* `%username` Kullanıcı adı
-* `%appdata%` Uygulama verileri dizini
+- `.` Bulunan dizin (working directory)
+- `..` Bir üst dizin (parent directory)
+- `%username` Kullanıcı adı
+- `%appdata%` Uygulama verileri dizini
 
 ## Görsellik
 
@@ -129,12 +129,12 @@ Kendime özgü görsellik ayarlarım
 
 ![cmd](../images/cmd.png)
 
-* `**Font:**` *14 - Consolas*
-* **Layout:** *Windows Size - w: 120 h: 30*
-* **Color**
-  * **Screen Text:** *R: 242 G: 242 B: 242*
-  * **Screen Background** *R: 50 G: 47 B: 65*
-  * **Opacity** *%89*
+- `**Font:**` *14 - Consolas*
+- **Layout:** *Windows Size - w: 120 h: 30*
+- **Color**
+  - **Screen Text:** *R: 242 G: 242 B: 242*
+  - **Screen Background** *R: 50 G: 47 B: 65*
+  - **Opacity** *%89*
   
 ## Windows Features
 
@@ -142,20 +142,20 @@ Kendime özgü görsellik ayarlarım
 
 ### Default Windows Features
 
-* `.NET Framework 4.7 Advanced Services`
-  * `WCF Services`
-    * `TCP Port Sharing`
-* `Internet Explorer 11`
-* `Media Features`
-* `Microsoft Print to PDF`
-* `Microsoft XPS Document Writer`
-* `Print and Document Services`
-  * `Internet Printing Client`
-  * `Windows Fax and Scan`
-* `Remote Differential Compression API Support`
-* `SMB Direct`
-* `Windows PowerShell 2.0`
-* `Work Folders Client`
+- `.NET Framework 4.7 Advanced Services`
+  - `WCF Services`
+    - `TCP Port Sharing`
+- `Internet Explorer 11`
+- `Media Features`
+- `Microsoft Print to PDF`
+- `Microsoft XPS Document Writer`
+- `Print and Document Services`
+  - `Internet Printing Client`
+  - `Windows Fax and Scan`
+- `Remote Differential Compression API Support`
+- `SMB Direct`
+- `Windows PowerShell 2.0`
+- `Work Folders Client`
 
 ## Ayarlar
 
