@@ -29,7 +29,7 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
   - [Selenium](#selenium)
 - [Hata Notları](#hata-notlar%C4%B1)
   - [Conda SSL Hatası](#conda-ssl-hatas%C4%B1)
-    - [Windows Üzerinden Ağ Sıfırlama](#windows-%C3%BCzerinden-a%C4%9F-s%C4%B1f%C4%B1rlama)
+    - [Windows Üzerinden Ağ Sıfırlam](#windows-%C3%BCzerinden-a%C4%9F-s%C4%B1f%C4%B1rlam)
     - [Manuel OpenSSL Kurulumu](#manuel-openssl-kurulumu)
     - [Conda ile Networkx İndirme](#conda-ile-networkx-i%CC%87ndirme)
     - [SSL Ek Hata Linkleri](#ssl-ek-hata-linkleri)
@@ -166,7 +166,7 @@ conda install -c conda-forge selenium
 
 ### Conda SSL Hatası
 
-#### Windows Üzerinden Ağ Sıfırlama
+#### Windows Üzerinden Ağ Sıfırlam
 
 Windows 10'daki  `Ağı Sıfırla` ayarını deneyin
 
