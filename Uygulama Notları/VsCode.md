@@ -63,6 +63,7 @@
 
 | Eklenti                                                                                                           | Açıklama                        |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| [Sublime Material Theme](https://marketplace.visualstudio.com/items?itemName=jprestidge.theme-material-theme) | Sublime Editörün temaları |
 | [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)              | Popüler tema seti               |
 | [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)            | En sık kullanılan karanlık tema |
 | [Base16 Tomorrow Dark+](https://marketplace.visualstudio.com/items?itemName=Shurelia.base16-tomorrow-dark-vscode) | Karanlık tema                   |
