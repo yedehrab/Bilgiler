@@ -1,6 +1,8 @@
 # Git Notları <!-- omit in toc -->
 
-İstersen [buraya](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) tıklayarak GitLab'ın hazırladığı özet bilgiye erişebilirsin.
+Programlama işlerindeki projelerin yönetimi için kaçınılmaz bir teknolojidir. Senkronize çalışmayı ve versiyon yönetimi sağlar.
+
+## İçerik <!-- omit in toc -->
 
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
@@ -36,26 +38,24 @@
   - [Son hatalı yüklemeyi kaldırma](#son-hatal%C4%B1-y%C3%BCklemeyi-kald%C4%B1rma)
 - [Uygulamalar Üzerinde Git](#uygulamalar-%C3%BCzerinde-git)
   - [JetBrains IDEs](#jetbrains-ides)
-- [Kaynaklar](#kaynaklar)
 - [Git Cheat Sheet](#git-cheat-sheet)
+- [Ek Kaynaklar](#ek-kaynaklar)
 
 ## Git İşleme Yapısı
 
 > Terimlerin üzerine tıklayarak, açıklamalarının yapıldığı yazıya yönelebilirsin.
 
-* Her yenilik için **değişikliği açıklayan yorumla birlikte**  ayrı ayrı [commit](#Teslim%20etme%20haz%C4%B1rl%C4%B1%C4%9F%C4%B1%20ve%20yorum%20ekleme) yapılır.
-* Eğer farklı alanda değişiklikler yapılıyor ise yeni bir [branch](#Branch%20İşlemleri) oluşturulur.
-  * Yeni branch kontrol edildikten sonra orjinal (master) branch'ine dahil edilir. ( *Alakalı: [merge request](https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html)* )
-  * Bu sistemle hataların orjinal projeyi bozması engellenmeye çalışılır.
+- İşleme başlamadan önce üzerinde çalışılacak projenin aslı [pull](#git-deposunu-g%C3%BCncelleme) edilir.
+- Her yenilik için **değişikliği açıklayan yorumla birlikte**  ayrı ayrı [commit](#Teslim%20etme%20haz%C4%B1rl%C4%B1%C4%9F%C4%B1%20ve%20yorum%20ekleme) yapılır.
+- Eğer farklı alanda değişiklikler yapılıyor ise yeni bir [branch](#Branch%20İşlemleri) oluşturulur.
+  - Yeni branch kontrol edildikten sonra orjinal (master) branch'ine dahil edilir. ( *Alakalı: [merge request](https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html)* )
+  - Bu sistemle hataların orjinal projeyi bozması engellenmeye çalışılır.
 
 ## Git'in Kullanıldığı Siteler
 
-* [Github](https://www.github.com)
-  * En sık kullanılandır.
-  * Gizli repolar için ücret talep etmekte.
-* [GitLab](https://gitlab.com/)
-  * Github alternatifi olan bu site gizli repoları ücretsiz sunar.
-* [Bitbucket](https://bitbucket.org/)
+- [Github](https://www.github.com)
+- [GitLab](https://gitlab.com/)
+- [Bitbucket](https://bitbucket.org/)
 
 ## Git Kimlik Bilgileri
 
@@ -109,8 +109,8 @@ git init
 git clone [url] [kopyalanacağı yol]
 ```
 
-* `url` Github'daki projenin adresi <https://...>
-* `kopyalanacağı yol` Bilgisayardaki özel bir yol (C:\Desktop\Temp)
+- `url` Github'daki projenin adresi <https://...>
+- `kopyalanacağı yol` Bilgisayardaki özel bir yol (C:\Desktop\Temp)
 
 > Var olan git'i istenen dizine kopyalar
 
@@ -142,7 +142,7 @@ git add .
 git commit -m "Yorum" -m "Açıklama"
 ```
 
-* -`m` message anlamına gelmektedir.
+- -`m` message anlamına gelmektedir.
 
 > Mesaj ve açıklama ile ile depoya teslim için hazırlama
 
@@ -152,10 +152,10 @@ git commit -m "Yorum" -m "Açıklama"
 git remote add [remote_name] [url]
 ```
 
-* `remote_name` Kontrol ismi. *Örn: origin*
-* `url` Yüklemek istediğimiz yerin adresi
+- `remote_name` Kontrol ismi. *Örn: origin*
+- `url` Yüklemek istediğimiz yerin adresi
 
-> Github için, projenizin konumuna gelip, *download kısmındaki kopyalama resmine* basarak, projenizin url'ini kopyalabilirsiniz.
+> Github için, projenizin konumuna gelip, *download kısmındaki kopyalama resmine- basarak, projenizin url'ini kopyalabilirsiniz.
 
 ### Birden fazla teslim URL'i belirleme
 
@@ -168,7 +168,7 @@ git remote set-url --add --push [remote_name] [url1]
 git remote set-url --add --push [remote_name] [url2]
 ```
 
-* `--push` yerine diğer git işlemlerini de kullanabilirsiniz. *Örn: fetch*
+- `--push` yerine diğer git işlemlerini de kullanabilirsiniz. *Örn: fetch*
 
 > Uzaktan kontrol (remote) eklemek için `git remote add [remote_name] [url]` ile oluşturulması gerekir. Aksi halde hata verir.
 
@@ -199,8 +199,8 @@ origin  https://gitlab.com/yedehrab/bilgiler.git (push)
 git push -u origin [branch]
 ```
 
-* `branch` Varsa dal ismi (bilginiz yoksa 'master' kullanın)
-  * git push -u origin master
+- `branch` Varsa dal ismi (bilginiz yoksa 'master' kullanın)
+  - git push -u origin master
 
 > Master olarak url'e yükleme işlemi
 
@@ -208,7 +208,7 @@ git push -u origin [branch]
 
 Branch (dal) git yığıtlarında imleç görevi gören araçlardır. Ek bilgi için [buraya](https://git-scm.com/book/tr/v1/Git-te-Dallanma-Dal-Nedir%3F) tıklayabilirsin.
 
-* **Önemli:** Dallandırmaları orjinal proje üzerinden yapmazsanız diğer dallar ile karışabilir.
+- **Önemli:** Dallandırmaları orjinal proje üzerinden yapmazsanız diğer dallar ile karışabilir.
 
 > Genelde master işlemi (projenin aslı) ile test işlemlerini birbirinden ayrı yerlerde saklamak amaçlı kullanılırlar
 
@@ -233,8 +233,8 @@ git branch [branch_ismi]
 git checkout [branch]
 ```
 
-* `branch` Seçilecek dal (HEAD (ana dal) için 'master' kullanılır)
-  * git checkout master
+- `branch` Seçilecek dal (HEAD (ana dal) için 'master' kullanılır)
+  - git checkout master
 
 > Seçili branch'i değiştiri. (Master iken test'e geçmek gibi)
 
@@ -250,8 +250,8 @@ git branch [param] [branch]
 
 **Parametreler:**
 
-* `-d` Silme parametresi
-* `-D` Zorla silme parametresi
+- `-d` Silme parametresi
+- `-D` Zorla silme parametresi
 
 #### Uzaktaki (remote) branch'ı silme
 
@@ -278,13 +278,13 @@ git config --global credential.helper 'cache --timeout=3600'
 git remote -v
 ```
 
-* `-v` Verbose, kontrol edilenleri gösterir.
+- `-v` Verbose, kontrol edilenleri gösterir.
 
 ```bash
 git remote rm [branch]
 ```
 
-* `branch` Kontrol türü. Mesela origin
+- `branch` Kontrol türü. Mesela origin
 
 > Detaylı açıklama için [buraya](https://help.github.com/articles/removing-a-remote/) tıklayabilirsin.
 
@@ -300,15 +300,16 @@ gir reset HEAD~
 
 ### JetBrains IDEs
 
-* Branch kontrollerini sağ alt köşedeki git alanından yapabilirsin.
-  * Bu alan açık iken klavyen ile *arama* yapabilirsin.
-  * `New Branch` kısmından yeni *yerel branch* oluşturabilirsin.
-  * `Remote branch` kısmındaki herhangi bir branch üzerine tıklayarak `Merge Into Current` ile kendi projene dahil edebilirsin.
-
-## Kaynaklar
-
-* [Sık kullanılan git komutları](https://github.com/joshnh/Git-Commands)
+- Branch kontrollerini sağ alt köşedeki git alanından yapabilirsin.
+  - Bu alan açık iken klavyen ile *arama- yapabilirsin.
+  - `New Branch` kısmından yeni *yerel branch* oluşturabilirsin.
+  - `Remote branch` kısmındaki herhangi bir branch üzerine tıklayarak `Merge Into Current` ile kendi projene dahil edebilirsin.
 
 ## Git Cheat Sheet
 
 ![git](../images/git-cheet-sheet.jpeg)
+
+## Ek Kaynaklar
+
+- [Sık kullanılan git komutları](https://github.com/joshnh/Git-Commands)
+- [Start Using Git | Gitlab](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
