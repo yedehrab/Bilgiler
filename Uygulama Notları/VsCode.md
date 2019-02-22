@@ -42,6 +42,7 @@
 | [Visual Studio Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings)                              | Kısayollar üzerine bir eklenti                                                                       |
 | [Open File](https://marketplace.visualstudio.com/items?itemName=Fr43nk.seito-openfile)                                            | Yolu verilen dosyayı vscode içinde açma                                                              |
 | *Code Snippets*                                                                                                                   | Dil'e özel anahtar kelimeler ile kod tamamlama                                                       |
+| [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image) | Panodan resim kopyalama |
 
 ### Verimli Kodlama Eklentileri
 
