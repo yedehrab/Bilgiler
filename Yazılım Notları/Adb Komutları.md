@@ -1,5 +1,9 @@
 # ADB Komutları <!-- omit in toc -->
 
+Android telefonları için komutları barındırır.
+
+## İçerik <!-- omit in toc -->
+
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
 - [Adb Server](#adb-server)
