@@ -2,6 +2,8 @@
 
 Ek kaynak için [buraya](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) tıklayabilirsin.
 
+## İçerikler <!-- omit in toc -->
+
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
 - [Kullanım Örnekleri](#kullan%C4%B1m-%C3%B6rnekleri)
@@ -9,6 +11,7 @@ Ek kaynak için [buraya](https://github.com/adam-p/markdown-here/wiki/Markdown-C
   - [Bağlantı Verme](#ba%C4%9Flant%C4%B1-verme)
     - [Kullanım Kodu](#kullan%C4%B1m-kodu)
     - [Örnek Çıktı](#%C3%B6rnek-%C3%A7%C4%B1kt%C4%B1)
+- [VsCode için Faydalı Eklentiler](#vscode-i%C3%A7in-faydal%C4%B1-eklentiler)
 - [Kaynaklar](#kaynaklar)
 
 ## Kullanım Örnekleri
@@ -20,9 +23,10 @@ Detaylar için [buraya](https://guides.github.com/features/mastering-markdown/) 
 - `CTRL` + `Ü` ve - `CTRL` + `Ğ` İle *.md* uzantılı dosyalarda maddesel hale sokabilirsiniz. ( `Ğ` girinti azaltma, `Ü` gitinti arttırma.)
 - `*[metin]*` Metni italik (eğik) yazma
 - `**[metin]**` Metni bold (kalın) yazma
-- `` karakteri ile metni biçimlendirmeden uzak tutup, özel gösterebilirsin. (`örnek`)
+- `ALT` + `,` (tek tırnak) karakteri ile metni biçimlendirmeden uzak tutup, özel gösterebilirsin. (`örnek`)
 - `[metin](url)` yapısı ile metne link verebilirsin.
 - `![resim_açıklaması][resim_urli]` yapısı ile yazına resim yerleştirebilirsin.
+- `-` ile maddesel yapı oluşturabilirsin.
 
 ### Tablo Oluşturma
 
@@ -45,12 +49,12 @@ Detaylar için [buraya](https://guides.github.com/features/mastering-markdown/) 
 Link işlemleri için bilgiler. Kaynak için [buraya](https://css-tricks.com/snippets/html/mailto-links/) tıklayabilirsin.
 
 | İstek | Anahtar |
-|---------|----------|
+|-------|---------|
 | Site | <https://...> |
 | Mail | <mailto:...> |
+| Telefon | <tel:> |
 | Aynı dizinden | ./... |
 | Bir üst dizinden | ../... |
-| Telefon | <tel:> |
 
 > Bağlantı verme işlemlerinde özel karakter kullanmak için kodlama yapmanız gerekmekte. Kodlama yapan online site için [buraya](https://www.urlencoder.org/) tıklaytabilirsin. Siteye yol verini kopyalayıp *encoded* demeniz yeterli
 
@@ -65,6 +69,13 @@ Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Y
 #### Örnek Çıktı
 
 *Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Yapısı) tıklayın.*
+
+## VsCode için Faydalı Eklentiler
+
+> Detayalar için uygulama notlarındaki [VsCode](../Uygulama%20Notlar%C4%B1/VsCode.md) yazıma bakabilirsin.
+
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
 ## Kaynaklar
 
