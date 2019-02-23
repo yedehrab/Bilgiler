@@ -36,6 +36,7 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
     - [Conda ile Networkx İndirme](#conda-ile-networkx-i%CC%87ndirme)
     - [SSL Ek Hata Linkleri](#ssl-ek-hata-linkleri)
 - [PyCharm Üzerinden Anaconda](#pycharm-%C3%BCzerinden-anaconda)
+  - [PyCharm Projeyi Derlemek için Yapılandırma Ayarlama](#pycharm-projeyi-derlemek-i%C3%A7in-yap%C4%B1land%C4%B1rma-ayarlama)
   - [PyCharm Üzerinden Sanal Conda Ortam Oluşturma](#pycharm-%C3%BCzerinden-sanal-conda-ortam-olu%C5%9Fturma)
 
 ## Faydaları
@@ -218,13 +219,24 @@ conda install -c anaconda networkx
 
 ## PyCharm Üzerinden Anaconda
 
+### PyCharm Projeyi Derlemek için Yapılandırma Ayarlama
+
+Çalıştırma butonu üzerinden (`SHIFT` + `F9`) projeyi çalıştırmak için:
+
+- Derleme butonu yanındaki `seçme kutusuna` tıklayın
+- `Edit Configuration`
+- Sol üstten `+` butonuna basıns
+  - `Python`
+- `Script Path:` kısmından çalıştırmak istediğiniz **.py** uzantılı dosyayı seçin
+- `OK`
+
 ### PyCharm Üzerinden Sanal Conda Ortam Oluşturma
 
 - `CTRL` + `ALT` + `S` ile ayarlara girin
 - `Project: imgtotext`
   - `Project: Interpeter`
-- Sağ üstteki ayarlar butonu
-  - Add
-  - Conda Enviroment
+- Sağ üstteki `ayarlar butonu`na tıklayın
+  - `Add`
+  - `Conda Enviroment`
   - `OK`
 - `+` butonu ile ek paket kurulumu yapabilirsiniz (*İsteğe Bağlı*)
