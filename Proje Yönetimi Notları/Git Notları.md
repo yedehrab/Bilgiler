@@ -33,7 +33,7 @@ Programlama işlerindeki projelerin yönetimi için kaçınılmaz bir teknolojid
     - [Yerel branch silme](#yerel-branch-silme)
     - [Uzaktaki (remote) branch'ı silme](#uzaktaki-remote-branch%C4%B1-silme)
 - [Faydalı git komutları](#faydal%C4%B1-git-komutlar%C4%B1)
-- [Git Üzerinde Kullanıcı Bilgilerini Saklama](#git-%C3%BCzerinde-kullan%C4%B1c%C4%B1-bilgilerini-saklama)
+  - [Git Üzerinde Kullanıcı Bilgilerini Saklama](#git-%C3%BCzerinde-kullan%C4%B1c%C4%B1-bilgilerini-saklama)
   - [Remote Kaldırma & Gösterme](#remote-kald%C4%B1rma--g%C3%B6sterme)
   - [Son hatalı yüklemeyi kaldırma](#son-hatal%C4%B1-y%C3%BCklemeyi-kald%C4%B1rma)
 - [Uygulamalar Üzerinde Git](#uygulamalar-%C3%BCzerinde-git)
@@ -263,7 +263,7 @@ git push [url] --delete [branch]
 
 Zaman zaman gerekebilecek git komutları
 
-## Git Üzerinde Kullanıcı Bilgilerini Saklama
+### Git Üzerinde Kullanıcı Bilgilerini Saklama
 
 ```bash
 git config --global credential.helper cache
