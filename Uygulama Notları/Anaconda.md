@@ -35,6 +35,8 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
     - [Manuel OpenSSL Kurulumu](#manuel-openssl-kurulumu)
     - [Conda ile Networkx İndirme](#conda-ile-networkx-i%CC%87ndirme)
     - [SSL Ek Hata Linkleri](#ssl-ek-hata-linkleri)
+- [PyCharm Üzerinden Anaconda](#pycharm-%C3%BCzerinden-anaconda)
+  - [PyCharm Üzerinden Sanal Conda Ortam Oluşturma](#pycharm-%C3%BCzerinden-sanal-conda-ortam-olu%C5%9Fturma)
 
 ## Faydaları
 
@@ -213,3 +215,16 @@ conda install -c anaconda networkx
 - [How to install the most recent version of OpenSSL on Windows 10 in 64 Bit](https://www.cloudinsidr.com/content/how-to-install-the-most-recent-version-of-openssl-on-windows-10-in-64-bit/)
 - [Conda update failed: SSL error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed](https://stackoverflow.com/a/35804869/9770490)
 - [Setting SSL Verify](https://github.com/ContinuumIO/anaconda-issues/issues/494#issuecomment-155097614)
+
+## PyCharm Üzerinden Anaconda
+
+### PyCharm Üzerinden Sanal Conda Ortam Oluşturma
+
+- `CTRL` + `ALT` + `S` ile ayarlara girin
+- `Project: imgtotext`
+  - `Project: Interpeter`
+- Sağ üstteki ayarlar butonu
+  - Add
+  - Conda Enviroment
+  - `OK`
+- `+` butonu ile ek paket kurulumu yapabilirsiniz (*İsteğe Bağlı*)
