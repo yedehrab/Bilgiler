@@ -28,6 +28,7 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
 - [Karma Paketler ve Kurulumları](#karma-paketler-ve-kurulumlar%C4%B1)
   - [Tesseract](#tesseract)
   - [Selenium](#selenium)
+  - [Pillow (Python Image Library)](#pillow-python-image-library)
 - [Hata Notları](#hata-notlar%C4%B1)
   - [Conda SSL Hatası](#conda-ssl-hatas%C4%B1)
     - [Windows Üzerinden Ağ Sıfırlam](#windows-%C3%BCzerinden-a%C4%9F-s%C4%B1f%C4%B1rlam)
@@ -161,12 +162,22 @@ conda install -c mcs07 tesseract
 conda install -c jim-hart pytesseract
 ```
 
+> [Pillow (Python Image Library)](#pillow-python-image-library) paketinin de indirimlesi gerekebilir.
+
 ### Selenium
 
 Web siteleri üzerinde işlem yapmak için kullanılır.
 
 ```cmd
 conda install -c conda-forge selenium
+```
+
+### Pillow (Python Image Library)
+
+Python resim kütüphanesi resim işlemleri için kullanılır.
+
+```cmd
+conda install -c anaconda pillow
 ```
 
 ## Hata Notları
