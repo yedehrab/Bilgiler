@@ -1,5 +1,7 @@
 # Veri Kümeleri <!-- omit in toc -->
 
+## İçerikler <!-- omit in toc -->
+
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
 - [Linkler](#linkler)
@@ -10,18 +12,20 @@ Yapay zeka için olmazsa olmaz olan veri kümeleri (dataset) hakkında bilgiler 
 
 ## Linkler
 
-* [ABD açık veri](https://www.data.gov/)
-* [COCO](http://cocodataset.org/)
-* [Berkeley](https://bdd-data.berkeley.edu/)
-  * Email : yoif4@alexbox.online
-  * Password: Temp1234
+- [ABD açık veri](https://www.data.gov/)
+- [COCO](http://cocodataset.org/)
+- [Berkeley](https://bdd-data.berkeley.edu/)
+  - Email : yoif4@alexbox.online
+  - Password: Temp1234
+- [Türkçe Kelimeler](https://drive.google.com/open?id=1TOEqrRNmwJOa08F1lYgLz_HNL3WOppoA)
 
 ### Resim Veri Kümeleri
 
-* [ImageNet](http://www.image-net.org/index)
-* [Getty](https://www.gettyimages.com/)
+- [ImageNet](http://www.image-net.org/index)
+- [Getty](https://www.gettyimages.com/)
+- [Usplash](https://unsplash.com/)
 
 ## Referanslar
 
-* [19 Ücretsiz Veri Kümesi Sitesi](https://www.springboard.com/blog/free-public-data-sets-data-science-project/)
-* [17 Finans ve Ekonomik Veri Kümesi](https://gengo.ai/datasets/17-best-finance-economic-datasets-for-machine-learning/?utm_campaign=c&utm_medium=quora&utm_source=rei)
+- [19 Ücretsiz Veri Kümesi Sitesi](https://www.springboard.com/blog/free-public-data-sets-data-science-project/)
+- [17 Finans ve Ekonomik Veri Kümesi](https://gengo.ai/datasets/17-best-finance-economic-datasets-for-machine-learning/?utm_campaign=c&utm_medium=quora&utm_source=rei)
