@@ -39,7 +39,7 @@ Programlama işlerindeki projelerin yönetimi için kaçınılmaz bir teknolojid
 - [Uygulamalar Üzerinde Git](#uygulamalar-%C3%BCzerinde-git)
   - [JetBrains IDEs](#jetbrains-ides)
 - [Git Cheat Sheet](#git-cheat-sheet)
-- [Ek Kaynaklar](#ek-kaynaklar)
+- [Harici Linkler](#harici-linkler)
 
 ## Git İşleme Yapısı
 
@@ -309,7 +309,8 @@ gir reset HEAD~
 
 ![git](../images/git-cheet-sheet.jpeg)
 
-## Ek Kaynaklar
+## Harici Linkler
 
 - [Sık kullanılan git komutları](https://github.com/joshnh/Git-Commands)
 - [Start Using Git | Gitlab](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+- [Github ile Fork ve Pull Request](https://medium.com/@noteCe/github-ile-fork-ve-pull-request-be6077342834)
