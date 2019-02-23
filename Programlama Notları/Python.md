@@ -12,6 +12,8 @@ Farkı bir kaynak için [buraya](https://github.com/fuatbeser/python-notlarim/bl
   - [Class Anahtar Kelimeleri](#class-anahtar-kelimeleri)
   - [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi)
   - [Metodlu Class Örneği](#metodlu-class-%C3%B6rne%C4%9Fi)
+    - [Obje Özelliği Silme](#obje-%C3%B6zelli%C4%9Fi-silme)
+    - [Class Silme](#class-silme)
   - [Scopes and Namespaces](#scopes-and-namespaces)
 - [Karma Linkler](#karma-linkler)
 
@@ -76,6 +78,18 @@ p1.myfunc()
 
 ```cmd
 Hello my name is John
+```
+
+#### Obje Özelliği Silme
+
+```py
+del p1.age
+```
+
+#### Class Silme
+
+```py
+del p1
 ```
 
 ### Scopes and Namespaces
