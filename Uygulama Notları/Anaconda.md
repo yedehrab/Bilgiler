@@ -173,6 +173,7 @@ Web siteleri üzerinde işlem yapmak için kullanılır.
 
 ```cmd
 conda install -c conda-forge selenium
+conda install -c clinicalgraphics selenium-chromedriver
 ```
 
 ### Pillow (Python Image Library)
