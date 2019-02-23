@@ -6,8 +6,10 @@ Farkı bir kaynak için [buraya](https://github.com/fuatbeser/python-notlarim/bl
 
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
-- [Veri Tipleri](#veri-tipleri)
-  - [Veri Tipleri Kaynakları](#veri-tipleri-kaynaklar%C4%B1)
+- [Değişken Tipleri](#de%C4%9Fi%C5%9Fken-tipleri)
+  - [Değişken Tipleri için Ek Kaynak](#de%C4%9Fi%C5%9Fken-tipleri-i%C3%A7in-ek-kaynak)
+- [Aritmatik Operatörler](#aritmatik-operat%C3%B6rler)
+  - [Ek Aritmatik Operatörler](#ek-aritmatik-operat%C3%B6rler)
 - [Class](#class)
   - [Class Anahtar Kelimeleri](#class-anahtar-kelimeleri)
   - [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi)
@@ -17,30 +19,51 @@ Farkı bir kaynak için [buraya](https://github.com/fuatbeser/python-notlarim/bl
   - [Scopes and Namespaces](#scopes-and-namespaces)
 - [Karma Linkler](#karma-linkler)
 
-## Veri Tipleri
+## Değişken Tipleri
 
-| Tip      | Açıklama         | Örnek              |
-| -------- | ---------------- | ------------------ |
-| bool     | 2'li değer, bit  | `True`             |
-| int      | Sayı             | `1`                |
-| float    | Virgüllü sayı    | `1.2`              |
-| complex  | Karmaşık sayılar | `2+3j`             |
-| str      | String, metin    | `"Hello"`          |
-| function | Fonksyion        | `def func(param):` |
+| Tip        | Açıklama         | Örnek              |
+| ---------- | ---------------- | ------------------ |
+| bool       | 2'li değer, bit  | `True`             |
+| int        | Sayı             | `1`                |
+| float      | Virgüllü sayı    | `1.2`              |
+| complex    | Karmaşık sayılar | `2+3j`             |
+| str        | String, metin    | `"Hello"`          |
+| function   | Fonksyion        | `def func(param):` |
+| Dizi       | `[]`             | `dizi = []`        |
+| Dictionary | `{}`             | `sozluk = {}`      |
+| Tuple      | `()`             | `mytuple = ()`     |
 
-### Veri Tipleri Kaynakları
+### Değişken Tipleri için Ek Kaynak
 
 - [Basic Data Types in Python](https://realpython.com/python-data-types/)
+
+## Aritmatik Operatörler
+
+| Operatör         | Açıklama                                |
+| ---------------- | --------------------------------------- |
+| `+, -, /, *`     | 4 işlem                                 |
+| `=`              | Atama işlemi                            |
+| `a, b = c, d`    | Tek satırda çoklu atama                 |
+| `+=, -=, /=, *=` | Kendisiyle işleme sokup kendisine atama |
+| `( )`            | Parantej ile öncelik belirleme          |
+
+### Ek Aritmatik Operatörler
+
+| Operatör | Açıklama             | Örnek     | Çıktı |
+| -------- | -------------------- | --------- | ----- |
+| `%`      | Mod alma işlemi      | `6 % 2`   | 0     |
+| `**`     | Kuvvet alma          | `6 ** 2`  | 36    |
+| `//`     | Kalansız bölümü alma | `13 // 2` | 6     |
 
 ## Class
 
 ### Class Anahtar Kelimeleri
 
-| Anhatar    | Açıklama                               | Örnek                                               |
-| ---------- | -------------------------------------- | --------------------------------------------------- |
-| `self`     | Diğer dillerdeki `this` anlamına gelir | [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi) |
-| `__init__` | Constructer fonksiyonudur              | [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi) |
-| `def function(param):`| Fonksiyon tanımalama | [Metodlu Class Örneği](#metodlu-class-%C3%B6rne%C4%9Fi) |
+| Anhatar                | Açıklama                               | Örnek                                                   |
+| ---------------------- | -------------------------------------- | ------------------------------------------------------- |
+| `self`                 | Diğer dillerdeki `this` anlamına gelir | [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi)     |
+| `__init__`             | Constructer fonksiyonudur              | [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi)     |
+| `def function(param):` | Fonksiyon tanımalama                   | [Metodlu Class Örneği](#metodlu-class-%C3%B6rne%C4%9Fi) |
 
 ### Basit Class Örneği
 
