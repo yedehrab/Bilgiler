@@ -6,6 +6,7 @@
 
 ## Programlama Notları
 
+- [Python](Programlama%20Notlar%C4%B1/Python.md)
 - [Javascript](Programlama%20Notlar%C4%B1/Javascript.md)
 - [Php](Programlama%20Notlar%C4%B1/Php.md)
 - [MySQL](Programlama%20Notlar%C4%B1/MySQL.md)
