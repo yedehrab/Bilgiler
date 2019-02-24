@@ -12,13 +12,22 @@
   - [Fonksyion Oluşturma Anahtar Kelimeleri](#fonksyion-olu%C5%9Fturma-anahtar-kelimeleri)
     - [Fonksiyon Anahtar Kelimeleri](#fonksiyon-anahtar-kelimeleri)
 - [Değişkenler](#de%C4%9Fi%C5%9Fkenler)
+  - [Ana Değişkenler](#ana-de%C4%9Fi%C5%9Fkenler)
   - [Ek Değişkenler](#ek-de%C4%9Fi%C5%9Fkenler)
   - [Sabit Değerler (Constants)](#sabit-de%C4%9Ferler-constants)
   - [Değişkenler Arası Takılama (Casting)](#de%C4%9Fi%C5%9Fkenler-aras%C4%B1-tak%C4%B1lama-casting)
   - [String İşlemleri](#string-i%CC%87%C5%9Flemleri)
   - [Değişken Tipleri için Ek Kaynak](#de%C4%9Fi%C5%9Fken-tipleri-i%C3%A7in-ek-kaynak)
-- [Aritmatik Operatörler](#aritmatik-operat%C3%B6rler)
-  - [Ek Aritmatik Operatörler](#ek-aritmatik-operat%C3%B6rler)
+- [Operatörler](#operat%C3%B6rler)
+  - [Aritmatik Operatörler](#aritmatik-operat%C3%B6rler)
+    - [Ek Aritmatik Operatörler](#ek-aritmatik-operat%C3%B6rler)
+  - [Karşılaştırma Operatörleri](#kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
+  - [Mantıksal Operatörler](#mant%C4%B1ksal-operat%C3%B6rler)
+  - [Bit Düzeyinde Operatörler](#bit-d%C3%BCzeyinde-operat%C3%B6rler)
+  - [Kimlik Belirleme Operatörleri](#kimlik-belirleme-operat%C3%B6rleri)
+    - [Kimlik Belirleme Operatörleri Örneği](#kimlik-belirleme-operat%C3%B6rleri-%C3%B6rne%C4%9Fi)
+  - [Üyelik Operatörleri](#%C3%BCyelik-operat%C3%B6rleri)
+    - [Üyelik Operatörleri Örneği](#%C3%BCyelik-operat%C3%B6rleri-%C3%B6rne%C4%9Fi)
 - [Class](#class)
   - [Class Anahtar Kelimeleri](#class-anahtar-kelimeleri)
   - [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi)
@@ -80,6 +89,8 @@ Harici link için [buraya](https://www.programiz.com/python-programming/keyword-
 | `yield`  | Her çağırılmada tek bir veri döndürme (generator) |
 
 ## Değişkenler
+
+### Ana Değişkenler
 
 | Tip     | Açıklama         | Örnek                 |
 | ------- | ---------------- | --------------------- |
@@ -144,7 +155,9 @@ sonuc = 7 / 3 # 2.33 atanır
 
 - [Basic Data Types in Python](https://realpython.com/python-data-types/)
 
-## Aritmatik Operatörler
+## Operatörler
+
+### Aritmatik Operatörler
 
 | Operatör         | Açıklama                                |
 | ---------------- | --------------------------------------- |
@@ -152,15 +165,98 @@ sonuc = 7 / 3 # 2.33 atanır
 | `=`              | Atama işlemi                            |
 | `a, b = c, d`    | Tek satırda çoklu atama                 |
 | `+=, -=, /=, *=` | Kendisiyle işleme sokup kendisine atama |
+| `<operatör>=`    | Kendisiyle işleme sokup kendisine atama |
 | `( )`            | Parantej ile öncelik belirleme          |
 
-### Ek Aritmatik Operatörler
+> `<operatör>` herhangi bir operatörü temsil eder.
+
+#### Ek Aritmatik Operatörler
 
 | Operatör | Açıklama             | Örnek     | Çıktı |
 | -------- | -------------------- | --------- | ----- |
 | `%`      | Mod alma işlemi      | `6 % 2`   | 0     |
 | `**`     | Kuvvet alma          | `6 ** 2`  | 36    |
 | `//`     | Kalansız bölümü alma | `13 // 2` | 6     |
+
+### Karşılaştırma Operatörleri
+
+| Operatör | Açıklama   | Örnek    | Çıktı   |
+| -------- | ---------- | -------- | ------- |
+| `>`      | Büyük      | `3 > 2`  | `True`  |
+| `<`      | Küçük      | `3 < 2`  | `False` |
+| `==`     | Eşit       | `3 == 3` | `True`  |
+| `!=`     | Eşit değil | `2 != 2` | `False` |
+| `>=`     | Büyük eşit | `2 >= 5` | `False` |
+| `<=`     | Küçük eşit | `2 <= 2` | `True`  |
+
+### Mantıksal Operatörler
+
+| Operatör | Açıklama    | Örnek            | Çıktı   |
+| -------- | ----------- | ---------------- | ------- |
+| `and`    | Ve işlemi   | `True and False` | `False` |
+| `or`     | Veya işlemi | `False or True`  | `True`  |
+| `not`    | Değili      | `not False`      | `True`  |
+
+### Bit Düzeyinde Operatörler
+
+| Operatör | Açıklama      | Örnek                     |
+| -------- | ------------- | ------------------------- |
+| `&`      | Ve            | `x & y = 0 (0000 0000)`   |
+| `|`      | Veya          | `x | y = 14 (0000 1110)`  |
+| `~`      | Değili        | `~ x = -11 (1111 0101)`   |
+| `^`      | XOR           | `x ^ y = 14 (0000 1110)`  |
+| `>>`     | Sağa kaydırma | `x >> 2 = 2 (0000 0010)`  |
+| `<<`     | Sola kaydırma | `x << 2 = 40 (0010 1000)` |
+
+### Kimlik Belirleme Operatörleri
+
+| Operatör | Açıklama                  | Örnek                     | Çıktı   |
+| -------- | ------------------------- | ------------------------- | ------- |
+| `is`     | Aynı objeye işaret etme   | `[1, 2, 3] and [1, 2, 3]` | `False` |
+| `is not` | Farklı objeye işaret etme | `1  is not 1`             | `False` |
+
+> Ek değişkenlerde objelerin adresleri farklı olduğunda ilk çıktı `False` olur.
+
+#### Kimlik Belirleme Operatörleri Örneği
+
+```py
+x1 = 5
+y1 = 5
+x2 = 'Hello'
+y2 = 'Hello'
+x3 = [1,2,3]
+y3 = [1,2,3]
+
+# Output: False
+print(x1 is not y1)
+
+# Output: True
+print(x2 is y2)
+
+# Output: False
+print(x3 is y3)
+ ```
+
+### Üyelik Operatörleri
+
+| Operatör | Açıklama    | Örnek        | Çıktı   |
+| -------- | ----------- | ------------ | ------- |
+| `in`     | Anahtar var | `5 in x`     | `False` |
+| `not in` | Anahtar yok | `1 not in x` | `False` |
+
+> `x = [1, 2, 3, 4]`
+
+#### Üyelik Operatörleri Örneği
+
+```py
+x = 'Hello world'
+y = {1:'a',2:'b'}
+
+print('H' in x) # True
+print('hello' not in x) # True (h'si büyük değil)
+print(1 in y) # True
+print('a' in y) # False ('a' bir değerdir anahtar değildir)
+```
 
 ## Class
 
