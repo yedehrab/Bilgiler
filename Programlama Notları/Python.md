@@ -28,6 +28,41 @@
     - [Kimlik Belirleme Operatörleri Örneği](#kimlik-belirleme-operat%C3%B6rleri-%C3%B6rne%C4%9Fi)
   - [Üyelik Operatörleri](#%C3%BCyelik-operat%C3%B6rleri)
     - [Üyelik Operatörleri Örneği](#%C3%BCyelik-operat%C3%B6rleri-%C3%B6rne%C4%9Fi)
+- [If / Else Koşul (Constraints) Yapısı](#if--else-ko%C5%9Ful-constraints-yap%C4%B1s%C4%B1)
+- [Döngüler (Loop)](#d%C3%B6ng%C3%BCler-loop)
+  - [For Döngüsü](#for-d%C3%B6ng%C3%BCs%C3%BC)
+  - [While Döngüsü](#while-d%C3%B6ng%C3%BCs%C3%BC)
+  - [Range Fonksiyonu](#range-fonksiyonu)
+- [Break / Continue](#break--continue)
+- [Fonksiyonlar](#fonksiyonlar)
+  - [Fonksiyon İskeleti](#fonksiyon-i%CC%87skeleti)
+  - [Fonksiyon Örneği](#fonksiyon-%C3%B6rne%C4%9Fi)
+  - [Fonksyion Dökümantasyonu](#fonksyion-d%C3%B6k%C3%BCmantasyonu)
+  - [Fonksyion Varsayılan Parametreler](#fonksyion-varsay%C4%B1lan-parametreler)
+  - [Fonksiyonlarda Keyfi Parametreler](#fonksiyonlarda-keyfi-parametreler)
+  - [Özyineleyen Fonksiyonlar](#%C3%B6zyineleyen-fonksiyonlar)
+    - [Özyineleyen Fonksiyonların Avantajları](#%C3%B6zyineleyen-fonksiyonlar%C4%B1n-avantajlar%C4%B1)
+    - [Özyineleyen Fonksiyonların Zararları](#%C3%B6zyineleyen-fonksiyonlar%C4%B1n-zararlar%C4%B1)
+- [Lambda Fonksiyonlar](#lambda-fonksiyonlar)
+  - [Filter ile Lambda Kullanımı](#filter-ile-lambda-kullan%C4%B1m%C4%B1)
+  - [Map ile Lambda Kullanımı](#map-ile-lambda-kullan%C4%B1m%C4%B1)
+- [Global, Local ve Nonlocal Kavramları](#global-local-ve-nonlocal-kavramlar%C4%B1)
+  - [Global, Local ve Nonlocal Kavramlarına Örnek](#global-local-ve-nonlocal-kavramlar%C4%B1na-%C3%B6rnek)
+- [Modüller](#mod%C3%BCller)
+  - [Modül Kullanım Örnekleri](#mod%C3%BCl-kullan%C4%B1m-%C3%B6rnekleri)
+  - [Python Modül Dosyaları](#python-mod%C3%BCl-dosyalar%C4%B1)
+    - [Sistemin Python Modüllerine Bakma](#sistemin-python-mod%C3%BCllerine-bakma)
+  - [Modül İçinde Tanımlanan İsimleri Alma](#mod%C3%BCl-i%CC%87%C3%A7inde-tan%C4%B1mlanan-i%CC%87simleri-alma)
+- [Paketler (Package)](#paketler-package)
+  - [Paketten ve Modül Örnekleri](#paketten-ve-mod%C3%BCl-%C3%B6rnekleri)
+- [Sayılar, Sayılar Arası Dönüşüm ve Matematik](#say%C4%B1lar-say%C4%B1lar-aras%C4%B1-d%C3%B6n%C3%BC%C5%9F%C3%BCm-ve-matematik)
+  - [Tabanlı Sayılar](#tabanl%C4%B1-say%C4%B1lar)
+  - [Ondalıklı Sayılar (Decimals / Floats)](#ondal%C4%B1kl%C4%B1-say%C4%B1lar-decimals--floats)
+    - [Decimal Float Kullanımları ve Farkı](#decimal-float-kullan%C4%B1mlar%C4%B1-ve-fark%C4%B1)
+  - [Kesirli Sayılar (Fractions)](#kesirli-say%C4%B1lar-fractions)
+    - [Kesirli Sayılarla İşlemler](#kesirli-say%C4%B1larla-i%CC%87%C5%9Flemler)
+  - [Matematik İşlemleri](#matematik-i%CC%87%C5%9Flemleri)
+    - [Matematikte Rastgelelik](#matematikte-rastgelelik)
 - [Class](#class)
   - [Class Anahtar Kelimeleri](#class-anahtar-kelimeleri)
   - [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi)
@@ -40,6 +75,9 @@
 
 ## Yazım Kuralları
 
+- Her python dosyasına **modül** denir
+  - `import` ile dahil edilirler
+  - `.` ile içlerine erişilir
 - Class isimleri için **camel case** yazım kuralı geçerlidir
   - Boşluk karakteri **harfi büyüterek** temsil edilir
   - `camelCase`
@@ -49,6 +87,9 @@
 - Girintiler (`\t` karakteri) `{}` işlevi görür
 - `:` karakteri ile yeni bir scope (alt alan) açılır
   - `for`, `def` gibi döngü veya metod işlemlerinde kullanırlır
+- Metotlar arasında 2 satır bırakılır
+- Metodların en son satırları boş olmalıdır (return için)
+- Kodun en son satırı boş olmalıdır (End of File)
 
 > Daha fazla bilgi için harici linklerdeki [Should I use underscores or camel case for Python?](https://www.quora.com/Should-I-use-underscores-or-camel-case-for-Python) bağlantısına tıklayabilirsin.
 
@@ -73,6 +114,8 @@ Harici link için [buraya](https://www.programiz.com/python-programming/keyword-
 | `is`    | Eşitlik (==)                    |
 | `in`    | İçerisindeki elemanlar          |
 | `with`  | Açık olduğu sürece anlamı taşır |
+
+> Döngü veya metotların *içleri doldurulana* kadar yer kaplayıcı olarak `pass` kullanılır.
 
 ### Fonksyion Oluşturma Anahtar Kelimeleri
 
@@ -256,6 +299,442 @@ print('H' in x) # True
 print('hello' not in x) # True (h'si büyük değil)
 print(1 in y) # True
 print('a' in y) # False ('a' bir değerdir anahtar değildir)
+```
+
+## If / Else Koşul (Constraints) Yapısı
+
+- `:` ile if / else satırı sonlandırılır
+- `Tab` kadar boşluk atılırsa if scope*'u içerisinde olur
+
+```py
+num = float(input("Sayı giriniz: "))
+if num >= 0:
+    if num == 0:
+        print("Sıfır")
+    elif num == 1:
+        print("Bir")
+    else:
+        print("Pozitif sayı")
+else:
+    print("Negatif sayı")
+```
+
+## Döngüler (Loop)
+
+### For Döngüsü
+
+```py
+sayilar = [6, 5, 3, 8, 4, 2, 5, 4, 11]
+toplam = 0 # Toplam değeri tutacak değişken
+
+for sayi in sayilar: # Liste üzerinde döngü ile ilerleme
+  toplam = toplam + sayi
+
+print("Toplam değer:", sum) # Toplam Değer: 48
+```
+
+### While Döngüsü
+
+```py
+sayac = 0
+
+while sayac < 3:
+    print("Döngü içinde")
+    sayac = sayac + 1
+else:
+    print("Döngü dışında")
+```
+
+```out
+Döngü içinde
+Döngü içinde
+Döngü içinde
+Döngü dışında
+```
+
+### Range Fonksiyonu
+
+```py
+print(range(10)) # range(0, 10)
+print(list(range(10))) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(list(range(2, 8))) # [2, 3, 4, 5, 6, 7]
+print(list(range(2, 20, 3))) #  [2, 5, 8, 11, 14, 17]
+```
+
+## Break / Continue
+
+```py
+for deger in "string":
+    if deger == "i":
+        break # Döngüyü sonlandırır
+    if deger == "t"
+        continue # Döngüdeki adımı sonlandırır
+    print(deger)
+
+print("Son")
+```
+
+```out
+s
+r
+Son
+```
+
+## Fonksiyonlar
+
+### Fonksiyon İskeleti
+
+```py
+def function_name(parameters):
+  """docstring"""
+  statement(s)
+```
+
+### Fonksiyon Örneği
+
+```py
+def greet(name):
+  """This function greets to
+  the person passed in as
+  parameter"""
+  print("Hello, " + name + ". Good morning!")
+```
+
+### Fonksyion Dökümantasyonu
+
+```cmd
+>>> print(greet.__doc__)
+This function greets to
+  the person passed into the
+  name paramete
+```
+
+### Fonksyion Varsayılan Parametreler
+
+```py
+def greet(name, msg = "Good morning!"):
+   """
+   This function greets to
+   the person with the
+   provided message.
+
+   If message is not provided,
+   it defaults to "Good
+   morning!"
+   """
+
+   print("Hello",name + ', ' + msg)
+
+greet("Kate") # Varsayılan parametreyi kullanma
+greet("Bruce","How do you do?") # Sıralı parametre verme
+greet("Bruce", msg="Naber") # İşaretleyerek paremetre verme
+```
+
+### Fonksiyonlarda Keyfi Parametreler
+
+```py
+def greet(*names):
+   """This function greets all
+   the person in the names tuple."""
+
+   # names is a tuple with arguments
+   for name in names:
+       print("Hello",name)
+
+greet("Monica","Luke","Steve","John")
+```
+
+> `*` ön eki ile ile kaç tane isim gelirse o kadar kullanıyoruz.
+
+### Özyineleyen Fonksiyonlar
+
+```py
+def calc_factorial(x):
+    """This is a recursive function
+    to find the factorial of an integer"""
+
+    if x == 1:
+        return 1
+    else:
+        return (x * calc_factorial(x-1))
+
+num = 4
+print("The factorial of", num, "is", calc_factorial(num))
+```
+
+```out
+calc_factorial(4)              # 1st call with 4
+4 * calc_factorial(3)          # 2nd call with 3
+4 * 3 * calc_factorial(2)      # 3rd call with 2
+4 * 3 * 2 * calc_factorial(1)  # 4th call with 1
+4 * 3 * 2 * 1                  # return from 4th call as number=1
+4 * 3 * 2                      # return from 3rd call
+4 * 6                          # return from 2nd call
+24                             # return from 1st call
+```
+
+#### Özyineleyen Fonksiyonların Avantajları
+
+- Özyineleyen fonksiyonlar kodun daha temiz ve zarif gözükmesini sağlar
+- Karmaşık bir görev alt görevlere ayrılarak rahat çözülebilir
+- İç içe döngülere göre daha iyidir
+
+#### Özyineleyen Fonksiyonların Zararları
+
+- Bazı durumlarda anlaşılabilmesi zordur
+- Uzun tekrarlarda çok fazla vakit ve zaman harcarlar
+- Hata ayıklama oldukça zordur
+
+## Lambda Fonksiyonlar
+
+```py
+double = lambda x: x * 2 # lambda fonksiyon
+
+
+def double(x): # Fonksiyon
+   return x * 2
+```
+
+### Filter ile Lambda Kullanımı
+
+Sadece koşulu sağlayan değerleri döndürür.
+
+```py
+listem = [1, 5, 4, 6, 8, 11, 3, 12]
+
+cift_listem = list(filter(lambda x: (x%2 == 0) , listem))
+print(cift_listem) # [4, 6, 8, 12]
+```
+
+### Map ile Lambda Kullanımı
+
+Her eleman için işlem yapar.
+
+```py
+listem = [1, 5, 4, 6, 8, 11, 3, 12]
+
+katlanmis_listem = list(map(lambda x: x * 2 , listem))
+print(katlanmis_listem) # Output: [2, 10, 8, 12, 16, 22, 6, 24]
+```
+
+## Global, Local ve Nonlocal Kavramları
+
+| Kavram     | Açıklama                                                                                    |
+| ---------- | ------------------------------------------------------------------------------------------- |
+| `global`   | Tüm modülde geçerli değişkenler                                                             |
+| `local`    | Fonksiyonların içerisindeki yerel değişkenler                                               |
+| `nonlocal` | Modül ile fonksiyon arasında kalan, genellikle iç içe fonksiyonlarda kullanılan değişkenler |
+
+### Global, Local ve Nonlocal Kavramlarına Örnek
+
+```py
+x = 5 # Global
+
+def fonksiyonum():
+  x = 3 # Nonlocal
+  
+
+  def degisitirici():
+    x = 1 # Local
+
+```
+
+## Modüller
+
+Her python dosyasına modül denir.
+
+- `import` ile dahil edilirler
+- `.` ile içlerindekilere erişilir
+
+### Modül Kullanım Örnekleri
+
+- Python aynı modülü birden fazla kez `import` etmez
+  - Kullanıcı birden fazla `import` işlemi yaparsa tepki vermez
+- Baştan `import` edilmek istenirse `imp.reload(modül)` şeklinde kullanılır
+
+```py
+import math # Doğrudan öodülü alma
+print("Pi: ", math.pi) # Pi: 3.141592653589793
+```
+
+```py
+import math as m # Modülü özel isimlendirme
+print("Pi: ", m.pi) # Pi: 3.141592653589793
+```
+
+```py
+from math import pi # Modül içinden özel değeri alma
+print("Pi: ", pi) # Pi: 3.141592653589793
+```
+
+```py
+from math import * # Modül içindeki her şeyi alma
+print("Pi: ", pi) # Pi: 3.141592653589793
+```
+
+### Python Modül Dosyaları
+
+Modül dosyalarının aranma yerleri:
+
+- Çalışılan dizin
+- Ortam değişkenlerindeki `PYTHONPATH` değişkeni değeri
+- Kuruluma bağlı varsayılan dizin
+
+#### Sistemin Python Modüllerine Bakma
+
+```py
+>>> import sys
+>>> sys.path
+['',
+'C:\\Python33\\Lib\\idlelib',
+'C:\\Windows\\system32\\python33.zip',
+'C:\\Python33\\DLLs',
+'C:\\Python33\\lib',
+'C:\\Python33',
+'C:\\Python33\\lib\\site-packages']
+```
+
+### Modül İçinde Tanımlanan İsimleri Alma
+
+```py
+>>> dir(example)
+['__builtins__',
+'__cached__',
+'__doc__',
+'__file__',
+'__initializing__',
+'__loader__',
+'__name__',
+'__package__',
+'add']
+```
+
+```py
+>>> import example
+>>> example.__name__
+'example'
+```
+
+```py
+>>> a = 1 # Modül değişkenlerine ekleniyor
+>>> b = "hello" # Modül değişkenlerine ekleniyor
+>>> import math # Modül değişkenlerine ekleniyor
+>>> dir()
+['__builtins__', '__doc__', '__name__', 'a', 'b', 'math', 'pyscripter']
+```
+
+## Paketler (Package)
+
+- Birden fazla modülü içinde barındırır
+- `.` ile modüllere erişilir
+  - Tekrar `.` atılırsa modülün içindekilere erişilir
+
+### Paketten ve Modül Örnekleri
+
+```py
+import Game.Level.start
+```
+
+```py
+from Game.Level import start
+```
+
+```py
+from Game.Level.start import select_difficulty
+```
+
+## Sayılar, Sayılar Arası Dönüşüm ve Matematik
+
+### Tabanlı Sayılar
+
+| Taban  | Ön ek           | Örnek                | Çıktı         |
+| ------ | --------------- | -------------------- | ------------- |
+| 2'lik  | `0b` ya da `0B` | `print(0b1101011)`   | 107           |
+| 8'lik  | `0o` ya da `0O` | `print(0xFB + 0b10)` | 253 (251 + 2) |
+| 16'lık | `0x` ya da `0X` | `print(0o15)`        | 13            |
+
+### Ondalıklı Sayılar (Decimals / Floats)
+
+```py
+>>> (1.1 + 2.2) == 3.3
+False
+>>> 1.1 + 2.2
+3.3000000000000003
+```
+
+```py
+import decimal
+
+print(0.1) # 0.1
+print(decimal.Decimal(0.1)) # Decimal('0.1000000000000000055511151231257827021181583404541015625')
+```
+
+```py
+from decimal import Decimal as D
+
+print(D('1.1') + D('2.2')) #  Decimal('3.3')
+print(D('1.2') * D('2.50')) # Decimal('3.000')
+```
+
+#### Decimal Float Kullanımları ve Farkı
+
+- Decimal daha fazla bellek kaplar
+- Finansal işlemlerde decimal tercih edilir
+
+### Kesirli Sayılar (Fractions)
+
+```py
+import fractions
+
+print(fractions.Fraction(1.5)) # 3/2
+print(fractions.Fraction(5)) # 5
+print(fractions.Fraction(1,3)) # 1/3
+```
+
+```py
+import fractions
+
+# Floatlar virgülden sonra da sayı barındırdığından dolayı farklı sonuç verir
+print(fractions.Fraction(1.1)) # 2476979795053773/2251799813685248
+print(fractions.Fraction('1.1')) # 11/10
+```
+
+#### Kesirli Sayılarla İşlemler
+
+```py
+from fractions import Fraction as F
+
+print(F(1,3) + F(1,3)) # 2/3
+print(1 / F(5,6)) # 6/5
+print(F(-3,10) > 0) # False
+print(F(-3,10) < 0) # True
+```
+
+### Matematik İşlemleri
+
+```py
+import math
+
+print(math.pi) # 3.141592653589793
+print(math.cos(math.pi)) # -1.0
+print(math.exp(10)) # 22026.465794806718
+print(math.log10(1000)) # .0
+print(math.sinh(1)) # 1.1752011936438014
+print(math.factorial(6)) # 720
+```
+
+#### Matematikte Rastgelelik
+
+```py
+import random
+
+x = ['a', 'b', 'c', 'd', 'e']
+
+print(random.randrange(10,20)) # Rastgele 10, 20 arasında sayı yazdırma
+print(random.choice(x)) # Rastgele seçim yapma
+random.shuffle(x) # Karıştrma
+print(x) # Karışım sonucunu yazma
+print(random.random()) # Rastgele eleman yazma
 ```
 
 ## Class
