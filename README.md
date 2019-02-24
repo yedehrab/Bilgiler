@@ -50,6 +50,7 @@
 ## Günlük Hayat Notları
 
 - [Çamaşır Makinesi](G%C3%BCnl%C3%BCk%20Hayat%20Notlar%C4%B1/%C3%87ama%C5%9F%C4%B1r%20Makinesi.md)
+- [Aydınlatma](G%C3%BCnl%C3%BCk%20Hayat%20Notlar%C4%B1/Ayd%C4%B1nlatma.md)
 
 ## Harici Linkler
 
