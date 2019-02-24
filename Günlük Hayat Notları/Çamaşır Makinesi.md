@@ -2,17 +2,26 @@
 
 Çamaşır makinesi ile alakası olmayanlar için 😄
 
+> Hotpoint Ariston baz alınmıştır.
+
 ## İçerik <!-- omit in toc -->
 
+- [Yıkama Öncesi Notlar](#y%C4%B1kama-%C3%B6ncesi-notlar)
 - [Programlar](#programlar)
   - [Yıkama Programları](#y%C4%B1kama-programlar%C4%B1)
   - [Kurutma Programları](#kurutma-programlar%C4%B1)
   - [Diğer Programlar](#di%C4%9Fer-programlar)
+- [Yıkama Sonrası Notlar](#y%C4%B1kama-sonras%C4%B1-notlar)
 - [Harici Linkler](#harici-linkler)
 
-## Programlar
+## Yıkama Öncesi Notlar
 
-Hotpoint Ariston baz alınmıştır.
+- 1 çay bardağı deterjanı yıkama gözüne koyun
+- 0.5 çay bardağı deterjanı ön yıkama gözüne koyun
+
+> Sıvı deterjan eklenecekse özel kapağın kapatılması gerekmekte
+
+## Programlar
 
 ### Yıkama Programları
 
@@ -44,6 +53,13 @@ Hotpoint Ariston baz alınmıştır.
 | -------- | ------ | ----- | ------------- |
 | Sıkma    | Yok    | 1400  | 0:10          |
 | Durulama | Yok    | 1400  | 0:49          |
+
+## Yıkama Sonrası Notlar
+
+- Yıkandığı gibi çamaşır toplanır
+  - Islak kalan çamaşırlar küflenir pis kokar
+- Silkelenerek petek veya benzeri sıcak yerlere asılır
+  - Silkelenmezse kuruduktan sonra buruş buruş olur ütü gerektirir
 
 ## Harici Linkler
 
