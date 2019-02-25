@@ -10,6 +10,7 @@
   - [Görsellik Eklentileri](#g%C3%B6rsellik-eklentileri)
   - [Programlama Dilleri Eklentileri](#programlama-dilleri-eklentileri)
   - [Web Programlama Eklentileri](#web-programlama-eklentileri)
+  - [Javascript Eklentileri](#javascript-eklentileri)
   - [Proje Yönetimi Eklentileri](#proje-y%C3%B6netimi-eklentileri)
   - [Yapılandırma Eklentileri](#yap%C4%B1land%C4%B1rma-eklentileri)
 - [Editör ayarlarım](#edit%C3%B6r-ayarlar%C4%B1m)
@@ -42,7 +43,9 @@
 | [Visual Studio Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings)                              | Kısayollar üzerine bir eklenti                                                                       |
 | [Open File](https://marketplace.visualstudio.com/items?itemName=Fr43nk.seito-openfile)                                            | Yolu verilen dosyayı vscode içinde açma                                                              |
 | *Code Snippets*                                                                                                                   | Dil'e özel anahtar kelimeler ile kod tamamlama                                                       |
-| [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image) | Panodan resim kopyalama |
+| [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)                                      | Panodan resim kopyalama                                                                              |
+| Fire Code                                                                                                                         | == >= gibi simgeler yerine alışkın olduğumuz elle yazılan simgeler gelir                             |
+| [30 seconds of code](https://marketplace.visualstudio.com/items?itemName=30-seconds.30-seconds-of-code) | Code snippet'leri |
 
 ### Verimli Kodlama Eklentileri
 
@@ -51,7 +54,7 @@
 | [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)                       | Bellek kullanımını gösterir     |
 | [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | İmla kontrolü                   |
 | [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)         | Kod formatlama ve güzelleştirme |
-| [jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint)                                                     | Javascript imla kontrolcüsü                                                                          |
+| [jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint)                                   | Javascript imla kontrolcüsü     |
 
 ### Farkındalık Eklentileri
 
@@ -63,7 +66,7 @@
 
 | Eklenti                                                                                                           | Açıklama                        |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [Sublime Material Theme](https://marketplace.visualstudio.com/items?itemName=jprestidge.theme-material-theme) | Sublime Editörün temaları |
+| [Sublime Material Theme](https://marketplace.visualstudio.com/items?itemName=jprestidge.theme-material-theme)     | Sublime Editörün temaları       |
 | [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)              | Popüler tema seti               |
 | [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)            | En sık kullanılan karanlık tema |
 | [Base16 Tomorrow Dark+](https://marketplace.visualstudio.com/items?itemName=Shurelia.base16-tomorrow-dark-vscode) | Karanlık tema                   |
@@ -84,7 +87,15 @@
 | [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion) | CSS classlarını önerme                       |
 | [Icon Fonts](https://marketplace.visualstudio.com/items?itemName=idleberg.icon-fonts)                                           | İkon kısayolları sağlar                      |
 | [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)                                            | Postman gibi istemci istekleri arayüzü sunar |
-| [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)                           | Chrome için hata ayıklama özelliği                                                                   |
+| [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)                         | Chrome için hata ayıklama özelliği           |
+
+### Javascript Eklentileri
+
+| Eklenti                                                                                                   | Açıklama                                |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| [Quokka.js ](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)                 | Anlık derleyici ve hata ayıklama        |
+| [Babel Javascript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel) |                                         |
+| [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)                      | GET - POST gibi istekleri atmayı sağlar |
 
 ### Proje Yönetimi Eklentileri
 
@@ -145,3 +156,4 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 
 - [My Top 10 VSCode Extension Recommendation](https://medium.com/backticks-tildes/my-top-10-vscode-extension-recommendation-ac2c2f62ffe5)
 - [Best Visual Studio Code Extension](https://blog.elmah.io/best-visual-studio-code-extensions/)
+- [10 Essential VS Code Extensions for JavaScript Developers in 2019](https://hackernoon.com/10-essential-vs-code-extensions-for-javascript-developers-in-2019-e8320e3f421e)
