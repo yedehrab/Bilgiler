@@ -1,6 +1,14 @@
-# Software Engineering
+# Software Engineering <!-- omit in toc -->
 
 *Hocası*: Rüya Şamlı
+
+## İçerikler <!-- omit in toc -->
+
+> `HOME` ile yukarı yönelebilirsin.
+
+- [Ders Puanlaması](#ders-puanlamas%C4%B1)
+- [Sunum Notları](#sunum-notlar%C4%B1)
+  - [Sunum Listeleri](#sunum-listeleri)
 
 ## Ders Puanlaması
 
