@@ -1,4 +1,4 @@
-# Software Engineering <!-- omit in toc -->
+# Software Testing And Qualityg <!-- omit in toc -->
 
 *Hocası*: Rüya Şamlı
 

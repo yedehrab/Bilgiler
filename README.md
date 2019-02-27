@@ -48,6 +48,10 @@
 - [Veri Kümeleri](Yapay%20Zeka%20Notlar%C4%B1.md/Veri%20K%C3%BCmeleri.md)
 - [Yapay Zeka Kullanım](Yapay%20Zeka%20Notlar%C4%B1.md/Yapay%20Zeka%20Kullan%C4%B1m.md)
 
+## Ders Notları
+
+- [Software Testing And Quality](#Ders%20Notlar%C4%B1/Software%20Testing%20And%20Quality)
+
 ## Günlük Hayat Notları
 
 - [Çamaşır Makinesi](G%C3%BCnl%C3%BCk%20Hayat%20Notlar%C4%B1/%C3%87ama%C5%9F%C4%B1r%20Makinesi.md)
