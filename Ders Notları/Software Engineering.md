@@ -2,7 +2,20 @@
 
 *Hocası*: Rüya Şamlı
 
-## Sunum Listeleri
+## Ders Puanlaması
+
+| Sınav | Yüzdelik Etkisi |
+| ----- | --------------- |
+| Vize  | 35              |
+| Sunum | 15              |
+| Final | 50              |
+
+## Sunum Notları
+
+- **3 hafta** sonra sunum yapılacaktır
+- Sunum grupları **2-3** kişi olacaktır
+
+### Sunum Listeleri
 
 - Sözel konular: Test tipini anlatma vs.
 - Mobil uygulama testi
@@ -20,5 +33,3 @@
 - Test metodları
 - Tester ilanları üzerine sunum
 - Test sertifikaları
-
-> Sunum grupları **2-3** kişi olacaktır.
