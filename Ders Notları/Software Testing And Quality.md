@@ -1,4 +1,4 @@
-# Software Testing And Qualityg <!-- omit in toc -->
+# Software Testing And Quality <!-- omit in toc -->
 
 *Hocası*: Rüya Şamlı
 
