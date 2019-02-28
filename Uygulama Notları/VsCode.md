@@ -10,7 +10,7 @@
   - [Görsellik Eklentileri](#g%C3%B6rsellik-eklentileri)
   - [Programlama Dilleri Eklentileri](#programlama-dilleri-eklentileri)
   - [Web Programlama Eklentileri](#web-programlama-eklentileri)
-  - [Javascript Eklentileri](#javascript-eklentileri)
+    - [Javascript - Nodejs Eklentileri](#javascript---nodejs-eklentileri)
   - [Proje Yönetimi Eklentileri](#proje-y%C3%B6netimi-eklentileri)
   - [Yapılandırma Eklentileri](#yap%C4%B1land%C4%B1rma-eklentileri)
 - [Editör ayarlarım](#edit%C3%B6r-ayarlar%C4%B1m)
@@ -45,7 +45,7 @@
 | *Code Snippets*                                                                                                                   | Dil'e özel anahtar kelimeler ile kod tamamlama                                                       |
 | [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)                                      | Panodan resim kopyalama                                                                              |
 | Fire Code                                                                                                                         | == >= gibi simgeler yerine alışkın olduğumuz elle yazılan simgeler gelir                             |
-| [30 seconds of code](https://marketplace.visualstudio.com/items?itemName=30-seconds.30-seconds-of-code) | Code snippet'leri |
+| [30 seconds of code](https://marketplace.visualstudio.com/items?itemName=30-seconds.30-seconds-of-code)                           | Code snippet'leri                                                                                    |
 
 ### Verimli Kodlama Eklentileri
 
@@ -89,13 +89,16 @@
 | [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)                                            | Postman gibi istemci istekleri arayüzü sunar |
 | [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)                         | Chrome için hata ayıklama özelliği           |
 
-### Javascript Eklentileri
+#### Javascript - Nodejs Eklentileri
 
-| Eklenti                                                                                                   | Açıklama                                |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| [Quokka.js ](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)                 | Anlık derleyici ve hata ayıklama        |
-| [Babel Javascript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel) |                                         |
-| [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)                      | GET - POST gibi istekleri atmayı sağlar |
+| Eklenti                                                                                                          | Açıklama                                |
+| ---------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)                         | Anlık derleyici ve hata ayıklama        |
+| [Babel Javascript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)        | ES6 tipinde yazmayı sağlar              |
+| [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)                             | GET - POST gibi istekleri atmayı sağlar |
+| [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)                             | JS için imla kontrolcüsü                |
+| [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) | Kod kısayolları                         |
+| [npm Intellisese](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)         | NPM modüllerini önerir                  |
 
 ### Proje Yönetimi Eklentileri
 
