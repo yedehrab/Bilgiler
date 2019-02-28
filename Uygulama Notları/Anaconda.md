@@ -59,9 +59,7 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
 
 ## Temel Condo Kullanımı
 
-```sh
-conda <operasyon> <paket> <--bayraklar>
-```
+Anaconda paket yönetim aracı `conda`'dır.
 
 ### Conda Yardımcısını Güncelleme
 
@@ -131,7 +129,6 @@ Alttaki komut ile hangi tensorflow versiyonunu indirmek istediğinize karar veri
 ```sh
 conda search tensorflow-gpu --info # Sürüme karar vermek için
 conda install -c anaconda tensorflow-gpu=<versiyon> # Belirli sürümü indirme
-
 conda install -c anaconda tensorflow-gpu=1.12.0 # Örnek
 ```
 
@@ -178,15 +175,15 @@ Sanal ortamlar üzerine çalışmak istediğimiz projeler için kurulur ve gerek
 ### Sanal Ortam Oluşturma
 
 ```sh
-conda create --name <ortam_ismi>
-conda create --name myenv
+conda create -n <ortam_ismi>
+conda create -n myenv # Örnek
 ```
 
 #### Belirli Python Sürümünde Ortam Oluşturma
 
 ```sh
 conda create -n <ortam_ismi> anaconda python=<versiyon>
-conda create -n Tensorflow anaconda python=3.6
+conda create -n Tensorflow anaconda python=3.6 # Örnek
 ```
 
 > Ortam *Anaconda3/env* dizinine kaydedilir.
@@ -195,7 +192,7 @@ conda create -n Tensorflow anaconda python=3.6
 
 ```sh
 conda activate <ortam_ismi>
-conda activate myenv
+conda activate myenv # Örnek
 ```
 
 > Ortam seçildiğinde (base) yazan kısımda (`<ortam_ismi>`) yazar.
@@ -209,7 +206,8 @@ conda deactivate
 ### Sanal Ortamı Kaldırma
 
 ```sh
-conda env remove --name <ortam_ismi>
+conda env remove -n <ortam_ismi>
+conda env remove -n myenv # Örnek
 ```
 
 > Anaconda Prompt `base` ortamına geri döner.
