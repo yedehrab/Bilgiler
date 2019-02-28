@@ -10,28 +10,30 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
 
 - [Faydaları](#faydalar%C4%B1)
 - [Anaconda Kurulumu](#anaconda-kurulumu)
-- [Paket ve Kütüphane Kullanımı](#paket-ve-k%C3%BCt%C3%BCphane-kullan%C4%B1m%C4%B1)
+- [Temel Condo Kullanımı](#temel-condo-kullan%C4%B1m%C4%B1)
   - [Conda Yardımcısını Güncelleme](#conda-yard%C4%B1mc%C4%B1s%C4%B1n%C4%B1-g%C3%BCncelleme)
   - [Conda ile Tüm Paketleri Güncelleme](#conda-ile-t%C3%BCm-paketleri-g%C3%BCncelleme)
-  - [Temel Condo Kullanımı](#temel-condo-kullan%C4%B1m%C4%B1)
-    - [Condo Örnek Kullanımı](#condo-%C3%B6rnek-kullan%C4%B1m%C4%B1)
+  - [Conda ile Paket Sürümlerini Gösterme](#conda-ile-paket-s%C3%BCr%C3%BCmlerini-g%C3%B6sterme)
+  - [Conda ile Yükleme İşlemleri](#conda-ile-y%C3%BCkleme-i%CC%87%C5%9Flemleri)
+    - [Conda ile Belli Bir Sürümü İndirme](#conda-ile-belli-bir-s%C3%BCr%C3%BCm%C3%BC-i%CC%87ndirme)
+- [Paket ve Kütüphane Kurulumları](#paket-ve-k%C3%BCt%C3%BCphane-kurulumlar%C4%B1)
   - [Numpy Kurulumu](#numpy-kurulumu)
   - [OpenCV Kurulumu](#opencv-kurulumu)
   - [Tensorflow Kurulumu](#tensorflow-kurulumu)
+  - [Tensorflow-GPU Kurulumu](#tensorflow-gpu-kurulumu)
   - [Keras Kurulumu](#keras-kurulumu)
-  - [Python Utils Kurulumu](#python-utils-kurulumu)
+  - [Tesseract Kurulumu](#tesseract-kurulumu)
+  - [Selenium Kurulumu](#selenium-kurulumu)
+  - [Pillow (Python Image Library) Kurulumu](#pillow-python-image-library-kurulumu)
 - [Sanal Ortam İşlemleri](#sanal-ortam-i%CC%87%C5%9Flemleri)
   - [Sanal Ortam Oluşturma](#sanal-ortam-olu%C5%9Fturma)
+    - [Belirli Python Sürümünde Ortam Oluşturma](#belirli-python-s%C3%BCr%C3%BCm%C3%BCnde-ortam-olu%C5%9Fturma)
   - [Sanal Ortamı Aktif Etme](#sanal-ortam%C4%B1-aktif-etme)
   - [Sanal Ortamı Pasif Etme](#sanal-ortam%C4%B1-pasif-etme)
   - [Sanal Ortamı Kaldırma](#sanal-ortam%C4%B1-kald%C4%B1rma)
-- [Karma Paketler ve Kurulumları](#karma-paketler-ve-kurulumlar%C4%B1)
-  - [Tesseract](#tesseract)
-  - [Selenium](#selenium)
-  - [Pillow (Python Image Library)](#pillow-python-image-library)
 - [Hata Notları](#hata-notlar%C4%B1)
   - [Conda SSL Hatası](#conda-ssl-hatas%C4%B1)
-    - [Windows Üzerinden Ağ Sıfırlam](#windows-%C3%BCzerinden-a%C4%9F-s%C4%B1f%C4%B1rlam)
+    - [Windows Üzerinden Ağ Sıfırlama](#windows-%C3%BCzerinden-a%C4%9F-s%C4%B1f%C4%B1rlama)
     - [Manuel OpenSSL Kurulumu](#manuel-openssl-kurulumu)
     - [Conda ile Networkx İndirme](#conda-ile-networkx-i%CC%87ndirme)
     - [SSL Ek Hata Linkleri](#ssl-ek-hata-linkleri)
@@ -55,67 +57,116 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
   - *Aksi halde değişik sorunlarla karşılaşırsınız. (SSL error vs.)*
 - Dökümantasyonu için [buraya](https://docs.anaconda.com/) tıklayabilirsin.
 
-## Paket ve Kütüphane Kullanımı
+## Temel Condo Kullanımı
+
+```sh
+conda <operasyon> <paket> <--bayraklar>
+```
+
+### Conda Yardımcısını Güncelleme
+
+```sh
+conda update -n base -c defaults conda
+```
+
+### Conda ile Tüm Paketleri Güncelleme
+
+```sh
+conda update --all
+```
+
+### Conda ile Paket Sürümlerini Gösterme
+
+```sh
+conda search <paket> --info
+conda search tensorflow-gpu --info # Örnek
+```
+
+### Conda ile Yükleme İşlemleri
+
+```sh
+conda install <ayarlar> <framework | package | lib>
+conda install -c <depo-ismi> <frameword vs.>
+
+conda install -c conda-forge python-socketio # Örnek
+conda install -c anaconda  flask # Örnek
+```
+
+#### Conda ile Belli Bir Sürümü İndirme
+
+```sh
+conda install -c <depo_ismi> <paket>=<versiyon>
+conda install -c anaconda tensorflow-gpu=<versiyon> # Örnek
+```
+
+## Paket ve Kütüphane Kurulumları
 
 Paket kurulumları `conda` komutu yardımıyla yapılır.
 
 - Tüm bu işlemlerin **Anaconda Prompt** üzerinde yapıldığına emin olun!
 - Sanal ortama yükleme yapılmadan önce sanal ortamın **aktif edilmesi** gerekmektedir!
 
-### Conda Yardımcısını Güncelleme
-
-```cmd
-conda update -n base -c defaults conda
-```
-
-### Conda ile Tüm Paketleri Güncelleme
-
-```cmd
-conda update --all
-```
-
-### Temel Condo Kullanımı
-
-```cmd
-conda install <ayarlar> <framework | package | lib>
-conda install -c <depo-ismi> <frameword vs.>
-```
-
-#### Condo Örnek Kullanımı
-
-```cmd
-conda install -c conda-forge python-socketio
-conda install -c anaconda  flask
-```
-
 ### Numpy Kurulumu
 
-```cmd
+```sh
 conda install -c anaconda numpy
 ```
 
 ### OpenCV Kurulumu
 
-```cmd
+```sh
 conda install -c conda-forge opencv
 ```
 
 ### Tensorflow Kurulumu
 
-```cmd
+```sh
 conda install -c conda-forge tensorflow
+```
+
+### Tensorflow-GPU Kurulumu
+
+Alttaki komut ile hangi tensorflow versiyonunu indirmek istediğinize karar verin.
+
+```sh
+conda search tensorflow-gpu --info # Sürüme karar vermek için
+conda install -c anaconda tensorflow-gpu=<versiyon> # Belirli sürümü indirme
+
+conda install -c anaconda tensorflow-gpu=1.12.0 # Örnek
 ```
 
 ### Keras Kurulumu
 
-```cmd
+```sh
 conda install -c conda-forge keras
 ```
 
-### Python Utils Kurulumu
+### Tesseract Kurulumu
 
-```cmd
-pip install utils
+Resimden yazıyı çekmek için kullanılır.
+
+```sh
+conda install -c mcs07 tesseract
+conda install -c jim-hart pytesseract
+```
+
+> [Pillow (Python Image Library)](#pillow-python-image-library) paketinin de indirimlesi gerekebilir.
+
+### Selenium Kurulumu
+
+Web siteleri üzerinde işlem yapmak için kullanılır.
+
+```sh
+conda install -c conda-forge selenium
+conda install -c clinicalgraphics selenium-chromedriver
+```
+
+### Pillow (Python Image Library) Kurulumu
+
+Python resim kütüphanesi resim işlemleri için kullanılır.
+
+```sh
+conda install -c anaconda pillow
 ```
 
 ## Sanal Ortam İşlemleri
@@ -124,16 +175,23 @@ Sanal ortamlar üzerine çalışmak istediğimiz projeler için kurulur ve gerek
 
 ### Sanal Ortam Oluşturma
 
-```cmd
+```sh
 conda create --name <ortam_ismi>
 conda create --name myenv
+```
+
+#### Belirli Python Sürümünde Ortam Oluşturma
+
+```sh
+conda create -n <ortam_ismi> anaconda python=<versiyon>
+conda create -n Tensorflow anaconda python=3.6
 ```
 
 > Ortam *Anaconda3/env* dizinine kaydedilir.
 
 ### Sanal Ortamı Aktif Etme
 
-```cmd
+```sh
 conda activate <ortam_ismi>
 conda activate myenv
 ```
@@ -142,53 +200,23 @@ conda activate myenv
 
 ### Sanal Ortamı Pasif Etme
 
-```cmd
+```sh
 conda deactivate
 ```
 
 ### Sanal Ortamı Kaldırma
 
-```cmd
+```sh
 conda env remove --name <ortam_ismi>
 ```
 
 > Anaconda Prompt `base` ortamına geri döner.
 
-## Karma Paketler ve Kurulumları
-
-### Tesseract
-
-Resimden yazıyı çekmek için kullanılır.
-
-```cmd
-conda install -c mcs07 tesseract
-conda install -c jim-hart pytesseract
-```
-
-> [Pillow (Python Image Library)](#pillow-python-image-library) paketinin de indirimlesi gerekebilir.
-
-### Selenium
-
-Web siteleri üzerinde işlem yapmak için kullanılır.
-
-```cmd
-conda install -c conda-forge selenium
-conda install -c clinicalgraphics selenium-chromedriver
-```
-
-### Pillow (Python Image Library)
-
-Python resim kütüphanesi resim işlemleri için kullanılır.
-
-```cmd
-conda install -c anaconda pillow
-```
-
 ## Hata Notları
 
 ### Conda SSL Hatası
 
-#### Windows Üzerinden Ağ Sıfırlam
+#### Windows Üzerinden Ağ Sıfırlama
 
 Windows 10'daki  `Ağı Sıfırla` ayarını deneyin
 
@@ -208,7 +236,7 @@ Kurulum sayfasına gitmek için [buraya](https://slproweb.com/products/Win32Open
 
 #### Conda ile Networkx İndirme
 
-```cmd
+```sh
 conda install -c anaconda networkx
 ```
 
