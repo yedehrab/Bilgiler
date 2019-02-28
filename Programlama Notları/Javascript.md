@@ -2,16 +2,17 @@
 
 Javascript DOM komutlarını özetleyen bir derlemedir.
 
+## İçerikler <!-- omit in toc -->
+
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
-- [İndeksleme](#i%CC%87ndeksleme)
 - [Temel Bilgiler](#temel-bilgiler)
 - [DOM Bilgileri](#dom-bilgileri)
   - [Dosya İndirme İşlemleri](#dosya-i%CC%87ndirme-i%CC%87%C5%9Flemleri)
     - [URI ile dosya indirme](#uri-ile-dosya-indirme)
     - [Çoklu URL ile indirme](#%C3%A7oklu-url-ile-indirme)
     - [JSON olarak indirme](#json-olarak-indirme)
-    - [Ek Notlar](#ek-notlar)
+    - [İndirme için Ek Notlar](#i%CC%87ndirme-i%C3%A7in-ek-notlar)
   - [HTML Elemanı Alma](#html-eleman%C4%B1-alma)
   - [HTML elemanının alt elemanlarını alma](#html-eleman%C4%B1n%C4%B1n-alt-elemanlar%C4%B1n%C4%B1-alma)
   - [HTMLCollection'u array'e dönüştürmek](#htmlcollectionu-arraye-d%C3%B6n%C3%BC%C5%9Ft%C3%BCrmek)
@@ -19,31 +20,12 @@ Javascript DOM komutlarını özetleyen bir derlemedir.
   - [HTML Elemanının Konumunu Alma](#html-eleman%C4%B1n%C4%B1n-konumunu-alma)
   - [Sayfa İşlemleri](#sayfa-i%CC%87%C5%9Flemleri)
   - [Zamanlayıcı](#zamanlay%C4%B1c%C4%B1)
-- [Karma Linkler](#karma-linkler)
-
-## İndeksleme
-
-- [İndeksleme](#i%CC%87ndeksleme)
-- [Temel Bilgiler](#temel-bilgiler)
-- [DOM Bilgileri](#dom-bilgileri)
-  - [Dosya İndirme İşlemleri](#dosya-i%CC%87ndirme-i%CC%87%C5%9Flemleri)
-    - [URI ile dosya indirme](#uri-ile-dosya-indirme)
-    - [Çoklu URL ile indirme](#%C3%A7oklu-url-ile-indirme)
-    - [JSON olarak indirme](#json-olarak-indirme)
-    - [Ek Notlar](#ek-notlar)
-  - [HTML Elemanı Alma](#html-eleman%C4%B1-alma)
-  - [HTML elemanının alt elemanlarını alma](#html-eleman%C4%B1n%C4%B1n-alt-elemanlar%C4%B1n%C4%B1-alma)
-  - [HTMLCollection'u array'e dönüştürmek](#htmlcollectionu-arraye-d%C3%B6n%C3%BC%C5%9Ft%C3%BCrmek)
-  - [HTML Attribute Alma](#html-attribute-alma)
-  - [HTML Elemanının Konumunu Alma](#html-eleman%C4%B1n%C4%B1n-konumunu-alma)
-  - [Sayfa İşlemleri](#sayfa-i%CC%87%C5%9Flemleri)
-  - [Zamanlayıcı](#zamanlay%C4%B1c%C4%B1)
-- [Karma Linkler](#karma-linkler)
+- [Harici Bağlantılar](#harici-ba%C4%9Flant%C4%B1lar)
 
 ## Temel Bilgiler
 
-* [For Each Kullanımı](https://stackoverflow.com/a/9329476)
-* [Array](https://www.w3schools.com/js/js_arrays.asp)
+- [For Each Kullanımı](https://stackoverflow.com/a/9329476)
+- [Array](https://www.w3schools.com/js/js_arrays.asp)
 
 > İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
 
@@ -138,9 +120,9 @@ downloadObjectAsJson(exampleData, "champs.json");
 
 > İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
 
-#### Ek Notlar
+#### İndirme için Ek Notlar
 
-* [Dosya indirme](https://www.w3schools.com/jsref/prop_anchor_download.asp) | [URL ile indirme](https://stackoverflow.com/a/34694012)
+- [Dosya indirme](https://www.w3schools.com/jsref/prop_anchor_download.asp) | [URL ile indirme](https://stackoverflow.com/a/34694012)
 
 > İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
 
@@ -153,10 +135,10 @@ document.getElementsByClassName('class_name'); // HTML elemanları dizisi dönd�
 document.getElementsByName('name');  // HTML elemanları dizisi döndürür (HTMLCollection)
 ```
 
-* `Id` *Kimlik verisi*
-* `Tag` *a, div, i, p, input, article ...*
-* `Class` *Css dosyasındaki classları ifade eden alanlar*
-* `Name` *Inputlarda sıklıkla kullanınlan alanlar*
+- `Id` *Kimlik verisi*
+- `Tag` *a, div, i, p, input, article ...*
+- `Class` *Css dosyasındaki classları ifade eden alanlar*
+- `Name` *Inputlarda sıklıkla kullanınlan alanlar*
 
 > İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
 
@@ -166,8 +148,8 @@ document.getElementsByName('name');  // HTML elemanları dizisi döndürür (HTM
 document.getElementById('id').childNodes;
 ```
 
-* `Id` *Kimlik verisi*
-* `document.getElementById('id')` *HTMLElemanı*
+- `Id` *Kimlik verisi*
+- `document.getElementById('id')` *HTMLElemanı*
 
 > İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
 
@@ -200,7 +182,7 @@ document.getElementById('id').getAttribute('attribute') // Özelliğin değerini
 document.getElementById('id').getBoundingClientRect();
 ```
 
-* `Id` *Kimlik verisi*
+- `Id` *Kimlik verisi*
 
 > İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
 
@@ -214,8 +196,8 @@ window.scrollBy(5, 100); // Örnek kaydırma
 window.scrollTo(5, 100); // Örnek atlama
 ```
 
-* `x` Yatay konum
-* `y` Dikey konum
+- `x` Yatay konum
+- `y` Dikey konum
 
 ```js
 function pageScroll() {
@@ -239,15 +221,14 @@ setTimeout(function(){ help(1); help(2); }, 2000); // Paremetreli fonksyion kull
 clearTimeout(); // Zamanlayıcıları temizleme
 ```
 
-* `func` Paremetresiz fonksiyon
-* `delay` Gecikme süresi (ms)
+- `func` Paremetresiz fonksiyon
+- `delay` Gecikme süresi (ms)
 
 > İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
 
-## Karma Linkler
+## Harici Bağlantılar
 
-* [Callback yerine Async Kullanma](https://medium.freecodecamp.org/javascript-from-callbacks-to-async-await-1cc090ddad99)
-* [Async & Await](https://medium.com/@tkssharma/writing-neat-asynchronous-node-js-code-with-promises-async-await-fa8d8b0bcd7c)
-* [Sayfanın en altına inmek](https://stackoverflow.com/a/11715670)
-
-> İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
+- [Callback yerine Async Kullanma](https://medium.freecodecamp.org/javascript-from-callbacks-to-async-await-1cc090ddad99)
+- [Async & Await](https://medium.com/@tkssharma/writing-neat-asynchronous-node-js-code-with-promises-async-await-fa8d8b0bcd7c)
+- [Sayfanın en altına inmek](https://stackoverflow.com/a/11715670)
+- [Debugging ES6 in Visual Studio Code](https://medium.com/@drcallaway/debugging-es6-in-visual-studio-code-4444db797954)
