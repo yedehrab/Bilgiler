@@ -20,6 +20,8 @@ Javascript DOM komutlarını özetleyen bir derlemedir.
   - [HTML Elemanının Konumunu Alma](#html-eleman%C4%B1n%C4%B1n-konumunu-alma)
   - [Sayfa İşlemleri](#sayfa-i%CC%87%C5%9Flemleri)
   - [Zamanlayıcı](#zamanlay%C4%B1c%C4%B1)
+- [Nodejs Bilgileri](#nodejs-bilgileri)
+  - [Fonksiyon İsmi, Satırı ve Dosya Adı Alma](#fonksiyon-i%CC%87smi-sat%C4%B1r%C4%B1-ve-dosya-ad%C4%B1-alma)
 - [Harici Bağlantılar](#harici-ba%C4%9Flant%C4%B1lar)
 
 ## Temel Bilgiler
@@ -225,6 +227,32 @@ clearTimeout(); // Zamanlayıcıları temizleme
 - `delay` Gecikme süresi (ms)
 
 > İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
+
+## Nodejs Bilgileri
+
+### Fonksiyon İsmi, Satırı ve Dosya Adı Alma
+
+```js
+export function _getCallerInfo() {
+  const err = new Error();
+  let index = 3;
+  let line = err.stack.split("\n")[index];
+  let functionName = line.split(" at ")[1].split(" ")[0];
+
+  while (functionName.includes(`C:/`)) {
+    index++;
+    line = err.stack.split("\n")[index];
+    functionName = line.split(" at ")[1].split(" ")[0];
+  }
+
+  let callerInfo = line.split(`${projectName}/`)
+  callerInfo = callerInfo[callerInfo.length - 1];
+
+  const filename = callerInfo.split(".")[0];  
+  const lineInfos = callerInfo.replace(filename + ".js:", "").replace(")", "");
+  return `${filename}:${functionName}:${lineInfos}`;
+}
+```
 
 ## Harici Bağlantılar
 
