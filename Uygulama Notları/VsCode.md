@@ -34,6 +34,7 @@
 | Eklenti                                                                                                                           | Açıklama                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | AI ile en sık kullanılan metodları önerir. 2 kez `CTRL` + `SPACE` yaparsanız detaylarını da gösterir |
+| Scratchpad | Anlık derleyiciler |
 | [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)                             | Markdown için gerekli tüm içeriklere, kısayollara ve formatlayıcıya sahip                            |
 | [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)                                | Markdown hatalarının altını çizme ve uyarma                                                          |
 | [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)                                      | Editör üzerinden projeleri derleme & çalıştırma                                                      |
@@ -99,7 +100,6 @@
 | [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)                             | JS için imla kontrolcüsü                |
 | [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) | Kod kısayolları                         |
 | [npm Intellisese](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)         | NPM modüllerini önerir                  |
-
 
 ### Proje Yönetimi Eklentileri
 
