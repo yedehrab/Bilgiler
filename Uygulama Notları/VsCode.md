@@ -13,10 +13,14 @@
     - [Javascript - Nodejs Eklentileri](#javascript---nodejs-eklentileri)
   - [Proje Yönetimi Eklentileri](#proje-y%C3%B6netimi-eklentileri)
   - [Yapılandırma Eklentileri](#yap%C4%B1land%C4%B1rma-eklentileri)
-- [Editör ayarlarım](#edit%C3%B6r-ayarlar%C4%B1m)
-  - [Editör JSON Ayarları](#edit%C3%B6r-json-ayarlar%C4%B1)
+- [Editör ayarları](#edit%C3%B6r-ayarlar%C4%B1)
+  - [Editör Değişkenleri](#edit%C3%B6r-de%C4%9Fi%C5%9Fkenleri)
+  - [Editör JSON Ayarlarım](#edit%C3%B6r-json-ayarlar%C4%B1m)
+  - [Java Ayarları](#java-ayarlar%C4%B1)
   - [Code Runner Ayarları](#code-runner-ayarlar%C4%B1)
     - [Code Runner Kısayollar](#code-runner-k%C4%B1sayollar)
+- [Debug Ayarları](#debug-ayarlar%C4%B1)
+  - [Nodejs için Debug Ayarı](#nodejs-i%C3%A7in-debug-ayar%C4%B1)
 - [Harici Linkler](#harici-linkler)
 
 ## VsCode kısayolları
@@ -116,11 +120,26 @@
 | --------------------------------------------------------------------------------------------------------- | -------- |
 | [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) |          |
 
-## Editör ayarlarım
+## Editör ayarları
 
 > Sol alt köşedeki `ayarlar` simgesi -> Sağ üst köşedeki `{}` simgesine tıklayıp oraya bunlardan istediklerini kopyalayabilirsin.
 
-### Editör JSON Ayarları
+### Editör Değişkenleri
+
+Değişkenlerin kullanım şekilleri:
+
+- `${<değişken>}`
+  - Eğer özel karakter içeriyorsa bu yöntem daha sağlıklıdır
+- `$<değişken>`
+
+| Değişken          | Açıklama                 |
+| ----------------- | ------------------------ |
+| `workspaceFolder` | Çalışma dizini yolu      |
+| `file`            | Açık olan dosya yolu     |
+| `fullFileName`    | Tam açık olan dosya yolu |
+| `pythonPath`      | Python yolu              |
+
+### Editör JSON Ayarlarım
 
 ```json
 {
@@ -133,11 +152,17 @@
     "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.fontSize": 13.7,
     "editor.fontWeight": "500",
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_202",
-    "extensions.ignoreRecommendations": false,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Sublime Material Theme - Dark",
+    "editor.tabSize": 2,
+}
+```
+
+### Java Ayarları
+
+```json
+{
+    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_202"
 }
 ```
 
@@ -156,9 +181,46 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 - `ALT` + `SHIFT` + `F` Yazıları uzantıya göre formatlama
 - `CTRL` + `"` Gömülü terminali gösterme / gizleme
 
+## Debug Ayarları
+
+Debug ayarlarına erişmek için:
+
+- `CTRL` + `SHIFT` + `D` ile debug sekmesini açın
+  - İsterseniz soldaki **activity bar** üzerinden erişebilirsiniz
+- Sağ üstteki `ayarlar ikonuna` tıklayın
+- `Launch.json` dosyası açılacaktır
+
+### Nodejs için Debug Ayarı
+
+```json
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}\\index.js",
+      "outFiles": [ "${workspaceRoot}/dist/**/**/*.js" ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Current File",
+      "program": "${file}",
+      "outFiles": [ "${workspaceRoot}/dist/**/**/*.js" ]
+    }
+  ]
+}
+```
+
 ## Harici Linkler
 
 - [Vs Code Can Do That](https://vscodecandothat.com/)
 - [My Top 10 VSCode Extension Recommendation](https://medium.com/backticks-tildes/my-top-10-vscode-extension-recommendation-ac2c2f62ffe5)
 - [Best Visual Studio Code Extension](https://blog.elmah.io/best-visual-studio-code-extensions/)
 - [10 Essential VS Code Extensions for JavaScript Developers in 2019](https://hackernoon.com/10-essential-vs-code-extensions-for-javascript-developers-in-2019-e8320e3f421e)
+- [Debugging ES6 in Visual Studio Code](https://medium.com/@drcallaway/debugging-es6-in-visual-studio-code-4444db797954)
