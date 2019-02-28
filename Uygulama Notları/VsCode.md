@@ -100,6 +100,7 @@
 | [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) | Kod kısayolları                         |
 | [npm Intellisese](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)         | NPM modüllerini önerir                  |
 
+
 ### Proje Yönetimi Eklentileri
 
 | Eklenti                                                                                            | Açıklama                                 |
