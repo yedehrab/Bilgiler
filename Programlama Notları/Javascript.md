@@ -232,3 +232,4 @@ clearTimeout(); // Zamanlayıcıları temizleme
 - [Async & Await](https://medium.com/@tkssharma/writing-neat-asynchronous-node-js-code-with-promises-async-await-fa8d8b0bcd7c)
 - [Sayfanın en altına inmek](https://stackoverflow.com/a/11715670)
 - [Debugging ES6 in Visual Studio Code](https://medium.com/@drcallaway/debugging-es6-in-visual-studio-code-4444db797954)
+- [Fonksiyonu Çağıran Dosya İsmini Bulma](https://stackoverflow.com/a/29581862/9770490)
