@@ -118,6 +118,11 @@ Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tı
 
 - `.` Bulunan dizin (working directory)
 - `..` Bir üst dizin (parent directory)
+- `*` Tüm dosyalar
+- `**` Tüm dosya ve dizinler
+- `*.js` Uzantısı js olan tüm dosyalar
+- `*lib/**/*.js` Lib içindeki uzantısı js olan tüm dosyalar
+  - `**` olduğu için Alt dizinler de dahildir
 - `%username` Kullanıcı adı
 - `%appdata%` Uygulama verileri dizini
 
