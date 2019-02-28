@@ -17,7 +17,7 @@
   - [Editör JSON Ayarları](#edit%C3%B6r-json-ayarlar%C4%B1)
   - [Code Runner Ayarları](#code-runner-ayarlar%C4%B1)
     - [Code Runner Kısayollar](#code-runner-k%C4%B1sayollar)
-- [Kaynaklar](#kaynaklar)
+- [Harici Linkler](#harici-linkler)
 
 ## VsCode kısayolları
 
@@ -34,7 +34,7 @@
 | Eklenti                                                                                                                           | Açıklama                                                                                             |
 | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | AI ile en sık kullanılan metodları önerir. 2 kez `CTRL` + `SPACE` yaparsanız detaylarını da gösterir |
-| Scratchpad | Anlık derleyiciler |
+| Scratchpad                                                                                                                        | Anlık derleyiciler                                                                                   |
 | [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)                             | Markdown için gerekli tüm içeriklere, kısayollara ve formatlayıcıya sahip                            |
 | [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)                                | Markdown hatalarının altını çizme ve uyarma                                                          |
 | [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)                                      | Editör üzerinden projeleri derleme & çalıştırma                                                      |
@@ -92,14 +92,14 @@
 
 #### Javascript - Nodejs Eklentileri
 
-| Eklenti                                                                                                          | Açıklama                                |
-| ---------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)                         | Anlık derleyici ve hata ayıklama        |
-| [Babel Javascript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)        | ES6 tipinde yazmayı sağlar              |
-| [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)                             | GET - POST gibi istekleri atmayı sağlar |
-| [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)                             | JS için imla kontrolcüsü                |
-| [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) | Kod kısayolları                         |
-| [npm Intellisese](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)         | NPM modüllerini önerir                  |
+| Eklenti                                                                                                          | Açıklama                                                                                |
+| ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)                         | Anlık derleyici ve hata ayıklama ([video](https://www.youtube.com/watch?v=eyzO1xPI6_k)) |
+| [Babel Javascript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)        | ES6 tipinde yazmayı sağlar                                                              |
+| [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)                             | GET - POST gibi istekleri atmayı sağlar                                                 |
+| [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)                             | JS için imla kontrolcüsü                                                                |
+| [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) | Kod kısayolları                                                                         |
+| [npm Intellisese](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)         | NPM modüllerini önerir                                                                  |
 
 ### Proje Yönetimi Eklentileri
 
@@ -156,8 +156,9 @@ Path değiştirme örneği detayına [buraya](https://stackoverflow.com/question
 - `ALT` + `SHIFT` + `F` Yazıları uzantıya göre formatlama
 - `CTRL` + `"` Gömülü terminali gösterme / gizleme
 
-## Kaynaklar
+## Harici Linkler
 
+- [Vs Code Can Do That](https://vscodecandothat.com/)
 - [My Top 10 VSCode Extension Recommendation](https://medium.com/backticks-tildes/my-top-10-vscode-extension-recommendation-ac2c2f62ffe5)
 - [Best Visual Studio Code Extension](https://blog.elmah.io/best-visual-studio-code-extensions/)
 - [10 Essential VS Code Extensions for JavaScript Developers in 2019](https://hackernoon.com/10-essential-vs-code-extensions-for-javascript-developers-in-2019-e8320e3f421e)
