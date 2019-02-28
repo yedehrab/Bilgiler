@@ -171,7 +171,9 @@ conda install -c anaconda pillow
 
 ## Sanal Ortam İşlemleri
 
-Sanal ortamlar üzerine çalışmak istediğimiz projeler için kurulur ve gerekmediği vakit kaldırılır. Projelerin paketleri arasında çakışma olmasını engeller.
+Sanal ortamlar üzerine çalışmak istediğimiz projeler için kurulur ve gerekmediği vakit kaldırılır. 
+
+> Projelerin bağımlılıkları arasında çakışma olmasını engeller.
 
 ### Sanal Ortam Oluşturma
 
