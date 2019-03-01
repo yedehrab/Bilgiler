@@ -216,7 +216,7 @@ npm run-script [script]
 
 ## VsCode için Debug Ayarları
 
-Açıklama [videosu]([buraya](https://www.youtube.com/watch?v=yFtU6_UaOtA)) ve [metni](../Uygulama%20Notlar%C4%B1/VsCode#nodejs-i%C3%A7in-debug-ayar%C4%B1) için üzerlerine tıklayabilirsin.
+Açıklama [videosu](https://www.youtube.com/watch?v=yFtU6_UaOtA) ve [metni](../Uygulama%20Notlar%C4%B1/VsCode#nodejs-i%C3%A7in-debug-ayar%C4%B1) için üzerlerine tıklayabilirsin.
 
 ```json
 
