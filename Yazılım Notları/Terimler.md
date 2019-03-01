@@ -15,5 +15,6 @@ Yazılımda kullanılan genel terimler.
 | Cookie       | Çerez            | Bir siteye tekrardan girdiğimizde giriş bilgilerimiz gibi bilgileri koruması, çerezlerle sağlanır |
 | Run          | Çalıştırma       | Yazılan kodu derleyici üzerinde çalıştırma                                                        |
 | Debug        | Hata Ayıklama    | Kodu derleyici üzerinde adım adım gerekli yerlerde duracak şekilde çıktılarla çalıştırma          |
-| Banner | Afiş | |
-| Slider | Kayan Afiş |
+| Banner       | Afiş             |                                                                                                   |
+| Slider       | Kayan Afiş       |
+| Namespace    | İsim alanı       | Aynı amaca hizmet eden özellikleri, sınıfları ve fonksiyonları aynı çatı altında toplama          |

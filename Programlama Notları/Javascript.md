@@ -20,6 +20,8 @@ Javascript DOM komutlarını özetleyen bir derlemedir.
   - [HTML Elemanının Konumunu Alma](#html-eleman%C4%B1n%C4%B1n-konumunu-alma)
   - [Sayfa İşlemleri](#sayfa-i%CC%87%C5%9Flemleri)
   - [Zamanlayıcı](#zamanlay%C4%B1c%C4%B1)
+- [Kod Notları](#kod-notlar%C4%B1)
+  - [Objedeki Değer ile Anahtarını Bulma](#objedeki-de%C4%9Fer-ile-anahtar%C4%B1n%C4%B1-bulma)
 - [Harici Bağlantılar](#harici-ba%C4%9Flant%C4%B1lar)
 
 ## Temel Bilgiler
@@ -223,6 +225,16 @@ clearTimeout(); // Zamanlayıcıları temizleme
 
 - `func` Paremetresiz fonksiyon
 - `delay` Gecikme süresi (ms)
+
+## Kod Notları
+
+### Objedeki Değer ile Anahtarını Bulma
+
+```js
+function getKeyByValue(object, value) {
+  return Object.keys(object).find(key => object[key] === value);
+}
+```
 
 ## Harici Bağlantılar
 
