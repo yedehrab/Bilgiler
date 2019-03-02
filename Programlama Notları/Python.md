@@ -72,6 +72,7 @@
   - [Scopes and Namespaces](#scopes-and-namespaces)
 - [Colab Üzerinden Python](#colab-%C3%BCzerinden-python)
   - [Python Değişkenlerinin Bash Üzerinde Kullanımı](#python-de%C4%9Fi%C5%9Fkenlerinin-bash-%C3%BCzerinde-kullan%C4%B1m%C4%B1)
+  - [Colab için Harici Bağlantılar](#colab-i%C3%A7in-harici-ba%C4%9Flant%C4%B1lar)
 - [Karma Linkler](#karma-linkler)
 - [Harici Kaynaklar](#harici-kaynaklar)
 
@@ -847,6 +848,9 @@ In global scope: global spa
 | `$<değişken>`    | Tek değişkenler için kullanılır | `!echo $filename`       | test   |
 | `{<pyton_kodu>}` | Python kodu için kullanılır     | `{"{}.test".format(1)}` | 1.test |
 
+### Colab için Harici Bağlantılar
+
+- [Download to Drive](https://colab.research.google.com/drive/1Cb6KcdbUHgmtmI1A86iDsJWJFClD_IeQ)
 
 ## Karma Linkler
 
