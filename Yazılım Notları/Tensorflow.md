@@ -30,6 +30,8 @@ Alttakiler `conda install -c anaconda <paket>` komutu ile indirebilirsin.
 - lxml
 - matplotlib
 - jupyter
+- protobuf (?)
+- pandos (?)
 
 ### Anaconda Kurulumu
 
