@@ -37,7 +37,9 @@ Notların linklerine bakmak için [buraya](#Ek%20Notlar) tıklayabilirsin.
 
 ### Dosya İndirme İşlemleri
 
-**Chrome** `click()` metodunu  destekleyemeyebiliyor.. 😭 (*Edge kullanınız.* 😏)
+- Stackoverflow cevabı için [buraya](https://stackoverflow.com/a/14966131/9770490) tıklayın.
+- URI için data tipleri için [buraya](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) tıklayın.
+- **Chrome** `click()` metodunu  destekleyemeyebiliyor.. 😭 (*Edge kullanınız.* 😏)
 
 > **Popup Blocker** gibi eklentiler ekliyse kapatmanız gerekmekte.
 

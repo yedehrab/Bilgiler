@@ -23,6 +23,7 @@ Sık kullanılan işletim sistemi notlarım.
 - [Windows Features](#windows-features)
   - [Default Windows Features](#default-windows-features)
 - [Ayarlar](#ayarlar)
+- [Harici Linkler](#harici-linkler)
 
 ## İndirme
 
@@ -167,3 +168,7 @@ Kendime özgü görsellik ayarlarım
 | Ayar | Ulaşım | Açıklama | Kaynak |
 |------|--------|----------|--------|
 | Altyazı | Options - Ease of Access -  Hearing / Closed captions | Yerel uygulamalardaki altyazı metnini özelleştirme | [Microsoft](https://support.microsoft.com/en-us/help/3078107/closed-captions-in-movies-tv-content-on-windows-10)
+
+## Harici Linkler
+
+- [How to rename image files in a folder all to .jpg format](https://answers.microsoft.com/en-us/windows/forum/windows_10-files/how-to-rename-image-files-in-a-folder-all-to-jpg/2a7e2873-e04b-472b-b239-afad2f2020fc)
