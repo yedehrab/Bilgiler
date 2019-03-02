@@ -6,6 +6,7 @@
 
 - [Linkler](#linkler)
   - [Resim Veri Kümeleri](#resim-veri-k%C3%BCmeleri)
+  - [Karma Veri Kümeleri](#karma-veri-k%C3%BCmeleri)
 - [Referanslar](#referanslar)
 
 Yapay zeka için olmazsa olmaz olan veri kümeleri (dataset) hakkında bilgiler içermektedir.
@@ -18,12 +19,17 @@ Yapay zeka için olmazsa olmaz olan veri kümeleri (dataset) hakkında bilgiler 
   - Email : yoif4@alexbox.online
   - Password: Temp1234
 - [Türkçe Kelimeler](https://drive.google.com/open?id=1TOEqrRNmwJOa08F1lYgLz_HNL3WOppoA)
+- [Deeplearning](http://deeplearning.net/datasets/)
 
 ### Resim Veri Kümeleri
 
 - [ImageNet](http://www.image-net.org/index)
 - [Getty](https://www.gettyimages.com/)
 - [Usplash](https://unsplash.com/)
+
+### Karma Veri Kümeleri
+
+- [Trafik Işıkları](https://www.kaggle.com/mbornoe/lisa-traffic-light-dataset/version/2)
 
 ## Referanslar
 
