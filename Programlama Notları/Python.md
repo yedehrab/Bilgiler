@@ -70,6 +70,8 @@
     - [Obje Özelliği Silme](#obje-%C3%B6zelli%C4%9Fi-silme)
     - [Class Silme](#class-silme)
   - [Scopes and Namespaces](#scopes-and-namespaces)
+- [Colab Üzerinden Python](#colab-%C3%BCzerinden-python)
+  - [Python Değişkenlerinin Bash Üzerinde Kullanımı](#python-de%C4%9Fi%C5%9Fkenlerinin-bash-%C3%BCzerinde-kullan%C4%B1m%C4%B1)
 - [Karma Linkler](#karma-linkler)
 - [Harici Kaynaklar](#harici-kaynaklar)
 
@@ -830,6 +832,21 @@ After nonlocal assignment: nonlocal spam
 After global assignment: nonlocal spam
 In global scope: global spa
 ```
+
+## Colab Üzerinden Python
+
+| Operator | Açıklama               |
+| -------- | ---------------------- |
+| `!`      | Bash komutları ön eki  |
+| `%`      | Bash dizini ön eki (?) |
+
+### Python Değişkenlerinin Bash Üzerinde Kullanımı
+
+| Operatör         | Açıklama                        | Örnek                   | Çıktı  |
+| ---------------- | ------------------------------- | ----------------------- | ------ |
+| `$<değişken>`    | Tek değişkenler için kullanılır | `!echo $filename`       | test   |
+| `{<pyton_kodu>}` | Python kodu için kullanılır     | `{"{}.test".format(1)}` | 1.test |
+
 
 ## Karma Linkler
 
