@@ -18,6 +18,8 @@ Sık kullanılan işletim sistemi notlarım.
   - [CMD Değişkenleri](#cmd-de%C4%9Fi%C5%9Fkenleri)
     - [Temel Kullanım](#temel-kullan%C4%B1m)
     - [Sık Kullanılanlar](#s%C4%B1k-kullan%C4%B1lanlar)
+  - [CMD Kod Parçaları](#cmd-kod-par%C3%A7alar%C4%B1)
+    - [CMD Dosyaları Ardışık olarak adlandırma](#cmd-dosyalar%C4%B1-ard%C4%B1%C5%9F%C4%B1k-olarak-adland%C4%B1rma)
 - [Görsellik](#g%C3%B6rsellik)
   - [Command Promt](#command-promt)
 - [Windows Features](#windows-features)
@@ -126,6 +128,28 @@ Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tı
   - `**` olduğu için Alt dizinler de dahildir
 - `%username` Kullanıcı adı
 - `%appdata%` Uygulama verileri dizini
+
+### CMD Kod Parçaları
+
+#### CMD Dosyaları Ardışık olarak adlandırma
+
+```cmd
+@echo off
+setlocal EnableDelayedExpansion
+set i=0
+for %%a in (<dosya_belirteci>) do (
+    set /a i+=1
+    ren "%%a" "!i!.new"
+)
+ren *.new *.<yeni_dosya_uzantısı>
+```
+
+- `<dosya_belirteci>` Adlandırılacak dosyaların isim yapısı:
+  - `*` Her dosyası adlandırır
+  - `download*` 'download' ile başlayan her dosyayı adlandırır
+  - `*.png` 'png' ile biten her dosyayı
+- `<yeni_dosya_uzantısı>` Çıktıların uzantısı
+  - `jpg`, `png`, `txt` vs ...
 
 ## Görsellik
 
