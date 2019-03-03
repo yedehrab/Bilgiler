@@ -67,13 +67,7 @@ python -c
 Tensorflow modellerini kullanabilmek için alttaki kurulumlara da ihtiyaç olabilmekte:
 
 ```sh
-conda install -c anaconda opencv
-conda install -c anaconda pillow
-conda install -c anaconda lxml
-conda install -c anaconda matplotlib
-conda install -c anaconda jupyter
-conda install -c anaconda protobuf
-conda install -c anaconda pandas
+conda install -c anaconda opencv pillow lxml matplotlib jupyter protobuf pandas
 ```
 
 #### Tensorflow Modellerinin İndirilmesi
