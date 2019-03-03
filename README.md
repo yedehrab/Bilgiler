@@ -71,6 +71,7 @@
 
 - Her sayfanın en üst ve en alt kısmına (?) işaretçi ekle.
 - Git notlarındaki komutları tablosal olarak göster.
+- win10 sık kullanılan cmd komutları tablosal olacak
 
 ## Yazar & Alıntılayan
 

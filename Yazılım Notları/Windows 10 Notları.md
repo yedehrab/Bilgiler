@@ -15,6 +15,7 @@ Sık kullanılan işletim sistemi notlarım.
   - [Menü Kısayolları](#men%C3%BC-k%C4%B1sayollar%C4%B1)
 - [Command Promp (CMD)](#command-promp-cmd)
   - [CMD Komutları](#cmd-komutlar%C4%B1)
+    - [CMD Ek Komutlar](#cmd-ek-komutlar)
   - [CMD Değişkenleri](#cmd-de%C4%9Fi%C5%9Fkenleri)
     - [Temel Kullanım](#temel-kullan%C4%B1m)
     - [Sık Kullanılanlar](#s%C4%B1k-kullan%C4%B1lanlar)
@@ -91,21 +92,29 @@ Siteye girdiğinizde sırasıyla alttaki ayarları açamınız | seçmeniz gerek
 
 ## Command Promp (CMD)
 
+Terminalde dosya isimlerinin **sonu veya başı sayı içerirse** çeşitli sorunlara neden olmakta.
+
 ### CMD Komutları
 
-| Komut                   | Açıklama              |
-| ----------------------- | --------------------- |
-| `cls`                   | Konsolu temizleme     |
-| `cd <path>`             | Dizin değiştirme      |
-| `mkdir <dirname>`       | Klasör oluşturma      |
-| `start <file | folder>` | Dosya veya dizin açma |
-| `del <switch> <file>`   | Dosya silme           |
-| `rd <switch> <folder>`  | Dizin silme           |
+| Komut                         | Açıklama                      |
+| ----------------------------- | ----------------------------- |
+| `cls`                         | Konsolu temizleme             |
+| `cd <yol>`                    | Dizin değiştirme              |
+| `mkdir <dizin_adı>`           | Klasör oluşturma              |
+| `start <dosya | dizin>`       | Dosya veya dizin açma         |
+| `ren <eski_isim> <yeni_isim>` | Dosyayı yeniden adlandırma    |
+| `move <dosya> <konum>`        | Dosyayı belirli konuma taşıma |
+| `del <bayrak> <file>`         | Dosya silme                   |
+| `rd <switch> <folder>`        | Dizin silme                   |
+| `set <ortam_değişkeni>`       | Ortam değişkeni tanımlama     |
 
-- `<switch>` **/?** yazdığınızda çıkan /'li karakterler.
-- `<file | folder>` Dosya ve veya dizin yolu
+- `<bayrak>` **/?** yazdığınızda çıkan /'li karakterler.
 
-> Komut kullanımı CMD üzerinden öğrenmek için `<command> /?` yazabilirsin.
+> Komut kullanımlarını öğrenmek için cmd üzerinden `<komut> /?` yazabilirsin.
+
+#### CMD Ek Komutlar
+
+- `powershell.exe Expand-Archive "<zip_dosyası>" "<çıkarılacağı_yer>"`  Sıkıştırılmış dosyayı çıkarma
 
 ### CMD Değişkenleri
 
@@ -128,8 +137,10 @@ Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tı
 - `*.js` Uzantısı js olan tüm dosyalar
 - `*lib/**/*.js` Lib içindeki uzantısı js olan tüm dosyalar
   - `**` olduğu için Alt dizinler de dahildir
-- `%username` Kullanıcı adı
+- `%username%` Kullanıcı adı
 - `%appdata%` Uygulama verileri dizini
+- %HOMEDRIVE% Kullanıcı diski
+- %homepath% Kullanıcı Yolu
 
 ### CMD Kod Parçaları
 
