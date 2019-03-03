@@ -11,6 +11,7 @@
     - [Wget Url'deki Tüm Resimleri İndirme](#wget-urldeki-t%C3%BCm-resimleri-i%CC%87ndirme)
 - [Linkler](#linkler)
   - [Resim Veri Kümeleri](#resim-veri-k%C3%BCmeleri)
+  - [Verilerdeki Etiketi Kaldırma](#verilerdeki-etiketi-kald%C4%B1rma)
   - [Karma Veri Kümeleri](#karma-veri-k%C3%BCmeleri)
 - [Referanslar](#referanslar)
 
@@ -92,6 +93,10 @@ wget -r -A jpg <url>
 - [ImageNet](http://www.image-net.org/index)
 - [Getty](https://www.gettyimages.com/)
 - [Usplash](https://unsplash.com/)
+
+### Verilerdeki Etiketi Kaldırma
+
+Açıklamalı video için [buraya](https://www.youtube.com/watch?v=zphUGNbs4Do) tıklayabilirsin.
 
 ### Karma Veri Kümeleri
 
