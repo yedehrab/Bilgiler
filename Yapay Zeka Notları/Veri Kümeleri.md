@@ -60,7 +60,8 @@ aria2c -i urls.txt -d downloads # örnek
 Linux'un standart CLI yükleyicisidir
 
 - Linux için kurulum gerektirmez.
-- [Windows](https://drive.google.com/open?id=1UULzjZVRpjVgDiDsVhLtWW7oggVfHFUK)
+- Kurulum sayfasına [buraya](https://eternallybored.org/misc/wget/) tıklayarak yönlenebilrsin.
+  - [Windows x64](https://drive.google.com/open?id=1UULzjZVRpjVgDiDsVhLtWW7oggVfHFUK)
 
 > `wget -h` ile komutlarına bakabilirsin
 
