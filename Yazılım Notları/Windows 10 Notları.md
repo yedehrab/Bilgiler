@@ -20,10 +20,12 @@ Sık kullanılan işletim sistemi notlarım.
     - [Sık Kullanılanlar](#s%C4%B1k-kullan%C4%B1lanlar)
   - [CMD Kod Parçaları](#cmd-kod-par%C3%A7alar%C4%B1)
     - [CMD Dosyaları Ardışık olarak adlandırma](#cmd-dosyalar%C4%B1-ard%C4%B1%C5%9F%C4%B1k-olarak-adland%C4%B1rma)
-- [Görsellik](#g%C3%B6rsellik)
-  - [Command Promt](#command-promt)
+- [Özelleştirmem](#%C3%B6zelle%C5%9Ftirmem)
+  - [CMD Düzeni](#cmd-d%C3%BCzeni)
 - [Windows Features](#windows-features)
   - [Default Windows Features](#default-windows-features)
+  - [Taskbar Düzeni](#taskbar-d%C3%BCzeni)
+  - [Ek Ayalarım](#ek-ayalar%C4%B1m)
 - [Ayarlar](#ayarlar)
 - [Harici Linkler](#harici-linkler)
 
@@ -91,14 +93,14 @@ Siteye girdiğinizde sırasıyla alttaki ayarları açamınız | seçmeniz gerek
 
 ### CMD Komutları
 
-| Komut | Açıklama |
-|-------|----------|
-| `cls` | Konsolu temizleme |
-| `cd <path>` | Dizin değiştirme |
-| `mkdir <dirname>` | Klasör oluşturma |
+| Komut                   | Açıklama              |
+| ----------------------- | --------------------- |
+| `cls`                   | Konsolu temizleme     |
+| `cd <path>`             | Dizin değiştirme      |
+| `mkdir <dirname>`       | Klasör oluşturma      |
 | `start <file | folder>` | Dosya veya dizin açma |
-| `del <switch> <file>` | Dosya silme |
-| `rd <switch> <folder>` | Dizin silme |
+| `del <switch> <file>`   | Dosya silme           |
+| `rd <switch> <folder>`  | Dizin silme           |
 
 - `<switch>` **/?** yazdığınızda çıkan /'li karakterler.
 - `<file | folder>` Dosya ve veya dizin yolu
@@ -151,11 +153,13 @@ ren *.new *.<yeni_dosya_uzantısı>
 - `<yeni_dosya_uzantısı>` Çıktıların uzantısı
   - `jpg`, `png`, `txt` vs ...
 
-## Görsellik
+## Özelleştirmem
 
 Kendime özgü görsellik ayarlarım
 
-### Command Promt
+> Kendime not amaçlı eklenmiştir 🙄
+
+### CMD Düzeni
 
 ![cmd](../images/cmd.png)
 
@@ -187,11 +191,24 @@ Kendime özgü görsellik ayarlarım
 - `Windows PowerShell 2.0`
 - `Work Folders Client`
 
+### Taskbar Düzeni
+
+![taskbar](../images/taskbar.jpg)
+
+### Ek Ayalarım
+
+| Ayar                     | Açıklama                                        |
+| ------------------------ | ----------------------------------------------- |
+| Open With Code           | Dosyayı vscode ile açma                         |
+| Open With Code           | Dizini vscode ile açma                          |
+| Open command prompt here | CMD'yi dizinde açma                             |
+| `%b%`                    | Bilgiler projesini vscode'da açan özel değişken |
+
 ## Ayarlar
 
-| Ayar | Ulaşım | Açıklama | Kaynak |
-|------|--------|----------|--------|
-| Altyazı | Options - Ease of Access -  Hearing / Closed captions | Yerel uygulamalardaki altyazı metnini özelleştirme | [Microsoft](https://support.microsoft.com/en-us/help/3078107/closed-captions-in-movies-tv-content-on-windows-10)
+| Ayar    | Ulaşım                                                | Açıklama                                           | Kaynak                                                                                                           |
+| ------- | ----------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Altyazı | Options - Ease of Access -  Hearing / Closed captions | Yerel uygulamalardaki altyazı metnini özelleştirme | [Microsoft](https://support.microsoft.com/en-us/help/3078107/closed-captions-in-movies-tv-content-on-windows-10) |
 
 ## Harici Linkler
 
