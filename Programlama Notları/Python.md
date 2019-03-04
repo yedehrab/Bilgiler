@@ -14,6 +14,7 @@
 - [Değişkenler](#de%C4%9Fi%C5%9Fkenler)
   - [Ana Değişkenler](#ana-de%C4%9Fi%C5%9Fkenler)
   - [Ek Değişkenler](#ek-de%C4%9Fi%C5%9Fkenler)
+  - [Değersiz Değişken Tanımalma](#de%C4%9Fersiz-de%C4%9Fi%C5%9Fken-tan%C4%B1malma)
   - [Sabit Değerler (Constants)](#sabit-de%C4%9Ferler-constants)
   - [Değişkenler Arası Takılama (Casting)](#de%C4%9Fi%C5%9Fkenler-aras%C4%B1-tak%C4%B1lama-casting)
   - [String İşlemleri](#string-i%CC%87%C5%9Flemleri)
@@ -70,6 +71,7 @@
     - [Obje Özelliği Silme](#obje-%C3%B6zelli%C4%9Fi-silme)
     - [Class Silme](#class-silme)
   - [Scopes and Namespaces](#scopes-and-namespaces)
+- [Komut Satırından Python](#komut-sat%C4%B1r%C4%B1ndan-python)
 - [Colab Üzerinden Python](#colab-%C3%BCzerinden-python)
   - [Python Değişkenlerinin Bash Üzerinde Kullanımı](#python-de%C4%9Fi%C5%9Fkenlerinin-bash-%C3%BCzerinde-kullan%C4%B1m%C4%B1)
   - [Colab için Harici Bağlantılar](#colab-i%C3%A7in-harici-ba%C4%9Flant%C4%B1lar)
@@ -154,6 +156,12 @@ Harici link için [buraya](https://www.programiz.com/python-programming/keyword-
 | [Set](https://www.programiz.com/python-programming/set)               | `kume = {1.0, "Hello", (1, 2, 3)}` | `kume.add(1)`  |
 | [Dictionary](https://www.programiz.com/python-programming/dictionary) | `site = {"adi":"yemreak"}`         | `site['adi']`  |
 | [Tuple](https://www.programiz.com/python-programming/tuple)           | `konum = (1, 2)`                   | `x, y = konum` |
+
+### Değersiz Değişken Tanımalma
+
+```py
+degersiz = None
+```
 
 ### Sabit Değerler (Constants)
 
@@ -834,6 +842,41 @@ After global assignment: nonlocal spam
 In global scope: global spa
 ```
 
+## Komut Satırından Python
+
+```py
+import argparse
+
+def main():
+    # Initiate argument parser
+    parser = argparse.ArgumentParser(
+        description="Sample TensorFlow XML-to-CSV converter")
+    parser.add_argument("-i",
+                        "--inputDir",
+                        help="Path to the folder where the input .xml files are stored",
+                        type=str)
+    parser.add_argument("-o",
+                        "--outputFile",
+                        help="Name of output .csv file (including path)", type=str)
+    args = parser.parse_args()
+
+    if args.inputDir is None:
+        args.inputDir = os.getcwd()
+
+    if args.outputFile is None:
+        args.outputFile = args.inputDir + "/labels.csv"
+
+    assert (os.path.isdir(args.inputDir))
+
+    xml_df = xml_to_csv(args.inputDir)
+    xml_df.to_csv(
+        args.outputFile, index=None)
+    print('Successfully converted xml to csv.')
+
+if __name__ == '__main__':
+    main()
+```
+
 ## Colab Üzerinden Python
 
 | Operator | Açıklama               |
@@ -862,3 +905,4 @@ In global scope: global spa
 - [Python Türkçe Başlangıç](https://github.com/fuatbeser/python-notlarim/blob/master/python_turkce_baslangic.ipynb)
 - [Should I use underscores or camel case for Python?](https://www.quora.com/Should-I-use-underscores-or-camel-case-for-Python)
 - [Top 10 Python Libs 2017](https://tryolabs.com/blog/2017/12/19/top-10-python-libraries-of-2017/)
+- [Tensorflow Object Detection API](https://buildmedia.readthedocs.org/media/pdf/tensorflow-object-detection-api-tutorial/latest/tensorflow-object-detection-api-tutorial.pdf)
