@@ -15,6 +15,7 @@
 - [React](Programlama%20Notlar%C4%B1/React.md)
 - [Web Programlama](Programlama%20Notlar%C4%B1/Web%20Programlama.md)
 - [Nodejs](Programlama%20Notlar%C4%B1/Nodejs.md)
+- [Karma Notlar](Programlama%20Notlar%C4%B1/Karma%20Notlar.md)
 
 ## Yazılım Notları
 
