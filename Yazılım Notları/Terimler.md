@@ -18,3 +18,4 @@ Yazılımda kullanılan genel terimler.
 | Banner       | Afiş             |                                                                                                   |
 | Slider       | Kayan Afiş       |
 | Namespace    | İsim alanı       | Aynı amaca hizmet eden özellikleri, sınıfları ve fonksiyonları aynı çatı altında toplama          |
+| Wild Card    |                  | `..` `.` `*` gibi terimleri içeren metne verilen isim                                             |
