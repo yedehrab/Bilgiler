@@ -334,12 +334,9 @@ move generate_tfrecord.py %homedrive%%homepath%\Tensorflow\scripts\preprocessing
 cd %homedrive%%homepath%\Tensorflow\scripts\preprocessing
 
 # Create train data:
-python generate_tfrecord.py --label=<etiket> --csv_input=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\train_labels.csv
---img_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\images\train --output_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\train.record
+python generate_tfrecord.py --label=<etiket> --csv_input=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\train_labels.csv --img_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\images\train --output_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\train.record
 # Create test data:
-python generate_tfrecord.py --label=<etiket> --csv_input=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\test_labels.csv
---img_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\images\test
---output_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\test.record
+python generate_tfrecord.py --label=<etiket> --csv_input=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\test_labels.csv --img_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\images\test --output_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\test.record
 ```
 
 - `<script_dosyası>` İndirdiğiniz script dosyasının adı
@@ -500,7 +497,7 @@ Alttaki gibi bir çıktı gelmesi gerekmekte:
 TensorBoard 1.6.0 at http://YOUR-PC:6006 (Press CTRL+C to quit)
 ```
 
-Çıktıyı görüntülemek için verilen url'i tarayıcına kopyalaman yeterlidir.
+> Çıktıyı görüntülemek için verilen url'i tarayıcına kopyalaman yeterlidir.
 
 #### Sonuç Grafiğini Dışarı Aktarma
 
