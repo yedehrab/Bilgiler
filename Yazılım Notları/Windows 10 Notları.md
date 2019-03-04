@@ -28,6 +28,7 @@ Sık kullanılan işletim sistemi notlarım.
   - [Taskbar Düzeni](#taskbar-d%C3%BCzeni)
   - [Ek Ayalarım](#ek-ayalar%C4%B1m)
 - [Ayarlar](#ayarlar)
+- [Terimler](#terimler)
 - [Harici Linkler](#harici-linkler)
 
 ## İndirme
@@ -96,17 +97,20 @@ Terminalde dosya isimlerinin **sonu veya başı sayı içerirse** çeşitli soru
 
 ### CMD Komutları
 
-| Komut                         | Açıklama                      |
-| ----------------------------- | ----------------------------- |
-| `cls`                         | Konsolu temizleme             |
-| `cd <yol>`                    | Dizin değiştirme              |
-| `mkdir <dizin_adı>`           | Klasör oluşturma              |
-| `start <dosya | dizin>`       | Dosya veya dizin açma         |
-| `ren <eski_isim> <yeni_isim>` | Dosyayı yeniden adlandırma    |
-| `move <dosya> <konum>`        | Dosyayı belirli konuma taşıma |
-| `del <bayrak> <file>`         | Dosya silme                   |
-| `rd <switch> <folder>`        | Dizin silme                   |
-| `set <ortam_değişkeni>`       | Ortam değişkeni tanımlama     |
+Tabloda `< >` arasına yazılanlar sizin tarafınızdan girilecek değerlerdir.
+
+| Komut                             | Açıklama                          |
+| --------------------------------- | --------------------------------- |
+| `cls`                             | Konsolu temizleme                 |
+| `cd <yol>`                        | Dizin değiştirme                  |
+| `mkdir <dizin_adı>`               | Klasör oluşturma                  |
+| `start <dosya | dizin>`           | Dosya veya dizin açma             |
+| `ren <eski_isim> <yeni_isim>`     | Dosyayı yeniden adlandırma        |
+| `move <dosya> <konum>`            | Dosyayı belirli konuma taşıma     |
+| `del <bayrak> <file>`             | Dosya silme                       |
+| `rd <switch> <folder>`            | Dizin silme                       |
+| `set <ortam_değişkeni>`           | Ortam değişkeni tanımlama         |
+| `<komut> > <dosya_ismi>.<uzantı>` | Komutun çıktılarını dosyaya yazma |
 
 - `<bayrak>` **/?** yazdığınızda çıkan /'li karakterler.
 
@@ -221,6 +225,13 @@ Kendime özgü görsellik ayarlarım
 | ------- | ----------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Altyazı | Options - Ease of Access -  Hearing / Closed captions | Yerel uygulamalardaki altyazı metnini özelleştirme | [Microsoft](https://support.microsoft.com/en-us/help/3078107/closed-captions-in-movies-tv-content-on-windows-10) |
 
+## Terimler
+
+- Wild Card: `..`, `.`, `*` gibi terimleri içeren kelimeye verilen isim
+  - `help*`, `..\*` vs ...
+
 ## Harici Linkler
 
 - [How to rename image files in a folder all to .jpg format](https://answers.microsoft.com/en-us/windows/forum/windows_10-files/how-to-rename-image-files-in-a-folder-all-to-jpg/2a7e2873-e04b-472b-b239-afad2f2020fc)
+- [Move Komutu](https://www.windows-commandline.com/move-files-directories/)
+- [How to copy a list of file names to text file? ](https://superuser.com/questions/395836/how-to-copy-a-list-of-file-names-to-text-file)
