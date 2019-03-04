@@ -503,9 +503,6 @@ TensorBoard 1.6.0 at http://YOUR-PC:6006 (Press CTRL+C to quit)
 
 **Anaconda Prompt** üzerinden alttaki komutlar uygulanır:
 
-Copy the TensorFlow/models/research/object_detection/export_inference_graph.
-py script and paste it straight into your training_demo folder.
-
 ```sh
 activate tensorflow_cpu # ya da gpu
 
