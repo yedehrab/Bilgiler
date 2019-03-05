@@ -291,7 +291,7 @@ git remote rm [branch]
 ### Son hatalı yüklemeyi kaldırma
 
 ```bash
-gir reset HEAD~
+git reset HEAD~
 ```
 
 > Son yüklemeyi kaldırır. Bu işlemden sonra tekrar commit etmeniz gerekmekte. Detay için [link](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-commits-in-git)
