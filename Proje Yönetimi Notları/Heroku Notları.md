@@ -6,7 +6,7 @@ Detaylı bilgiler için [buraya](https://devcenter.heroku.com/articles/getting-s
 
 - [Heroku Önemli Notlar](#heroku-%C3%B6nemli-notlar)
   - [Heroku varsayılan atamaları](#heroku-varsay%C4%B1lan-atamalar%C4%B1)
-  - [Package.json dosyası](#packagejson-dosyas%C4%B1)
+  - [Heroku Script Çalıştırma](#heroku-script-%C3%A7al%C4%B1%C5%9Ft%C4%B1rma)
   - [Heroku port ayarı](#heroku-port-ayar%C4%B1)
 - [Heroku Komutları](#heroku-komutlar%C4%B1)
   - [Bu komutların çalışması için heroku-cli'nin yüklü olması lazım](#bu-komutlar%C4%B1n-%C3%A7al%C4%B1%C5%9Fmas%C4%B1-i%C3%A7in-heroku-clinin-y%C3%BCkl%C3%BC-olmas%C4%B1-laz%C4%B1m)
@@ -36,10 +36,12 @@ NODE_VERBOSE=false
 > 
 > *console.log(process.env.NODE_ENV) gibi*
 
-### Package.json dosyası
+### Heroku Script Çalıştırma
 
-> Heroku aldığı node.js uygulamasındaki **start scriptini** çalıştırır. Yani "npm run start" komutunu işler.
-> Bu sebeple **package.json** dosyası olmak zorunda ve **start scriptini** içermek zorundadır.
+- Heroku aldığı node.js uygulamasındaki **start scriptini** çalıştırır. Yani `npm run start` komutunu işler
+- Bu sebeple **package.json** dosyası olmak zorunda ve **start scriptini** içermek zorundadır
+- Artık heroku yükleme işleminin hemen ardından `build` scriptini çalıştırmaya başlayacak
+  - Tarihi ve detaylı bilgi için [buraya](https://devcenter.heroku.com/changelog-items/1557) tıklayabilirsin
 
 Örnek package.json dosyası
 
