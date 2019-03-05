@@ -1,6 +1,9 @@
 # Software Testing And Quality <!-- omit in toc -->
 
-*Hocası*: Rüya Şamlı
+- *Hocası*: Rüya Şamlı
+- *Başlangıç Saati*: 10:00
+  - 1 saat sunum
+  - 1 saat ders
 
 ## İçerikler <!-- omit in toc -->
 
