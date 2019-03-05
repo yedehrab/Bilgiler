@@ -7,6 +7,7 @@ Javascript DOM komutlarını özetleyen bir derlemedir.
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
 - [Temel Bilgiler](#temel-bilgiler)
+  - [String İşlemleri](#string-i%CC%87%C5%9Flemleri)
 - [DOM Bilgileri](#dom-bilgileri)
   - [Dosya İndirme İşlemleri](#dosya-i%CC%87ndirme-i%CC%87%C5%9Flemleri)
     - [URI ile dosya indirme](#uri-ile-dosya-indirme)
@@ -30,6 +31,12 @@ Javascript DOM komutlarını özetleyen bir derlemedir.
 - [Array](https://www.w3schools.com/js/js_arrays.asp)
 
 > İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
+
+### String İşlemleri
+
+| İşlem    | Açıklama                                                         |
+| -------- | ---------------------------------------------------------------- |
+| `trim()` | Boşluk, satır atlatma gibi özel karakterlerin tekrarını kaldırır |
 
 ## DOM Bilgileri
 
