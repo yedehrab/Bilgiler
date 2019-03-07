@@ -30,6 +30,7 @@
   - [Çalışma Ortamını ve Eğitim Dosyalarını Ayarlama](#%C3%A7al%C4%B1%C5%9Fma-ortam%C4%B1n%C4%B1-ve-e%C4%9Fitim-dosyalar%C4%B1n%C4%B1-ayarlama)
     - [Çalışma Ortamının Hazırlanması](#%C3%A7al%C4%B1%C5%9Fma-ortam%C4%B1n%C4%B1n-haz%C4%B1rlanmas%C4%B1)
   - [Resim Etiketleme İşlemi](#resim-etiketleme-i%CC%87%C5%9Flemi)
+    - [Etiket Yollarını veya Adlarını Düzenleme](#etiket-yollar%C4%B1n%C4%B1-veya-adlar%C4%B1n%C4%B1-d%C3%BCzenleme)
   - [Etiket Haritası Oluşturma](#etiket-haritas%C4%B1-olu%C5%9Fturma)
   - [Tensorflow Kayıtları Oluşturma](#tensorflow-kay%C4%B1tlar%C4%B1-olu%C5%9Fturma)
     - [XML'i CSV'ye Çevirme](#xmli-csvye-%C3%A7evirme)
@@ -46,6 +47,8 @@
     - [Eğitim İşlemini TensorBoard Kullanarak Takip Etme](#e%C4%9Fitim-i%CC%87%C5%9Flemini-tensorboard-kullanarak-takip-etme)
     - [Sonuç Grafiğini Dışarı Aktarma](#sonu%C3%A7-grafi%C4%9Fini-d%C4%B1%C5%9Far%C4%B1-aktarma)
   - [Hata Notları ve Açıklamaları](#hata-notlar%C4%B1-ve-a%C3%A7%C4%B1klamalar%C4%B1)
+    - [ImportError: No module named nets](#importerror-no-module-named-nets)
+    - ['dict_keys' object does not support indexing](#dictkeys-object-does-not-support-indexing)
 - [Colab Üzerinden Tensorflow Modeli Kullanma](#colab-%C3%BCzerinden-tensorflow-modeli-kullanma)
 - [Harici Bağlantılar](#harici-ba%C4%9Flant%C4%B1lar)
 
@@ -264,6 +267,21 @@ python labelImg.py ..\..\workspace\training_demo\images # çıktıları hedeflem
 
 > LabelImg kullanımı için [bu videoya](https://www.youtube.com/watch?v=K_mFnvzyLvc&feature=youtu.be&t=9m13s) bakabilirsin.
 
+#### Etiket Yollarını veya Adlarını Düzenleme
+
+XML ve resim dosyalarını başka bir yolda oluşturduyasan alttaki script yardımıyla düzeltebilirsin
+
+- Script dosyasını [buraya](Tensorflow%20Kaynaklar%C4%B1\xml_path_regulator.py) tıklayarak indirmeli ve gerekli dizine alttaki komutla koymalıyız
+- Komutları **Anaconda Prompt** üzerinden **tensorflow** ortamını aktif ederek uygulamayı unutmayın.
+
+```sh
+# Train verilerini yeniden adlandırma ve düzeltme
+python xml_path_regulator.py -i %homedrive%%homepath%\Tensorflow\workspace\training_demo\images\train  -p image
+
+# Test verilerini yeniden adlandırma ve düzeltme
+python xml_path_regulator.py -i %homedrive%%homepath%\Tensorflow\workspace\training_demo\images\test  -p image
+```
+
 ### Etiket Haritası Oluşturma
 
 - Alttaki komutla açılan dizinde `.pbtxt` uzantılı etiket haritası dosyasısı oluşturun
@@ -334,9 +352,9 @@ move generate_tfrecord.py %homedrive%%homepath%\Tensorflow\scripts\preprocessing
 cd %homedrive%%homepath%\Tensorflow\scripts\preprocessing
 
 # Create train data:
-python generate_tfrecord.py --label=<etiket> --csv_input=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\train_labels.csv --img_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\images\train --output_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\train.record
+python generate_tfrecord.py --label_map=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\label_map.pbtxt --csv_input=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\train_labels.csv --img_path=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\images\train --output_path=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\train.record
 # Create test data:
-python generate_tfrecord.py --label=<etiket> --csv_input=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\test_labels.csv --img_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\images\test --output_path=%homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\test.record
+python generate_tfrecord.py --label_map=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\label_map.pbtxt --csv_input=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\test_labels.csv --img_path=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\images\test --output_path=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\test.recordd
 ```
 
 - `<script_dosyası>` İndirdiğiniz script dosyasının adı
@@ -523,7 +541,29 @@ ckpt-<checkpoint> --output_directory trained-inference-graphs/output_inference_g
 
 ### Hata Notları ve Açıklamaları
 
-> Yakında...
+#### ImportError: No module named nets
+
+PythonPath ayarlanmadığı için bu hata ile karşılaşmaktasınız.
+
+```sh
+set PYTHONPATH=%HOMEDRIVE%%HOMEPATH%\Tensorflow\models\research;%HOMEDRIVE%%HOMEPATH%\Tensorflow\models\research\slim
+```
+
+> Dökümandaki ilgili alana yönelmek için [buraya](#gerekli-ortam-de%C4%9Fi%C5%9Fkenlerinin-tan%C4%B1mlanmas%C4%B1) tıklayabilrisin.
+
+#### 'dict_keys' object does not support indexing
+
+Açıklama linki için [buraya](https://github.com/tensorflow/models/pull/6044/files) bakabilirsin.
+
+```sh
+start %HOMEDRIVE%%HOMEPATH%\Tensorflow\models\research\object_detection\models\feature_map_generators.py
+```
+
+- Satır 518'deki yere alttaki kodu yapıştırın
+
+```py
+image_features = image_features[list(image_features.keys())[0]]
+```
 
 ## Colab Üzerinden Tensorflow Modeli Kullanma
 
@@ -533,3 +573,6 @@ Detayları öğrenmek için [buraya](https://colab.research.google.com/drive/1T0
 
 - [Traffic Light Detection Using the TensorFlow* Object Detection API](https://software.intel.com/en-us/articles/traffic-light-detection-using-the-tensorflow-object-detection-api)
 - [Tensorflow in Anaconda](https://www.anaconda.com/tensorflow-in-anaconda/)
+- [Tensorflow create a tfrecords file from csv](https://stackoverflow.com/a/41465631/9770490)
+- [Tensorflow Object Detection, error while generating tfrecord [TypeError: None has type NoneType, but expected one of: int, long]](https://stackoverflow.com/a/50299634/9770490)
+- [Tensorflow Github Preparing Inputs](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)
