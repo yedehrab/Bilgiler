@@ -15,12 +15,11 @@
 - [React](Programlama%20Notlar%C4%B1/React.md)
 - [Web Programlama](Programlama%20Notlar%C4%B1/Web%20Programlama.md)
 - [Nodejs](Programlama%20Notlar%C4%B1/Nodejs.md)
-- [Karma Notlar](Programlama%20Notlar%C4%B1/Karma%20Notlar.md)
+- [Gerekli Ön Bilgiler](Programlama%20Notlar%C4%B1/Gerekli%20%C3%96n%20Bilgiler.md)
 
 ## Yazılım Notları
 
 - [Windows 10 Notları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Windows%2010%20Notlar%C4%B1.md)
-- [Karma Notlar](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Karma%20Notlar.md)
 - [ADB Komutları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Adb%20Komutlar%C4%B1.md)
 - [Terimler](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Terimler.md)
 - [GittiGidiyor Entegrasyon](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/GittiGidiyor%20Entegrasyon.md)
