@@ -228,9 +228,10 @@ sonuc = 7 / 3 # 2.33 atanır
 
 | Operatör | Açıklama             | Örnek     | Çıktı |
 | -------- | -------------------- | --------- | ----- |
-| `%`      | Mod alma işlemi      | `6 % 2`   | 0     |
-| `**`     | Kuvvet alma          | `6 ** 2`  | 36    |
-| `//`     | Kalansız bölümü alma | `13 // 2` | 6     |
+| `%`      | Mod alma işlemi      | `6 % 2`   | `0`   |
+| `**`     | Kuvvet alma          | `6 ** 2`  | `36`  |
+| `//`     | Kalansız bölümü alma | `13 // 2` | `6`   |
+
 
 ### Karşılaştırma Operatörleri
 
@@ -404,17 +405,18 @@ Son
 
 #### String İşlemleri
 
-| Metot     | Açıklama               | Örnek                          | Çıktı                 |
-| --------- | ---------------------- | ------------------------------ | --------------------- |
-| `len`     | Uzunluk                | `len("yemreak")`               | 7                     |
-| `format`  | Formatlama             | `"X: {}, Y: {}".format(1, 2)`  | `'X: 1, Y: 2'`        |
-| `r`       | Raw String ön eki      | `r"C:\Users"`                  | `C:\\Users`           |
-| `split`   | Parçalama              | `"ye mre ak".split(" ")`       | `['ye', 'mre', 'ak']` |
-| `join`    | Birleştirme            | `','.join(['do', 're', 'mi'])` | `'do,re,mi'`          |
-| `replace` | Metin değiştirme       | `"yemreak".replace("ak", "")`  | `'yemre'`             |
-| `strip`   | Metin düzeltme         | `' abc '.strip()`              | `'abc'`               |
-| `ltrip`   | Metnin solunu düzeltme | `' abc '.ltrip()`              | `'abc '`              |
-| `rtrip`   | Metnin sağını düzeltme | `' abc '.rtrip()`              | `' abc'`              |
+| Metot     | Açıklama                | Örnek                          | Çıktı                 |
+| --------- | ----------------------- | ------------------------------ | --------------------- |
+| `len`     | Uzunluk                 | `len("yemreak")`               | 7                     |
+| `format`  | Formatlama              | `"X: {}, Y: {}".format(1, 2)`  | `'X: 1, Y: 2'`        |
+| `%`       | Operatör ile formatlama | `'new(%s %d)' % ('help', 5)`   | `'new(help 5)'`       |
+| `r`       | Raw String ön eki       | `r"C:\Users"`                  | `C:\\Users`           |
+| `split`   | Parçalama               | `"ye mre ak".split(" ")`       | `['ye', 'mre', 'ak']` |
+| `join`    | Birleştirme             | `','.join(['do', 're', 'mi'])` | `'do,re,mi'`          |
+| `replace` | Metin değiştirme        | `"yemreak".replace("ak", "")`  | `'yemre'`             |
+| `strip`   | Metin düzeltme          | `' abc '.strip()`              | `'abc'`               |
+| `ltrip`   | Metnin solunu düzeltme  | `' abc '.ltrip()`              | `'abc '`              |
+| `rtrip`   | Metnin sağını düzeltme  | `' abc '.rtrip()`              | `' abc'`              |
 
 > Daha fazla bilgi için [buraya](https://www.programiz.com/python-programming/methods/string) bakabilirsin.
 
@@ -438,18 +440,22 @@ Son
 
 #### Dizin ve Yol İşlemleri
 
-| Paket     | Fonksiyon                   | Açıklama                                                    |
-| --------- | --------------------------- | ----------------------------------------------------------- |
-| `os`      | `listdir(<yol>)`            | Yolu verilen dizinin içindekileri döndürür                  |
-| `os.path` | `isfile(<yol>)`             | Dosya mı kontrolü                                           |
-| `os.path` | `join(<yol1>, <dosya_adı>)` | Dizinleri birleştirme                                       |
-| `glob`    | `glob(<wildcard | yol>)`    | Verilen sorguya veya yola uygun dosya ve dizinleri döndürür |
+| Paket     | Fonksiyon                      | Açıklama                                                                         |
+| --------- | ------------------------------ | -------------------------------------------------------------------------------- |
+| `os`      | `listdir(<yol>)`               | Yolu verilen dizinin içindekileri döndürür                                       |
+| `os`      | `rename(<eski_ad>, <yeni_ad>)` | Dosya veya dizin adlandırma                                                      |
+| `os.path` | `isfile(<yol>)`                | Dosya mı kontrolü                                                                |
+| `os.path` | `join(<yol1>, <dosya_adı>)`    | Dizinleri birleştirme                                                            |
+| `os.path` | `basename(<yol>)`              | Yolu verilen dosyanın salt adını ve uzantısını bulma                             |
+| `os.path` | `splittext(<dosya_adı>)`       | Dosyanın başlığını ve uzantısını döndürür (title, ext)                           |
+| `glob`    | `glob(<yol_şablonu>)`          | Verilen sorguya veya yola uygun dosya ve dizinleri döndürür                      |
+| `glob`    | `iglob(<yol_şablonu>)`         | Verilen sorguya veya yola uygun dosya ve dizinleri generator yapısı ile döndürür |
 
 - `<yol>` Path, dosya yolu
   - *Örn: C:\Users\Username\help.txt*
 - `<dosya_adı>` Dosyanın uzantısıyla birlikteki adı
   - *Örn: help.txt*
-- `<wildcard>` Özel dizin sorguları
+- `<yol_şablonu>` Özel dizin sorguları
   - *Örn: `*.txt`, `../help`*
 
 ### Fonksiyon Oluşturma
@@ -937,7 +943,6 @@ In global scope: global spa
 | `'store_true'` | Flag* değeri olur ve komutta içerilirse `True` değeri alır (`-h` gibi) |
 | `count`        | Kaç kere yazıldığı bilgisini tutar (-vvv için 3)                       |
 
-
 ```py
 import argparse
 parser = argparse.ArgumentParser()
@@ -1030,3 +1035,4 @@ if __name__ == '__main__':
 - [Replace single backslash with double backslash](https://stackoverflow.com/questions/17327202/python-replace-single-backslash-with-double-backslash)
 - [What does `if __name__ == '__main__':` do?](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
 - [Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
+- [Gitignore yapılandırması](https://github.com/martinohanlon/flightlight/issues/1)
