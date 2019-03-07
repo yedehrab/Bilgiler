@@ -3,6 +3,7 @@ Usage:
 # Create train data:
 python xml_to_csv.py -i [PATH_TO_IMAGES_FOLDER]/train -o [PATH_TO_ANNOTATIONS_FOLDER]/
 train_labels.csv
+
 # Create test data:
 python xml_to_csv.py -i [PATH_TO_IMAGES_FOLDER]/test -o [PATH_TO_ANNOTATIONS_FOLDER]/
 test_labels.csv
@@ -27,27 +28,23 @@ def xml_to_csv(path):
     The produced dataframe
     """
 
-    global tree, value
-
     xml_list = []
 
-    for xml_file in glob.glob(path + '/*.xml'):
+    for xml_file in glob.glob(path + r'\*.xml'):
         tree = ET.parse(xml_file)
+        root = tree.getroot()
+        for member in root.findall('object'):
+            value = (root.find('filename').text,
+                     int(root.find('size')[0].text),
+                     int(root.find('size')[1].text),
+                     member[0].text,
+                     int(member[4][0].text),
+                     int(member[4][1].text),
+                     int(member[4][2].text),
+                     int(member[4][3].text)
+                     )
 
-    root = tree.getroot()
-
-    for member in root.findall('object'):
-        value = (root.find('filename').text,
-                 int(root.find('size')[0].text),
-                 int(root.find('size')[1].text),
-                 member[0].text,
-                 int(member[4][0].text),
-                 int(member[4][1].text),
-                 int(member[4][2].text),
-                 int(member[4][3].text)
-                 )
-
-    xml_list.append(value)
+            xml_list.append(value)
 
     column_name = ['filename', 'width', 'height',
                    'class', 'xmin', 'ymin', 'xmax', 'ymax']
