@@ -17,7 +17,6 @@
   - [Değersiz Değişken Tanımalma](#de%C4%9Fersiz-de%C4%9Fi%C5%9Fken-tan%C4%B1malma)
   - [Sabit Değerler (Constants)](#sabit-de%C4%9Ferler-constants)
   - [Değişkenler Arası Takılama (Casting)](#de%C4%9Fi%C5%9Fkenler-aras%C4%B1-tak%C4%B1lama-casting)
-  - [String İşlemleri](#string-i%CC%87%C5%9Flemleri)
   - [Değişken Tipleri için Ek Kaynak](#de%C4%9Fi%C5%9Fken-tipleri-i%C3%A7in-ek-kaynak)
 - [Operatörler](#operat%C3%B6rler)
   - [Aritmatik Operatörler](#aritmatik-operat%C3%B6rler)
@@ -36,17 +35,24 @@
   - [Range Fonksiyonu](#range-fonksiyonu)
 - [Break / Continue](#break--continue)
 - [Fonksiyonlar](#fonksiyonlar)
-  - [Fonksiyon İskeleti](#fonksiyon-i%CC%87skeleti)
-  - [Fonksiyon Örneği](#fonksiyon-%C3%B6rne%C4%9Fi)
-  - [Fonksyion Dökümantasyonu](#fonksyion-d%C3%B6k%C3%BCmantasyonu)
-  - [Fonksyion Varsayılan Parametreler](#fonksyion-varsay%C4%B1lan-parametreler)
-  - [Fonksiyonlarda Keyfi Parametreler](#fonksiyonlarda-keyfi-parametreler)
-  - [Özyineleyen Fonksiyonlar](#%C3%B6zyineleyen-fonksiyonlar)
-    - [Özyineleyen Fonksiyonların Avantajları](#%C3%B6zyineleyen-fonksiyonlar%C4%B1n-avantajlar%C4%B1)
-    - [Özyineleyen Fonksiyonların Zararları](#%C3%B6zyineleyen-fonksiyonlar%C4%B1n-zararlar%C4%B1)
-- [Lambda Fonksiyonlar](#lambda-fonksiyonlar)
-  - [Filter ile Lambda Kullanımı](#filter-ile-lambda-kullan%C4%B1m%C4%B1)
-  - [Map ile Lambda Kullanımı](#map-ile-lambda-kullan%C4%B1m%C4%B1)
+  - [Dahili Fonksiyon Kullanımları](#dahili-fonksiyon-kullan%C4%B1mlar%C4%B1)
+    - [Ekrana Yazma / Print İşlemleri](#ekrana-yazma--print-i%CC%87%C5%9Flemleri)
+    - [String İşlemleri](#string-i%CC%87%C5%9Flemleri)
+  - [Harici Fonksiyon Kullanımları](#harici-fonksiyon-kullan%C4%B1mlar%C4%B1)
+    - [Harici String İşlemleri](#harici-string-i%CC%87%C5%9Flemleri)
+    - [Dizin ve Yol İşlemleri](#dizin-ve-yol-i%CC%87%C5%9Flemleri)
+  - [Fonksiyon Oluşturma](#fonksiyon-olu%C5%9Fturma)
+    - [Fonksiyon İskeleti](#fonksiyon-i%CC%87skeleti)
+    - [Fonksiyon Örneği](#fonksiyon-%C3%B6rne%C4%9Fi)
+    - [Fonksyion Dökümantasyonu](#fonksyion-d%C3%B6k%C3%BCmantasyonu)
+    - [Fonksyion Varsayılan Parametreler](#fonksyion-varsay%C4%B1lan-parametreler)
+    - [Fonksiyonlarda Keyfi Parametreler](#fonksiyonlarda-keyfi-parametreler)
+    - [Özyineleyen Fonksiyonlar](#%C3%B6zyineleyen-fonksiyonlar)
+      - [Özyineleyen Fonksiyonların Avantajları](#%C3%B6zyineleyen-fonksiyonlar%C4%B1n-avantajlar%C4%B1)
+      - [Özyineleyen Fonksiyonların Zararları](#%C3%B6zyineleyen-fonksiyonlar%C4%B1n-zararlar%C4%B1)
+  - [Lambda Fonksiyonlar](#lambda-fonksiyonlar)
+    - [Filter ile Lambda Kullanımı](#filter-ile-lambda-kullan%C4%B1m%C4%B1)
+    - [Map ile Lambda Kullanımı](#map-ile-lambda-kullan%C4%B1m%C4%B1)
 - [Global, Local ve Nonlocal Kavramları](#global-local-ve-nonlocal-kavramlar%C4%B1)
   - [Global, Local ve Nonlocal Kavramlarına Örnek](#global-local-ve-nonlocal-kavramlar%C4%B1na-%C3%B6rnek)
 - [Modüller](#mod%C3%BCller)
@@ -71,14 +77,19 @@
     - [Obje Özelliği Silme](#obje-%C3%B6zelli%C4%9Fi-silme)
     - [Class Silme](#class-silme)
   - [Scopes and Namespaces](#scopes-and-namespaces)
-- [Komut Satırından Python](#komut-sat%C4%B1r%C4%B1ndan-python)
+- [Komut İsteminden Python (CLI)](#komut-i%CC%87steminden-python-cli)
+  - [Argparse Modülü Detayları](#argparse-mod%C3%BCl%C3%BC-detaylar%C4%B1)
+    - [Argüman Ekleme](#arg%C3%BCman-ekleme)
+      - [Argüman Action Özelliği](#arg%C3%BCman-action-%C3%B6zelli%C4%9Fi)
+  - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
 - [Colab Üzerinden Python](#colab-%C3%BCzerinden-python)
   - [Python Değişkenlerinin Bash Üzerinde Kullanımı](#python-de%C4%9Fi%C5%9Fkenlerinin-bash-%C3%BCzerinde-kullan%C4%B1m%C4%B1)
   - [Colab için Harici Bağlantılar](#colab-i%C3%A7in-harici-ba%C4%9Flant%C4%B1lar)
-- [Karma Linkler](#karma-linkler)
 - [Harici Kaynaklar](#harici-kaynaklar)
 
 ## Yazım Kuralları
+
+Orjinal dökümantasyon için [buraya](https://www.python.org/dev/peps/pep-0008/) bakabilirsin.
 
 - Her python dosyasına **modül** denir
   - `import` ile dahil edilirler
@@ -193,17 +204,6 @@ sonuc = int(7/3) # 2 atanır
 sonuc = float(7 / 3.5) # 2.0 atanır
 sonuc = 7 / 3 # 2.33 atanır
 ```
-
-### String İşlemleri
-
-| Metot     | Açıklama         | Örnek                         | Çıktı                 |
-| --------- | ---------------- | ----------------------------- | --------------------- |
-| `len`     | Uzunluk          | `len("yemreak")`              | 7                     |
-| `format`  | Formatlama       | `"X: {}, Y: {}".format(1, 2)` | `'X: 1, Y: 2'`        |
-| `split`   | Parçalama        | `"ye mre ak".split(" ")`      | `['ye', 'mre', 'ak']` |
-| `replace` | Metin değiştirme | `"yemreak".replace("ak", "")` | `'yemre'`             |
-
-> Daha fazla bilgi için [buraya](https://www.programiz.com/python-programming/methods/string) bakabilirsin.
 
 ### Değişken Tipleri için Ek Kaynak
 
@@ -393,7 +393,68 @@ Son
 
 ## Fonksiyonlar
 
-### Fonksiyon İskeleti
+### Dahili Fonksiyon Kullanımları
+
+#### Ekrana Yazma / Print İşlemleri
+
+| Fonksiyon                      | Açıklama              | Örnek                      | Çıktı        |
+| ------------------------------ | --------------------- | -------------------------- | ------------ |
+| `print(<string>)`              | Ekrana yazma          | `print(f"X: {a}, Y: {2}")` | `X: 1, Y: 2` |
+| `print(f'...{<python_kodu>}')` | Ekrana formatlı yazma | `print(f"X: {a}, Y: {2}")` | `X: 1, Y: 2` |
+
+#### String İşlemleri
+
+| Metot     | Açıklama               | Örnek                          | Çıktı                 |
+| --------- | ---------------------- | ------------------------------ | --------------------- |
+| `len`     | Uzunluk                | `len("yemreak")`               | 7                     |
+| `format`  | Formatlama             | `"X: {}, Y: {}".format(1, 2)`  | `'X: 1, Y: 2'`        |
+| `r`       | Raw String ön eki      | `r"C:\Users"`                  | `C:\\Users`           |
+| `split`   | Parçalama              | `"ye mre ak".split(" ")`       | `['ye', 'mre', 'ak']` |
+| `join`    | Birleştirme            | `','.join(['do', 're', 'mi'])` | `'do,re,mi'`          |
+| `replace` | Metin değiştirme       | `"yemreak".replace("ak", "")`  | `'yemre'`             |
+| `strip`   | Metin düzeltme         | `' abc '.strip()`              | `'abc'`               |
+| `ltrip`   | Metnin solunu düzeltme | `' abc '.ltrip()`              | `'abc '`              |
+| `rtrip`   | Metnin sağını düzeltme | `' abc '.rtrip()`              | `' abc'`              |
+
+> Daha fazla bilgi için [buraya](https://www.programiz.com/python-programming/methods/string) bakabilirsin.
+
+### Harici Fonksiyon Kullanımları
+
+- Fonksiyonları kullanmadan önce `import <paket>` ile paketi dahil etmeniz lazım
+- Fonksiyonların kullanımı `<paket>.<fonksiyon>` şeklindedir
+
+#### Harici String İşlemleri
+
+| Paket | Fonksiyon                                | Açıklama                              |
+| ----- | ---------------------------------------- | ------------------------------------- |
+| `re`  | `split(<ayırıcı_karakterler>, <string>)` | Birden fazla karaktere göre parçalama |
+
+- `<ayırıcı_karakterler>` Metni hangi karakterlere göre böleceğimizi ifade eder
+  - Birden fazla olacaksa `|` ile birbirinden ayrılır
+  - Ayırma sırasında `boşluk karakteri`nin kullanılması sorun oluşturur
+  - *Örn:* `'\n|\t|\*'`
+- `<string>` Ayrıştırılacak metin
+  - *Örn:* `'yemreak.com'`
+
+#### Dizin ve Yol İşlemleri
+
+| Paket     | Fonksiyon                   | Açıklama                                                    |
+| --------- | --------------------------- | ----------------------------------------------------------- |
+| `os`      | `listdir(<yol>)`            | Yolu verilen dizinin içindekileri döndürür                  |
+| `os.path` | `isfile(<yol>)`             | Dosya mı kontrolü                                           |
+| `os.path` | `join(<yol1>, <dosya_adı>)` | Dizinleri birleştirme                                       |
+| `glob`    | `glob(<wildcard | yol>)`    | Verilen sorguya veya yola uygun dosya ve dizinleri döndürür |
+
+- `<yol>` Path, dosya yolu
+  - *Örn: C:\Users\Username\help.txt*
+- `<dosya_adı>` Dosyanın uzantısıyla birlikteki adı
+  - *Örn: help.txt*
+- `<wildcard>` Özel dizin sorguları
+  - *Örn: `*.txt`, `../help`*
+
+### Fonksiyon Oluşturma
+
+#### Fonksiyon İskeleti
 
 ```py
 def function_name(parameters):
@@ -401,7 +462,7 @@ def function_name(parameters):
   statement(s)
 ```
 
-### Fonksiyon Örneği
+#### Fonksiyon Örneği
 
 ```py
 def greet(name):
@@ -411,7 +472,7 @@ def greet(name):
   print("Hello, " + name + ". Good morning!")
 ```
 
-### Fonksyion Dökümantasyonu
+#### Fonksyion Dökümantasyonu
 
 ```cmd
 >>> print(greet.__doc__)
@@ -420,7 +481,7 @@ This function greets to
   name paramete
 ```
 
-### Fonksyion Varsayılan Parametreler
+#### Fonksyion Varsayılan Parametreler
 
 ```py
 def greet(name, msg = "Good morning!"):
@@ -441,7 +502,7 @@ greet("Bruce","How do you do?") # Sıralı parametre verme
 greet("Bruce", msg="Naber") # İşaretleyerek paremetre verme
 ```
 
-### Fonksiyonlarda Keyfi Parametreler
+#### Fonksiyonlarda Keyfi Parametreler
 
 ```py
 def greet(*names):
@@ -457,7 +518,7 @@ greet("Monica","Luke","Steve","John")
 
 > `*` ön eki ile ile kaç tane isim gelirse o kadar kullanıyoruz.
 
-### Özyineleyen Fonksiyonlar
+#### Özyineleyen Fonksiyonlar
 
 ```py
 def calc_factorial(x):
@@ -484,19 +545,19 @@ calc_factorial(4)              # 1st call with 4
 24                             # return from 1st call
 ```
 
-#### Özyineleyen Fonksiyonların Avantajları
+##### Özyineleyen Fonksiyonların Avantajları
 
 - Özyineleyen fonksiyonlar kodun daha temiz ve zarif gözükmesini sağlar
 - Karmaşık bir görev alt görevlere ayrılarak rahat çözülebilir
 - İç içe döngülere göre daha iyidir
 
-#### Özyineleyen Fonksiyonların Zararları
+##### Özyineleyen Fonksiyonların Zararları
 
 - Bazı durumlarda anlaşılabilmesi zordur
 - Uzun tekrarlarda çok fazla vakit ve zaman harcarlar
 - Hata ayıklama oldukça zordur
 
-## Lambda Fonksiyonlar
+### Lambda Fonksiyonlar
 
 ```py
 double = lambda x: x * 2 # lambda fonksiyon
@@ -506,7 +567,7 @@ def double(x): # Fonksiyon
    return x * 2
 ```
 
-### Filter ile Lambda Kullanımı
+#### Filter ile Lambda Kullanımı
 
 Sadece koşulu sağlayan değerleri döndürür.
 
@@ -517,7 +578,7 @@ cift_listem = list(filter(lambda x: (x%2 == 0) , listem))
 print(cift_listem) # [4, 6, 8, 12]
 ```
 
-### Map ile Lambda Kullanımı
+#### Map ile Lambda Kullanımı
 
 Her eleman için işlem yapar.
 
@@ -842,7 +903,68 @@ After global assignment: nonlocal spam
 In global scope: global spa
 ```
 
-## Komut Satırından Python
+## Komut İsteminden Python (CLI)
+
+- Komut isteminden gelen argümanları **argparse** adlı modül ile yönetmekteyiz
+- Kullanıcı cmd üzerinden `python <dosya_adı> <argümanlar>` gibi komutlarla programımızı kullanabilir
+
+### Argparse Modülü Detayları
+
+- Argüman ekleme işlemi `parser = argparse.ArgumentParser(...)` ile yapılmaktadır.
+- Parametrelerin kullanımı `argparse.ArgumentParser(description='yok')` şeklindedir.
+
+| Parametre     | Açıklama                               |
+| ------------- | -------------------------------------- |
+| `description` | Uygulama ile alakalı açıklama metnidir |
+
+#### Argüman Ekleme
+
+- Argüman ekleme işlemi `parser.add_argument(...)` ile yapılmaktadır.
+
+| Parametre    | Açıklama                                    |
+| ------------ | ------------------------------------------- |
+| 1. parametre | Kısa kullanım komutunu içerir               |
+| 2. Parametre | Orjinal kullanım komutunu içerir            |
+| `help`       | `-h` yazıldığında çıkacak olan yardım metni |
+| `action`     | Davranışı belirler                          |
+| `type`       | Tip bilgisini içerir (int, string ...)      |
+| `default`    | Varsayılan değer                            |
+
+##### Argüman Action Özelliği
+
+| Parametre      | Açıklama                                                               |
+| -------------- | ---------------------------------------------------------------------- |
+| `'store_true'` | Flag* değeri olur ve komutta içerilirse `True` değeri alır (`-h` gibi) |
+| `count`        | Kaç kere yazıldığı bilgisini tutar (-vvv için 3)                       |
+
+
+```py
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("--verbose", help="increase output verbosity",
+                    action="store_true")
+args = parser.parse_args()
+if args.verbose:
+    print("verbosity turned on")
+```
+
+```sh
+$ python3 prog.py --verbose
+verbosity turned on
+
+$ python3 prog.py --verbose 1
+usage: prog.py [-h] [--verbose]
+prog.py: error: unrecognized arguments: 1
+
+$ python3 prog.py --help
+usage: prog.py [-h] [--verbose]
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --verbose   increase output verbosity
+```
+
+### Örnek CLI Kodu
 
 ```py
 import argparse
@@ -895,14 +1017,16 @@ if __name__ == '__main__':
 
 - [Download to Drive](https://colab.research.google.com/drive/1Cb6KcdbUHgmtmI1A86iDsJWJFClD_IeQ)
 
-## Karma Linkler
-
-- [String işlemleri](https://sites.google.com/site/egitimbilgileri/home/a---python---twisted---qt/03---string-islemleri)
-
 ## Harici Kaynaklar
 
+- [String işlemleri](https://sites.google.com/site/egitimbilgileri/home/a---python---twisted---qt/03---string-islemleri)
 - [Learn Python Programming](https://www.programiz.com/python-programming)
 - [Python Türkçe Başlangıç](https://github.com/fuatbeser/python-notlarim/blob/master/python_turkce_baslangic.ipynb)
 - [Should I use underscores or camel case for Python?](https://www.quora.com/Should-I-use-underscores-or-camel-case-for-Python)
 - [Top 10 Python Libs 2017](https://tryolabs.com/blog/2017/12/19/top-10-python-libraries-of-2017/)
 - [Tensorflow Object Detection API](https://buildmedia.readthedocs.org/media/pdf/tensorflow-object-detection-api-tutorial/latest/tensorflow-object-detection-api-tutorial.pdf)
+- [Dosyadak Belli Satırı Değiştirme](https://stackoverflow.com/a/2081880/9770490)
+- [How do I list all files of a directory](https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory)
+- [Replace single backslash with double backslash](https://stackoverflow.com/questions/17327202/python-replace-single-backslash-with-double-backslash)
+- [What does `if __name__ == '__main__':` do?](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
+- [Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
