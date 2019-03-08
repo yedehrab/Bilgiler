@@ -111,7 +111,7 @@ Tabloda `< >` arasına yazılanlar sizin tarafınızdan girilecek değerlerdir.
 | `cls`                             | Konsolu temizleme                 |
 | `cd <yol>`                        | Dizin değiştirme                  |
 | `mkdir <dizin_adı>`               | Klasör oluşturma                  |
-| `start <dosya_veya_dizin>`        | Dosya veya dizin açma             |
+| `start <dosya | dizin>`           | Dosya veya dizin açma             |
 | `ren <eski_isim> <yeni_isim>`     | Dosyayı yeniden adlandırma        |
 | `move <dosya> <konum>`            | Dosyayı belirli konuma taşıma     |
 | `del <bayrak> <file>`             | Dosya silme                       |
@@ -258,8 +258,8 @@ Alt sistem kurulum dökümantasyonlarına üzerlerine tıklayarak erişlebilirsi
 
 ## Windows10 Preview Kullanımı
 
-- Yeni windows sürümlerini erkenden aldığınız ve denediğimiz bir programdır
 - Ayarlar - Güncelleme ve Güvenlik - Windows Insider Program ile beta kullanıcısı olabilirsiniz
+- 
 
 ### Arka Plandaki Evolution Copy Logosunu Kaldırma
 
