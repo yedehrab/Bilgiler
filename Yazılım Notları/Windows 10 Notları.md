@@ -31,6 +31,8 @@ Sık kullanılan işletim sistemi notlarım.
 - [Ayarlar](#ayarlar)
 - [Terimler](#terimler)
 - [Alt İşletim Sistemleri](#alt-i%CC%87%C5%9Fletim-sistemleri)
+- [Windows10 Preview Kullanımı](#windows10-preview-kullan%C4%B1m%C4%B1)
+  - [Arka Plandaki Evolution Copy Logosunu Kaldırma](#arka-plandaki-evolution-copy-logosunu-kald%C4%B1rma)
 - [Harici Linkler](#harici-linkler)
 
 ## İndirme
@@ -244,6 +246,14 @@ Kendime özgü görsellik ayarlarım
 Alt sistem kurulum dökümantasyonlarına üzerlerine tıklayarak erişlebilirsin.
 
 - [Ubuntu bash](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+## Windows10 Preview Kullanımı
+
+### Arka Plandaki Evolution Copy Logosunu Kaldırma
+
+Logoyu kaldırmak için harici uygulamayı [buraya](https://drive.google.com/open?id=1LkKdUCG1XKO3mrXwNV-OK50Y8vGvLRpt) tıklayrak indirmeniz ve çalıştırmanız gerekmekte.
+
+> Basit bit kurulumdan sonra **PC yeninden başlatılır** ve logo kalkar.
 
 ## Harici Linkler
 
