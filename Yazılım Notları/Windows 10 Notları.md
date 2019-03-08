@@ -22,15 +22,17 @@ Sık kullanılan işletim sistemi notlarım.
   - [CMD Kod Parçaları](#cmd-kod-par%C3%A7alar%C4%B1)
     - [CMD Döngü Kullanımı](#cmd-d%C3%B6ng%C3%BC-kullan%C4%B1m%C4%B1)
     - [CMD Dosyaları Ardışık olarak adlandırma](#cmd-dosyalar%C4%B1-ard%C4%B1%C5%9F%C4%B1k-olarak-adland%C4%B1rma)
+- [PowerShell Kullanımı](#powershell-kullan%C4%B1m%C4%B1)
 - [Özelleştirmem](#%C3%B6zelle%C5%9Ftirmem)
   - [CMD Düzeni](#cmd-d%C3%BCzeni)
 - [Windows Features](#windows-features)
   - [Default Windows Features](#default-windows-features)
   - [Taskbar Düzeni](#taskbar-d%C3%BCzeni)
   - [Ek Ayalarım](#ek-ayalar%C4%B1m)
-- [Ayarlar](#ayarlar)
+  - [Alt İşletim Sistemleri](#alt-i%CC%87%C5%9Fletim-sistemleri)
+- [Uygulama Ayarları](#uygulama-ayarlar%C4%B1)
+  - [Video Ayarları](#video-ayarlar%C4%B1)
 - [Terimler](#terimler)
-- [Alt İşletim Sistemleri](#alt-i%CC%87%C5%9Fletim-sistemleri)
 - [Windows10 Preview Kullanımı](#windows10-preview-kullan%C4%B1m%C4%B1)
   - [Arka Plandaki Evolution Copy Logosunu Kaldırma](#arka-plandaki-evolution-copy-logosunu-kald%C4%B1rma)
 - [Harici Linkler](#harici-linkler)
@@ -179,6 +181,10 @@ ren *.new *.<yeni_dosya_uzantısı>
 - `<yeni_dosya_uzantısı>` Çıktıların uzantısı
   - `jpg`, `png`, `txt` vs ...
 
+## PowerShell Kullanımı
+
+İlgili dökümana [buraya](Windows10%20Kaynaklar%C4%B1\Windows%20PowerShell%20Tutorial%20for%20Beginners.pdf) tıklayarak erişebilirsin.
+
 ## Özelleştirmem
 
 Kendime özgü görsellik ayarlarım
@@ -230,7 +236,15 @@ Kendime özgü görsellik ayarlarım
 | Open command prompt here | CMD'yi dizinde açma                             |
 | `%b%`                    | Bilgiler projesini vscode'da açan özel değişken |
 
-## Ayarlar
+### Alt İşletim Sistemleri
+
+Alt sistem kurulum dökümantasyonlarına üzerlerine tıklayarak erişlebilirsin.
+
+- [Ubuntu bash](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+## Uygulama Ayarları
+
+### Video Ayarları
 
 | Ayar    | Ulaşım                                                | Açıklama                                           | Kaynak                                                                                                           |
 | ------- | ----------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -241,13 +255,10 @@ Kendime özgü görsellik ayarlarım
 - Wild Card: `..`, `.`, `*` gibi terimleri içeren kelimeye verilen isim
   - `help*`, `..\*` vs ...
 
-## Alt İşletim Sistemleri
-
-Alt sistem kurulum dökümantasyonlarına üzerlerine tıklayarak erişlebilirsin.
-
-- [Ubuntu bash](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-
 ## Windows10 Preview Kullanımı
+
+- Yeni windows sürümlerini erkenden aldığınız ve denediğimiz bir programdır
+- Ayarlar - Güncelleme ve Güvenlik - Windows Insider Program ile beta kullanıcısı olabilirsiniz
 
 ### Arka Plandaki Evolution Copy Logosunu Kaldırma
 
