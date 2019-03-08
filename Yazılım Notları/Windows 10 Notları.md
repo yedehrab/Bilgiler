@@ -134,17 +134,18 @@ Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tı
 
 #### Sık Kullanılanlar
 
-- `.` Bulunan dizin (working directory)
-- `..` Bir üst dizin (parent directory)
-- `*` Tüm dosyalar
-- `**` Tüm dosya ve dizinler
-- `*.js` Uzantısı js olan tüm dosyalar
-- `*lib/**/*.js` Lib içindeki uzantısı js olan tüm dosyalar
-  - `**` olduğu için Alt dizinler de dahildir
-- `%username%` Kullanıcı adı
-- `%appdata%` Uygulama verileri dizini
-- %HOMEDRIVE% Kullanıcı diski
-- %homepath% Kullanıcı Yolu
+| Şablon         | Açıklama                                   |
+| -------------- | ------------------------------------------ |
+| `.`            | Bulunan dizin (working directory)          |
+| `..`           | Bir üst dizin (parent directory)           |
+| `*`            | Tüm dosyalar                               |
+| `**`           | Tüm dosya ve dizinler                      |
+| `*.js`         | Uzantısı js olan tüm dosyalar              |
+| `*lib/**/*.js` | Lib içindeki uzantısı js olan tüm dosyalar |
+| `%username%`   | Kullanıcı adı                              |
+| `%appdata%`    | Uygulama verileri dizini                   |
+| `%HOMEDRIVE%`  | Kullanıcı diski                            |
+| `%homepath%`   | Kullanıcı Yolu                             |
 
 ### CMD Kod Parçaları
 
@@ -234,4 +235,4 @@ Kendime özgü görsellik ayarlarım
 
 - [How to rename image files in a folder all to .jpg format](https://answers.microsoft.com/en-us/windows/forum/windows_10-files/how-to-rename-image-files-in-a-folder-all-to-jpg/2a7e2873-e04b-472b-b239-afad2f2020fc)
 - [Move Komutu](https://www.windows-commandline.com/move-files-directories/)
-- [How to copy a list of file names to text file? ](https://superuser.com/questions/395836/how-to-copy-a-list-of-file-names-to-text-file)
+- [How to copy a list of file names to text file?](https://superuser.com/questions/395836/how-to-copy-a-list-of-file-names-to-text-file)
