@@ -33,7 +33,7 @@ Sık kullanılan işletim sistemi notlarım.
 - [Uygulama Ayarları](#uygulama-ayarlar%C4%B1)
   - [Video Ayarları](#video-ayarlar%C4%B1)
 - [Terimler](#terimler)
-- [Windows10 Preview Kullanımı](#windows10-preview-kullan%C4%B1m%C4%B1)
+- [Windows10 Insider Programı](#windows10-insider-program%C4%B1)
   - [Arka Plandaki Evolution Copy Logosunu Kaldırma](#arka-plandaki-evolution-copy-logosunu-kald%C4%B1rma)
 - [Harici Linkler](#harici-linkler)
 
@@ -73,6 +73,7 @@ Siteye girdiğinizde sırasıyla alttaki ayarları açamınız | seçmeniz gerek
 | `WİNDOWS TUŞU (SUPER)` + `X`                | Windows araçları bölümü                                                                            |
 | `WİNDOWS TUŞU (SUPER)` + `YUKARI YONU`      | Uygulamayı tam ekran yapma                                                                         |
 | `WİNDOWS TUŞU (SUPER)` + `AŞAĞI YONU`       | Uygulamayı küçük ekran yapma                                                                       |
+
 ### Gezimti
 
 - `ALT` + `TAB (Sola Sağa Ok Tuşu)` Uygulamalar arası gezinti
@@ -256,10 +257,10 @@ Alt sistem kurulum dökümantasyonlarına üzerlerine tıklayarak erişlebilirsi
 - Wild Card: `..`, `.`, `*` gibi terimleri içeren kelimeye verilen isim
   - `help*`, `..\*` vs ...
 
-## Windows10 Preview Kullanımı
+## Windows10 Insider Programı
 
-- Ayarlar - Güncelleme ve Güvenlik - Windows Insider Program ile beta kullanıcısı olabilirsiniz
-- 
+- Windows'a gelecek olan güncellemeleri erkenden deneyen kullanıcı programıdır
+- `Ayarlar` > `Güncelleme ve Güvenlik` > `Windows Insider Program` ile beta kullanıcısı olabilirsiniz
 
 ### Arka Plandaki Evolution Copy Logosunu Kaldırma
 
