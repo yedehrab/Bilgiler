@@ -8,6 +8,8 @@
 
 ## İçerikler <!-- omit in toc -->
 
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
 - [Tensorflow Kurulumu](#tensorflow-kurulumu)
   - [Anaconda Kurulumu](#anaconda-kurulumu)
   - [Tensorflow CPU](#tensorflow-cpu)
@@ -95,7 +97,6 @@ python -c
 - Algılama modelleri tabloma erişmek için [buraya](Tensorflow%20Kaynaklar%C4%B1\tensorflow_alg%C4%B1lama_modelleri.pdf) tıklayabilirsin
   - Resmi sitesi için [buraya](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) bakabilirsin
 - Video üzerinden açıklama için [buraya](https://youtu.be/COlbP62-B-U) bakabilirsin
-
 
 ### Gereksinimlerin Kurulumu
 
@@ -427,7 +428,6 @@ Yapılandırma örnek dosyalarına bakarak açıklamalara erişebilirsin:
 | `feature_extractor` altında `type`  | Seçtiniğiniz önceden eğitilmiş modelin adı                          | `type='<model_ismi>'`                                                                             | type: 'ssd_inception_v2' |
 | `train_config` altında `batch_size` | Verilerin toplu alınma sayısı, yüksek olursa fazla performans ister | `batch_size=<2_nin_katları>`                                                                      | batch_size: 8            |
 | `fine_tune_checkpoint`              | Ön eğitilmiş modelin `.ckpt` dosyasının yolu                        | `"%HOMEDRIVE%HOMEPATH%/Tensorflow/workspace/training_demo/pre-trained-model/model.ckpt"` |
-
 
 ### Modeli Eğitme
 

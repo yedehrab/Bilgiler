@@ -1,4 +1,21 @@
-# Bilgiler
+# Bilgiler <!-- omit in toc -->
+
+## İçerikler <!-- omit in toc -->
+
+> `HOME` tuşu ile yukarı yönlenebilrsiniz.
+
+- [Programlama Notları](#programlama-notlar%C4%B1)
+- [Yazılım Notları](#yaz%C4%B1l%C4%B1m-notlar%C4%B1)
+- [Proje Yönetimi Notları](#proje-y%C3%B6netimi-notlar%C4%B1)
+- [Uygulama Notları](#uygulama-notlar%C4%B1)
+- [Yapay Zeka Notları](#yapay-zeka-notlar%C4%B1)
+- [Ders Notları](#ders-notlar%C4%B1)
+- [Günlük Hayat Notları](#g%C3%BCnl%C3%BCk-hayat-notlar%C4%B1)
+- [Tamir Notları](#tamir-notlar%C4%B1)
+- [Harici Linkler](#harici-linkler)
+- [Yapılacaklar](#yap%C4%B1lacaklar)
+- [Çalışma Notları](#%C3%A7al%C4%B1%C5%9Fma-notlar%C4%B1)
+- [Teferruatlar 🕵️‍♂️](#teferruatlar-%F0%9F%95%B5%EF%B8%8F%E2%80%8D%E2%99%82%EF%B8%8F)
 
 İçeriklerin işaretlenmiş (*indexed*) hallerini aşağıda görebilirsin.
 
@@ -78,11 +95,13 @@
 
 - Önce sabit değerli yaz, sonrasında `CTRL`+ `F` ile sabitleri değişken haline dönüştür
 
-## Yazar & Alıntılayan
+## Teferruatlar 🕵️‍♂️
 
-Yunus Emre
+Lisanslar hakkında bilgi almak için [buraya](https://www.yusufaytas.com/acik-kaynak-lisanslari/) bakmanda fayda var.
 
 - [Github](https://github.com/yedehrab)
 - [GitLab](https://gitlab.com/yedehrab)
 
 > Yardım veya destek için [iletişime](mailto::yyunussemree@gmail.com) geçebilrsiniz 😇
+
+~ Yunus Emre
