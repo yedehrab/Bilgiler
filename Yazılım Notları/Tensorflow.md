@@ -47,8 +47,12 @@
     - [Eğitim İşlemini TensorBoard Kullanarak Takip Etme](#e%C4%9Fitim-i%CC%87%C5%9Flemini-tensorboard-kullanarak-takip-etme)
     - [Sonuç Grafiğini Dışarı Aktarma](#sonu%C3%A7-grafi%C4%9Fini-d%C4%B1%C5%9Far%C4%B1-aktarma)
   - [Hata Notları ve Açıklamaları](#hata-notlar%C4%B1-ve-a%C3%A7%C4%B1klamalar%C4%B1)
+    - ['conda' is not recognized as an internal or external command](#conda-is-not-recognized-as-an-internal-or-external-command)
+    - ['...' is not recognized as an internal or external command](#is-not-recognized-as-an-internal-or-external-command)
     - [ImportError: No module named nets](#importerror-no-module-named-nets)
     - ['dict_keys' object does not support indexing](#dictkeys-object-does-not-support-indexing)
+    - [Object was never used (type <class 'tensorflow.python.framework.ops.Tensor'>)](#object-was-never-used-type-class-tensorflowpythonframeworkopstensor)
+    - ['unicodeescape' codec can't decode bytes in position](#unicodeescape-codec-cant-decode-bytes-in-position)
 - [Colab Üzerinden Tensorflow Modeli Kullanma](#colab-%C3%BCzerinden-tensorflow-modeli-kullanma)
 - [Harici Bağlantılar](#harici-ba%C4%9Flant%C4%B1lar)
 
@@ -189,9 +193,9 @@ Paketlerin kurulumu için alttaki talimatları sırayla uygulayın:
 # labelImg-master.zip dizininde
 powershell.exe Expand-Archive labelImg-master.zip .
 ren labelImg-master labelImg
-mkdir %homedrive%%homepath%\Tensorflow\addons
-move labelImg %homedrive%%homepath%\Tensorflow\addons
-cd %homedrive%%homepath%\Tensorflow\addons\labelImg
+mkdir %HOMEDRIVE%%HOMEPATH%\Tensorflow\addons
+move labelImg %HOMEDRIVE%%HOMEPATH%\Tensorflow\addons
+cd %HOMEDRIVE%%HOMEPATH%\Tensorflow\addons\labelImg
 pyrcc5 -o resources.py resources.qrc # QT grafiklerinin oluşturulması
 ```
 
@@ -201,7 +205,7 @@ pyrcc5 -o resources.py resources.qrc # QT grafiklerinin oluşturulması
 
 ```sh
 conda activate tensorflow-cpu
-cd %homedrive%%homepath%\Tensorflow\addons\labelImg
+cd %HOMEDRIVE%%HOMEPATH%\Tensorflow\addons\labelImg
 python labelImg.py
 # python labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
 ```
@@ -232,13 +236,13 @@ Script dosyasına [buraya](Tensorflow%20Kaynaklar%C4%B1\detect_from_webcam.py) t
 Tensorflow kalsörümüzde ek klasörler oluşturuyoruz:
 
 ```sh
-mkdir %homedrive%%homepath%\Tensorflow\workspace\training_demo
-mkdir %homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations
-mkdir %homedrive%%homepath%\Tensorflow\workspace\training_demo\images\train
-mkdir %homedrive%%homepath%\Tensorflow\workspace\training_demo\images\test
-mkdir %homedrive%%homepath%\Tensorflow\workspace\training_demo\pre-trained-model
-mkdir %homedrive%%homepath%\Tensorflow\workspace\training_demo\training
-start %homedrive%%homepath%\Tensorflow\workspace\training_demo
+mkdir %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo
+mkdir %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\annotations
+mkdir %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\images\train
+mkdir %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\images\test
+mkdir %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\pre-trained-model
+mkdir %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\training
+start %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo
 ```
 
 #### Çalışma Ortamının Hazırlanması
@@ -261,7 +265,7 @@ Etiketleme işlemini **labelImg** üzerinden yaptığımızdan **Anconda Prompt*
 
 ```sh
 conda activate labelImg
-cd %homedrive%%homepath%\Tensorflow\addons\labelImg
+cd %HOMEDRIVE%%HOMEPATH%\Tensorflow\addons\labelImg
 python labelImg.py ..\..\workspace\training_demo\images # çıktıları hedefleme
 ```
 
@@ -276,10 +280,10 @@ XML ve resim dosyalarını başka bir yolda oluşturduyasan alttaki script yard�
 
 ```sh
 # Train verilerini yeniden adlandırma ve düzeltme
-python xml_path_regulator.py -i %homedrive%%homepath%\Tensorflow\workspace\training_demo\images\train  -p image
+python xml_path_regulator.py -i %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\images\train  -p image
 
 # Test verilerini yeniden adlandırma ve düzeltme
-python xml_path_regulator.py -i %homedrive%%homepath%\Tensorflow\workspace\training_demo\images\test  -p image
+python xml_path_regulator.py -i %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\images\test  -p image
 ```
 
 ### Etiket Haritası Oluşturma
@@ -288,7 +292,7 @@ python xml_path_regulator.py -i %homedrive%%homepath%\Tensorflow\workspace\train
 - Örnek dosya yapısı komutların altındadır.
 
 ```sh
-cd %homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations
+cd %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\annotations
 start .
 ```
 
@@ -314,7 +318,7 @@ Tensorflow kayıtları `*.record` isimli dosyalardır.
 - İşleme başlmadan alttaki komutla gerekli klasör düzeni oluşturulur
 
 ```sh
-mkdir %homedrive%%homepath%\Tensorflow\scripts\preprocessing
+mkdir %HOMEDRIVE%%HOMEPATH%\Tensorflow\scripts\preprocessing
 ```
 
 #### XML'i CSV'ye Çevirme
@@ -325,14 +329,14 @@ mkdir %homedrive%%homepath%\Tensorflow\scripts\preprocessing
 ```sh
 # Dosyanın indirildiği dizinde yazılmalı
 ren <script_dosyası> xml_to_csv.py # yeniden adlandırma
-move xml_to_csv.py %homedrive%%homepath%\Tensorflow\scripts\preprocessing
-cd %homedrive%%homepath%\Tensorflow\scripts\preprocessing
+move xml_to_csv.py %HOMEDRIVE%%HOMEPATH%\Tensorflow\scripts\preprocessing
+cd %HOMEDRIVE%%HOMEPATH%\Tensorflow\scripts\preprocessing
 
 # Create train data:
-python xml_to_csv.py -i %homedrive%%homepath%\Tensorflow\workspace\training_demo\images\train -o %homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\train_labels.csv
+python xml_to_csv.py -i %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\images\train -o %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\annotations\train_labels.csv
 
 # Create test data:
-python xml_to_csv.py -i %homedrive%%homepath%\Tensorflow\workspace\training_demo\images\test -o %homedrive%%homepath%\Tensorflow\workspace\training_demo\annotations\test_labels.csv
+python xml_to_csv.py -i %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\images\test -o %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\annotations\test_labels.csv
 ```
 
 - `<script_dosyası>` İndirdiğiniz script dosyasının adı
@@ -348,13 +352,13 @@ python xml_to_csv.py -i %homedrive%%homepath%\Tensorflow\workspace\training_demo
 ```sh
 # Dosyanın indirildiği dizinde yazılmalı
 ren <script_dosyası> generate_tfrecord.py # yeniden adlandırma
-move generate_tfrecord.py %homedrive%%homepath%\Tensorflow\scripts\preprocessing
-cd %homedrive%%homepath%\Tensorflow\scripts\preprocessing
+move generate_tfrecord.py %HOMEDRIVE%%HOMEPATH%\Tensorflow\scripts\preprocessing
+cd %HOMEDRIVE%%HOMEPATH%\Tensorflow\scripts\preprocessing
 
 # Create train data:
-python generate_tfrecord.py --label_map=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\label_map.pbtxt --csv_input=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\train_labels.csv --img_path=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\images\train --output_path=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\train.record
+python generate_tfrecord.py --label_map=%HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\annotations\label_map.pbtxt --csv_input=%HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\annotations\train_labels.csv --img_path=%HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\images\train --output_path=%HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\annotations\train.record
 # Create test data:
-python generate_tfrecord.py --label_map=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\label_map.pbtxt --csv_input=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\test_labels.csv --img_path=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\images\test --output_path=%homedrive%%homepath%\Tensorflow\workspace\traffic_light_detector\annotations\test.recordd
+python generate_tfrecord.py --label_map=%HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\annotations\label_map.pbtxt --csv_input=%HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\annotations\test_labels.csv --img_path=%HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\images\test --output_path=%HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\annotations\test.recordd
 ```
 
 - `<script_dosyası>` İndirdiğiniz script dosyasının adı
@@ -379,9 +383,9 @@ python generate_tfrecord.py --label_map=%homedrive%%homepath%\Tensorflow\workspa
 ```sh
 # Modelin çıkartıldığı dizinde
 cd <model_ismi>
-move * %homedrive%%homepath%\Tensorflow\workspace\training_demo\pre-trained-model
-move saved_model %homedrive%%homepath%\Tensorflow\workspace\training_demo\pre-trained-model
-cd %homedrive%%homepath%\Tensorflow\workspace\training_demo\pre-trained-model
+move * %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\pre-trained-model
+move saved_model %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\pre-trained-model
+cd %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\pre-trained-model
 ```
 
 - `<model_ismi>` Seçip, indirdiğiniz `.tar.gz` uzantılı dosyanın adı
@@ -395,9 +399,9 @@ cd %homedrive%%homepath%\Tensorflow\workspace\training_demo\pre-trained-model
 Seçtiğiniz modelin `*.config` dosyasını `training_demo/training` klasörü altına kopyalamanız gerekmekte.
 
 ```sh
-mkdir %homedrive%%homepath%\Tensorflow\workspace\training_demo\training
+mkdir %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\training
 
-copy %homedrive%%homepath%\Tensorflow\models\research\object_detection\samples\configs\<model_ismi>.config %homedrive%%homepath%\Tensorflow\workspace\training_demo\training
+copy %HOMEDRIVE%%HOMEPATH%\Tensorflow\models\research\object_detection\samples\configs\<model_ismi>.config %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo\training
 ```
 
 - `<model_ismi>` Seçip, indirdiğiniz `.tar.gz` uzantılı dosyanın adı
@@ -415,11 +419,13 @@ Yapılandırma örnek dosyalarına bakarak açıklamalara erişebilirsin:
 - [ssd_mobilenet_v1_ppn_shared_box_predictor_300x300_coco14_sync](Tensorflow%20Kaynaklar%C4%B1\ssd_mobilenet_v1_ppn_shared_box_predictor_300x300_coco14_sync.config)
 - [ssd_inception_v2_coco*](Tensorflow%20Kaynaklar%C4%B1\ssd_inception_v2_coco.config)
 
-| Düzenlenecek Satır                  | Açıklama                                                            | Yapı                                  | Örnek                    |
-| ----------------------------------- | ------------------------------------------------------------------- | ------------------------------------- | ------------------------ |
-| `num_classes`                       | Etiket türü sayısını ifade eder                                     | `num_classes =<etiket_sınıfı_sayısı>` | num_classes = 2          |
-| `feature_extractor` altında `type`  | Seçtiniğiniz önceden eğitilmiş modelin adı                          | `type='<model_ismi>'`                 | type: 'ssd_inception_v2' |
-| `train_config` altında `batch_size` | Verilerin toplu alınma sayısı, yüksek olursa fazla performans ister | `batch_size=<2_nin_katları>`                   | batch_size: 8           |
+| Düzenlenecek Satır                  | Açıklama                                                            | Yapı                                                                                              | Örnek                    |
+| ----------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------ |
+| `num_classes`                       | Etiket türü sayısını ifade eder                                     | `num_classes =<etiket_sınıfı_sayısı>`                                                             | num_classes = 2          |
+| `feature_extractor` altında `type`  | Seçtiniğiniz önceden eğitilmiş modelin adı                          | `type='<model_ismi>'`                                                                             | type: 'ssd_inception_v2' |
+| `train_config` altında `batch_size` | Verilerin toplu alınma sayısı, yüksek olursa fazla performans ister | `batch_size=<2_nin_katları>`                                                                      | batch_size: 8            |
+| `fine_tune_checkpoint`              | Ön eğitilmiş modelin `.ckpt` dosyasının yolu                        | `"%HOMEDRIVE%HOMEPATH%/Tensorflow/workspace/training_demo/pre-trained-model/model.ckpt"` |
+
 
 ### Modeli Eğitme
 
@@ -430,7 +436,7 @@ Modeli eğitmek için `train.py` script dosyasını kullanacağız.
 Çalışma ortamının düzgün ilerlemesi adına alttaki komut ile gerekli yere scripti kopyalayalım
 
 ```sh
-copy %homedrive%%homepath%\Tensorflow\models\research\object_detection\legacy\train.py %homedrive%%homepath%\Tensorflow\workspace\training_demo
+copy %HOMEDRIVE%%HOMEPATH%\Tensorflow\models\research\object_detection\legacy\train.py %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo
 ```
 
 #### Model Eğitimini Başlatma
@@ -524,10 +530,10 @@ TensorBoard 1.6.0 at http://YOUR-PC:6006 (Press CTRL+C to quit)
 ```sh
 activate tensorflow_cpu # ya da gpu
 
-copy %homedrive%%homepath%\Tensorflow\models\research\object_detection/export_inference_graph.
-py %homedrive%%homepath%\Tensorflow\workspace\training_demo
+copy %HOMEDRIVE%%HOMEPATH%\Tensorflow\models\research\object_detection/export_inference_graph.
+py %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo
 
-cd %homedrive%%homepath%\Tensorflow\workspace\training_demo
+cd %HOMEDRIVE%%HOMEPATH%\Tensorflow\workspace\training_demo
 
 python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/<yapılandırma_dosyası> --trained_checkpoint_prefix training/model.
 ckpt-<checkpoint> --output_directory trained-inference-graphs/output_inference_graph_v1.pb
@@ -540,6 +546,14 @@ ckpt-<checkpoint> --output_directory trained-inference-graphs/output_inference_g
   - *Örn: 13302*
 
 ### Hata Notları ve Açıklamaları
+
+#### 'conda' is not recognized as an internal or external command
+
+`Anaconda Prompt` üzerinden terminal işlemlerinize devam etmeniz durumunda sorun gidecektir.
+
+#### '...' is not recognized as an internal or external command
+
+[Gereksinimlerin Kurulumu](#gereksinimlerin-kurulumu) tamamnlanmadığı için bu hata ile karşılaşıyor olabilirsiniz.
 
 #### ImportError: No module named nets
 
@@ -564,6 +578,14 @@ start %HOMEDRIVE%%HOMEPATH%\Tensorflow\models\research\object_detection\models\f
 ```py
 image_features = image_features[list(image_features.keys())[0]]
 ```
+
+#### Object was never used (type <class 'tensorflow.python.framework.ops.Tensor'>)
+
+> Yakında..
+
+#### 'unicodeescape' codec can't decode bytes in position
+
+Modelinizin `.config` dosyanıza yazdığın tam yol verilerinde `\` yerine `/` veya `\\` kullanmalısınız.
 
 ## Colab Üzerinden Tensorflow Modeli Kullanma
 
