@@ -13,7 +13,7 @@
   - [Tensorflow CPU](#tensorflow-cpu)
     - [Sanal Ortam Oluşturma ve Üzerine Kurma](#sanal-ortam-olu%C5%9Fturma-ve-%C3%BCzerine-kurma)
     - [Kurulumu Test Etme](#kurulumu-test-etme)
-- [Tensorflow Modellerinin Kurulumu](#tensorflow-modellerinin-kurulumu)
+- [Tensorflow Algılama Modellerinin Kurulumu](#tensorflow-alg%C4%B1lama-modellerinin-kurulumu)
   - [Gereksinimlerin Kurulumu](#gereksinimlerin-kurulumu)
   - [Tensorflow Modellerinin İndirilmesi](#tensorflow-modellerinin-i%CC%87ndirilmesi)
   - [Protobuflarların İşlenmesi](#protobuflarlar%C4%B1n-i%CC%87%C5%9Flenmesi)
@@ -90,10 +90,12 @@ python -c
 >>> print(sess.run(hello))
 ```
 
-## Tensorflow Modellerinin Kurulumu
+## Tensorflow Algılama Modellerinin Kurulumu
 
-- Modellere erişmek için [buraya](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) tıklayabilirsin.
-- Video üzerinden açıklama için [buraya](https://youtu.be/COlbP62-B-U) bakabilirsin.
+- Algılama modelleri tabloma erişmek için [buraya](Tensorflow%20Kaynaklar%C4%B1\tensorflow_alg%C4%B1lama_modelleri.pdf) tıklayabilirsin
+  - Resmi sitesi için [buraya](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) bakabilirsin
+- Video üzerinden açıklama için [buraya](https://youtu.be/COlbP62-B-U) bakabilirsin
+
 
 ### Gereksinimlerin Kurulumu
 

@@ -20,6 +20,7 @@ Sık kullanılan işletim sistemi notlarım.
     - [Temel Kullanım](#temel-kullan%C4%B1m)
     - [Sık Kullanılanlar](#s%C4%B1k-kullan%C4%B1lanlar)
   - [CMD Kod Parçaları](#cmd-kod-par%C3%A7alar%C4%B1)
+    - [CMD Döngü Kullanımı](#cmd-d%C3%B6ng%C3%BC-kullan%C4%B1m%C4%B1)
     - [CMD Dosyaları Ardışık olarak adlandırma](#cmd-dosyalar%C4%B1-ard%C4%B1%C5%9F%C4%B1k-olarak-adland%C4%B1rma)
 - [Özelleştirmem](#%C3%B6zelle%C5%9Ftirmem)
   - [CMD Düzeni](#cmd-d%C3%BCzeni)
@@ -148,6 +149,12 @@ Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tı
 | `%homepath%`   | Kullanıcı Yolu                             |
 
 ### CMD Kod Parçaları
+
+#### CMD Döngü Kullanımı
+
+```cmd
+for /f %i in ('dir /b object_detection\protos\*.proto') do protoc object_detection\protos\%i --python_out=.
+```
 
 #### CMD Dosyaları Ardışık olarak adlandırma
 
