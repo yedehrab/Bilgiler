@@ -83,6 +83,7 @@ wget -r -A jpg <url>
 
 - [ABD açık veri](https://www.data.gov/)
 - [COCO](http://cocodataset.org/)
+- [Open Images](https://storage.googleapis.com/openimages/web/index.html)
 - [Berkeley](https://bdd-data.berkeley.edu/)
   - Email : yoif4@alexbox.online
   - Password: Temp1234
