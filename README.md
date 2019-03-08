@@ -104,4 +104,4 @@ Lisanslar hakkında bilgi almak için [buraya](https://www.yusufaytas.com/acik-k
 
 > Yardım veya destek için [iletişime](mailto::yyunussemree@gmail.com) geçebilrsiniz 😇
 
-~ Yunus Emre
+~ Yunus Emre 👨‍💻
