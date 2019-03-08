@@ -111,7 +111,7 @@ Tabloda `< >` arasına yazılanlar sizin tarafınızdan girilecek değerlerdir.
 | `cls`                             | Konsolu temizleme                 |
 | `cd <yol>`                        | Dizin değiştirme                  |
 | `mkdir <dizin_adı>`               | Klasör oluşturma                  |
-| `start <dosya | dizin>`           | Dosya veya dizin açma             |
+| `start <dosya_veya_dizin>`        | Dosya veya dizin açma             |
 | `ren <eski_isim> <yeni_isim>`     | Dosyayı yeniden adlandırma        |
 | `move <dosya> <konum>`            | Dosyayı belirli konuma taşıma     |
 | `del <bayrak> <file>`             | Dosya silme                       |
