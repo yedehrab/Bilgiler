@@ -30,6 +30,7 @@ Sık kullanılan işletim sistemi notlarım.
   - [Ek Ayalarım](#ek-ayalar%C4%B1m)
 - [Ayarlar](#ayarlar)
 - [Terimler](#terimler)
+- [Alt İşletim Sistemleri](#alt-i%CC%87%C5%9Fletim-sistemleri)
 - [Harici Linkler](#harici-linkler)
 
 ## İndirme
@@ -237,6 +238,12 @@ Kendime özgü görsellik ayarlarım
 
 - Wild Card: `..`, `.`, `*` gibi terimleri içeren kelimeye verilen isim
   - `help*`, `..\*` vs ...
+
+## Alt İşletim Sistemleri
+
+Alt sistem kurulum dökümantasyonlarına üzerlerine tıklayarak erişlebilirsin.
+
+- [Ubuntu bash](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 ## Harici Linkler
 
