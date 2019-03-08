@@ -71,8 +71,12 @@
 
 - [x] Her sayfanın en üst ve en alt kısmına (?) işaretçi ekle.
 - [x] Git notlarındaki komutları tablosal olarak göster.
-- [ ] win10 sık kullanılan cmd komutları tablosal olacak
+- [x] win10 sık kullanılan cmd komutları tablosal olacak
 - [ ] Tensorflow kaynakları.ssd_inception_v2_coco.config açıklamalar eklenecek
+
+## Çalışma Notları
+
+- Önce sabit değerli yaz, sonrasında `CTRL`+ `F` ile sabitleri değişken haline dönüştür
 
 ## Yazar & Alıntılayan
 
