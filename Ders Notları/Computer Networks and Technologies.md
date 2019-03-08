@@ -1,4 +1,4 @@
-# Computer Network
+# Computer Networks and Technologies
 
 > **[RFC](https://www.ietf.org/rfc/rfc2616.txt)** her şeyin olduğu bir dökümandır.
 
