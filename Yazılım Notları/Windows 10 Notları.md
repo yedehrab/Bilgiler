@@ -34,6 +34,7 @@ Sık kullanılan işletim sistemi notlarım.
   - [Video Ayarları](#video-ayarlar%C4%B1)
 - [Terimler](#terimler)
 - [Windows10 Insider Programı](#windows10-insider-program%C4%B1)
+  - [Kısayollar](#k%C4%B1sayollar-1)
   - [Arka Plandaki Evolution Copy Logosunu Kaldırma](#arka-plandaki-evolution-copy-logosunu-kald%C4%B1rma)
 - [Harici Linkler](#harici-linkler)
 
@@ -261,6 +262,11 @@ Alt sistem kurulum dökümantasyonlarına üzerlerine tıklayarak erişlebilirsi
 
 - Windows'a gelecek olan güncellemeleri erkenden deneyen kullanıcı programıdır
 - `Ayarlar` > `Güncelleme ve Güvenlik` > `Windows Insider Program` ile beta kullanıcısı olabilirsiniz
+
+### Kısayollar
+
+- `WİNDOWS TUŞU (SUPER)` + `SHIFT` + `V` Ekranda belli bir alanı panoya kaydetme
+  - Lightshot gibi
 
 ### Arka Plandaki Evolution Copy Logosunu Kaldırma
 
