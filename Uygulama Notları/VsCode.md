@@ -13,6 +13,7 @@
     - [Javascript - Nodejs Eklentileri](#javascript---nodejs-eklentileri)
   - [Proje Yönetimi Eklentileri](#proje-y%C3%B6netimi-eklentileri)
   - [Yapılandırma Eklentileri](#yap%C4%B1land%C4%B1rma-eklentileri)
+  - [Markdown Eklentileri](#markdown-eklentileri)
 - [Editör ayarları](#edit%C3%B6r-ayarlar%C4%B1)
   - [Editör Değişkenleri](#edit%C3%B6r-de%C4%9Fi%C5%9Fkenleri)
   - [Editör JSON Ayarlarım](#edit%C3%B6r-json-ayarlar%C4%B1m)
@@ -72,10 +73,10 @@
 | Eklenti                                                                                                           | Açıklama                        |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | [Sublime Material Theme](https://marketplace.visualstudio.com/items?itemName=jprestidge.theme-material-theme)     | Sublime Editörün temaları       |
+| [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)              | Dosya ikon teması               |
 | [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)              | Popüler tema seti               |
 | [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)            | En sık kullanılan karanlık tema |
 | [Base16 Tomorrow Dark+](https://marketplace.visualstudio.com/items?itemName=Shurelia.base16-tomorrow-dark-vscode) | Karanlık tema                   |
-| [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)              | Dosya ikon teması               |
 | [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)               | Karanlık bir tema               |
 
 ### Programlama Dilleri Eklentileri
@@ -120,6 +121,13 @@
 | --------------------------------------------------------------------------------------------------------- | -------- |
 | [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) |          |
 
+### Markdown Eklentileri
+
+| Eklenti                                                                                               | Açıklama                                                                  |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) | Markdown için gerekli tüm içeriklere, kısayollara ve formatlayıcıya sahip |
+| [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)    | Markdown hatalarının altını çizme ve uyarma                               |
+
 ## Editör ayarları
 
 > Sol alt köşedeki `ayarlar` simgesi -> Sağ üst köşedeki `{}` simgesine tıklayıp oraya bunlardan istediklerini kopyalayabilirsin.
@@ -155,6 +163,9 @@ Değişkenlerin kullanım şekilleri:
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Sublime Material Theme - Dark",
     "editor.tabSize": 2,
+    "prettier.printWidth": 120,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
 ```
 
