@@ -233,7 +233,6 @@ sonuc = 7 / 3 # 2.33 atanır
 | `**`     | Kuvvet alma          | `6 ** 2`  | `36`  |
 | `//`     | Kalansız bölümü alma | `13 // 2` | `6`   |
 
-
 ### Karşılaştırma Operatörleri
 
 | Operatör | Açıklama   | Örnek    | Çıktı   |
@@ -349,7 +348,7 @@ print("Toplam değer:", sum) # Toplam Değer: 48
 ### İki Liste Üzerinde Paralel For Döngüsü
 
 ```py
-for num, cheese, color in zip([1,2,3], ['manchego', 'stilton', 'brie'], 
+for num, cheese, color in zip([1,2,3], ['manchego', 'stilton', 'brie'],
                               ['red', 'blue', 'green']):
     print('{} {} {}'.format(num, color, cheese))
 ```
