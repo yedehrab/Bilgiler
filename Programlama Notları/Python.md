@@ -31,6 +31,7 @@
 - [If / Else Koşul (Constraints) Yapısı](#if--else-ko%C5%9Ful-constraints-yap%C4%B1s%C4%B1)
 - [Döngüler (Loop)](#d%C3%B6ng%C3%BCler-loop)
   - [For Döngüsü](#for-d%C3%B6ng%C3%BCs%C3%BC)
+  - [İki Liste Üzerinde Paralel For Döngüsü](#i%CC%87ki-liste-%C3%BCzerinde-paralel-for-d%C3%B6ng%C3%BCs%C3%BC)
   - [While Döngüsü](#while-d%C3%B6ng%C3%BCs%C3%BC)
   - [Range Fonksiyonu](#range-fonksiyonu)
 - [Break / Continue](#break--continue)
@@ -343,6 +344,20 @@ for sayi in sayilar: # Liste üzerinde döngü ile ilerleme
   toplam = toplam + sayi
 
 print("Toplam değer:", sum) # Toplam Değer: 48
+```
+
+### İki Liste Üzerinde Paralel For Döngüsü
+
+```py
+for num, cheese, color in zip([1,2,3], ['manchego', 'stilton', 'brie'], 
+                              ['red', 'blue', 'green']):
+    print('{} {} {}'.format(num, color, cheese))
+```
+
+```sh
+1 red manchego
+2 blue stilton
+3 green brie
 ```
 
 ### While Döngüsü
