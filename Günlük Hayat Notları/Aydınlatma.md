@@ -28,3 +28,4 @@ LED’lerde beyaz ışık, mavi renkli LED çipinin sarı renkte bir fosfor ile 
 ## Harici Bağlantılar
 
 - [Beyaz Işık Mı Sarı Işık Mı?](http://www.aydinlatma.org/beyaz-isik-mi-sari-isik-mi.html)
+- [Doğru Aydınlatma](https://www.evimdergisi.com.tr/dogru-aydinlatma/)
