@@ -74,3 +74,5 @@ Adres çubuğuna `chrome://settings/searchEngines` yazaeak gerekli ayarların ol
 ## Harici Linkler
 
 - [Make Chrome Run Faster](https://www.techspot.com/article/1193-chrome-performance-memory-tweaks/)
+- [The Power User's Guide to Chrome](https://lifehacker.com/the-power-users-guide-to-google-chrome-5045904)
+- [Add Custom Keyboard Shortcuts to Chrome Extensions for Quick Launching](https://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121)
