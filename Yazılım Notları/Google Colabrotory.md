@@ -19,3 +19,7 @@ with open('/content/gdrive/My Drive/foo.txt', 'w') as f:
   f.write('Hello Google Drive!')
 !cat /content/gdrive/My\ Drive/foo.txt
 ```
+
+## Harici Bağlantılar
+
+- [External data: Drive, Sheets, and Cloud Storage](https://colab.research.google.com/notebooks/io.ipynb)
