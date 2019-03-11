@@ -8,6 +8,7 @@
   - [Geliştirici kısayolları](#geli%C5%9Ftirici-k%C4%B1sayollar%C4%B1)
 - [Ektension](#ektension)
 - [Adress Çubuğu Anahtarları](#adress-%C3%A7ubu%C4%9Fu-anahtarlar%C4%B1)
+- [Harici Linkler](#harici-linkler)
 
 ## Chrome kısayolları
 
@@ -69,3 +70,7 @@ Adres çubuğuna `chrome://settings/searchEngines` yazaeak gerekli ayarların ol
 * `http://tureng.com/tr/turkce-ingilizce/%s`
 
 > %s sonrasındaki metin anlamına gelmekte. Örn; -t Help (*Help `%s` olan yere yazılır.*)
+
+## Harici Linkler
+
+- [Make Chrome Run Faster](https://www.techspot.com/article/1193-chrome-performance-memory-tweaks/)
