@@ -83,9 +83,13 @@
     - [Argüman Ekleme](#arg%C3%BCman-ekleme)
       - [Argüman Action Özelliği](#arg%C3%BCman-action-%C3%B6zelli%C4%9Fi)
   - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
-- [Colab Üzerinden Python](#colab-%C3%BCzerinden-python)
+- [Kod Parçaları (Code Snippet)](#kod-par%C3%A7alar%C4%B1-code-snippet)
+  - [Ekran Görünüsünü Alma](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma)
+- [Google Colabrotory Üzerinden Python](#google-colabrotory-%C3%BCzerinden-python)
+  - [IPython Operatorleri](#ipython-operatorleri)
   - [Python Değişkenlerinin Bash Üzerinde Kullanımı](#python-de%C4%9Fi%C5%9Fkenlerinin-bash-%C3%BCzerinde-kullan%C4%B1m%C4%B1)
-  - [Colab için Harici Bağlantılar](#colab-i%C3%A7in-harici-ba%C4%9Flant%C4%B1lar)
+- [Ortam Değişkenleri](#ortam-de%C4%9Fi%C5%9Fkenleri)
+  - [PyCharm Uygulmasında Ortam Değişkeni Tanımlama](#pycharm-uygulmas%C4%B1nda-ortam-de%C4%9Fi%C5%9Fkeni-tan%C4%B1mlama)
 - [Harici Kaynaklar](#harici-kaynaklar)
 
 ## Yazım Kuralları
@@ -1018,7 +1022,34 @@ if __name__ == '__main__':
     main()
 ```
 
-## Colab Üzerinden Python
+## Kod Parçaları (Code Snippet)
+
+### Ekran Görünüsünü Alma
+
+```py
+import numpy as np
+import cv2
+from PIL import ImageGrab as ig
+import time
+
+last_time = time.time()
+while(True):
+    screen = ig.grab(bbox=(50,50,800,640))
+    print('Loop took {} seconds',format(time.time()-last_time))
+    cv2.imshow("test", np.array(screen))
+    last_time = time.time()
+    if cv2.waitKey(25) & 0xFF == ord('q'):
+        cv2.destroyAllWindows()
+        break
+```
+
+## Google Colabrotory Üzerinden Python
+
+Google Colabrotory `IPython` modülünü kullanmaktadır.
+
+> Detaylı bilgileri içeren google colabrotory notum için [buraya](../Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Google%20Colabrotory.md) tıklayabilirsin.
+
+### IPython Operatorleri
 
 | Operator | Açıklama               |
 | -------- | ---------------------- |
@@ -1032,9 +1063,23 @@ if __name__ == '__main__':
 | `$<değişken>`    | Tek değişkenler için kullanılır | `!echo $filename`       | test   |
 | `{<pyton_kodu>}` | Python kodu için kullanılır     | `{"{}.test".format(1)}` | 1.test |
 
-### Colab için Harici Bağlantılar
+## Ortam Değişkenleri
 
-- [Download to Drive](https://colab.research.google.com/drive/1Cb6KcdbUHgmtmI1A86iDsJWJFClD_IeQ)
+- `PYTHONPATH` Python modülleri yollarını barındıran değişkendir.
+  - `import` ile verilen yollardaki dizinlerden script dahil edilir
+
+> Windows için cmd ortam değişkeni ayarlama yapısı `set name=value;value` şeklindedir.
+
+### PyCharm Uygulmasında Ortam Değişkeni Tanımlama
+
+- Üst sekmeden `Run` kısmına gelin
+- `Edit Configuration` yazısına tıklaıyn
+- Yapılandırma ayarınızı seçin
+  - Yoksa `+` ile yeni bir tane oluşturun
+- `Environment Variables` kısmında en sağdaki dosya simgesine tıklayın
+- `+` ile yeni ortam değişkeninizi ekletin
+
+> Windows için cmd ortam değişkeni ayarlama yapısı `set name=value;value` şeklindedir.
 
 ## Harici Kaynaklar
 
@@ -1050,3 +1095,4 @@ if __name__ == '__main__':
 - [What does `if __name__ == '__main__':` do?](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
 - [Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
 - [Gitignore yapılandırması](https://github.com/martinohanlon/flightlight/issues/1)
+- [Ekranın Video Görüntüsünü Yakalama](https://stackoverflow.com/a/51643195/9770490)
