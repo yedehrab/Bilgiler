@@ -1,6 +1,22 @@
-# Google Colabrotory
+# Google Colabrotory <!-- omit in toc -->
 
 Colab üzerinde kullanılan komutların (IPython) dökümanı için [buraya](https://ipython.readthedocs.io/en/stable/index.html) bakabilirsin.
+
+## İçerikler <!-- omit in toc -->
+
+- [Run Time Ayarları](#run-time-ayarlar%C4%B1)
+  - [Kernel'ı Sıfırlama](#kernel%C4%B1-s%C4%B1f%C4%B1rlama)
+- [Komut Parametreleri](#komut-parametreleri)
+  - [Shell Komutları Kullanımı](#shell-komutlar%C4%B1-kullan%C4%B1m%C4%B1)
+- [Giriş / Çıkış İşlemleri](#giri%C5%9F--%C3%A7%C4%B1k%C4%B1%C5%9F-i%CC%87%C5%9Flemleri)
+  - [Colab'a Dosya Upload Etme](#colaba-dosya-upload-etme)
+  - [Colab'tan Dosya İndirme](#colabtan-dosya-i%CC%87ndirme)
+  - [Colab'tan Dizin İndirme](#colabtan-dizin-i%CC%87ndirme)
+- [Colab Üzerinde Google Drive](#colab-%C3%BCzerinde-google-drive)
+  - [Drive Dosyalarını Dosya Sistemine Bağlama](#drive-dosyalar%C4%B1n%C4%B1-dosya-sistemine-ba%C4%9Flama)
+  - [Drive Dosyalarına Erişme](#drive-dosyalar%C4%B1na-eri%C5%9Fme)
+- [Colab Üzerinden Özel İşlemler](#colab-%C3%BCzerinden-%C3%B6zel-i%CC%87%C5%9Flemler)
+  - [Bilgisayar Kamerasına Erişme](#bilgisayar-kameras%C4%B1na-eri%C5%9Fme)
 
 ## Run Time Ayarları
 
@@ -8,11 +24,32 @@ Colab üzerinde kullanılan komutların (IPython) dökümanı için [buraya](htt
   - TPU
   - GPU
 
+### Kernel'ı Sıfırlama
+
+```py
+!kill -9 -1
+```
+
 ## Komut Parametreleri
 
 - `%` Magic Command
 - `!` Command
 - Python kodu 
+
+### Shell Komutları Kullanımı
+
+Shell komutlarıyla:
+
+- `{ }` arasında python kod parçları
+-  `$` Ortam değişkenleri
+
+```sh
+TEMP = 'gecici'
+!echo {gecici} # Python değişkenini kullanma
+!echo {gecici.split('i')[0]} # Python kod parçası kullanma
+
+!echo $PYTHONPATH # Ortam değşkenini kullanma
+```
 
 ## Giriş / Çıkış İşlemleri
 
@@ -140,3 +177,5 @@ except Exception as err:
 - [Mardown Guide](https://colab.research.google.com/notebooks/markdown_guide.ipynb)
 - [Froms](https://colab.research.google.com/notebooks/forms.ipynb)
 - [Magic Command](https://ipython.readthedocs.io/en/stable/interactive/magics.html)
+- [Resetting VM](https://stackoverflow.com/questions/49001921/how-to-restart-virtual-machine)
+- [Interacting with Shell](http://mmcdan.github.io/posts/interacting-with-the-shell-via-jupyter-notebook/)
