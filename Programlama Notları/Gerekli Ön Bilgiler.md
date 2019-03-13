@@ -43,3 +43,11 @@ Yazılımda kullanılan terimler
 | Kavram | Türkçe Karşılığı | Ek Açıklama                                             |
 | ------ | ---------------- | ------------------------------------------------------- |
 | Flag   | Bayrak           | Varlık (evet, hayır) değeri tutan değişkenler - Booelan |
+
+## Geliştirici Platformları
+
+| Platform                                                     | Açıklama             |
+| ------------------------------------------------------------ | -------------------- |
+| [Github](https://github.com/), [Gitlab](https://gitlab.com/) | Kaynak kod paylaşımı |
+| [Read The Docs](https://readthedocs.org/)                    | Döküman paylaşımı    |
+| [StackOverflow](https://stackoverflow.com/), [Quora](https://www.quora.com/) | Soru cevap platformları |
