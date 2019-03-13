@@ -64,9 +64,12 @@
   - [Python Modül Dosyaları](#python-mod%C3%BCl-dosyalar%C4%B1)
     - [Sistemin Python Modüllerine Bakma](#sistemin-python-mod%C3%BCllerine-bakma)
   - [Modül İçinde Tanımlanan İsimleri Alma](#mod%C3%BCl-i%CC%87%C3%A7inde-tan%C4%B1mlanan-i%CC%87simleri-alma)
-  - [Sık Kullanılan Modüller](#s%C4%B1k-kullan%C4%B1lan-mod%C3%BCller)
 - [Paketler (Package)](#paketler-package)
   - [Paketten ve Modül Örnekleri](#paketten-ve-mod%C3%BCl-%C3%B6rnekleri)
+  - [Sık Kullanılan Paketler](#s%C4%B1k-kullan%C4%B1lan-paketler)
+    - [Windows Paketleri](#windows-paketleri)
+    - [Giriş Çıkış (I/O) Kontrol Paketleri](#giri%C5%9F-%C3%A7%C4%B1k%C4%B1%C5%9F-io-kontrol-paketleri)
+  - [Paketler için Harici Bağlantıları](#paketler-i%C3%A7in-harici-ba%C4%9Flant%C4%B1lar%C4%B1)
 - [Sayılar, Sayılar Arası Dönüşüm ve Matematik](#say%C4%B1lar-say%C4%B1lar-aras%C4%B1-d%C3%B6n%C3%BC%C5%9F%C3%BCm-ve-matematik)
   - [Tabanlı Sayılar](#tabanl%C4%B1-say%C4%B1lar)
   - [Ondalıklı Sayılar (Decimals / Floats)](#ondal%C4%B1kl%C4%B1-say%C4%B1lar-decimals--floats)
@@ -86,8 +89,8 @@
   - [Argparse Modülü Detayları](#argparse-mod%C3%BCl%C3%BC-detaylar%C4%B1)
     - [Argüman Ekleme](#arg%C3%BCman-ekleme)
       - [Argüman Action Özelliği](#arg%C3%BCman-action-%C3%B6zelli%C4%9Fi)
-  - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
 - [Kod Parçaları (Code Snippet)](#kod-par%C3%A7alar%C4%B1-code-snippet)
+  - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
   - [Ekran Görünüsünü Alma](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma)
 - [Google Colabrotory Üzerinden Python](#google-colabrotory-%C3%BCzerinden-python)
   - [IPython Operatorleri](#ipython-operatorleri)
@@ -111,6 +114,7 @@
 ### Faydalı Soru & Cevaplar
 
 - [What's the difference between a pip install and conda install?](https://www.quora.com/Whats-the-difference-between-a-pip-install-and-conda-install)
+- [Module Package Library Meaning](https://knowpapa.com/modpaclib-py/)
 
 ## Yazım Kuralları
 
@@ -455,6 +459,7 @@ Son
 | `len`     | Uzunluk                 | `len("yemreak")`               | 7                     |
 | `format`  | Formatlama              | `"X: {}, Y: {}".format(1, 2)`  | `'X: 1, Y: 2'`        |
 | `%`       | Operatör ile formatlama | `'new(%s %d)' % ('help', 5)`   | `'new(help 5)'`       |
+| `f`       | Format string ön eki    | `f'X: {a}'`                    | `'X: 2'`              |
 | `r`       | Raw String ön eki       | `r"C:\Users"`                  | `C:\\Users`           |
 | `split`   | Parçalama               | `"ye mre ak".split(" ")`       | `['ye', 'mre', 'ak']` |
 | `join`    | Birleştirme             | `','.join(['do', 're', 'mi'])` | `'do,re,mi'`          |
@@ -746,19 +751,6 @@ Modül dosyalarının aranma yerleri:
 ['__builtins__', '__doc__', '__name__', 'a', 'b', 'math', 'pyscripter']
 ```
 
-### Sık Kullanılan Modüller
-
-| Modül                                                                                          | Odaklantığı İşlemler     |
-| ---------------------------------------------------------------------------------------------- | ------------------------ |
-| [os](https://www.pythonforbeginners.com/os/pythons-os-module)                                  | İşletim sistemi          |
-| time                                                                                           | Zaman                    |
-| [datetime](https://www.pythonforbeginners.com/basics/python-datetime-timedelta)                | Tarih                    |
-| [numpy](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf) | Matematiksel             |
-| [openCV](https://docs.opencv.org/3.0-last-rst/opencv_cheatsheet.pdf)                           | Görüntü                  |
-| [PIL](https://pillow.readthedocs.io/en/stable/)                                                | Resim                    |
-| Tensorflow                                                                                     | Makine öğrenimi          |
-| [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/cheatsheet.html)                        | Arayüz, fare, klavye ... |
-
 ## Paketler (Package)
 
 - Birden fazla modülü içinde barındırır
@@ -778,6 +770,40 @@ from Game.Level import start
 ```py
 from Game.Level.start import select_difficulty
 ```
+
+### Sık Kullanılan Paketler
+
+| Modül                                                                                          | Odaklantığı İşlemler |
+| ---------------------------------------------------------------------------------------------- | -------------------- |
+| [os](https://www.pythonforbeginners.com/os/pythons-os-module)                                  | İşletim sistemi      |
+| time                                                                                           | Zaman                |
+| [datetime](https://www.pythonforbeginners.com/basics/python-datetime-timedelta)                | Tarih                |
+| [numpy](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf) | Matematiksel         |
+| [openCV](https://docs.opencv.org/3.0-last-rst/opencv_cheatsheet.pdf)                           | Görüntü              |
+| [pillow](https://pillow.readthedocs.io/en/stable/)                                             | Resim                |
+| Tensorflow                                                                                     | Makine öğrenimi      |
+
+#### Windows Paketleri
+
+| Modül                                                                         | Odaklandığı İşlemler                                                |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [pywinauto ☆](https://pywinauto.readthedocs.io/en/latest/index.html)          | Önplanda olmasalar dahi windows uygulamaları (pywin32'i barındırır) |
+| [pygetwindow](https://github.com/asweigart/PyGetWindow)                       | Basit windows pencereleri                                           |
+| [pywin32](http://timgolden.me.uk/pywin32-docs/contents.html)                  | Resmi windows API (pencere dahil)                                   |
+| [PyAutoGui](https://media.readthedocs.org/pdf/pyautogui/latest/pyautogui.pdf) | Arayüz, fare, klavye ...                                            |
+
+#### Giriş Çıkış (I/O) Kontrol Paketleri
+
+| Paket                                                        | Odaklanığı İşlemler | Dökümanlar                                                                    |
+| ------------------------------------------------------------ | ------------------- | ---------------------------------------------------------------------- |
+| pynput | Fare, klavye vs...  | [🌐](https://pynput.readthedocs.io/en/latest/index.html) [📃](https://media.readthedocs.org/pdf/pynput/latest/pynput.pdf) [📺](https://www.youtube.com/watch?v=kJshtCfqCsY) |
+
+### Paketler için Harici Bağlantıları
+
+- [Python Kütüphaneleri](https://docs.python.org/3/library/)
+- [Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
+- [PyAutoGUI vs Pywinauto](https://www.reddit.com/r/Python/comments/8bymeo/pyautogui_vs_pywinauto/)
+
 
 ## Sayılar, Sayılar Arası Dönüşüm ve Matematik
 
@@ -1027,6 +1053,8 @@ optional arguments:
   --verbose   increase output verbosity
 ```
 
+## Kod Parçaları (Code Snippet)
+
 ### Örnek CLI Kodu
 
 ```py
@@ -1061,8 +1089,6 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-
-## Kod Parçaları (Code Snippet)
 
 ### Ekran Görünüsünü Alma
 
@@ -1175,8 +1201,12 @@ Google Colabrotory `IPython` modülünü kullanmaktadır.
 - [How do I list all files of a directory](https://stackoverflow.com/questions/3207219/how-do-i-list-all-files-of-a-directory)
 - [Replace single backslash with double backslash](https://stackoverflow.com/questions/17327202/python-replace-single-backslash-with-double-backslash)
 - [What does `if __name__ == '__main__':` do?](https://stackoverflow.com/questions/419163/what-does-if-name-main-do)
-- [Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
 - [Gitignore yapılandırması](https://github.com/martinohanlon/flightlight/issues/1)
 - [Ekranın Video Görüntüsünü Yakalama](https://stackoverflow.com/a/51643195/9770490)
 - [Putting a simple if-then-else statement on one line](https://stackoverflow.com/a/2802748/9770490)
 - [Can python get the screen shot of a specific window?](https://stackoverflow.com/a/48669645/9770490)
+- [Get window position & size with python](https://stackoverflow.com/a/7142360/9770490)
+- [Python inactive screen capture](https://stackoverflow.com/a/52314641/9770490)
+
+
+> [Paketler için Harici Bağlantıları](#paketler-i%C3%A7in-harici-ba%C4%9Flant%C4%B1lar%C4%B1)
