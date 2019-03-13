@@ -12,6 +12,7 @@
   - [Font Ayarları](#font-ayarlar%C4%B1)
   - [Interpreter (Derleyici) Değiştirme](#interpreter-derleyici-de%C4%9Fi%C5%9Ftirme)
   - [Configuration (Yapılandırma) Ayarları](#configuration-yap%C4%B1land%C4%B1rma-ayarlar%C4%B1)
+  - [Ek Ortam Değişkenileri Tanımlama](#ek-ortam-de%C4%9Fi%C5%9Fkenileri-tan%C4%B1mlama)
   - [Dökümantasyon Önizle](#d%C3%B6k%C3%BCmantasyon-%C3%B6nizle)
   - [Dictionaries](#dictionaries)
   - [Spellcheck Kaldırma](#spellcheck-kald%C4%B1rma)
@@ -24,7 +25,8 @@ Detaylar için [buraya](https://www.jetbrains.com/help/idea/mastering-keyboard-s
 - `CTRL` + `CTRL` Komut çalıştırma
 - `SHIFT` + `SHIFT` Kod içerisinde arama yapma
 - `CTRL` + `SHUFT` + `ALT` + `L` Açık olan dosyayı formatlama / biçimlendirme
-- `CTRL` + `SHUFT` + `L` Tüm kodu otamatik derleme
+- `CTRL` + `ALT` + `L` Tüm kodu otamatik derleme
+- `CTRL` + `ALT` `O` Import'ları optimize etme
 
 ### Metin Kısayolları
 
@@ -78,6 +80,17 @@ Sanal environment gibi durumlarda system yerine onların derleyicisini kullanma
 - Derlemek istediğiniz dili | uygulamayı seçin (*Örn: Python | PyCharm için*)
 - Dosya derleyeceksiniz *Script* kısmına `dosyanın yolunu` yazın.
 - *Python Interpreter* kısmında yorumlayıcıyı seçin, ayarlanmadıysa `Interpreter (Derleyici) Değiştirme` aşamasında (üst aşamada) nasıl ayarlayacağınıza bakabilirsiniz.
+
+### Ek Ortam Değişkenileri Tanımlama
+
+- Üst sekmeden `Run` kısmına gelin
+- `Edit Configuration` yazısına tıklaıyn
+- Yapılandırma ayarınızı seçin
+  - Yoksa `+` ile yeni bir tane oluşturun
+- `Environment Variables` kısmında en sağdaki dosya simgesine tıklayın
+- `+` ile yeni ortam değişkeninizi ekletin
+
+> Windows için cmd ortam değişkeni ayarlama yapısı `set name=value;value` şeklindedir.
 
 ### Dökümantasyon Önizle
 
