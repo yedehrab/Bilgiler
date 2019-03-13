@@ -283,6 +283,8 @@ Alt sistem kurulum dökümantasyonlarına üzerlerine tıklayarak erişlebilirsi
 
 ## Windows10 Insider Programı
 
+Tanıtım videosu 📺 için [buraya](https://www.youtube.com/watch?v=wH_lKkzHHR0) bakabilirsin.
+
 - Windows'a gelecek olan güncellemeleri erkenden deneyen kullanıcı programıdır
 - `Ayarlar` > `Güncelleme ve Güvenlik` > `Windows Insider Program` ile beta kullanıcısı olabilirsiniz
 
