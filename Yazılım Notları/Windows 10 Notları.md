@@ -19,6 +19,7 @@ Sık kullanılan işletim sistemi notlarım.
   - [CMD Değişkenleri](#cmd-de%C4%9Fi%C5%9Fkenleri)
     - [Temel Kullanım](#temel-kullan%C4%B1m)
     - [Sık Kullanılanlar](#s%C4%B1k-kullan%C4%B1lanlar)
+  - [CMD Operatörleri](#cmd-operat%C3%B6rleri)
   - [CMD Kod Parçaları](#cmd-kod-par%C3%A7alar%C4%B1)
     - [CMD Döngü Kullanımı](#cmd-d%C3%B6ng%C3%BC-kullan%C4%B1m%C4%B1)
     - [CMD Dosyaları Ardışık olarak adlandırma](#cmd-dosyalar%C4%B1-ard%C4%B1%C5%9F%C4%B1k-olarak-adland%C4%B1rma)
@@ -114,12 +115,15 @@ Tabloda `< >` arasına yazılanlar sizin tarafınızdan girilecek değerlerdir.
 | `cd <yol>`                        | Dizin değiştirme                  |
 | `mkdir <dizin_adı>`               | Klasör oluşturma                  |
 | `start <dosya | dizin>`           | Dosya veya dizin açma             |
+| `start "" <dosya | dizin>`        | Dosya veya dizini başlıksız açma  |
 | `ren <eski_isim> <yeni_isim>`     | Dosyayı yeniden adlandırma        |
 | `move <dosya> <konum>`            | Dosyayı belirli konuma taşıma     |
 | `del <bayrak> <file>`             | Dosya silme                       |
 | `rd <switch> <folder>`            | Dizin silme                       |
 | `set <ortam_değişkeni>`           | Ortam değişkeni tanımlama         |
 | `<komut> > <dosya_ismi>.<uzantı>` | Komutun çıktılarını dosyaya yazma |
+| `echo >> <dosya>`                 | Dosyaya yazma                     |
+
 
 - `<bayrak>` **/?** yazdığınızda çıkan /'li karakterler.
 
@@ -155,6 +159,14 @@ Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tı
 | `%appdata%`    | Uygulama verileri dizini                   |
 | `%HOMEDRIVE%`  | Kullanıcı diski                            |
 | `%homepath%`   | Kullanıcı Yolu                             |
+
+### CMD Operatörleri
+
+| Şablon                 | Açıklama                                                   |
+| ---------------------- | ---------------------------------------------------------- |
+| `<komut1> & <komut2>`  | Komut1 ve komut2 işlemini çalıştırır                       |
+| `<komut1> && <komut2>` | Komut1 işlemini yaptıktan sonra komut2 işlemini çalıştırır |
+| `|`                    | Pipe                                                       |
 
 ### CMD Kod Parçaları
 
