@@ -1146,3 +1146,4 @@ Google Colabrotory `IPython` modülünü kullanmaktadır.
 - [Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
 - [Gitignore yapılandırması](https://github.com/martinohanlon/flightlight/issues/1)
 - [Ekranın Video Görüntüsünü Yakalama](https://stackoverflow.com/a/51643195/9770490)
+- [Putting a simple if-then-else statement on one line](https://stackoverflow.com/a/2802748/9770490)
