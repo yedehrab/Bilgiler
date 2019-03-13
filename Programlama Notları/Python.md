@@ -6,6 +6,8 @@
 
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
+- [Kurulum](#kurulum)
+  - [Faydalı Soru & Cevaplar](#faydal%C4%B1-soru--cevaplar)
 - [Yazım Kuralları](#yaz%C4%B1m-kurallar%C4%B1)
 - [Dökümantasyon](#d%C3%B6k%C3%BCmantasyon)
 - [Anahtar Kelimeler (Keywords)](#anahtar-kelimeler-keywords)
@@ -62,6 +64,7 @@
   - [Python Modül Dosyaları](#python-mod%C3%BCl-dosyalar%C4%B1)
     - [Sistemin Python Modüllerine Bakma](#sistemin-python-mod%C3%BCllerine-bakma)
   - [Modül İçinde Tanımlanan İsimleri Alma](#mod%C3%BCl-i%CC%87%C3%A7inde-tan%C4%B1mlanan-i%CC%87simleri-alma)
+  - [Sık Kullanılan Modüller](#s%C4%B1k-kullan%C4%B1lan-mod%C3%BCller)
 - [Paketler (Package)](#paketler-package)
   - [Paketten ve Modül Örnekleri](#paketten-ve-mod%C3%BCl-%C3%B6rnekleri)
 - [Sayılar, Sayılar Arası Dönüşüm ve Matematik](#say%C4%B1lar-say%C4%B1lar-aras%C4%B1-d%C3%B6n%C3%BC%C5%9F%C3%BCm-ve-matematik)
@@ -92,6 +95,22 @@
 - [Ortam Değişkenleri](#ortam-de%C4%9Fi%C5%9Fkenleri)
   - [PyCharm Uygulmasında Ortam Değişkeni Tanımlama](#pycharm-uygulmas%C4%B1nda-ortam-de%C4%9Fi%C5%9Fkeni-tan%C4%B1mlama)
 - [Harici Kaynaklar](#harici-kaynaklar)
+
+## Kurulum
+
+- Temel python kurulumunu, resmi sitesinden [buraya](https://www.python.org/downloads/) tıklayarak tamamlayabilirsin.
+  - **pip** paket yöneticisini kullanır
+  - `pip install` komutu ile modül yüklemesi yapılır
+- **Makine öğrenimi** ve **veri bilimi** gibi işlemlerle uğaşacak isen, bu iş için geliştirilmiş olan [Anaconda](https://www.anaconda.com/distribution/#download-section) yazılımı tavsiye edilir
+  - Resmi paket yönetici **conda** olmasına rağmen **pip** üzerinden de kuruluma izin verir
+  - `conda install` komutu ile modül yüklemesi yapılır
+  - Temel yükleme yapısı '*Conda ile yüklenemezse pip kullan*' idir
+
+> Anaconda ile alakalı bilgiler [burada](../Uygulama%20Notlar%C4%B1/Anaconda.md) derlenmektedir.
+
+### Faydalı Soru & Cevaplar
+
+- [What's the difference between a pip install and conda install?](https://www.quora.com/Whats-the-difference-between-a-pip-install-and-conda-install)
 
 ## Yazım Kuralları
 
@@ -727,6 +746,19 @@ Modül dosyalarının aranma yerleri:
 ['__builtins__', '__doc__', '__name__', 'a', 'b', 'math', 'pyscripter']
 ```
 
+### Sık Kullanılan Modüller
+
+| Modül                                                                                          | Odaklantığı İşlemler     |
+| ---------------------------------------------------------------------------------------------- | ------------------------ |
+| [os](https://www.pythonforbeginners.com/os/pythons-os-module)                                  | İşletim sistemi          |
+| time                                                                                           | Zaman                    |
+| [datetime](https://www.pythonforbeginners.com/basics/python-datetime-timedelta)                | Tarih                    |
+| [numpy](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf) | Matematiksel             |
+| [openCV](https://docs.opencv.org/3.0-last-rst/opencv_cheatsheet.pdf)                           | Görüntü                  |
+| [PIL](https://pillow.readthedocs.io/en/stable/)                                                | Resim                    |
+| Tensorflow                                                                                     | Makine öğrenimi          |
+| [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/cheatsheet.html)                        | Arayüz, fare, klavye ... |
+
 ## Paketler (Package)
 
 - Birden fazla modülü içinde barındırır
@@ -1147,3 +1179,4 @@ Google Colabrotory `IPython` modülünü kullanmaktadır.
 - [Gitignore yapılandırması](https://github.com/martinohanlon/flightlight/issues/1)
 - [Ekranın Video Görüntüsünü Yakalama](https://stackoverflow.com/a/51643195/9770490)
 - [Putting a simple if-then-else statement on one line](https://stackoverflow.com/a/2802748/9770490)
+- [Can python get the screen shot of a specific window?](https://stackoverflow.com/a/48669645/9770490)
