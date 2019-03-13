@@ -24,12 +24,13 @@ Sık kullanılan işletim sistemi notlarım.
     - [CMD Döngü Kullanımı](#cmd-d%C3%B6ng%C3%BC-kullan%C4%B1m%C4%B1)
     - [CMD Dosyaları Ardışık olarak adlandırma](#cmd-dosyalar%C4%B1-ard%C4%B1%C5%9F%C4%B1k-olarak-adland%C4%B1rma)
 - [PowerShell Kullanımı](#powershell-kullan%C4%B1m%C4%B1)
-- [Özelleştirmem](#%C3%B6zelle%C5%9Ftirmem)
+- [Özelleştirmelerim](#%C3%B6zelle%C5%9Ftirmelerim)
   - [CMD Düzeni](#cmd-d%C3%BCzeni)
-- [Windows Features](#windows-features)
-  - [Default Windows Features](#default-windows-features)
+  - [Tema Düzeni](#tema-d%C3%BCzeni)
   - [Taskbar Düzeni](#taskbar-d%C3%BCzeni)
   - [Ek Ayalarım](#ek-ayalar%C4%B1m)
+- [Windows Özellikleri](#windows-%C3%B6zellikleri)
+  - [Varsayılan Windows Özellikleri](#varsay%C4%B1lan-windows-%C3%B6zellikleri)
   - [Alt İşletim Sistemleri](#alt-i%CC%87%C5%9Fletim-sistemleri)
 - [Uygulama Ayarları](#uygulama-ayarlar%C4%B1)
   - [Video Ayarları](#video-ayarlar%C4%B1)
@@ -200,7 +201,7 @@ ren *.new *.<yeni_dosya_uzantısı>
 
 İlgili dökümana [buraya](Windows10%20Kaynaklar%C4%B1\Windows%20PowerShell%20Tutorial%20for%20Beginners.pdf) tıklayarak erişebilirsin.
 
-## Özelleştirmem
+## Özelleştirmelerim
 
 Kendime özgü görsellik ayarlarım
 
@@ -208,7 +209,7 @@ Kendime özgü görsellik ayarlarım
 
 ### CMD Düzeni
 
-![cmd](../images/cmd.png)
+Düzenin görüntüsü için [buraya](../images/cmd.png) bakabilirsin.
 
 - `**Font:**` *14 - Consolas*
 - **Layout:** *Windows Size - w: 120 h: 30*
@@ -216,12 +217,35 @@ Kendime özgü görsellik ayarlarım
   - **Screen Text:** *R: 242 G: 242 B: 242*
   - **Screen Background** *R: 50 G: 47 B: 65*
   - **Opacity** *%89*
+
+### Tema Düzeni
+
+- [Arka plan resmi](../images/bg.jpg)
+- [Fare Teması](https://drive.google.com/open?id=1Xs1YcQhwH4bo9SwHFQ06yMihJY8QQn15)
+- [Tema Rengi](../images/theme_color.png)
+  - Transparan etkisi `açık`
+  - Yüzeylerde renk gösterme `aktif`
+  - Uygulama modu `karanlık`
+
+### Taskbar Düzeni
+
+![taskbar](../images/taskbar.jpg)
+
+### Ek Ayalarım
+
+| Ayar                                                                                           | Açıklama                                        |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Open With Code                                                                                 | Dosyayı vscode ile açma                         |
+| Open With Code                                                                                 | Dizini vscode ile açma                          |
+| [Open command prompt here](https://drive.google.com/open?id=1EEIlewepCu8xCZsiWdFa_OeBq9VfYnE_) | CMD'yi dizinde açma                             |
+| `%b%`                                                                                          | Bilgiler projesini vscode'da açan özel değişken |
+
   
-## Windows Features
+## Windows Özellikleri
 
 > Aramaya alanına `Turn Windows Feature On or Off` veya `Windows Özelliklerini Aç veya Kapat` yazarak erişebilirsin.
 
-### Default Windows Features
+### Varsayılan Windows Özellikleri
 
 - `.NET Framework 4.7 Advanced Services`
   - `WCF Services`
@@ -237,19 +261,6 @@ Kendime özgü görsellik ayarlarım
 - `SMB Direct`
 - `Windows PowerShell 2.0`
 - `Work Folders Client`
-
-### Taskbar Düzeni
-
-![taskbar](../images/taskbar.jpg)
-
-### Ek Ayalarım
-
-| Ayar                     | Açıklama                                        |
-| ------------------------ | ----------------------------------------------- |
-| Open With Code           | Dosyayı vscode ile açma                         |
-| Open With Code           | Dizini vscode ile açma                          |
-| Open command prompt here | CMD'yi dizinde açma                             |
-| `%b%`                    | Bilgiler projesini vscode'da açan özel değişken |
 
 ### Alt İşletim Sistemleri
 
