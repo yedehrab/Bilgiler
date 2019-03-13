@@ -29,6 +29,7 @@
   - [Üyelik Operatörleri](#%C3%BCyelik-operat%C3%B6rleri)
     - [Üyelik Operatörleri Örneği](#%C3%BCyelik-operat%C3%B6rleri-%C3%B6rne%C4%9Fi)
 - [If / Else Koşul (Constraints) Yapısı](#if--else-ko%C5%9Ful-constraints-yap%C4%B1s%C4%B1)
+  - [Tek satır (üçlü) If / Else Yapısı](#tek-sat%C4%B1r-%C3%BC%C3%A7l%C3%BC-if--else-yap%C4%B1s%C4%B1)
 - [Döngüler (Loop)](#d%C3%B6ng%C3%BCler-loop)
   - [For Döngüsü](#for-d%C3%B6ng%C3%BCs%C3%BC)
   - [İki Liste Üzerinde Paralel For Döngüsü](#i%CC%87ki-liste-%C3%BCzerinde-paralel-for-d%C3%B6ng%C3%BCs%C3%BC)
@@ -333,6 +334,13 @@ if num >= 0:
         print("Pozitif sayı")
 else:
     print("Negatif sayı")
+```
+
+### Tek satır (üçlü) If / Else Yapısı
+
+```py
+fruit = 'Apple'
+isApple = True if fruit == 'Apple' else False
 ```
 
 ## Döngüler (Loop)
@@ -1027,20 +1035,62 @@ if __name__ == '__main__':
 ### Ekran Görünüsünü Alma
 
 ```py
-import numpy as np
-import cv2
 from PIL import ImageGrab as ig
-import time
 
-last_time = time.time()
-while(True):
-    screen = ig.grab(bbox=(50,50,800,640))
-    print('Loop took {} seconds',format(time.time()-last_time))
-    cv2.imshow("test", np.array(screen))
+import numpy as np
+import time
+import cv2
+
+# Hata ayıklama ve bilgilendirme notlarını aktif eder
+DEBUG = True
+
+# Yakalanacak ekranın konum bilgileri (x0, y0, x1, y1)
+CAPTURE_AREA = (80, 101, 1111, 923)
+
+# Yakalanan ekranın gösterilme boyutu (Varsayılan için 0 yapın)
+WIDTH = 0
+HEIGHT = 0
+
+if DEBUG:
+    frame_count = 0
     last_time = time.time()
+
+while True:
+    screen = ig.grab(bbox=CAPTURE_AREA)
+    screen_np = np.array(screen)
+
+    # BGR tipindeki görüntüyü RGB yapıyoruz
+    screen_np_RGB = cv2.cvtColor(screen_np, cv2.COLOR_BGR2RGB)
+
+    # Gösterilecek ekranın boyutunu ayarlama
+    screen_width = WIDTH if WIDTH != 0 else CAPTURE_AREA[2] - CAPTURE_AREA[0]
+    screen_height = HEIGHT if WIDTH != 0 else CAPTURE_AREA[3] - CAPTURE_AREA[1]
+
+    # Kaydedilen ekranı uygun boyutta görüntüleme
+    cv2.imshow(
+        'Ekran görüntüsü',
+        cv2.resize(
+            screen_np_RGB,
+            (
+                screen_width,
+                screen_height
+            )
+        )
+    )
+
+    # 'q' tuşuna basıldığında çıkma işlemi
     if cv2.waitKey(25) & 0xFF == ord('q'):
         cv2.destroyAllWindows()
         break
+
+    if DEBUG:
+        # noinspection PyUnboundLocalVariable
+        frame_count += 1
+        # noinspection PyUnboundLocalVariable
+        if time.time() - last_time >= 1:
+            print('FPS: {}'.format(frame_count))
+            frame_count = 0
+            last_time = time.time()
 ```
 
 ## Google Colabrotory Üzerinden Python
