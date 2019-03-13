@@ -796,7 +796,7 @@ from Game.Level.start import select_difficulty
 
 | Paket                                                        | Odaklanığı İşlemler | Dökümanlar                                                                    |
 | ------------------------------------------------------------ | ------------------- | ---------------------------------------------------------------------- |
-| pynput | Fare, klavye vs...  | [🌐](https://pynput.readthedocs.io/en/latest/index.html) [📃](https://media.readthedocs.org/pdf/pynput/latest/pynput.pdf) [📺](https://www.youtube.com/watch?v=kJshtCfqCsY) |
+| pynput | Fare, klavye vs...  | [🌐](https://pynput.readthedocs.io/en/latest/index.html) [📃](https://media.readthedocs.org/pdf/pynput/latest/pynput.pdf) [📺](https://www.youtube.com/watch?v=kJshtCfqCsY) | 
 
 ### Paketler için Harici Bağlantıları
 
