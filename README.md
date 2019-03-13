@@ -11,7 +11,7 @@
 - [Yapay Zeka Notları](#yapay-zeka-notlar%C4%B1)
 - [Ders Notları](#ders-notlar%C4%B1)
 - [Günlük Hayat Notları](#g%C3%BCnl%C3%BCk-hayat-notlar%C4%B1)
-- [Tamir Notları](#tamir-notlar%C4%B1)
+- [Telefon Notları](#telefon-notlar%C4%B1)
 - [Harici Linkler](#harici-linkler)
 - [Yapılacaklar](#yap%C4%B1lacaklar)
 - [Çalışma Notları](#%C3%A7al%C4%B1%C5%9Fma-notlar%C4%B1)
@@ -81,9 +81,10 @@
 - [Çamaşır Makinesi](G%C3%BCnl%C3%BCk%20Hayat%20Notlar%C4%B1/%C3%87ama%C5%9F%C4%B1r%20Makinesi.md)
 - [Aydınlatma](G%C3%BCnl%C3%BCk%20Hayat%20Notlar%C4%B1/Ayd%C4%B1nlatma.md)
 
-## Tamir Notları
+## Telefon Notları
 
-- [HTC Desire 820](Tamir%20Notlar%C4%B1/HTC%20Desire%20820.md)
+- [HTC Desire 820](Telefon%20Notlar%C4%B1/HTC%20Desire%20820.md)
+- [Telefon Rehberini Taşıma](Telefon%20Notlar%C4%B1/Telefon%20Rehberini%20Ta%C5%9F%C4%B1ma.md)
 
 ## Harici Linkler
 
