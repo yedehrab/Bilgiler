@@ -41,6 +41,7 @@
 |---------|----------|
 | [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb) | Reklam engelleme |
 | [Pop up Blocker for Chrome](https://chrome.google.com/webstore/detail/pop-up-blocker-for-chrome/bkkbcggnhapdmkeljlodobbkopceiche) | Popup (Açılır pencere) engelleme *özeliikle film izleyenler için oldukça faydalı* |
+| [App For WA Webb](https://chrome.google.com/webstore/detail/app-for-wa-web/bpocngoedbjmnmkngoohaccdmidcjjhm?hl=en) | Whatsapp wep yerine oldukça kullanışlı basit açılır pencere
 | [God Mode for Whatsapp](https://chrome.google.com/webstore/detail/god-mode-for-whatsapp/cgdfebhnckdgckcjhidjnochmahdohad) | Whatsapp wep yerine oldukça kullanışlı ve ek özelliklere sahip popup |
 | [Temp Mail](https://chrome.google.com/webstore/detail/temp-mail-disposable-temp/inojafojbhdpnehkhhfjalgjjobnhomj) | Geçici mail oluşturma eklentisi. 15s de mail onaylama imkanı sunuyor. *Özellikle kayıt ol diye baskılayan sitelere girenlere tavsiye* |
 | [Run Javascript](https://chrome.google.com/webstore/detail/run-javascript/lmilalhkkdhfieeienjbiicclobibjao) | Seçtiğiniz sayfalara girdiğinizde otomatik olarak JS derleme |
