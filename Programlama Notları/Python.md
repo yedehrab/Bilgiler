@@ -20,6 +20,7 @@
   - [Sabit Değerler (Constants)](#sabit-de%C4%9Ferler-constants)
   - [Değişkenler Arası Takılama (Casting)](#de%C4%9Fi%C5%9Fkenler-aras%C4%B1-tak%C4%B1lama-casting)
   - [Değişken Tipleri için Ek Kaynak](#de%C4%9Fi%C5%9Fken-tipleri-i%C3%A7in-ek-kaynak)
+  - [Değişken ve Sabitlerde Gizlilik](#de%C4%9Fi%C5%9Fken-ve-sabitlerde-gizlilik)
 - [Operatörler](#operat%C3%B6rler)
   - [Aritmatik Operatörler](#aritmatik-operat%C3%B6rler)
     - [Ek Aritmatik Operatörler](#ek-aritmatik-operat%C3%B6rler)
@@ -34,7 +35,8 @@
   - [Tek satır (üçlü) If / Else Yapısı](#tek-sat%C4%B1r-%C3%BC%C3%A7l%C3%BC-if--else-yap%C4%B1s%C4%B1)
 - [Döngüler (Loop)](#d%C3%B6ng%C3%BCler-loop)
   - [For Döngüsü](#for-d%C3%B6ng%C3%BCs%C3%BC)
-  - [İki Liste Üzerinde Paralel For Döngüsü](#i%CC%87ki-liste-%C3%BCzerinde-paralel-for-d%C3%B6ng%C3%BCs%C3%BC)
+    - [Değişken içinde For Döngüsü](#de%C4%9Fi%C5%9Fken-i%C3%A7inde-for-d%C3%B6ng%C3%BCs%C3%BC)
+    - [İki Liste Üzerinde Paralel For Döngüsü](#i%CC%87ki-liste-%C3%BCzerinde-paralel-for-d%C3%B6ng%C3%BCs%C3%BC)
   - [While Döngüsü](#while-d%C3%B6ng%C3%BCs%C3%BC)
   - [Range Fonksiyonu](#range-fonksiyonu)
 - [Break / Continue](#break--continue)
@@ -93,6 +95,7 @@
 - [Kod Parçaları (Code Snippet)](#kod-par%C3%A7alar%C4%B1-code-snippet)
   - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
   - [Ekran Görünüsünü Alma](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma)
+  - [Kısayol ile Ekran Alanı Seçme](#k%C4%B1sayol-ile-ekran-alan%C4%B1-se%C3%A7me)
 - [Google Colabrotory Üzerinden Python](#google-colabrotory-%C3%BCzerinden-python)
   - [IPython Operatorleri](#ipython-operatorleri)
   - [Python Değişkenlerinin Bash Üzerinde Kullanımı](#python-de%C4%9Fi%C5%9Fkenlerinin-bash-%C3%BCzerinde-kullan%C4%B1m%C4%B1)
@@ -239,6 +242,13 @@ sonuc = 7 / 3 # 2.33 atanır
 
 - [Basic Data Types in Python](https://realpython.com/python-data-types/)
 
+### Değişken ve Sabitlerde Gizlilik
+
+- `__` ile gizli anlamında gelmektedir.
+  - Dışarıdan sadece `_<class>.__<değişken>` şeklinde erişilebilir
+
+> Detaylar için [buraya](https://www.bogotobogo.com/python/python_private_attributes_methods.php) bakabilirsin.
+
 ## Operatörler
 
 ### Aritmatik Operatörler
@@ -381,7 +391,14 @@ for sayi in sayilar: # Liste üzerinde döngü ile ilerleme
 print("Toplam değer:", sum) # Toplam Değer: 48
 ```
 
-### İki Liste Üzerinde Paralel For Döngüsü
+#### Değişken içinde For Döngüsü
+
+```py
+values = [item.value for item in Fruit]  # [4, 5, 6]
+values = set(item.value for item in Fruit)  # {4, 5, 6}
+```
+
+#### İki Liste Üzerinde Paralel For Döngüsü
 
 ```py
 for num, cheese, color in zip([1,2,3], ['manchego', 'stilton', 'brie'],
@@ -1162,6 +1179,55 @@ while True:
             print('FPS: {}'.format(frame_count))
             frame_count = 0
             last_time = time.time()
+```
+
+### Kısayol ile Ekran Alanı Seçme
+
+```py
+def draw_dimension(hotkey=None):
+    start_point = end_point = (0, 0)
+
+    def listen_mouse():
+        with mouse.Listener(on_click=on_mouse_click) as mouse_listener:
+            mouse_listener.join()
+
+    def listen_keyboard():
+        with keyboard.Listener(on_press=on_press) as keyboard_listener:
+            keyboard_listener.join()
+
+    def on_mouse_click(x, y, _, pressed):
+        if pressed:
+            nonlocal start_point
+            start_point = x, y
+        else:
+            nonlocal end_point
+            end_point = x, y
+
+            # Dinleyiciyi kapatma
+            return False
+
+    def on_press(key):
+        print("Fare ile seçim yapabilirsiniz.")
+        try:
+            if key == keyboard.Key[hotkey]:
+                listen_mouse()
+                # Dinleyiciyi durdurma
+                return False
+        except KeyError:
+            listen_mouse()
+            return False
+
+    try:
+        text = f"seçmek için '{hotkey}' tuşuna basın ve " if hotkey is not None else ""
+    except KeyError:
+        text = f"seçmek için herhangi bir tuşa basın ve " if hotkey is not None else ""
+
+    print(f"Hazır olduğunuzda yakalanacak alanı {text}fare ile seçin.")
+
+    listen_mouse() if hotkey is None else listen_keyboard()
+    return start_point + end_point
+
+print(draw_dimension(hotkey='ctrl_l'))
 ```
 
 ## Google Colabrotory Üzerinden Python
