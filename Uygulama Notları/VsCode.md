@@ -5,11 +5,10 @@
 - [VsCode kısayolları](#vscode-k%C4%B1sayollar%C4%B1)
 - [Faydalı Eklentiler](#faydal%C4%B1-eklentiler)
   - [Verimlilik Eklentileri](#verimlilik-eklentileri)
-  - [Verimli Kodlama Eklentileri](#verimli-kodlama-eklentileri)
   - [Farkındalık Eklentileri](#fark%C4%B1ndal%C4%B1k-eklentileri)
   - [Görsellik Eklentileri](#g%C3%B6rsellik-eklentileri)
-  - [Programlama Dilleri Eklentileri](#programlama-dilleri-eklentileri)
-  - [Web Programlama Eklentileri](#web-programlama-eklentileri)
+  - [Programlama Eklentileri](#programlama-eklentileri)
+    - [Web Programlama Eklentileri](#web-programlama-eklentileri)
     - [Javascript - Nodejs Eklentileri](#javascript---nodejs-eklentileri)
   - [Proje Yönetimi Eklentileri](#proje-y%C3%B6netimi-eklentileri)
   - [Yapılandırma Eklentileri](#yap%C4%B1land%C4%B1rma-eklentileri)
@@ -36,31 +35,13 @@
 
 ### Verimlilik Eklentileri
 
-| Eklenti                                                                                                                           | Açıklama                                                                                             |
-| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | AI ile en sık kullanılan metodları önerir. 2 kez `CTRL` + `SPACE` yaparsanız detaylarını da gösterir |
-| Scratchpad                                                                                                                        | Anlık derleyiciler                                                                                   |
-| [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)                             | Markdown için gerekli tüm içeriklere, kısayollara ve formatlayıcıya sahip                            |
-| [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)                                | Markdown hatalarının altını çizme ve uyarma                                                          |
-| [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)                                      | Editör üzerinden projeleri derleme & çalıştırma                                                      |
-| [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)                       | Dosya yollarını yazarken yardımcı olur                                                               |
-| [vscode-spotify](https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify)                                 | Spotify ile müzik desteği                                                                            |
-| [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)                                     | JSON'ı koda uyarlama                                                                                 |
-| [Visual Studio Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings)                              | Kısayollar üzerine bir eklenti                                                                       |
-| [Open File](https://marketplace.visualstudio.com/items?itemName=Fr43nk.seito-openfile)                                            | Yolu verilen dosyayı vscode içinde açma                                                              |
-| *Code Snippets*                                                                                                                   | Dil'e özel anahtar kelimeler ile kod tamamlama                                                       |
-| [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)                                      | Panodan resim kopyalama                                                                              |
-| Fire Code                                                                                                                         | == >= gibi simgeler yerine alışkın olduğumuz elle yazılan simgeler gelir                             |
-| [30 seconds of code](https://marketplace.visualstudio.com/items?itemName=30-seconds.30-seconds-of-code)                           | Code snippet'leri                                                                                    |
+| Eklenti                                                                                                         | Açıklama                       |
+| --------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| Scratchpad                                                                                                      | Anlık derleyiciler             |
+| [vscode-spotify](https://marketplace.visualstudio.com/items?itemName=shyykoserhiy.vscode-spotify)               | Spotify ile müzik desteği      |
+| [Visual Studio Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings)            | Kısayollar üzerine bir eklenti |
+| [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | İmla kontrolü                  |
 
-### Verimli Kodlama Eklentileri
-
-| Eklenti                                                                                                         | Açıklama                        |
-| --------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)                       | Bellek kullanımını gösterir     |
-| [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | İmla kontrolü                   |
-| [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)         | Kod formatlama ve güzelleştirme |
-| [jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint)                                   | Javascript imla kontrolcüsü     |
 
 ### Farkındalık Eklentileri
 
@@ -74,19 +55,27 @@
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | [Sublime Material Theme](https://marketplace.visualstudio.com/items?itemName=jprestidge.theme-material-theme)     | Sublime Editörün temaları       |
 | [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)              | Dosya ikon teması               |
-| [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)              | Popüler tema seti               |
 | [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)            | En sık kullanılan karanlık tema |
+| [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)              | Popüler tema seti               |
 | [Base16 Tomorrow Dark+](https://marketplace.visualstudio.com/items?itemName=Shurelia.base16-tomorrow-dark-vscode) | Karanlık tema                   |
 | [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)               | Karanlık bir tema               |
 
-### Programlama Dilleri Eklentileri
+### Programlama Eklentileri
 
-| Eklenti                                                                      | Açıklama                                 |
-| ---------------------------------------------------------------------------- | ---------------------------------------- |
-| [Matlab](https://marketplace.visualstudio.com/items?itemName=Gimly81.matlab) | Matlab                                   |
-| [Java](https://marketplace.visualstudio.com/items?itemName=redhat.java)      | Language Support for Java(TM) by Red Hat |
+| Eklenti                                                                                                                             | Açıklama                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [Visual Studio IntelliCode - Preview ☆](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | AI ile en sık kullanılan metodları önerir. 2 kez `CTRL` + `SPACE` yaparsanız detaylarını da gösterir |
+| [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)                                        | Editör üzerinden projeleri derleme & çalıştırma                                                      |
+| [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)                         | Dosya yollarını yazarken yardımcı olur                                                               |
+| [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)                                       | JSON'ı koda uyarlama                                                                                 |
+| [Open File](https://marketplace.visualstudio.com/items?itemName=Fr43nk.seito-openfile)                                              | Yolu verilen dosyayı vscode içinde açma                                                              |
+| *Code Snippets*                                                                                                                     | Dil'e özel anahtar kelimeler ile kod tamamlama                                                       |
+| Fire Code                                                                                                                           | == >= gibi simgeler yerine alışkın olduğumuz elle yazılan simgeler gelir                             |
+| [30 seconds of code](https://marketplace.visualstudio.com/items?itemName=30-seconds.30-seconds-of-code)                             | Code snippet'leri                                                                                    |
+| [Matlab](https://marketplace.visualstudio.com/items?itemName=Gimly81.matlab)                                                        | Matlab                                                                                               |
+| [Java](https://marketplace.visualstudio.com/items?itemName=redhat.java)                                                             | Language Support for Java(TM) by Red Hat                                                             |
 
-### Web Programlama Eklentileri
+#### Web Programlama Eklentileri
 
 | Eklenti                                                                                                                         | Açıklama                                     |
 | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
@@ -100,11 +89,13 @@
 | Eklenti                                                                                                          | Açıklama                                                                                |
 | ---------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)                         | Anlık derleyici ve hata ayıklama ([video](https://www.youtube.com/watch?v=eyzO1xPI6_k)) |
-| [Babel Javascript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)        | ES6 tipinde yazmayı sağlar                                                              |
-| [Rest Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)                             | GET - POST gibi istekleri atmayı sağlar                                                 |
-| [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)                             | JS için imla kontrolcüsü                                                                |
+| [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)          | Kod formatlama ve güzelleştirme                                                         |
 | [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) | Kod kısayolları                                                                         |
+| [Babel Javascript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)        | ES6 tipinde yazmayı sağlar                                                              |
 | [npm Intellisese](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)         | NPM modüllerini önerir                                                                  |
+| [jshint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint)                                    | Javascript imla kontrolcüsü                                                             |
+| [Eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)                             | JS için imla kontrolcüsü                                                                |
+| [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)                        | Bellek kullanımını gösterir                                                             |
 
 ### Proje Yönetimi Eklentileri
 
@@ -127,6 +118,8 @@
 | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) | Markdown için gerekli tüm içeriklere, kısayollara ve formatlayıcıya sahip |
 | [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)    | Markdown hatalarının altını çizme ve uyarma                               |
+| [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)                | Markdown'u PDF'e çevirme                                                  |
+| [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)          | Panodan resim kopyalama                                                   |
 
 ## Editör ayarları
 
@@ -152,20 +145,22 @@ Değişkenlerin kullanım şekilleri:
 ```json
 {
     "telemetry.enableTelemetry": false,
-    "window.menuBarVisibility": "toggle",
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
-    "window.titleBarStyle": "custom",
-    "editor.fontFamily": "Consolas, 'Courier New', monospace",
-    "editor.fontSize": 13.7,
-    "editor.fontWeight": "500",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Sublime Material Theme - Dark",
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Roboto Mono", // https://fonts.google.com/specimen/Roboto+Mono
+    "editor.fontWeight": "400",
     "editor.tabSize": 2,
-    "prettier.printWidth": 120,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#030514",
+        "activityBarBadge.background": "#210864",
+        "editor.background": "#18181f",
+        "sideBar.background": "#10111a",
+        "tab.activeBackground": "#0f0e24",
+    },
+    "workbench.colorTheme": "Sublime Material Theme - Dark"
 }
 ```
 
