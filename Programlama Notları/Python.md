@@ -59,6 +59,7 @@
     - [Map ile Lambda Kullanımı](#map-ile-lambda-kullan%C4%B1m%C4%B1)
 - [Global, Local ve Nonlocal Kavramları](#global-local-ve-nonlocal-kavramlar%C4%B1)
   - [Global, Local ve Nonlocal Kavramlarına Örnek](#global-local-ve-nonlocal-kavramlar%C4%B1na-%C3%B6rnek)
+  - [Global Kullanımına Örnek](#global-kullan%C4%B1m%C4%B1na-%C3%B6rnek)
 - [Modüller](#mod%C3%BCller)
   - [Modül Kullanım Örnekleri](#mod%C3%BCl-kullan%C4%B1m-%C3%B6rnekleri)
   - [Python Modül Dosyaları](#python-mod%C3%BCl-dosyalar%C4%B1)
@@ -661,10 +662,22 @@ x = 5 # Global
 def fonksiyonum():
   x = 3 # Nonlocal
   
-
   def degisitirici():
     x = 1 # Local
+```
 
+### Global Kullanımına Örnek
+
+```py
+x = 5
+  # Yerel x değişkenine 3 değeri atanır, evrensel x değişmez.
+  def xDegistir():
+    x = 3
+  
+  # Evrensel x değişir
+  def globalXDegistir():
+    global x
+    x = 4
 ```
 
 ## Modüller
@@ -785,12 +798,12 @@ from Game.Level.start import select_difficulty
 
 #### Windows Paketleri
 
-| Modül                                                                         | Odaklandığı İşlemler                                                |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [pywinauto ☆](https://pywinauto.readthedocs.io/en/latest/index.html)          | Önplanda olmasalar dahi windows uygulamaları (pywin32'i barındırır) |
-| [pygetwindow](https://github.com/asweigart/PyGetWindow)                       | Basit windows pencereleri                                           |
-| [pywin32](http://timgolden.me.uk/pywin32-docs/contents.html)                  | Resmi windows API (pencere dahil)                                   |
-| [PyAutoGui](https://media.readthedocs.org/pdf/pyautogui/latest/pyautogui.pdf) | Arayüz, fare, klavye ...                                            |
+| Modül       | Odaklandığı İşlemler                                                | Dökümanlar                                                                                                                                               |
+| ----------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| pywinauto ☆ | Önplanda olmasalar dahi windows uygulamaları (pywin32'i barındırır) | [🌐](https://pywinauto.readthedocs.io/en/latest/index.html)                                                                                              |
+| pygetwindow | Windows pencereleri (basit)                                         | [🌐](https://github.com/asweigart/PyGetWindow)                                                                                                           |
+| pywin32     | Resmi windows API (pencere dahil)                                   | [🌐](http://timgolden.me.uk/pywin32-docs/contents.html) [📺]([https://www.youtube.com/watch?v=o-k6l6ea3Lg](https://www.youtube.com/watch?v=o-k6l6ea3Lg)) |
+| pyautogui   | Arayüz, fare, klavye ...                                            | [📃](https://media.readthedocs.org/pdf/pyautogui/latest/pyautogui.pdf)                                                                                   |
 
 #### Giriş Çıkış (I/O) Kontrol Paketleri
 
