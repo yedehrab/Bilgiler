@@ -15,6 +15,7 @@
 - [Harici Linkler](#harici-linkler)
 - [Yapılacaklar](#yap%C4%B1lacaklar)
 - [Çalışma Notları](#%C3%A7al%C4%B1%C5%9Fma-notlar%C4%B1)
+- [Karma Bilgiler](#karma-bilgiler)
 - [Teferruatlar](#teferruatlar)
 
 İçeriklerin işaretlenmiş (*indexed*) hallerini aşağıda görebilirsin.
@@ -102,6 +103,10 @@
 ## Çalışma Notları
 
 - Önce sabit değerli yaz, sonrasında `CTRL`+ `F` ile sabitleri değişken haline dönüştür
+
+## Karma Bilgiler
+
+- [The Best Font for Resume](https://www.businessnewsdaily.com/5331-best-resume-fonts.html)
 
 ## Teferruatlar
 
