@@ -9,7 +9,8 @@
 - [Terimler](#terimler)
   - [Kavramlar](#kavramlar)
   - [Değişken Terimleri](#de%C4%9Fi%C5%9Fken-terimleri)
-- [Geliştirici Platformları](#geli%C5%9Ftirici-platformlar%C4%B1)
+- [Platformlar](#platformlar)
+  - [Google Summer of Code](#google-summer-of-code)
 - [Yazı Fontları](#yaz%C4%B1-fontlar%C4%B1)
 
 ## Adlandırma Yapısı
@@ -56,13 +57,24 @@ Yazılımda kullanılan terimler
 | ------ | ---------------- | ------------------------------------------------------- |
 | Flag   | Bayrak           | Varlık (evet, hayır) değeri tutan değişkenler - Booelan |
 
-## Geliştirici Platformları
+## Platformlar
 
 | Platform                                                                     | Açıklama                |
 | ---------------------------------------------------------------------------- | ----------------------- |
 | [Github](https://github.com/), [Gitlab](https://gitlab.com/)                 | Kaynak kod paylaşımı    |
 | [Read The Docs](https://readthedocs.org/)                                    | Döküman paylaşımı       |
 | [StackOverflow](https://stackoverflow.com/), [Quora](https://www.quora.com/) | Soru cevap platformları |
+
+### Google Summer of Code
+
+Resmi sitesi için [buraya](https://summerofcode.withgoogle.com/) bakabilirsin.
+
+- Bir mentörünüz ve bir projeniz oluyor
+  - Proje fikriniz yoksa fikir de önermekteler
+- Para desteği de sağlanıyor
+- Yaz boyunca onunla uğraşıyorsunuz
+
+> Uzaktan işleyen bir sistemdir.
 
 ## Yazı Fontları
 

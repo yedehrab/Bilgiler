@@ -33,7 +33,7 @@
 - [React](Programlama%20Notlar%C4%B1/React.md)
 - [Web Programlama](Programlama%20Notlar%C4%B1/Web%20Programlama.md)
 - [Nodejs](Programlama%20Notlar%C4%B1/Nodejs.md)
-- [Gerekli Ön Bilgiler](Programlama%20Notlar%C4%B1/Gerekli%20%C3%96n%20Bilgiler.md)
+- [Genel Bilgiler](Programlama%20Notlar%C4%B1/Genel%20Bilgiler.md)
 
 ## Yazılım Notları
 
