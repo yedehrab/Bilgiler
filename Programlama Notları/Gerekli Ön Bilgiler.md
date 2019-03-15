@@ -1,11 +1,23 @@
-# Karma Notlar
+# Karma Notlar <!-- omit in toc -->
+
+## İçerikler <!-- omit in toc -->
+
+> `Home` tuşu ile yukarı yönelebilirisin.
+
+- [Adlandırma Yapısı](#adland%C4%B1rma-yap%C4%B1s%C4%B1)
+  - [Adlandırma Örnekleri](#adland%C4%B1rma-%C3%B6rnekleri)
+- [Terimler](#terimler)
+  - [Kavramlar](#kavramlar)
+  - [Değişken Terimleri](#de%C4%9Fi%C5%9Fken-terimleri)
+- [Geliştirici Platformları](#geli%C5%9Ftirici-platformlar%C4%B1)
+- [Yazı Fontları](#yaz%C4%B1-fontlar%C4%B1)
 
 ## Adlandırma Yapısı
 
 Fare ile çift tıklandığında metinler içerdikleri karakterlere göre seçilir.
 
-- `-` ile parçalı oluşturursunuz
-- `_` ile uzun metinler oluştururusunuz
+- `-` `(tire)` ile parçalı oluşturursunuz
+- `_ (alt tire)` ile uzun metinler oluştururusunuz
 
 ### Adlandırma Örnekleri
 
@@ -46,8 +58,15 @@ Yazılımda kullanılan terimler
 
 ## Geliştirici Platformları
 
-| Platform                                                     | Açıklama             |
-| ------------------------------------------------------------ | -------------------- |
-| [Github](https://github.com/), [Gitlab](https://gitlab.com/) | Kaynak kod paylaşımı |
-| [Read The Docs](https://readthedocs.org/)                    | Döküman paylaşımı    |
+| Platform                                                                     | Açıklama                |
+| ---------------------------------------------------------------------------- | ----------------------- |
+| [Github](https://github.com/), [Gitlab](https://gitlab.com/)                 | Kaynak kod paylaşımı    |
+| [Read The Docs](https://readthedocs.org/)                                    | Döküman paylaşımı       |
 | [StackOverflow](https://stackoverflow.com/), [Quora](https://www.quora.com/) | Soru cevap platformları |
+
+## Yazı Fontları
+
+| Font        | Özelliği                                                                             | Bağlantılar                                                                                                                 |
+| ----------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| Fira Code   | Programlama dilleri için geliştirilmiş != gibi karakterleri değildir olarak gösterir | [🌐](https://github.com/tonsky/FiraCode) [⬇](https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip) |
+| Roboto Mono | Android varsayılan fontunun kodlama için yapılmış hali                               | [🌐](https://fonts.google.com/specimen/Roboto+Mono)                                                                         |
