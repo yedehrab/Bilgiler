@@ -114,12 +114,14 @@
 
 ### Markdown Eklentileri
 
-| Eklenti                                                                                               | Açıklama                                                                  |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) | Markdown için gerekli tüm içeriklere, kısayollara ve formatlayıcıya sahip |
-| [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)    | Markdown hatalarının altını çizme ve uyarma                               |
-| [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)                | Markdown'u PDF'e çevirme                                                  |
-| [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)          | Panodan resim kopyalama                                                   |
+| Eklenti                                                                                                    | Açıklama                                                                  |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)      | Markdown için gerekli tüm içeriklere, kısayollara ve formatlayıcıya sahip |
+| [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)         | Markdown hatalarının altını çizme ve uyarma                               |
+| [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)                     | Markdown'u PDF'e çevirme                                                  |
+| [MarkDown To-Do](https://marketplace.visualstudio.com/items?itemName=TomasHubelbauer.vscode-markdown-todo) | Yapılacaklar listesini gösteren arayüz                                    |
+| [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)               | Panodan resim kopyalama                                                   |
+
 
 ## Editör ayarları
 
