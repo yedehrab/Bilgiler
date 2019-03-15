@@ -12,6 +12,7 @@ Colab üzerinde kullanılan komutların (IPython) dökümanı için [buraya](htt
   - [Colab'a Dosya Upload Etme](#colaba-dosya-upload-etme)
   - [Colab'tan Dosya İndirme](#colabtan-dosya-i%CC%87ndirme)
   - [Colab'tan Dizin İndirme](#colabtan-dizin-i%CC%87ndirme)
+    - [Dizin İndirme Arayüzü](#dizin-i%CC%87ndirme-aray%C3%BCz%C3%BC)
 - [Colab Üzerinde Google Drive](#colab-%C3%BCzerinde-google-drive)
   - [Drive Dosyalarını Dosya Sistemine Bağlama](#drive-dosyalar%C4%B1n%C4%B1-dosya-sistemine-ba%C4%9Flama)
   - [Drive Dosyalarına Erişme](#drive-dosyalar%C4%B1na-eri%C5%9Fme)
@@ -83,6 +84,22 @@ files.download('example.txt')
 
 from google.colab import files
 files.download("/content/file.zip")
+```
+
+#### Dizin İndirme Arayüzü
+
+```py
+#@title Dizin İndirme Arayüzü
+FILE_PATH_TO_ZIP = "content" #@param {type:"string"}
+OUTPUT_PATH = "content/output" #@param {type:"string"}
+
+from google.colab import files
+
+!zip -r '/{OUTPUT_PATH}.zip'  "/{FILE_PATH_TO_ZIP}"
+
+files.download(f'/{OUTPUT_PATH}.zip')
+
+!rm -rf '/{OUTPUT_PATH}.zip'
 ```
 
 ## Colab Üzerinde Google Drive
