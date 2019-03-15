@@ -90,16 +90,23 @@ files.download("/content/file.zip")
 
 ```py
 #@title Dizin İndirme Arayüzü
-FILE_PATH_TO_ZIP = "content" #@param {type:"string"}
-OUTPUT_PATH = "content/output" #@param {type:"string"}
+INDIRILECEK_DIZININ_YOLU = "sample_data" #@param {type:"string"}
 
 from google.colab import files
 
-!zip -r '/{OUTPUT_PATH}.zip'  "/{FILE_PATH_TO_ZIP}"
+# Dizin adını alma
+folder_name = INDIRILECEK_DIZININ_YOLU.split('/').pop()
 
-files.download(f'/{OUTPUT_PATH}.zip')
+# Gerekli dosyaları oluşturma
+!cp -r "/{INDIRILECEK_DIZININ_YOLU}" "/content"
+!zip -r '{folder_name}.zip'  "{folder_name}"
 
-!rm -rf '/{OUTPUT_PATH}.zip'
+# İndirme işlemini başlatma
+files.download(f'{folder_name}.zip')
+
+# Geçici dosyaları temizleme
+!rm -rf '{folder_name}.zip'
+!rm -rf '{folder_name}'
 ```
 
 ## Colab Üzerinde Google Drive
