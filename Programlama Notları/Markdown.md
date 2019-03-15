@@ -12,6 +12,7 @@ Ek kaynak için [buraya](https://github.com/adam-p/markdown-here/wiki/Markdown-C
     - [Kullanım Kodu](#kullan%C4%B1m-kodu)
     - [Örnek Çıktı](#%C3%B6rnek-%C3%A7%C4%B1kt%C4%B1)
 - [VsCode için Faydalı Eklentiler](#vscode-i%C3%A7in-faydal%C4%B1-eklentiler)
+- [Faydalı Siteler](#faydal%C4%B1-siteler)
 - [Kaynaklar](#kaynaklar)
 
 ## Kullanım Örnekleri
@@ -32,29 +33,29 @@ Detaylar için [buraya](https://guides.github.com/features/mastering-markdown/) 
 
 ```markdown
 | Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
+| -------- | :-----------: | ----: |
+| col 1 is | left-aligned  | $1600 |
+| col 2 is |   centered    |   $12 |
 | col 3 is | right-aligned |    $1 |
 ```
 
 | Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
+| -------- | :-----------: | ----: |
+| col 1 is | left-aligned  | $1600 |
+| col 2 is |   centered    |   $12 |
 | col 3 is | right-aligned |    $1 |
 
 ### Bağlantı Verme
 
 Link işlemleri için bilgiler. Kaynak için [buraya](https://css-tricks.com/snippets/html/mailto-links/) tıklayabilirsin.
 
-| İstek | Anahtar |
-|-------|---------|
-| Site | <https://...> |
-| Mail | <mailto:...> |
-| Telefon | <tel:> |
-| Aynı dizinden | ./... |
-| Bir üst dizinden | ../... |
+| İstek            | Anahtar       |
+| ---------------- | ------------- |
+| Site             | <https://...> |
+| Mail             | <mailto:...>  |
+| Telefon          | <tel:>        |
+| Aynı dizinden    | ./...         |
+| Bir üst dizinden | ../...        |
 
 > Bağlantı verme işlemlerinde özel karakter kullanmak için kodlama yapmanız gerekmekte. Kodlama yapan online site için [buraya](https://www.urlencoder.org/) tıklaytabilirsin. Siteye yol verini kopyalayıp *encoded* demeniz yeterli
 
@@ -72,10 +73,14 @@ Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Y
 
 ## VsCode için Faydalı Eklentiler
 
-> Detayalar için uygulama notlarındaki [VsCode](../Uygulama%20Notlar%C4%B1/VsCode.md) yazıma bakabilirsin.
+> Detayalar için uygulama notlarındaki [VsCode](../Uygulama%20Notlar%C4%B1/VsCode.md#markdown-eklentileri) yazıma bakabilirsin.
 
-- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+## Faydalı Siteler
+
+| Site                                       | Açıklama                   |
+| ------------------------------------------ | -------------------------- |
+| [Url Encoder](https://www.urlencoder.org/) | Link URL'leri oluşturma    |
+| [StackEdit](https://stackedit.io)          | Çevrimiçi markdown editörü |
 
 ## Kaynaklar
 
