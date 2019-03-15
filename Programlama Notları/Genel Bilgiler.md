@@ -4,6 +4,7 @@
 
 > `Home` tuşu ile yukarı yönelebilirisin.
 
+- [Diller Arasındaki Bağlantı](#diller-aras%C4%B1ndaki-ba%C4%9Flant%C4%B1)
 - [Adlandırma Yapısı](#adland%C4%B1rma-yap%C4%B1s%C4%B1)
   - [Adlandırma Örnekleri](#adland%C4%B1rma-%C3%B6rnekleri)
 - [Terimler](#terimler)
@@ -12,6 +13,10 @@
 - [Platformlar](#platformlar)
   - [Google Summer of Code](#google-summer-of-code)
 - [Yazı Fontları](#yaz%C4%B1-fontlar%C4%B1)
+
+## Diller Arasındaki Bağlantı
+
+![lang_network](../images\lang_network.jpg)
 
 ## Adlandırma Yapısı
 
