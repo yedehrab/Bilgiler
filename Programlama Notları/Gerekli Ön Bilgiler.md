@@ -70,3 +70,5 @@ Yazılımda kullanılan terimler
 | ----------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
 | Fira Code   | Programlama dilleri için geliştirilmiş != gibi karakterleri değildir olarak gösterir | [🌐](https://github.com/tonsky/FiraCode) [⬇](https://github.com/tonsky/FiraCode/releases/download/1.206/FiraCode_1.206.zip) |
 | Roboto Mono | Android varsayılan fontunun kodlama için yapılmış hali                               | [🌐](https://fonts.google.com/specimen/Roboto+Mono)                                                                         |
+
+> Fira Code için `Enable font ligaratures` ayarını aktif etmeniz gerekmekte. Aksi halde `!=`, `>=` gibi karakteri birleştiremez.
