@@ -24,6 +24,7 @@ Sık kullanılan işletim sistemi notlarım.
     - [CMD Döngü Kullanımı](#cmd-d%C3%B6ng%C3%BC-kullan%C4%B1m%C4%B1)
     - [CMD Dosyaları Ardışık olarak adlandırma](#cmd-dosyalar%C4%B1-ard%C4%B1%C5%9F%C4%B1k-olarak-adland%C4%B1rma)
 - [PowerShell Kullanımı](#powershell-kullan%C4%B1m%C4%B1)
+- [Windows için Paket Yöneticisi](#windows-i%C3%A7in-paket-y%C3%B6neticisi)
 - [Özelleştirmelerim](#%C3%B6zelle%C5%9Ftirmelerim)
   - [CMD Düzeni](#cmd-d%C3%BCzeni)
   - [Tema Düzeni](#tema-d%C3%BCzeni)
@@ -60,7 +61,9 @@ Siteye girdiğinizde sırasıyla alttaki ayarları açamınız | seçmeniz gerek
 
 ## Kısayollar
 
-> Bu kısayollar tüm ekranlara baskınkın, her yerde çalışır.
+Windowsun bize sunduğu nu kısayollar tüm ekranlara baskındır, her yerde çalışır.
+
+> Kısayollarını kendin düzenlemek istersen [AutoHotkey](https://www.autohotkey.com) adlı uygulamayı kullanabilirsin.
 
 ### Uygulama İşlemleri
 
@@ -200,6 +203,15 @@ ren *.new *.<yeni_dosya_uzantısı>
 ## PowerShell Kullanımı
 
 İlgili dökümana [buraya](Windows10%20Kaynaklar%C4%B1\Windows%20PowerShell%20Tutorial%20for%20Beginners.pdf) tıklayarak erişebilirsin.
+
+## Windows için Paket Yöneticisi
+
+Windows için popüler olan **Chocolatey** paket yöneticisi, powershell üzerinden `choco install <paket>` komutuyla yükleme yapmanızı sağlar.
+
+
+- Resmi sitesine [buraya](https://chocolatey.org/) tıklayarak erişebilirsin.
+- Başlangıç videosu için [buraya](https://www.youtube.com/watch?v=hfgZYpo5moA) bakabilirsin
+- Yükleyebileceğin paketler için [buraya](https://chocolatey.org/packages) bakabilirsin
 
 ## Özelleştirmelerim
 
