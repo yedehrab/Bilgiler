@@ -6,6 +6,8 @@
 
 - [Paket Yönetimi](#paket-y%C3%B6netimi)
   - [Paketler ve Açıklamaları](#paketler-ve-a%C3%A7%C4%B1klamalar%C4%B1)
+    - [Normal Paketler](#normal-paketler)
+    - [Geliştirici Paketleri](#geli%C5%9Ftirici-paketleri)
   - [NPM Kullanım Yapısı](#npm-kullan%C4%B1m-yap%C4%B1s%C4%B1)
   - [Paket Kurulum Örnekleri](#paket-kurulum-%C3%B6rnekleri)
 - [Ortam Değişkenleri](#ortam-de%C4%9Fi%C5%9Fkenleri)
@@ -31,15 +33,26 @@ Paket kurulumları `npm` komutu yardımıyla yapılır.
 
 ### Paketler ve Açıklamaları
 
-| Paket    | Açıklama                                      | Kurulum |
-| -------- | --------------------------------------------- | ------- |
-| nodemon  | Hata ve değişiklik durumunda otomatik derleme | Dev     |
-| exporess | Sunucu işlemlerinnde kolaylık sağlar          | Normal  |
-| colors   | Consola renkli çıktılar yazma                 | Normal  |
+Paketler NPM ile `npm install <paket>` komutu yardımıyla indirilir.
 
 - **Normal kurulum:** Ön ek gerektirmez
 - **Global kurulum:** `-g` ön eki ile yapılır
 - **Dev kurulum:** `--save-dev` son eki ile yapılır
+
+#### Normal Paketler
+
+| Paket    | Açıklama                                      | Bağlantılar |
+| -------- | --------------------------------------------- | ----------- |
+| nodemon  | Hata ve değişiklik durumunda otomatik derleme |             |
+| exporess | Sunucu işlemlerinnde kolaylık sağlar          |             |
+| colors   | Consola renkli çıktılar yazma                 |             |
+| faker    | Rastgele veri oluşturmayı sağlar              | [🌐](https://cdn.rawgit.com/Marak/faker.js/master/examples/browser/index.html) [👁](https://github.com/marak/Faker.js/) [📥](https://www.npmjs.com/package/faker)            |
+
+#### Geliştirici Paketleri
+
+ | Paket   | Açıklama                                      |
+ | ------- | --------------------------------------------- |
+ | nodemon | Hata ve değişiklik durumunda otomatik derleme |
 
 ### NPM Kullanım Yapısı
 
