@@ -10,7 +10,6 @@ Ek kaynak için [buraya](https://github.com/adam-p/markdown-here/wiki/Markdown-C
   - [Tablo Oluşturma](#tablo-olu%C5%9Fturma)
   - [Bağlantı Verme](#ba%C4%9Flant%C4%B1-verme)
     - [Kullanım Kodu](#kullan%C4%B1m-kodu)
-    - [Örnek Çıktı](#%C3%B6rnek-%C3%A7%C4%B1kt%C4%B1)
 - [VsCode için Faydalı Eklentiler](#vscode-i%C3%A7in-faydal%C4%B1-eklentiler)
 - [Faydalı Siteler](#faydal%C4%B1-siteler)
 - [Kaynaklar](#kaynaklar)
@@ -67,9 +66,7 @@ Link işlemleri için bilgiler. Kaynak için [buraya](https://css-tricks.com/sni
 Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Yapısı) tıklayın.
 ```
 
-#### Örnek Çıktı
-
-*Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Yapısı) tıklayın.*
+Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Yapısı) tıklayın.
 
 ## VsCode için Faydalı Eklentiler
 
