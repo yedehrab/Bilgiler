@@ -122,7 +122,6 @@
 | [MarkDown To-Do](https://marketplace.visualstudio.com/items?itemName=TomasHubelbauer.vscode-markdown-todo) | Yapılacaklar listesini gösteren arayüz                                    |
 | [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)               | Panodan resim kopyalama                                                   |
 
-
 ## Editör ayarları
 
 > Sol alt köşedeki `ayarlar` simgesi -> Sağ üst köşedeki `{}` simgesine tıklayıp oraya bunlardan istediklerini kopyalayabilirsin.
