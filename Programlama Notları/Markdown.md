@@ -10,6 +10,7 @@ Ek kaynak için [buraya](https://github.com/adam-p/markdown-here/wiki/Markdown-C
   - [Tablo Oluşturma](#tablo-olu%C5%9Fturma)
   - [Bağlantı Verme](#ba%C4%9Flant%C4%B1-verme)
     - [Kullanım Kodu](#kullan%C4%B1m-kodu)
+  - [Matematik Denklemleri](#matematik-denklemleri)
 - [VsCode için Faydalı Eklentiler](#vscode-i%C3%A7in-faydal%C4%B1-eklentiler)
 - [Faydalı Siteler](#faydal%C4%B1-siteler)
 - [Kaynaklar](#kaynaklar)
@@ -68,6 +69,10 @@ Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Y
 
 Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Yapısı) tıklayın.
 
+### Matematik Denklemleri
+
+Detaylı bilgi için [buraya](https://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/) bakabilirsin.
+
 ## VsCode için Faydalı Eklentiler
 
 > Detayalar için uygulama notlarındaki [VsCode](../Uygulama%20Notlar%C4%B1/VsCode.md#markdown-eklentileri) yazıma bakabilirsin.
@@ -82,3 +87,4 @@ Boşluklu örnek olan Tablo Oluşturma alanına gitmek için [buraya](#MySQL%20Y
 ## Kaynaklar
 
 - <https://html.com/attributes/a-href/>
+- 
