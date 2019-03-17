@@ -89,4 +89,3 @@ Detaylı bilgi için [buraya](https://csrgxtu.github.io/2015/03/20/Writing-Mathe
 ## Kaynaklar
 
 - <https://html.com/attributes/a-href/>
-- 
