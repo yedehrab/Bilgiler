@@ -834,7 +834,6 @@ from Game.Level.start import select_difficulty
 - [Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
 - [PyAutoGUI vs Pywinauto](https://www.reddit.com/r/Python/comments/8bymeo/pyautogui_vs_pywinauto/)
 
-
 ## Sayılar, Sayılar Arası Dönüşüm ve Matematik
 
 ### Tabanlı Sayılar
