@@ -71,6 +71,7 @@
   - [Paketten ve Modül Örnekleri](#paketten-ve-mod%C3%BCl-%C3%B6rnekleri)
   - [Sık Kullanılan Paketler](#s%C4%B1k-kullan%C4%B1lan-paketler)
     - [Windows Paketleri](#windows-paketleri)
+    - [Görüntü İşleme Paketleri](#g%C3%B6r%C3%BCnt%C3%BC-i%CC%87%C5%9Fleme-paketleri)
     - [Giriş Çıkış (I/O) Kontrol Paketleri](#giri%C5%9F-%C3%A7%C4%B1k%C4%B1%C5%9F-io-kontrol-paketleri)
   - [Paketler için Harici Bağlantıları](#paketler-i%C3%A7in-harici-ba%C4%9Flant%C4%B1lar%C4%B1)
 - [Sayılar, Sayılar Arası Dönüşüm ve Matematik](#say%C4%B1lar-say%C4%B1lar-aras%C4%B1-d%C3%B6n%C3%BC%C5%9F%C3%BCm-ve-matematik)
@@ -102,6 +103,7 @@
 - [Ortam Değişkenleri](#ortam-de%C4%9Fi%C5%9Fkenleri)
   - [PyCharm Uygulmasında Ortam Değişkeni Tanımlama](#pycharm-uygulmas%C4%B1nda-ortam-de%C4%9Fi%C5%9Fkeni-tan%C4%B1mlama)
 - [Harici Kaynaklar](#harici-kaynaklar)
+- [Yapılacaklar](#yap%C4%B1lacaklar)
 
 ## Kurulum
 
@@ -822,6 +824,14 @@ from Game.Level.start import select_difficulty
 | pywin32     | Resmi windows API (pencere dahil)                                   | [🌐](http://timgolden.me.uk/pywin32-docs/contents.html) [📺]([https://www.youtube.com/watch?v=o-k6l6ea3Lg](https://www.youtube.com/watch?v=o-k6l6ea3Lg)) [📥](https://pypi.org/project/pywin32/) |
 | pyautogui   | Arayüz, fare, klavye ...                                            | [📃](https://media.readthedocs.org/pdf/pyautogui/latest/pyautogui.pdf) [📺](https://www.youtube.com/watch?v=xOfBezEDZ24)                                                                         |
 
+#### Görüntü İşleme Paketleri
+
+| Modül       | Açılkama                 | Dökümanlar                                                       |
+| ----------- | ------------------------ | ---------------------------------------------------------------- |
+| pillow      | Python resim kütüphanesi |                                                                  |
+| opencv      | Görüntü işleme           | [📃](https://docs.opencv.org/3.0-last-rst/opencv_cheatsheet.pdf) |
+| pytesseract | Görüntüdeki yazıyı bulma | [🌐](https://pypi.org/project/pytesseract/)                      |
+
 #### Giriş Çıkış (I/O) Kontrol Paketleri
 
 | Paket  | Odaklanığı İşlemler | Dökümanlar                                                                                                                                                                  |
@@ -1299,3 +1309,8 @@ Google Colabrotory `IPython` modülünü kullanmaktadır.
 - [Get window position & size with python](https://stackoverflow.com/a/7142360/9770490)
 - [Python inactive screen capture](https://stackoverflow.com/a/52314641/9770490)
 - [Computer Screen Recording using Python & OpenCV](https://www.youtube.com/watch?v=GWdrL8dt1xQ)
+
+## Yapılacaklar
+
+- [ ] Thread ve Timer eklenecek
+  - [Link1](http://ysar.net/python/threading.html), [Link2](https://stackoverflow.com/questions/474528/what-is-the-best-way-to-repeatedly-execute-a-function-every-x-seconds-in-python), [Link3](https://stackoverflow.com/questions/33473899/how-set-a-loop-that-repeats-at-a-certain-interval-in-python), [Link4](https://daanlenaerts.com/blog/2015/07/04/python-3-4-execute-function-every-five-seconds/)

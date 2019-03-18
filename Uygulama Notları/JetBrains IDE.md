@@ -18,6 +18,7 @@
   - [Dictionaries](#dictionaries)
   - [Spellcheck Kaldırma](#spellcheck-kald%C4%B1rma)
 - [Karma Notlar](#karma-notlar)
+- [Yapılacaklar](#yap%C4%B1lacaklar)
 
 ## Kısayolar
 
@@ -129,3 +130,8 @@ Dillere özgü sözlükleri indirmek için [buraya](https://drive.google.com/ope
 - [DataGrip](https://www.jetbrains.com/datagrip/)
 
 > Sayfa başındaki işaretçilere yönlenmek için [buraya](#Y%C3%B6nlendirme) tıklayabilirsin.
+
+## Yapılacaklar
+
+- [ ] PyCharm Env Variable
+  - [Link1](https://stackoverflow.com/a/42708476/9770490)
