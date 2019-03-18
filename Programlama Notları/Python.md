@@ -94,7 +94,7 @@
       - [Argüman Action Özelliği](#arg%C3%BCman-action-%C3%B6zelli%C4%9Fi)
 - [Kod Parçaları (Code Snippet)](#kod-par%C3%A7alar%C4%B1-code-snippet)
   - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
-  - [Ekran Görünüsünü Alma](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma)
+  - [Ekran Görünüsünü Alma ve Kaydetme](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma-ve-kaydetme)
   - [Kısayol ile Ekran Alanı Seçme](#k%C4%B1sayol-ile-ekran-alan%C4%B1-se%C3%A7me)
 - [Google Colabrotory Üzerinden Python](#google-colabrotory-%C3%BCzerinden-python)
   - [IPython Operatorleri](#ipython-operatorleri)
@@ -820,7 +820,7 @@ from Game.Level.start import select_difficulty
 | pywinauto ☆ | Önplanda olmasalar dahi windows uygulamaları (pywin32'i barındırır) | [🌐](https://pywinauto.readthedocs.io/en/latest/index.html) [📺](https://www.youtube.com/watch?v=mhNIHgJPP3g) [📥](https://pywinauto.readthedocs.io/en/latest/#installation)                     |
 | pygetwindow | Windows pencereleri (basit)                                         | [🌐](https://github.com/asweigart/PyGetWindow)                                                                                                                                                   |
 | pywin32     | Resmi windows API (pencere dahil)                                   | [🌐](http://timgolden.me.uk/pywin32-docs/contents.html) [📺]([https://www.youtube.com/watch?v=o-k6l6ea3Lg](https://www.youtube.com/watch?v=o-k6l6ea3Lg)) [📥](https://pypi.org/project/pywin32/) |
-| pyautogui   | Arayüz, fare, klavye ...                                            | [📃](https://media.readthedocs.org/pdf/pyautogui/latest/pyautogui.pdf) [📺](https://www.youtube.com/watch?v=xOfBezEDZ24)                                                                                                                         |
+| pyautogui   | Arayüz, fare, klavye ...                                            | [📃](https://media.readthedocs.org/pdf/pyautogui/latest/pyautogui.pdf) [📺](https://www.youtube.com/watch?v=xOfBezEDZ24)                                                                         |
 
 #### Giriş Çıkış (I/O) Kontrol Paketleri
 
@@ -1120,7 +1120,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### Ekran Görünüsünü Alma
+### Ekran Görünüsünü Alma ve Kaydetme
 
 ```py
 from PIL import ImageGrab as ig
@@ -1132,6 +1132,9 @@ import cv2
 # Hata ayıklama ve bilgilendirme notlarını aktif eder
 DEBUG = True
 
+# Çıktı kaydını aktif etme
+KEEP = False
+
 # Yakalanacak ekranın konum bilgileri (x0, y0, x1, y1)
 CAPTURE_AREA = (80, 101, 1111, 923)
 
@@ -1142,6 +1145,13 @@ HEIGHT = 0
 if DEBUG:
     frame_count = 0
     last_time = time.time()
+
+out = cv2.VideoWriter(
+    'output.avi',
+    cv2.VideoWriter_fourcc(*'XVID'),
+    5.0,
+    (dimension[2] - dimension[0], dimension[3] - dimension[1])
+) if KEEP else None
 
 while True:
     screen = ig.grab(bbox=CAPTURE_AREA)
@@ -1166,8 +1176,11 @@ while True:
         )
     )
 
+    out.write(screen_np_RGB) if KEEP else None
+
     # 'q' tuşuna basıldığında çıkma işlemi
     if cv2.waitKey(25) & 0xFF == ord('q'):
+        out.release() if KEEP else None
         cv2.destroyAllWindows()
         break
 
@@ -1286,6 +1299,4 @@ Google Colabrotory `IPython` modülünü kullanmaktadır.
 - [Can python get the screen shot of a specific window?](https://stackoverflow.com/a/48669645/9770490)
 - [Get window position & size with python](https://stackoverflow.com/a/7142360/9770490)
 - [Python inactive screen capture](https://stackoverflow.com/a/52314641/9770490)
-
-
-> [Paketler için Harici Bağlantıları](#paketler-i%C3%A7in-harici-ba%C4%9Flant%C4%B1lar%C4%B1)
+- [Computer Screen Recording using Python & OpenCV](https://www.youtube.com/watch?v=GWdrL8dt1xQ)
