@@ -38,14 +38,14 @@ Ders içerikleri drive üzerinden yedeklenmektedir, [buraya](https://drive.googl
 
 Pixel değerlerinin aralığını genişletme işlemi olarak da bilinir.
 
-- Resmin sahip olduğu en düşük ve en yüksek pixel değeri bulunur 
+- Resmin sahip olduğu en düşük ve en yüksek pixel değeri bulunur
   - $eski_{max}, eski_{min}$
 - İstenen en yüksek ve en düşük pixel aralıkları belirlenir
   - Genelde 0, 255 değerleri seçilir
   - $yeni_{max}, yeni_{min}$
 - Her bir pixel, yeni başlangıç ve bitiş noktasına göre değerler alır
 
-$$ 
+$$
 yeni_i = ((yeni_{max} - yeni_{min}) / (eski_{max} - eski_{min})) . (eski_i - eski_{min}) + yeni_{min}
 $$
 
@@ -80,7 +80,7 @@ Her bir parlaklık seviyesi için aynı sayıda pixel bulunmasını sağlayarak 
 - Her pixel ton değerinin resmin içinde hangi oranda olduğu $p_r(r_k)$ hesaplanır
   - $p_r(r_k) = n_k / n$
     - $n$: toplam pixel sayısı
-    - $n_k$: k. pixel sayısı 
+    - $n_k$: k. pixel sayısı
 - Kümülatif olasılık fonksiyonu $s_k$ hesaplanır
   - $s_k = T(r_k) = \sum_{j=0}^k n_j / n$
 - Ters dönüşüm yapılarak, hangi renk tonu yerine hangisinin geleceği hesaplanır
