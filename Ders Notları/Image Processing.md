@@ -86,7 +86,8 @@ Her bir parlaklık seviyesi için aynı sayıda pixel bulunmasını sağlayarak 
 - Ters dönüşüm yapılarak, hangi renk tonu yerine hangisinin geleceği hesaplanır
   - $r_k = T^-(s_k) = (L - 1) * T(r_k)$
     - $L$: Toplam pixel sayısı
-    
+
+> Ek kaynak için [buraya](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html) bakabilirsin.
 
 ## Harici Bağlantılar
 
