@@ -148,9 +148,10 @@ Değişkenlerin kullanım şekilleri:
     "telemetry.enableTelemetry": false,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.fontFamily": "Consolas",
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontSize": 13,
-    "editor.fontFamily": "Roboto Mono", // https://fonts.google.com/specimen/Roboto+Mono
+    "editor.fontFamily": "Roboto Mono, Consolas", // https://fonts.google.com/specimen/Roboto+Mono
     "editor.fontWeight": "400",
     "editor.tabSize": 2,
     "editor.suggestSelection": "recentlyUsedByPrefix",
@@ -161,7 +162,8 @@ Değişkenlerin kullanım şekilleri:
         "sideBar.background": "#10111a",
         "tab.activeBackground": "#0f0e24",
     },
-    "workbench.colorTheme": "Sublime Material Theme - Dark"
+    "workbench.colorTheme": "Sublime Material Theme - Dark",
+    "git.confirmSync": false
 }
 ```
 
