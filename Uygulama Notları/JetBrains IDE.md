@@ -3,8 +3,9 @@
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
 - [Kısayolar](#k%C4%B1sayolar)
+  - [Kod Kısayolları](#kod-k%C4%B1sayollar%C4%B1)
   - [Metin Kısayolları](#metin-k%C4%B1sayollar%C4%B1)
-  - [Denıg Kısayolları](#den%C4%B1g-k%C4%B1sayollar%C4%B1)
+  - [Debug Kısayolları](#debug-k%C4%B1sayollar%C4%B1)
   - [Git Kısayolları](#git-k%C4%B1sayollar%C4%B1)
 - [Git Yönetimi](#git-y%C3%B6netimi)
 - [Pluginler (Eklenti gibi)](#pluginler-eklenti-gibi)
@@ -27,6 +28,18 @@ Detaylar için [buraya](https://www.jetbrains.com/help/idea/mastering-keyboard-s
 - `CTRL` + `SHUFT` + `ALT` + `L` Açık olan dosyayı formatlama / biçimlendirme
 - `CTRL` + `ALT` + `L` Tüm kodu otamatik derleme
 - `CTRL` + `ALT` `O` Import'ları optimize etme
+- `CTRL` + `N` Classlar arasında dolanma
+- `CTRL` + `F12` Üzerinde bulunduğumuz dosya üzerinde dolanma
+
+### Kod Kısayolları
+
+- `CTRL` + `SPACE` Kod tamamlama
+  - 2 kez ard arda basılırsa **import edilmemiş** değişkenleri de gösterir ve otomatik dahil eder
+- `ALT` + `F7` Projedeki kullanım alanını gösterir
+- `CTRL` + `Q` Dökümanı hızlı önizleme
+  - **import** edilen modüller için kullanışlıdır
+- `CTRL` + `B` ya da `CTRL`'ye basılı tutup fare ile tıklama, tanımlandığı alana gönderir
+- `SHIFT`  + `F6` Yeniden adlandırma
 
 ### Metin Kısayolları
 
@@ -34,7 +47,7 @@ Detaylar için [buraya](https://www.jetbrains.com/help/idea/mastering-keyboard-s
 - `CTRL` + `D` Satırı hemen altına kopyalam (dublicate)
 - `CTRL` + `SHIFT` + `/` Yorum satırına çevirme
 
-### Denıg Kısayolları
+### Debug Kısayolları
 
 - `ALT` + `F8` Dobug modunda iken kod derleme arayüzü
 
