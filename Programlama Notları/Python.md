@@ -93,6 +93,10 @@
   - [Argparse Modülü Detayları](#argparse-mod%C3%BCl%C3%BC-detaylar%C4%B1)
     - [Argüman Ekleme](#arg%C3%BCman-ekleme)
       - [Argüman Action Özelliği](#arg%C3%BCman-action-%C3%B6zelli%C4%9Fi)
+- [Paralel İşlemler (Thread)](#paralel-i%CC%87%C5%9Flemler-thread)
+  - [Basit Thread Yapısı](#basit-thread-yap%C4%B1s%C4%B1)
+  - [Zamanlayıcı Yapısı (Timer)](#zamanlay%C4%B1c%C4%B1-yap%C4%B1s%C4%B1-timer)
+  - [Bir Plana göre Fonksiyon Çalıştırma](#bir-plana-g%C3%B6re-fonksiyon-%C3%A7al%C4%B1%C5%9Ft%C4%B1rma)
 - [Kod Parçaları (Code Snippet)](#kod-par%C3%A7alar%C4%B1-code-snippet)
   - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
   - [Ekran Görünüsünü Alma ve Kaydetme](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma-ve-kaydetme)
@@ -1092,6 +1096,83 @@ optional arguments:
   --verbose   increase output verbosity
 ```
 
+## Paralel İşlemler (Thread)
+
+Thread modülü ile satır satır ilerleyen kod yerine karma ilerleyen kodlar yazılabilir.
+
+  `threading` modülü kullanılır
+
+| Class     | Açıklama                                  |
+| --------- | ----------------------------------------- |
+| Thread    | Sırasız olarak bir fonksiyonu çalıştırma  |
+| Timer     | Belirli saniyelerde fonksiyonu çalıştırma |
+| Scheduler | Bir plana göre fonksiyonu çalıştırma      |
+
+### Basit Thread Yapısı
+
+```py
+from time import sleep
+from threading import Thread
+
+def tekrarla(ne, bekleme):
+    while True:
+        print ne
+        sleep(bekleme)
+
+if __name__ == '__main__':
+    dum = Thread(target = tekrarla, args = ("dum",1))
+    tis = Thread(target = tekrarla, args = ("tis",0.5))
+    ah = Thread(target = tekrarla, args = ("ah",3))
+
+    dum.start()
+    tis.start()
+    ah.start()
+```
+
+```sh
+dum
+tis
+ah
+
+tis
+dumtis
+
+tis
+dumtis
+
+tis
+ah
+tisdum
+```
+
+### Zamanlayıcı Yapısı (Timer)
+
+```py
+import threading
+
+
+def run_check():
+    print("Fonksiyon çalıştı.")
+    threading.Timer(5.0, run_check).start()
+
+
+run_check()
+```
+
+### Bir Plana göre Fonksiyon Çalıştırma
+
+```py
+import sched, time
+s = sched.scheduler(time.time, time.sleep)
+def do_something(sc): 
+    print "Doing stuff..."
+    # do your stuff
+    s.enter(60, 1, do_something, (sc,))
+
+s.enter(60, 1, do_something, (s,))
+s.run()
+```
+
 ## Kod Parçaları (Code Snippet)
 
 ### Örnek CLI Kodu
@@ -1312,5 +1393,5 @@ Google Colabrotory `IPython` modülünü kullanmaktadır.
 
 ## Yapılacaklar
 
-- [ ] Thread ve Timer eklenecek
+- [x] Thread ve Timer eklenecek
   - [Link1](http://ysar.net/python/threading.html), [Link2](https://stackoverflow.com/questions/474528/what-is-the-best-way-to-repeatedly-execute-a-function-every-x-seconds-in-python), [Link3](https://stackoverflow.com/questions/33473899/how-set-a-loop-that-repeats-at-a-certain-interval-in-python), [Link4](https://daanlenaerts.com/blog/2015/07/04/python-3-4-execute-function-every-five-seconds/)
