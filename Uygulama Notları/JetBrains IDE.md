@@ -9,11 +9,14 @@
   - [Git Kısayolları](#git-k%C4%B1sayollar%C4%B1)
 - [Git Yönetimi](#git-y%C3%B6netimi)
 - [Pluginler (Eklenti gibi)](#pluginler-eklenti-gibi)
-- [Faydalı Ayarlar](#faydal%C4%B1-ayarlar)
-  - [Font Ayarları](#font-ayarlar%C4%B1)
+- [Proje Yapılandırma](#proje-yap%C4%B1land%C4%B1rma)
   - [Interpreter (Derleyici) Değiştirme](#interpreter-derleyici-de%C4%9Fi%C5%9Ftirme)
   - [Configuration (Yapılandırma) Ayarları](#configuration-yap%C4%B1land%C4%B1rma-ayarlar%C4%B1)
-  - [Ek Ortam Değişkenileri Tanımlama](#ek-ortam-de%C4%9Fi%C5%9Fkenileri-tan%C4%B1mlama)
+  - [Kaynak Kod Dosyalarını Belirtme](#kaynak-kod-dosyalar%C4%B1n%C4%B1-belirtme)
+    - [Ek Ortam Değşkenleri Tanımlama](#ek-ortam-de%C4%9F%C5%9Fkenleri-tan%C4%B1mlama)
+    - [Ortam Değişkenleri Ayarlama Eklentisi](#ortam-de%C4%9Fi%C5%9Fkenleri-ayarlama-eklentisi)
+- [Faydalı Ayarlar](#faydal%C4%B1-ayarlar)
+  - [Font Ayarları](#font-ayarlar%C4%B1)
   - [Dökümantasyon Önizle](#d%C3%B6k%C3%BCmantasyon-%C3%B6nizle)
   - [Dictionaries](#dictionaries)
   - [Spellcheck Kaldırma](#spellcheck-kald%C4%B1rma)
@@ -40,13 +43,15 @@ Detaylar için [buraya](https://www.jetbrains.com/help/idea/mastering-keyboard-s
 - `CTRL` + `Q` Dökümanı hızlı önizleme
   - **import** edilen modüller için kullanışlıdır
 - `CTRL` + `B` ya da `CTRL`'ye basılı tutup fare ile tıklama, tanımlandığı alana gönderir
-- `SHIFT`  + `F6` Yeniden adlandırma
+- `CTRL` + `ALT` + `V` Seçilen kısmı değişkene atama
 
 ### Metin Kısayolları
 
 - `CTRL` + `X` Satırı kesme
 - `CTRL` + `D` Satırı hemen altına kopyalam (dublicate)
 - `CTRL` + `SHIFT` + `/` Yorum satırına çevirme
+- `CTRL` + `SHIFT` + `YON TUSLARI` İmlecin üzerinde durduğu metni taşıma
+- `SHIFT`  + `F6` Yeniden adlandırma
 
 ### Debug Kısayolları
 
@@ -70,14 +75,7 @@ Plugin kurma detayı için [buraya](https://www.jetbrains.com/help/idea/managing
 
 - `CTRL` + `ALT` + `S` kısmından `Plugin` sekmesinde istediğiniz iklentileri bulabilirsiniz.
 
-## Faydalı Ayarlar
-
-### Font Ayarları
-
-- `CTRL` + `ALT` + `S` yaptıktan sonra `Editor | Font` kısmında
-  - *Font:* `Consolas`
-  - *Size:* `12`
-  - *Line spacing:* `1.0`
+## Proje Yapılandırma
 
 ### Interpreter (Derleyici) Değiştirme
 
@@ -95,7 +93,14 @@ Sanal environment gibi durumlarda system yerine onların derleyicisini kullanma
 - Dosya derleyeceksiniz *Script* kısmına `dosyanın yolunu` yazın.
 - *Python Interpreter* kısmında yorumlayıcıyı seçin, ayarlanmadıysa `Interpreter (Derleyici) Değiştirme` aşamasında (üst aşamada) nasıl ayarlayacağınıza bakabilirsiniz.
 
-### Ek Ortam Değişkenileri Tanımlama
+### Kaynak Kod Dosyalarını Belirtme
+
+- `Project` kısmından dizine sağ tıklayın
+- `Mark Directory as` alanından `Source` yazısına tıklayın
+
+> Otomatik olarak dizin yolu, ortam değişkenlerine eklenecektir
+
+#### Ek Ortam Değşkenleri Tanımlama
 
 - Üst sekmeden `Run` kısmına gelin
 - `Edit Configuration` yazısına tıklaıyn
@@ -105,6 +110,19 @@ Sanal environment gibi durumlarda system yerine onların derleyicisini kullanma
 - `+` ile yeni ortam değişkeninizi ekletin
 
 > Windows için cmd ortam değişkeni ayarlama yapısı `set name=value;value` şeklindedir.
+
+#### Ortam Değişkenleri Ayarlama Eklentisi
+
+Eklenti sitesi için [buraya](https://github.com/ashald/EnvFile/blob/develop/README.md) bakabilirsin.
+
+## Faydalı Ayarlar
+
+### Font Ayarları
+
+- `CTRL` + `ALT` + `S` yaptıktan sonra `Editor | Font` kısmında
+  - *Font:* `Consolas`
+  - *Size:* `12`
+  - *Line spacing:* `1.0`
 
 ### Dökümantasyon Önizle
 
@@ -133,5 +151,5 @@ Dillere özgü sözlükleri indirmek için [buraya](https://drive.google.com/ope
 
 ## Yapılacaklar
 
-- [ ] PyCharm Env Variable
+- [x] PyCharm Env Variable
   - [Link1](https://stackoverflow.com/a/42708476/9770490)
