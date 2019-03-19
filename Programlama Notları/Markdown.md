@@ -13,7 +13,7 @@ Ek kaynak için [buraya](https://github.com/adam-p/markdown-here/wiki/Markdown-C
   - [Matematik Denklemleri](#matematik-denklemleri)
 - [VsCode için Faydalı Eklentiler](#vscode-i%C3%A7in-faydal%C4%B1-eklentiler)
 - [Faydalı Siteler](#faydal%C4%B1-siteler)
-- [Kaynaklar](#kaynaklar)
+- [Harici Bağlantılar](#harici-ba%C4%9Flant%C4%B1lar)
 
 ## Kullanım Örnekleri
 
@@ -86,6 +86,7 @@ Detaylı bilgi için [buraya](https://csrgxtu.github.io/2015/03/20/Writing-Mathe
 | [Url Encoder](https://www.urlencoder.org/) | Link URL'leri oluşturma    |
 | [StackEdit](https://stackedit.io)          | Çevrimiçi markdown editörü |
 
-## Kaynaklar
+## Harici Bağlantılar
 
 - <https://html.com/attributes/a-href/>
+- [Markdown and Visual Studio Codes](https://code.visualstudio.com/docs/languages/markdown)
