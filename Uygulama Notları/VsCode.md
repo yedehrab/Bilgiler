@@ -69,6 +69,7 @@ PDF dökümanı 📃 için [buraya](..\pdfs\keyboard-shortcuts-windows.pdf) baka
 
 | Eklenti                                                                                                           | Açıklama                        |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| [Deepdark Material Theme](https://marketplace.visualstudio.com/items?itemName=Nimda.deepdark-material)            | Çok karanlık bir tema           |
 | [Sublime Material Theme](https://marketplace.visualstudio.com/items?itemName=jprestidge.theme-material-theme)     | Sublime Editörün temaları       |
 | [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)              | Dosya ikon teması               |
 | [Atom One Dark Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onedark)            | En sık kullanılan karanlık tema |
