@@ -6,10 +6,18 @@
 
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
-- [Kurulum](#kurulum)
+- [Kurulum ve Kullanım](#kurulum-ve-kullan%C4%B1m)
+  - [VsCode Üzerinde Python](#vscode-%C3%BCzerinde-python)
+    - [Python Kodlarını Formatlama](#python-kodlar%C4%B1n%C4%B1-formatlama)
+    - [VsCode Debug Yapılandırması](#vscode-debug-yap%C4%B1land%C4%B1rmas%C4%B1)
+    - [VsCode Jupyter Desteği](#vscode-jupyter-deste%C4%9Fi)
+    - [VsCode Python Ortamı Ayarlama](#vscode-python-ortam%C4%B1-ayarlama)
+    - [VsCode Ek Python Ayarları](#vscode-ek-python-ayarlar%C4%B1)
+    - [VsCode Python Eklentileri](#vscode-python-eklentileri)
+    - [VsCode Python Kısayolları](#vscode-python-k%C4%B1sayollar%C4%B1)
   - [Faydalı Soru & Cevaplar](#faydal%C4%B1-soru--cevaplar)
 - [Yazım Kuralları](#yaz%C4%B1m-kurallar%C4%B1)
-- [Dökümantasyon](#d%C3%B6k%C3%BCmantasyon)
+- [Dökümantasyon PyDoc](#d%C3%B6k%C3%BCmantasyon-pydoc)
 - [Anahtar Kelimeler (Keywords)](#anahtar-kelimeler-keywords)
   - [Fonksyion Oluşturma Anahtar Kelimeleri](#fonksyion-olu%C5%9Fturma-anahtar-kelimeleri)
     - [Fonksiyon Anahtar Kelimeleri](#fonksiyon-anahtar-kelimeleri)
@@ -109,7 +117,7 @@
 - [Harici Kaynaklar](#harici-kaynaklar)
 - [Yapılacaklar](#yap%C4%B1lacaklar)
 
-## Kurulum
+## Kurulum ve Kullanım
 
 - Temel python kurulumunu, resmi sitesinden [buraya](https://www.python.org/downloads/) tıklayarak tamamlayabilirsin.
   - **pip** paket yöneticisini kullanır
@@ -120,6 +128,79 @@
   - Temel yükleme yapısı '*Conda ile yüklenemezse pip kullan*' idir
 
 > Anaconda ile alakalı bilgiler [burada](../Uygulama%20Notlar%C4%B1/Anaconda.md) derlenmektedir.
+
+### VsCode Üzerinde Python
+
+Başlangıç dökümanı için [buraya](https://code.visualstudio.com/docs/python/python-tutorial) bakabilirsin.
+
+#### Python Kodlarını Formatlama
+
+- `CTRL` + `SHIFT` + `P` yapın
+- Çıkan alana `Python: Select Linter` yazın
+- `pep8` düzenleyicisini seçin
+- Python derleyicinize `autopep8` paketini aşağıdaki komutlarla veya vscode arayüzü ile yükleyin
+  - pip install autopep8
+  - conda install autopep8
+- Artık `SHIFT` + `ALT` + `F` ile kodları düzenleyebilirsiniz.
+
+#### VsCode Debug Yapılandırması
+
+Detaylar için [buraya](https://code.visualstudio.com/docs/python/debugging) bakabilirsin.
+
+- `CTRL` + `SHIFT` + `D` ile debug ekranını açın
+- Sol üstte açılan ekrandan `ayarlar butonuna` tıklayın
+- `Python` kısmını seçin
+
+#### VsCode Jupyter Desteği
+
+Detaylar için [buraya](https://code.visualstudio.com/docs/python/jupyter-support) bakabilirsin.
+
+- Kod alanının üstüne `#%%` yazarak olutşurabilirsiniz.
+
+#### VsCode Python Ortamı Ayarlama
+
+Aktif olan derleyici ortamı, en altta bulunan durum çubuğunun solunda gösterilmektedir. Değiştirmek için:
+
+- `CTRL` + `SHIFT` + `P` tuş kombinasyonuna basın
+- Çıkan alana `Python: Select Interpreter` yazınız
+- Çıkan ekrandan istediğiniz derleyici ortamını seçiniz
+
+#### VsCode Ek Python Ayarları
+
+Ek python ayarları için [buradaki](https://code.visualstudio.com/docs/python/settings-reference) resmi dökümana bakabilirsin.
+
+#### VsCode Python Eklentileri
+
+| Eklenti                                                                                                                           | Açıklama                     |
+| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)                                                    | Dil desteği                  |
+| [AREPL for python](https://marketplace.visualstudio.com/items?itemName=almenon.arepl)                                             | Anlık çıktıları gösterme     |
+| [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | Sık kullanılan kod önerileri |
+
+#### VsCode Python Kısayolları
+
+Alttaki kısayollar `keybindings.json` dosyası içerisinde bulunmalıdır.
+
+```json
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    // Kod parçasını metoda çevirme
+    "key": "ctrl+shift+m ctrl+shift+m",
+    "command": "python.refactorExtractMethod"
+  },
+  {
+    // Kod parçasını metoda taşıma
+    "key": "ctrl+shift+v ctrl+shift+v",
+    "command": "python.refactorExtractVariable"
+  },
+  {
+    // İmport'ları sıralama
+    "key": "ctrl+shift+s ctrl+shift+s",
+    "command": "python.sortImports"
+  }
+]
+```
 
 ### Faydalı Soru & Cevaplar
 
@@ -148,7 +229,7 @@ Orjinal dökümantasyon için [buraya](https://www.python.org/dev/peps/pep-0008/
 
 > Daha fazla bilgi için harici linklerdeki [Should I use underscores or camel case for Python?](https://www.quora.com/Should-I-use-underscores-or-camel-case-for-Python) bağlantısına tıklayabilirsin.
 
-## Dökümantasyon
+## Dökümantasyon PyDoc
 
 - `'''` ile fonksiyonların üstüne dökümantasyon (açıklama) eklenir
 - `#` ile koda yorum eklenir
@@ -1164,7 +1245,7 @@ run_check()
 ```py
 import sched, time
 s = sched.scheduler(time.time, time.sleep)
-def do_something(sc): 
+def do_something(sc):
     print "Doing stuff..."
     # do your stuff
     s.enter(60, 1, do_something, (sc,))
