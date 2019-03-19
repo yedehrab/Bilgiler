@@ -17,6 +17,7 @@ Sık kullanılan işletim sistemi notlarım.
   - [Cmder Komut İstemi Alternatifi](#cmder-komut-i%CC%87stemi-alternatifi)
     - [CmDer Yapılandırma Ayarları](#cmder-yap%C4%B1land%C4%B1rma-ayarlar%C4%B1)
 - [Windows için Paket Yöneticisi](#windows-i%C3%A7in-paket-y%C3%B6neticisi)
+  - [Hızlı Komut Bilgisi](#h%C4%B1zl%C4%B1-komut-bilgisi)
   - [Sık Kullanılan Paketler](#s%C4%B1k-kullan%C4%B1lan-paketler)
   - [CMD Komutları](#cmd-komutlar%C4%B1)
     - [CMD Ek Komutlar](#cmd-ek-komutlar)
@@ -134,6 +135,15 @@ Windows için popüler olan **Chocolatey** paket yöneticisi, powershell üzerin
 - Resmi sitesine [buraya](https://chocolatey.org/) tıklayarak erişebilirsin.
 - Başlangıç videosu için [buraya](https://www.youtube.com/watch?v=hfgZYpo5moA) bakabilirsin
 - Yükleyebileceğin paketler için [buraya](https://chocolatey.org/packages) bakabilirsin
+
+### Hızlı Komut Bilgisi
+
+| Komut                                                | Açıklama                              |
+| ---------------------------------------------------- | ------------------------------------- |
+| `choco list -lo`                                     | Yüklü yerel uygulamaları gösterir     |
+| `choco install -y <paket>`                           | Paketi sessiz yükleme                 |
+| `choco uninstall <paket>`                            | Paket kaldırma                        |
+| `choco install -y <paket> --params "<parametreler>"` | Paketi belirli ayarlarla sessiz kurma |
 
 ### Sık Kullanılan Paketler
 
