@@ -15,6 +15,8 @@ Sık kullanılan işletim sistemi notlarım.
   - [Menü Kısayolları](#men%C3%BC-k%C4%B1sayollar%C4%B1)
 - [Command Promp (CMD)](#command-promp-cmd)
   - [Cmder Komut İstemi Alternatifi](#cmder-komut-i%CC%87stemi-alternatifi)
+    - [CmDer Yapılandırma Ayarları](#cmder-yap%C4%B1land%C4%B1rma-ayarlar%C4%B1)
+- [Windows için Paket Yöneticisi](#windows-i%C3%A7in-paket-y%C3%B6neticisi)
   - [CMD Komutları](#cmd-komutlar%C4%B1)
     - [CMD Ek Komutlar](#cmd-ek-komutlar)
   - [CMD Değişkenleri](#cmd-de%C4%9Fi%C5%9Fkenleri)
@@ -25,7 +27,6 @@ Sık kullanılan işletim sistemi notlarım.
     - [CMD Döngü Kullanımı](#cmd-d%C3%B6ng%C3%BC-kullan%C4%B1m%C4%B1)
     - [CMD Dosyaları Ardışık olarak adlandırma](#cmd-dosyalar%C4%B1-ard%C4%B1%C5%9F%C4%B1k-olarak-adland%C4%B1rma)
 - [PowerShell Kullanımı](#powershell-kullan%C4%B1m%C4%B1)
-- [Windows için Paket Yöneticisi](#windows-i%C3%A7in-paket-y%C3%B6neticisi)
 - [Özelleştirmelerim](#%C3%B6zelle%C5%9Ftirmelerim)
   - [CMD Düzeni](#cmd-d%C3%BCzeni)
   - [Tema Düzeni](#tema-d%C3%BCzeni)
@@ -116,6 +117,23 @@ Terminalde dosya isimlerinin **sonu veya başı sayı içerirse** çeşitli soru
 
 - Linux komutlarını destekler
 - Tab ile tamamlama imkanı sunar
+
+#### CmDer Yapılandırma Ayarları
+
+- `WIN` + `ALT` + `P` ile ayarları açın
+- `General`kısmından `{cmd::Cmder as Admin}`'i seçin
+- Color scheme: `Tomorrow Night`
+- `Font` kısmından `Size` 14 `Font Charset` Turkish
+- `Size % Pos` kısmında w: 93 h:27
+
+## Windows için Paket Yöneticisi
+
+Windows için popüler olan **Chocolatey** paket yöneticisi, powershell üzerinden `choco install <paket>` komutuyla yükleme yapmanızı sağlar.
+
+
+- Resmi sitesine [buraya](https://chocolatey.org/) tıklayarak erişebilirsin.
+- Başlangıç videosu için [buraya](https://www.youtube.com/watch?v=hfgZYpo5moA) bakabilirsin
+- Yükleyebileceğin paketler için [buraya](https://chocolatey.org/packages) bakabilirsin
 
 ### CMD Komutları
 
@@ -211,15 +229,6 @@ ren *.new *.<yeni_dosya_uzantısı>
 ## PowerShell Kullanımı
 
 İlgili dökümana [buraya](Windows10%20Kaynaklar%C4%B1\Windows%20PowerShell%20Tutorial%20for%20Beginners.pdf) tıklayarak erişebilirsin.
-
-## Windows için Paket Yöneticisi
-
-Windows için popüler olan **Chocolatey** paket yöneticisi, powershell üzerinden `choco install <paket>` komutuyla yükleme yapmanızı sağlar.
-
-
-- Resmi sitesine [buraya](https://chocolatey.org/) tıklayarak erişebilirsin.
-- Başlangıç videosu için [buraya](https://www.youtube.com/watch?v=hfgZYpo5moA) bakabilirsin
-- Yükleyebileceğin paketler için [buraya](https://chocolatey.org/packages) bakabilirsin
 
 ## Özelleştirmelerim
 
