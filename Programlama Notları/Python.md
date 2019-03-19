@@ -123,10 +123,11 @@
 - Temel python kurulumunu, resmi sitesinden [buraya](https://www.python.org/downloads/) tıklayarak tamamlayabilirsin.
   - **pip** paket yöneticisini kullanır
   - `pip install` komutu ile modül yüklemesi yapılır
-- **Makine öğrenimi** ve **veri bilimi** gibi işlemlerle uğaşacak isen, bu iş için geliştirilmiş olan [Anaconda](https://www.anaconda.com/distribution/#download-section) yazılımı tavsiye edilir
+- **Makine öğrenimi** ve **veri bilimi** gibi işlemlerle uğaşacak isen, bu iş için geliştirilmiş olan [Anaconda](https://www.anaconda.com/distribution/#download-section) veya [MiniConda](https://docs.conda.io/en/latest/miniconda.html) yazılımı tavsiye edilir
   - Resmi paket yönetici **conda** olmasına rağmen **pip** üzerinden de kuruluma izin verir
   - `conda install` komutu ile modül yüklemesi yapılır
   - Temel yükleme yapısı '*Conda ile yüklenemezse pip kullan*' idir
+  - Anaconda, MiniConda ve VirtualEnv farkı kullanımı için [buraya](http://deeplearning.lipingyang.org/2018/12/23/anaconda-vs-miniconda-vs-virtualenv/) bakabilirsin
 
 > Anaconda ile alakalı bilgiler [burada](../Uygulama%20Notlar%C4%B1/Anaconda.md) derlenmektedir.
 
