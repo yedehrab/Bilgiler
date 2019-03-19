@@ -14,6 +14,7 @@ Sık kullanılan işletim sistemi notlarım.
   - [Girdi İşlemleri](#girdi-i%CC%87%C5%9Flemleri)
   - [Menü Kısayolları](#men%C3%BC-k%C4%B1sayollar%C4%B1)
 - [Command Promp (CMD)](#command-promp-cmd)
+  - [Cmder Komut İstemi Alternatifi](#cmder-komut-i%CC%87stemi-alternatifi)
   - [CMD Komutları](#cmd-komutlar%C4%B1)
     - [CMD Ek Komutlar](#cmd-ek-komutlar)
   - [CMD Değişkenleri](#cmd-de%C4%9Fi%C5%9Fkenleri)
@@ -108,6 +109,13 @@ Windowsun bize sunduğu nu kısayollar tüm ekranlara baskındır, her yerde ça
 ## Command Promp (CMD)
 
 Terminalde dosya isimlerinin **sonu veya başı sayı içerirse** çeşitli sorunlara neden olmakta.
+
+### Cmder Komut İstemi Alternatifi
+
+[Cmder](https://cmder.net/) windows cmd alternatifi olan bir yazılımdır.
+
+- Linux komutlarını destekler
+- Tab ile tamamlama imkanı sunar
 
 ### CMD Komutları
 
