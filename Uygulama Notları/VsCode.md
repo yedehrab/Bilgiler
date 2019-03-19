@@ -43,7 +43,6 @@
 | [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | İmla kontrolü                  |
 | [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)                          | Yapılacakları gösteren arayüz  |
 
-
 ### Farkındalık Eklentileri
 
 | Eklenti                                                                                  | Açıklama                             |
@@ -62,6 +61,8 @@
 | [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)               | Karanlık bir tema               |
 
 ### Programlama Eklentileri
+
+VsCode programlama dökümantasyon için [buraya](https://code.visualstudio.com/docs) bakabilirsin.
 
 | Eklenti                                                                                                                             | Açıklama                                                                                             |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
@@ -154,7 +155,6 @@ Değişkenlerin kullanım şekilleri:
     "editor.fontSize": 13,
     "editor.fontFamily": "Roboto Mono, Consolas", // https://fonts.google.com/specimen/Roboto+Mono
     "editor.fontWeight": "400",
-    "editor.tabSize": 2,
     "editor.suggestSelection": "recentlyUsedByPrefix",
     "workbench.colorCustomizations": {
         "activityBar.background": "#030514",
@@ -162,9 +162,12 @@ Değişkenlerin kullanım şekilleri:
         "editor.background": "#18181f",
         "sideBar.background": "#10111a",
         "tab.activeBackground": "#0f0e24",
+        "activityBar.dropBackground": "#0c0c0c",
+        "activityBar.foreground": "#f8f8f2",
     },
+    "git.confirmSync": false,
+    "explorer.confirmDelete": false,
     "workbench.colorTheme": "Sublime Material Theme - Dark",
-    "git.confirmSync": false
 }
 ```
 
