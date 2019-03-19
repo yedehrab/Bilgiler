@@ -26,6 +26,8 @@
 
 ## VsCode kısayolları
 
+PDF dökümanı 📃 için [buraya](..\pdfs\keyboard-shortcuts-windows.pdf) bakabilirsin.
+
 - `CTRL` + `P` Dosya arama (*read only açar*)
   - `#` İle çalışma dizininde arayabilirsin
   - `?` ile yardım alabilirsin
