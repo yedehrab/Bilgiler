@@ -75,6 +75,7 @@ Windowsun bize sunduğu nu kısayollar tüm ekranlara baskındır, her yerde ça
 | ------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | `CTRL` + `W`                                | Pencereyi kapatır                                                                                  |
 | `ALT` + `F4`                                | Uygulamayı ve pencerelerini kapatır                                                                |
+| `CTRL` + `SHIFT` + `ENTER`                  | Uygulamayı Yönetici olarak açma (`ENTER` yerine fare ile de tıklanabilir)                          |
 | `WİNDOWS TUŞU (SUPER)` + `E`                | File explorer'ı açar (Dosya Gezgini)                                                               |
 | `WİNDOWS TUŞU (SUPER)` + `R`                | Komutla uygulama çalıştırma penceresi                                                              |
 | `WİNDOWS TUŞU (SUPER)` + `<SAYI>`           | Taskbardaki (görev çubuğu / alttaki bar) sıralamaya göre uygulamları gösterir, çalıştırır / gizler |
