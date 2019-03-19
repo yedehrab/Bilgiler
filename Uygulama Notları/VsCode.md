@@ -123,7 +123,7 @@ VsCode programlama dökümantasyon için [buraya](https://code.visualstudio.com/
 | [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)             | Anlık olarak kod paylaşma                |
 | [Git Project Manager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager) | Proje kısayolları, sık kullanılanlar vs. |
 | [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)          | Git yönetimi arayüzü                     |
-| [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)                  | Git commit geçmişini gösterir            |
+| [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)                                                                                                | Git commit geçmişini gösterir            |
 | [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)                   | Docker sanal makinesi için uyumluluk     |
 
 ### Yapılandırma Eklentileri
