@@ -14,6 +14,7 @@
     - [VsCode Python Ortamı Ayarlama](#vscode-python-ortam%C4%B1-ayarlama)
     - [VsCode Ek Python Ayarları](#vscode-ek-python-ayarlar%C4%B1)
     - [VsCode Python Eklentileri](#vscode-python-eklentileri)
+    - [Anaconda üzerindeki Python'ı Desteklemeyen Eklentiler](#anaconda-%C3%BCzerindeki-python%C4%B1-desteklemeyen-eklentiler)
     - [VsCode Python Kısayolları](#vscode-python-k%C4%B1sayollar%C4%B1)
   - [Faydalı Soru & Cevaplar](#faydal%C4%B1-soru--cevaplar)
 - [Yazım Kuralları](#yaz%C4%B1m-kurallar%C4%B1)
@@ -171,11 +172,21 @@ Ek python ayarları için [buradaki](https://code.visualstudio.com/docs/python/s
 
 #### VsCode Python Eklentileri
 
-| Eklenti                                                                                                                           | Açıklama                     |
-| --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
-| [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)                                                    | Dil desteği                  |
-| [AREPL for python](https://marketplace.visualstudio.com/items?itemName=almenon.arepl)                                             | Anlık çıktıları gösterme     |
-| [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | Sık kullanılan kod önerileri |
+| Eklenti                                                                                                                           | Açıklama                                           |
+| --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)                                                    | Dil desteği                                        |
+| [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | Sık kullanılan kod önerileri                       |
+| [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)                                      | Dökümantasyon parçaları sağlayan eklenti           |
+| [Better Comment](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)                                  | Yorum satırı renklediricisi                        |
+| [Trailing Space](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)                                  | Gereksiz boşlukları hızlıca silmek için aydınlatır |
+
+#### Anaconda üzerindeki Python'ı Desteklemeyen Eklentiler
+
+| Eklenti                                                                                      | Açıklama                 |
+| -------------------------------------------------------------------------------------------- | ------------------------ |
+| [AREPL for python](https://marketplace.visualstudio.com/items?itemName=almenon.arepl)        | Anlık çıktıları gösterme |
+| [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) | Kod koşturucusu          |
+
 
 #### VsCode Python Kısayolları
 
