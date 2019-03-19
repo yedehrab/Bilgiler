@@ -21,6 +21,7 @@
     - [Code Runner Kısayollar](#code-runner-k%C4%B1sayollar)
 - [Debug Ayarları](#debug-ayarlar%C4%B1)
   - [Nodejs için Debug Ayarı](#nodejs-i%C3%A7in-debug-ayar%C4%B1)
+- [Yapılacaklar](#yap%C4%B1lacaklar)
 - [Harici Linkler](#harici-linkler)
 
 ## VsCode kısayolları
@@ -227,6 +228,11 @@ Debug ayarlarına erişmek için:
   ]
 }
 ```
+
+## Yapılacaklar
+
+- [ ] Her dilin eklentileri kendilerine özgü notların içine taşınacaktır
+- [ ] Sadece genel VsCode eklentileri burada yer alacaktır
 
 ## Harici Linkler
 
