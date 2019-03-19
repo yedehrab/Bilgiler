@@ -16,6 +16,7 @@
     - [VsCode Python Eklentileri](#vscode-python-eklentileri)
     - [Anaconda üzerindeki Python'ı Desteklemeyen Eklentiler](#anaconda-%C3%BCzerindeki-python%C4%B1-desteklemeyen-eklentiler)
     - [VsCode Python Kısayolları](#vscode-python-k%C4%B1sayollar%C4%B1)
+    - [VsCode Python Ortam Değişkenleri](#vscode-python-ortam-de%C4%9Fi%C5%9Fkenleri)
   - [Faydalı Soru & Cevaplar](#faydal%C4%B1-soru--cevaplar)
 - [Yazım Kuralları](#yaz%C4%B1m-kurallar%C4%B1)
 - [Dökümantasyon PyDoc](#d%C3%B6k%C3%BCmantasyon-pydoc)
@@ -188,7 +189,6 @@ Ek python ayarları için [buradaki](https://code.visualstudio.com/docs/python/s
 | [AREPL for python](https://marketplace.visualstudio.com/items?itemName=almenon.arepl)        | Anlık çıktıları gösterme |
 | [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) | Kod koşturucusu          |
 
-
 #### VsCode Python Kısayolları
 
 Alttaki kısayollar `keybindings.json` dosyası içerisinde bulunmalıdır.
@@ -212,6 +212,28 @@ Alttaki kısayollar `keybindings.json` dosyası içerisinde bulunmalıdır.
     "command": "python.sortImports"
   }
 ]
+```
+
+#### VsCode Python Ortam Değişkenleri
+
+- VsCode birden fazla satıra sahip değişken değerlerini kabul etmez
+- Ortam değişklenleri oluşturmak için proje ayarlarından **env file** seçmemiz gerekmekte
+- Ardından içine değişkenlerimizi tanımlamamız gerkemekte
+
+```json
+"python.envFile": "${workspaceFolder}/prod.env"
+```
+
+```sh
+# prod.env
+# Python kaynak dizinleri
+RESEARCH_FOLDER=C:/Users/YEmre/Documents/Tensorflow/models/research
+OBJECT_FOLDER=C:/Users/YEmre/Documents/Tensorflow/models/research/object_detection
+SLIM_FOLDER=C:/Users/YEmre/Documents/Tensorflow/models/research/slim
+SCRIPT_FOLDER=C:/Users/YEmre/Documents/Tensorflow/scripts
+
+# Python modül yolu
+PYTHONPATH=${RESEARCH_FOLDER}:${OBJECT_FOLDER}:${SLIM_FOLDER}:${SCRIPT_FOLDER}
 ```
 
 ### Faydalı Soru & Cevaplar
