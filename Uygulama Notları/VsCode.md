@@ -17,6 +17,7 @@
   - [Markdown Eklentileri](#markdown-eklentileri)
 - [Editör ayarları](#edit%C3%B6r-ayarlar%C4%B1)
   - [Editör Değişkenleri](#edit%C3%B6r-de%C4%9Fi%C5%9Fkenleri)
+  - [Editör Klavye Kısayollarım](#edit%C3%B6r-klavye-k%C4%B1sayollar%C4%B1m)
   - [Editör JSON Ayarlarım](#edit%C3%B6r-json-ayarlar%C4%B1m)
   - [Java Ayarları](#java-ayarlar%C4%B1)
   - [Code Runner Ayarları](#code-runner-ayarlar%C4%B1)
@@ -117,12 +118,13 @@ VsCode programlama dökümantasyon için [buraya](https://code.visualstudio.com/
 
 ### Proje Yönetimi Eklentileri
 
-| Eklenti                                                                                            | Açıklama                                 |
-| -------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) | Proje kısayolları, sık kullanılanlar vs. |
-| [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)    | Anlık olarak kod paylaşma                |
-| [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) | Git yönetimi arayüzü                     |
-| [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)          | Docker sanal makinesi için uyumluluk     |
+| Eklenti                                                                                                     | Açıklama                                 |
+| ----------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)             | Anlık olarak kod paylaşma                |
+| [Git Project Manager](https://marketplace.visualstudio.com/items?itemName=felipecaputo.git-project-manager) | Proje kısayolları, sık kullanılanlar vs. |
+| [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)          | Git yönetimi arayüzü                     |
+| [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)                  | Git commit geçmişini gösterir            |
+| [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)                   | Docker sanal makinesi için uyumluluk     |
 
 ### Yapılandırma Eklentileri
 
@@ -158,6 +160,21 @@ Değişkenlerin kullanım şekilleri:
 | `file`            | Açık olan dosya yolu     |
 | `fullFileName`    | Tam açık olan dosya yolu |
 | `pythonPath`      | Python yolu              |
+
+### Editör Klavye Kısayollarım
+
+```json
+[
+    {
+        "key": "ctrl+g c",
+        "command": "git.commitAll"
+    },
+    {
+        "key": "ctrl+g s",
+        "command": "git.sync"
+    }
+]
+```
 
 ### Editör JSON Ayarlarım
 
