@@ -216,6 +216,8 @@ Alttaki kısayollar `keybindings.json` dosyası içerisinde bulunmalıdır.
 
 #### VsCode Python Ortam Değişkenleri
 
+Resmi döküman için [buraya](https://code.visualstudio.com/docs/python/environments#_environment-variable-definitions-file) bakabilirsin.
+
 - VsCode birden fazla satıra sahip değişken değerlerini kabul etmez
 - Ortam değişklenleri oluşturmak için proje ayarlarından **env file** seçmemiz gerekmekte
 - Ardından içine değişkenlerimizi tanımlamamız gerkemekte
