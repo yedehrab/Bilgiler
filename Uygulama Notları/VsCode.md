@@ -3,6 +3,8 @@
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
 - [VsCode kısayolları](#vscode-k%C4%B1sayollar%C4%B1)
+  - [Aksiyon Penceresi](#aksiyon-penceresi)
+  - [Metin Düzenleme Kısayolları](#metin-d%C3%BCzenleme-k%C4%B1sayollar%C4%B1)
 - [Faydalı Eklentiler](#faydal%C4%B1-eklentiler)
   - [Verimlilik Eklentileri](#verimlilik-eklentileri)
   - [Farkındalık Eklentileri](#fark%C4%B1ndal%C4%B1k-eklentileri)
@@ -28,11 +30,21 @@
 
 PDF dökümanı 📃 için [buraya](..\pdfs\keyboard-shortcuts-windows.pdf) bakabilirsin.
 
-- `CTRL` + `P` Dosya arama (*read only açar*)
-  - `#` İle çalışma dizininde arayabilirsin
-  - `?` ile yardım alabilirsin
+### Aksiyon Penceresi
+
+`CTRL` + `P` ile aksiyon penceresiini erişebilirsiniz.
+
+| Kısayol | Açıklama                |
+| ------- | ----------------------- |
+| `#`     | Çalışma dizininde arama |
+| `>`     | Komutlarda arama        |
+| `?`     | Yardım                  |
+
+### Metin Düzenleme Kısayolları
+
 - `CTRL` + `I` Satırı seçme
 - `CTRL` + `X` Satırı kesme
+- `CTRl` + `J` Alt paneli görünür kılar
 
 ## Faydalı Eklentiler
 
