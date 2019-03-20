@@ -99,6 +99,10 @@
     - [Obje Özelliği Silme](#obje-%C3%B6zelli%C4%9Fi-silme)
     - [Class Silme](#class-silme)
   - [Scopes and Namespaces](#scopes-and-namespaces)
+  - [Enumeration](#enumeration)
+    - [Basit Kullanım](#basit-kullan%C4%B1m)
+    - [Enum Özellikleri](#enum-%C3%B6zellikleri)
+      - [Benzersin Enum Tanımlaması](#benzersin-enum-tan%C4%B1mlamas%C4%B1)
 - [Komut İsteminden Python (CLI)](#komut-i%CC%87steminden-python-cli)
   - [Argparse Modülü Detayları](#argparse-mod%C3%BCl%C3%BC-detaylar%C4%B1)
     - [Argüman Ekleme](#arg%C3%BCman-ekleme)
@@ -210,6 +214,10 @@ Alttaki kısayollar `keybindings.json` dosyası içerisinde bulunmalıdır.
     // İmport'ları sıralama
     "key": "ctrl+shift+s ctrl+shift+s",
     "command": "python.sortImports"
+  },
+  {
+    "key": "shift+f10",
+    "command": "python.execInTerminal"
   }
 ]
 ```
@@ -1151,6 +1159,71 @@ After local assignment: test spam
 After nonlocal assignment: nonlocal spam
 After global assignment: nonlocal spam
 In global scope: global spa
+```
+
+### Enumeration
+
+Resmi dökümantasyon için [buraya](https://docs.python.org/3/library/enum.html) bakabilirsin.
+
+- Sıralı ve sabit veriler oluşturmak için kullanılır
+- `from enum import Enum` ile projeye dahil edilir
+
+#### Basit Kullanım
+
+```py
+from enum import Enum
+
+class Color(Enum):
+    RED = 1
+    GREEN = 2
+    BLUE = 3
+
+# Erişim şekli
+Color.RED # 1
+Color.RED.name # RED
+type(Color.RED) # <enum 'Color'>
+Color(1) # <Color.RED: 1>
+Color(3) # <Color.BLUE: 3>
+isinstance(Color.GREEN, Color) # True
+```
+
+#### Enum Özellikleri
+
+Aynı özelliklere sahip objeler oluşturulamaz 
+
+```py
+# Oluşturulmaz!
+class Shape(Enum):
+    SQUARE = 2
+    SQUARE = 3
+
+# Oluşturabilir
+class Shape(Enum):
+    SQUARE = 2
+    DIAMOND = 1
+    CIRCLE = 3
+    ALIAS_FOR_SQUARE = 2
+
+Shape.SQUARE # <Shape.SQUARE: 2>
+Shape.ALIAS_FOR_SQUARE # <Shape.SQUARE: 2>
+Shape(2) # <Shape.SQUARE: 2>
+```
+
+##### Benzersin Enum Tanımlaması
+
+`@unique` etiketi ile tanımlama yapılır
+
+```py
+from enum import Enum, unique
+@unique
+class Mistake(Enum):
+    ONE = 1
+    TWO = 2
+    THREE = 3
+    FOUR = 3
+
+# Traceback (most recent call last):
+# ValueError: duplicate values found in <enum 'Mistake'>: FOUR -> THREE
 ```
 
 ## Komut İsteminden Python (CLI)
