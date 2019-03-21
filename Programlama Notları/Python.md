@@ -107,10 +107,12 @@
   - [Argparse Modülü Detayları](#argparse-mod%C3%BCl%C3%BC-detaylar%C4%B1)
     - [Argüman Ekleme](#arg%C3%BCman-ekleme)
       - [Argüman Action Özelliği](#arg%C3%BCman-action-%C3%B6zelli%C4%9Fi)
-- [Paralel İşlemler (Thread)](#paralel-i%CC%87%C5%9Flemler-thread)
+- [Thread](#thread)
   - [Basit Thread Yapısı](#basit-thread-yap%C4%B1s%C4%B1)
   - [Zamanlayıcı Yapısı (Timer)](#zamanlay%C4%B1c%C4%B1-yap%C4%B1s%C4%B1-timer)
   - [Bir Plana göre Fonksiyon Çalıştırma](#bir-plana-g%C3%B6re-fonksiyon-%C3%A7al%C4%B1%C5%9Ft%C4%B1rma)
+- [Paralel İşlemler (Multiprocessing)](#paralel-i%CC%87%C5%9Flemler-multiprocessing)
+  - [Multiprocessing Örneği](#multiprocessing-%C3%B6rne%C4%9Fi)
 - [Kod Parçaları (Code Snippet)](#kod-par%C3%A7alar%C4%B1-code-snippet)
   - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
   - [Ekran Görünüsünü Alma ve Kaydetme](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma-ve-kaydetme)
@@ -178,13 +180,13 @@ Ek python ayarları için [buradaki](https://code.visualstudio.com/docs/python/s
 
 #### VsCode Python Eklentileri
 
-| Eklenti                                                                                                                           | Açıklama                                           |
-| --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)                                                    | Dil desteği                                        |
-| [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | Sık kullanılan kod önerileri                       |
-| [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)                                      | Dökümantasyon parçaları sağlayan eklenti           |
-| [Better Comment](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)                                  | Yorum satırı renklediricisi                        |
-| [Trailing Space](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)                                  | Gereksiz boşlukları hızlıca silmek için aydınlatır |
+| Eklenti                                                                                                                               | Açıklama                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)                                                        | Dil desteği                                                |
+| [Visual Studio IntelliCode - **Preview**](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) | Sık kullanılan kod önerileri (**eksik öneriler olabilir**) |
+| [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)                                          | Dökümantasyon parçaları sağlayan eklenti                   |
+| [Better Comment](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)                                      | Yorum satırı renklediricisi                                |
+| [Trailing Space](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)                                      | Gereksiz boşlukları hızlıca silmek için aydınlatır         |
 
 #### Anaconda üzerindeki Python'ı Desteklemeyen Eklentiler
 
@@ -1286,11 +1288,12 @@ optional arguments:
   --verbose   increase output verbosity
 ```
 
-## Paralel İşlemler (Thread)
+## Thread
 
 Thread modülü ile satır satır ilerleyen kod yerine karma ilerleyen kodlar yazılabilir.
 
-  `threading` modülü kullanılır
+- `threading` modülü kullanılır
+- Eş zamanlı işlemler için [multiprocessing](#paralel-i%CC%87%C5%9Flemler-multiprocessing) tercih edilir
 
 | Class     | Açıklama                                  |
 | --------- | ----------------------------------------- |
@@ -1361,6 +1364,46 @@ def do_something(sc):
 
 s.enter(60, 1, do_something, (s,))
 s.run()
+```
+
+## Paralel İşlemler (Multiprocessing)
+
+Python'da eş zamanlı işler `thread` ile yapılamaz
+
+> Kaynak için [buraya](https://stackoverflow.com/a/7207336/9770490) bakabilirsin.
+
+### Multiprocessing Örneği
+
+```py
+from multiprocessing import Process
+
+
+def func1():
+    print('func1: starting')
+    for i in range(10000000):
+        pass
+    print('func1: finishing')
+
+
+def func2():
+    print ('func2: starting')
+    for i in range(10000000):
+        pass
+    print ('func2: finishing')
+
+
+if __name__ == '__main__':
+    p1 = Process(target=func1)
+    p1.start()
+    p2 = Process(target=func2)
+    p2.start()
+    p1.join() # Threadi çalıştırma (gecikmesini engellemek için)
+    p2.join()
+
+# func1: starting
+# func2: starting
+# func2: finishing
+# func1: finishing
 ```
 
 ## Kod Parçaları (Code Snippet)
@@ -1585,3 +1628,7 @@ Google Colabrotory `IPython` modülünü kullanmaktadır.
 
 - [x] Thread ve Timer eklenecek
   - [Link1](http://ysar.net/python/threading.html), [Link2](https://stackoverflow.com/questions/474528/what-is-the-best-way-to-repeatedly-execute-a-function-every-x-seconds-in-python), [Link3](https://stackoverflow.com/questions/33473899/how-set-a-loop-that-repeats-at-a-certain-interval-in-python), [Link4](https://daanlenaerts.com/blog/2015/07/04/python-3-4-execute-function-every-five-seconds/)
+- [ ] Alttaki yapı eklenecek
+  - `t2 = Thread(target={time.sleep(3)})`
+  - {} ile fonksiyon
+  - return olursa değeri çıkarır
