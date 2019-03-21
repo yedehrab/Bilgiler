@@ -1191,7 +1191,7 @@ isinstance(Color.GREEN, Color) # True
 
 #### Enum Özellikleri
 
-Aynı özelliklere sahip objeler oluşturulamaz 
+Aynı özelliklere sahip objeler oluşturulamaz
 
 ```py
 # Oluşturulmaz!
