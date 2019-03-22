@@ -205,27 +205,26 @@ Değişkenlerin kullanım şekilleri:
 
 ```json
 {
+    // Kişisel bilgilerin paylaşılmasını engellemes
     "telemetry.enableTelemetry": false,
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
-    "terminal.integrated.fontFamily": "Consolas",
+    // Tema ayarları
+    "workbench.colorTheme": "Deepdark Material Theme | Full Black Version",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontSize": 13,
+    // Editör Ayarları
+    "editor.fontSize": 12.5,
     "editor.fontFamily": "Roboto Mono, Consolas", // https://fonts.google.com/specimen/Roboto+Mono
-    "editor.fontWeight": "400",
     "editor.suggestSelection": "recentlyUsedByPrefix",
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#030514",
-        "activityBarBadge.background": "#210864",
-        "editor.background": "#18181f",
-        "sideBar.background": "#10111a",
-        "tab.activeBackground": "#0f0e24",
-        "activityBar.dropBackground": "#0c0c0c",
-        "activityBar.foreground": "#f8f8f2",
-    },
+    // Entegre terminal ayarları
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.shell.windows": "C:\\Windows\\system32\\cmd.exe",
+    "terminal.integrated.fontFamily": "Consolas",
+    // Git ayarları
     "git.confirmSync": false,
-    "explorer.confirmDelete": false,
-    "workbench.colorTheme": "Sublime Material Theme - Dark",
+    "git.autofetch": true,
+    // Python ayarları
+    "python.jediEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.venvPath": "C:\\tools\\miniconda3\\envs"
 }
 ```
 
