@@ -349,3 +349,4 @@ Logoyu kaldırmak için harici uygulamayı [buraya](https://drive.google.com/ope
 - [How to rename image files in a folder all to .jpg format](https://answers.microsoft.com/en-us/windows/forum/windows_10-files/how-to-rename-image-files-in-a-folder-all-to-jpg/2a7e2873-e04b-472b-b239-afad2f2020fc)
 - [Move Komutu](https://www.windows-commandline.com/move-files-directories/)
 - [How to copy a list of file names to text file?](https://superuser.com/questions/395836/how-to-copy-a-list-of-file-names-to-text-file)
+- [Windows 10 Cache Temizleme](https://www.itechtics.com/clear-types-windows-10-cache/)
