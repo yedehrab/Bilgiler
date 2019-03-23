@@ -214,6 +214,7 @@ Değişkenlerin kullanım şekilleri:
     "editor.fontSize": 12.5,
     "editor.fontFamily": "Roboto Mono, Consolas", // https://fonts.google.com/specimen/Roboto+Mono
     "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.detectIndentation": false, // Python kodlarında fazladan girinti oluşturulmasını engelleme
     // Entegre terminal ayarları
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.shell.windows": "C:\\Windows\\system32\\cmd.exe",
