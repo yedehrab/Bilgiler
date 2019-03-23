@@ -39,6 +39,7 @@ Programlama işlerindeki projelerin yönetimi için kaçınılmaz bir teknolojid
 - [Uygulamalar Üzerinde Git](#uygulamalar-%C3%BCzerinde-git)
   - [JetBrains IDEs](#jetbrains-ides)
 - [Git Cheat Sheet](#git-cheat-sheet)
+- [Kitaplar](#kitaplar)
 - [Harici Linkler](#harici-linkler)
 
 ## Git İşleme Yapısı
@@ -308,6 +309,10 @@ git reset HEAD~
 ## Git Cheat Sheet
 
 ![git](../images/git-cheet-sheet.jpeg)
+
+## Kitaplar
+
+- [Pro Git](https://drive.google.com/open?id=12bYrrbB2ESt531bYWnddf5NpEg2_fGzl)
 
 ## Harici Linkler
 
