@@ -6,7 +6,11 @@
   - [Chrome sekme işlemleri](#chrome-sekme-i%C5%9Flemleri)
   - [Sayfa işlemleri](#sayfa-i%C5%9Flemleri)
   - [Geliştirici kısayolları](#geli%C5%9Ftirici-k%C4%B1sayollar%C4%B1)
-- [Ektension](#ektension)
+- [Eklenti Önerileri](#eklenti-%C3%B6nerileri)
+  - [Verimlilik Eklentileri](#verimlilik-eklentileri)
+  - [Görsellik Eklentileri](#g%C3%B6rsellik-eklentileri)
+  - [Sosyal Medya Eklentileri](#sosyal-medya-eklentileri)
+  - [Programlama Eklentileri](#programlama-eklentileri)
 - [Adress Çubuğu Anahtarları](#adress-%C3%A7ubu%C4%9Fu-anahtarlar%C4%B1)
 - [Harici Linkler](#harici-linkler)
 
@@ -14,43 +18,58 @@
 
 ### Chrome sekme işlemleri
 
-| Kısayol | Açıklama |
-|---------|----------|
-| `CTRL` + `T` | Yeni sekme açma
+| Kısayol                | Açıklama                   |
+| ---------------------- | -------------------------- |
+| `CTRL` + `T`           | Yeni sekme açma            |
 | `CTRL` + `SHIFT` + `T` | Son kapatılan sekmeyi açma |
-| `CTRL` + `W` | Sekmeyi kapatma |
+| `CTRL` + `W`           | Sekmeyi kapatma            |
 
 ### Sayfa işlemleri
 
-| Kısayol | Açıklama |
-|---------|----------|
-| `CTRL` + `R` | Sayfayı yenileme
+| Kısayol                | Açıklama                                     |
+| ---------------------- | -------------------------------------------- |
+| `CTRL` + `R`           | Sayfayı yenileme                             |
 | `CTRL` + `SHIFT` + `R` | Sayfayı komple yenileme (önbelleği temizler) |
-| `CTRL` + `S` | Sayfayı kaydetme |
+| `CTRL` + `S`           | Sayfayı kaydetme                             |
 
 ### Geliştirici kısayolları
 
-| Kısayol | Açıklama |
-|---------|----------|
-| `CTRL` + `SHIFT` + `I` | Dom konsolunu açma |
+| Kısayol                | Açıklama                        |
+| ---------------------- | ------------------------------- |
+| `CTRL` + `SHIFT` + `I` | Dom konsolunu açma              |
 | `CTRL` + `SHIFT` + `C` | HTML eleman seçiciyi aktif etme |
 
-## Ektension
+## Eklenti Önerileri
 
-| Eklenti | Özelliği |
-|---------|----------|
-| [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb) | Reklam engelleme |
-| [Pop up Blocker for Chrome](https://chrome.google.com/webstore/detail/pop-up-blocker-for-chrome/bkkbcggnhapdmkeljlodobbkopceiche) | Popup (Açılır pencere) engelleme *özeliikle film izleyenler için oldukça faydalı* |
-| [App For WA Webb](https://chrome.google.com/webstore/detail/app-for-wa-web/bpocngoedbjmnmkngoohaccdmidcjjhm?hl=en) | Whatsapp wep yerine oldukça kullanışlı basit açılır pencere
-| [God Mode for Whatsapp](https://chrome.google.com/webstore/detail/god-mode-for-whatsapp/cgdfebhnckdgckcjhidjnochmahdohad) | Whatsapp wep yerine oldukça kullanışlı ve ek özelliklere sahip popup |
-| [Temp Mail](https://chrome.google.com/webstore/detail/temp-mail-disposable-temp/inojafojbhdpnehkhhfjalgjjobnhomj) | Geçici mail oluşturma eklentisi. 15s de mail onaylama imkanı sunuyor. *Özellikle kayıt ol diye baskılayan sitelere girenlere tavsiye* |
-| [Run Javascript](https://chrome.google.com/webstore/detail/run-javascript/lmilalhkkdhfieeienjbiicclobibjao) | Seçtiğiniz sayfalara girdiğinizde otomatik olarak JS derleme |
-| [Google Çeviri](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb) | Çeviri |
-| [Instagram Veri İndirici](https://chrome.google.com/webstore/detail/batch-media-saver-from-in/plmnmnpijgncjompjiccojbccinacefh) | Instagramdaki verilerini indiren eklenti |
+### Verimlilik Eklentileri
 
-| Link | Açıklama |
-|---------|----------|
+| Eklenti                                                                                                                           | Özelliği                                                                                                                              |
+| --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb)                           | Reklam engelleme                                                                                                                      |
+| [Pop up Blocker for Chrome](https://chrome.google.com/webstore/detail/pop-up-blocker-for-chrome/bkkbcggnhapdmkeljlodobbkopceiche) | Popup (Açılır pencere) engelleme *özeliikle film izleyenler için oldukça faydalı-                                                     |
+| [Google Çeviri](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb)                      | Çeviri                                                                                                                                |
+| [OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall?hl=tr)                                 | Sekme karışıklığını ve fazla ram kullanımı engelleme                                                                                  |
+| [Temp Mail](https://chrome.google.com/webstore/detail/temp-mail-disposable-temp/inojafojbhdpnehkhhfjalgjjobnhomj)                 | Geçici mail oluşturma eklentisi. 15s de mail onaylama imkanı sunuyor. *Özellikle kayıt ol diye baskılayan sitelere girenlere tavsiye- |
+
+### Görsellik Eklentileri
+
+| Eklenti                                                                                           | Açıklama       |
+| ------------------------------------------------------------------------------------------------- | -------------- |
 | [Lone Tree](https://chrome.google.com/webstore/detail/lone-tree/gdcbilggakcddojcadnfeckbpoomdmii) | Güzel bir tema |
+
+### Sosyal Medya Eklentileri
+
+| Eklenti                                                                                                                         | Açıklama                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| [App For WA Webb](https://chrome.google.com/webstore/detail/app-for-wa-web/bpocngoedbjmnmkngoohaccdmidcjjhm?hl=en)              | Whatsapp wep yerine oldukça kullanışlı basit açılır pencere          |
+| [God Mode for Whatsapp](https://chrome.google.com/webstore/detail/god-mode-for-whatsapp/cgdfebhnckdgckcjhidjnochmahdohad)       | Whatsapp wep yerine oldukça kullanışlı ve ek özelliklere sahip popup |
+| [Instagram Veri İndirici](https://chrome.google.com/webstore/detail/batch-media-saver-from-in/plmnmnpijgncjompjiccojbccinacefh) | Instagramdaki verilerini indiren eklenti                             |
+
+### Programlama Eklentileri
+
+| Eklenti                                                                                                     | Açıklama                                                     |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| [Run Javascript](https://chrome.google.com/webstore/detail/run-javascript/lmilalhkkdhfieeienjbiicclobibjao) | Seçtiğiniz sayfalara girdiğinizde otomatik olarak JS derleme |
 
 ## Adress Çubuğu Anahtarları
 
@@ -60,15 +79,15 @@ Adres çubuğuna `chrome://settings/searchEngines` yazaeak gerekli ayarların ol
 
 **Çıkan Menüde:**
 
-* `Arama motoru ismi` *Kendi verdiğimiz isim*
-* `Anahtar` *Adres çubuğuna yazınca alttaki sorguyu çalıştıracak*
-* `Sorgu` URL veya sorgu URL olabilir size kalmış.
+- `Arama motoru ismi` *Kendi verdiğimiz isim*
+- `Anahtar` *Adres çubuğuna yazınca alttaki sorguyu çalıştıracak*
+- `Sorgu` URL veya sorgu URL olabilir size kalmış.
 
 *Örnek Kullanım:*
 
-* Tureng
-* -t
-* `http://tureng.com/tr/turkce-ingilizce/%s`
+- Tureng
+- -t
+- `http://tureng.com/tr/turkce-ingilizce/%s`
 
 > %s sonrasındaki metin anlamına gelmekte. Örn; -t Help (*Help `%s` olan yere yazılır.*)
 
