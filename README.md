@@ -65,10 +65,10 @@
 
 ## Yapay Zeka Notları
 
-- [Türkçe Yapay Zeka Kaynakları](Yapay%20Zeka%20Notlar%C4%B1.md/T%C3%BCrk%C3%A7e%20Yapay%20Zeka%20Kaynaklar%C4%B1.md) | [Orjinal İçerik](https://github.com/deeplearningturkiye/turkce-yapay-zeka-kaynaklari)
-- [Yapay Zeka Notları](Yapay%20Zeka%20Notlar%C4%B1.md/Yapay%20Zeka%20Notlar%C4%B1.md)
-- [Veri Kümeleri](Yapay%20Zeka%20Notlar%C4%B1.md/Veri%20K%C3%BCmeleri.md)
-- [Yapay Zeka Kullanım](Yapay%20Zeka%20Notlar%C4%B1.md/Yapay%20Zeka%20Kullan%C4%B1m.md)
+- [Türkçe Yapay Zeka Kaynakları](Yapay%20Zeka%20Notlar%C4%B1%5CT%C3%BCrk%C3%A7e%20Yapay%20Zeka%20Kaynaklar%C4%B1.md) | [Orjinal İçerik](https://github.com/deeplearningturkiye/turkce-yapay-zeka-kaynaklari)
+- [Yapay Zeka Notları](Yapay%20Zeka%20Notlar%C4%B1%5CYapay%20Zeka%20Notlar%C4%B1.md)
+- [Veri Kümeleri](Yapay%20Zeka%20Notlar%C4%B1%5CVeri%20K%C3%BCmeleri.md)
+- [Yapay Zeka Kullanımı](Yapay%20Zeka%20Notlar%C4%B1%5CYapay%20Zeka%20Kullan%C4%B1m%C4%B1.md)
 
 ## Ders Notları
 
