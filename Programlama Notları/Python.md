@@ -1465,6 +1465,7 @@ CAPTURE_AREA = (80, 101, 1111, 923)
 WIDTH = 0
 HEIGHT = 0
 
+# FPS sayacını tanımlama
 if DEBUG:
     frame_count = 0
     last_time = time.time()
@@ -1473,7 +1474,7 @@ out = cv2.VideoWriter(
     'output.avi',
     cv2.VideoWriter_fourcc(*'XVID'),
     5.0,
-    (dimension[2] - dimension[0], dimension[3] - dimension[1])
+    (CAPTURE_AREA[2] - CAPTURE_AREA[0], CAPTURE_AREA[3] - CAPTURE_AREA[1])
 ) if KEEP else None
 
 while True:
@@ -1499,6 +1500,7 @@ while True:
         )
     )
 
+    # Dosyaya yazma
     out.write(screen_np_RGB) if KEEP else None
 
     # 'q' tuşuna basıldığında çıkma işlemi
@@ -1507,14 +1509,14 @@ while True:
         cv2.destroyAllWindows()
         break
 
+    # FPS bilgilerini hesaplama ve ekrana basma
     if DEBUG:
-        # noinspection PyUnboundLocalVariable
         frame_count += 1
-        # noinspection PyUnboundLocalVariable
         if time.time() - last_time >= 1:
             print('FPS: {}'.format(frame_count))
             frame_count = 0
             last_time = time.time()
+
 ```
 
 ### Kısayol ile Ekran Alanı Seçme
@@ -1623,6 +1625,7 @@ Google Colabrotory `IPython` modülünü kullanmaktadır.
 - [Get window position & size with python](https://stackoverflow.com/a/7142360/9770490)
 - [Python inactive screen capture](https://stackoverflow.com/a/52314641/9770490)
 - [Computer Screen Recording using Python & OpenCV](https://www.youtube.com/watch?v=GWdrL8dt1xQ)
+- [How can I code OpenCV to use GPU using Python?](https://www.quora.com/How-can-I-code-OpenCV-to-use-GPU-using-Python)
 
 ## Yapılacaklar
 
