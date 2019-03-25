@@ -117,6 +117,7 @@
   - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
   - [Ekran Görünüsünü Alma ve Kaydetme](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma-ve-kaydetme)
   - [Kısayol ile Ekran Alanı Seçme](#k%C4%B1sayol-ile-ekran-alan%C4%B1-se%C3%A7me)
+  - [Url Encode İşlemi](#url-encode-i%CC%87%C5%9Flemi)
 - [Google Colabrotory Üzerinden Python](#google-colabrotory-%C3%BCzerinden-python)
   - [IPython Operatorleri](#ipython-operatorleri)
   - [Python Değişkenlerinin Bash Üzerinde Kullanımı](#python-de%C4%9Fi%C5%9Fkenlerinin-bash-%C3%BCzerinde-kullan%C4%B1m%C4%B1)
@@ -384,6 +385,10 @@ sonuc = 7 / 3 # 2.33 atanır
 
 ## Operatörler
 
+| Operatör | Açıklama                       |
+| -------- | ------------------------------ |
+| `\`      | Satır atlatmayı geçersiz kılma |
+
 ### Aritmatik Operatörler
 
 | Operatör         | Açıklama                                |
@@ -612,6 +617,7 @@ Son
 | `%`       | Operatör ile formatlama | `'new(%s %d)' % ('help', 5)`   | `'new(help 5)'`       |
 | `f`       | Format string ön eki    | `f'X: {a}'`                    | `'X: 2'`              |
 | `r`       | Raw String ön eki       | `r"C:\Users"`                  | `C:\\Users`           |
+| `"""`     | Çok satırlı string      |
 | `split`   | Parçalama               | `"ye mre ak".split(" ")`       | `['ye', 'mre', 'ak']` |
 | `join`    | Birleştirme             | `','.join(['do', 're', 'mi'])` | `'do,re,mi'`          |
 | `replace` | Metin değiştirme        | `"yemreak".replace("ak", "")`  | `'yemre'`             |
@@ -619,7 +625,7 @@ Son
 | `ltrip`   | Metnin solunu düzeltme  | `' abc '.ltrip()`              | `'abc '`              |
 | `rtrip`   | Metnin sağını düzeltme  | `' abc '.rtrip()`              | `' abc'`              |
 
-> Daha fazla bilgi için [buraya](https://www.programiz.com/python-programming/methods/string) bakabilirsin.
+> Daha fazla bilgi için [buraya](https://www.programiz.com/python-programming/methods/string) ve [buraya](https://stackoverflow.com/questions/10660435/pythonic-way-to-create-a-long-multi-line-string) bakabilirsin.
 
 ### Harici Fonksiyon Kullanımları
 
@@ -1567,6 +1573,10 @@ def draw_dimension(hotkey=None):
 
 print(draw_dimension(hotkey='ctrl_l'))
 ```
+
+### Url Encode İşlemi
+
+- TODO
 
 ## Google Colabrotory Üzerinden Python
 
