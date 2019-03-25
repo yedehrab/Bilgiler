@@ -1,6 +1,11 @@
 # Bilgiler <!-- omit in toc -->
 
-![status](https://img.shields.io/nodeping/status/jkiwn052-ntpp-4lbb-8d45-ihew6d9ucoei.svg) ![licanse apache](https://img.shields.io/hexpm/l/plug.svg?style=plastic) ![quality](https://img.shields.io/ansible/quality/432.svg)
+![status](https://img.shields.io/nodeping/status/jkiwn052-ntpp-4lbb-8d45-ihew6d9ucoei.svg)
+![quality](https://img.shields.io/ansible/quality/432.svg)
+![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)
+![licanse apache](https://img.shields.io/hexpm/l/plug.svg?style=plastic)
+
+> Orjinal dosya [gitlab](https://gitlab.com/yedehrab/bilgiler) üzerindeki dosyadır.
 
 ## İçerikler <!-- omit in toc -->
 
@@ -19,10 +24,6 @@
 - [Çalışma Notları](#%C3%A7al%C4%B1%C5%9Fma-notlar%C4%B1)
 - [Karma Bilgiler](#karma-bilgiler)
 - [Teferruatlar](#teferruatlar)
-
-İçeriklerin işaretlenmiş (*indexed*) hallerini aşağıda görebilirsin.
-
-> Orjinal dosya [gitlab](https://gitlab.com/yedehrab/bilgiler) üzerindeki dosyadır.
 
 ## Programlama Notları
 
