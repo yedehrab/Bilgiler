@@ -37,7 +37,6 @@ def create():
         file.writelines(file_str)
 
 
-# TODO
-# * sadece indexleri alıp diğerlerini elle mi yapsam
-# ! Yoksa komple readme'yi mi yenilesin
+# TODO Indexleri dosyanın arasına atmaya çalışma
+# TODO Readme dosyasına görünmez bir belirteç eklemeli ve onların arasına koymalısın
 create()
