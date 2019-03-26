@@ -287,8 +287,8 @@ Debug ayarlarına erişmek için:
 
 ## Yapılacaklar
 
-- [ ] Her dilin eklentileri kendilerine özgü notların içine taşınacaktır
-- [ ] Sadece genel VsCode eklentileri burada yer alacaktır
+- [x] Her dilin eklentileri kendilerine özgü notların içine taşınacaktır
+- [x] Sadece genel VsCode eklentileri burada yer alacaktır
 
 ## Harici Linkler
 
