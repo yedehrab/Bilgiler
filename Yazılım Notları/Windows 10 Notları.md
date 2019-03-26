@@ -16,9 +16,6 @@ Sık kullanılan işletim sistemi notlarım.
 - [Command Promp (CMD)](#command-promp-cmd)
   - [Cmder Komut İstemi Alternatifi](#cmder-komut-i%CC%87stemi-alternatifi)
     - [CmDer Yapılandırma Ayarları](#cmder-yap%C4%B1land%C4%B1rma-ayarlar%C4%B1)
-- [Windows için Paket Yöneticisi](#windows-i%C3%A7in-paket-y%C3%B6neticisi)
-  - [Hızlı Komut Bilgisi](#h%C4%B1zl%C4%B1-komut-bilgisi)
-  - [Sık Kullanılan Paketler](#s%C4%B1k-kullan%C4%B1lan-paketler)
   - [CMD Komutları](#cmd-komutlar%C4%B1)
     - [CMD Ek Komutlar](#cmd-ek-komutlar)
   - [CMD Değişkenleri](#cmd-de%C4%9Fi%C5%9Fkenleri)
@@ -28,6 +25,9 @@ Sık kullanılan işletim sistemi notlarım.
   - [CMD Kod Parçaları](#cmd-kod-par%C3%A7alar%C4%B1)
     - [CMD Döngü Kullanımı](#cmd-d%C3%B6ng%C3%BC-kullan%C4%B1m%C4%B1)
     - [CMD Dosyaları Ardışık olarak adlandırma](#cmd-dosyalar%C4%B1-ard%C4%B1%C5%9F%C4%B1k-olarak-adland%C4%B1rma)
+- [Windows için Paket Yöneticisi](#windows-i%C3%A7in-paket-y%C3%B6neticisi)
+  - [Hızlı Komut Bilgisi](#h%C4%B1zl%C4%B1-komut-bilgisi)
+  - [Sık Kullanılan Paketler](#s%C4%B1k-kullan%C4%B1lan-paketler)
 - [PowerShell Kullanımı](#powershell-kullan%C4%B1m%C4%B1)
 - [Özelleştirmelerim](#%C3%B6zelle%C5%9Ftirmelerim)
   - [CMD Düzeni](#cmd-d%C3%BCzeni)
@@ -40,6 +40,8 @@ Sık kullanılan işletim sistemi notlarım.
 - [Uygulama Ayarları](#uygulama-ayarlar%C4%B1)
   - [Video Ayarları](#video-ayarlar%C4%B1)
 - [Terimler](#terimler)
+- [Windows 10 Ön Belleğini Temizleme](#windows-10-%C3%B6n-belle%C4%9Fini-temizleme)
+  - [CMD Üzerinden Önbelleği Elle Temizleme](#cmd-%C3%BCzerinden-%C3%B6nbelle%C4%9Fi-elle-temizleme)
 - [Windows10 Insider Programı](#windows10-insider-program%C4%B1)
   - [Insider Kısayolları](#insider-k%C4%B1sayollar%C4%B1)
   - [Arka Plandaki Evolution Copy Logosunu Kaldırma](#arka-plandaki-evolution-copy-logosunu-kald%C4%B1rma)
@@ -129,30 +131,6 @@ Terminalde dosya isimlerinin **sonu veya başı sayı içerirse** çeşitli soru
 - `Font` kısmından `Size` 14 `Font Charset` Turkish
 - `Size % Pos` kısmında w: 93 h:27
 
-## Windows için Paket Yöneticisi
-
-Windows için popüler olan **Chocolatey** paket yöneticisi, powershell üzerinden `choco install <paket>` komutuyla yükleme yapmanızı sağlar.
-
-- Resmi sitesine [buraya](https://chocolatey.org/) tıklayarak erişebilirsin.
-- Başlangıç videosu için [buraya](https://www.youtube.com/watch?v=hfgZYpo5moA) bakabilirsin
-- Yükleyebileceğin paketler için [buraya](https://chocolatey.org/packages) bakabilirsin
-
-### Hızlı Komut Bilgisi
-
-| Komut                                                | Açıklama                              |
-| ---------------------------------------------------- | ------------------------------------- |
-| `choco list -lo`                                     | Yüklü yerel uygulamaları gösterir     |
-| `choco install -y <paket>`                           | Paketi sessiz yükleme                 |
-| `choco uninstall <paket>`                            | Paket kaldırma                        |
-| `choco install -y <paket> --params "<parametreler>"` | Paketi belirli ayarlarla sessiz kurma |
-
-### Sık Kullanılan Paketler
-
-```sh
-choco install -y googlechrome winrar # Genel kullanım için
-choco install -y vscode git minicoda3 # Programlama için
-```
-
 ### CMD Komutları
 
 Tabloda `< >` arasına yazılanlar sizin tarafınızdan girilecek değerlerdir.
@@ -179,6 +157,7 @@ Tabloda `< >` arasına yazılanlar sizin tarafınızdan girilecek değerlerdir.
 #### CMD Ek Komutlar
 
 - `powershell.exe Expand-Archive "<zip_dosyası>" "<çıkarılacağı_yer>"`  Sıkıştırılmış dosyayı çıkarma
+- `for /f %i in ('dir /a:d /s /b A*') do echo rd /s /q %i` döngü ile dosya silme
 
 ### CMD Değişkenleri
 
@@ -194,18 +173,19 @@ Ayrıntılı bilgi için [buraya](https://ss64.com/nt/syntax-variables.html) tı
 
 #### Sık Kullanılanlar
 
-| Şablon         | Açıklama                                   |
-| -------------- | ------------------------------------------ |
-| `.`            | Bulunan dizin (working directory)          |
-| `..`           | Bir üst dizin (parent directory)           |
-| `*`            | Tüm dosyalar                               |
-| `**`           | Tüm dosya ve dizinler                      |
-| `*.js`         | Uzantısı js olan tüm dosyalar              |
-| `*lib/**/*.js` | Lib içindeki uzantısı js olan tüm dosyalar |
-| `%username%`   | Kullanıcı adı                              |
-| `%appdata%`    | Uygulama verileri dizini                   |
-| `%HOMEDRIVE%`  | Kullanıcı diski                            |
-| `%homepath%`   | Kullanıcı Yolu                             |
+| Şablon          | Açıklama                                   |
+| --------------- | ------------------------------------------ |
+| `.`             | Bulunan dizin (working directory)          |
+| `..`            | Bir üst dizin (parent directory)           |
+| `*`             | Tüm dosyalar                               |
+| `**`            | Tüm dosya ve dizinler                      |
+| `*.js`          | Uzantısı js olan tüm dosyalar              |
+| `*lib/**/*.js`  | Lib içindeki uzantısı js olan tüm dosyalar |
+| `%username%`    | Kullanıcı adı                              |
+| `%appdata%`     | Uygulama verileri dizini                   |
+| `%HOMEDRIVE%`   | Kullanıcı diski                            |
+| `%homepath%`    | Kullanıcı Yolu                             |
+| `%userprofile%` | Kullanıcı diskiyle yolu                    |
 
 ### CMD Operatörleri
 
@@ -242,6 +222,30 @@ ren *.new *.<yeni_dosya_uzantısı>
   - `*.png` 'png' ile biten her dosyayı
 - `<yeni_dosya_uzantısı>` Çıktıların uzantısı
   - `jpg`, `png`, `txt` vs ...
+
+## Windows için Paket Yöneticisi
+
+Windows için popüler olan **Chocolatey** paket yöneticisi, powershell üzerinden `choco install <paket>` komutuyla yükleme yapmanızı sağlar.
+
+- Resmi sitesine [buraya](https://chocolatey.org/) tıklayarak erişebilirsin.
+- Başlangıç videosu için [buraya](https://www.youtube.com/watch?v=hfgZYpo5moA) bakabilirsin
+- Yükleyebileceğin paketler için [buraya](https://chocolatey.org/packages) bakabilirsin
+
+### Hızlı Komut Bilgisi
+
+| Komut                                                | Açıklama                              |
+| ---------------------------------------------------- | ------------------------------------- |
+| `choco list -lo`                                     | Yüklü yerel uygulamaları gösterir     |
+| `choco install -y <paket>`                           | Paketi sessiz yükleme                 |
+| `choco uninstall <paket>`                            | Paket kaldırma                        |
+| `choco install -y <paket> --params "<parametreler>"` | Paketi belirli ayarlarla sessiz kurma |
+
+### Sık Kullanılan Paketler
+
+```sh
+choco install -y googlechrome winrar # Genel kullanım için
+choco install -y vscode git minicoda3 # Programlama için
+```
 
 ## PowerShell Kullanımı
 
@@ -325,6 +329,36 @@ Alt sistem kurulum dökümantasyonlarına üzerlerine tıklayarak erişlebilirsi
 
 - Wild Card: `..`, `.`, `*` gibi terimleri içeren kelimeye verilen isim
   - `help*`, `..\*` vs ...
+
+## Windows 10 Ön Belleğini Temizleme
+
+[Buraya](https://drive.google.com/open?id=1E-EDDSFxAvPM9QZAzciQ2fCaakgRwl6k) tıklayarak derlenebilir scriptimi indirip, **yönetici olarak** çalıştırman gerekmekte.
+
+### CMD Üzerinden Önbelleği Elle Temizleme
+
+Alttaki komut topluluğunu **yönetici olarak açtığınız cmd** üzerine yapıştırın.
+
+```cmd
+@echo off
+
+echo "Windows Update Temizleniyor"
+rd /s /q C:\Windows\SoftwareDistribution\Download
+mkdir C:\Windows\SoftwareDistribution\Download
+
+echo "Magaza Bilgileri Temizleniyor"
+WSReset.exe
+
+echo "Disk Temizleme"
+cleanmgr.exe
+
+echo "Windows Ikon ve Resim Bilgileri Siliniyor"
+del /f /s /q %USERPROFILE%\AppData\Local\Microsoft\Windows\Explorer\*cache*
+
+echo "Sistem Kurtarma Bilgilerini Temizleme"
+echo "Cikan Ekranda 'Yapilandir' butonuna bastiktan sonra 'Temizle' butonuna basin"
+SystemPropertiesProtection.exe
+
+```
 
 ## Windows10 Insider Programı
 
