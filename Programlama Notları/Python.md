@@ -103,6 +103,8 @@
     - [Basit Kullanım](#basit-kullan%C4%B1m)
     - [Enum Özellikleri](#enum-%C3%B6zellikleri)
       - [Benzersin Enum Tanımlaması](#benzersin-enum-tan%C4%B1mlamas%C4%B1)
+- [Dosya İşlemleri](#dosya-i%CC%87%C5%9Flemleri)
+  - [Dosya Okuma](#dosya-okuma)
 - [Komut İsteminden Python (CLI)](#komut-i%CC%87steminden-python-cli)
   - [Argparse Modülü Detayları](#argparse-mod%C3%BCl%C3%BC-detaylar%C4%B1)
     - [Argüman Ekleme](#arg%C3%BCman-ekleme)
@@ -1234,6 +1236,47 @@ class Mistake(Enum):
 # ValueError: duplicate values found in <enum 'Mistake'>: FOUR -> THREE
 ```
 
+## Dosya İşlemleri
+
+Python üzerinde dosya işlemleri oldukça kolaydır ve `context manager` ile halledilir.
+
+```py
+with open(<dosya_ismi>, <erişim_modu>, encoding=<kodlama>) as file:
+    # İşlemler
+    pass
+```
+
+- `<dosya_ismi>` Dosya yolu veya ism
+  - *Örn: "text.txt"*
+- `<erişim_modu>` Okuma, yazma veya ekleme
+  - *Örn: 'a', 'w', 'r', 'r+' ...*
+- `<kodlama>` Dosya kodlama formatı
+  - *Örn: 'utf-8'*
+
+### Dosya Okuma
+
+```py
+file_str = ""
+with open("README.md", "r", encoding="utf-8") as file:
+    file_str = "".join(file.readlines())
+
+```
+
+```py
+file_str = ""
+with open("README.md", "r", encoding="utf-8") as file:
+    for line in file:
+        file_str += line
+
+```
+
+```py
+with open("README.md", "r", encoding="utf-8") as file:
+    lines = list(file) # Tüm satırları liste olarak döndürür
+    line = file.readline() # Tek bir satırı string olarak döndürür
+    lines = file.readlines() # Tüm satırları liste olarak döndürür
+```
+
 ## Komut İsteminden Python (CLI)
 
 - Komut isteminden gelen argümanları **argparse** adlı modül ile yönetmekteyiz
@@ -1528,50 +1571,45 @@ while True:
 ### Kısayol ile Ekran Alanı Seçme
 
 ```py
-def draw_dimension(hotkey=None):
-    start_point = end_point = (0, 0)
+def draw_dimension(hotkey="ctrl_l") -> tuple:
+    """Ekrandan seçilen alanın koordinatlarını verir
 
-    def listen_mouse():
-        with mouse.Listener(on_click=on_mouse_click) as mouse_listener:
-            mouse_listener.join()
+    Keyword Arguments:
+        hotkey {string} -- Klavye kısayolu (default: {None})
+
+    Returns:
+        tuple -- Seçilen alanın koordinatları `(x0, y0, x1, y1)`
+    """
+
+    # Farenin başlangıç ve bitiş konumları
+    start_position, end_position = (0, 0)
 
     def listen_keyboard():
-        with keyboard.Listener(on_press=on_press) as keyboard_listener:
+        with keyboard.Listener(on_press=on_press, on_release=on_release) as keyboard_listener:
             keyboard_listener.join()
 
-    def on_mouse_click(x, y, _, pressed):
-        if pressed:
-            nonlocal start_point
-            start_point = x, y
-        else:
-            nonlocal end_point
-            end_point = x, y
+    def on_press(key):
+        # Başlangıç koordinatlarını oluşturma
+        if key == keyboard.Key[hotkey]:
+            nonlocal start_position
+            start_position = mouse.Controller().position
+
+    def on_release(key):
+        # Bitiş koordinatlarını başlangıca ekleme
+        if key == keyboard.Key[hotkey]:
+            nonlocal end_position
+            end_position = mouse.Controller().position
 
             # Dinleyiciyi kapatma
             return False
 
-    def on_press(key):
-        print("Fare ile seçim yapabilirsiniz.")
-        try:
-            if key == keyboard.Key[hotkey]:
-                listen_mouse()
-                # Dinleyiciyi durdurma
-                return False
-        except KeyError:
-            listen_mouse()
-            return False
+    print(
+        f"Seçmek istediğiniz alanın başlangıç noktasına farenizi getirin ve {hotkey} tuşuna basılı tutarak farenizi alanın bitiş noktasına götürün.")
 
-    try:
-        text = f"seçmek için '{hotkey}' tuşuna basın ve " if hotkey is not None else ""
-    except KeyError:
-        text = f"seçmek için herhangi bir tuşa basın ve " if hotkey is not None else ""
+    listen_keyboard()
+    return start_position + end_position
 
-    print(f"Hazır olduğunuzda yakalanacak alanı {text}fare ile seçin.")
-
-    listen_mouse() if hotkey is None else listen_keyboard()
-    return start_point + end_point
-
-print(draw_dimension(hotkey='ctrl_l'))
+print(draw_dimension())
 ```
 
 ### Url Encode İşlemi
