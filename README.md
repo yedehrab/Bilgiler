@@ -26,7 +26,7 @@
 - [Karma Bilgiler](#karma-bilgiler)
 - [Teferruatlar](#teferruatlar)
 
----
+<!-- Index -->
 
 ## Ders Notları
 
@@ -103,7 +103,7 @@
 - [Terimler](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Terimler.md)
 - [Windows 10 Notları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Windows%2010%20Notlar%C4%B1.md)
 
----
+<!-- Index -->
 
 ## Harici Linkler
 
