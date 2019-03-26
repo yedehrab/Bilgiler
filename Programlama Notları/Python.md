@@ -1273,6 +1273,12 @@ with open("README.md", "r", encoding="utf-8") as file:
 ```
 
 ```py
+with open(xml_path) as fp:
+        for row, line in enumerate(fp):
+            pass
+```
+
+```py
 with open("README.md", "r", encoding="utf-8") as file:
     lines = list(file) # Tüm satırları liste olarak döndürür
     line = file.readline() # Tek bir satırı string olarak döndürür
