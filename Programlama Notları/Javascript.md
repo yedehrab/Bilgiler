@@ -20,6 +20,7 @@ Javascript DOM komutlarını özetleyen bir derlemedir.
   - [HTML Attribute Alma](#html-attribute-alma)
   - [HTML Elemanının Konumunu Alma](#html-eleman%C4%B1n%C4%B1n-konumunu-alma)
   - [Sayfa İşlemleri](#sayfa-i%CC%87%C5%9Flemleri)
+  - [Input İşlemleri](#input-i%CC%87%C5%9Flemleri)
   - [Zamanlayıcı](#zamanlay%C4%B1c%C4%B1)
 - [Kod Notları](#kod-notlar%C4%B1)
   - [Objedeki Değer ile Anahtarını Bulma](#objedeki-de%C4%9Fer-ile-anahtar%C4%B1n%C4%B1-bulma)
@@ -217,6 +218,18 @@ function pageScroll() {
     scrolldelay = setTimeout(pageScroll,10); // 10ms de bir kaydırma
 }
 ```
+
+### Input İşlemleri
+
+```js
+document.getElementById(<input_id>).value = <val>
+document.getElementById(<input_id>).value = <val>
+document.getElementById(<button_id>).click()
+```
+
+- `<input_id>` Input alanlarının id değerleri
+- `val` Girilecek değer metni
+- `<button_id>` Giriş butonu id değeri
 
 > İndeksleme alanına yönelmek için [buraya](#%C4%B0ndeksleme) tıklayabilirsin.
 
