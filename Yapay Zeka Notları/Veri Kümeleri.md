@@ -81,6 +81,7 @@ wget -r -A jpg <url>
 
 ## Linkler
 
+- [Kaggle](https://www.kaggle.com)
 - [ABD açık veri](https://www.data.gov/)
 - [COCO](http://cocodataset.org/)
 - [Open Images](https://storage.googleapis.com/openimages/web/index.html)
