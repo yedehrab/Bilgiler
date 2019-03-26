@@ -177,6 +177,8 @@ Aktif olan derleyici ortamı, en altta bulunan durum çubuğunun solunda göster
 - Çıkan alana `Python: Select Interpreter` yazınız
 - Çıkan ekrandan istediğiniz derleyici ortamını seçiniz
 
+> PYTHONPATH için `.env` oluşturma bilgisi için [buraya](https://github.com/Microsoft/vscode-python/issues/3840#issuecomment-463789294) bakabilirsin.
+
 #### VsCode Ek Python Ayarları
 
 Ek python ayarları için [buradaki](https://code.visualstudio.com/docs/python/settings-reference) resmi dökümana bakabilirsin.
