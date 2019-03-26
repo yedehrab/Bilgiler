@@ -40,5 +40,5 @@ Yayıncılıkta tercih ediliyor.
 
 - Varıp varmadığıyla ilgilenmiyor. Gitmezse tekrar yolluyor.
 - Hız için tercih edilir.
-- Olumsuz geri dönüş yoktur. 
+- Olumsuz geri dönüş yoktur.
 - Sender ile reciver asla birbirleriyle iletişimde değidir.
