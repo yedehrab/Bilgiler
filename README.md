@@ -16,7 +16,7 @@
 - [Karaca](#karaca)
 - [Programlama Notları](#programlama-notlar%C4%B1)
 - [Proje Yönetimi Notları](#proje-y%C3%B6netimi-notlar%C4%B1)
-- [Telefon Notları](#telefon-notlar%C4%B1)
+- [Teknolojik Alet Notları](#teknolojik-alet-notlar%C4%B1)
 - [Uygulama Notları](#uygulama-notlar%C4%B1)
 - [Yapay Zeka Notları](#yapay-zeka-notlar%C4%B1)
 - [Yazılım Notları](#yaz%C4%B1l%C4%B1m-notlar%C4%B1)
@@ -25,6 +25,8 @@
 - [Çalışma Notları](#%C3%A7al%C4%B1%C5%9Fma-notlar%C4%B1)
 - [Karma Bilgiler](#karma-bilgiler)
 - [Teferruatlar](#teferruatlar)
+
+---
 
 ## Ders Notları
 
@@ -67,10 +69,11 @@
 - [Heroku Notları](Proje%20Y%C3%B6netimi%20Notlar%C4%B1/Heroku%20Notlar%C4%B1.md)
 - [Proje Yönetimi](Proje%20Y%C3%B6netimi%20Notlar%C4%B1/Proje%20Y%C3%B6netimi.md)
 
-## Telefon Notları
+## Teknolojik Alet Notları
 
-- [HTC Desire 820](Telefon%20Notlar%C4%B1/HTC%20Desire%20820.md)
-- [Telefon Rehberini Taşıma](Telefon%20Notlar%C4%B1/Telefon%20Rehberini%20Ta%C5%9F%C4%B1ma.md)
+- [HP Bilgisayar Notları](Teknolojik%20Alet%20Notlar%C4%B1/HP%20Bilgisayar%20Notlar%C4%B1.md)
+- [HTC Desire 820](Teknolojik%20Alet%20Notlar%C4%B1/HTC%20Desire%20820.md)
+- [Telefon Rehberini Taşıma](Teknolojik%20Alet%20Notlar%C4%B1/Telefon%20Rehberini%20Ta%C5%9F%C4%B1ma.md)
 
 ## Uygulama Notları
 
@@ -99,6 +102,8 @@
 - [Protocol Buffer (Protobuf)](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Protocol%20Buffer%20%28Protobuf%29.md)
 - [Terimler](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Terimler.md)
 - [Windows 10 Notları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Windows%2010%20Notlar%C4%B1.md)
+
+---
 
 ## Harici Linkler
 
