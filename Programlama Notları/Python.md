@@ -107,8 +107,9 @@
   - [Dosya Okuma](#dosya-okuma)
 - [Komut İsteminden Python (CLI)](#komut-i%CC%87steminden-python-cli)
   - [Argparse Modülü Detayları](#argparse-mod%C3%BCl%C3%BC-detaylar%C4%B1)
-    - [Argüman Ekleme](#arg%C3%BCman-ekleme)
-      - [Argüman Action Özelliği](#arg%C3%BCman-action-%C3%B6zelli%C4%9Fi)
+  - [Argüman Ekleme](#arg%C3%BCman-ekleme)
+  - [Argüman Action Özelliği](#arg%C3%BCman-action-%C3%B6zelli%C4%9Fi)
+  - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
 - [Thread](#thread)
   - [Basit Thread Yapısı](#basit-thread-yap%C4%B1s%C4%B1)
   - [Zamanlayıcı Yapısı (Timer)](#zamanlay%C4%B1c%C4%B1-yap%C4%B1s%C4%B1-timer)
@@ -116,7 +117,6 @@
 - [Paralel İşlemler (Multiprocessing)](#paralel-i%CC%87%C5%9Flemler-multiprocessing)
   - [Multiprocessing Örneği](#multiprocessing-%C3%B6rne%C4%9Fi)
 - [Kod Parçaları (Code Snippet)](#kod-par%C3%A7alar%C4%B1-code-snippet)
-  - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
   - [Ekran Görünüsünü Alma ve Kaydetme](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma-ve-kaydetme)
   - [Kısayol ile Ekran Alanı Seçme](#k%C4%B1sayol-ile-ekran-alan%C4%B1-se%C3%A7me)
   - [Url Encode İşlemi](#url-encode-i%CC%87%C5%9Flemi)
@@ -1293,7 +1293,7 @@ with open("README.md", "r", encoding="utf-8") as file:
 | ------------- | -------------------------------------- |
 | `description` | Uygulama ile alakalı açıklama metnidir |
 
-#### Argüman Ekleme
+### Argüman Ekleme
 
 - Argüman ekleme işlemi `parser.add_argument(...)` ile yapılmaktadır.
 
@@ -1306,7 +1306,7 @@ with open("README.md", "r", encoding="utf-8") as file:
 | `type`       | Tip bilgisini içerir (int, string ...)      |
 | `default`    | Varsayılan değer                            |
 
-##### Argüman Action Özelliği
+### Argüman Action Özelliği
 
 | Parametre      | Açıklama                                                               |
 | -------------- | ---------------------------------------------------------------------- |
@@ -1323,6 +1323,8 @@ if args.verbose:
     print("verbosity turned on")
 ```
 
+**Çıktısı:**
+
 ```sh
 $ python3 prog.py --verbose
 verbosity turned on
@@ -1337,6 +1339,41 @@ usage: prog.py [-h] [--verbose]
 optional arguments:
   -h, --help  show this help message and exit
   --verbose   increase output verbosity
+```
+
+### Örnek CLI Kodu
+
+```py
+import argparse
+
+def main():
+    # Initiate argument parser
+    parser = argparse.ArgumentParser(
+        description="Sample TensorFlow XML-to-CSV converter")
+    parser.add_argument("-i",
+                        "--inputDir",
+                        help="Path to the folder where the input .xml files are stored",
+                        type=str)
+    parser.add_argument("-o",
+                        "--outputFile",
+                        help="Name of output .csv file (including path)", type=str)
+    args = parser.parse_args()
+
+    if args.inputDir is None:
+        args.inputDir = os.getcwd()
+
+    if args.outputFile is None:
+        args.outputFile = args.inputDir + "/labels.csv"
+
+    assert (os.path.isdir(args.inputDir))
+
+    xml_df = xml_to_csv(args.inputDir)
+    xml_df.to_csv(
+        args.outputFile, index=None)
+    print('Successfully converted xml to csv.')
+
+if __name__ == '__main__':
+    main()
 ```
 
 ## Thread
@@ -1458,41 +1495,6 @@ if __name__ == '__main__':
 ```
 
 ## Kod Parçaları (Code Snippet)
-
-### Örnek CLI Kodu
-
-```py
-import argparse
-
-def main():
-    # Initiate argument parser
-    parser = argparse.ArgumentParser(
-        description="Sample TensorFlow XML-to-CSV converter")
-    parser.add_argument("-i",
-                        "--inputDir",
-                        help="Path to the folder where the input .xml files are stored",
-                        type=str)
-    parser.add_argument("-o",
-                        "--outputFile",
-                        help="Name of output .csv file (including path)", type=str)
-    args = parser.parse_args()
-
-    if args.inputDir is None:
-        args.inputDir = os.getcwd()
-
-    if args.outputFile is None:
-        args.outputFile = args.inputDir + "/labels.csv"
-
-    assert (os.path.isdir(args.inputDir))
-
-    xml_df = xml_to_csv(args.inputDir)
-    xml_df.to_csv(
-        args.outputFile, index=None)
-    print('Successfully converted xml to csv.')
-
-if __name__ == '__main__':
-    main()
-```
 
 ### Ekran Görünüsünü Alma ve Kaydetme
 
