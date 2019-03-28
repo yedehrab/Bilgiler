@@ -71,5 +71,7 @@ def update() -> None:
     with open("README.md", "w", encoding="utf-8") as file:
         file.writelines(file_str)
 
+    print("Updated! ~YEmreAk")
+
 
 update()
