@@ -8,6 +8,12 @@ Ders matlab üzerinden işlenmektedir.
 
 - [Ders Hakkında](#ders-hakk%C4%B1nda)
 - [Ders İçerikleri](#ders-i%CC%87%C3%A7erikleri)
+- [Ders Notları](#ders-notlar%C4%B1)
+  - [Renk Formatları](#renk-formatlar%C4%B1)
+    - [RGB](#rgb)
+  - [Perspektif İzdüşüm](#perspektif-i%CC%87zd%C3%BC%C5%9F%C3%BCm)
+  - [Gemometrik Dönüşümler](#gemometrik-d%C3%B6n%C3%BC%C5%9F%C3%BCmler)
+  - [Homojen Koordinatlar](#homojen-koordinatlar)
 - [Görüntü İyileştirme Metodları](#g%C3%B6r%C3%BCnt%C3%BC-i%CC%87yile%C5%9Ftirme-metodlar%C4%B1)
   - [Histogram Germe](#histogram-germe)
     - [Pythonda Histogram Germe İşlemi](#pythonda-histogram-germe-i%CC%87%C5%9Flemi)
@@ -24,6 +30,51 @@ Ders matlab üzerinden işlenmektedir.
 ## Ders İçerikleri
 
 Ders içerikleri drive üzerinden yedeklenmektedir, [buraya](https://drive.google.com/open?id=1Ma1V8w584R9ISva9XpH9OQcr2wsrmS20) tıklayarak erişebilirsin.
+
+## Ders Notları
+
+### Renk Formatları
+
+Her bir renk için 8bit'lik bir tanımlama var. (255)
+
+| Format | Açıklama                                           | Kullanım Alanı |
+| ------ | -------------------------------------------------- | -------------- |
+| RGB    | Işığa eş değer, genel kullanılan method            | TV, PC vs.     |
+| CMYK   | Boya renklerini taklit eder, baskılarda kullanılır | Printer        |
+| HSI    |
+| YIQ    |
+
+#### RGB
+
+- Cihaza ve donanıma bağlı bir renk formatıdır
+- RGB ile kodlanan dosyalar az yer kaplar
+- RGB: Red Green Blue
+- CMYK: Cyan, Magena, Yellow, Key (Key siyah rengi temsil eder)
+  - Key (siyah) renk, baskıda kullanılmazsa, teorideki karşılığını sağlamaz
+- RGB beyaza odaklı, CMYK siyaha odaklı hareket eder
+  - max RGB: Beyaz
+  - max CMYK: Siyah
+  - CMY = 1 - RGB
+
+### Perspektif İzdüşüm
+
+3D resmi 2D'ye geçirince derinlik verisinin kaybolma sebebi, benzerlerlik teoreminden kaynaklanır.
+
+> Mutlak siyah varsa boşluk gibi görünür.
+
+### Gemometrik Dönüşümler
+
+- Öteleme
+- Ölçekleme
+- Döndürme
+
+> Her birinde homojen koordinatlar kullanılır.
+
+### Homojen Koordinatlar
+
+Fazlalık olan kısımlara 1, diğer alanlara değişkenler verilir. [xy1] vs.
+
+> Matrikslerde çarpım işlemleri daha kolaydır.
 
 ## Görüntü İyileştirme Metodları
 
