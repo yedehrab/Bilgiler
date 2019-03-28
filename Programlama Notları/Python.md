@@ -18,108 +18,111 @@
     - [VsCode Python Kısayolları](#vscode-python-k%C4%B1sayollar%C4%B1)
     - [VsCode Python Ortam Değişkenleri](#vscode-python-ortam-de%C4%9Fi%C5%9Fkenleri)
   - [Faydalı Soru & Cevaplar](#faydal%C4%B1-soru--cevaplar)
-- [Yazım Kuralları](#yaz%C4%B1m-kurallar%C4%B1)
-- [Dökümantasyon PyDoc](#d%C3%B6k%C3%BCmantasyon-pydoc)
-- [Anahtar Kelimeler (Keywords)](#anahtar-kelimeler-keywords)
-  - [Fonksyion Oluşturma Anahtar Kelimeleri](#fonksyion-olu%C5%9Fturma-anahtar-kelimeleri)
-    - [Fonksiyon Anahtar Kelimeleri](#fonksiyon-anahtar-kelimeleri)
-- [Değişkenler](#de%C4%9Fi%C5%9Fkenler)
-  - [Ana Değişkenler](#ana-de%C4%9Fi%C5%9Fkenler)
-  - [Ek Değişkenler](#ek-de%C4%9Fi%C5%9Fkenler)
-  - [Değersiz Değişken Tanımalma](#de%C4%9Fersiz-de%C4%9Fi%C5%9Fken-tan%C4%B1malma)
-  - [Sabit Değerler (Constants)](#sabit-de%C4%9Ferler-constants)
-  - [Değişkenler Arası Takılama (Casting)](#de%C4%9Fi%C5%9Fkenler-aras%C4%B1-tak%C4%B1lama-casting)
-  - [Değişken Tipleri için Ek Kaynak](#de%C4%9Fi%C5%9Fken-tipleri-i%C3%A7in-ek-kaynak)
-  - [Değişken ve Sabitlerde Gizlilik](#de%C4%9Fi%C5%9Fken-ve-sabitlerde-gizlilik)
-- [Operatörler](#operat%C3%B6rler)
-  - [Aritmatik Operatörler](#aritmatik-operat%C3%B6rler)
-    - [Ek Aritmatik Operatörler](#ek-aritmatik-operat%C3%B6rler)
-  - [Karşılaştırma Operatörleri](#kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
-  - [Mantıksal Operatörler](#mant%C4%B1ksal-operat%C3%B6rler)
-  - [Bit Düzeyinde Operatörler](#bit-d%C3%BCzeyinde-operat%C3%B6rler)
-  - [Kimlik Belirleme Operatörleri](#kimlik-belirleme-operat%C3%B6rleri)
-    - [Kimlik Belirleme Operatörleri Örneği](#kimlik-belirleme-operat%C3%B6rleri-%C3%B6rne%C4%9Fi)
-  - [Üyelik Operatörleri](#%C3%BCyelik-operat%C3%B6rleri)
-    - [Üyelik Operatörleri Örneği](#%C3%BCyelik-operat%C3%B6rleri-%C3%B6rne%C4%9Fi)
-- [If / Else Koşul (Constraints) Yapısı](#if--else-ko%C5%9Ful-constraints-yap%C4%B1s%C4%B1)
-  - [Tek satır (üçlü) If / Else Yapısı](#tek-sat%C4%B1r-%C3%BC%C3%A7l%C3%BC-if--else-yap%C4%B1s%C4%B1)
-- [Döngüler (Loop)](#d%C3%B6ng%C3%BCler-loop)
-  - [For Döngüsü](#for-d%C3%B6ng%C3%BCs%C3%BC)
-    - [Değişken içinde For Döngüsü](#de%C4%9Fi%C5%9Fken-i%C3%A7inde-for-d%C3%B6ng%C3%BCs%C3%BC)
-    - [İki Liste Üzerinde Paralel For Döngüsü](#i%CC%87ki-liste-%C3%BCzerinde-paralel-for-d%C3%B6ng%C3%BCs%C3%BC)
-  - [While Döngüsü](#while-d%C3%B6ng%C3%BCs%C3%BC)
-  - [Range Fonksiyonu](#range-fonksiyonu)
-- [Break / Continue](#break--continue)
-- [Fonksiyonlar](#fonksiyonlar)
-  - [Dahili Fonksiyon Kullanımları](#dahili-fonksiyon-kullan%C4%B1mlar%C4%B1)
-    - [Ekrana Yazma / Print İşlemleri](#ekrana-yazma--print-i%CC%87%C5%9Flemleri)
-    - [String İşlemleri](#string-i%CC%87%C5%9Flemleri)
-  - [Harici Fonksiyon Kullanımları](#harici-fonksiyon-kullan%C4%B1mlar%C4%B1)
-    - [Harici String İşlemleri](#harici-string-i%CC%87%C5%9Flemleri)
-    - [Dizin ve Yol İşlemleri](#dizin-ve-yol-i%CC%87%C5%9Flemleri)
-  - [Fonksiyon Oluşturma](#fonksiyon-olu%C5%9Fturma)
-    - [Fonksiyon İskeleti](#fonksiyon-i%CC%87skeleti)
-    - [Fonksiyon Örneği](#fonksiyon-%C3%B6rne%C4%9Fi)
-    - [Fonksyion Dökümantasyonu](#fonksyion-d%C3%B6k%C3%BCmantasyonu)
-    - [Fonksyion Varsayılan Parametreler](#fonksyion-varsay%C4%B1lan-parametreler)
-    - [Fonksiyonlarda Keyfi Parametreler](#fonksiyonlarda-keyfi-parametreler)
-    - [Özyineleyen Fonksiyonlar](#%C3%B6zyineleyen-fonksiyonlar)
-      - [Özyineleyen Fonksiyonların Avantajları](#%C3%B6zyineleyen-fonksiyonlar%C4%B1n-avantajlar%C4%B1)
-      - [Özyineleyen Fonksiyonların Zararları](#%C3%B6zyineleyen-fonksiyonlar%C4%B1n-zararlar%C4%B1)
-  - [Lambda Fonksiyonlar](#lambda-fonksiyonlar)
-    - [Filter ile Lambda Kullanımı](#filter-ile-lambda-kullan%C4%B1m%C4%B1)
-    - [Map ile Lambda Kullanımı](#map-ile-lambda-kullan%C4%B1m%C4%B1)
-- [Global, Local ve Nonlocal Kavramları](#global-local-ve-nonlocal-kavramlar%C4%B1)
-  - [Global, Local ve Nonlocal Kavramlarına Örnek](#global-local-ve-nonlocal-kavramlar%C4%B1na-%C3%B6rnek)
-  - [Global Kullanımına Örnek](#global-kullan%C4%B1m%C4%B1na-%C3%B6rnek)
-- [Modüller](#mod%C3%BCller)
-  - [Modül Kullanım Örnekleri](#mod%C3%BCl-kullan%C4%B1m-%C3%B6rnekleri)
-  - [Python Modül Dosyaları](#python-mod%C3%BCl-dosyalar%C4%B1)
-    - [Sistemin Python Modüllerine Bakma](#sistemin-python-mod%C3%BCllerine-bakma)
-  - [Modül İçinde Tanımlanan İsimleri Alma](#mod%C3%BCl-i%CC%87%C3%A7inde-tan%C4%B1mlanan-i%CC%87simleri-alma)
-- [Paketler (Package)](#paketler-package)
-  - [Paketten ve Modül Örnekleri](#paketten-ve-mod%C3%BCl-%C3%B6rnekleri)
-  - [Sık Kullanılan Paketler](#s%C4%B1k-kullan%C4%B1lan-paketler)
-    - [Windows Paketleri](#windows-paketleri)
-    - [Görüntü İşleme Paketleri](#g%C3%B6r%C3%BCnt%C3%BC-i%CC%87%C5%9Fleme-paketleri)
-    - [Giriş Çıkış (I/O) Kontrol Paketleri](#giri%C5%9F-%C3%A7%C4%B1k%C4%B1%C5%9F-io-kontrol-paketleri)
-  - [Paketler için Harici Bağlantıları](#paketler-i%C3%A7in-harici-ba%C4%9Flant%C4%B1lar%C4%B1)
-- [Sayılar, Sayılar Arası Dönüşüm ve Matematik](#say%C4%B1lar-say%C4%B1lar-aras%C4%B1-d%C3%B6n%C3%BC%C5%9F%C3%BCm-ve-matematik)
-  - [Tabanlı Sayılar](#tabanl%C4%B1-say%C4%B1lar)
-  - [Ondalıklı Sayılar (Decimals / Floats)](#ondal%C4%B1kl%C4%B1-say%C4%B1lar-decimals--floats)
-    - [Decimal Float Kullanımları ve Farkı](#decimal-float-kullan%C4%B1mlar%C4%B1-ve-fark%C4%B1)
-  - [Kesirli Sayılar (Fractions)](#kesirli-say%C4%B1lar-fractions)
-    - [Kesirli Sayılarla İşlemler](#kesirli-say%C4%B1larla-i%CC%87%C5%9Flemler)
-  - [Matematik İşlemleri](#matematik-i%CC%87%C5%9Flemleri)
-    - [Matematikte Rastgelelik](#matematikte-rastgelelik)
-- [Class](#class)
-  - [Class Anahtar Kelimeleri](#class-anahtar-kelimeleri)
-  - [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi)
-  - [Metodlu Class Örneği](#metodlu-class-%C3%B6rne%C4%9Fi)
-    - [Obje Özelliği Silme](#obje-%C3%B6zelli%C4%9Fi-silme)
-    - [Class Silme](#class-silme)
-  - [Scopes and Namespaces](#scopes-and-namespaces)
-  - [Enumeration](#enumeration)
-    - [Basit Kullanım](#basit-kullan%C4%B1m)
-    - [Enum Özellikleri](#enum-%C3%B6zellikleri)
-      - [Benzersin Enum Tanımlaması](#benzersin-enum-tan%C4%B1mlamas%C4%B1)
-- [Dosya İşlemleri](#dosya-i%CC%87%C5%9Flemleri)
-  - [Dosya Okuma](#dosya-okuma)
-- [Komut İsteminden Python (CLI)](#komut-i%CC%87steminden-python-cli)
-  - [Argparse Modülü Detayları](#argparse-mod%C3%BCl%C3%BC-detaylar%C4%B1)
-  - [Argüman Ekleme](#arg%C3%BCman-ekleme)
-  - [Argüman Action Özelliği](#arg%C3%BCman-action-%C3%B6zelli%C4%9Fi)
-  - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
-- [Thread](#thread)
-  - [Basit Thread Yapısı](#basit-thread-yap%C4%B1s%C4%B1)
-  - [Zamanlayıcı Yapısı (Timer)](#zamanlay%C4%B1c%C4%B1-yap%C4%B1s%C4%B1-timer)
-  - [Bir Plana göre Fonksiyon Çalıştırma](#bir-plana-g%C3%B6re-fonksiyon-%C3%A7al%C4%B1%C5%9Ft%C4%B1rma)
-- [Paralel İşlemler (Multiprocessing)](#paralel-i%CC%87%C5%9Flemler-multiprocessing)
-  - [Multiprocessing Örneği](#multiprocessing-%C3%B6rne%C4%9Fi)
-- [Kod Parçaları (Code Snippet)](#kod-par%C3%A7alar%C4%B1-code-snippet)
-  - [Ekran Görünüsünü Alma ve Kaydetme](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma-ve-kaydetme)
-  - [Kısayol ile Ekran Alanı Seçme](#k%C4%B1sayol-ile-ekran-alan%C4%B1-se%C3%A7me)
-  - [Url Encode İşlemi](#url-encode-i%CC%87%C5%9Flemi)
+- [Python ile Programlamaya Hazırlanma](#python-ile-programlamaya-haz%C4%B1rlanma)
+  - [Yazım Kuralları](#yaz%C4%B1m-kurallar%C4%B1)
+  - [Dökümantasyon PyDoc](#d%C3%B6k%C3%BCmantasyon-pydoc)
+- [Temel Python](#temel-python)
+  - [Anahtar Kelimeler (Keywords)](#anahtar-kelimeler-keywords)
+    - [Fonksyion Oluşturma Anahtar Kelimeleri](#fonksyion-olu%C5%9Fturma-anahtar-kelimeleri)
+        - [Fonksiyon Anahtar Kelimeleri](#fonksiyon-anahtar-kelimeleri)
+  - [Değişkenler](#de%C4%9Fi%C5%9Fkenler)
+    - [Ana Değişkenler](#ana-de%C4%9Fi%C5%9Fkenler)
+    - [Ek Değişkenler](#ek-de%C4%9Fi%C5%9Fkenler)
+    - [Değersiz Değişken Tanımalma](#de%C4%9Fersiz-de%C4%9Fi%C5%9Fken-tan%C4%B1malma)
+    - [Sabit Değerler (Constants)](#sabit-de%C4%9Ferler-constants)
+    - [Değişkenler Arası Takılama (Casting)](#de%C4%9Fi%C5%9Fkenler-aras%C4%B1-tak%C4%B1lama-casting)
+    - [Değişken Tipleri için Ek Kaynak](#de%C4%9Fi%C5%9Fken-tipleri-i%C3%A7in-ek-kaynak)
+    - [Değişken ve Sabitlerde Gizlilik](#de%C4%9Fi%C5%9Fken-ve-sabitlerde-gizlilik)
+  - [Operatörler](#operat%C3%B6rler)
+    - [Aritmatik Operatörler](#aritmatik-operat%C3%B6rler)
+        - [Ek Aritmatik Operatörler](#ek-aritmatik-operat%C3%B6rler)
+    - [Karşılaştırma Operatörleri](#kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rleri)
+    - [Mantıksal Operatörler](#mant%C4%B1ksal-operat%C3%B6rler)
+    - [Bit Düzeyinde Operatörler](#bit-d%C3%BCzeyinde-operat%C3%B6rler)
+    - [Kimlik Belirleme Operatörleri](#kimlik-belirleme-operat%C3%B6rleri)
+        - [Kimlik Belirleme Operatörleri Örneği](#kimlik-belirleme-operat%C3%B6rleri-%C3%B6rne%C4%9Fi)
+    - [Üyelik Operatörleri](#%C3%BCyelik-operat%C3%B6rleri)
+        - [Üyelik Operatörleri Örneği](#%C3%BCyelik-operat%C3%B6rleri-%C3%B6rne%C4%9Fi)
+  - [If / Else Koşul (Constraints) Yapısı](#if--else-ko%C5%9Ful-constraints-yap%C4%B1s%C4%B1)
+    - [Tek satır (üçlü) If / Else Yapısı](#tek-sat%C4%B1r-%C3%BC%C3%A7l%C3%BC-if--else-yap%C4%B1s%C4%B1)
+  - [Döngüler (Loop)](#d%C3%B6ng%C3%BCler-loop)
+    - [For Döngüsü](#for-d%C3%B6ng%C3%BCs%C3%BC)
+        - [Değişken içinde For Döngüsü](#de%C4%9Fi%C5%9Fken-i%C3%A7inde-for-d%C3%B6ng%C3%BCs%C3%BC)
+        - [İki Liste Üzerinde Paralel For Döngüsü](#i%CC%87ki-liste-%C3%BCzerinde-paralel-for-d%C3%B6ng%C3%BCs%C3%BC)
+    - [While Döngüsü](#while-d%C3%B6ng%C3%BCs%C3%BC)
+    - [Range Fonksiyonu](#range-fonksiyonu)
+  - [Break / Continue](#break--continue)
+  - [Fonksiyonlar](#fonksiyonlar)
+    - [Dahili Fonksiyon Kullanımları](#dahili-fonksiyon-kullan%C4%B1mlar%C4%B1)
+        - [Ekrana Yazma / Print İşlemleri](#ekrana-yazma--print-i%CC%87%C5%9Flemleri)
+        - [String İşlemleri](#string-i%CC%87%C5%9Flemleri)
+    - [Harici Fonksiyon Kullanımları](#harici-fonksiyon-kullan%C4%B1mlar%C4%B1)
+        - [Harici String İşlemleri](#harici-string-i%CC%87%C5%9Flemleri)
+        - [Dizin ve Yol İşlemleri](#dizin-ve-yol-i%CC%87%C5%9Flemleri)
+    - [Fonksiyon Oluşturma](#fonksiyon-olu%C5%9Fturma)
+        - [Fonksiyon İskeleti](#fonksiyon-i%CC%87skeleti)
+        - [Fonksiyon Örneği](#fonksiyon-%C3%B6rne%C4%9Fi)
+        - [Fonksyion Dökümantasyonu](#fonksyion-d%C3%B6k%C3%BCmantasyonu)
+        - [Fonksyion Varsayılan Parametreler](#fonksyion-varsay%C4%B1lan-parametreler)
+        - [Fonksiyonlarda Keyfi Parametreler](#fonksiyonlarda-keyfi-parametreler)
+        - [Özyineleyen Fonksiyonlar](#%C3%B6zyineleyen-fonksiyonlar)
+    - [Lambda Fonksiyonlar](#lambda-fonksiyonlar)
+        - [Filter ile Lambda Kullanımı](#filter-ile-lambda-kullan%C4%B1m%C4%B1)
+        - [Map ile Lambda Kullanımı](#map-ile-lambda-kullan%C4%B1m%C4%B1)
+  - [Global, Local ve Nonlocal Kavramları](#global-local-ve-nonlocal-kavramlar%C4%B1)
+    - [Global, Local ve Nonlocal Kavramlarına Örnek](#global-local-ve-nonlocal-kavramlar%C4%B1na-%C3%B6rnek)
+    - [Global Kullanımına Örnek](#global-kullan%C4%B1m%C4%B1na-%C3%B6rnek)
+  - [Modüller](#mod%C3%BCller)
+    - [Modül Kullanım Örnekleri](#mod%C3%BCl-kullan%C4%B1m-%C3%B6rnekleri)
+    - [Python Modül Dosyaları](#python-mod%C3%BCl-dosyalar%C4%B1)
+        - [Sistemin Python Modüllerine Bakma](#sistemin-python-mod%C3%BCllerine-bakma)
+    - [Modül İçinde Tanımlanan İsimleri Alma](#mod%C3%BCl-i%CC%87%C3%A7inde-tan%C4%B1mlanan-i%CC%87simleri-alma)
+  - [Paketler (Package)](#paketler-package)
+    - [Paketten ve Modül Örnekleri](#paketten-ve-mod%C3%BCl-%C3%B6rnekleri)
+    - [Sık Kullanılan Paketler](#s%C4%B1k-kullan%C4%B1lan-paketler)
+        - [Windows Paketleri](#windows-paketleri)
+        - [Görüntü İşleme Paketleri](#g%C3%B6r%C3%BCnt%C3%BC-i%CC%87%C5%9Fleme-paketleri)
+        - [Giriş Çıkış (I/O) Kontrol Paketleri](#giri%C5%9F-%C3%A7%C4%B1k%C4%B1%C5%9F-io-kontrol-paketleri)
+    - [Paketler için Harici Bağlantıları](#paketler-i%C3%A7in-harici-ba%C4%9Flant%C4%B1lar%C4%B1)
+  - [Sayılar, Sayılar Arası Dönüşüm ve Matematik](#say%C4%B1lar-say%C4%B1lar-aras%C4%B1-d%C3%B6n%C3%BC%C5%9F%C3%BCm-ve-matematik)
+    - [Tabanlı Sayılar](#tabanl%C4%B1-say%C4%B1lar)
+    - [Ondalıklı Sayılar (Decimals / Floats)](#ondal%C4%B1kl%C4%B1-say%C4%B1lar-decimals--floats)
+        - [Decimal Float Kullanımları ve Farkı](#decimal-float-kullan%C4%B1mlar%C4%B1-ve-fark%C4%B1)
+    - [Kesirli Sayılar (Fractions)](#kesirli-say%C4%B1lar-fractions)
+        - [Kesirli Sayılarla İşlemler](#kesirli-say%C4%B1larla-i%CC%87%C5%9Flemler)
+    - [Matematik İşlemleri](#matematik-i%CC%87%C5%9Flemleri)
+        - [Matematikte Rastgelelik](#matematikte-rastgelelik)
+  - [Class](#class)
+    - [Class Anahtar Kelimeleri](#class-anahtar-kelimeleri)
+    - [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi)
+    - [Metodlu Class Örneği](#metodlu-class-%C3%B6rne%C4%9Fi)
+        - [Obje Özelliği Silme](#obje-%C3%B6zelli%C4%9Fi-silme)
+        - [Class Silme](#class-silme)
+    - [Scopes and Namespaces](#scopes-and-namespaces)
+    - [Enumeration](#enumeration)
+        - [Basit Kullanım](#basit-kullan%C4%B1m)
+        - [Enum Özellikleri](#enum-%C3%B6zellikleri)
+- [İleri Seviye Python](#i%CC%87leri-seviye-python)
+  - [Assertion (Kural Koyma)](#assertion-kural-koyma)
+    - [Assertion Örnekleri](#assertion-%C3%B6rnekleri)
+  - [Try / Except Yapısı](#try--except-yap%C4%B1s%C4%B1)
+  - [Dosya İşlemleri](#dosya-i%CC%87%C5%9Flemleri)
+    - [Dosya Okuma](#dosya-okuma)
+  - [Komut İsteminden Python (CLI)](#komut-i%CC%87steminden-python-cli)
+    - [Argparse Modülü Detayları](#argparse-mod%C3%BCl%C3%BC-detaylar%C4%B1)
+    - [Argüman Ekleme](#arg%C3%BCman-ekleme)
+    - [Argüman Action Özelliği](#arg%C3%BCman-action-%C3%B6zelli%C4%9Fi)
+    - [Örnek CLI Kodu](#%C3%B6rnek-cli-kodu)
+  - [Thread](#thread)
+    - [Basit Thread Yapısı](#basit-thread-yap%C4%B1s%C4%B1)
+    - [Zamanlayıcı Yapısı (Timer)](#zamanlay%C4%B1c%C4%B1-yap%C4%B1s%C4%B1-timer)
+    - [Bir Plana göre Fonksiyon Çalıştırma](#bir-plana-g%C3%B6re-fonksiyon-%C3%A7al%C4%B1%C5%9Ft%C4%B1rma)
+  - [Paralel İşlemler (Multiprocessing)](#paralel-i%CC%87%C5%9Flemler-multiprocessing)
+    - [Multiprocessing Örneği](#multiprocessing-%C3%B6rne%C4%9Fi)
+  - [Kod Parçaları (Code Snippet)](#kod-par%C3%A7alar%C4%B1-code-snippet)
+    - [Ekran Görünüsünü Alma ve Kaydetme](#ekran-g%C3%B6r%C3%BCn%C3%BCs%C3%BCn%C3%BC-alma-ve-kaydetme)
+    - [Kısayol ile Ekran Alanı Seçme](#k%C4%B1sayol-ile-ekran-alan%C4%B1-se%C3%A7me)
+    - [Url Encode İşlemi](#url-encode-i%CC%87%C5%9Flemi)
 - [Google Colabrotory Üzerinden Python](#google-colabrotory-%C3%BCzerinden-python)
   - [IPython Operatorleri](#ipython-operatorleri)
   - [Python Değişkenlerinin Bash Üzerinde Kullanımı](#python-de%C4%9Fi%C5%9Fkenlerinin-bash-%C3%BCzerinde-kullan%C4%B1m%C4%B1)
@@ -258,7 +261,9 @@ PYTHONPATH=${RESEARCH_FOLDER}:${OBJECT_FOLDER}:${SLIM_FOLDER}:${SCRIPT_FOLDER}
 - [What's the difference between a pip install and conda install?](https://www.quora.com/Whats-the-difference-between-a-pip-install-and-conda-install)
 - [Module Package Library Meaning](https://knowpapa.com/modpaclib-py/)
 
-## Yazım Kuralları
+## Python ile Programlamaya Hazırlanma
+
+### Yazım Kuralları
 
 Orjinal dökümantasyon için [buraya](https://www.python.org/dev/peps/pep-0008/) bakabilirsin.
 
@@ -280,7 +285,7 @@ Orjinal dökümantasyon için [buraya](https://www.python.org/dev/peps/pep-0008/
 
 > Daha fazla bilgi için harici linklerdeki [Should I use underscores or camel case for Python?](https://www.quora.com/Should-I-use-underscores-or-camel-case-for-Python) bağlantısına tıklayabilirsin.
 
-## Dökümantasyon PyDoc
+### Dökümantasyon PyDoc
 
 - `'''` ile fonksiyonların üstüne dökümantasyon (açıklama) eklenir
 - `#` ile koda yorum eklenir
@@ -291,7 +296,9 @@ def func(a):
   return 1 # Döndürme keywordu
 ```
 
-## Anahtar Kelimeler (Keywords)
+## Temel Python
+
+### Anahtar Kelimeler (Keywords)
 
 Harici link için [buraya](https://www.programiz.com/python-programming/keyword-list) tıklayabilirsin.
 
@@ -304,23 +311,23 @@ Harici link için [buraya](https://www.programiz.com/python-programming/keyword-
 
 > Döngü veya metotların *içleri doldurulana* kadar yer kaplayıcı olarak `pass` kullanılır.
 
-### Fonksyion Oluşturma Anahtar Kelimeleri
+#### Fonksyion Oluşturma Anahtar Kelimeleri
 
 | Anahtar  | Oluştuma                   | Erişim        |
 | -------- | -------------------------- | ------------- |
 | Lambda   | `m_lambda = lambda x: x*2` | `m_lambda(2)` |
 | Function | `def m_func(param):`       | `m_func(5)`   |
 
-#### Fonksiyon Anahtar Kelimeleri
+###### Fonksiyon Anahtar Kelimeleri
 
 | Anahtar  | Anlamı                                            |
 | -------- | ------------------------------------------------- |
 | `return` | Veri döndürme                                     |
 | `yield`  | Her çağırılmada tek bir veri döndürme (generator) |
 
-## Değişkenler
+### Değişkenler
 
-### Ana Değişkenler
+#### Ana Değişkenler
 
 | Tip     | Açıklama         | Örnek                 |
 | ------- | ---------------- | --------------------- |
@@ -330,7 +337,7 @@ Harici link için [buraya](https://www.programiz.com/python-programming/keyword-
 | complex | Karmaşık sayılar | `2+3j`                |
 | str     | String, metin    | `"Hello"` / `'Hello'` |
 
-### Ek Değişkenler
+#### Ek Değişkenler
 
 | Tip                                                                   | Oluştuma                           | Erişim         |
 | --------------------------------------------------------------------- | ---------------------------------- | -------------- |
@@ -339,13 +346,13 @@ Harici link için [buraya](https://www.programiz.com/python-programming/keyword-
 | [Dictionary](https://www.programiz.com/python-programming/dictionary) | `site = {"adi":"yemreak"}`         | `site['adi']`  |
 | [Tuple](https://www.programiz.com/python-programming/tuple)           | `konum = (1, 2)`                   | `x, y = konum` |
 
-### Değersiz Değişken Tanımalma
+#### Değersiz Değişken Tanımalma
 
 ```py
 degersiz = None
 ```
 
-### Sabit Değerler (Constants)
+#### Sabit Değerler (Constants)
 
 Her karakter büyük harfler ile yazılırsa sabit değer olur.
 
@@ -365,7 +372,7 @@ print(sabitler.PI) # 3.14
 print(sabitler.GRAVITY) # 9.8
 ```
 
-### Değişkenler Arası Takılama (Casting)
+#### Değişkenler Arası Takılama (Casting)
 
 ```py
 ondalikli = 5.8
@@ -376,24 +383,24 @@ sonuc = float(7 / 3.5) # 2.0 atanır
 sonuc = 7 / 3 # 2.33 atanır
 ```
 
-### Değişken Tipleri için Ek Kaynak
+#### Değişken Tipleri için Ek Kaynak
 
 - [Basic Data Types in Python](https://realpython.com/python-data-types/)
 
-### Değişken ve Sabitlerde Gizlilik
+#### Değişken ve Sabitlerde Gizlilik
 
 - `__` ile gizli anlamında gelmektedir.
   - Dışarıdan sadece `_<class>.__<değişken>` şeklinde erişilebilir
 
 > Detaylar için [buraya](https://www.bogotobogo.com/python/python_private_attributes_methods.php) bakabilirsin.
 
-## Operatörler
+### Operatörler
 
 | Operatör | Açıklama                       |
 | -------- | ------------------------------ |
 | `\`      | Satır atlatmayı geçersiz kılma |
 
-### Aritmatik Operatörler
+#### Aritmatik Operatörler
 
 | Operatör         | Açıklama                                |
 | ---------------- | --------------------------------------- |
@@ -406,7 +413,7 @@ sonuc = 7 / 3 # 2.33 atanır
 
 > `<operatör>` herhangi bir operatörü temsil eder.
 
-#### Ek Aritmatik Operatörler
+###### Ek Aritmatik Operatörler
 
 | Operatör | Açıklama             | Örnek     | Çıktı |
 | -------- | -------------------- | --------- | ----- |
@@ -414,7 +421,7 @@ sonuc = 7 / 3 # 2.33 atanır
 | `**`     | Kuvvet alma          | `6 ** 2`  | `36`  |
 | `//`     | Kalansız bölümü alma | `13 // 2` | `6`   |
 
-### Karşılaştırma Operatörleri
+#### Karşılaştırma Operatörleri
 
 | Operatör | Açıklama   | Örnek    | Çıktı   |
 | -------- | ---------- | -------- | ------- |
@@ -425,7 +432,7 @@ sonuc = 7 / 3 # 2.33 atanır
 | `>=`     | Büyük eşit | `2 >= 5` | `False` |
 | `<=`     | Küçük eşit | `2 <= 2` | `True`  |
 
-### Mantıksal Operatörler
+#### Mantıksal Operatörler
 
 | Operatör | Açıklama    | Örnek            | Çıktı   |
 | -------- | ----------- | ---------------- | ------- |
@@ -433,7 +440,7 @@ sonuc = 7 / 3 # 2.33 atanır
 | `or`     | Veya işlemi | `False or True`  | `True`  |
 | `not`    | Değili      | `not False`      | `True`  |
 
-### Bit Düzeyinde Operatörler
+#### Bit Düzeyinde Operatörler
 
 | Operatör | Açıklama      | Örnek                     |
 | -------- | ------------- | ------------------------- |
@@ -444,7 +451,7 @@ sonuc = 7 / 3 # 2.33 atanır
 | `>>`     | Sağa kaydırma | `x >> 2 = 2 (0000 0010)`  |
 | `<<`     | Sola kaydırma | `x << 2 = 40 (0010 1000)` |
 
-### Kimlik Belirleme Operatörleri
+#### Kimlik Belirleme Operatörleri
 
 | Operatör | Açıklama                  | Örnek                     | Çıktı   |
 | -------- | ------------------------- | ------------------------- | ------- |
@@ -453,7 +460,7 @@ sonuc = 7 / 3 # 2.33 atanır
 
 > Ek değişkenlerde objelerin adresleri farklı olduğunda ilk çıktı `False` olur.
 
-#### Kimlik Belirleme Operatörleri Örneği
+###### Kimlik Belirleme Operatörleri Örneği
 
 ```py
 x1 = 5
@@ -473,7 +480,7 @@ print(x2 is y2)
 print(x3 is y3)
  ```
 
-### Üyelik Operatörleri
+#### Üyelik Operatörleri
 
 | Operatör | Açıklama    | Örnek        | Çıktı   |
 | -------- | ----------- | ------------ | ------- |
@@ -482,7 +489,7 @@ print(x3 is y3)
 
 > `x = [1, 2, 3, 4]`
 
-#### Üyelik Operatörleri Örneği
+###### Üyelik Operatörleri Örneği
 
 ```py
 x = 'Hello world'
@@ -494,7 +501,7 @@ print(1 in y) # True
 print('a' in y) # False ('a' bir değerdir anahtar değildir)
 ```
 
-## If / Else Koşul (Constraints) Yapısı
+### If / Else Koşul (Constraints) Yapısı
 
 - `:` ile if / else satırı sonlandırılır
 - `Tab` kadar boşluk atılırsa if scope*'u içerisinde olur
@@ -512,16 +519,16 @@ else:
     print("Negatif sayı")
 ```
 
-### Tek satır (üçlü) If / Else Yapısı
+#### Tek satır (üçlü) If / Else Yapısı
 
 ```py
 fruit = 'Apple'
 isApple = True if fruit == 'Apple' else False
 ```
 
-## Döngüler (Loop)
+### Döngüler (Loop)
 
-### For Döngüsü
+#### For Döngüsü
 
 ```py
 sayilar = [6, 5, 3, 8, 4, 2, 5, 4, 11]
@@ -533,14 +540,14 @@ for sayi in sayilar: # Liste üzerinde döngü ile ilerleme
 print("Toplam değer:", sum) # Toplam Değer: 48
 ```
 
-#### Değişken içinde For Döngüsü
+###### Değişken içinde For Döngüsü
 
 ```py
 values = [item.value for item in Fruit]  # [4, 5, 6]
 values = set(item.value for item in Fruit)  # {4, 5, 6}
 ```
 
-#### İki Liste Üzerinde Paralel For Döngüsü
+###### İki Liste Üzerinde Paralel For Döngüsü
 
 ```py
 for num, cheese, color in zip([1,2,3], ['manchego', 'stilton', 'brie'],
@@ -554,7 +561,7 @@ for num, cheese, color in zip([1,2,3], ['manchego', 'stilton', 'brie'],
 3 green brie
 ```
 
-### While Döngüsü
+#### While Döngüsü
 
 ```py
 sayac = 0
@@ -573,7 +580,7 @@ Döngü içinde
 Döngü dışında
 ```
 
-### Range Fonksiyonu
+#### Range Fonksiyonu
 
 ```py
 print(range(10)) # range(0, 10)
@@ -582,7 +589,7 @@ print(list(range(2, 8))) # [2, 3, 4, 5, 6, 7]
 print(list(range(2, 20, 3))) #  [2, 5, 8, 11, 14, 17]
 ```
 
-## Break / Continue
+### Break / Continue
 
 ```py
 for deger in "string":
@@ -601,18 +608,18 @@ r
 Son
 ```
 
-## Fonksiyonlar
+### Fonksiyonlar
 
-### Dahili Fonksiyon Kullanımları
+#### Dahili Fonksiyon Kullanımları
 
-#### Ekrana Yazma / Print İşlemleri
+###### Ekrana Yazma / Print İşlemleri
 
 | Fonksiyon                      | Açıklama              | Örnek                      | Çıktı        |
 | ------------------------------ | --------------------- | -------------------------- | ------------ |
 | `print(<string>)`              | Ekrana yazma          | `print(f"X: {a}, Y: {2}")` | `X: 1, Y: 2` |
 | `print(f'...{<python_kodu>}')` | Ekrana formatlı yazma | `print(f"X: {a}, Y: {2}")` | `X: 1, Y: 2` |
 
-#### String İşlemleri
+###### String İşlemleri
 
 | Metot     | Açıklama                | Örnek                          | Çıktı                 |
 | --------- | ----------------------- | ------------------------------ | --------------------- |
@@ -631,12 +638,12 @@ Son
 
 > Daha fazla bilgi için [buraya](https://www.programiz.com/python-programming/methods/string) ve [buraya](https://stackoverflow.com/questions/10660435/pythonic-way-to-create-a-long-multi-line-string) bakabilirsin.
 
-### Harici Fonksiyon Kullanımları
+#### Harici Fonksiyon Kullanımları
 
 - Fonksiyonları kullanmadan önce `import <paket>` ile paketi dahil etmeniz lazım
 - Fonksiyonların kullanımı `<paket>.<fonksiyon>` şeklindedir
 
-#### Harici String İşlemleri
+###### Harici String İşlemleri
 
 | Paket | Fonksiyon                                | Açıklama                              |
 | ----- | ---------------------------------------- | ------------------------------------- |
@@ -649,7 +656,7 @@ Son
 - `<string>` Ayrıştırılacak metin
   - *Örn:* `'yemreak.com'`
 
-#### Dizin ve Yol İşlemleri
+###### Dizin ve Yol İşlemleri
 
 | Paket     | Fonksiyon                      | Açıklama                                                                         |
 | --------- | ------------------------------ | -------------------------------------------------------------------------------- |
@@ -669,9 +676,9 @@ Son
 - `<yol_şablonu>` Özel dizin sorguları
   - *Örn: `*.txt`, `../help`*
 
-### Fonksiyon Oluşturma
+#### Fonksiyon Oluşturma
 
-#### Fonksiyon İskeleti
+###### Fonksiyon İskeleti
 
 ```py
 def function_name(parameters):
@@ -679,7 +686,7 @@ def function_name(parameters):
   statement(s)
 ```
 
-#### Fonksiyon Örneği
+###### Fonksiyon Örneği
 
 ```py
 def greet(name):
@@ -689,7 +696,7 @@ def greet(name):
   print("Hello, " + name + ". Good morning!")
 ```
 
-#### Fonksyion Dökümantasyonu
+###### Fonksyion Dökümantasyonu
 
 ```cmd
 >>> print(greet.__doc__)
@@ -698,7 +705,7 @@ This function greets to
   name paramete
 ```
 
-#### Fonksyion Varsayılan Parametreler
+###### Fonksyion Varsayılan Parametreler
 
 ```py
 def greet(name, msg = "Good morning!"):
@@ -719,7 +726,7 @@ greet("Bruce","How do you do?") # Sıralı parametre verme
 greet("Bruce", msg="Naber") # İşaretleyerek paremetre verme
 ```
 
-#### Fonksiyonlarda Keyfi Parametreler
+###### Fonksiyonlarda Keyfi Parametreler
 
 ```py
 def greet(*names):
@@ -735,7 +742,7 @@ greet("Monica","Luke","Steve","John")
 
 > `*` ön eki ile ile kaç tane isim gelirse o kadar kullanıyoruz.
 
-#### Özyineleyen Fonksiyonlar
+###### Özyineleyen Fonksiyonlar
 
 ```py
 def calc_factorial(x):
@@ -762,19 +769,19 @@ calc_factorial(4)              # 1st call with 4
 24                             # return from 1st call
 ```
 
-##### Özyineleyen Fonksiyonların Avantajları
+####### Özyineleyen Fonksiyonların Avantajları
 
 - Özyineleyen fonksiyonlar kodun daha temiz ve zarif gözükmesini sağlar
 - Karmaşık bir görev alt görevlere ayrılarak rahat çözülebilir
 - İç içe döngülere göre daha iyidir
 
-##### Özyineleyen Fonksiyonların Zararları
+####### Özyineleyen Fonksiyonların Zararları
 
 - Bazı durumlarda anlaşılabilmesi zordur
 - Uzun tekrarlarda çok fazla vakit ve zaman harcarlar
 - Hata ayıklama oldukça zordur
 
-### Lambda Fonksiyonlar
+#### Lambda Fonksiyonlar
 
 ```py
 double = lambda x: x * 2 # lambda fonksiyon
@@ -784,7 +791,7 @@ def double(x): # Fonksiyon
    return x * 2
 ```
 
-#### Filter ile Lambda Kullanımı
+###### Filter ile Lambda Kullanımı
 
 Sadece koşulu sağlayan değerleri döndürür.
 
@@ -795,7 +802,7 @@ cift_listem = list(filter(lambda x: (x%2 == 0) , listem))
 print(cift_listem) # [4, 6, 8, 12]
 ```
 
-#### Map ile Lambda Kullanımı
+###### Map ile Lambda Kullanımı
 
 Her eleman için işlem yapar.
 
@@ -806,7 +813,7 @@ katlanmis_listem = list(map(lambda x: x * 2 , listem))
 print(katlanmis_listem) # Output: [2, 10, 8, 12, 16, 22, 6, 24]
 ```
 
-## Global, Local ve Nonlocal Kavramları
+### Global, Local ve Nonlocal Kavramları
 
 | Kavram     | Açıklama                                                                                    |
 | ---------- | ------------------------------------------------------------------------------------------- |
@@ -814,40 +821,40 @@ print(katlanmis_listem) # Output: [2, 10, 8, 12, 16, 22, 6, 24]
 | `local`    | Fonksiyonların içerisindeki yerel değişkenler                                               |
 | `nonlocal` | Modül ile fonksiyon arasında kalan, genellikle iç içe fonksiyonlarda kullanılan değişkenler |
 
-### Global, Local ve Nonlocal Kavramlarına Örnek
+#### Global, Local ve Nonlocal Kavramlarına Örnek
 
 ```py
 x = 5 # Global
 
 def fonksiyonum():
   x = 3 # Nonlocal
-  
+
   def degisitirici():
     x = 1 # Local
 ```
 
-### Global Kullanımına Örnek
+#### Global Kullanımına Örnek
 
 ```py
 x = 5
   # Yerel x değişkenine 3 değeri atanır, evrensel x değişmez.
   def xDegistir():
     x = 3
-  
+
   # Evrensel x değişir
   def globalXDegistir():
     global x
     x = 4
 ```
 
-## Modüller
+### Modüller
 
 Her python dosyasına modül denir.
 
 - `import` ile dahil edilirler
 - `.` ile içlerindekilere erişilir
 
-### Modül Kullanım Örnekleri
+#### Modül Kullanım Örnekleri
 
 - Python aynı modülü birden fazla kez `import` etmez
   - Kullanıcı birden fazla `import` işlemi yaparsa tepki vermez
@@ -873,7 +880,7 @@ from math import * # Modül içindeki her şeyi alma
 print("Pi: ", pi) # Pi: 3.141592653589793
 ```
 
-### Python Modül Dosyaları
+#### Python Modül Dosyaları
 
 Modül dosyalarının aranma yerleri:
 
@@ -881,7 +888,7 @@ Modül dosyalarının aranma yerleri:
 - Ortam değişkenlerindeki `PYTHONPATH` değişkeni değeri
 - Kuruluma bağlı varsayılan dizin
 
-#### Sistemin Python Modüllerine Bakma
+###### Sistemin Python Modüllerine Bakma
 
 ```py
 >>> import sys
@@ -895,7 +902,7 @@ Modül dosyalarının aranma yerleri:
 'C:\\Python33\\lib\\site-packages']
 ```
 
-### Modül İçinde Tanımlanan İsimleri Alma
+#### Modül İçinde Tanımlanan İsimleri Alma
 
 ```py
 >>> dir(example)
@@ -924,13 +931,13 @@ Modül dosyalarının aranma yerleri:
 ['__builtins__', '__doc__', '__name__', 'a', 'b', 'math', 'pyscripter']
 ```
 
-## Paketler (Package)
+### Paketler (Package)
 
 - Birden fazla modülü içinde barındırır
 - `.` ile modüllere erişilir
   - Tekrar `.` atılırsa modülün içindekilere erişilir
 
-### Paketten ve Modül Örnekleri
+#### Paketten ve Modül Örnekleri
 
 ```py
 import Game.Level.start
@@ -944,7 +951,7 @@ from Game.Level import start
 from Game.Level.start import select_difficulty
 ```
 
-### Sık Kullanılan Paketler
+#### Sık Kullanılan Paketler
 
 | Modül                                                                                          | Odaklantığı İşlemler |
 | ---------------------------------------------------------------------------------------------- | -------------------- |
@@ -956,7 +963,7 @@ from Game.Level.start import select_difficulty
 | [pillow](https://pillow.readthedocs.io/en/stable/)                                             | Resim                |
 | Tensorflow                                                                                     | Makine öğrenimi      |
 
-#### Windows Paketleri
+###### Windows Paketleri
 
 | Modül       | Odaklandığı İşlemler                                                | Dökümanlar                                                                                                                                                                                       |
 | ----------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -965,7 +972,7 @@ from Game.Level.start import select_difficulty
 | pywin32     | Resmi windows API (pencere dahil)                                   | [🌐](http://timgolden.me.uk/pywin32-docs/contents.html) [📺]([https://www.youtube.com/watch?v=o-k6l6ea3Lg](https://www.youtube.com/watch?v=o-k6l6ea3Lg)) [📥](https://pypi.org/project/pywin32/) |
 | pyautogui   | Arayüz, fare, klavye ...                                            | [📃](https://media.readthedocs.org/pdf/pyautogui/latest/pyautogui.pdf) [📺](https://www.youtube.com/watch?v=xOfBezEDZ24)                                                                         |
 
-#### Görüntü İşleme Paketleri
+###### Görüntü İşleme Paketleri
 
 | Modül       | Açılkama                 | Dökümanlar                                                       |
 | ----------- | ------------------------ | ---------------------------------------------------------------- |
@@ -973,21 +980,21 @@ from Game.Level.start import select_difficulty
 | opencv      | Görüntü işleme           | [📃](https://docs.opencv.org/3.0-last-rst/opencv_cheatsheet.pdf) |
 | pytesseract | Görüntüdeki yazıyı bulma | [🌐](https://pypi.org/project/pytesseract/)                      |
 
-#### Giriş Çıkış (I/O) Kontrol Paketleri
+###### Giriş Çıkış (I/O) Kontrol Paketleri
 
 | Paket  | Odaklanığı İşlemler | Dökümanlar                                                                                                                                                                  |
 | ------ | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | pynput | Fare, klavye vs...  | [🌐](https://pynput.readthedocs.io/en/latest/index.html) [📃](https://media.readthedocs.org/pdf/pynput/latest/pynput.pdf) [📺](https://www.youtube.com/watch?v=kJshtCfqCsY) |
 
-### Paketler için Harici Bağlantıları
+#### Paketler için Harici Bağlantıları
 
 - [Python Kütüphaneleri](https://docs.python.org/3/library/)
 - [Argparse Tutorial](https://docs.python.org/3/howto/argparse.html)
 - [PyAutoGUI vs Pywinauto](https://www.reddit.com/r/Python/comments/8bymeo/pyautogui_vs_pywinauto/)
 
-## Sayılar, Sayılar Arası Dönüşüm ve Matematik
+### Sayılar, Sayılar Arası Dönüşüm ve Matematik
 
-### Tabanlı Sayılar
+#### Tabanlı Sayılar
 
 | Taban  | Ön ek           | Örnek                | Çıktı         |
 | ------ | --------------- | -------------------- | ------------- |
@@ -995,7 +1002,7 @@ from Game.Level.start import select_difficulty
 | 8'lik  | `0o` ya da `0O` | `print(0xFB + 0b10)` | 253 (251 + 2) |
 | 16'lık | `0x` ya da `0X` | `print(0o15)`        | 13            |
 
-### Ondalıklı Sayılar (Decimals / Floats)
+#### Ondalıklı Sayılar (Decimals / Floats)
 
 ```py
 >>> (1.1 + 2.2) == 3.3
@@ -1018,12 +1025,12 @@ print(D('1.1') + D('2.2')) #  Decimal('3.3')
 print(D('1.2') * D('2.50')) # Decimal('3.000')
 ```
 
-#### Decimal Float Kullanımları ve Farkı
+###### Decimal Float Kullanımları ve Farkı
 
 - Decimal daha fazla bellek kaplar
 - Finansal işlemlerde decimal tercih edilir
 
-### Kesirli Sayılar (Fractions)
+#### Kesirli Sayılar (Fractions)
 
 ```py
 import fractions
@@ -1041,7 +1048,7 @@ print(fractions.Fraction(1.1)) # 2476979795053773/2251799813685248
 print(fractions.Fraction('1.1')) # 11/10
 ```
 
-#### Kesirli Sayılarla İşlemler
+###### Kesirli Sayılarla İşlemler
 
 ```py
 from fractions import Fraction as F
@@ -1052,7 +1059,7 @@ print(F(-3,10) > 0) # False
 print(F(-3,10) < 0) # True
 ```
 
-### Matematik İşlemleri
+#### Matematik İşlemleri
 
 ```py
 import math
@@ -1065,7 +1072,7 @@ print(math.sinh(1)) # 1.1752011936438014
 print(math.factorial(6)) # 720
 ```
 
-#### Matematikte Rastgelelik
+###### Matematikte Rastgelelik
 
 ```py
 import random
@@ -1079,9 +1086,9 @@ print(x) # Karışım sonucunu yazma
 print(random.random()) # Rastgele eleman yazma
 ```
 
-## Class
+### Class
 
-### Class Anahtar Kelimeleri
+#### Class Anahtar Kelimeleri
 
 | Anhatar                | Açıklama                               | Örnek                                                   |
 | ---------------------- | -------------------------------------- | ------------------------------------------------------- |
@@ -1089,7 +1096,7 @@ print(random.random()) # Rastgele eleman yazma
 | `__init__`             | Constructer fonksiyonudur              | [Basit Class Örneği](#basit-class-%C3%B6rne%C4%9Fi)     |
 | `def function(param):` | Fonksiyon tanımalama                   | [Metodlu Class Örneği](#metodlu-class-%C3%B6rne%C4%9Fi) |
 
-### Basit Class Örneği
+#### Basit Class Örneği
 
 ```py
 class Person:
@@ -1108,7 +1115,7 @@ John
 36
 ```
 
-### Metodlu Class Örneği
+#### Metodlu Class Örneği
 
 ```py
 class Person:
@@ -1127,19 +1134,19 @@ p1.myfunc()
 Hello my name is John
 ```
 
-#### Obje Özelliği Silme
+###### Obje Özelliği Silme
 
 ```py
 del p1.age
 ```
 
-#### Class Silme
+###### Class Silme
 
 ```py
 del p1
 ```
 
-### Scopes and Namespaces
+#### Scopes and Namespaces
 
 ```py
 def scope_test():
@@ -1173,14 +1180,14 @@ After global assignment: nonlocal spam
 In global scope: global spa
 ```
 
-### Enumeration
+#### Enumeration
 
 Resmi dökümantasyon için [buraya](https://docs.python.org/3/library/enum.html) bakabilirsin.
 
 - Sıralı ve sabit veriler oluşturmak için kullanılır
 - `from enum import Enum` ile projeye dahil edilir
 
-#### Basit Kullanım
+###### Basit Kullanım
 
 ```py
 from enum import Enum
@@ -1199,7 +1206,7 @@ Color(3) # <Color.BLUE: 3>
 isinstance(Color.GREEN, Color) # True
 ```
 
-#### Enum Özellikleri
+###### Enum Özellikleri
 
 Aynı özelliklere sahip objeler oluşturulamaz
 
@@ -1221,7 +1228,7 @@ Shape.ALIAS_FOR_SQUARE # <Shape.SQUARE: 2>
 Shape(2) # <Shape.SQUARE: 2>
 ```
 
-##### Benzersin Enum Tanımlaması
+####### Benzersin Enum Tanımlaması
 
 `@unique` etiketi ile tanımlama yapılır
 
@@ -1238,7 +1245,54 @@ class Mistake(Enum):
 # ValueError: duplicate values found in <enum 'Mistake'>: FOUR -> THREE
 ```
 
-## Dosya İşlemleri
+## İleri Seviye Python
+
+### Assertion (Kural Koyma)
+
+Boolean değeri sağlanmazsa hata verir ve programı kapatır.
+
+```py
+assertion(<bool>, <açıklama>)
+```
+
+- `<bool>` Kontrol değişkeni
+  - *Örn: 0 > 5*
+- `<açıklama>` Hatanın neden verildiğine dair metin
+  - *Örn: Küçük bir değer girildi*
+
+#### Assertion Örnekleri
+
+```py
+def KelvinToFahrenheit(Temperature):
+   assert (Temperature >= 0),"Colder than absolute zero!"
+   return ((Temperature-273)*1.8)+32
+
+print (int(KelvinToFahrenheit(505.78)))
+print (KelvinToFahrenheit(-5))
+```
+
+```sh
+451
+Traceback (most recent call last):
+  File "test.py", line 9, in <module>
+    print KelvinToFahrenheit(-5)
+  File "test.py", line 4, in KelvinToFahrenheit
+    assert (Temperature >= 0),"Colder than absolute zero!"
+AssertionError: Colder than absolute zero!
+```
+
+### Try / Except Yapısı
+
+Olası hatalarda programın kapanmasını engelleyerek hata kontrolü sağlar.
+
+```py
+try:
+    a = float("Ben sayı değilim")
+except ValueError:
+    print("Bu sayı değil")
+```
+
+### Dosya İşlemleri
 
 Python üzerinde dosya işlemleri oldukça kolaydır ve `context manager` ile halledilir.
 
@@ -1255,7 +1309,7 @@ with open(<dosya_ismi>, <erişim_modu>, encoding=<kodlama>) as file:
 - `<kodlama>` Dosya kodlama formatı
   - *Örn: 'utf-8'*
 
-### Dosya Okuma
+#### Dosya Okuma
 
 ```py
 file_str = ""
@@ -1285,12 +1339,12 @@ with open("README.md", "r", encoding="utf-8") as file:
     lines = file.readlines() # Tüm satırları liste olarak döndürür
 ```
 
-## Komut İsteminden Python (CLI)
+### Komut İsteminden Python (CLI)
 
 - Komut isteminden gelen argümanları **argparse** adlı modül ile yönetmekteyiz
 - Kullanıcı cmd üzerinden `python <dosya_adı> <argümanlar>` gibi komutlarla programımızı kullanabilir
 
-### Argparse Modülü Detayları
+#### Argparse Modülü Detayları
 
 - Argüman ekleme işlemi `parser = argparse.ArgumentParser(...)` ile yapılmaktadır.
 - Parametrelerin kullanımı `argparse.ArgumentParser(description='yok')` şeklindedir.
@@ -1299,7 +1353,7 @@ with open("README.md", "r", encoding="utf-8") as file:
 | ------------- | -------------------------------------- |
 | `description` | Uygulama ile alakalı açıklama metnidir |
 
-### Argüman Ekleme
+#### Argüman Ekleme
 
 - Argüman ekleme işlemi `parser.add_argument(...)` ile yapılmaktadır.
 
@@ -1312,7 +1366,7 @@ with open("README.md", "r", encoding="utf-8") as file:
 | `type`       | Tip bilgisini içerir (int, string ...)      |
 | `default`    | Varsayılan değer                            |
 
-### Argüman Action Özelliği
+#### Argüman Action Özelliği
 
 | Parametre      | Açıklama                                                               |
 | -------------- | ---------------------------------------------------------------------- |
@@ -1347,7 +1401,7 @@ optional arguments:
   --verbose   increase output verbosity
 ```
 
-### Örnek CLI Kodu
+#### Örnek CLI Kodu
 
 ```py
 import argparse
@@ -1382,7 +1436,7 @@ if __name__ == '__main__':
     main()
 ```
 
-## Thread
+### Thread
 
 Thread modülü ile satır satır ilerleyen kod yerine karma ilerleyen kodlar yazılabilir.
 
@@ -1395,7 +1449,7 @@ Thread modülü ile satır satır ilerleyen kod yerine karma ilerleyen kodlar ya
 | Timer     | Belirli saniyelerde fonksiyonu çalıştırma |
 | Scheduler | Bir plana göre fonksiyonu çalıştırma      |
 
-### Basit Thread Yapısı
+#### Basit Thread Yapısı
 
 ```py
 from time import sleep
@@ -1432,7 +1486,7 @@ ah
 tisdum
 ```
 
-### Zamanlayıcı Yapısı (Timer)
+#### Zamanlayıcı Yapısı (Timer)
 
 ```py
 import threading
@@ -1446,7 +1500,7 @@ def run_check():
 run_check()
 ```
 
-### Bir Plana göre Fonksiyon Çalıştırma
+#### Bir Plana göre Fonksiyon Çalıştırma
 
 ```py
 import sched, time
@@ -1460,13 +1514,13 @@ s.enter(60, 1, do_something, (s,))
 s.run()
 ```
 
-## Paralel İşlemler (Multiprocessing)
+### Paralel İşlemler (Multiprocessing)
 
 Python'da eş zamanlı işler `thread` ile yapılamaz
 
 > Kaynak için [buraya](https://stackoverflow.com/a/7207336/9770490) bakabilirsin.
 
-### Multiprocessing Örneği
+#### Multiprocessing Örneği
 
 ```py
 from multiprocessing import Process
@@ -1500,9 +1554,9 @@ if __name__ == '__main__':
 # func1: finishing
 ```
 
-## Kod Parçaları (Code Snippet)
+### Kod Parçaları (Code Snippet)
 
-### Ekran Görünüsünü Alma ve Kaydetme
+#### Ekran Görünüsünü Alma ve Kaydetme
 
 ```py
 from PIL import ImageGrab as ig
@@ -1578,7 +1632,7 @@ while True:
 
 ```
 
-### Kısayol ile Ekran Alanı Seçme
+#### Kısayol ile Ekran Alanı Seçme
 
 ```py
 def draw_dimension(hotkey="ctrl_l") -> tuple:
@@ -1622,7 +1676,7 @@ def draw_dimension(hotkey="ctrl_l") -> tuple:
 print(draw_dimension())
 ```
 
-### Url Encode İşlemi
+#### Url Encode İşlemi
 
 - TODO
 
