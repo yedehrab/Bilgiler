@@ -1,5 +1,7 @@
 # Computer Networks and Technologies
 
+Dersle alternatif bir kaynak için bu [video serisine 📺](https://www.youtube.com/playlist?list=PL1XUdfGZZ4rQ0UPDx__7W4LmeLab227vb) bakabilirsin.
+
 > **[RFC](https://www.ietf.org/rfc/rfc2616.txt)** her şeyin olduğu bir dökümandır.
 
 ## Ders 2
