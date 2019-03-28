@@ -9,9 +9,10 @@
 
 ## Nodejs Kütüphanler
 
-| Kütüphane                                      | Açıklama                            |
-| ---------------------------------------------- | ----------------------------------- |
-| [colors](https://www.npmjs.com/package/colors) | Konsola renkli çıktı vermeyi sağlar |
+| Kütüphane                                         | Açıklama                                                                       |
+| ------------------------------------------------- | ------------------------------------------------------------------------------ |
+| [express ☆](https://www.npmjs.org/package/expres) | Server işlemleri için (http yerine önerilir, güvenlik zaafiyetlerini engeller) |
+| [colors](https://www.npmjs.com/package/colors)    | Konsola renkli çıktı vermeyi sağlar                                            |
 
 ## Sık kullanılanlar
 
