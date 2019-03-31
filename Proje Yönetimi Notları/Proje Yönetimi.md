@@ -1,19 +1,74 @@
 # Proje Yönetimi <!-- omit in toc -->
 
+Projelerde yapılacak iş ve rotasyon önceden belirlenir, gidişat kurgulanır.
+
+## İçerikler <!-- omit in toc -->
+
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
-- [Model View Controller Yapısı](#model-view-controller-yap%C4%B1s%C4%B1)
-  - [Yapı düzenleme sırası](#yap%C4%B1-d%C3%BCzenleme-s%C4%B1ras%C4%B1)
-- [Proje Oluşturma & Güncelleme Yapısı](#proje-olu%C5%9Fturma--g%C3%BCncelleme-yap%C4%B1s%C4%B1)
-  - [Branch Prefix (Ön ek)](#branch-prefix-%C3%B6n-ek)
-  - [Branch Naming Convention (Yazım kuralı)](#branch-naming-convention-yaz%C4%B1m-kural%C4%B1)
-  - [Örnek Kullanım](#%C3%B6rnek-kullan%C4%B1m)
+- [Kaynak Kod odaklı Proje Yönetimi](#kaynak-kod-odakl%C4%B1-proje-y%C3%B6netimi)
+  - [Proje Oluşturma & Güncelleme Yapısı](#proje-olu%C5%9Fturma--g%C3%BCncelleme-yap%C4%B1s%C4%B1)
+    - [Ufak Projeler için Branch (Tam hazır değil)](#ufak-projeler-i%C3%A7in-branch-tam-haz%C4%B1r-de%C4%9Fil)
+    - [Büyük Projeler için Branch Prefix (Ön ek)](#b%C3%BCy%C3%BCk-projeler-i%C3%A7in-branch-prefix-%C3%B6n-ek)
+    - [Branch Naming Convention (Yazım kuralı)](#branch-naming-convention-yaz%C4%B1m-kural%C4%B1)
+      - [Örnek Kullanım](#%C3%B6rnek-kullan%C4%B1m)
+  - [Model View Controller Yapısı](#model-view-controller-yap%C4%B1s%C4%B1)
+    - [Yapı düzenleme sırası](#yap%C4%B1-d%C3%BCzenleme-s%C4%B1ras%C4%B1)
 - [Faydalı Yazılımlar](#faydal%C4%B1-yaz%C4%B1l%C4%B1mlar)
   - [Yönetim Uygulamaları & Siteleri](#y%C3%B6netim-uygulamalar%C4%B1--siteleri)
   - [Web programlama](#web-programlama)
 - [Değişken İsimlendirmeleri](#de%C4%9Fi%C5%9Fken-i%CC%87simlendirmeleri)
 
-## Model View Controller Yapısı
+## Kaynak Kod odaklı Proje Yönetimi
+
+Çok kişi ile yapılan projelerde her konuyu birbirimize anlatmak vakit kaybıdır, bu sebeple herkesin sadece kendi işi ile uğraşacağı yapı kurulmalıdır.
+
+- Her fonksyionun nereye yazılacağı belirtilmeli ve projenin taslak yapısı kurulmalıdır.
+  - İstenen fonksiyonların taslakları kod içerisine yerleştirilir
+  - Kişi istenen tipte veriler veya gönderdiği veriler gönderir
+  - Göndereceği veriler için açıklayıcı bir dökümantasyon eklemelidir
+  - Yapacağı işlemlerin detaylarını çok fazla anlatmadan istenen veri hakkında bilgi verilmelidir. (Vakit kaynını engeller)
+- Birbirine bağlı kişiler için aynı şekilde taslak yapısı kurulmalı
+
+### Proje Oluşturma & Güncelleme Yapısı
+
+Proje yönetimi için git kullanılması çok faydalıdır.
+
+- Her yeni ekleme için onu tanımlayan bir **branch** oluşturulur.
+  - Branch oluşturma işlemi `checkout` komutuyla yapılır
+  - Oluşturulan her branch `master` branch'inden `pull from` komutu ile güncellenir.
+    - Güncellenmez ise `merge conflict` hataları meydana gelir ve çok vakit harcar 😢
+  - Tüm işlemler yapıldıktan sonra branch'i uzak sunucuda saklamak adına `pull` komutu kullanılır
+- **Merge Request** ile *master branch* kısmına eklenme talebi oluşturulur.
+- Yönetici, talebi kontrol edip, onaylayarak projeye katar.
+
+> Küresel çalışma adına ingilizce dili tercih edilmektedir.
+
+#### Ufak Projeler için Branch (Tam hazır değil)
+
+Bir proje üzerinde herkes kendi adıyla bir branch açabilir.
+
+#### Büyük Projeler için Branch Prefix (Ön ek)
+
+Büyük projelerdeki temel yapı `konu` / `detay veya dosya` şeklinde branch oluşturmaya dayanır.
+
+- `feature/<detail>` Yenilikler
+- `bugfix/<detail>` Hata çözümleri
+- `sf/<detail>` Tasarım değişikleri (Store front-end)
+
+> Ardından **merge request** ile geliştirici (dev) ortamına birleştirme isteği oluşturulur.
+
+#### Branch Naming Convention (Yazım kuralı)
+
+- Camel Case
+- `<prefix>/thisIsExampleDetail`
+
+##### Örnek Kullanım
+
+- sf/newBannerRow
+- feature/excelPhp
+
+### Model View Controller Yapısı
 
 Ek kaynak için [buraya](https://blog.koddit.com/yazilim/mvc-nedir-gercek-orneklerle-mvc-nedir-anlayalim/) tıklayabilirsin.
 
@@ -25,39 +80,11 @@ Ek kaynak için [buraya](https://blog.koddit.com/yazilim/mvc-nedir-gercek-ornekl
 |    View    | Kullanıcıya görünen kısım     | Anasayfa gibi web sayfaları                               |
 | Controller | Model ile View arası bağlantı | Verinin web sayfasına aktarılması                         |
 
-### Yapı düzenleme sırası
+#### Yapı düzenleme sırası
 
 - **Model** kısmı düzenlenir.
 - **Controller** üzerinde bağlantılar oluşturulur.
 - **View** ile kullanıcıya sunulur.
-
-## Proje Oluşturma & Güncelleme Yapısı
-
-> Globallik adına ingilizce dili tercih edilmektedir.
-
-- Her yeni ekleme için onu tanımlayan bir **branch** oluşturulur.
-- **Merge Request** ile *master branch* kısmına eklenme talebi oluşturulur.
-- Yönetici, talebi kontrol edip, onaylayarak projeye katar.
-
-### Branch Prefix (Ön ek)
-
-Temel yapı: `konu` / `detay veya dosya`
-
-- `feature/<detail>` Yenilikler
-- `bugfix/<detail>` Hata çözümleri
-- `sf/<detail>` Tasarım değişikleri (Store front-end)
-
-> Ardından merge request ile development ortamına bağlanma isteği oluşturulur.
-
-### Branch Naming Convention (Yazım kuralı)
-
-- Camel Case
-- `<prefix>/thisIsExampleDetail`
-
-### Örnek Kullanım
-
-- sf/newBannerRow
-- feature/excelPhp
 
 ## Faydalı Yazılımlar
 
