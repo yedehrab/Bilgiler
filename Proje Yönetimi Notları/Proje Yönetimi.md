@@ -14,10 +14,10 @@ Projelerde yapılacak iş ve rotasyon önceden belirlenir, gidişat kurgulanır.
       - [Örnek Kullanım](#%C3%B6rnek-kullan%C4%B1m)
   - [Model View Controller Yapısı](#model-view-controller-yap%C4%B1s%C4%B1)
     - [Yapı düzenleme sırası](#yap%C4%B1-d%C3%BCzenleme-s%C4%B1ras%C4%B1)
+  - [Değişken İsimlendirmeleri](#de%C4%9Fi%C5%9Fken-i%CC%87simlendirmeleri)
 - [Faydalı Yazılımlar](#faydal%C4%B1-yaz%C4%B1l%C4%B1mlar)
   - [Yönetim Uygulamaları & Siteleri](#y%C3%B6netim-uygulamalar%C4%B1--siteleri)
   - [Web programlama](#web-programlama)
-- [Değişken İsimlendirmeleri](#de%C4%9Fi%C5%9Fken-i%CC%87simlendirmeleri)
 
 ## Kaynak Kod odaklı Proje Yönetimi
 
@@ -28,7 +28,7 @@ Projelerde yapılacak iş ve rotasyon önceden belirlenir, gidişat kurgulanır.
   - Kişi istenen tipte veriler veya gönderdiği veriler gönderir
   - Göndereceği veriler için açıklayıcı bir dökümantasyon eklemelidir
   - Yapacağı işlemlerin detaylarını çok fazla anlatmadan istenen veri hakkında bilgi verilmelidir. (Vakit kaynını engeller)
-- Birbirine bağlı kişiler için aynı şekilde taslak yapısı kurulmalı
+- Projenin en üst kısmında değiştirlebilir veriler saklanmalı ve switch yapısı kurulmalıdır.
 
 ### Proje Oluşturma & Güncelleme Yapısı
 
@@ -86,7 +86,16 @@ Ek kaynak için [buraya](https://blog.koddit.com/yazilim/mvc-nedir-gercek-ornekl
 - **Controller** üzerinde bağlantılar oluşturulur.
 - **View** ile kullanıcıya sunulur.
 
+### Değişken İsimlendirmeleri
+
+| İsim          | Açıklama                                                   |
+| ------------- | ---------------------------------------------------------- |
+| `NAME`_PREFİX | Veri tabanı ön eki. *Örn: DB_PREFIX, BRANCH_PREFIX*        |
+| Flag          | Checkbox gibi boolean değerleri tutan değişkenlerin adıdır |
+
 ## Faydalı Yazılımlar
+
+Eklentileri ile meşhur olan `VsCode` yazılımı tavsiye edilir.
 
 ### Yönetim Uygulamaları & Siteleri
 
@@ -107,9 +116,3 @@ Ek kaynak için [buraya](https://blog.koddit.com/yazilim/mvc-nedir-gercek-ornekl
 | [MySQL](https://www.mysql.com/downloads/)                                | Veri tabanı yönetimi                                             |
 | [Composer](https://getcomposer.org/download/)                            | Php paket yönetimi (NPM)                                         | Nodejs) gibi |
 
-## Değişken İsimlendirmeleri
-
-| İsim          | Açıklama                                                   |
-| ------------- | ---------------------------------------------------------- |
-| `NAME`_PREFİX | Veri tabanı ön eki. *Örn: DB_PREFIX, BRANCH_PREFIX*        |
-| Flag          | Checkbox gibi boolean değerleri tutan değişkenlerin adıdır |
