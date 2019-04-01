@@ -19,6 +19,7 @@
   - [Editör Değişkenleri](#edit%C3%B6r-de%C4%9Fi%C5%9Fkenleri)
   - [Editör Klavye Kısayollarım](#edit%C3%B6r-klavye-k%C4%B1sayollar%C4%B1m)
   - [Editör JSON Ayarlarım](#edit%C3%B6r-json-ayarlar%C4%B1m)
+  - [Editör Eklentilerim](#edit%C3%B6r-eklentilerim)
   - [Java Ayarları](#java-ayarlar%C4%B1)
   - [Code Runner Ayarları](#code-runner-ayarlar%C4%B1)
     - [Code Runner Kısayollar](#code-runner-k%C4%B1sayollar)
@@ -228,6 +229,18 @@ Değişkenlerin kullanım şekilleri:
     "python.venvPath": "C:\\tools\\miniconda3\\envs"
 }
 ```
+
+### Editör Eklentilerim
+
+- [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+- [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+- [Deepdark Material Theme](https://marketplace.visualstudio.com/items?itemName=Nimda.deepdark-material)
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+- [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+- [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
 ### Java Ayarları
 
