@@ -259,6 +259,8 @@ SCRIPT_FOLDER=C:/Users/YEmre/Documents/Tensorflow/scripts
 PYTHONPATH=${RESEARCH_FOLDER}:${OBJECT_FOLDER}:${SLIM_FOLDER}:${SCRIPT_FOLDER}
 ```
 
+> Kaynak için [buraya](https://code.visualstudio.com/docs/python/environments#_use-of-the-pythonpath-variable) bakabilirsin.
+
 ### Faydalı Soru & Cevaplar
 
 - [What's the difference between a pip install and conda install?](https://www.quora.com/Whats-the-difference-between-a-pip-install-and-conda-install)

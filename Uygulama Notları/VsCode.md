@@ -224,7 +224,7 @@ Değişkenlerin kullanım şekilleri:
     "git.confirmSync": false,
     "git.autofetch": true,
     // Python ayarları
-    "python.jediEnabled": true,
+    "python.jediEnabled": false,
     "python.linting.pylintEnabled": false,
     "python.venvPath": "C:\\tools\\miniconda3\\envs"
 }
@@ -241,6 +241,7 @@ Değişkenlerin kullanım şekilleri:
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+- [Visual Studio IntelliCode - Preview](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 
 ### Java Ayarları
 
