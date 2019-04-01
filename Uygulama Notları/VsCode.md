@@ -168,36 +168,21 @@ Değişkenlerin kullanım şekilleri:
 ```json
 [
     {
+        "key": "ctrl+[Backquote]",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "shift+f10",
+        "command": "python.execInTerminal"
+    },
+    {
         "key": "ctrl+g s",
         "command": "git.sync"
     },
     {
-        "key": "ctrl+g c",
-        "command": "git.commitAll"
-    },
-    {
-        "key": "ctrl+numpad0",
-        "command": "-workbench.action.zoomReset"
-    },
-    {
-        "key": "ctrl+shift+oem_minus",
-        "command": "workbench.action.zoomIn"
-    },
-    {
-        "key": "ctrl+numpad_add",
-        "command": "-workbench.action.zoomIn"
-    },
-    {
-        "key": "ctrl+shift+oem_minus",
-        "command": "-workbench.action.zoomOut"
-    },
-    {
-        "key": "ctrl+numpad_subtract",
-        "command": "-workbench.action.zoomOut"
-    },
-    {
-        "key": "ctrl+shift+oem_8",
-        "command": "editor.action.fontZoomReset"
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]
 ```
