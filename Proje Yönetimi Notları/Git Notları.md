@@ -62,6 +62,10 @@ Programlama işlerindeki projelerin yönetimi için kaçınılmaz bir teknolojid
 
 Kimlik bilgileri ayarı ile git işlemlerinin her birinde giriş yapmanız gerekmez.
 
+```sh
+git config --global credential.helper "cache --timeout=999999999"
+```
+
 ### Git Kimlik Bilgilerini Ayarlama
 
 ```bash
