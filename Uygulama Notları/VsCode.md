@@ -224,8 +224,8 @@ Değişkenlerin kullanım şekilleri:
     "git.confirmSync": false,
     "git.autofetch": true,
     // Python ayarları
-    "python.jediEnabled": false,
-    "python.linting.pylintEnabled": true,
+    "python.jediEnabled": true,
+    "python.linting.pylintEnabled": false,
     "python.venvPath": "C:\\tools\\miniconda3\\envs"
 }
 ```
