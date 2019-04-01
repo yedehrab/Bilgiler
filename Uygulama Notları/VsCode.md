@@ -211,22 +211,18 @@ Değişkenlerin kullanım şekilleri:
     // Tema ayarları
     "workbench.colorTheme": "Deepdark Material Theme | Full Black Version",
     "workbench.iconTheme": "material-icon-theme",
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "toggle",
+    "workbench.statusBar.feedback.visible": false,
     // Editör Ayarları
     "editor.fontSize": 12.5,
-    "editor.fontFamily": "Roboto Mono, Consolas", // https://fonts.google.com/specimen/Roboto+Mono
-    "editor.suggestSelection": "recentlyUsedByPrefix",
-    "editor.detectIndentation": false, // Python kodlarında fazladan girinti oluşturulmasını engelleme
+    "editor.fontFamily": "'Roboto Mono'",
     // Entegre terminal ayarları
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.shell.windows": "C:\\Windows\\system32\\cmd.exe",
-    "terminal.integrated.fontFamily": "Consolas",
+    "terminal.integrated.fontSize": 13.5,
     // Git ayarları
-    "git.confirmSync": false,
     "git.autofetch": true,
-    // Python ayarları
-    "python.jediEnabled": false,
-    "python.linting.pylintEnabled": false,
-    "python.venvPath": "C:\\tools\\miniconda3\\envs"
+    "git.confirmSync": false,
 }
 ```
 
