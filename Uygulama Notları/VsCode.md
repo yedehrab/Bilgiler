@@ -217,6 +217,8 @@ Değişkenlerin kullanım şekilleri:
     // Editör Ayarları
     "editor.fontSize": 12.5,
     "editor.fontFamily": "'Roboto Mono'",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
     // Entegre terminal ayarları
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.fontSize": 13.5,
