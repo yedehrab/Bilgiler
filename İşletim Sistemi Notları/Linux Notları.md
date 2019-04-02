@@ -34,6 +34,7 @@ Birkaç distro örneği:
     - [Ubuntu Üstteki Çubuğu Gizleme](#ubuntu-%C3%BCstteki-%C3%A7ubu%C4%9Fu-gizleme)
   - [Dash to Dock ile MacOS Durum Çubuğu Görünümü](#dash-to-dock-ile-macos-durum-%C3%A7ubu%C4%9Fu-g%C3%B6r%C3%BCn%C3%BCm%C3%BC)
 - [Faydalı Bilgiler ve Uygulamalar](#faydal%C4%B1-bilgiler-ve-uygulamalar)
+  - [Terminal Üzerinden Çevirici](#terminal-%C3%BCzerinden-%C3%A7evirici)
   - [OnlyOffice Desktop](#onlyoffice-desktop)
   - [Window Manager Controls](#window-manager-controls)
   - [Uygulamaların Terminal Komutlarını öğrenme](#uygulamalar%C4%B1n-terminal-komutlar%C4%B1n%C4%B1-%C3%B6%C4%9Frenme)
@@ -240,6 +241,22 @@ Tam ekranı kaplayan uzun görüntü yerine, içerdiği uygulama kadar yer kapla
 - `Extension Settings` kısmından özelleştirebilirsiniz
 
 ## Faydalı Bilgiler ve Uygulamalar
+
+### Terminal Üzerinden Çevirici
+
+Terminal üzerinden çevrimdışı şekilde çeviri yapmak için:
+
+```sh
+# Kurulum
+sudo apt-get install dictd
+sudo apt-get install dict-freedict-tur-eng
+sudo apt-get install dict-freedict-eng-tur
+
+# Kullanım
+dict <metin>
+```
+
+- `<metin>` Çevirilecek metin
 
 ### OnlyOffice Desktop
 
