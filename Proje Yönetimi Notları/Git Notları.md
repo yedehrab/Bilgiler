@@ -10,6 +10,7 @@ Programlama işlerindeki projelerin yönetimi için kaçınılmaz bir teknolojid
 - [Git'in Kullanıldığı Siteler](#gitin-kullan%C4%B1ld%C4%B1%C4%9F%C4%B1-siteler)
 - [Git Kimlik Bilgileri](#git-kimlik-bilgileri)
   - [Git Kimlik Bilgilerini Ayarlama](#git-kimlik-bilgilerini-ayarlama)
+  - [Git Kimlik Bilgilerini Kaydetme](#git-kimlik-bilgilerini-kaydetme)
   - [Git Kimlik Bilgilerini Sıfırlama](#git-kimlik-bilgilerini-s%C4%B1f%C4%B1rlama)
 - [Git Deposunu Oluşturma & Güncelleme](#git-deposunu-olu%C5%9Fturma--g%C3%BCncelleme)
   - [Git Deposunu Güncelleme](#git-deposunu-g%C3%BCncelleme)
@@ -62,15 +63,18 @@ Programlama işlerindeki projelerin yönetimi için kaçınılmaz bir teknolojid
 
 Kimlik bilgileri ayarı ile git işlemlerinin her birinde giriş yapmanız gerekmez.
 
-```sh
-git config --global credential.helper "cache --timeout=999999999"
-```
-
 ### Git Kimlik Bilgilerini Ayarlama
 
 ```bash
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
+```
+
+### Git Kimlik Bilgilerini Kaydetme
+
+```sh
+git config credential.helper store
+git config --global credential.helper "cache --timeout=999999999"
 ```
 
 ### Git Kimlik Bilgilerini Sıfırlama
