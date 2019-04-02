@@ -1,6 +1,7 @@
 # Computer Networks and Technologies
 
-Dersle alternatif bir kaynak için bu [video serisine 📺](https://www.youtube.com/playlist?list=PL1XUdfGZZ4rQ0UPDx__7W4LmeLab227vb) kitap için [bu siteye 🌐](http://www-net.cs.umass.edu/kurose-ross-ppt-6e/) bakabilirsin.
+- Drive üzerindeki yedeklemeye erişmek için [buraya 📂](https://drive.google.com/open?id=1rgSo9gVGWsB9WtAEfxZHv_uAdAni560a) tıklamalısın.
+- Dersle alternatif bir kaynak için bu [video serisine 📺](https://www.youtube.com/playlist?list=PL1XUdfGZZ4rQ0UPDx__7W4LmeLab227vb) kitap için [bu siteye 🌐](http://www-net.cs.umass.edu/kurose-ross-ppt-6e/) bakabilirsin.
 
 > **[RFC](https://www.ietf.org/rfc/rfc2616.txt)** her şeyin olduğu bir dökümandır.
 
@@ -47,33 +48,49 @@ Yayıncılıkta tercih ediliyor.
 
 ## Bilgisayar Ağları
 
-Youtube üzerindeki eğitim hakkında alınan notlar.
+Youtube üzerindeki eğitim ve slatylar hakkında alınan notlarım.
 
-- Bandwidth: Bant genişliği saniye saniyede aktarılan bit (1sn de akan veri)
-  - Transmission rate: Saniyede aktarılan bit
-- Router ve Switch: Paketlerin yönelendirilmesini sağlar
-- Protokols: Packet* aktarım kuralları ve hiyerarşisi
-- Host: End system, son sunucu olur (client ve server).
-- Server: Sunucu
-- Stream: Akış
-- Upstream: Bizden internete veri akışı
-- Downstream: İnternetten bize veri akışı
+### Temel Terimler
 
-### Ders1 Bölüm1: Internet, Protocols, Hosts
+| Terim             | Açıklama                                                      |
+| ----------------- | ------------------------------------------------------------- |
+| ISP               | İnternet servis sağlayıcıları                                 |
+| Packets           | İnternet üzerinde gönderilen veriler                          |
+| Protocols         | Packet* aktarım kuralları ve hiyerarşisi                      |
+| Routers ve Switch | Packet*'ların yönlendirilmesini sağlarlar                     |
+| Client            | Ağa bağlandığımzı araç (bilgisayarımız)                       |
+| Server            | Ağ hizmetini sunan, sunucu                                    |
+| Host              | End system, son server* ya da client*                         |
+| RFS, IETF         | İnternet standartları                                         |
+| Stream            | Veri akışı                                                    |
+| Upstream          | Bizden internete stream*                                      |
+| Downstream        | İnternetten bize stream*                                      |
+| Bandwitdh         | Bant genişliği, saniye aktarılan bit (1sn de olan streaming*) |
+| Transmission rate | Saniyede aktarılan bit                                        |
 
-#### Ağ Yapısı
+### Network Structure (Ağ Yapısı)
 
 | Terim                           | Açıklama                                                    |
 | ------------------------------- | ----------------------------------------------------------- |
-| Network Edge                    | Host*                                                       |
-| Access networks, physical media | İnternete ilk adımın atıldığı yere kadar ki kısım           |
+| Network Edge                    | Ağdaki uç noktaları ele alır (bilgisayarlar ve uygulamalar) |
+| Access networks, physical media | Kablolu ve kablosuz iletişim bağlantıları                   |
 | Network Core                    | Birbirine bağlı router'lar ve internet (network of network) |
 
 - Edge router: İnternete ilk adımın atıldığı yönlendiriciler (routers)
 
 ![network sturcture](imgs/network%20structures.png)
 
-#### Bağlantı Türleri
+### Network Edge
+
+Bizden internete olan gerçekleşen adımları ele alır.
+
+| Yöntem          | Açıklama                                        | Örnek             |
+| --------------- | ----------------------------------------------- | ----------------- |
+| Hosts System    | Host*'lar arası iletişim                        | Web, email        |
+| Client / Server | Client* istekte bulunur, server* karşılık verir | Web browsers      |
+| Peer to peer    | Neredeyse hiç server* kullanılmaz               | Skype, BitTorrent |
+
+#### Access Network (Bağlantı Türleri)
 
 - Dial Up: Telefon çalışırken modem, modem çalışırken telefonun çalışmadığı eski bir sistem.
 - DSL: Splitter* ile telefon ve internet eş zamanlı kullanabilmekte.
@@ -81,9 +98,10 @@ Youtube üzerindeki eğitim hakkında alınan notlar.
 - Wireless LAN: Ev içerisindeki kablasuz ağlar: WiFi
 - Wide-Area wireless acces: Mobil operatörler tarafından sunulan ağlar: 3G, 4G, LTE
 
-#### Veri İletimi
+#### Physcial Media (Fiziksel Veri İşlemleri)
 
-- Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir parçaya **packets** denir.
+Fiziksel verilerin (bit*lerin) aktarılmasını ele alır.
+
 - Kablo yapısı TP (twisted pair) iç içe sarmal 2 kablodur.
 - Guided: yönetimli (kablo vs ile), unguided: dağınık olarak yayılan (radyo dalgaları) verilerdir.
 
@@ -104,12 +122,19 @@ Youtube üzerindeki eğitim hakkında alınan notlar.
 
 - Gecikmesi çok fazladır. (250ms)
 
+### Network Core
+
+Birbirine bağlı çok sayıda router*'dan oluşur. Network of network olarak da tabir edilen interneti ele alır.
+
+| Aktarım Yöntemi   | Açıklama                                               |
+| ----------------- | ------------------------------------------------------ |
+| Circuit Switching | Her arama için özel devre kullanılır, telefon ağı gibi |
+| Packet Switching  | Veri ağa ayrık packet*'lar halinde gönderilir          |
+
+### Packet Switching (Paket Anahtarlama)
+
+Host
+
 ## Ders1 Bölüm2: Packet, Delay and
 
-Uç sunucu* uygulama katmanındaki verileri ufak paketlere* çeviriyor ve yönlendiriciler* yardımıyla gitmesi gereken yer bulunup gönderiliyor ve her paket tam kapasitede gönderiliyor.
-
-### Paket Anahtarlama (Packet-Switching)
-
-| Yöntem          | AÇıklama                                                                             |
-| --------------- | ------------------------------------------------------------------------------------ |
-| store and forwardt | Yönlendirici* 10bitlik paketi yönelendirmek için hepsini bekler ve öyle yönlendirir. |
+Host* uygulama katmanındaki verileri ufak packet'lara* çeviriyor ve router* yardımıyla gitmesi gereken yer bulunup gönderiliyor ve her packet* tam kapasitede gönderiliyor.
