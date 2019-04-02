@@ -27,9 +27,9 @@ Birkaç distro örneği:
   - [Temel Değişkenler](#temel-de%C4%9Fi%C5%9Fkenler)
   - [Komut Çıktısını Ele Alma](#komut-%C3%A7%C4%B1kt%C4%B1s%C4%B1n%C4%B1-ele-alma)
 - [Ubuntu 18.10 için Faydalı Bilgiler](#ubuntu-1810-i%C3%A7in-faydal%C4%B1-bilgiler)
-  - [Ubuntu Ekran Görüntüsü ve Kaydetme](#ubuntu-ekran-g%C3%B6r%C3%BCnt%C3%BCs%C3%BC-ve-kaydetme)
-    - [Ekran Görüntüsü Alma](#ekran-g%C3%B6r%C3%BCnt%C3%BCs%C3%BC-alma)
-    - [Ekranı Kayıt Etme](#ekran%C4%B1-kay%C4%B1t-etme)
+  - [Ubuntu Kısayolları](#ubuntu-k%C4%B1sayollar%C4%B1)
+    - [Dash / Dock Kısayolları](#dash--dock-k%C4%B1sayollar%C4%B1)
+    - [Ekran Görüntüsü ve Kaydı Kısayolları](#ekran-g%C3%B6r%C3%BCnt%C3%BCs%C3%BC-ve-kayd%C4%B1-k%C4%B1sayollar%C4%B1)
   - [Gnome Eklentileri](#gnome-eklentileri)
     - [Ubuntu Üstteki Çubuğu Gizleme](#ubuntu-%C3%BCstteki-%C3%A7ubu%C4%9Fu-gizleme)
   - [Dash to Dock ile MacOS Durum Çubuğu Görünümü](#dash-to-dock-ile-macos-durum-%C3%A7ubu%C4%9Fu-g%C3%B6r%C3%BCn%C3%BCm%C3%BC)
@@ -195,23 +195,30 @@ echo $(komut)
 
 ## Ubuntu 18.10 için Faydalı Bilgiler
 
-### Ubuntu Ekran Görüntüsü ve Kaydetme
+### Ubuntu Kısayolları
+
+#### Dash / Dock Kısayolları
+
+Dash / Dock ubuntudaki sık kullanılamlar çubuğunun adıdır.
+
+| Kısayol                      | Açıklama                |
+| ---------------------------- | ----------------------- |
+| `SUPER` + `<SAYI>`           | Uygulamarı çalıştırma   |
+| `SUPER` + `SHIFT` + `<SAYI>` | Uygulamayı gizleme      |
+| `SUPER` + `CTRL` + `<SAYI>`  | Uygulamayı yeniden açma |
+
+#### Ekran Görüntüsü ve Kaydı Kısayolları
 
 Orjinal sayfayı görmek istiyorsan [buraya](https://help.ubuntu.com/stable/ubuntu-help/screen-shot-record.html) tıklayabilirsin.
 
-#### Ekran Görüntüsü Alma
+| Kısayol                        | Açıklama                                          |
+| ------------------------------ | ------------------------------------------------- |
+| `PRINT SCREEN`                 | Ekran görüntüsü alma                              |
+| `ALT` + `PRINT SCREEN`         | Üzerinde bulunduğumuz pencerenin görüntüsünü alma |
+| `SHIFT`+ `PRINT SCREN`         | Seçilecek alnın görüntüsünü alma                  |
+| `CTRL` + `ALT` + `SHIFT` + `R` | Ekranı komple kayıt eder                          |
 
-- `prt sc` *Tüm ekranın* görüntüsü kaydeder.
-- `alt + prt sc` Üzerinde bulunduğunuz *pencerenin* görüntüsünü kaydeder. 
-- `shift + prt sc` *Seçeceğiniz alanın* görüntüsünü kaydeder.
-
-> Kaydetme işlemi varsa `$HOME/Pictures` dizinine, yoksa `$HOME` dizinine yapılır. (Kaydetme ismi: *Screenshot-date*) `ctrl` tuşuna basılı tutarak, dizine kaydetmek yerine panoya kopyalatabilirsin.
-
-#### Ekranı Kayıt Etme
-
-- `ctrl + alt + shift + r` *Ekranda ne varsa* kayıt altına almaya başlar. Kayıt varsa sonlandırır.
-
-> Kaydetme işlemli varsa `$HOME/Videos` dizinine, yoksa `$HOME` dizinine yapılır. (Kaydetme ismi: *Screencast-date*)
+> `CTRL` tuşuna da basılırsa `$HOME/Pictures` ya da `$HOME/Videos` dizinleri yerine panoya kayıt edilir.
 
 ### Gnome Eklentileri
 
