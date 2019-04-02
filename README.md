@@ -11,15 +11,16 @@
 
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
+- [Yazılım Notları](#yaz%C4%B1l%C4%B1m-notlar%C4%B1)
+- [Yapay Zeka Notları](#yapay-zeka-notlar%C4%B1)
+- [Uygulama Notları](#uygulama-notlar%C4%B1)
+- [Teknolojik Alet Notları](#teknolojik-alet-notlar%C4%B1)
+- [Programlama Notları](#programlama-notlar%C4%B1)
+- [İşletim Sistemi Notları](#i%CC%87%C5%9Fletim-sistemi-notlar%C4%B1)
+- [Proje Yönetimi Notları](#proje-y%C3%B6netimi-notlar%C4%B1)
 - [Ders Notları](#ders-notlar%C4%B1)
 - [Günlük Hayat Notları](#g%C3%BCnl%C3%BCk-hayat-notlar%C4%B1)
 - [Karaca](#karaca)
-- [Programlama Notları](#programlama-notlar%C4%B1)
-- [Proje Yönetimi Notları](#proje-y%C3%B6netimi-notlar%C4%B1)
-- [Teknolojik Alet Notları](#teknolojik-alet-notlar%C4%B1)
-- [Uygulama Notları](#uygulama-notlar%C4%B1)
-- [Yapay Zeka Notları](#yapay-zeka-notlar%C4%B1)
-- [Yazılım Notları](#yaz%C4%B1l%C4%B1m-notlar%C4%B1)
 - [Harici Linkler](#harici-linkler)
 - [Yapılacaklar](#yap%C4%B1lacaklar)
 - [Çalışma Notları](#%C3%A7al%C4%B1%C5%9Fma-notlar%C4%B1)
@@ -133,11 +134,11 @@
 
 ## Teferruatlar
 
-Lisanslar hakkında bilgi almak için [buraya](https://www.yusufaytas.com/acik-kaynak-lisanslari/) bakmanda fayda var.
+Bu yazı **apache** lisanslıdır. Lisanslar hakkında bilgi almak için [buraya](https://www.yusufaytas.com/acik-kaynak-lisanslari/) bakmanda fayda var.
 
 - [Github](https://github.com/yedehrab)
 - [GitLab](https://gitlab.com/yedehrab)
 
 > Yardım veya destek için [iletişime](mailto::yyunussemree@gmail.com) geçebilrsiniz 😇
 
-~ Yunus Emre
+~ Yunus Emre (yedhrab)
