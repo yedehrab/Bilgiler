@@ -126,6 +126,9 @@ Fiziksel verilerin (bit*lerin) aktarılmasını ele alır.
 
 Birbirine bağlı çok sayıda router*'dan oluşur. Network of network olarak da tabir edilen interneti ele alır.
 
+- Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir parçaya **packets** denir.
+- Her bir packet* $L$ kadar bit içeriyor ve transmission rate* $R$ ise transmission delay $D=L/R$ formülü ile bulunur
+
 | Aktarım Yöntemi   | Açıklama                                               |
 | ----------------- | ------------------------------------------------------ |
 | Circuit Switching | Her arama için özel devre kullanılır, telefon ağı gibi |
