@@ -35,7 +35,7 @@
 | `yes | <komut_ya_da_script>`  | İnteraktif veri isteyen işleme 'yes' verisi gönderme |
 | `echo <metin> > <dosya>`      | Dosyaya metin yazma                                  |
 
-## Faydalı Bilgiler ve Uygulamalar
+## Ubuntu 18.10 için Faydalı Bilgiler
 
 ### Gnome Eklentileri
 
@@ -47,6 +47,16 @@ Gnome eklentileri ile ubuntu distronuzu özelleştirebilirsiniz.
 #### Ubuntu Üstteki Çubuğu Gizleme
 
 Gnome eklentisini kurduktan sonra [buradan](https://extensions.gnome.org/extension/545/hide-top-bar/) eklentiyi `ON/OFF` ile açıp kapatabilirsiniz.
+
+### Dash to Dock ile MacOS Durum Çubuğu Görünümü
+
+Tam ekranı kaplayan uzun görüntü yerine, içerdiği uygulama kadar yer kaplayan bir görüntü sağlar.
+
+- `Ubuntu Software` uygulamasını açın
+- `Dash to Dock` yazıp aratın ev indirin
+- `Extension Settings` kısmından özelleştirebilirsiniz
+
+## Faydalı Bilgiler ve Uygulamalar
 
 ### Window Manager Controls
 
