@@ -34,6 +34,7 @@ Birkaç distro örneği:
     - [Ubuntu Üstteki Çubuğu Gizleme](#ubuntu-%C3%BCstteki-%C3%A7ubu%C4%9Fu-gizleme)
   - [Dash to Dock ile MacOS Durum Çubuğu Görünümü](#dash-to-dock-ile-macos-durum-%C3%A7ubu%C4%9Fu-g%C3%B6r%C3%BCn%C3%BCm%C3%BC)
 - [Faydalı Bilgiler ve Uygulamalar](#faydal%C4%B1-bilgiler-ve-uygulamalar)
+  - [OnlyOffice Desktop](#onlyoffice-desktop)
   - [Window Manager Controls](#window-manager-controls)
   - [Uygulamaların Terminal Komutlarını öğrenme](#uygulamalar%C4%B1n-terminal-komutlar%C4%B1n%C4%B1-%C3%B6%C4%9Frenme)
   - [Kernel Güncelleme](#kernel-g%C3%BCncelleme)
@@ -232,6 +233,14 @@ Tam ekranı kaplayan uzun görüntü yerine, içerdiği uygulama kadar yer kapla
 - `Extension Settings` kısmından özelleştirebilirsiniz
 
 ## Faydalı Bilgiler ve Uygulamalar
+
+### OnlyOffice Desktop
+
+MS Office alteratifi bir uygulamadır.
+
+- `wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb` ile paketi indirin
+- `sudo dpkg -i onlyoffice-desktopeditors_amd64.deb` paket kurulumunu deneyin
+  - Hata olması durumunda `sudo apt-get install --fix-broken` komutunu kullanın ve tekrar paket kurulumunu deneyin
 
 ### Window Manager Controls
 
