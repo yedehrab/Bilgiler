@@ -247,13 +247,21 @@ Tam ekranı kaplayan uzun görüntü yerine, içerdiği uygulama kadar yer kapla
 Terminal üzerinden çevrimdışı şekilde çeviri yapmak için:
 
 ```sh
-# Kurulum
 sudo apt-get install dictd
 sudo apt-get install dict-freedict-tur-eng
 sudo apt-get install dict-freedict-eng-tur
+```
 
-# Kullanım
-dict <metin>
+Diğer dilleri kurmak için:
+
+```sh
+sudo apt-cache search "dict-freedict"
+```
+
+Kullanım şekli:
+
+```sh
+dict "word"
 ```
 
 - `<metin>` Çevirilecek metin
