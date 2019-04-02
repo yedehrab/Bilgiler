@@ -32,9 +32,7 @@
 
 - [Terimler](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Terimler.md)
 - [OpenCart](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/OpenCart.md)
-- [Linux](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Linux.md)
 - [GittiGidiyor Entegrasyon](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/GittiGidiyor%20Entegrasyon.md)
-- [Windows 10 Notları](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Windows%2010%20Notlar%C4%B1.md)
 - [Protocol Buffer (Protobuf)](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Protocol%20Buffer%20%28Protobuf%29.md)
 - [Google Colabrotory](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Google%20Colabrotory.md)
 - [Google Hacking](Yaz%C4%B1l%C4%B1m%20Notlar%C4%B1/Google%20Hacking.md)
@@ -75,6 +73,11 @@
 - [Genel Bilgiler](Programlama%20Notlar%C4%B1/Genel%20Bilgiler.md)
 - [Nodejs Çok Kullanılan Kütüphaneler](Programlama%20Notlar%C4%B1/Nodejs%20%C3%87ok%20Kullan%C4%B1lan%20K%C3%BCt%C3%BCphaneler.md)
 - [Markdown](Programlama%20Notlar%C4%B1/Markdown.md)
+
+## İşletim Sistemi Notları
+
+- [Windows 10 Notları](%C4%B0%C5%9Fletim%20Sistemi%20Notlar%C4%B1/Windows%2010%20Notlar%C4%B1.md)
+- [Linux Notları](%C4%B0%C5%9Fletim%20Sistemi%20Notlar%C4%B1/Linux%20Notlar%C4%B1.md)
 
 ## Proje Yönetimi Notları
 
