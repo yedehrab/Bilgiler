@@ -1,6 +1,13 @@
 # Linux <!-- omit in toc -->
 
-Öneri Distro: `ubuntu`, `deepin`
+Birkaç distro örneği:
+
+| Distro                            | İyi Yanı                                 | Kötü Yanı                           |
+| --------------------------------- | ---------------------------------------- | ----------------------------------- |
+| [ubuntu](https://www.ubuntu.com/) | Çok fazla kaynak ve bilgi desteği vardır | Arayüz tasarımı hususunda geridedir |
+| [deepin](https://www.deepin.org/) | Çok şık bir arayüz tasarımına sahiptir   | Donanım ve bilgi desteği zayıftır   |
+
+> Tüm distrolara [buradaki](https://distrowatch.com/) siteden bakabilirsin.
 
 ## İçerikler <!-- omit in toc -->
 
