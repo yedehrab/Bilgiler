@@ -191,7 +191,7 @@ Değişkenlerin kullanım şekilleri:
 
 ```json
 {
-    // Kişisel bilgilerin paylaşılmasını engellemes
+   // Kişisel bilgilerin paylaşılmasını engellemes
     "telemetry.enableTelemetry": false,
     // Tema ayarları
     "workbench.colorTheme": "Deepdark Material Theme | Full Black Version",
@@ -200,16 +200,23 @@ Değişkenlerin kullanım şekilleri:
     "window.menuBarVisibility": "toggle",
     "workbench.statusBar.feedback.visible": false,
     // Editör Ayarları
-    "editor.fontSize": 12.5,
-    "editor.fontFamily": "'Roboto Mono'",
+    "editor.fontSize": 13.5,
+    "editor.fontFamily": "Ubuntu Mono, Roboto Mono",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
+    // Dosya Gezgini Ayarları
+    "explorer.confirmDragAndDrop": false,
     // Entegre terminal ayarları
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.fontSize": 13.5,
     // Git ayarları
     "git.autofetch": true,
     "git.confirmSync": false,
+    // Python ayarları
+    "python.jediEnabled": false,
+    // Vs Intellicode ayarları
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
 ```
 
