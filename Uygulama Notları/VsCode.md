@@ -59,6 +59,7 @@ PDF dökümanı 📃 için [buraya](..\pdfs\keyboard-shortcuts-windows.pdf) baka
 | [Visual Studio Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vs-keybindings)            | Kısayollar üzerine bir eklenti |
 | [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | İmla kontrolü                  |
 | [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)                          | Yapılacakları gösteren arayüz  |
+| [Emoji](https://marketplace.visualstudio.com/items?itemName=Perkovec.emoji)                                     | Komutla emoji ekleme           |
 
 ### Farkındalık Eklentileri
 
