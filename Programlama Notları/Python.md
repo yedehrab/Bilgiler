@@ -105,6 +105,9 @@
       - [Basit Kullanım](#basit-kullan%C4%B1m)
       - [Enum Özellikleri](#enum-%C3%B6zellikleri)
         - [Benzersin Enum Tanımlaması](#benzersin-enum-tan%C4%B1mlamas%C4%B1)
+- [Python Görsel Programlama](#python-g%C3%B6rsel-programlama)
+  - [Basit GUI Yapımı](#basit-gui-yap%C4%B1m%C4%B1)
+  - [PyQt Widgets](#pyqt-widgets)
 - [İleri Seviye Python](#i%CC%87leri-seviye-python)
   - [Assertion (Kural Koyma)](#assertion-kural-koyma)
     - [Assertion Örnekleri](#assertion-%C3%B6rnekleri)
@@ -1249,6 +1252,52 @@ class Mistake(Enum):
 # Traceback (most recent call last):
 # ValueError: duplicate values found in <enum 'Mistake'>: FOUR -> THREE
 ```
+
+## Python Görsel Programlama
+
+Python görsel programlama **PyQt API**'ı ile yapılmaktadır.
+
+- `pip install pyqt5`
+- `conda install pyqt`
+
+> Orjinal kaynak için [buraya](https://build-system.fman.io/pyqt5-tutorial) bakabilirsin.
+
+### Basit GUI Yapımı
+
+```py
+from PyQt5.QtWidgets import QApplication, QLabel
+
+# Uygulamayı tanımlama
+# - [] objesi içine aktarılacak argümanları ifade eder
+app = QApplication([])
+
+# Pencernein içine yazı yazma ve görünür kılma
+label = QLabel('~ YEmreAk')
+label.show()
+
+# Uygulamayı kullanıcı kapatana kadar çalıştırma (exec olursa arkaplanda da çalışır)
+app.exec_()
+```
+
+### PyQt Widgets
+
+PyQt deki her bir obje widget olarak adlandırılmakta
+
+![pyqt_widgets](../images/pyqt_widgets.png)
+
+Yukarıdan-aşağı, soldan-sağa olmak üzere sırayla:
+
+- [QLabel](http://doc.qt.io/qt-5/qlabel.html)
+- [QComboBox](http://doc.qt.io/qt-5/qcombobox.html)
+- [QCheckBox](http://doc.qt.io/qt-5/qcheckbox.html)
+- [QRadioButton](http://doc.qt.io/qt-5/qradiobutton.html)
+- [QPushButton](http://doc.qt.io/qt-5/qpushbutton.html)
+- [QTableWidget](http://doc.qt.io/qt-5/qtablewidget.html)
+- [QLineEdit](http://doc.qt.io/qt-5/qlineedit.html)
+- [QSlider](http://doc.qt.io/qt-5/qslider.html)
+- [QProgressBar](http://doc.qt.io/qt-5/qprogressbar.html)
+
+> Ekran görüntüsündeki kodu [buraya](https://build-system.fman.io/static/public/files/widgets_example.py) tıklayarak indirebilirsin.
 
 ## İleri Seviye Python
 
