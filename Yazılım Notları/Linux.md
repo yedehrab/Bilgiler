@@ -1,6 +1,6 @@
 # Linux
 
-Öneri Distro: `deepin`
+Öneri Distro: `ubuntu`, `deepin`
 
 ## Grub Menüyü Atlama
 
@@ -36,6 +36,17 @@
 | `echo <metin> > <dosya>`      | Dosyaya metin yazma                                  |
 
 ## Faydalı Bilgiler ve Uygulamalar
+
+### Gnome Eklentileri
+
+Gnome eklentileri ile ubuntu distronuzu özelleştirebilirsiniz.
+
+- `sudo apt install chrome-gnome-shell` ile chrome için gnome çekirdeğini kurun
+- [Chrome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/) veya [Opera](https://addons.opera.com/en/extensions/details/gnome-shell-integration/) için gnome eklentisini kurun
+
+#### Ubuntu Üstteki Çubuğu Gizleme
+
+Gnome eklentisini kurduktan sonra [buradan](https://extensions.gnome.org/extension/545/hide-top-bar/) eklentiyi `ON/OFF` ile açıp kapatabilirsiniz.
 
 ### Window Manager Controls
 
