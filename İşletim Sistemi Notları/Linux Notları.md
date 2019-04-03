@@ -34,6 +34,7 @@ Birkaç distro örneği:
     - [Ubuntu Üstteki Çubuğu Gizleme](#ubuntu-%C3%BCstteki-%C3%A7ubu%C4%9Fu-gizleme)
   - [Dash to Dock ile MacOS Durum Çubuğu Görünümü](#dash-to-dock-ile-macos-durum-%C3%A7ubu%C4%9Fu-g%C3%B6r%C3%BCn%C3%BCm%C3%BC)
 - [Faydalı Bilgiler ve Uygulamalar](#faydal%C4%B1-bilgiler-ve-uygulamalar)
+  - [Media Player](#media-player)
   - [MTPaint](#mtpaint)
   - [Terminal Üzerinden Markdown to PDF](#terminal-%C3%BCzerinden-markdown-to-pdf)
   - [Terminal Üzerinden Çevirici](#terminal-%C3%BCzerinden-%C3%A7evirici)
@@ -243,6 +244,20 @@ Tam ekranı kaplayan uzun görüntü yerine, içerdiği uygulama kadar yer kapla
 - `Extension Settings` kısmından özelleştirebilirsiniz
 
 ## Faydalı Bilgiler ve Uygulamalar
+
+| Uygulama İsmi | Açıklama     |
+| ------------- | ------------ |
+| mpv           | Media player |
+
+### Media Player
+
+En çok sevilen oynatıcı olan `mpv`'i indirmek için:
+
+```sh
+sudo apt-get install mpv
+```
+
+> [Buraya](https://www.slant.co/topics/5260/~media-players-for-linux#3) bakarak diğerleri kıyaslayabilirisin.
 
 ### MTPaint
 
