@@ -126,18 +126,47 @@ Fiziksel verilerin (bit*lerin) aktarılmasını ele alır.
 
 Birbirine bağlı çok sayıda router*'dan oluşur. Network of network olarak da tabir edilen interneti ele alır.
 
-- Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir parçaya **packets** denir.
-- Her bir packet* $L$ kadar bit içeriyor ve transmission rate* $R$ ise transmission delay $D=L/R$ formülü ile bulunur
+![network_core](imgs/network_core.png)
 
 | Aktarım Yöntemi   | Açıklama                                               |
 | ----------------- | ------------------------------------------------------ |
 | Circuit Switching | Her arama için özel devre kullanılır, telefon ağı gibi |
 | Packet Switching  | Veri ağa ayrık packet*'lar halinde gönderilir          |
 
-### Packet Switching (Paket Anahtarlama)
+#### Circuit Switching (Devre Anahtarlama)
 
-Host
+Bandwitdh* parçalara bölünür, her parça sadece kendi sahibi tarafından kullanılır.
 
-## Ders1 Bölüm2: Packet, Delay and
+- Genellikle telefon hatlarında kullanılır
+- Garantili performans sunar
+- Kaynaklar paylaşılmaz, kullanılmayanlar boşta bekler (verimsiz)
+- Frekans ve Zaman bölme olarak iki yöntemi vardır. (FDM, TDM)
 
-Host* uygulama katmanındaki verileri ufak packet'lara* çeviriyor ve router* yardımıyla gitmesi gereken yer bulunup gönderiliyor ve her packet* tam kapasitede gönderiliyor.
+![fdm_tdm](imgs/fdm_tdm.png)
+
+#### Packet Switching (Paket Anahtarlama)
+
+Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir parçaya **packets** denir. Her bir packet* tam bandwitdh* kullanır ve host tarafından **tamamlanmadan** yollanmaz (storage & forward).
+
+- Packet*'ların bir sırası yoktur
+- Her bilgisayar packet* iletimi için aynı yolu kullanır
+- Kaynaklar boşta kalmaz. (verimli)
+- Her bir packet* $L$ kadar bit içeriyor ve transmission rate* $R$ ise transmission delay $D=L/R$ formülü ile bulunur
+- Kaynak çekişmesi olabilir. (olumsuz)
+  - Toplamk kaynak talebi kullanılanı aşabilir
+  - Trafik sıkışıklığı, packet*'in kuyruğu ve bağlatıyı kullanmak için beklemesi
+  - Packet*'lar aynı anda bir yönlendiriciye iletirilir
+    - Buffer'ı yetmezse packet* kaybı olur
+
+![packet_switching](imgs/packet_switching.png)
+
+#### Packet Yönteminin Circuit Switching Yöntemine Göre Farkı
+
+- Basit, arama algoritmalarının kurulmaına gerek yoktur
+- Kaynaklar paylaşıldığından ağı daha fazla kullanıcı kullanabilir
+- Güvenilir veri transferi ve sıkışıklık için protokellere ihtiyaç vardır.
+  - Yoksa verilerinizi çalarlar 😢
+
+### Internet Structure (Internet Yapısı)
+
+> Eklenecek
