@@ -34,6 +34,7 @@ Birkaç distro örneği:
     - [Ubuntu Üstteki Çubuğu Gizleme](#ubuntu-%C3%BCstteki-%C3%A7ubu%C4%9Fu-gizleme)
   - [Dash to Dock ile MacOS Durum Çubuğu Görünümü](#dash-to-dock-ile-macos-durum-%C3%A7ubu%C4%9Fu-g%C3%B6r%C3%BCn%C3%BCm%C3%BC)
 - [Faydalı Bilgiler ve Uygulamalar](#faydal%C4%B1-bilgiler-ve-uygulamalar)
+  - [MTPaint](#mtpaint)
   - [Terminal Üzerinden Markdown to PDF](#terminal-%C3%BCzerinden-markdown-to-pdf)
   - [Terminal Üzerinden Çevirici](#terminal-%C3%BCzerinden-%C3%A7evirici)
   - [OnlyOffice Desktop](#onlyoffice-desktop)
@@ -242,6 +243,16 @@ Tam ekranı kaplayan uzun görüntü yerine, içerdiği uygulama kadar yer kapla
 - `Extension Settings` kısmından özelleştirebilirsiniz
 
 ## Faydalı Bilgiler ve Uygulamalar
+
+### MTPaint
+
+Microsoft MSPaint'e alternatif linux paint uygulamasıdır.
+
+Kurulum:
+
+```sh
+suda apt-get install mtpaint
+```
 
 ### Terminal Üzerinden Markdown to PDF
 
