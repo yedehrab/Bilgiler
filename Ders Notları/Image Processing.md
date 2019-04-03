@@ -18,6 +18,7 @@ Ders matlab üzerinden işlenmektedir.
   - [Histogram Germe](#histogram-germe)
     - [Pythonda Histogram Germe İşlemi](#pythonda-histogram-germe-i%CC%87%C5%9Flemi)
   - [Histogram Eşitleme](#histogram-e%C5%9Fitleme)
+    - [Python'da Histogram Eşitleme](#pythonda-histogram-e%C5%9Fitleme)
 - [Harici Bağlantılar](#harici-ba%C4%9Flant%C4%B1lar)
 
 ## Ders Hakkında
@@ -103,40 +104,90 @@ $$
 #### Pythonda Histogram Germe İşlemi
 
 ```py
-def histogram_stretching(image, new=(0, 255)):
+def histogram_stretching(image: Image, new=(0, 255)):
+    """Histogram Germe
+
+    Arguments:
+        image {PIL.Image} -- Resim
+
+    Keyword Arguments:
+        new {(min, max)} -- tuple (default: {(0, 255)})
+
+    Returns:
+        PIL.Image -- Gerilmiş resim
     """
-    Histogram Germe işlemi
-    :param image: Resmin numpy dizisi
-    :param new: Yeni pixel min, max değerleri
-    :return: Gerilmiş resim
-    """
-    # Resmi tek boyuta indirgeme
-    flatten_img_np = image.reshape(-1)
+
+    def difference(variable: tuple):
+        return variable[1] - variable[0]
+
+    np_image = np.array(image)  # Resmi numpy.ndarray formatına çevirme
+    flatten_img_np = np_image.reshape(-1)  # Resmi tek boyuta indirgeme
 
     # Histogram germe denklemi
     old = flatten_img_np.min(), flatten_img_np.max()
     for i in range(0, len(flatten_img_np)):
-        flatten_img_np[i] = (difference(new) / difference(old)) * (flatten_img_np[i] - old[0]) + new[0]
+        flatten_img_np[i] = (difference(new) / difference(old)) * \
+            (flatten_img_np[i] - old[0]) + new[0]
 
     # Aynı boyutlardaki yeni resmi oluşturma
-    return flatten_img_np.reshape(image.shape)
-```
+    return Image.fromarray(flatten_img_np.reshape(np_image.shape))
 
-> $i$ harfi resmin **i. pixel değerini** temsil eder.
+```
 
 ### Histogram Eşitleme
 
 Her bir parlaklık seviyesi için aynı sayıda pixel bulunmasını sağlayarak resmin pixellerinin dengeli (uniform) dağılımda olması amaçlanır.
 
 - Her pixel ton değerinin resmin içinde hangi oranda olduğu $p_r(r_k)$ hesaplanır
-  - $p_r(r_k) = n_k / n$
-    - $n$: toplam pixel sayısı
+  - $P_r(r_k) = n_k / n$
+    - $n$: Toplam pixel sayısı
     - $n_k$: k. pixel sayısı
 - Kümülatif olasılık fonksiyonu $s_k$ hesaplanır
-  - $s_k = T(r_k) = \sum_{j=0}^k n_j / n$
+  - $s_k = T(r_k) = \sum_{j=0}^k P_r(r_k) = \sum_{j=0}^k n_j / n$
 - Ters dönüşüm yapılarak, hangi renk tonu yerine hangisinin geleceği hesaplanır
-  - $r_k = T^-(s_k) = (L - 1) * T(r_k)$
-    - $L$: Toplam pixel sayısı
+  - $r_k = T^-(s_k) = L * T(r_k)$
+    - $L$: Maksimum pixel değeri (255)
+
+#### Python'da Histogram Eşitleme
+
+```py
+def histogram_equalization(image: Image):
+    """Histogram eşitleme
+
+    Arguments:
+        image {PIL.Image} -- Resim
+
+    Returns:
+        PIL.Image -- Resim
+    """
+
+    np_image = np.copy(image)  # Numpy formatına çevirme
+    flatten_image = np_image.flatten()  # Resmi tek boyuta indirgeme
+
+    # Pixel bilgilerini alma
+    pixel_num = len(flatten_image)
+    max_pixel_num = flatten_image.max()
+    min_pixel_num = flatten_image.min()
+
+    # Pixel dağılımını hesaplama
+    pixel_manager = {}  # Pixel yönlendirici
+    cumulative_probability = 0  # Kümülatif pixel bulunma olasılığı
+    for i in range(min_pixel_num, max_pixel_num + 1):
+        pixel_count = 0  # Pixel'in tekrar etme sayısı
+        for pixel in flatten_image:
+            if i == pixel:
+                pixel_count += 1
+        cumulative_probability += pixel_count / pixel_num
+        pixel_manager[f'{i}'] = round(
+            max_pixel_num * cumulative_probability
+        )
+
+    for i in range(len(flatten_image)):
+        flatten_image[i] = pixel_manager[f"{flatten_image[i]}"]
+
+    return Image.fromarray(flatten_image.reshape(np_image.shape))
+
+```
 
 > Ek kaynak için [buraya](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_histograms/py_histogram_equalization/py_histogram_equalization.html) bakabilirsin.
 
