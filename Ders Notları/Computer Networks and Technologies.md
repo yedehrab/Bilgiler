@@ -26,6 +26,11 @@
   - [Paketlerin iletimi](#paketlerin-iletimi)
   - [Packet Delay & Loss (Gecikme ve Kayıp)](#packet-delay--loss-gecikme-ve-kay%C4%B1p)
   - [Packet Switching Delay](#packet-switching-delay)
+  - [Internet Delay](#internet-delay)
+  - [Protocol Layers (Protokol Katmanları)](#protocol-layers-protokol-katmanlar%C4%B1)
+  - [Internet Protocol Stack (TCP / IP)](#internet-protocol-stack-tcp--ip)
+    - [ISO / OSI Reference Model](#iso--osi-reference-model)
+  - [Encapsulation (Kapsüllemi)](#encapsulation-kaps%C3%BCllemi)
 - [Ders 2](#ders-2)
 - [Transport Servise Requirements](#transport-servise-requirements)
 - [internet Transport Protocols Services](#internet-transport-protocols-services)
@@ -169,12 +174,18 @@ Paketler tier-3*'ten tier-1*'e ardından hedef tier-3*'e doğru yol izlerler.
 
 ![packet_forwarding](imgs/packet_forwarding.png)
 
+- Router*'lar arası verilerin yayıldığı alana **pipe** denir
+- Kalın bağlantılarda (links) veri aktarımı daha fazladır
+- Ince alanlara **bottleneck link** denir
+
+![throughput](imgs/throughput.png)
+
 ### Packet Delay & Loss (Gecikme ve Kayıp)
 
 Packet*'lar router*'ın buffer* (arrabellek) alanında kuytukta beklerler
 
 - Gelen packet* sayısı çıkandan fazla ise fazlalık packet*'lar buffer*'a konulur
-- Buffer* yeterli alana sahip değilse packet* atılır.
+- Buffer* yeterli alana sahip değilse packet* atılır, kayıp packet*'lar önceki node*'dan tekrar istenir
 
 ![packet_loss](imgs/packet_loss_delay.png)
 
@@ -182,13 +193,61 @@ Packet*'lar router*'ın buffer* (arrabellek) alanında kuytukta beklerler
 
 | Sebep             | Açıklama                                        |
 | ----------------- | ----------------------------------------------- |
-| Nodel Processing  | Hataları bitlerin kontrol edildiği aşama        |
+| Nodel Processing  | Hatalı bitlerin kontrol edildiği aşama          |
 | Queueing Delay    | Buffer*'da sıralanmanın olduğu aşama            |
 | Transmisson Delay | Yayılım için packet*'ların router*'a iletilmesi |
 | Propagation Delay | Router*'daki paketlerin yayılması               |
 
 ![caravan_analogy](imgs/caravan_analogy.png)
 ![caravan_analogy2](imgs/caravan_analogy2.png)
+
+### Internet Delay
+
+Traceroute programı kaynaktan hedefe yol üzerinde bulunan router*'lardaki gecikmenin ölçümünü sağlar.
+
+- Windows için tracert
+- Linux için tracepath
+
+![tracepath](imgs/tracepath.png)
+
+### Protocol Layers (Protokol Katmanları)
+
+Ağ yapıları karmaşıktır. Bilgisayarlar, routers*, protocols* ... Katman yapısıyla:
+
+- Karmaşık sistem parçalarının ilişkilerini tanımlamaya olanak sağlar
+- Modüler olması sistemin bakımını ve güncelleştirilmesini kolaylaştırır
+  - Bir katmandaki servis uygulamasını değiştirmek, sistemi etkilemez
+
+### Internet Protocol Stack (TCP / IP)
+
+| Öge         | Açıklama                                                                  |
+| ----------- | ------------------------------------------------------------------------- |
+| application | Ağ uygulamalarını destekleyen uygulamalar                                 |
+| transport   | Veri aktarımı, TCP, UDP                                                   |
+| netowrk     | Kaynaktan hedefe datagram*'ları yönlendirir: IP, yönlendirme protokolleri |
+| link        | Komşu ağ elemanları arasında veri transferi: PPP, Ethernet                |
+| physical    | Hattaki (wire*) bitler                                                    |
+
+![ips](imgs/ips.png)
+
+#### ISO / OSI Reference Model
+
+Internet protocol stack*'te bu katmanlar yoktur, gerekirse program ile uygulanır
+
+| Ek Öğe       | Açıklama                                                                                |
+| ------------ | --------------------------------------------------------------------------------------- |
+| presentation | Uygulamaların verilerin anlamlarını yorumlamasını sağlar: encryption*, compression* ... |
+| session      | Senkronizasyon, denetim veri değişimi ...                                               |
+
+![iso_osi](imgs/iso_osi.png)
+
+### Encapsulation (Kapsüllemi)
+
+Veri transferleri encapsulation* ile yapılamktadır.
+
+![encopsulation](imgs/encapsulation.png)
+
+<!-- TODO -->
 
 ## Ders 2
 
