@@ -1,56 +1,38 @@
-# Computer Networks and Technologies
+# Computer Networks and Technologies <!-- omit in toc -->
 
 - Drive üzerindeki yedeklemeye erişmek için [buraya 📂](https://drive.google.com/open?id=1rgSo9gVGWsB9WtAEfxZHv_uAdAni560a) tıklamalısın.
 - Dersle alternatif bir kaynak için bu [video serisine 📺](https://www.youtube.com/playlist?list=PL1XUdfGZZ4rQ0UPDx__7W4LmeLab227vb) kitap için [bu siteye 🌐](http://www-net.cs.umass.edu/kurose-ross-ppt-6e/) bakabilirsin.
 
 > **[RFC](https://www.ietf.org/rfc/rfc2616.txt)** her şeyin olduğu bir dökümandır.
 
-## Ders 2
+## İçerikler <!-- omit in toc -->
 
-2.19.2019 tarihli ders
+> `HOME` tuşu ile yukarı yönelebilirsin.
 
-### Transport Servise Requirements
+- [Temel Terimler](#temel-terimler)
+- [Network Structure (Ağ Yapısı)](#network-structure-a%C4%9F-yap%C4%B1s%C4%B1)
+- [Network Edge](#network-edge)
+  - [Access Network (Bağlantı Türleri)](#access-network-ba%C4%9Flant%C4%B1-t%C3%BCrleri)
+  - [Physcial Media (Fiziksel Veri İşlemleri)](#physcial-media-fiziksel-veri-i%CC%87%C5%9Flemleri)
+    - [Fiber Optik Kablo](#fiber-optik-kablo)
+  - [Radya Bağlantı](#radya-ba%C4%9Flant%C4%B1)
+    - [Satellite (Uydu Bağlantısı)](#satellite-uydu-ba%C4%9Flant%C4%B1s%C4%B1)
+- [Network Core](#network-core)
+  - [Circuit Switching (Devre Anahtarlama)](#circuit-switching-devre-anahtarlama)
+  - [Packet Switching (Paket Anahtarlama)](#packet-switching-paket-anahtarlama)
+  - [Packet Yönteminin Circuit Switching Yöntemine Göre Farkı](#packet-y%C3%B6nteminin-circuit-switching-y%C3%B6ntemine-g%C3%B6re-fark%C4%B1)
+- [Internet Structure (Internet Alt yapısı)](#internet-structure-internet-alt-yap%C4%B1s%C4%B1)
+  - [Interter Tiers](#interter-tiers)
+  - [Paketlerin iletimi](#paketlerin-iletimi)
+  - [Packet Delay & Loss (Gecikme ve Kayıp)](#packet-delay--loss-gecikme-ve-kay%C4%B1p)
+  - [Packet Switching Delay](#packet-switching-delay)
+- [Ders 2](#ders-2)
+- [Transport Servise Requirements](#transport-servise-requirements)
+- [internet Transport Protocols Services](#internet-transport-protocols-services)
+  - [TCP](#tcp)
+  - [UDP](#udp)
 
-Hepsi her durum için geçerli olmaz.
-
-- Mail gibi platformlarda veri bütünlüğü,
-- Oyun gibi interaktif platformlarda zaman duyarlılığı,
-- Anlık veri işlemelerinde taşınan yük önemlidir.
-
-| Terim          | Türkçesi          |
-| -------------- | ----------------- |
-| throughput     | Taşınan yük       |
-| data loss      | Veri kaybı        |
-| time sensitive | Zaman duyarlılığı |
-
-### internet Transport Protocols Services
-
-> Not: *Protokolleri hiç biri (core design) güvenlik ile ilgili özellikler barındırmaz. Sonradan bunlara uyumlu olacak şekilde güvenlik sistemleri entegre edilir.*
-
-#### TCP
-
-> RFC dökümantasyonu için [buraya](https://tools.ietf.org/html/rfc793) tıklayın.
-
-- Reliable Transport
-- Flow control
-- Congestion control
-- Does not provide
-- Connection-oriented
-
-#### UDP
-
-Yayıncılıkta tercih ediliyor.
-
-- Varıp varmadığıyla ilgilenmiyor. Gitmezse tekrar yolluyor.
-- Hız için tercih edilir.
-- Olumsuz geri dönüş yoktur.
-- Sender ile reciver asla birbirleriyle iletişimde değidir.
-
-## Bilgisayar Ağları
-
-Youtube üzerindeki eğitim ve slatylar hakkında alınan notlarım.
-
-### Temel Terimler
+## Temel Terimler
 
 | Terim             | Açıklama                                                      |
 | ----------------- | ------------------------------------------------------------- |
@@ -68,7 +50,7 @@ Youtube üzerindeki eğitim ve slatylar hakkında alınan notlarım.
 | Bandwitdh         | Bant genişliği, saniye aktarılan bit (1sn de olan streaming*) |
 | Transmission rate | Saniyede aktarılan bit                                        |
 
-### Network Structure (Ağ Yapısı)
+## Network Structure (Ağ Yapısı)
 
 | Terim                           | Açıklama                                                    |
 | ------------------------------- | ----------------------------------------------------------- |
@@ -80,7 +62,7 @@ Youtube üzerindeki eğitim ve slatylar hakkında alınan notlarım.
 
 ![network sturcture](imgs/network%20structures.png)
 
-### Network Edge
+## Network Edge
 
 Bizden internete olan gerçekleşen adımları ele alır.
 
@@ -90,7 +72,7 @@ Bizden internete olan gerçekleşen adımları ele alır.
 | Client / Server | Client* istekte bulunur, server* karşılık verir | Web browsers      |
 | Peer to peer    | Neredeyse hiç server* kullanılmaz               | Skype, BitTorrent |
 
-#### Access Network (Bağlantı Türleri)
+### Access Network (Bağlantı Türleri)
 
 - Dial Up: Telefon çalışırken modem, modem çalışırken telefonun çalışmadığı eski bir sistem.
 - DSL: Splitter* ile telefon ve internet eş zamanlı kullanabilmekte.
@@ -98,14 +80,14 @@ Bizden internete olan gerçekleşen adımları ele alır.
 - Wireless LAN: Ev içerisindeki kablasuz ağlar: WiFi
 - Wide-Area wireless acces: Mobil operatörler tarafından sunulan ağlar: 3G, 4G, LTE
 
-#### Physcial Media (Fiziksel Veri İşlemleri)
+### Physcial Media (Fiziksel Veri İşlemleri)
 
 Fiziksel verilerin (bit*lerin) aktarılmasını ele alır.
 
 - Kablo yapısı TP (twisted pair) iç içe sarmal 2 kablodur.
 - Guided: yönetimli (kablo vs ile), unguided: dağınık olarak yayılan (radyo dalgaları) verilerdir.
 
-##### Fiber Optik Kablo
+#### Fiber Optik Kablo
 
 - Cam içerisinde bilgiler ışık yoluyla aktarılır
 - Işığın farklı frekanslarıyla birden fazla bilgi yollanabilir
@@ -113,16 +95,16 @@ Fiziksel verilerin (bit*lerin) aktarılmasını ele alır.
 - Elektromanyetik gürültüden etkilenmez
 - Veri kaybı çok düşüktür
 
-#### Radya Bağlantı
+### Radya Bağlantı
 
 - LAN (WiFi)
 - Wide-area (geniş alan bağlantıları) 3G, 4G
 
-##### Satellite (Uydu Bağlantısı)
+#### Satellite (Uydu Bağlantısı)
 
 - Gecikmesi çok fazladır. (250ms)
 
-### Network Core
+## Network Core
 
 Birbirine bağlı çok sayıda router*'dan oluşur. Network of network olarak da tabir edilen interneti ele alır.
 
@@ -133,7 +115,7 @@ Birbirine bağlı çok sayıda router*'dan oluşur. Network of network olarak da
 | Circuit Switching | Her arama için özel devre kullanılır, telefon ağı gibi |
 | Packet Switching  | Veri ağa ayrık packet*'lar halinde gönderilir          |
 
-#### Circuit Switching (Devre Anahtarlama)
+### Circuit Switching (Devre Anahtarlama)
 
 Bandwitdh* parçalara bölünür, her parça sadece kendi sahibi tarafından kullanılır.
 
@@ -144,7 +126,7 @@ Bandwitdh* parçalara bölünür, her parça sadece kendi sahibi tarafından kul
 
 ![fdm_tdm](imgs/fdm_tdm.png)
 
-#### Packet Switching (Paket Anahtarlama)
+### Packet Switching (Paket Anahtarlama)
 
 Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir parçaya **packets** denir. Her bir packet* tam bandwitdh* kullanır ve host tarafından **tamamlanmadan** yollanmaz (storage & forward).
 
@@ -160,13 +142,91 @@ Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir par
 
 ![packet_switching](imgs/packet_switching.png)
 
-#### Packet Yönteminin Circuit Switching Yöntemine Göre Farkı
+### Packet Yönteminin Circuit Switching Yöntemine Göre Farkı
 
 - Basit, arama algoritmalarının kurulmaına gerek yoktur
 - Kaynaklar paylaşıldığından ağı daha fazla kullanıcı kullanabilir
 - Güvenilir veri transferi ve sıkışıklık için protokellere ihtiyaç vardır.
-  - Yoksa verilerinizi çalarlar 😢
+  - Yoksa verilerinizi çalarlar 🙁
 
-### Internet Structure (Internet Yapısı)
+## Internet Structure (Internet Alt yapısı)
 
-> Eklenecek
+### Interter Tiers
+
+Her bir katman üst katmanının müşterisidir.
+
+| Tier (Katman) | Açıklama                                                                                       |
+| ------------- | ---------------------------------------------------------------------------------------------- |
+| Tier-1*       | Global ISP* evrensel servis sağlayıcılarıdır. Birbirlerine bağlıdırlar Örn: Superonline, TTNet |
+| Tier-2*       | Regional ISP* bölgesel servis sağlayıcılarıdır. Birbirlerine değil Tier-1*'e bağlıdırlar       |
+| Tier-3*       | Son kullanıcı ağlarıdır, Tier-2*'e bağlanırlar                                                 |
+
+![isps](imgs/ısps.png)
+
+### Paketlerin iletimi
+
+Paketler tier-3*'ten tier-1*'e ardından hedef tier-3*'e doğru yol izlerler.
+
+![packet_forwarding](imgs/packet_forwarding.png)
+
+### Packet Delay & Loss (Gecikme ve Kayıp)
+
+Packet*'lar router*'ın buffer* (arrabellek) alanında kuytukta beklerler
+
+- Gelen packet* sayısı çıkandan fazla ise fazlalık packet*'lar buffer*'a konulur
+- Buffer* yeterli alana sahip değilse packet* atılır.
+
+![packet_loss](imgs/packet_loss_delay.png)
+
+### Packet Switching Delay
+
+| Sebep             | Açıklama                                        |
+| ----------------- | ----------------------------------------------- |
+| Nodel Processing  | Hataları bitlerin kontrol edildiği aşama        |
+| Queueing Delay    | Buffer*'da sıralanmanın olduğu aşama            |
+| Transmisson Delay | Yayılım için packet*'ların router*'a iletilmesi |
+| Propagation Delay | Router*'daki paketlerin yayılması               |
+
+![caravan_analogy](imgs/caravan_analogy.png)
+![caravan_analogy2](imgs/caravan_analogy2.png)
+
+## Ders 2
+
+2.19.2019 tarihli ders
+
+## Transport Servise Requirements
+
+Hepsi her durum için geçerli olmaz.
+
+- Mail gibi platformlarda veri bütünlüğü,
+- Oyun gibi interaktif platformlarda zaman duyarlılığı,
+- Anlık veri işlemelerinde taşınan yük önemlidir.
+
+| Terim          | Türkçesi          |
+| -------------- | ----------------- |
+| throughput     | Taşınan yük       |
+| data loss      | Veri kaybı        |
+| time sensitive | Zaman duyarlılığı |
+
+## internet Transport Protocols Services
+
+> Not: *Protokolleri hiç biri (core design) güvenlik ile ilgili özellikler barındırmaz. Sonradan bunlara uyumlu olacak şekilde güvenlik sistemleri entegre edilir.*
+
+### TCP
+
+> RFC dökümantasyonu için [buraya](https://tools.ietf.org/html/rfc793) tıklayın.
+
+- Reliable Transport
+- Flow control
+- Congestion control
+- Does not provide
+- Connection-oriented
+
+### UDP
+
+Yayıncılıkta tercih ediliyor.
+
+- Varıp varmadığıyla ilgilenmiyor. Gitmezse tekrar yolluyor.
+- Hız için tercih edilir.
+- Olumsuz geri dönüş yoktur.
+- Sender ile reciver asla birbirleriyle iletişimde değidir.
