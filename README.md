@@ -127,6 +127,7 @@
 ## Çalışma Notları
 
 - Önce sabit değerli yaz, sonrasında `CTRL`+ `F` ile sabitleri değişken haline dönüştür
+- Terimler *italik*, önemli notlar **bold**, komutlar `code`, matematikler (latex) $latex$ şekilde olmalı.
 
 ## Karma Bilgiler
 
