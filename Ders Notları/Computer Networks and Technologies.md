@@ -10,39 +10,50 @@
 > `HOME` tuşu ile yukarı yönelebilirsin.
 
 - [Sınav Hakkında](#s%C4%B1nav-hakk%C4%B1nda)
-- [Temel Terimler](#temel-terimler)
-- [Network Structure (Ağ Yapısı)](#network-structure-a%C4%9F-yap%C4%B1s%C4%B1)
-- [Network Edge](#network-edge)
-  - [Access Network (Bağlantı Türleri)](#access-network-ba%C4%9Flant%C4%B1-t%C3%BCrleri)
-  - [Physcial Media (Fiziksel Veri İşlemleri)](#physcial-media-fiziksel-veri-i%CC%87%C5%9Flemleri)
-    - [Fiber Optik Kablo](#fiber-optik-kablo)
-  - [Radya Bağlantı](#radya-ba%C4%9Flant%C4%B1)
-    - [Satellite (Uydu Bağlantısı)](#satellite-uydu-ba%C4%9Flant%C4%B1s%C4%B1)
-- [Network Core](#network-core)
-  - [Circuit Switching (Devre Anahtarlama)](#circuit-switching-devre-anahtarlama)
-  - [Packet Switching (Paket Anahtarlama)](#packet-switching-paket-anahtarlama)
-  - [Packet Yönteminin Circuit Switching Yöntemine Göre Farkı](#packet-y%C3%B6nteminin-circuit-switching-y%C3%B6ntemine-g%C3%B6re-fark%C4%B1)
-- [Internet Structure (Internet Alt yapısı)](#internet-structure-internet-alt-yap%C4%B1s%C4%B1)
-  - [Interter Tiers](#interter-tiers)
-  - [Paketlerin iletimi](#paketlerin-iletimi)
-  - [Packet Delay & Loss (Gecikme ve Kayıp)](#packet-delay--loss-gecikme-ve-kay%C4%B1p)
-  - [Packet Switching Delay](#packet-switching-delay)
-  - [Internet Delay](#internet-delay)
-  - [Protocol Layers (Protokol Katmanları)](#protocol-layers-protokol-katmanlar%C4%B1)
-  - [Internet Protocol Stack (TCP / IP)](#internet-protocol-stack-tcp--ip)
-    - [ISO / OSI Reference Model](#iso--osi-reference-model)
-  - [Encapsulation (Kapsüllemi)](#encapsulation-kaps%C3%BCllemi)
-- [Network Security](#network-security)
-  - [Kötü Niyetli Uygulamalar](#k%C3%B6t%C3%BC-niyetli-uygulamalar)
-    - [Trojan Horse](#trojan-horse)
-    - [Worm](#worm)
-    - [Virus](#virus)
-    - [Spyware Malwawre](#spyware-malwawre)
-  - [Kötü Niyetli Saldırılar](#k%C3%B6t%C3%BC-niyetli-sald%C4%B1r%C4%B1lar)
-    - [DoS](#dos)
-    - [Packet Sniffing (Paket Yakalama)](#packet-sniffing-paket-yakalama)
-    - [IP Spoofing (IP Aldatmacası)](#ip-spoofing-ip-aldatmacas%C4%B1)
-- [Internetin Geçmişi](#internetin-ge%C3%A7mi%C5%9Fi)
+- [Giriş](#giri%C5%9F)
+  - [Temel Terimler](#temel-terimler)
+  - [Network Structure (Ağ Yapısı)](#network-structure-a%C4%9F-yap%C4%B1s%C4%B1)
+  - [Network Edge](#network-edge)
+    - [Access Network (Bağlantı Türleri)](#access-network-ba%C4%9Flant%C4%B1-t%C3%BCrleri)
+    - [Physcial Media (Fiziksel Veri İşlemleri)](#physcial-media-fiziksel-veri-i%CC%87%C5%9Flemleri)
+      - [Fiber Optik Kablo](#fiber-optik-kablo)
+    - [Radya Bağlantı](#radya-ba%C4%9Flant%C4%B1)
+      - [Satellite (Uydu Bağlantısı)](#satellite-uydu-ba%C4%9Flant%C4%B1s%C4%B1)
+  - [Network Core](#network-core)
+    - [Circuit Switching (Devre Anahtarlama)](#circuit-switching-devre-anahtarlama)
+    - [Packet Switching (Paket Anahtarlama)](#packet-switching-paket-anahtarlama)
+    - [Packet Yönteminin Circuit Switching Yöntemine Göre Farkı](#packet-y%C3%B6nteminin-circuit-switching-y%C3%B6ntemine-g%C3%B6re-fark%C4%B1)
+  - [Internet Structure (Internet Alt yapısı)](#internet-structure-internet-alt-yap%C4%B1s%C4%B1)
+    - [Interter Tiers](#interter-tiers)
+    - [Paketlerin iletimi](#paketlerin-iletimi)
+    - [Packet Delay & Loss (Gecikme ve Kayıp)](#packet-delay--loss-gecikme-ve-kay%C4%B1p)
+    - [Packet Switching Delay](#packet-switching-delay)
+    - [Internet Delay](#internet-delay)
+    - [Protocol Layers (Protokol Katmanları)](#protocol-layers-protokol-katmanlar%C4%B1)
+    - [Internet Protocol Stack (TCP / IP)](#internet-protocol-stack-tcp--ip)
+      - [ISO / OSI Reference Model](#iso--osi-reference-model)
+    - [Encapsulation (Kapsüllemi)](#encapsulation-kaps%C3%BCllemi)
+  - [Network Security](#network-security)
+    - [Kötü Niyetli Uygulamalar](#k%C3%B6t%C3%BC-niyetli-uygulamalar)
+      - [Trojan Horse](#trojan-horse)
+      - [Worm](#worm)
+      - [Virus](#virus)
+      - [Spyware Malwawre](#spyware-malwawre)
+    - [Kötü Niyetli Saldırılar](#k%C3%B6t%C3%BC-niyetli-sald%C4%B1r%C4%B1lar)
+      - [DoS](#dos)
+      - [Packet Sniffing (Paket Yakalama)](#packet-sniffing-paket-yakalama)
+      - [IP Spoofing (IP Aldatmacası)](#ip-spoofing-ip-aldatmacas%C4%B1)
+  - [Internetin Geçmişi](#internetin-ge%C3%A7mi%C5%9Fi)
+- [Application Layer (Uygulama Katmanı)](#application-layer-uygulama-katman%C4%B1)
+  - [Network* Uygulaması Oluşturmak](#network-uygulamas%C4%B1-olu%C5%9Fturmak)
+  - [Application Architectures (Uygulama Mimarileri)](#application-architectures-uygulama-mimarileri)
+    - [Client-Server Architecture](#client-server-architecture)
+    - [Pear-to-Pear Architecture (Kişiden kişiye Mimarisi)](#pear-to-pear-architecture-ki%C5%9Fiden-ki%C5%9Fiye-mimarisi)
+    - [Client-Server ve Peer-to-Peer Karışımı](#client-server-ve-peer-to-peer-kar%C4%B1%C5%9F%C4%B1m%C4%B1)
+  - [Processes Communicating (İletişim Sistemleri)](#processes-communicating-i%CC%87leti%C5%9Fim-sistemleri)
+    - [Socket Yapısı](#socket-yap%C4%B1s%C4%B1)
+    - [Adressing Processes (İşlemleri Adresleme)](#adressing-processes-i%CC%87%C5%9Flemleri-adresleme)
+  - [Transport Service](#transport-service)
 - [Ders 2](#ders-2)
 - [Transport Servise Requirements](#transport-servise-requirements)
 - [internet Transport Protocols Services](#internet-transport-protocols-services)
@@ -55,7 +66,9 @@
 - Sınav formatı karışıktır.
 - 2.3 ve 2.7 dahil değildir
 
-## Temel Terimler
+## Giriş
+
+### Temel Terimler
 
 | Terim             | Açıklama                                                      |
 | ----------------- | ------------------------------------------------------------- |
@@ -73,7 +86,7 @@
 | Bandwitdh         | Bant genişliği, saniye aktarılan bit (1sn de olan streaming*) |
 | Transmission rate | Saniyede aktarılan bit                                        |
 
-## Network Structure (Ağ Yapısı)
+### Network Structure (Ağ Yapısı)
 
 | Terim                           | Açıklama                                                    |
 | ------------------------------- | ----------------------------------------------------------- |
@@ -85,7 +98,7 @@
 
 ![network sturcture](imgs/network%20structures.png)
 
-## Network Edge
+### Network Edge
 
 Bizden internete olan gerçekleşen adımları ele alır.
 
@@ -95,7 +108,7 @@ Bizden internete olan gerçekleşen adımları ele alır.
 | Client / Server | Client* istekte bulunur, server* karşılık verir | Web browsers      |
 | Peer to peer    | Neredeyse hiç server* kullanılmaz               | Skype, BitTorrent |
 
-### Access Network (Bağlantı Türleri)
+#### Access Network (Bağlantı Türleri)
 
 - Dial Up: Telefon çalışırken modem, modem çalışırken telefonun çalışmadığı eski bir sistem.
 - DSL: Splitter* ile telefon ve internet eş zamanlı kullanabilmekte.
@@ -103,14 +116,14 @@ Bizden internete olan gerçekleşen adımları ele alır.
 - Wireless LAN: Ev içerisindeki kablasuz ağlar: WiFi
 - Wide-Area wireless acces: Mobil operatörler tarafından sunulan ağlar: 3G, 4G, LTE
 
-### Physcial Media (Fiziksel Veri İşlemleri)
+#### Physcial Media (Fiziksel Veri İşlemleri)
 
 Fiziksel verilerin (bit*lerin) aktarılmasını ele alır.
 
 - Kablo yapısı TP (twisted pair) iç içe sarmal 2 kablodur.
 - Guided: yönetimli (kablo vs ile), unguided: dağınık olarak yayılan (radyo dalgaları) verilerdir.
 
-#### Fiber Optik Kablo
+##### Fiber Optik Kablo
 
 - Cam içerisinde bilgiler ışık yoluyla aktarılır
 - Işığın farklı frekanslarıyla birden fazla bilgi yollanabilir
@@ -118,16 +131,16 @@ Fiziksel verilerin (bit*lerin) aktarılmasını ele alır.
 - Elektromanyetik gürültüden etkilenmez
 - Veri kaybı çok düşüktür
 
-### Radya Bağlantı
+#### Radya Bağlantı
 
 - LAN (WiFi)
 - Wide-area (geniş alan bağlantıları) 3G, 4G
 
-#### Satellite (Uydu Bağlantısı)
+##### Satellite (Uydu Bağlantısı)
 
 - Gecikmesi çok fazladır. (250ms)
 
-## Network Core
+### Network Core
 
 Birbirine bağlı çok sayıda router*'dan oluşur. Network of network olarak da tabir edilen interneti ele alır.
 
@@ -138,7 +151,7 @@ Birbirine bağlı çok sayıda router*'dan oluşur. Network of network olarak da
 | Circuit Switching | Her arama için özel devre kullanılır, telefon ağı gibi |
 | Packet Switching  | Veri ağa ayrık packet*'lar halinde gönderilir          |
 
-### Circuit Switching (Devre Anahtarlama)
+#### Circuit Switching (Devre Anahtarlama)
 
 Bandwitdh* parçalara bölünür, her parça sadece kendi sahibi tarafından kullanılır.
 
@@ -149,7 +162,7 @@ Bandwitdh* parçalara bölünür, her parça sadece kendi sahibi tarafından kul
 
 ![fdm_tdm](imgs/fdm_tdm.png)
 
-### Packet Switching (Paket Anahtarlama)
+#### Packet Switching (Paket Anahtarlama)
 
 Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir parçaya **packets** denir. Her bir packet* tam bandwitdh* kullanır ve host tarafından **tamamlanmadan** yollanmaz (storage & forward).
 
@@ -165,16 +178,16 @@ Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir par
 
 ![packet_switching](imgs/packet_switching.png)
 
-### Packet Yönteminin Circuit Switching Yöntemine Göre Farkı
+#### Packet Yönteminin Circuit Switching Yöntemine Göre Farkı
 
 - Basit, arama algoritmalarının kurulmaına gerek yoktur
 - Kaynaklar paylaşıldığından ağı daha fazla kullanıcı kullanabilir
 - Güvenilir veri transferi ve sıkışıklık için protokellere ihtiyaç vardır.
   - Yoksa verilerinizi çalarlar 🙁
 
-## Internet Structure (Internet Alt yapısı)
+### Internet Structure (Internet Alt yapısı)
 
-### Interter Tiers
+#### Interter Tiers
 
 Her bir katman üst katmanının müşterisidir.
 
@@ -186,7 +199,7 @@ Her bir katman üst katmanının müşterisidir.
 
 ![isps](imgs/ısps.png)
 
-### Paketlerin iletimi
+#### Paketlerin iletimi
 
 Paketler tier-3*'ten tier-1*'e ardından hedef tier-3*'e doğru yol izlerler.
 
@@ -198,7 +211,7 @@ Paketler tier-3*'ten tier-1*'e ardından hedef tier-3*'e doğru yol izlerler.
 
 ![throughput](imgs/throughput.png)
 
-### Packet Delay & Loss (Gecikme ve Kayıp)
+#### Packet Delay & Loss (Gecikme ve Kayıp)
 
 Packet*'lar router*'ın buffer* (arrabellek) alanında kuytukta beklerler
 
@@ -207,7 +220,7 @@ Packet*'lar router*'ın buffer* (arrabellek) alanında kuytukta beklerler
 
 ![packet_loss](imgs/packet_loss_delay.png)
 
-### Packet Switching Delay
+#### Packet Switching Delay
 
 | Sebep             | Açıklama                                        |
 | ----------------- | ----------------------------------------------- |
@@ -219,7 +232,7 @@ Packet*'lar router*'ın buffer* (arrabellek) alanında kuytukta beklerler
 ![caravan_analogy](imgs/caravan_analogy.png)
 ![caravan_analogy2](imgs/caravan_analogy2.png)
 
-### Internet Delay
+#### Internet Delay
 
 Traceroute programı kaynaktan hedefe yol üzerinde bulunan router*'lardaki gecikmenin ölçümünü sağlar.
 
@@ -228,7 +241,7 @@ Traceroute programı kaynaktan hedefe yol üzerinde bulunan router*'lardaki geci
 
 ![tracepath](imgs/tracepath.png)
 
-### Protocol Layers (Protokol Katmanları)
+#### Protocol Layers (Protokol Katmanları)
 
 Ağ yapıları karmaşıktır. Bilgisayarlar, routers*, protocols* ... Katman yapısıyla:
 
@@ -236,7 +249,7 @@ Ağ yapıları karmaşıktır. Bilgisayarlar, routers*, protocols* ... Katman ya
 - Modüler olması sistemin bakımını ve güncelleştirilmesini kolaylaştırır
   - Bir katmandaki servis uygulamasını değiştirmek, sistemi etkilemez
 
-### Internet Protocol Stack (TCP / IP)
+#### Internet Protocol Stack (TCP / IP)
 
 | Öge         | Açıklama                                                                  |
 | ----------- | ------------------------------------------------------------------------- |
@@ -248,7 +261,7 @@ Ağ yapıları karmaşıktır. Bilgisayarlar, routers*, protocols* ... Katman ya
 
 ![ips](imgs/ips.png)
 
-#### ISO / OSI Reference Model
+##### ISO / OSI Reference Model
 
 Internet protocol stack*'te bu katmanlar yoktur, gerekirse program ile uygulanır
 
@@ -259,59 +272,140 @@ Internet protocol stack*'te bu katmanlar yoktur, gerekirse program ile uygulanı
 
 ![iso_osi](imgs/iso_osi.png)
 
-### Encapsulation (Kapsüllemi)
+#### Encapsulation (Kapsüllemi)
 
 Veri transferleri encapsulation* ile yapılamktadır.
 
 ![encopsulation](imgs/encapsulation.png)
 
-## Network Security
+### Network Security
 
 Hiçbir protocol* güvenlik tedbirleri barındırmaz. 📛
 
-### Kötü Niyetli Uygulamalar
+#### Kötü Niyetli Uygulamalar
 
-#### Trojan Horse
+##### Trojan Horse
 
 Faydalı yazılımların gizli bir parçasıdır, web sayfalarında bulunur. (Acitve-x, plugin)
 
-#### Worm
+##### Worm
 
 Pasif olarak alınan nesnenin kendini çalıştırması ile bulaşır, çoğalır diğer bilgisayarlara da yayılır.
 
-#### Virus
+##### Virus
 
 Alınan nesne ile bulaşır (e-posta). Nesne açıldığında virus* bulaşır, çoğalır diğer bilgisayarlara da yayılır.
 
-#### Spyware Malwawre
+##### Spyware Malwawre
 
 Casus yazılımlar olarak da bilinir. Klavye tuş basımlarını ve girdiğimiz web sitelerinin bilgilerini çalar.
 
-### Kötü Niyetli Saldırılar
+#### Kötü Niyetli Saldırılar
 
-#### DoS
+##### DoS
 
 Denial of service olarak da bilinir. Saldırganların kaynağa çok fazla packet* göndererek erişim dışı bırakmasıdır.
 
 ![dos](imgs/dos.png)
 
-#### Packet Sniffing (Paket Yakalama)
+##### Packet Sniffing (Paket Yakalama)
 
 Yerel ağa bağlı bir ağ kartından *Wireshark* uygulaması ile başka packet*'ler de yakalanır
 
 ![packet_sniffing](imgs/packet_sniffing.png)
 
-#### IP Spoofing (IP Aldatmacası)
+##### IP Spoofing (IP Aldatmacası)
 
 Yanlış IP adresiyle packet* gönderilir
 
 ![ip_spoofing](imgs/ip_spoofing.png)
 
-## Internetin Geçmişi
+### Internetin Geçmişi
 
 [Buradaki](https://drive.google.com/drive/folders/1d3JzZlHNYqeE3RryDVdAyHKTSmSykjGt) slaytın 62. sayfasına bakarak erişebilirsin.
 
 <!-- TODO -->
+
+## Application Layer (Uygulama Katmanı)
+
+![network_apps](imgs/network_apps.png)
+
+### Network* Uygulaması Oluşturmak
+
+Farkı *end systems* (son kullanıcı sistemleri) üzeründe  çalıştırılır. Örneğin, web server yazılımı ağ üzerinden web browser yazılımı ile bağlantı kurar
+
+> Temel ağ cihazları kullanıcı programlarını çalıştırmaz. 😔
+
+### Application Architectures (Uygulama Mimarileri)
+
+2 farklı yapı kullanılmaktadır; client-server, peer-to-peer (P2P)
+
+#### Client-Server Architecture
+
+Server Özellikleri:
+
+- Her zaman açık
+- *Static IP* (değişmeyen, kalıcı IP)
+
+*Client* özellikleri:
+
+- Belirlenen zamanlarda *server* ile iletişim kurabilirler
+- *Dynamic IP*
+- Birbiri ile iletişim kuramazlar
+
+#### Pear-to-Pear Architecture (Kişiden kişiye Mimarisi)
+
+- *Server* her zaman açık değildir
+- Rastgele *end system*'lerle doğrudan iletişim olur (arada *server* olmaz)
+- Bilgisayarlar zaman zaman bağlanabilir ve *dynamic IP* kullanabilirler
+
+> Yönetmesi oldukça zordur.
+
+#### Client-Server ve Peer-to-Peer Karışımı
+
+![client_p2p](imgs/client-p2p.png)
+
+### Processes Communicating (İletişim Sistemleri)
+
+| İşlem          | Açıklama                                              |
+| -------------- | ----------------------------------------------------- |
+| Process        | Bir bilgisayarda çalışan programlar, yapılan işlemler |
+| Client Process | İletişimi başlatan *process*'ler                      |
+| Server Process | Bağlantıyı bekleyen *process*'ler                     |
+
+#### Socket Yapısı
+
+*IP* adresi ve *port* numarasından oluşan, *process*'lerin alınıp / verildiği kısma **socket** adı verilir.
+
+- *Client* *process*'i kapının dışına koyar, *server* *process*'i kapıdan içeri alır
+  - Buradaki kapı olarak adlandırılan *socket*'tir
+
+#### Adressing Processes (İşlemleri Adresleme)
+
+Mesajların alınması için *process*'in bir tanımlayıcısı (*identifier*) olması gerekmektedir. Tanımlayıcı:
+
+- *IP* adresi, örn: 128.119.245.12
+- *Port* numarası, örn: 80
+
+içerir.
+
+Örnek *port* numaraları:
+
+- *HTTP* server: 80
+- *Mail* server: 25
+
+> Windows için `ipconfig`, linux için `ifconfig` ile IP adresinizi öğrenebilirsiniz.
+
+### Transport Service
+
+| Özellik        | Açıklama                                                                         |
+| -------------- | -------------------------------------------------------------------------------- |
+| Data Integrity | Metin aktarımlarında çok önemlidir, ses gibi verilerim aktarılmasında önemsizdir |
+| Timing         | Ses aktarımlarında gecikmenin en az olması gereklidir.                           |
+| Throughput     | Multimedya uygulamaları etkili olmak için daha az veri kullanmayı tercihi eder   |
+| Security       | Şifreleme ve verinin değiştirilmemesini ele alır                                 |
+
+![trans_services](imgs/trans_services.png)
 
 ## Ders 2
 
