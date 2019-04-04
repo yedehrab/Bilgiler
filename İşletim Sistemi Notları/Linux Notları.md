@@ -40,6 +40,7 @@ Birkaç distro örneği:
   - [Terminal Üzerinden Çevirici](#terminal-%C3%BCzerinden-%C3%A7evirici)
   - [OnlyOffice Desktop](#onlyoffice-desktop)
   - [Window Manager Controls](#window-manager-controls)
+  - [League of Legends](#league-of-legends)
   - [Uygulamaların Terminal Komutlarını öğrenme](#uygulamalar%C4%B1n-terminal-komutlar%C4%B1n%C4%B1-%C3%B6%C4%9Frenme)
   - [Kernel Güncelleme](#kernel-g%C3%BCncelleme)
 - [Process İşlemleri](#process-i%CC%87%C5%9Flemleri)
@@ -322,6 +323,12 @@ Uygulamaların durumlarını kontrol eden `wmctrl` adlı komuttur.
 - `wmctrl -xa <uygulama_komutu>` uygulama açıksa ekrana getirir.
 - `wmctrl -xc <uygulama_komutu>` uygulamayı kibarca kapatma
 - `wmctrl -lxG` açık olan uygulamalar hakkında bilgi basar.
+
+### League of Legends
+
+```sh
+sudo snap install --edge leagueoflegends --jailmode
+```
 
 ### Uygulamaların Terminal Komutlarını öğrenme
 
