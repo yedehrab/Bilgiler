@@ -327,7 +327,7 @@ Uygulamaların durumlarını kontrol eden `wmctrl` adlı komuttur.
 ### League of Legends
 
 ```sh
-sudo snap install --edge leagueoflegends --jailmode
+sudo snap install --edge leagueoflegends --devmode
 ```
 
 ### Uygulamaların Terminal Komutlarını öğrenme
