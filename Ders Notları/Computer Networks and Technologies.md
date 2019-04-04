@@ -9,6 +9,7 @@
 
 > `HOME` tuşu ile yukarı yönelebilirsin.
 
+- [Sınav Hakkında](#s%C4%B1nav-hakk%C4%B1nda)
 - [Temel Terimler](#temel-terimler)
 - [Network Structure (Ağ Yapısı)](#network-structure-a%C4%9F-yap%C4%B1s%C4%B1)
 - [Network Edge](#network-edge)
@@ -31,11 +32,28 @@
   - [Internet Protocol Stack (TCP / IP)](#internet-protocol-stack-tcp--ip)
     - [ISO / OSI Reference Model](#iso--osi-reference-model)
   - [Encapsulation (Kapsüllemi)](#encapsulation-kaps%C3%BCllemi)
+- [Network Security](#network-security)
+  - [Kötü Niyetli Uygulamalar](#k%C3%B6t%C3%BC-niyetli-uygulamalar)
+    - [Trojan Horse](#trojan-horse)
+    - [Worm](#worm)
+    - [Virus](#virus)
+    - [Spyware Malwawre](#spyware-malwawre)
+  - [Kötü Niyetli Saldırılar](#k%C3%B6t%C3%BC-niyetli-sald%C4%B1r%C4%B1lar)
+    - [DoS](#dos)
+    - [Packet Sniffing (Paket Yakalama)](#packet-sniffing-paket-yakalama)
+    - [IP Spoofing (IP Aldatmacası)](#ip-spoofing-ip-aldatmacas%C4%B1)
+- [Internetin Geçmişi](#internetin-ge%C3%A7mi%C5%9Fi)
 - [Ders 2](#ders-2)
 - [Transport Servise Requirements](#transport-servise-requirements)
 - [internet Transport Protocols Services](#internet-transport-protocols-services)
   - [TCP](#tcp)
   - [UDP](#udp)
+
+## Sınav Hakkında
+
+- 1, 2, 3, 4.1, 4.2 numaralı Chapter*'lardan sorumluyuz
+- Sınav formatı karışıktır.
+- 2.3 ve 2.7 dahil değildir
 
 ## Temel Terimler
 
@@ -246,6 +264,52 @@ Internet protocol stack*'te bu katmanlar yoktur, gerekirse program ile uygulanı
 Veri transferleri encapsulation* ile yapılamktadır.
 
 ![encopsulation](imgs/encapsulation.png)
+
+## Network Security
+
+Hiçbir protocol* güvenlik tedbirleri barındırmaz. 📛
+
+### Kötü Niyetli Uygulamalar
+
+#### Trojan Horse
+
+Faydalı yazılımların gizli bir parçasıdır, web sayfalarında bulunur. (Acitve-x, plugin)
+
+#### Worm
+
+Pasif olarak alınan nesnenin kendini çalıştırması ile bulaşır, çoğalır diğer bilgisayarlara da yayılır.
+
+#### Virus
+
+Alınan nesne ile bulaşır (e-posta). Nesne açıldığında virus* bulaşır, çoğalır diğer bilgisayarlara da yayılır.
+
+#### Spyware Malwawre
+
+Casus yazılımlar olarak da bilinir. Klavye tuş basımlarını ve girdiğimiz web sitelerinin bilgilerini çalar.
+
+### Kötü Niyetli Saldırılar
+
+#### DoS
+
+Denial of service olarak da bilinir. Saldırganların kaynağa çok fazla packet* göndererek erişim dışı bırakmasıdır.
+
+![dos](imgs/dos.png)
+
+#### Packet Sniffing (Paket Yakalama)
+
+Yerel ağa bağlı bir ağ kartından *Wireshark* uygulaması ile başka packet*'ler de yakalanır
+
+![packet_sniffing](imgs/packet_sniffing.png)
+
+#### IP Spoofing (IP Aldatmacası)
+
+Yanlış IP adresiyle packet* gönderilir
+
+![ip_spoofing](imgs/ip_spoofing.png)
+
+## Internetin Geçmişi
+
+[Buradaki](https://drive.google.com/drive/folders/1d3JzZlHNYqeE3RryDVdAyHKTSmSykjGt) slaytın 62. sayfasına bakarak erişebilirsin.
 
 <!-- TODO -->
 
