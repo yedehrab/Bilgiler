@@ -123,6 +123,10 @@
 - [x] Tensorflow kaynakları.ssd_inception_v2_coco.config açıklamalar eklenecek
 - [ ] 🌐📃📺 Döküman yapısı eklenecek
 - [ ] Tablolara ☆ favori özellği eklenecek
+- [ ] Konu ve kaynakları için dizinler oluşturalaca
+  - [ ] Ders Notları/Software Enginnering/README.md
+  - [ ] Ders Notları/Software Enginnering/res
+  - [ ] Bölümlere ayrılabilir, göz korkutan bilgileri engeller.
 
 ## Çalışma Notları
 
