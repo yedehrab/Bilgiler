@@ -45,7 +45,7 @@
       - [IP Spoofing (IP Aldatmacası)](#ip-spoofing-ip-aldatmacas%C4%B1)
   - [Internetin Geçmişi](#internetin-ge%C3%A7mi%C5%9Fi)
 - [Application Layer (Uygulama Katmanı)](#application-layer-uygulama-katman%C4%B1)
-  - [Network* Uygulaması Oluşturmak](#network-uygulamas%C4%B1-olu%C5%9Fturmak)
+  - [*Network* Uygulaması Oluşturmak](#network-uygulamas%C4%B1-olu%C5%9Fturmak)
   - [Application Architectures (Uygulama Mimarileri)](#application-architectures-uygulama-mimarileri)
     - [Client-Server Architecture](#client-server-architecture)
     - [Pear-to-Pear Architecture (Kişiden kişiye Mimarisi)](#pear-to-pear-architecture-ki%C5%9Fiden-ki%C5%9Fiye-mimarisi)
@@ -330,7 +330,7 @@ Yanlış IP adresiyle *packet* gönderilir
 
 ![network_apps](imgs/network_apps.png)
 
-### Network* Uygulaması Oluşturmak
+### *Network* Uygulaması Oluşturmak
 
 Farkı *end systems* (son kullanıcı sistemleri) üzeründe  çalıştırılır. Örneğin, web server yazılımı ağ üzerinden web browser yazılımı ile bağlantı kurar
 
