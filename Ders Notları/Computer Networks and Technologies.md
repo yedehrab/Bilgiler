@@ -194,7 +194,7 @@ Her bir katman üst katmanının müşterisidir.
 | Tier (Katman) | Açıklama                                                                                        |
 | ------------- | ----------------------------------------------------------------------------------------------- |
 | *Tier-1*      | Global *ISP* evrensel servis sağlayıcılarıdır. Birbirlerine bağlıdırlar Örn: Superonline, TTNet |
-| *Tier-2*      | Regional *ISP* bölgesel servis sağlayıcılarıdır. Birbirlerine değil Tier-1*'e bağlıdırlar       |
+| *Tier-2*      | Regional *ISP* bölgesel servis sağlayıcılarıdır. Birbirlerine değil *Tier-1*'e bağlıdırlar      |
 | *Tier-3*      | Son kullanıcı ağlarıdır, *Tier-2*'e bağlanırlar                                                 |
 
 ![isps](imgs/ısps.png)
@@ -215,19 +215,19 @@ Paketler *tier-3*'ten *tier-1*'e ardından hedef *tier-3*'e doğru yol izlerler.
 
 *Packet*'lar *router*'ın *buffer* (arrabellek) alanında kuytukta beklerler
 
-- Gelen packet* sayısı çıkandan fazla ise fazlalık *packet*'lar *buffer*'a konulur
+- Gelen *packet* sayısı çıkandan fazla ise fazlalık *packet*'lar *buffer*'a konulur
 - *Buffer* yeterli alana sahip değilse *packet* atılır, kayıp *packet*'lar önceki *node*'dan tekrar istenir
 
 ![packet_loss](imgs/packet_loss_delay.png)
 
 #### Packet Switching Delay
 
-| Sebep             | Açıklama                                           |
-| ----------------- | -------------------------------------------------- |
-| Nodel Processing  | Hatalı bitlerin kontrol edildiği aşama             |
-| Queueing Delay    | *Buffer*'da sıralanmanın olduğu aşama              |
-| Transmisson Delay | *Yayılım için *packet*'ların *router*'a iletilmesi |
-| Propagation Delay | *Router*'daki paketlerin yayılması                 |
+| Sebep             | Açıklama                                          |
+| ----------------- | ------------------------------------------------- |
+| Nodel Processing  | Hatalı bitlerin kontrol edildiği aşama            |
+| Queueing Delay    | *Buffer*'da sıralanmanın olduğu aşama             |
+| Transmisson Delay | Yayılım için *packet*'ların *router*'a iletilmesi |
+| Propagation Delay | *Router*'daki paketlerin yayılması                |
 
 ![caravan_analogy](imgs/caravan_analogy.png)
 ![caravan_analogy2](imgs/caravan_analogy2.png)
@@ -304,7 +304,7 @@ Casus yazılımlar olarak da bilinir. Klavye tuş basımlarını ve girdiğimiz 
 
 ##### DoS
 
-Denial of service olarak da bilinir. Saldırganların kaynağa çok fazla packet* göndererek erişim dışı bırakmasıdır.
+Denial of service olarak da bilinir. Saldırganların kaynağa çok fazla *packet* göndererek erişim dışı bırakmasıdır.
 
 ![dos](imgs/dos.png)
 
