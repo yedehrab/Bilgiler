@@ -32,7 +32,7 @@
     - [Protocol Layers (Protokol Katmanları)](#protocol-layers-protokol-katmanlar%C4%B1)
     - [Internet Protocol Stack (TCP / IP)](#internet-protocol-stack-tcp--ip)
       - [ISO / OSI Reference Model](#iso--osi-reference-model)
-    - [Encapsulation (Kapsüllemi)](#encapsulation-kaps%C3%BCllemi)
+    - [Encapsulation (Kapsülleme)](#encapsulation-kaps%C3%BClleme)
   - [Network Security](#network-security)
     - [Kötü Niyetli Uygulamalar](#k%C3%B6t%C3%BC-niyetli-uygulamalar)
       - [Trojan Horse](#trojan-horse)
@@ -62,7 +62,7 @@
 
 ## Sınav Hakkında
 
-- 1, 2, 3, 4.1, 4.2 numaralı Chapter*'lardan sorumluyuz
+- 1, 2, 3, 4.1, 4.2 numaralı *Chapter*'lardan sorumluyuz
 - Sınav formatı karışıktır.
 - 2.3 ve 2.7 dahil değildir
 
@@ -70,21 +70,21 @@
 
 ### Temel Terimler
 
-| Terim             | Açıklama                                                      |
-| ----------------- | ------------------------------------------------------------- |
-| ISP               | İnternet servis sağlayıcıları                                 |
-| Packets           | İnternet üzerinde gönderilen veriler                          |
-| Protocols         | Packet* aktarım kuralları ve hiyerarşisi                      |
-| Routers ve Switch | Packet*'ların yönlendirilmesini sağlarlar                     |
-| Client            | Ağa bağlandığımzı araç (bilgisayarımız)                       |
-| Server            | Ağ hizmetini sunan, sunucu                                    |
-| Host              | End system, son server* ya da client*                         |
-| RFS, IETF         | İnternet standartları                                         |
-| Stream            | Veri akışı                                                    |
-| Upstream          | Bizden internete stream*                                      |
-| Downstream        | İnternetten bize stream*                                      |
-| Bandwitdh         | Bant genişliği, saniye aktarılan bit (1sn de olan streaming*) |
-| Transmission rate | Saniyede aktarılan bit                                        |
+| Terim             | Açıklama                                                       |
+| ----------------- | -------------------------------------------------------------- |
+| ISP               | İnternet servis sağlayıcıları                                  |
+| Packets           | İnternet üzerinde gönderilen veriler                           |
+| Protocols         | *Packet* aktarım kuralları ve hiyerarşisi                      |
+| Routers ve Switch | *Packet*'ların yönlendirilmesini sağlarlar                     |
+| Client            | Ağa bağlandığımzı araç (bilgisayarımız)                        |
+| Server            | Ağ hizmetini sunan, sunucu                                     |
+| Host              | End system, son *server* ya da *client*                        |
+| RFS, IETF         | İnternet standartları                                          |
+| Stream            | Veri akışı                                                     |
+| Upstream          | Bizden internete *stream*                                      |
+| Downstream        | İnternetten bize *stream*                                      |
+| Bandwitdh         | Bant genişliği, saniye aktarılan bit (1sn de olan *streaming*) |
+| Transmission rate | Saniyede aktarılan bit                                         |
 
 ### Network Structure (Ağ Yapısı)
 
@@ -102,23 +102,23 @@
 
 Bizden internete olan gerçekleşen adımları ele alır.
 
-| Yöntem          | Açıklama                                        | Örnek             |
-| --------------- | ----------------------------------------------- | ----------------- |
-| Hosts System    | Host*'lar arası iletişim                        | Web, email        |
-| Client / Server | Client* istekte bulunur, server* karşılık verir | Web browsers      |
-| Peer to peer    | Neredeyse hiç server* kullanılmaz               | Skype, BitTorrent |
+| Yöntem          | Açıklama                                          | Örnek             |
+| --------------- | ------------------------------------------------- | ----------------- |
+| Hosts System    | *Host*'lar arası iletişim                         | Web, email        |
+| Client / Server | *Client* istekte bulunur, *server* karşılık verir | Web browsers      |
+| Peer to peer    | Neredeyse hiç *server* kullanılmaz                | Skype, BitTorrent |
 
 #### Access Network (Bağlantı Türleri)
 
 - Dial Up: Telefon çalışırken modem, modem çalışırken telefonun çalışmadığı eski bir sistem.
-- DSL: Splitter* ile telefon ve internet eş zamanlı kullanabilmekte.
+- DSL: *Splitter* ile telefon ve internet eş zamanlı kullanabilmekte.
   - ADSL: Asimetrik anlamındadır, download ve upload hızı farklı olur.
 - Wireless LAN: Ev içerisindeki kablasuz ağlar: WiFi
 - Wide-Area wireless acces: Mobil operatörler tarafından sunulan ağlar: 3G, 4G, LTE
 
 #### Physcial Media (Fiziksel Veri İşlemleri)
 
-Fiziksel verilerin (bit*lerin) aktarılmasını ele alır.
+Fiziksel verilerin (*bit*'lerin) aktarılmasını ele alır.
 
 - Kablo yapısı TP (twisted pair) iç içe sarmal 2 kablodur.
 - Guided: yönetimli (kablo vs ile), unguided: dağınık olarak yayılan (radyo dalgaları) verilerdir.
@@ -142,18 +142,18 @@ Fiziksel verilerin (bit*lerin) aktarılmasını ele alır.
 
 ### Network Core
 
-Birbirine bağlı çok sayıda router*'dan oluşur. Network of network olarak da tabir edilen interneti ele alır.
+Birbirine bağlı çok sayıda *router*'dan oluşur. Network of network olarak da tabir edilen interneti ele alır.
 
 ![network_core](imgs/network_core.png)
 
 | Aktarım Yöntemi   | Açıklama                                               |
 | ----------------- | ------------------------------------------------------ |
 | Circuit Switching | Her arama için özel devre kullanılır, telefon ağı gibi |
-| Packet Switching  | Veri ağa ayrık packet*'lar halinde gönderilir          |
+| Packet Switching  | Veri ağa ayrık *packet*'lar halinde gönderilir         |
 
 #### Circuit Switching (Devre Anahtarlama)
 
-Bandwitdh* parçalara bölünür, her parça sadece kendi sahibi tarafından kullanılır.
+*Bandwitdh* parçalara bölünür, her parça sadece kendi sahibi tarafından kullanılır.
 
 - Genellikle telefon hatlarında kullanılır
 - Garantili performans sunar
@@ -164,17 +164,17 @@ Bandwitdh* parçalara bölünür, her parça sadece kendi sahibi tarafından kul
 
 #### Packet Switching (Paket Anahtarlama)
 
-Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir parçaya **packets** denir. Her bir packet* tam bandwitdh* kullanır ve host tarafından **tamamlanmadan** yollanmaz (storage & forward).
+*Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir parçaya **packets** denir. Her bir *packet* tam *bandwitdh* kullanır ve host tarafından **tamamlanmadan** yollanmaz (storage & forward).
 
-- Packet*'ların bir sırası yoktur
-- Her bilgisayar packet* iletimi için aynı yolu kullanır
+- *Packet*'ların bir sırası yoktur
+- Her bilgisayar *packet* iletimi için aynı yolu kullanır
 - Kaynaklar boşta kalmaz. (verimli)
-- Her bir packet* $L$ kadar bit içeriyor ve transmission rate* $R$ ise transmission delay $D=L/R$ formülü ile bulunur
+- Her bir *packet* $L$ kadar bit içeriyor ve *transmission rate* $R$ ise transmission delay $D=L/R$ formülü ile bulunur
 - Kaynak çekişmesi olabilir. (olumsuz)
   - Toplamk kaynak talebi kullanılanı aşabilir
-  - Trafik sıkışıklığı, packet*'in kuyruğu ve bağlatıyı kullanmak için beklemesi
-  - Packet*'lar aynı anda bir yönlendiriciye iletirilir
-    - Buffer'ı yetmezse packet* kaybı olur
+  - Trafik sıkışıklığı, *packet*'in kuyruğu ve bağlatıyı kullanmak için beklemesi
+  - *Packet*'lar aynı anda bir yönlendiriciye iletirilir
+    - Buffer'ı yetmezse *packet* kaybı olur
 
 ![packet_switching](imgs/packet_switching.png)
 
@@ -191,21 +191,21 @@ Hostlar* çok yüksek miktarda gelen veriyi parçalayarak yollarlar, her bir par
 
 Her bir katman üst katmanının müşterisidir.
 
-| Tier (Katman) | Açıklama                                                                                       |
-| ------------- | ---------------------------------------------------------------------------------------------- |
-| Tier-1*       | Global ISP* evrensel servis sağlayıcılarıdır. Birbirlerine bağlıdırlar Örn: Superonline, TTNet |
-| Tier-2*       | Regional ISP* bölgesel servis sağlayıcılarıdır. Birbirlerine değil Tier-1*'e bağlıdırlar       |
-| Tier-3*       | Son kullanıcı ağlarıdır, Tier-2*'e bağlanırlar                                                 |
+| Tier (Katman) | Açıklama                                                                                        |
+| ------------- | ----------------------------------------------------------------------------------------------- |
+| *Tier-1*      | Global *ISP* evrensel servis sağlayıcılarıdır. Birbirlerine bağlıdırlar Örn: Superonline, TTNet |
+| *Tier-2*      | Regional *ISP* bölgesel servis sağlayıcılarıdır. Birbirlerine değil Tier-1*'e bağlıdırlar       |
+| *Tier-3*      | Son kullanıcı ağlarıdır, *Tier-2*'e bağlanırlar                                                 |
 
 ![isps](imgs/ısps.png)
 
 #### Paketlerin iletimi
 
-Paketler tier-3*'ten tier-1*'e ardından hedef tier-3*'e doğru yol izlerler.
+Paketler *tier-3*'ten *tier-1*'e ardından hedef *tier-3*'e doğru yol izlerler.
 
 ![packet_forwarding](imgs/packet_forwarding.png)
 
-- Router*'lar arası verilerin yayıldığı alana **pipe** denir
+- *Router*'lar arası verilerin yayıldığı alana **pipe** denir
 - Kalın bağlantılarda (links) veri aktarımı daha fazladır
 - Ince alanlara **bottleneck link** denir
 
@@ -213,28 +213,28 @@ Paketler tier-3*'ten tier-1*'e ardından hedef tier-3*'e doğru yol izlerler.
 
 #### Packet Delay & Loss (Gecikme ve Kayıp)
 
-Packet*'lar router*'ın buffer* (arrabellek) alanında kuytukta beklerler
+*Packet*'lar *router*'ın *buffer* (arrabellek) alanında kuytukta beklerler
 
-- Gelen packet* sayısı çıkandan fazla ise fazlalık packet*'lar buffer*'a konulur
-- Buffer* yeterli alana sahip değilse packet* atılır, kayıp packet*'lar önceki node*'dan tekrar istenir
+- Gelen packet* sayısı çıkandan fazla ise fazlalık *packet*'lar *buffer*'a konulur
+- *Buffer* yeterli alana sahip değilse *packet* atılır, kayıp *packet*'lar önceki *node*'dan tekrar istenir
 
 ![packet_loss](imgs/packet_loss_delay.png)
 
 #### Packet Switching Delay
 
-| Sebep             | Açıklama                                        |
-| ----------------- | ----------------------------------------------- |
-| Nodel Processing  | Hatalı bitlerin kontrol edildiği aşama          |
-| Queueing Delay    | Buffer*'da sıralanmanın olduğu aşama            |
-| Transmisson Delay | Yayılım için packet*'ların router*'a iletilmesi |
-| Propagation Delay | Router*'daki paketlerin yayılması               |
+| Sebep             | Açıklama                                           |
+| ----------------- | -------------------------------------------------- |
+| Nodel Processing  | Hatalı bitlerin kontrol edildiği aşama             |
+| Queueing Delay    | *Buffer*'da sıralanmanın olduğu aşama              |
+| Transmisson Delay | *Yayılım için *packet*'ların *router*'a iletilmesi |
+| Propagation Delay | *Router*'daki paketlerin yayılması                 |
 
 ![caravan_analogy](imgs/caravan_analogy.png)
 ![caravan_analogy2](imgs/caravan_analogy2.png)
 
 #### Internet Delay
 
-Traceroute programı kaynaktan hedefe yol üzerinde bulunan router*'lardaki gecikmenin ölçümünü sağlar.
+Traceroute programı kaynaktan hedefe yol üzerinde bulunan *router*'lardaki gecikmenin ölçümünü sağlar.
 
 - Windows için tracert
 - Linux için tracepath
@@ -243,7 +243,7 @@ Traceroute programı kaynaktan hedefe yol üzerinde bulunan router*'lardaki geci
 
 #### Protocol Layers (Protokol Katmanları)
 
-Ağ yapıları karmaşıktır. Bilgisayarlar, routers*, protocols* ... Katman yapısıyla:
+Ağ yapıları karmaşıktır. Bilgisayarlar, *routers*, *protocols* ... Katman yapısıyla:
 
 - Karmaşık sistem parçalarının ilişkilerini tanımlamaya olanak sağlar
 - Modüler olması sistemin bakımını ve güncelleştirilmesini kolaylaştırır
@@ -251,36 +251,36 @@ Ağ yapıları karmaşıktır. Bilgisayarlar, routers*, protocols* ... Katman ya
 
 #### Internet Protocol Stack (TCP / IP)
 
-| Öge         | Açıklama                                                                  |
-| ----------- | ------------------------------------------------------------------------- |
-| application | Ağ uygulamalarını destekleyen uygulamalar                                 |
-| transport   | Veri aktarımı, TCP, UDP                                                   |
-| netowrk     | Kaynaktan hedefe datagram*'ları yönlendirir: IP, yönlendirme protokolleri |
-| link        | Komşu ağ elemanları arasında veri transferi: PPP, Ethernet                |
-| physical    | Hattaki (wire*) bitler                                                    |
+| Öge         | Açıklama                                                                   |
+| ----------- | -------------------------------------------------------------------------- |
+| application | Ağ uygulamalarını destekleyen uygulamalar                                  |
+| transport   | Veri aktarımı, TCP, UDP                                                    |
+| network     | Kaynaktan hedefe *datagram*'ları yönlendirir: IP, yönlendirme protokolleri |
+| link        | Komşu ağ elemanları arasında veri transferi: PPP, Ethernet                 |
+| physical    | Hattaki bitler (*bits in wire*)                                            |
 
 ![ips](imgs/ips.png)
 
 ##### ISO / OSI Reference Model
 
-Internet protocol stack*'te bu katmanlar yoktur, gerekirse program ile uygulanır
+Internet protocol *stack*'te bu katmanlar yoktur, gerekirse program ile uygulanır
 
-| Ek Öğe       | Açıklama                                                                                |
-| ------------ | --------------------------------------------------------------------------------------- |
-| presentation | Uygulamaların verilerin anlamlarını yorumlamasını sağlar: encryption*, compression* ... |
-| session      | Senkronizasyon, denetim veri değişimi ...                                               |
+| Ek Öğe       | Açıklama                                                                                  |
+| ------------ | ----------------------------------------------------------------------------------------- |
+| presentation | Uygulamaların verilerin anlamlarını yorumlamasını sağlar: *encryption*, *compression* ... |
+| session      | Senkronizasyon, denetim veri değişimi ...                                                 |
 
 ![iso_osi](imgs/iso_osi.png)
 
-#### Encapsulation (Kapsüllemi)
+#### Encapsulation (Kapsülleme)
 
-Veri transferleri encapsulation* ile yapılamktadır.
+Veri transferleri *encapsulation* ile yapılmaktadır.
 
 ![encopsulation](imgs/encapsulation.png)
 
 ### Network Security
 
-Hiçbir protocol* güvenlik tedbirleri barındırmaz. 📛
+Hiçbir *protocol* güvenlik tedbirleri barındırmaz. 📛
 
 #### Kötü Niyetli Uygulamalar
 
@@ -294,7 +294,7 @@ Pasif olarak alınan nesnenin kendini çalıştırması ile bulaşır, çoğalı
 
 ##### Virus
 
-Alınan nesne ile bulaşır (e-posta). Nesne açıldığında virus* bulaşır, çoğalır diğer bilgisayarlara da yayılır.
+Alınan nesne ile bulaşır (e-posta). Nesne açıldığında *virus* bulaşır, çoğalır diğer bilgisayarlara da yayılır.
 
 ##### Spyware Malwawre
 
@@ -310,13 +310,13 @@ Denial of service olarak da bilinir. Saldırganların kaynağa çok fazla packet
 
 ##### Packet Sniffing (Paket Yakalama)
 
-Yerel ağa bağlı bir ağ kartından *Wireshark* uygulaması ile başka packet*'ler de yakalanır
+Yerel ağa bağlı bir ağ kartından *Wireshark* uygulaması ile başka *packet*'lar de yakalanır.
 
 ![packet_sniffing](imgs/packet_sniffing.png)
 
 ##### IP Spoofing (IP Aldatmacası)
 
-Yanlış IP adresiyle packet* gönderilir
+Yanlış IP adresiyle *packet* gönderilir
 
 ![ip_spoofing](imgs/ip_spoofing.png)
 
