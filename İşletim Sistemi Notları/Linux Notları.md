@@ -34,6 +34,7 @@ Birkaç distro örneği:
     - [Ubuntu Üstteki Çubuğu Gizleme](#ubuntu-%C3%BCstteki-%C3%A7ubu%C4%9Fu-gizleme)
   - [Dash to Dock ile MacOS Durum Çubuğu Görünümü](#dash-to-dock-ile-macos-durum-%C3%A7ubu%C4%9Fu-g%C3%B6r%C3%BCn%C3%BCm%C3%BC)
 - [Faydalı Bilgiler ve Uygulamalar](#faydal%C4%B1-bilgiler-ve-uygulamalar)
+  - [Sıkıştırılmış Dosyaları Çıkarma](#s%C4%B1k%C4%B1%C5%9Ft%C4%B1r%C4%B1lm%C4%B1%C5%9F-dosyalar%C4%B1-%C3%A7%C4%B1karma)
   - [Media Player](#media-player)
   - [MTPaint](#mtpaint)
   - [Terminal Üzerinden Markdown to PDF](#terminal-%C3%BCzerinden-markdown-to-pdf)
@@ -246,9 +247,13 @@ Tam ekranı kaplayan uzun görüntü yerine, içerdiği uygulama kadar yer kapla
 
 ## Faydalı Bilgiler ve Uygulamalar
 
-| Uygulama İsmi | Açıklama     |
-| ------------- | ------------ |
-| mpv           | Media player |
+### Sıkıştırılmış Dosyaları Çıkarma
+
+Rar için `parsing filters unsupported` hatası geliyorsa, `unrar` paketini yüklemeniz gerekmektedir.
+
+```sh
+sudo apt-get install unrar
+```
 
 ### Media Player
 
