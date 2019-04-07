@@ -62,10 +62,28 @@
   - [HTTP (Hypertext Transfer Protocol)](#http-hypertext-transfer-protocol)
     - [Temel HTTP Yapısı](#temel-http-yap%C4%B1s%C4%B1)
     - [HTTP Veri Aktarımı](#http-veri-aktar%C4%B1m%C4%B1)
-    - [HTPP Bağlantıları](#htpp-ba%C4%9Flant%C4%B1lar%C4%B1)
+    - [HTTP Bağlantıları](#http-ba%C4%9Flant%C4%B1lar%C4%B1)
       - [Non-Persistent HTTP](#non-persistent-http)
       - [Persistent HTTP](#persistent-http)
     - [HTTP Request Message (İstek Mesajı)](#http-request-message-i%CC%87stek-mesaj%C4%B1)
+    - [HTTP Status Code (Durum Kodları)](#http-status-code-durum-kodlar%C4%B1)
+    - [Cookie (Çerezler)](#cookie-%C3%A7erezler)
+    - [Proxy Server & Cache](#proxy-server--cache)
+      - [Conditional GET (Koşullu GET)](#conditional-get-ko%C5%9Fullu-get)
+  - [Domain Name System (DNS)](#domain-name-system-dns)
+    - [DNS Resolution Examples (DNS Çözümleme Örnekleri)](#dns-resolution-examples-dns-%C3%A7%C3%B6z%C3%BCmleme-%C3%B6rnekleri)
+    - [DNS Record (DNS Kayıtları)](#dns-record-dns-kay%C4%B1tlar%C4%B1)
+      - [Inserting DNS Record](#inserting-dns-record)
+      - [Attacking DNS](#attacking-dns)
+  - [P2P (Peer to Peer)](#p2p-peer-to-peer)
+    - [P2p File Distribution (Dosya Paylaşımı)](#p2p-file-distribution-dosya-payla%C5%9F%C4%B1m%C4%B1)
+  - [Video Streaming and CDNs: context](#video-streaming-and-cdns-context)
+    - [Video Streamin](#video-streamin)
+    - [Content Distribution Networks (İçerik Dağıtım Ağları)](#content-distribution-networks-i%CC%87%C3%A7erik-da%C4%9F%C4%B1t%C4%B1m-a%C4%9Flar%C4%B1)
+- [Transport Layer](#transport-layer)
+  - [Internet Transport Layer Protocols](#internet-transport-layer-protocols)
+  - [Multiplexing (Çoğullama)](#multiplexing-%C3%A7o%C4%9Fullama)
+  - [Demultiplexing (Azaltma / Parçalama)](#demultiplexing-azaltma--par%C3%A7alama)
 
 ## Sınav Hakkında
 
@@ -483,7 +501,7 @@ HTTP, TCP kullanır.
 
 > HTTP *stateless* (durumsuz) olarak tanımlanır. Eski istekler (*requests*) hakkında bilgi sahibi değildir.
 
-#### HTPP Bağlantıları
+#### HTTP Bağlantıları
 
 | Bağlantı Türü                   | Açıklama                                                               |
 | ------------------------------- | ---------------------------------------------------------------------- |
@@ -511,3 +529,148 @@ Sunucuyu her defasında açmak için *RTT* kaybı yaşanacaktır, tek bir veri a
 - `lf`: \n, satır sonu karakteri
 
 ![http_request_ex](imgs/http_request_ex.png)
+
+#### HTTP Status Code (Durum Kodları)
+
+| Status Code | Açıklama                   |
+| ----------- | -------------------------- |
+| 200         | OK                         |
+| 301         | Moved Permanently          |
+| 400         | Bad Request                |
+| 404         | Not Found                  |
+| 505         | HTTP Version not Supported |
+
+#### Cookie (Çerezler)
+
+Bir websitesine ilk kez girdiğimizde bilgilerimiz **cookie** adıyla *server* veri tabanında saklanır.
+
+> Web siteleri kişisel bilgilerimizi saklarlar. 😕
+
+![cookie_ex](imgs/cookie_ex.png)
+
+#### Proxy Server & Cache
+
+*Client* isteklerini *server* ile uzun süren bağlantılardan kaçınarak hızlıca halletmeyi amaçlar. Belli başlı *server*'lar *cache*'e atılır ve *server*'a istek yollamak yerine yerel ağdaki *proxy server*'a istek yollanarak çok hızlıca işlem halledilir.
+
+> *LAN* (yerel ağ) diğer *network*'lere kıyasla çok hızlıdır.
+
+![proxy_ex](imgs/proxy_ex.png)
+
+##### Conditional GET (Koşullu GET)
+
+Bu yöntemler *Proxy server* önbelleğinde (*cache*) bulunan verilerin güncel olup olmadığı sorgulanır.
+
+![conditional_get](imgs/conditional_get.png)
+
+### Domain Name System (DNS)
+
+Internette adresler IP (192.168.1.1) ile tanımlanır. DNS'ler ile IP'lere isimler (google.com) atanır.
+
+> DNS eşleştirilmesi yapıldığında *Local DNS*'de *cache*'e alınır, bundan dolayı TLD sık kullanılmaz.
+
+| DNS Türü      | Açıklama                                                                            |
+| ------------- | ----------------------------------------------------------------------------------- |
+| Local         | DNS hiyerarşisine ait değildir, her istek ilk burada eşleştirilmeye çalışılır       |
+| Root          | Yerel (*local*) DNS sunucularının çözemedikleri isimler için buraya danışılır       |
+| TLD           | Top-level domain, *com, org, net, tr ...* gibi ülke etki alanlarından sorumludurlar |
+| Authoritative | Yetkili isim sunucuları, kurumlardaki sunucuların isimlerini eşleştirir             |
+
+![dns_hierarchy](imgs/dns_hierarchy.png)
+
+#### DNS Resolution Examples (DNS Çözümleme Örnekleri)
+
+![dns_resolution_ex1](imgs/dns_resolution_ex1.png)
+![dns_resolution_ex2](imgs/dns_resolution_ex2.png)
+
+#### DNS Record (DNS Kayıtları)
+
+Kayıtların formatı `(name, value, type, ttl)` şeklindedir.
+
+| Type  | Açıklama                                     |
+| ----- | -------------------------------------------- |
+| A     | `name`: hostname, `value`: IP                |
+| NS    | `name`: domain, `value`: hostname            |
+| CNAME | `name`: takma isim, `value`: domain          |
+| MX    | name: alakalı isim, value: *mailserver* ismi |
+
+##### Inserting DNS Record
+
+- DNS *server* ismi ve IP adersi belirlenir
+- TLD *Server*'lara alttaki şekilde kayıt edilir
+
+```sh
+(dns1.manolyatekstil.com, 212.212.212.1, A)
+(manolyatekstil.com, dns1.manolyatekstil.com, NS) # Nameserver
+```
+
+##### Attacking DNS
+
+![attacking_dns](imgs/attacking_dns.png)
+
+### P2P (Peer to Peer)
+
+![p2p_scheme](imgs/p2p_schema.png)
+
+- *Server* *torrent*'e katılanları izler ve her zaman açık olmaz 
+- *Network*'teki bilgisayarlar rastgele erişim kurarlar
+- Eş bilgisayarlar zaman zaman bağlantı kurarlar ve IP adresleri değişebilir
+
+| Terim   | Açıklama                       |
+| ------- | ------------------------------ |
+| Chunk   | 256KB'lik *packet*'lar         |
+| Torrent | *Chunk* alışveriişi yapan grup |
+
+#### P2p File Distribution (Dosya Paylaşımı)
+
+Hızlı veri aktarımı sağlayan bir yapıdır.
+
+![p2p_client_graph](imgs/p2p_client_graph.png)
+
+- *Chunk*'lar indirilirken aynı zamanda karşıya da yüklenir
+- Çok yükleme yapan çok hızlı indirir
+- İsteğe bağlı yükleme veya indirme iptal edilebilir
+
+### Video Streaming and CDNs: context
+
+#### Video Streamin
+
+Her video, resin topluluğundan ver resimler de *pixel*'lerden oluşur. Her *pixel* de *bit*'lerden oluşmakta ve bunların aktarımları gerçekleşmektedir. *Bit* sayısını azaltmak için;
+
+| Yöntem               | Açıklama                                                             |
+| -------------------- | -------------------------------------------------------------------- |
+| spatial (uzaysal)    | N tane renk göndermek yerine, rengi ve tekrar etme sayısını gönderir |
+| Temportal (zamansal) | Sadece bir önceki resim ile farklı olaran yerleri gönderir           |
+
+#### Content Distribution Networks (İçerik Dağıtım Ağları)
+
+İçerikler kopyalanarak birden fazla *server*'dan akatarılır.
+
+![netflix_structure](imgs/netflix_structure.png)
+
+## Transport Layer
+
+*Network layer*, *host*'lar arası mantıksal iletişimi sağlarken; *transport layer*, ***process***'ler arası mantıksal iletişimi sağlar
+
+![transport_layer](imgs/transport_layer.png)
+
+### Internet Transport Layer Protocols
+
+Yine, [UDP](#udp-user-datagram-protocol) ve [TCP](#tcp-transmission-control-protocol) protocolleri kullanılır. 😉
+
+### Multiplexing (Çoğullama)
+
+| Multiplexing Yeri   | Açıklama                                                                              |
+| ------------------- | ------------------------------------------------------------------------------------- |
+| Gönderen bilgisayar | Birden çok *socket*'ten verileri toplar, başlık ekliyerek **segment** haline getirir. |
+| Alıcı bilgisayar    | Alınan *segment*'leri doğru *socket*'e teslim eder                                    |
+
+![multiplexing_transport_layer](imgs/multiplexing_transport_layer.png)
+
+### Demultiplexing (Azaltma / Parçalama)
+
+- Bilgisayarlardan IP *datagram*'ları alınır.
+  - *Datagram*'larda *source IP* ve *dest IP* vardır
+  - Her *datagram* bir *segment* taşır
+  - Her *segment*'in kaynak ve *dest port* numaları vardır
+
+![tcp_udp_segment_format](imgs/tcp_udp_segment_format.png)
