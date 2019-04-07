@@ -53,12 +53,19 @@
   - [Processes Communicating (İletişim Sistemleri)](#processes-communicating-i%CC%87leti%C5%9Fim-sistemleri)
     - [Socket Yapısı](#socket-yap%C4%B1s%C4%B1)
     - [Adressing Processes (İşlemleri Adresleme)](#adressing-processes-i%CC%87%C5%9Flemleri-adresleme)
-  - [Transport Service](#transport-service)
-- [Ders 2](#ders-2)
-- [Transport Servise Requirements](#transport-servise-requirements)
-- [internet Transport Protocols Services](#internet-transport-protocols-services)
-  - [TCP](#tcp)
-  - [UDP](#udp)
+  - [Transport Service Requirements](#transport-service-requirements)
+  - [Internet Transport Protocols Services (Taşıma Protokolleri Hizmetleri)](#internet-transport-protocols-services-ta%C5%9F%C4%B1ma-protokolleri-hizmetleri)
+    - [TCP (Transmission Control Protocol)](#tcp-transmission-control-protocol)
+    - [UDP (User Datagram Protocol)](#udp-user-datagram-protocol)
+    - [Securing TCP (TCP'de Güvenlik)](#securing-tcp-tcpde-g%C3%BCvenlik)
+  - [Web ve HTTP](#web-ve-http)
+  - [HTTP (Hypertext Transfer Protocol)](#http-hypertext-transfer-protocol)
+    - [Temel HTTP Yapısı](#temel-http-yap%C4%B1s%C4%B1)
+    - [HTTP Veri Aktarımı](#http-veri-aktar%C4%B1m%C4%B1)
+    - [HTPP Bağlantıları](#htpp-ba%C4%9Flant%C4%B1lar%C4%B1)
+      - [Non-Persistent HTTP](#non-persistent-http)
+      - [Persistent HTTP](#persistent-http)
+    - [HTTP Request Message (İstek Mesajı)](#http-request-message-i%CC%87stek-mesaj%C4%B1)
 
 ## Sınav Hakkında
 
@@ -334,7 +341,7 @@ Yanlış IP adresiyle *packet* gönderilir
 
 Farkı *end systems* (son kullanıcı sistemleri) üzeründe  çalıştırılır. Örneğin, web server yazılımı ağ üzerinden web browser yazılımı ile bağlantı kurar
 
-> Temel ağ cihazları kullanıcı programlarını çalıştırmaz. 😔
+> Temel ağ cihazları, kullanıcı programlarını çalıştırmaz. 😔
 
 ### Application Architectures (Uygulama Mimarileri)
 
@@ -377,12 +384,13 @@ Server Özellikleri:
 
 *IP* adresi ve *port* numarasından oluşan, *process*'lerin alınıp / verildiği kısma **socket** adı verilir.
 
-- *Client* *process*'i kapının dışına koyar, *server* *process*'i kapıdan içeri alır
-  - Buradaki kapı olarak adlandırılan *socket*'tir
+- *Client*, *process*'i kapının dışına koyar.
+- *Server*, *process*'i kapıdan içeri alır
+- Buradaki kapı olarak adlandırılan *socket*'tir
 
 #### Adressing Processes (İşlemleri Adresleme)
 
-Mesajların alınması için *process*'in bir tanımlayıcısı (*identifier*) olması gerekmektedir. Tanımlayıcı:
+Mesajların alınması için *process*'in bir tanımlayıcısı (*identifier*) olması gerekmektedir. 0 ile 1023 arası *system ports* olarak bilinmektedir. Tanımlayıcı:
 
 - *IP* adresi, örn: 128.119.245.12
 - *Port* numarası, örn: 80
@@ -396,7 +404,7 @@ içerir.
 
 > Windows için `ipconfig`, linux için `ifconfig` ile IP adresinizi öğrenebilirsiniz.
 
-### Transport Service
+### Transport Service Requirements
 
 | Özellik        | Açıklama                                                                         |
 | -------------- | -------------------------------------------------------------------------------- |
@@ -407,43 +415,99 @@ içerir.
 
 ![trans_services](imgs/trans_services.png)
 
-## Ders 2
+### Internet Transport Protocols Services (Taşıma Protokolleri Hizmetleri)
 
-2.19.2019 tarihli ders
+*Protocol*'lerin hiç biri alttaki özellikleri taşımaz, sonradan bunlara uygun sistemler oluşturulur ve entegre edilir.
 
-## Transport Servise Requirements
+- Timing (düşük gecikme)
+- Min throughput (düşük veri aktarımı)
+- Guarantee (garantili taşıma)
+- Security (güvenli taşıma)
+  - Şifreleme (*enctryption*) içermez
+  - Socket ve internet verileri olduğu gibi (*cleartext*) gönderilir.
 
-Hepsi her durum için geçerli olmaz.
+#### TCP (Transmission Control Protocol)
 
-- Mail gibi platformlarda veri bütünlüğü,
-- Oyun gibi interaktif platformlarda zaman duyarlılığı,
-- Anlık veri işlemelerinde taşınan yük önemlidir.
+| Özellik            | Açıklama                                             |
+| ------------------ | ---------------------------------------------------- |
+| Reliable transport | Güvenilir veri aktarımı                              |
+| Flow control       | Veri akışı denetimi                                  |
+| Congestion control | *Network* aşırı yoğun olduğunda veri akışını azaltır |
 
-| Terim          | Türkçesi          |
-| -------------- | ----------------- |
-| throughput     | Taşınan yük       |
-| data loss      | Veri kaybı        |
-| time sensitive | Zaman duyarlılığı |
+#### UDP (User Datagram Protocol)
 
-## internet Transport Protocols Services
+UDP yayıncılıkta tercih edilen bir *protocol*'dür.
 
-> Not: *Protokolleri hiç biri (core design) güvenlik ile ilgili özellikler barındırmaz. Sonradan bunlara uyumlu olacak şekilde güvenlik sistemleri entegre edilir.*
-
-### TCP
-
-> RFC dökümantasyonu için [buraya](https://tools.ietf.org/html/rfc793) tıklayın.
-
-- Reliable Transport
-- Flow control
-- Congestion control
-- Does not provide
-- Connection-oriented
-
-### UDP
-
-Yayıncılıkta tercih ediliyor.
-
-- Varıp varmadığıyla ilgilenmiyor. Gitmezse tekrar yolluyor.
+- *Packet*'in varıp, varmadığıyla ve güvenliğiyle ilgilenmez (*Unreliable transport*), varmazsa tekrar gönderir.
 - Hız için tercih edilir.
 - Olumsuz geri dönüş yoktur.
 - Sender ile reciver asla birbirleriyle iletişimde değidir.
+
+> UDP'nin amacı tamamıyla hızı arttırmak ve maaliyeti düşürmektir.
+
+#### Securing TCP (TCP'de Güvenlik)
+
+TCP'de güvenlik SSL ile sağlanır, uygulamalar **SSL kütüphanesi** yardımıyla TCP ile etkileşir. SSL'in sağladıkları:
+
+- Şifreli (*encreypted*) TCP bağlantısı
+- Veri bütunlüğü (*data integrity*)
+- Uç sistem doğrulaması (*end-point authentication*)
+
+### Web ve HTTP
+
+- Web sayfası *base HTML* dosyasının referans ettiği objelerden oluşur.
+- Web sayfaları objelerden oluşur, bu dosyalar; HTML, JPEG, JAVA applet vs. olabilir.
+- Her obje *URL*'ler ile adreslenir.
+
+![url_ex](imgs/url_ex.png)
+
+### HTTP (Hypertext Transfer Protocol)
+
+#### Temel HTTP Yapısı
+
+*Applicataion Layer* (uygulama katmanı) *protocol*'üdür.
+
+![http_overview](imgs/http_overview.png)
+
+- *Client*: Tarayıcılar, *Server*: Apache Web Server
+
+#### HTTP Veri Aktarımı
+
+HTTP, TCP kullanır.
+
+- *Client* TCP bağlantısını başlatır.
+  - *Server*'a 80 *port*'unda *socket* oluşturur
+- *Server* TCP bağlantısını kabul eder
+- *Client* ve *Server* arasında HTTP mesajları aktarılır
+- TCP bağlantısı kapatılır
+
+> HTTP *stateless* (durumsuz) olarak tanımlanır. Eski istekler (*requests*) hakkında bilgi sahibi değildir.
+
+#### HTPP Bağlantıları
+
+| Bağlantı Türü                   | Açıklama                                                               |
+| ------------------------------- | ---------------------------------------------------------------------- |
+| non-persistent (kalıcı olmayan) | En fazla bir obje TCP üzerinden gönderilir ardından bağlantı kapatılır |
+| persistent (kalıcı)             | Çok sayıda obje TCP üzerinden gönderilebilir                           |
+
+> **RTT**, bir *packet*'in *client-server* arasında gidiş geliş süresi
+
+##### Non-Persistent HTTP
+
+Sunucuyu her defasında açmak için *RTT* kaybı yaşanacaktır, tek bir veri alınacaksa ideal seçimdir
+
+![non_persistend_http](imgs/non_persistent_http.png)
+
+##### Persistent HTTP
+
+- Sunucu tek bir seferde açılacak lakin kapatılmak için *request* bekleyecektir, bu da fazladan *RTT* kaybı demektir.
+
+#### HTTP Request Message (İstek Mesajı)
+
+![http_request](imgs/http_request.png)
+
+- `sp`: Boşluk
+- `cr`: \r karakteri
+- `lf`: \n, satır sonu karakteri
+
+![http_request_ex](imgs/http_request_ex.png)
