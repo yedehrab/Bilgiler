@@ -10,6 +10,7 @@
 > `HOME` ile yukarı yönelebilirsin.
 
 - [Ders Puanlaması](#ders-puanlamas%C4%B1)
+- [Ders Notları](#ders-notlar%C4%B1)
 - [Sunum Notları](#sunum-notlar%C4%B1)
   - [Sunum Listeleri](#sunum-listeleri)
 
@@ -20,6 +21,10 @@
 | Vize  | 35              |
 | Sunum | 15              |
 | Final | 50              |
+
+## Ders Notları
+
+Ders notları drive üzerinde yedeklenmektedir, [buraya](https://drive.google.com/open?id=1rwb3AKxAr2evwZvFUfz6NqB7laZo9pYZ) tıklayarak erişebilirsin.
 
 ## Sunum Notları
 
