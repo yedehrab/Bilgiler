@@ -308,7 +308,7 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 | Uygulama                | Açıklama                                                 |
 | ----------------------- | -------------------------------------------------------- |
 | flameshot 🌟            | Screenshot alma uygulaması lighthot gibi                 |
-| [copyq](https://copyq.readthedocs.io/en/latest/installation.html 🌟                | Clipboard (pano) yöneticisi                              |
+| [copyq 🌟](https://copyq.readthedocs.io/en/latest/installation.html)                 | Clipboard (pano) yöneticisi                              |
 | mpv 🌟                  | En çok sevilen video oynatıcısı                          |
 | pinta 🌟                | Paint alternatifi, hafif resim düzenleyici               |
 | Onlyoffice 🌟           | Office alternatifi sade ve şık arayüzü olan uygulama     |
