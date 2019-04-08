@@ -55,8 +55,8 @@
     - [Adressing Processes (İşlemleri Adresleme)](#adressing-processes-i%CC%87%C5%9Flemleri-adresleme)
   - [Transport Service Requirements](#transport-service-requirements)
   - [Internet Transport Protocols Services (Taşıma Protokolleri Hizmetleri)](#internet-transport-protocols-services-ta%C5%9F%C4%B1ma-protokolleri-hizmetleri)
-    - [TCP (Transmission Control Protocol)](#tcp-transmission-control-protocol)
-    - [UDP (User Datagram Protocol)](#udp-user-datagram-protocol)
+    - [TCP (Transmission Control Protocol) Review](#tcp-transmission-control-protocol-review)
+    - [UDP (User Datagram Protocol) Review](#udp-user-datagram-protocol-review)
     - [Securing TCP (TCP'de Güvenlik)](#securing-tcp-tcpde-g%C3%BCvenlik)
   - [Web ve HTTP](#web-ve-http)
   - [HTTP (Hypertext Transfer Protocol)](#http-hypertext-transfer-protocol)
@@ -84,6 +84,19 @@
   - [Internet Transport Layer Protocols](#internet-transport-layer-protocols)
   - [Multiplexing (Çoğullama)](#multiplexing-%C3%A7o%C4%9Fullama)
   - [Demultiplexing (Azaltma / Parçalama)](#demultiplexing-azaltma--par%C3%A7alama)
+    - [TCP / UDP Demux](#tcp--udp-demux)
+    - [TCP / UDP Demux Examples](#tcp--udp-demux-examples)
+  - [UDP (User Datagram Protocol)](#udp-user-datagram-protocol)
+    - [UDP Checksum](#udp-checksum)
+  - [Reliable Data Transfer (RDT)](#reliable-data-transfer-rdt)
+    - [Rdt 1.0](#rdt-10)
+    - [Rdt 2.0](#rdt-20)
+      - [Rdt 2.0 Kusurları](#rdt-20-kusurlar%C4%B1)
+    - [Rdt 2.1](#rdt-21)
+    - [Rdt 2.2](#rdt-22)
+    - [Rdt 3.0](#rdt-30)
+  - [Pipelined Protocols](#pipelined-protocols)
+  - [TCP (Transmission Control Protocol)](#tcp-transmission-control-protocol)
 
 ## Sınav Hakkında
 
@@ -444,7 +457,9 @@ içerir.
   - Şifreleme (*enctryption*) içermez
   - Socket ve internet verileri olduğu gibi (*cleartext*) gönderilir.
 
-#### TCP (Transmission Control Protocol)
+![tcp_udp_segment_format](imgs/tcp_udp_segment_format.png)
+
+#### TCP (Transmission Control Protocol) Review
 
 | Özellik            | Açıklama                                             |
 | ------------------ | ---------------------------------------------------- |
@@ -452,16 +467,19 @@ içerir.
 | Flow control       | Veri akışı denetimi                                  |
 | Congestion control | *Network* aşırı yoğun olduğunda veri akışını azaltır |
 
-#### UDP (User Datagram Protocol)
+> Detayları *transport layer* altında işlenmekte, [buraya](#tcp-transmission-control-protocol) tıklayarak gidebilirsin.
 
-UDP yayıncılıkta tercih edilen bir *protocol*'dür.
+#### UDP (User Datagram Protocol) Review
+
+UDP yayıncılıkta tercih edilen bir *protocol*'dür. Amacı tamamıyla hızı arttırmak ve maaliyeti düşürmektir.
 
 - *Packet*'in varıp, varmadığıyla ve güvenliğiyle ilgilenmez (*Unreliable transport*), varmazsa tekrar gönderir.
-- Hız için tercih edilir.
+- Tıkanıklık kontrolüne (*congestion control*) ihtiyaç yoktur, olabildiğince hızlı gönderir
+- Bağlantı kurmaya gerek yok, zaman kaybına neden olur
+- Basitir, *sender* ve *reciver* asla birbiriyle iletişimde değildiir
 - Olumsuz geri dönüş yoktur.
-- Sender ile reciver asla birbirleriyle iletişimde değidir.
 
-> UDP'nin amacı tamamıyla hızı arttırmak ve maaliyeti düşürmektir.
+> Detayları *transport layer* altında işlenmekte, [buraya](#udp-user-datagram-protocol) tıklayarak gidebilirsin.
 
 #### Securing TCP (TCP'de Güvenlik)
 
@@ -673,4 +691,114 @@ Yine, [UDP](#udp-user-datagram-protocol) ve [TCP](#tcp-transmission-control-prot
   - Her *datagram* bir *segment* taşır
   - Her *segment*'in kaynak ve *dest port* numaları vardır
 
-![tcp_udp_segment_format](imgs/tcp_udp_segment_format.png)
+#### TCP / UDP Demux
+
+UDP'de yönlendirme:
+
+- *Source IP*
+- *Destination port* numarası
+
+TCP'de yönlendirme:
+
+- *Source IP*
+- *Destination IP*
+- *Source port* numarası
+- *Destination port* numarası
+
+ile olmaktadır.
+
+> *Socket*, *source IP* ve *destination port* numarasından oluşur.
+
+#### TCP / UDP Demux Examples
+
+UDP Demux:
+
+![udp_demux](imgs/udp_demux.png)
+
+TCP Demux:
+
+![tcp_demux](imgs/tcp_demux.png)
+
+### UDP (User Datagram Protocol)
+
+UDP yayıncılıkta tercih edilen bir *protocol*'dür. Amacı tamamıyla hızı arttırmak ve maaliyeti düşürmektir.
+
+- *Packet*'in varıp, varmadığıyla ve güvenliğiyle ilgilenmez (*Unreliable transport*), varmazsa tekrar gönderir.
+- Tıkanıklık kontrolüne (*congestion control*) ihtiyaç yoktur, olabildiğince hızlı gönderir
+- Bağlantı kurmaya gerek yok, zaman kaybına neden olur
+- Basitir, *sender* ve *reciver* asla birbiriyle iletişimde değildiir
+- Olumsuz geri dönüş yoktur.
+
+![udp_segment](imgs/udp_segment.png)
+
+#### UDP Checksum
+
+Aktarılan *segment*'deki hataları algılamak için kullanılan yöntemdir.
+
+![udp_checksum](imgs/udp_checksum.png)
+
+### Reliable Data Transfer (RDT)
+
+#### Rdt 1.0
+
+Tam güvenlikli bir kanaldır.
+
+- *Bit* ve *packet* kayıpları yoktur
+- *Sender* ve *reciver* verileri güvenli kanaldan (*underlying channel*) alır
+
+#### Rdt 2.0
+
+Bitlerde hatalar söz konusu olabilir.
+
+- *Bit* hataları *checksum* ile algılanır.
+- *Acknowledgements (ACKs)* paket alındı bilgisi, *negative acknowledgements (NAKs)* paketin hatalı olduğu bilgisi gibi *feedback*'ler vardır.
+
+##### Rdt 2.0 Kusurları
+
+- ACK / NAK mesajları bozulması durumunda geçerli *packet* yeniden gönderilir
+- *Sender* her gelen *packet*'e *segment* numarası ekler, birden fazla gelen *packet*'ları *reciever* atar
+- *Sender* bir *packet* gönderdikten sonra *feedback* için bekler, bu da zamandan kayıp demektir.
+
+#### Rdt 2.1
+
+*Sender*:
+
+- *Packet*'lara *segment* numarası ekler.
+- ACK / NAK bozuk alınıp alınmadığını kontrol eder
+
+*Reciever*:
+
+- Alınan *packet*'ların eşsiz olup olmadığını kontrol eder
+- ACK / NAK mesajlarının *sender* tarafından alınıp alınmadığını bilmez
+
+#### Rdt 2.2
+
+NAK içermez, sadece ACK kullanarak rdt 2.1 ile aynı görevi yapar.
+
+- NAK yerine *packet* başarılı alındığında ACK mesajları gönderilir.
+- Çift ACK mesajı NAK gibi kabul edilir, *packet* yeniden gönderilir.
+
+#### Rdt 3.0
+
+Rdt 2.2'ye ek olarak:
+
+- *Sender* belli sürede ACK mesajı almazsa (*timeout*) *packet* yeniden gönderilir.
+- Eşsiz olmayan *packet*'lar *segment* numaraları ile ayırt edilir.
+
+![rdt_3.0](imgs/rdt_3.0.png)
+
+### Pipelined Protocols
+
+Bir *packet* göndermek yerine birden fazla gönderilir.
+
+- *Reciver* aldığı her sağlam *packet* için *ack* gönderir
+  - Hatalı *packet*'ler için *ack* gitmez
+  - Kaçırılan paketler için en son gönderilen *ack* gönderilir
+- Tekrar eden *ack*'lar *sender* tarafından görmezden gelinir ve *packet* yeniden gönderilir
+  - Bu yapıya **Go back N (GDN)** adı verilir.
+
+> Selective repeat ?
+
+![pipeline_gbn](imgs/pipeline_gbn.png)
+
+### TCP (Transmission Control Protocol)
