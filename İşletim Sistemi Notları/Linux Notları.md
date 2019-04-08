@@ -32,14 +32,16 @@ Birkaç distro örneği:
     - [Ekran Görüntüsü ve Kaydı Kısayolları](#ekran-g%C3%B6r%C3%BCnt%C3%BCs%C3%BC-ve-kayd%C4%B1-k%C4%B1sayollar%C4%B1)
   - [Gnome Eklentileri](#gnome-eklentileri)
     - [Ubuntu Üstteki Çubuğu Gizleme](#ubuntu-%C3%BCstteki-%C3%A7ubu%C4%9Fu-gizleme)
-  - [Dash to Dock ile MacOS Durum Çubuğu Görünümü](#dash-to-dock-ile-macos-durum-%C3%A7ubu%C4%9Fu-g%C3%B6r%C3%BCn%C3%BCm%C3%BC)
-- [Faydalı Bilgiler ve Uygulamalar](#faydal%C4%B1-bilgiler-ve-uygulamalar)
-  - [Sıkıştırılmış Dosyaları Çıkarma](#s%C4%B1k%C4%B1%C5%9Ft%C4%B1r%C4%B1lm%C4%B1%C5%9F-dosyalar%C4%B1-%C3%A7%C4%B1karma)
-  - [Media Player](#media-player)
-  - [MTPaint](#mtpaint)
+    - [Dash to Dock ile MacOS Durum Çubuğu Görünümü](#dash-to-dock-ile-macos-durum-%C3%A7ubu%C4%9Fu-g%C3%B6r%C3%BCn%C3%BCm%C3%BC)
+    - [Dast to Panel](#dast-to-panel)
+    - [Emoji Selector (Emoji Klavyesi)](#emoji-selector-emoji-klavyesi)
+- [Faydalı Uygulamalar](#faydal%C4%B1-uygulamalar)
   - [Terminal Üzerinden Markdown to PDF](#terminal-%C3%BCzerinden-markdown-to-pdf)
   - [Terminal Üzerinden Çevirici](#terminal-%C3%BCzerinden-%C3%A7evirici)
   - [OnlyOffice Desktop](#onlyoffice-desktop)
+  - [Open Shot Kurulumu](#open-shot-kurulumu)
+  - [Uget Kurulumu](#uget-kurulumu)
+- [Faydalı Gelişmiş Bilgiler](#faydal%C4%B1-geli%C5%9Fmi%C5%9F-bilgiler)
   - [Window Manager Controls](#window-manager-controls)
   - [League of Legends](#league-of-legends)
   - [Uygulamaların Terminal Komutlarını öğrenme](#uygulamalar%C4%B1n-terminal-komutlar%C4%B1n%C4%B1-%C3%B6%C4%9Frenme)
@@ -237,43 +239,43 @@ Gnome eklentileri ile ubuntu distronuzu özelleştirebilirsiniz.
 
 Gnome eklentisini kurduktan sonra [buradan](https://extensions.gnome.org/extension/545/hide-top-bar/) eklentiyi `ON/OFF` ile açıp kapatabilirsiniz.
 
-### Dash to Dock ile MacOS Durum Çubuğu Görünümü
+#### Dash to Dock ile MacOS Durum Çubuğu Görünümü
 
-Tam ekranı kaplayan uzun görüntü yerine, içerdiği uygulama kadar yer kaplayan bir görüntü sağlar.
+Tam ekranı kaplayan uzun görüntü yerine, içerdiği uygulama kadar yer kaplayan bir görüntü sağlar, [buradan](https://extensions.gnome.org/extension/307/dash-to-dock/) indirebilirsiniz.
 
 - `Ubuntu Software` uygulamasını açın
 - `Dash to Dock` yazıp aratın ev indirin
 - `Extension Settings` kısmından özelleştirebilirsiniz
 
-## Faydalı Bilgiler ve Uygulamalar
+#### Dast to Panel
 
-### Sıkıştırılmış Dosyaları Çıkarma
+Windows 10 görev çubuğu izlenimi verir, [buraya](https://extensions.gnome.org/extension/1160/dash-to-panel/) tıklayarak erişebilirsiniz
 
-Rar için `parsing filters unsupported` hatası geliyorsa, `unrar` paketini yüklemeniz gerekmektedir.
+#### Emoji Selector (Emoji Klavyesi)
 
-```sh
-sudo apt-get install unrar
-```
+Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.org/extension/1162/emoji-selector/) indirebilirsiniz.
 
-### Media Player
+- `CTRL` + `V` ile yapıştırarak kullanabilirsiniz
+- `SUPER` + `E` Emoji klavyesini açar
 
-En çok sevilen oynatıcı olan `mpv`'i indirmek için:
+## Faydalı Uygulamalar
 
-```sh
-sudo apt-get install mpv
-```
-
-> [Buraya](https://www.slant.co/topics/5260/~media-players-for-linux#3) bakarak diğerleri kıyaslayabilirisin.
-
-### MTPaint
-
-Microsoft MSPaint'e alternatif linux paint uygulamasıdır.
-
-Kurulum:
-
-```sh
-suda apt-get install mtpaint
-```
+| Uygulama   | Açıklama                                             |
+| ---------- | ---------------------------------------------------- |
+| unrar      | `.rar` uzantılı sıkıştırılmış dosyaları çıkarma      |
+| mpv        | En çok sevilen video oynatıcısı                      |
+| pinta      | Paint alternatifi, hafif resim düzenleyici           |
+| gpick      | Renk seçme uygulaması                                |
+| dictd      | Terminal üzerinden çeviri                            |
+| Onlyoffice | Office alternatifi sade ve şık arayüzü olan uygulama |
+| retropie   | Atari oyunlarını içerisinde barındıran platform      |
+| autocity   | Ses ile ilgili işlemleri barındıran uygulama         |
+| kazamm     | Hafif video kaydı hizmeti                            |
+| OBS        | Gelişmiş video kaydı hizmeti                         |
+| kdenlive   | Windows media player alternatifi                     |
+| Open Shot  | Video düzenleme                                      |
+| uget       | Download manager (idm alternatifi)                   |
+| copyq      | Clipboard (pano) yöneticisi                          |
 
 ### Terminal Üzerinden Markdown to PDF
 
@@ -320,6 +322,24 @@ MS Office alteratifi bir uygulamadır.
 - `wget https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb` ile paketi indirin
 - `sudo dpkg -i onlyoffice-desktopeditors_amd64.deb` paket kurulumunu deneyin
   - Hata olması durumunda `sudo apt-get install --fix-broken` komutunu kullanın ve tekrar paket kurulumunu deneyin
+
+### Open Shot Kurulumu
+
+```sh
+sudo add-apt-repository ppa:openshot.developers/ppa
+sudo apt update
+sudo apt install openshot-qt
+```
+
+### Uget Kurulumu
+
+```sh
+sudo add-apt-repository ppa:plushuang-tw/uget-stable
+sudo apt-get update
+sudo apt-get install uget
+```
+
+## Faydalı Gelişmiş Bilgiler
 
 ### Window Manager Controls
 
