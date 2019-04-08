@@ -36,6 +36,7 @@ Birkaç distro örneği:
     - [Dast to Panel](#dast-to-panel)
     - [Emoji Selector (Emoji Klavyesi)](#emoji-selector-emoji-klavyesi)
 - [Faydalı Uygulamalar](#faydal%C4%B1-uygulamalar)
+  - [Flameshot](#flameshot)
   - [Terminal Üzerinden Markdown to PDF](#terminal-%C3%BCzerinden-markdown-to-pdf)
   - [Terminal Üzerinden Çevirici](#terminal-%C3%BCzerinden-%C3%A7evirici)
   - [OnlyOffice Desktop](#onlyoffice-desktop)
@@ -260,22 +261,32 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 
 ## Faydalı Uygulamalar
 
-| Uygulama   | Açıklama                                             |
-| ---------- | ---------------------------------------------------- |
-| unrar      | `.rar` uzantılı sıkıştırılmış dosyaları çıkarma      |
-| mpv        | En çok sevilen video oynatıcısı                      |
-| pinta      | Paint alternatifi, hafif resim düzenleyici           |
-| gpick      | Renk seçme uygulaması                                |
-| dictd      | Terminal üzerinden çeviri                            |
-| Onlyoffice | Office alternatifi sade ve şık arayüzü olan uygulama |
-| retropie   | Atari oyunlarını içerisinde barındıran platform      |
-| autocity   | Ses ile ilgili işlemleri barındıran uygulama         |
-| kazamm     | Hafif video kaydı hizmeti                            |
-| OBS        | Gelişmiş video kaydı hizmeti                         |
-| kdenlive   | Windows media player alternatifi                     |
-| Open Shot  | Video düzenleme                                      |
-| uget       | Download manager (idm alternatifi)                   |
-| copyq      | Clipboard (pano) yöneticisi                          |
+| Uygulama          | Açıklama                                                 |
+| ----------------- | -------------------------------------------------------- |
+| flameshot 🌟      | Screenshot alma uygulaması lighthot gibi                 |
+| copyq 🌟          | Clipboard (pano) yöneticisi                              |
+| mpv 🌟            | En çok sevilen video oynatıcısı                          |
+| pinta 🌟          | Paint alternatifi, hafif resim düzenleyici               |
+| Onlyoffice 🌟     | Office alternatifi sade ve şık arayüzü olan uygulama     |
+| VsCode 🌟         | Çok fonksiyonel microsoft yapımı editör                  |
+| Chrome 🌟         | Google Chrome tarayıcı                                   |
+| Emoji Selector 👌 | Gnome eklentisi olarak indirilebilengelen emoji klavyesi |
+| unrar             | `.rar` uzantılı sıkıştırılmış dosyaları çıkarma          |
+| gpick             | Renk seçme uygulaması                                    |
+| dictd             | Terminal üzerinden çeviri                                |
+| retropie          | Atari oyunlarını içerisinde barındıran platform          |
+| autocity          | Ses ile ilgili işlemleri barındıran uygulama             |
+| OBS               | Gelişmiş video kaydı hizmeti                             |
+| kdenlive          | Windows media player alternatifi                         |
+| Open Shot         | Video düzenleme                                          |
+| uget              | Download manager (idm alternatifi)                       |
+
+### Flameshot
+
+| Komut                                       | Açıklama                                |
+| ------------------------------------------- | --------------------------------------- |
+| `flameshot full -p ~/Pictures/Screenshots/` | Tüm ekranın görüntüsünü path'e kaydetme |
+| `flameshot gui`                             | Ekran görüntüsü alma arayüzünü açar     |
 
 ### Terminal Üzerinden Markdown to PDF
 
