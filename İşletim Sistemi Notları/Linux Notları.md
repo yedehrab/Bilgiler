@@ -39,6 +39,8 @@ Birkaç distro örneği:
     - [Dast to Panel](#dast-to-panel)
     - [Emoji Selector (Emoji Klavyesi)](#emoji-selector-emoji-klavyesi)
 - [Faydalı Uygulamalar](#faydal%C4%B1-uygulamalar)
+  - [Stacer kurulumu](#stacer-kurulumu)
+    - [Terminal Üzerinden](#terminal-%C3%BCzerinden)
   - [Flameshot](#flameshot)
   - [Terminal Üzerinden Markdown to PDF](#terminal-%C3%BCzerinden-markdown-to-pdf)
   - [Terminal Üzerinden Çevirici](#terminal-%C3%BCzerinden-%C3%A7evirici)
@@ -317,6 +319,7 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 | Emoji Selector 👌       | Gnome eklentisi olarak indirilebilengelen emoji klavyesi |
 | simplescreenrecorder 🌟 | Sade ekran kaydedicisi                                   |
 | gnome-tweaks 🌟         | Gnome özelleştirme ayarları                              |
+| stacer 🌟               | System Optimizer & Monitor                               |
 | unrar                   | `.rar` uzantılı sıkıştırılmış dosyaları çıkarma          |
 | gpick                   | Renk seçme uygulaması                                    |
 | dictd                   | Terminal üzerinden çeviri                                |
@@ -326,6 +329,18 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 | kdenlive                | Windows media player alternatifi                         |
 | Open Shot               | Video düzenleme                                          |
 | uget                    | Download manager (idm alternatifi)                       |
+
+### Stacer kurulumu
+
+[Buraya](https://github.com/oguzhaninan/Stacer/releases) tıklayarak yayınlanmış sürümlerine erişebilirsin.
+
+#### Terminal Üzerinden
+
+```sh
+sudo add-apt-repository ppa:oguzhaninan/stacer -y
+sudo apt-get update
+sudo apt-get install stacer -y
+```
 
 ### Flameshot
 
