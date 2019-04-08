@@ -108,6 +108,7 @@
 - [Python Görsel Programlama](#python-g%C3%B6rsel-programlama)
   - [Basit GUI Yapımı](#basit-gui-yap%C4%B1m%C4%B1)
   - [PyQt Widgets](#pyqt-widgets)
+- [PyInstaller ile Executable Dosya Oluşturma](#pyinstaller-ile-executable-dosya-olu%C5%9Fturma)
 - [İleri Seviye Python](#i%CC%87leri-seviye-python)
   - [Assertion (Kural Koyma)](#assertion-kural-koyma)
     - [Assertion Örnekleri](#assertion-%C3%B6rnekleri)
@@ -1298,6 +1299,10 @@ Yukarıdan-aşağı, soldan-sağa olmak üzere sırayla:
 - [QProgressBar](http://doc.qt.io/qt-5/qprogressbar.html)
 
 > Ekran görüntüsündeki kodu [buraya](https://build-system.fman.io/static/public/files/widgets_example.py) tıklayarak indirebilirsin.
+
+## PyInstaller ile Executable Dosya Oluşturma
+
+Video açıklaması için [buraya](https://youtu.be/lOIJIk_maO4) bakabilirsin.
 
 ## İleri Seviye Python
 
