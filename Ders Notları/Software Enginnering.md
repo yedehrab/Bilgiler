@@ -49,6 +49,7 @@ Ders içerikleri drive üzerinden yedeklenmektedir, [buraya](https://drive.googl
   - State diagram
   - Use case diagram
   - Class diagram
+  - Activity diagram
 
 ## Giriş
 
