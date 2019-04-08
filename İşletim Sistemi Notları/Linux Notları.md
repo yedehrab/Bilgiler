@@ -287,6 +287,9 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 | ------------------------------------------- | --------------------------------------- |
 | `flameshot full -p ~/Pictures/Screenshots/` | Tüm ekranın görüntüsünü path'e kaydetme |
 | `flameshot gui`                             | Ekran görüntüsü alma arayüzünü açar     |
+| `flameshot config`                          | Yapılandırma ayarları                   |
+
+> Yapılandırma ayarlarından `General` sekmesi adı altında; `Show help message`'ın kapatılması, `Launch at startup`'ın açılması önerilir.
 
 ### Terminal Üzerinden Markdown to PDF
 
