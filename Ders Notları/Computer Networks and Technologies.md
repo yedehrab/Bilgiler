@@ -802,3 +802,5 @@ Bir *packet* göndermek yerine birden fazla gönderilir.
 ![pipeline_gbn](imgs/pipeline_gbn.png)
 
 ### TCP (Transmission Control Protocol)
+
+> Sıkıldım 😓
