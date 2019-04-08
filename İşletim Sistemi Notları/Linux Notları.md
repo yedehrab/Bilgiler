@@ -27,6 +27,7 @@ Birkaç distro örneği:
   - [Temel Değişkenler](#temel-de%C4%9Fi%C5%9Fkenler)
   - [Komut Çıktısını Ele Alma](#komut-%C3%A7%C4%B1kt%C4%B1s%C4%B1n%C4%B1-ele-alma)
 - [Ubuntu 18.10 için Faydalı Bilgiler](#ubuntu-1810-i%C3%A7in-faydal%C4%B1-bilgiler)
+  - [Kendi Özelleştirmem](#kendi-%C3%B6zelle%C5%9Ftirmem)
   - [Ubuntu Kısayolları](#ubuntu-k%C4%B1sayollar%C4%B1)
     - [Dash / Dock Kısayolları](#dash--dock-k%C4%B1sayollar%C4%B1)
     - [Ekran Görüntüsü ve Kaydı Kısayolları](#ekran-g%C3%B6r%C3%BCnt%C3%BCs%C3%BC-ve-kayd%C4%B1-k%C4%B1sayollar%C4%B1)
@@ -204,6 +205,34 @@ echo $(komut)
 
 ## Ubuntu 18.10 için Faydalı Bilgiler
 
+### Kendi Özelleştirmem
+
+Özelleştirmenin yapılabilmesi için `gnome-tweaks`'in yüklü olması lazım.
+
+```sh
+sudo apt install gnome-tweaks
+gnome-tweaks
+```
+
+- General
+  - Animations: Off
+  - Suspend ...: Off
+- Appearance
+  - Applications: Adwaita-dark
+  - Cursor, Icons, Sound: Yaru
+- Desktop
+  - Show Icons: On
+  - Hepsi kapalı
+- Ektensions
+  - Emoji selector
+  - Hide top bar
+  - Ubuntu dock
+- Font
+  - Interface Text: Ubuntu Regular 9
+  - Document Text: Sans Regular 9
+  - Monospace text: Ubuntu Mobo Regular 11
+  - Legacy Windows: Title Ubuntu Bold 9
+
 ### Ubuntu Kısayolları
 
 #### Dash / Dock Kısayolları
@@ -272,6 +301,7 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 | Chrome 🌟               | Google Chrome tarayıcı                                   |
 | Emoji Selector 👌       | Gnome eklentisi olarak indirilebilengelen emoji klavyesi |
 | simplescreenrecorder 🌟 | Sade ekran kaydedicisi                                   |
+| gnome-tweaks 🌟         | Gnome özelleştirme ayarları                              |
 | unrar                   | `.rar` uzantılı sıkıştırılmış dosyaları çıkarma          |
 | gpick                   | Renk seçme uygulaması                                    |
 | dictd                   | Terminal üzerinden çeviri                                |
