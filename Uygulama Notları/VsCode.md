@@ -14,7 +14,7 @@
     - [Javascript - Nodejs Eklentileri](#javascript---nodejs-eklentileri)
   - [Proje Yönetimi Eklentileri](#proje-y%C3%B6netimi-eklentileri)
   - [Yapılandırma Eklentileri](#yap%C4%B1land%C4%B1rma-eklentileri)
-  - [Markdown Eklentileri](#markdown-eklentileri)
+  - [Dökümantasyon Eklentileri](#d%C3%B6k%C3%BCmantasyon-eklentileri)
 - [Editör ayarları](#edit%C3%B6r-ayarlar%C4%B1)
   - [Editör Değişkenleri](#edit%C3%B6r-de%C4%9Fi%C5%9Fkenleri)
   - [Editör Klavye Kısayollarım](#edit%C3%B6r-klavye-k%C4%B1sayollar%C4%B1m)
@@ -135,7 +135,7 @@ VsCode programlama dökümantasyon için [buraya](https://code.visualstudio.com/
 | --------------------------------------------------------------------------------------------------------- | -------- |
 | [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) |          |
 
-### Markdown Eklentileri
+### Dökümantasyon Eklentileri
 
 | Eklenti                                                                                                    | Açıklama                                                                  |
 | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
@@ -144,6 +144,7 @@ VsCode programlama dökümantasyon için [buraya](https://code.visualstudio.com/
 | [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)                     | Markdown'u PDF'e çevirme                                                  |
 | [MarkDown To-Do](https://marketplace.visualstudio.com/items?itemName=TomasHubelbauer.vscode-markdown-todo) | Yapılacaklar listesini gösteren arayüz                                    |
 | [Paste Image](https://marketplace.visualstudio.com/items?itemName=mushan.vscode-paste-image)               | Panodan resim kopyalama                                                   |
+| [Latex Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)              | Latex, matematik dökümanı hazırlama eklentisi                             |
 
 ## Editör ayarları
 
