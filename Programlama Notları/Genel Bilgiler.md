@@ -13,6 +13,7 @@
 - [Platformlar](#platformlar)
   - [Google Summer of Code](#google-summer-of-code)
 - [Yazı Fontları](#yaz%C4%B1-fontlar%C4%B1)
+- [Faydalı Kaynaklar](#faydal%C4%B1-kaynaklar)
 
 ## Diller Arasındaki Bağlantı
 
@@ -89,3 +90,7 @@ Resmi sitesi için [buraya](https://summerofcode.withgoogle.com/) bakabilirsin.
 | Roboto Mono | Android varsayılan fontunun kodlama için yapılmış hali                               | [🌐](https://fonts.google.com/specimen/Roboto+Mono)                                                                         |
 
 > Fira Code için `Enable font ligaratures` ayarını aktif etmeniz gerekmekte. Aksi halde `!=`, `>=` gibi karakteri birleştiremez.
+
+## Faydalı Kaynaklar
+
+- [How to Select Your First Programming Language](https://www.youtube.com/watch?v=2EaopRDxNrw)
