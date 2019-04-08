@@ -423,7 +423,7 @@ Server Özellikleri:
 
 #### Adressing Processes (İşlemleri Adresleme)
 
-Mesajların alınması için *process*'in bir tanımlayıcısı (*identifier*) olması gerekmektedir. 0 ile 1023 arası *system ports* olarak bilinmektedir. Tanımlayıcı:
+Mesajların alınması için *process*'in bir tanımlayıcısı (*identifier*) olması gerekmektedir. 0 ile 1023 arası *well-known ports* olarak bilinmektedir. Tanımlayıcı:
 
 - *IP* adresi, örn: 128.119.245.12
 - *Port* numarası, örn: 80
