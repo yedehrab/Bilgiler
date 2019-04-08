@@ -261,25 +261,26 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 
 ## Faydalı Uygulamalar
 
-| Uygulama          | Açıklama                                                 |
-| ----------------- | -------------------------------------------------------- |
-| flameshot 🌟      | Screenshot alma uygulaması lighthot gibi                 |
-| copyq 🌟          | Clipboard (pano) yöneticisi                              |
-| mpv 🌟            | En çok sevilen video oynatıcısı                          |
-| pinta 🌟          | Paint alternatifi, hafif resim düzenleyici               |
-| Onlyoffice 🌟     | Office alternatifi sade ve şık arayüzü olan uygulama     |
-| VsCode 🌟         | Çok fonksiyonel microsoft yapımı editör                  |
-| Chrome 🌟         | Google Chrome tarayıcı                                   |
-| Emoji Selector 👌 | Gnome eklentisi olarak indirilebilengelen emoji klavyesi |
-| unrar             | `.rar` uzantılı sıkıştırılmış dosyaları çıkarma          |
-| gpick             | Renk seçme uygulaması                                    |
-| dictd             | Terminal üzerinden çeviri                                |
-| retropie          | Atari oyunlarını içerisinde barındıran platform          |
-| autocity          | Ses ile ilgili işlemleri barındıran uygulama             |
-| OBS               | Gelişmiş video kaydı hizmeti                             |
-| kdenlive          | Windows media player alternatifi                         |
-| Open Shot         | Video düzenleme                                          |
-| uget              | Download manager (idm alternatifi)                       |
+| Uygulama                | Açıklama                                                 |
+| ----------------------- | -------------------------------------------------------- |
+| flameshot 🌟            | Screenshot alma uygulaması lighthot gibi                 |
+| copyq 🌟                | Clipboard (pano) yöneticisi                              |
+| mpv 🌟                  | En çok sevilen video oynatıcısı                          |
+| pinta 🌟                | Paint alternatifi, hafif resim düzenleyici               |
+| Onlyoffice 🌟           | Office alternatifi sade ve şık arayüzü olan uygulama     |
+| VsCode 🌟               | Çok fonksiyonel microsoft yapımı editör                  |
+| Chrome 🌟               | Google Chrome tarayıcı                                   |
+| Emoji Selector 👌       | Gnome eklentisi olarak indirilebilengelen emoji klavyesi |
+| simplescreenrecorder 🌟 | Sade ekran kaydedicisi                                   |
+| unrar                   | `.rar` uzantılı sıkıştırılmış dosyaları çıkarma          |
+| gpick                   | Renk seçme uygulaması                                    |
+| dictd                   | Terminal üzerinden çeviri                                |
+| retropie                | Atari oyunlarını içerisinde barındıran platform          |
+| autocity                | Ses ile ilgili işlemleri barındıran uygulama             |
+| OBS                     | Gelişmiş video kaydı hizmeti                             |
+| kdenlive                | Windows media player alternatifi                         |
+| Open Shot               | Video düzenleme                                          |
+| uget                    | Download manager (idm alternatifi)                       |
 
 ### Flameshot
 
