@@ -260,7 +260,7 @@ Paketler *tier-3*'ten *tier-1*'e ardından hedef *tier-3*'e doğru yol izlerler.
 
 #### Packet Switching Delay
 
-| Sebep             | Açıklama                                          |
+| Olay              | Açıklama                                          |
 | ----------------- | ------------------------------------------------- |
 | Nodel Processing  | Hatalı bitlerin kontrol edildiği aşama            |
 | Queueing Delay    | *Buffer*'da sıralanmanın olduğu aşama             |
