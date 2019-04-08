@@ -25,7 +25,7 @@
 - [Yapılacaklar](#yap%C4%B1lacaklar)
 - [Çalışma Notları](#%C3%A7al%C4%B1%C5%9Fma-notlar%C4%B1)
 - [Karma Bilgiler](#karma-bilgiler)
-- [Teferruatlar](#teferruatlar)
+- [Lisans ve Teferruatlar](#lisans-ve-teferruatlar)
 
 <!-- Index -->
 
@@ -137,13 +137,14 @@
 
 - [The Best Font for Resume](https://www.businessnewsdaily.com/5331-best-resume-fonts.html)
 
-## Teferruatlar
+## Lisans ve Teferruatlar
 
-Bu yazı **apache** lisanslıdır. Lisanslar hakkında bilgi almak için [buraya](https://www.yusufaytas.com/acik-kaynak-lisanslari/) bakmanda fayda var.
+Bu yazı **MIT** lisanslıdır. Lisanslar hakkında bilgi almak için [buraya](https://choosealicense.com/licenses/) bakmanda fayda var.
 
+- [Website](https://yemreak.com)
 - [Github](https://github.com/yedehrab)
 - [GitLab](https://gitlab.com/yedehrab)
 
 > Yardım veya destek için [iletişime](mailto::yyunussemree@gmail.com) geçebilrsiniz 😇
 
-~ Yunus Emre (yedhrab)
+~ Yunus Emre Ak

@@ -1,6 +1,7 @@
 # Computer Networks and Technologies <!-- omit in toc -->
 
 - Drive üzerindeki yedeklemeye erişmek için [buraya 📂](https://drive.google.com/open?id=1rgSo9gVGWsB9WtAEfxZHv_uAdAni560a) tıklamalısın.
+  - Bu metnin PDF hali **ders notum** dizinindedir.
 - Dersle alternatif bir kaynak için bu [video serisine 📺](https://www.youtube.com/playlist?list=PL1XUdfGZZ4rQ0UPDx__7W4LmeLab227vb) kitap için [bu siteye 🌐](http://www-net.cs.umass.edu/kurose-ross-ppt-6e/) bakabilirsin.
 
 > **[RFC](https://www.ietf.org/rfc/rfc2616.txt)** her şeyin olduğu bir dökümandır.
@@ -97,6 +98,7 @@
     - [Rdt 3.0](#rdt-30)
   - [Pipelined Protocols](#pipelined-protocols)
   - [TCP (Transmission Control Protocol)](#tcp-transmission-control-protocol)
+- [Lisans ve Teferruatlar](#lisans-ve-teferruatlar)
 
 ## Sınav Hakkında
 
@@ -804,3 +806,15 @@ Bir *packet* göndermek yerine birden fazla gönderilir.
 ### TCP (Transmission Control Protocol)
 
 > Sıkıldım 😓
+
+## Lisans ve Teferruatlar
+
+Bu yazı **MIT** lisanslıdır. Lisanslar hakkında bilgi almak için [buraya](https://choosealicense.com/licenses/) bakmanda fayda var.
+
+- [Website](https://yemreak.com)
+- [Github](https://github.com/yedehrab)
+- [GitLab](https://gitlab.com/yedehrab)
+
+> Yardım veya destek için [iletişime](mailto::yyunussemree@gmail.com) geçebilrsiniz 😇
+
+~ Yunus Emre Ak
