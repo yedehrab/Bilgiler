@@ -28,6 +28,8 @@ Birkaç distro örneği:
   - [Komut Çıktısını Ele Alma](#komut-%C3%A7%C4%B1kt%C4%B1s%C4%B1n%C4%B1-ele-alma)
 - [Ubuntu 18.10 için Faydalı Bilgiler](#ubuntu-1810-i%C3%A7in-faydal%C4%B1-bilgiler)
   - [Kendi Özelleştirmem](#kendi-%C3%B6zelle%C5%9Ftirmem)
+    - [Terminal Özelleştirmem](#terminal-%C3%B6zelle%C5%9Ftirmem)
+    - [Sistem Özelleştirmem](#sistem-%C3%B6zelle%C5%9Ftirmem)
   - [Ubuntu Kısayolları](#ubuntu-k%C4%B1sayollar%C4%B1)
     - [Dash / Dock Kısayolları](#dash--dock-k%C4%B1sayollar%C4%B1)
     - [Ekran Görüntüsü ve Kaydı Kısayolları](#ekran-g%C3%B6r%C3%BCnt%C3%BCs%C3%BC-ve-kayd%C4%B1-k%C4%B1sayollar%C4%B1)
@@ -206,6 +208,19 @@ echo $(komut)
 ## Ubuntu 18.10 için Faydalı Bilgiler
 
 ### Kendi Özelleştirmem
+
+#### Terminal Özelleştirmem
+
+Ubuntu terminal - Preferences:
+
+- Text
+  - 80, 24
+- Colors
+  - Tango dark
+  - Use transparent bg: %25
+  - Built-in schemes: Tango
+
+#### Sistem Özelleştirmem
 
 Özelleştirmenin yapılabilmesi için `gnome-tweaks`'in yüklü olması lazım.
 
