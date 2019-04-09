@@ -2,7 +2,7 @@
 
 - Yoklama yok
 
-## Ders Hakkında
+## Vize Hakkında
 
 Dikkat bu kısım alıntıların olduğu alandır. Sorumluluk kabul etmem 🙄
 
