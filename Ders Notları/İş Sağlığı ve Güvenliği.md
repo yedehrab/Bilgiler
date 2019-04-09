@@ -33,13 +33,18 @@
       - [İş Kazası Sorumluluk Sırası](#i%CC%87%C5%9F-kazas%C4%B1-sorumluluk-s%C4%B1ras%C4%B1)
     - [İş Kanunu](#i%CC%87%C5%9F-kanunu)
       - [İş Kanuna Göre Tanımlar](#i%CC%87%C5%9F-kanuna-g%C3%B6re-tan%C4%B1mlar)
+      - [Kişisel Korunma](#ki%C5%9Fisel-korunma)
+      - [Genel Güvenlik Uygulamaları](#genel-g%C3%BCvenlik-uygulamalar%C4%B1)
+    - [Yanma ve Yangın](#yanma-ve-yang%C4%B1n)
+      - [Yangın Sınıfları](#yang%C4%B1n-s%C4%B1n%C4%B1flar%C4%B1)
+      - [Neden Köpük](#neden-k%C3%B6p%C3%BCk)
 
 ## Vize Hakkında
 
 Dikkat bu kısım alıntıların olduğu alandır. Notlara [buraya](https://drive.google.com/open?id=1EvMxcuTUwLL_RTXq_ywnMHkymD9lZ9NQ) tıklayarak erişebilirsin. (Sorumluluk kabul etmem 🙄)
 
 - Altı çizili metinlere odaklı sorular sorulmaktadır, PDF için [buraya](https://drive.google.com/open?id=1c28kRTJ2QVtZ923niG84EtO4cj-zV7E_) bakabilirsin. (Biraz yamuktur 🤭)
-- Çıkmış sorular için [buraya](https://drive.google.com/open?id=1kk6WOlcCd-iEcqPRAWvxM7uhUQhyVgzD) bakabilrirsin.
+- Çıkmış sorular 🌟 için [buraya](https://drive.google.com/open?id=1kk6WOlcCd-iEcqPRAWvxM7uhUQhyVgzD) bakabilrirsin.
 
 > Ek olarak: Üstü çizik olan slaytlar hocanın slaytında yokmuş, hoca ufak bir göz atarsınız demiş. (Sezgin Otlak)
 
@@ -209,3 +214,48 @@ Fiziksel tehlikeler:
 | İşveren             | İşçi çalıştıran tüzel (vakıf, dernek, kobi) veya kişi            |
 | İşveren vekili      | İşveren adına hareket eden kişi                                  |
 | Meslek hastalığı    | İş sebebiyle karşılaşılan geçici veya sürekli hastalıklar        |
+
+#### Kişisel Korunma
+
+> PDF üzerinden 55 ile 61 arasına bakabilrisiniz. (Yazmakla uğaşmadım 🙄)
+
+#### Genel Güvenlik Uygulamaları
+
+- Herkes kendi işini yapsın 🌟
+- Görev yerinden **izinsiz** ayrılmayın
+- Elektrik panolarının önünde herhangi bir engel barındırılmamalı
+- Kişisel **korunma araçlarını** bir zahmet giyin
+- Elbiselerde **keskin ve sivri uçlu** alet taşımayın
+- Elbiselerin tozunu almak amaçlı da olsa **basınçı hava** kullanmayın (*tarihte şaka amaçlı birinin makatına tutmuşlar, sonuç: hastanelik* 😞 )
+- Düşmeyi engelleyen **sağlam korkuluğu** bulunmayan geçit ve platformlarda bulunmayın
+- **2m'den yüksek** çalışmalarda emniyet kemeri kullanın
+- Vinç, kaldırma araçları gibi hareketli **iş makinelerin çalışma alanlarında** ve yük altında bulunmayın
+- Yük ve malzeme taşıyan araçlara **binmek ve asılmak** kesinlikle yasak ve tehlikelidir
+- Arızalı makineleri kullanmayın
+- Tehlikeli şakalar yapmayın
+- Ana yolları takip edin, kestirme yollar aramayın
+- Makineyi kullanma sertifikanız olmadan kullanamazsınız
+
+> Diğerleri için PDF'de sayfa 62 ile 72 arasına bakarsınız
+
+### Yanma ve Yangın
+
+Yanma, yeterli ısı, oksijen ve yanıcı madde ile meydana gelir.
+
+- Oksijen havada **%21** oranında bulunur, yanma için **en az %16** olması gerekir
+
+> Bu adımdan sonrasına PDF'ten bakarsınız sıkıldım 😞
+
+#### Yangın Sınıfları
+
+| Sınıf | Açıklama                              | Örnek                         | Söndürme                                |
+| ----- | ------------------------------------- | ----------------------------- | --------------------------------------- |
+| A     | Alevli ve korlu yanan yanıcı maddeler | Odun, kömür                   | Köpük, su                               |
+| B     | Yanabilen sıvılar                     | Petrol, boya, alkol           | Kimyasol toz, CO2                       |
+| C     | Alevli yanan gaz yanıcılar            | Doğalgaz, propan              | Köpük, CO2                              |
+| D     | Yanabilen hafif metaller              | Magnezyum, aleminyum, uranyum | Su kullanılmaz, kuru kimyevi toz, CO2   |
+| E     | Elektrik yangınları                   | 🙄                            | Müdahele etme, kuru kimsyasal tozlu CO2 |
+
+#### Neden Köpük
+
+- Yanan yüzeye yayılır ve 5 temel özelliği (boğma, su buharı yapma, soğutma, ısıyı yayma, üstünü kaplama) kullarak yangının durmasını ya da kontrol altına alınmasını sağlar 🌟
