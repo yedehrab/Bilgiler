@@ -38,6 +38,7 @@
     - [Yanma ve Yangın](#yanma-ve-yang%C4%B1n)
       - [Yangın Sınıfları](#yang%C4%B1n-s%C4%B1n%C4%B1flar%C4%B1)
       - [Neden Köpük](#neden-k%C3%B6p%C3%BCk)
+  - [Lisans ve Teferruatlar](#lisans-ve-teferruatlar)
 
 ## Vize Hakkında
 
@@ -260,3 +261,15 @@ Yanma, yeterli ısı, oksijen ve yanıcı madde ile meydana gelir.
 #### Neden Köpük
 
 - Yanan yüzeye yayılır ve 5 temel özelliği (boğma, su buharı yapma, soğutma, ısıyı yayma, üstünü kaplama) kullarak yangının durmasını ya da kontrol altına alınmasını sağlar 🌟
+
+## Lisans ve Teferruatlar
+
+Bu yazı **MIT** lisanslıdır. Lisanslar hakkında bilgi almak için [buraya](https://choosealicense.com/licenses/) bakmanda fayda var.
+
+- [Website](https://yemreak.com)
+- [Github](https://github.com/yedehrab)
+- [GitLab](https://gitlab.com/yedehrab)
+
+> Yardım veya destek için [iletişime](mailto::yyunussemree@gmail.com) geçebilrsiniz 😇
+
+~ Yunus Emre Ak
