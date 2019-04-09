@@ -52,6 +52,8 @@ Dikkat bu kısım alıntıların olduğu alandır. Notlara [buraya](https://driv
 
 Çok sık karşılaşılan soruların sonuna 🌟 eklenmiştir. (Süreniz az ise hızlıca bakabilirsiniz 👊)
 
+> PDF'ten 75. kısma kadar geldim, geri kalanlara siz bakarsınız sıkıldım 😞
+
 ### İlk Çalışmalar
 
 | Kişi            | Tarih      | Çalışma Alanı                                                                                 |
