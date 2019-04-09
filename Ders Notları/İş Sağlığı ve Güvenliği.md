@@ -100,7 +100,6 @@ En önemli haklar:
 
 İş kazası ile **Cumhuriyet Savcısı** ilgilenir 🌟
 
-
 | Tanımlayan                         | Tanım                                                                                                                                                               |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ILO (Uluslar arası çalışma örgütü) | Önceden planlanmamış, bilinmeyen ve kontrol altına alınmamış olan, etrafa zarar verecek nitelikli olaylar.                                                          |

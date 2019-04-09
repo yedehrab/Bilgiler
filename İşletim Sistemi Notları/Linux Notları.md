@@ -196,7 +196,7 @@ chmod +x dosyadi.desktop
 
 ### Komut Çıktısını Ele Alma
 
-Alttaki şekilde bir komutun sonucunu değişken olarak alıp görebilirsin. 
+Alttaki şekilde bir komutun sonucunu değişken olarak alıp görebilirsin.
 
 ```bash
 echo $(komut)
