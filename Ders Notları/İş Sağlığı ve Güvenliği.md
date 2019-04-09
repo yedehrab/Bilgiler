@@ -4,13 +4,16 @@
 
 ## Vize Hakkında
 
-Dikkat bu kısım alıntıların olduğu alandır. Sorumluluk kabul etmem 🙄
+Dikkat bu kısım alıntıların olduğu alandır. Notlara [buraya](https://drive.google.com/open?id=1EvMxcuTUwLL_RTXq_ywnMHkymD9lZ9NQ) tıklayarak erişebilirsin. (Sorumluluk kabul etmem 🙄)
 
-- Altı çizili metinlere odaklı sorular sorulmaktadır, PDF için [buraya](https://drive.google.com/drive/folders/1EvMxcuTUwLL_RTXq_ywnMHkymD9lZ9NQ) bakabilirsin. (Biraz yamuktur 🤭)
+- Altı çizili metinlere odaklı sorular sorulmaktadır, PDF için [buraya](https://drive.google.com/open?id=1c28kRTJ2QVtZ923niG84EtO4cj-zV7E_) bakabilirsin. (Biraz yamuktur 🤭)
+- Çıkmış sorular için [buraya](https://drive.google.com/open?id=1kk6WOlcCd-iEcqPRAWvxM7uhUQhyVgzD) bakabilrirsin.
 
 > Ek olarak: Üstü çizik olan slaytlar hocanın slaytında yokmuş, hoca ufak bir göz atarsınız demiş. (Sezgin Otlak)
 
 ## Ders Notlarım
+
+Çok sık karşılaşılan soruların sonuna 🌟 eklenmiştir. (Süreniz az ise hızlıca bakabilirsiniz 👊)
 
 ### İlk Çalışmalar
 
@@ -55,3 +58,96 @@ En önemli haklar:
 - İşyerlerindeki sağlık ve güvenlik tehlikelerini bilme
 - Katılım
 - Reddetme
+
+### İş Kazası
+
+İş kazası ile **Cumhuriyet Savcısı** ilgilenir 🌟
+
+
+| Tanımlayan                         | Tanım                                                                                                                                                               |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ILO (Uluslar arası çalışma örgütü) | Önceden planlanmamış, bilinmeyen ve kontrol altına alınmamış olan, etrafa zarar verecek nitelikli olaylar.                                                          |
+| WHO  (Dünya sağlık örgütü)         | Önceden planlanmamış, çoğu kişisel yaralanmalara, makinelerin ve araç gereçlerin zarar uğramasına, üretimin bir süre durmasına yol açan bir olay                    |
+| TR 6331 Sayılı Kanun               | İşyerinde veya işini yürütümü nedeniyle meydana gelen, ölüme sebebiyet veren veya vücut bütünlüğünü ruhen ya da bedenen zarara uğratan olay olarak tanımlanmaktadır |
+
+#### Olayın İş Kazası Olarak Tanımlanması
+
+Alttaki özellikler gerekmektedir:
+
+- İş ile ilgili olması
+- İşyerinde veya kanunda sıralanan yerlerin birinde meydana gelmesi
+- Kişiyi, hemen veta sonradan bedenen veya ruhsal olarak hasara uğratması
+
+> Kaza iş kazası olarak belirlenirse kazaya uğrayanın hakları iş yasaları çerçevesinde değerlendirilir.
+
+#### İş Kazası Nedenleri
+
+İş kazalarını çevre, makine ve insanın güvencesiz davranışları ve yönetimin güvensiz organizasyonu temsil etmektedir
+
+##### İnsan Kaynaklı Kaza Nedenleri
+
+- Piskolojik, fiziksel ve işyeri nedenleri (iletişim, insan ilişkileri, takım çalışması vb.)
+
+##### Makine Kaynaklı Kaza Nedenleri
+
+- Hatalı makine ve ekipman
+- Eksik veye kusurlu koruyuclar
+- Yetersiz standardizasyon
+- Yetersiz kontrol ve bakım
+- Yetersiz mühendislik hizmetleri
+
+##### Yönetim Kaynaklı Kaza Nedenleri
+
+- Yetersiz yönetim, organizasyon, eğitim, öğretim, güvenlik, yönetim planı ve sağlık kontrolleri
+- Tanımlanmamış kurallar ve talimatlar
+- Uygun olmayan nezaret, yönetim ve rehberlik
+- Uygun olmayan personel isthidamı
+
+#### İş Kazasına Neden Olan Tehlikeli Durumlar
+
+Fiziksel tehlikeler:
+
+- Titreşim
+- Gürültü
+- Yetersiz havalandırma
+- Aşırı ısı, nem ve hava hareketleri
+- Yetersiz veya aşırı aydınlatma
+
+#### Tehlikeli Yöntem ve İşlemler
+
+- 3m'den yüksek malzeme istifleme
+
+#### İş Kazalarının Görünmeyen Maaliyetleri
+
+- Bürokratik işlemler
+- Makine ve teçhizat kaybı
+- İş ve üretim kaybı
+- İşçi yetiştirme masrafı
+- İmaj kaybı
+- Adli işlemler
+
+#### İş Kazalarından Doğan Hukiki Sorumluluklar
+
+- Sigortalının ölümü halinde hak sahiplerinde yasada belirtilen koşullara göre gelir bağlanabilir
+- SGK'nın yaptığı ödemeleri iş güvenliği mevzuatını ihmal eden işverenler ödeyebilir
+
+#### İş Kazalarından Doğan Maddi Sorumluluklar
+
+- Ölüm halinde aylık bağlanır
+- Ölen kişi %100 kusurlu olsa dahi aylıkda kesinti olmaz
+- Olay ölümle sonuçlanmamışsa %50 ödeme yapılır
+
+#### İş Görmezlik Ödeneği
+
+| Tür                          | Açıklama                                                                                   |
+| ---------------------------- | ------------------------------------------------------------------------------------------ |
+| Sürekli iş görmezlik ödeneği | İş kazası veya meslek hastalığı nedeniyle meslekte kazanma gücü **en az %10** 🌟 azaldıysa |
+| Geçici iş görmezlik ödeneği  | *SSK Kanunu Madde:16*                                                                      |
+
+#### Tazminatlar
+
+| Tazminat Türü 🌟       | Açıklama                                                                       |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| Maddi                  | İş kazasına uğrayan işçinin sigortaca karşılanmayan zararları için ödenir      |
+| Manevi                 | İş kazasına uğrayan işçinye veya işçinin ölümü halinde geriye kalanlara ödenir |
+| Destekten yoksun kalma | Ölüm halinde ölen işçinin hak sahibine ödenir                                  |
