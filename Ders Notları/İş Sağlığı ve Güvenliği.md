@@ -7,7 +7,7 @@
 > `HOME` tuşu ile yukarı yönelebilirsin
 
 - [Vize Hakkında](#vize-hakk%C4%B1nda)
-- [Ders Notlarım](#ders-notlar%C4%B1m)
+- [Vize Notlarım](#vize-notlar%C4%B1m)
   - [İlk Çalışmalar](#i%CC%87lk-%C3%A7al%C4%B1%C5%9Fmalar)
   - [Endüstriyel Tıbbın Doğuşu](#end%C3%BCstriyel-t%C4%B1bb%C4%B1n-do%C4%9Fu%C5%9Fu)
   - [İlk Mevzuatlar](#i%CC%87lk-mevzuatlar)
@@ -47,7 +47,7 @@ Dikkat bu kısım alıntıların olduğu alandır. Notlara [buraya](https://driv
 
 > Ek olarak: Üstü çizik olan slaytlar hocanın slaytında yokmuş, hoca ufak bir göz atarsınız demiş. (Sezgin Otlak)
 
-## Ders Notlarım
+## Vize Notlarım
 
 Çok sık karşılaşılan soruların sonuna 🌟 eklenmiştir. (Süreniz az ise hızlıca bakabilirsiniz 👊)
 
