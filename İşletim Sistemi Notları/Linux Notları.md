@@ -78,13 +78,14 @@ Linux işletim sistemindeki komutlardır. Terminal üzerinden kernel'a bildirili
 | `<komut>; <komut>;`           | Birden fazla komut işleme (birbirlerini beklemez)    |
 | `<komut> && <komut>`          | 1. komut çalışırsa 2.'yi işleme                      |
 | `<komut> || <komut>`          | 1. olmazsa 2. komutu işleme                          |
+| `CTRL` + `W`                  | Kelime silme                                         |
 | `CTRL` + `R` `<aranan_terim>` | Önceki komutlarda arama yapma                        |
 | `CTRL` + `Q`                  | Kitlenmiş terminali kurtarma                         |
 | `CTRL` + `A`                  | Komutların satırının başına gelme                    |
 | `CTRL` +`E`                   | Komut satırının sonuna gelme                         |
 | `tail -f <dosya>`             | Dosyayı anlık olarak okuma                           |
 | `cat` ve `less`               | Ufak ve büyük dosyaları okuma                        |
-| `!$`                          | Bir önce kullanılan elamanı kullanma                 |
+| `!$`                          | Bir önce kullanılan değişkeni kullanma               |
 | `!!`                          | Bir önceki komutu kullanma                           |
 | `alias`                       | Adlandırma (hatalı yazımları engelleyebilir)         |
 | `CTRL` + `SHIFT` + `C`        | Kopyalama işlemi                                     |
