@@ -1,6 +1,7 @@
 # İş Sağlığı ve Güvenliği <!-- omit in toc -->
 
 - Yoklama yok
+- Sınavlar için sınıflar belirlenmektedir
 
 ## İçerikler <!-- omit in toc -->
 
