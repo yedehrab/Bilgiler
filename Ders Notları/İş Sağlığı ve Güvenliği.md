@@ -2,6 +2,38 @@
 
 - Yoklama yok
 
+## İçerikler
+
+> `HOME` tuşu ile yukarı yönelebilirsin
+
+- [İş Sağlığı ve Güvenliği](#i%CC%87%C5%9F-sa%C4%9Fl%C4%B1%C4%9F%C4%B1-ve-g%C3%BCvenli%C4%9Fi)
+  - [İçerikler](#i%CC%87%C3%A7erikler)
+  - [Vize Hakkında](#vize-hakk%C4%B1nda)
+  - [Ders Notlarım](#ders-notlar%C4%B1m)
+    - [İlk Çalışmalar](#i%CC%87lk-%C3%A7al%C4%B1%C5%9Fmalar)
+    - [Endüstriyel Tıbbın Doğuşu](#end%C3%BCstriyel-t%C4%B1bb%C4%B1n-do%C4%9Fu%C5%9Fu)
+    - [İlk Mevzuatlar](#i%CC%87lk-mevzuatlar)
+    - [ILO (International Labour Organization)](#ilo-international-labour-organization)
+    - [ISG'ye Yönelik Çalışma ve Çabalar Tarhiçesi](#isgye-y%C3%B6nelik-%C3%A7al%C4%B1%C5%9Fma-ve-%C3%A7abalar-tarhi%C3%A7esi)
+    - [İSG Kavramlarının gelişimi](#i%CC%87sg-kavramlar%C4%B1n%C4%B1n-geli%C5%9Fimi)
+    - [İşçilerin Kazandığı Haklar ve Yükümlülükleri](#i%CC%87%C5%9F%C3%A7ilerin-kazand%C4%B1%C4%9F%C4%B1-haklar-ve-y%C3%BCk%C3%BCml%C3%BCl%C3%BCkleri)
+    - [İş Kazası](#i%CC%87%C5%9F-kazas%C4%B1)
+      - [Olayın İş Kazası Olarak Tanımlanması](#olay%C4%B1n-i%CC%87%C5%9F-kazas%C4%B1-olarak-tan%C4%B1mlanmas%C4%B1)
+      - [İş Kazası Nedenleri](#i%CC%87%C5%9F-kazas%C4%B1-nedenleri)
+        - [İnsan Kaynaklı Kaza Nedenleri](#i%CC%87nsan-kaynakl%C4%B1-kaza-nedenleri)
+        - [Makine Kaynaklı Kaza Nedenleri](#makine-kaynakl%C4%B1-kaza-nedenleri)
+        - [Yönetim Kaynaklı Kaza Nedenleri](#y%C3%B6netim-kaynakl%C4%B1-kaza-nedenleri)
+      - [İş Kazasına Neden Olan Tehlikeli Durumlar](#i%CC%87%C5%9F-kazas%C4%B1na-neden-olan-tehlikeli-durumlar)
+      - [Tehlikeli Yöntem ve İşlemler](#tehlikeli-y%C3%B6ntem-ve-i%CC%87%C5%9Flemler)
+      - [İş Kazalarının Görünmeyen Maaliyetleri](#i%CC%87%C5%9F-kazalar%C4%B1n%C4%B1n-g%C3%B6r%C3%BCnmeyen-maaliyetleri)
+      - [İş Kazalarından Doğan Hukiki Sorumluluklar](#i%CC%87%C5%9F-kazalar%C4%B1ndan-do%C4%9Fan-hukiki-sorumluluklar)
+      - [İş Kazalarından Doğan Maddi Sorumluluklar](#i%CC%87%C5%9F-kazalar%C4%B1ndan-do%C4%9Fan-maddi-sorumluluklar)
+      - [İş Görmezlik Ödeneği](#i%CC%87%C5%9F-g%C3%B6rmezlik-%C3%B6dene%C4%9Fi)
+      - [Tazminatlar](#tazminatlar)
+      - [İş Kazası Sorumluluk Sırası](#i%CC%87%C5%9F-kazas%C4%B1-sorumluluk-s%C4%B1ras%C4%B1)
+    - [İş Kanunu](#i%CC%87%C5%9F-kanunu)
+      - [İş Kanuna Göre Tanımlar](#i%CC%87%C5%9F-kanuna-g%C3%B6re-tan%C4%B1mlar)
+
 ## Vize Hakkında
 
 Dikkat bu kısım alıntıların olduğu alandır. Notlara [buraya](https://drive.google.com/open?id=1EvMxcuTUwLL_RTXq_ywnMHkymD9lZ9NQ) tıklayarak erişebilirsin. (Sorumluluk kabul etmem 🙄)
@@ -146,8 +178,34 @@ Fiziksel tehlikeler:
 
 #### Tazminatlar
 
-| Tazminat Türü 🌟       | Açıklama                                                                       |
+🌟
+
+| Tazminat Türü          | Açıklama                                                                       |
 | ---------------------- | ------------------------------------------------------------------------------ |
 | Maddi                  | İş kazasına uğrayan işçinin sigortaca karşılanmayan zararları için ödenir      |
 | Manevi                 | İş kazasına uğrayan işçinye veya işçinin ölümü halinde geriye kalanlara ödenir |
 | Destekten yoksun kalma | Ölüm halinde ölen işçinin hak sahibine ödenir                                  |
+
+#### İş Kazası Sorumluluk Sırası
+
+🌟
+
+- İşveren veya İşveren vekili
+- İşyerinde çalışan herhangi bir mühendis, ustabaşı veya işçi
+- Bunların davranışlarının birleişimi de olabilir
+
+### İş Kanunu
+
+- Çalışmaktan kaçınma hakkı
+- İş kazaları kazadan sonraki üç iş günü içerisinde SGK'ya bildirilir
+- İşe giriş, iş değişikliği ve iş kazası nedeniyle uzaklaşıp yeniden girişte sağlık muayeneleri yapılmak zorundadır
+
+#### İş Kanuna Göre Tanımlar
+
+| Tanım               | Açıklama                                                         |
+| ------------------- | ---------------------------------------------------------------- |
+| Ucuz atlatılan kaza | Zarar verme potansiyeline sahip olan ama o anda vermeyen kazalar |
+| İşçi                | Hizmet sözleşmesine dayanarak herhangi yerde çalışan kişi        |
+| İşveren             | İşçi çalıştıran tüzel (vakıf, dernek, kobi) veya kişi            |
+| İşveren vekili      | İşveren adına hareket eden kişi                                  |
+| Meslek hastalığı    | İş sebebiyle karşılaşılan geçici veya sürekli hastalıklar        |
