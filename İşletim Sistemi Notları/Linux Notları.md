@@ -47,6 +47,7 @@ Birkaç distro örneği:
   - [OnlyOffice Desktop](#onlyoffice-desktop)
   - [Open Shot Kurulumu](#open-shot-kurulumu)
   - [Uget Kurulumu](#uget-kurulumu)
+  - [ADB & Fastboot (Android Tools) Kurulumu](#adb--fastboot-android-tools-kurulumu)
 - [Faydalı Gelişmiş Bilgiler](#faydal%C4%B1-geli%C5%9Fmi%C5%9F-bilgiler)
   - [Window Manager Controls](#window-manager-controls)
   - [League of Legends](#league-of-legends)
@@ -415,6 +416,13 @@ sudo apt install openshot-qt
 sudo add-apt-repository ppa:plushuang-tw/uget-stable
 sudo apt-get update
 sudo apt-get install uget
+```
+
+### ADB & Fastboot (Android Tools) Kurulumu
+
+```sh
+sudo apt-get install android-tools-adb android-tools-fastboot
+adb version
 ```
 
 ## Faydalı Gelişmiş Bilgiler
