@@ -4,7 +4,7 @@
 
 ### ADB & Flashboot Kurulumu
 
-Linux için kurulumuna [buradan](../%C4%B0%C5%9Fletim%20Sistemi%20Notlar%C4%B1%2FLinux%20Notlar%C4%B1.md) erişebilirsin.
+Linux için kurulumuna [buradan](../%C4%B0%C5%9Fletim%20Sistemi%20Notlar%C4%B1%2FLinux%20Notlar%C4%B1.md#adb--fastboot-android-tools-kurulumu) erişebilirsin.
 
 > Windows için kurulumu el ile yapmalı ve dosyaların olduğu dizini **ortam değişkenlerine** (*PATH* adı altına) eklemeniz gerekmektedir.
 
