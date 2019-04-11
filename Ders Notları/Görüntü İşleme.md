@@ -8,6 +8,10 @@ Ders matlab üzerinden işlenmektedir.
 
 - [Ders Hakkında](#ders-hakk%C4%B1nda)
 - [Ders İçerikleri](#ders-i%CC%87%C3%A7erikleri)
+- [Ders Notlarım Hakkında](#ders-notlar%C4%B1m-hakk%C4%B1nda)
+- [Sayısal Görüntü Örnekleme ve Niceleme, İkili Görüntü İşleme](#say%C4%B1sal-g%C3%B6r%C3%BCnt%C3%BC-%C3%B6rnekleme-ve-niceleme-i%CC%87kili-g%C3%B6r%C3%BCnt%C3%BC-i%CC%87%C5%9Fleme)
+  - [Sayısal Görüntü](#say%C4%B1sal-g%C3%B6r%C3%BCnt%C3%BC)
+    - [Siyah-Beyaz Görüntü](#siyah-beyaz-g%C3%B6r%C3%BCnt%C3%BC)
 - [Lineer Filtreleme ve Kenar Belirleme](#lineer-filtreleme-ve-kenar-belirleme)
   - [Kenar Belirleme (Edge Detection)](#kenar-belirleme-edge-detection)
   - [Kenar Belirleme Sorunları](#kenar-belirleme-sorunlar%C4%B1)
@@ -16,7 +20,7 @@ Ders matlab üzerinden işlenmektedir.
     - [Laplasyan Tabanlı Kenar Belirleme](#laplasyan-tabanl%C4%B1-kenar-belirleme)
       - [Marr-Hilderth Kenar Belirleme](#marr-hilderth-kenar-belirleme)
       - [Canny Kenar Belirleme](#canny-kenar-belirleme)
-  - [Göürültü (Noise)](#g%C3%B6%C3%BCr%C3%BClt%C3%BC-noise)
+  - [Gürültü (Noise)](#g%C3%BCr%C3%BClt%C3%BC-noise)
     - [Gürültülü Engelleme](#g%C3%BCr%C3%BClt%C3%BCl%C3%BC-engelleme)
   - [Frekans Kavramı](#frekans-kavram%C4%B1)
   - [Lineer Filtreler](#lineer-filtreler)
@@ -50,6 +54,32 @@ Ders matlab üzerinden işlenmektedir.
 ## Ders İçerikleri
 
 Ders içerikleri drive üzerinden yedeklenmektedir, [buraya](https://drive.google.com/open?id=1Ma1V8w584R9ISva9XpH9OQcr2wsrmS20) tıklayarak erişebilirsin.
+
+## Ders Notlarım Hakkında
+
+- GI05, GI04 hakkında not alınmıştır
+
+> Notlar tam değildir, sorumluluk kabul etmem 🤝
+
+## Sayısal Görüntü Örnekleme ve Niceleme, İkili Görüntü İşleme
+
+### Sayısal Görüntü
+
+- İkili (*binary*) görüntü
+- Gri Ölçekli (*gray scale*) görüntü
+- Renkli (*colour*) görüntü
+
+![sayisal_goruntu](imgs/sayisal_goruntu.png)
+
+#### Siyah-Beyaz Görüntü
+
+*Binary* görüntü olarak da bilinir. 2 boyutlu bir fonksyion ile gösterilir.
+
+- f(x,y)
+  - x: Satır (i)
+  - y: Sütun (j)
+
+> Derinlik değeri (renk boyutu) 1'dir
 
 ## Lineer Filtreleme ve Kenar Belirleme
 
@@ -128,7 +158,7 @@ Görüntünün birinci türevindeki maks ve min değerlere bakarak kenar belirle
 ![canny_ex](imgs/canny_ex.png)
 ![canny_ex2](imgs/canny_ex2.png)
 
-### Göürültü (Noise)
+### Gürültü (Noise)
 
 | Tür                            | Açıklama                                                           |
 | ------------------------------ | ------------------------------------------------------------------ |
@@ -209,6 +239,7 @@ Gaussian Filtre'si gürültüyü giderirken görüntüyü bulanıklaştırır. M
 | Keskinleştirme (*sharpen*) | Orjinal görüntüye kenarları bulunmş görüntü eklenir (Maskedeki merkez değeri 1 arttırılarak)                                                                                                                               |
 | Kabartma                   | Resme 3D efekti verir, merkezin bir tarafındaki *pixel* değerlerinden diğer taraftakilerin çıkarılması ile yapılır. Negatif olanlar gölge, pozitif olanlar aydınlık yüzey olur. Görüntünün çoğu gri tonlarına dönüşecektir |
 
+![img_ex_tecnique](imgs/img_ex_tecnique.jpg)
 
 ## Renk ve Geometrik Dönüşümler
 
