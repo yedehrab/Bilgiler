@@ -314,7 +314,7 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 | flameshot 🌟            | Screenshot alma uygulaması lighthot gibi                 |
 | copyq 🌟                | Clipboard (pano) yöneticisi                              |
 | mpv 🌟                  | En çok sevilen video oynatıcısı                          |
-| pinta 🌟                | Paint alternatifi, hafif resim düzenleyici               |
+| kolourpaint 🌟          | Paint alternatifi resim düzenleyici                      |
 | Onlyoffice 🌟           | Office alternatifi sade ve şık arayüzü olan uygulama     |
 | VsCode 🌟               | Çok fonksiyonel microsoft yapımı editör                  |
 | Chrome 🌟               | Google Chrome tarayıcı                                   |
