@@ -19,6 +19,7 @@ Yapay zeka, veri analizi, makine öğrenimi gibi işlemler için gerekli olan pa
 - [Paket ve Kütüphane Kurulumları](#paket-ve-k%C3%BCt%C3%BCphane-kurulumlar%C4%B1)
   - [Numpy Kurulumu](#numpy-kurulumu)
   - [OpenCV Kurulumu](#opencv-kurulumu)
+    - [Linux için OpenCV](#linux-i%C3%A7in-opencv)
   - [Tensorflow Kurulumu](#tensorflow-kurulumu)
     - [Sanal Ortama Tensorflow Kurulumu](#sanal-ortama-tensorflow-kurulumu)
   - [Tensorflow-GPU Kurulumu](#tensorflow-gpu-kurulumu)
@@ -115,7 +116,15 @@ conda install -c anaconda numpy
 ### OpenCV Kurulumu
 
 ```sh
-conda install -c conda-forge opencv
+conda install opencv
+```
+
+#### Linux için OpenCV
+
+GTK ve FFMPEG support hatası gelmemesi adına bu şekilde indirme yapılmalıdır
+
+```sh
+pip install opencv-contrib-python
 ```
 
 ### Tensorflow Kurulumu
