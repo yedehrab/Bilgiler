@@ -3,7 +3,7 @@
 ![status](https://img.shields.io/nodeping/status/jkiwn052-ntpp-4lbb-8d45-ihew6d9ucoei.svg)
 ![quality](https://img.shields.io/ansible/quality/432.svg)
 ![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)
-![licanse apache](https://img.shields.io/hexpm/l/plug.svg?style=plastic)
+![licanse apache](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 > Orjinal dosya [gitlab](https://gitlab.com/yedehrab/bilgiler) üzerindeki dosyadır.
 
