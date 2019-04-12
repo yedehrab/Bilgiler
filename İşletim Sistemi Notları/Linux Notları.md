@@ -39,6 +39,7 @@ Birkaç distro örneği:
     - [Dast to Panel](#dast-to-panel)
     - [Emoji Selector (Emoji Klavyesi)](#emoji-selector-emoji-klavyesi)
 - [Faydalı Uygulamalar](#faydal%C4%B1-uygulamalar)
+  - [Wine Kurulumu](#wine-kurulumu)
   - [Stacer kurulumu](#stacer-kurulumu)
     - [Terminal Üzerinden](#terminal-%C3%BCzerinden)
   - [Flameshot](#flameshot)
@@ -322,6 +323,7 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 | simplescreenrecorder 🌟 | Sade ekran kaydedicisi                                   |
 | gnome-tweaks 🌟         | Gnome özelleştirme ayarları                              |
 | stacer 🌟               | System Optimizer & Monitor                               |
+| wine s🌟                | Windows uygulamalarını çalıştırma                        |
 | unrar                   | `.rar` uzantılı sıkıştırılmış dosyaları çıkarma          |
 | gpick                   | Renk seçme uygulaması                                    |
 | dictd                   | Terminal üzerinden çeviri                                |
@@ -331,6 +333,10 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 | kdenlive                | Windows media player alternatifi                         |
 | Open Shot               | Video düzenleme                                          |
 | uget                    | Download manager (idm alternatifi)                       |
+
+### Wine Kurulumu
+
+Resmi kaynak için [buraya](https://wiki.winehq.org/Ubuntu) bakabilirsin
 
 ### Stacer kurulumu
 
