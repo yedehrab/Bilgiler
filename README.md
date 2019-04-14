@@ -77,10 +77,6 @@
 - [Telefon Rehberini Taşıma](Teknolojik%20Alet%20Notlar%C4%B1/Telefon%20Rehberini%20Ta%C5%9F%C4%B1ma.md)
 - [HP Bilgisayar Notları](Teknolojik%20Alet%20Notlar%C4%B1/HP%20Bilgisayar%20Notlar%C4%B1.md)
 
-## Kişisel Gelişim
-
-- [Youtube](Ki%C5%9Fisel%20Geli%C5%9Fim/Youtube.md)
-
 ## Karaca
 
 - [Kod Parçaları](Karaca/Kod%20Par%C3%A7alar%C4%B1.md)
