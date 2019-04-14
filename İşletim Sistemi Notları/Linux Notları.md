@@ -323,8 +323,9 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 | simplescreenrecorder 🌟 | Sade ekran kaydedicisi                                   |
 | gnome-tweaks 🌟         | Gnome özelleştirme ayarları                              |
 | stacer 🌟               | System Optimizer & Monitor                               |
-| wine s🌟                | Windows uygulamalarını çalıştırma                        |
-| unrar                   | `.rar` uzantılı sıkıştırılmış dosyaları çıkarma          |
+| wine 🌟                 | Windows uygulamalarını çalıştırma                        |
+| unrar 🌟                | `.rar` uzantılı sıkıştırılmış dosyaları çıkarma          |
+| nomachine 🌟            | Uzaktan PC bağlantısı                                    |
 | gpick                   | Renk seçme uygulaması                                    |
 | dictd                   | Terminal üzerinden çeviri                                |
 | retropie                | Atari oyunlarını içerisinde barındıran platform          |
