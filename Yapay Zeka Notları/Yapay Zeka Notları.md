@@ -4,6 +4,7 @@ Python ile derin öğrenme notlarımı bu alanda derleyeceğim.
 
 > `HOME` tuşu ile yukarı yönlenebilrsiniz.
 
+- [Cloud Destekleri](#cloud-destekleri)
 - [Derin Öğrenme Notları](#derin-%C3%B6%C4%9Frenme-notlar%C4%B1)
   - [Aktivasyon Fonksiyonları](#aktivasyon-fonksiyonlar%C4%B1)
   - [Aktivasyon Fonksiyonlarının Özellikleri](#aktivasyon-fonksiyonlar%C4%B1n%C4%B1n-%C3%B6zellikleri)
@@ -14,6 +15,10 @@ Python ile derin öğrenme notlarımı bu alanda derleyeceğim.
     - [Karma](#karma)
   - [Derin Öğrenme Kaynakları](#derin-%C3%B6%C4%9Frenme-kaynaklar%C4%B1)
   - [Motivasyon](#motivasyon)
+
+## Cloud Destekleri
+
+[Buraya](https://github.com/discdiver/deep-learning-cloud-providers/blob/master/list.md) ve [buraya](https://towardsdatascience.com/maximize-your-gpu-dollars-a9133f4e546a) tıklayarak makine öğrenimi için bulut hizmetlerine bakabilirsin.
 
 ## Derin Öğrenme Notları
 
