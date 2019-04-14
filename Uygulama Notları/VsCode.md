@@ -206,13 +206,14 @@ Değişkenlerin kullanım şekilleri:
     "editor.fontFamily": "Ubuntu Mono, Roboto Mono",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
+    "explorer.confirmDelete": false,
     // Dosya Gezgini Ayarları
     "explorer.confirmDragAndDrop": false,
     // Entegre terminal ayarları
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontSize": 13.5,
+    "terminal.integrated.fontSize": 14,
     // Git ayarları
-    "git.autofetch": true,
+    "git.autofetch": false,
     "git.confirmSync": false,
     // Python ayarları
     "python.jediEnabled": false,
