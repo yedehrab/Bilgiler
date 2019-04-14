@@ -43,7 +43,7 @@ Youtube üzerindeki beğendiğim videolar
 - [Şiir](#%C5%9Fiir)
 - [Ekonomi](#ekonomi)
 - [Faydalı Kanallar](#faydal%C4%B1-kanallar)
-- [Youtube Liste Alıcısı](#youtube-liste-al%C4%B1c%C4%B1s%C4%B1)
+- [Youtube Listesini Markdown'a Çevirme](#youtube-listesini-markdowna-%C3%A7evirme)
 
 ## Kişisel Gelişim
 
@@ -328,15 +328,15 @@ Youtube üzerindeki beğendiğim videolar
 | [Top 10 Zone](https://www.youtube.com/channel/UCIuzVTzlua6NMMzDzmYCsZQ)         |
 | [Doğukan Güven Nomak](https://www.youtube.com/channel/UCbu25feEIe6fY9fZx8BCMSA) |
 
-## Youtube Liste Alıcısı
+## Youtube Listesini Markdown'a Çevirme
 
 ```js
-const names = document.querySelectorAll("span.style-scope.ytd-playlist-video-renderer")
-const links = document.getElementsByClassName("yt-simple-endpoint style-scope ytd-playlist-video-renderer")
+var names = document.querySelectorAll("span.style-scope.ytd-playlist-video-renderer")
+var links = document.getElementsByClassName("yt-simple-endpoint style-scope ytd-playlist-video-renderer")
 
-let markdown = ""
+var markdown = ""
 for (let i = 0; i < names.length; i++) {
-    markdown +=`- [${names[i].innerText}](${links[i].href})\n`
+  markdown +=`- [${names[i].innerText}](${links[i].href})\n`
 }
 console.log(markdown)
 ```
