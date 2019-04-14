@@ -149,6 +149,6 @@ Bu yazı **MIT** lisanslıdır. Lisanslar hakkında bilgi almak için [buraya](h
 - [Github](https://github.com/yedehrab)
 - [GitLab](https://gitlab.com/yedehrab)
 
-> Yardım veya destek için [iletişime](mailto::yyunussemree@gmail.com) geçebilrsiniz 😇
+> Yardım veya destek için [iletişime](mailto::yyunussemree@gmail.com) geçebilrsiniz 🤗
 
 ~ Yunus Emre Ak
