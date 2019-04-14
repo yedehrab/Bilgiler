@@ -20,6 +20,8 @@ Python ile derin öğrenme notlarımı bu alanda derleyeceğim.
 
 [Buraya](https://github.com/discdiver/deep-learning-cloud-providers/blob/master/list.md) ve [buraya](https://towardsdatascience.com/maximize-your-gpu-dollars-a9133f4e546a) tıklayarak makine öğrenimi için bulut hizmetlerine bakabilirsin.
 
+- [Paperspace](https://www.paperspace.com/ml)
+
 ## Derin Öğrenme Notları
 
 > Her zaman yapılacak iş: Girişler ile ağırlıkları çarp, sabit değişken (sapma) ile topla ve aktivasyon uygula!
