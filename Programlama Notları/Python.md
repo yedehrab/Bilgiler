@@ -630,20 +630,23 @@ Son
 
 ##### String İşlemleri
 
-| Metot     | Açıklama                | Örnek                          | Çıktı                 |
-| --------- | ----------------------- | ------------------------------ | --------------------- |
-| `len`     | Uzunluk                 | `len("yemreak")`               | 7                     |
-| `format`  | Formatlama              | `"X: {}, Y: {}".format(1, 2)`  | `'X: 1, Y: 2'`        |
-| `%`       | Operatör ile formatlama | `'new(%s %d)' % ('help', 5)`   | `'new(help 5)'`       |
-| `f`       | Format string ön eki    | `f'X: {a}'`                    | `'X: 2'`              |
-| `r`       | Raw String ön eki       | `r"C:\Users"`                  | `C:\\Users`           |
-| `"""`     | Çok satırlı string      |
-| `split`   | Parçalama               | `"ye mre ak".split(" ")`       | `['ye', 'mre', 'ak']` |
-| `join`    | Birleştirme             | `','.join(['do', 're', 'mi'])` | `'do,re,mi'`          |
-| `replace` | Metin değiştirme        | `"yemreak".replace("ak", "")`  | `'yemre'`             |
-| `strip`   | Metin düzeltme          | `' abc '.strip()`              | `'abc'`               |
-| `ltrip`   | Metnin solunu düzeltme  | `' abc '.ltrip()`              | `'abc '`              |
-| `rtrip`   | Metnin sağını düzeltme  | `' abc '.rtrip()`              | `' abc'`              |
+Çok önemli ve ileride kullanılacak bir konudur. 🌟
+
+| Metot          | Açıklama                | Örnek                          | Çıktı                  |
+| -------------- | ----------------------- | ------------------------------ | ---------------------- |
+| `len`          | Uzunluk                 | `len("yemreak")`               | 7                      |
+| `format`       | Formatlama              | `"X: {}, Y: {}".format(1, 2)`  | `'X: 1, Y: 2'`         |
+| `%`            | Operatör ile formatlama | `'new(%s %d)' % ('help', 5)`   | `'new(help 5)'`        |
+| `f`            | Format string ön eki    | `f'X: {a}'`                    | `'X: 2'`               |
+| `r`            | Raw String ön eki       | `r"C:\Users"`                  | `C:\\Users`            |
+| `"""`          | Çok satırlı string      |
+| `split`        | Parçalama               | `"ye mre ak".split(" ")`       | `['ye', 'mre', 'ak']`  |
+| `join`         | Birleştirme             | `','.join(['do', 're', 'mi'])` | `'do,re,mi'`           |
+| `split & join` | Yeniden formatlama      | `arr.split("\t").join("|")`    | `'İsim|Soyisim|Numara` |
+| `replace`      | Metin değiştirme        | `"yemreak".replace("ak", "")`  | `'yemre'`              |
+| `strip`        | Metin düzeltme          | `' abc '.strip()`              | `'abc'`                |
+| `ltrip`        | Metnin solunu düzeltme  | `' abc '.ltrip()`              | `'abc '`               |
+| `rtrip`        | Metnin sağını düzeltme  | `' abc '.rtrip()`              | `' abc'`               |
 
 > Daha fazla bilgi için [buraya](https://www.programiz.com/python-programming/methods/string) ve [buraya](https://stackoverflow.com/questions/10660435/pythonic-way-to-create-a-long-multi-line-string) bakabilirsin.
 

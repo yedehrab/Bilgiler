@@ -93,6 +93,7 @@ Adres çubuğuna `chrome://settings/searchEngines` yazaeak gerekli ayarların ol
 
 ## Harici Linkler
 
+- [Make Google Chrome 1000% Faster | Fix Memory](https://www.youtube.com/watch?v=6pjDn3m4rsU&list=PL1m1AtfGwsxmeK4bsX9IvcVS8jRvj0cly&index=2&t=0s)
 - [Make Chrome Run Faster](https://www.techspot.com/article/1193-chrome-performance-memory-tweaks/)
 - [The Power User's Guide to Chrome](https://lifehacker.com/the-power-users-guide-to-google-chrome-5045904)
 - [Add Custom Keyboard Shortcuts to Chrome Extensions for Quick Launching](https://lifehacker.com/add-custom-keyboard-shortcuts-to-chrome-extensions-for-1595322121)

@@ -10,6 +10,7 @@ Javascript DOM komutlarını özetleyen bir derlemedir.
   - [String İşlemleri](#string-i%CC%87%C5%9Flemleri)
 - [DOM Bilgileri](#dom-bilgileri)
   - [Dosya İndirme İşlemleri](#dosya-i%CC%87ndirme-i%CC%87%C5%9Flemleri)
+    - [Dosya İndrime](#dosya-i%CC%87ndrime)
     - [URI ile dosya indirme](#uri-ile-dosya-indirme)
     - [Çoklu URL ile indirme](#%C3%A7oklu-url-ile-indirme)
     - [JSON olarak indirme](#json-olarak-indirme)
@@ -51,6 +52,23 @@ Notların linklerine bakmak için [buraya](#Ek%20Notlar) tıklayabilirsin.
 - **Chrome** `click()` metodunu  destekleyemeyebiliyor.. 😭 (*Edge kullanınız.* 😏)
 
 > **Popup Blocker** gibi eklentiler ekliyse kapatmanız gerekmekte.
+
+#### Dosya İndrime
+
+```js
+function download(filename, text, type='text/plain') {
+  var element = document.createElement('a');
+  element.setAttribute('href', `data:${type};charset=utf-8,${encodeURIComponent(text)}`);
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+```
 
 #### URI ile dosya indirme
 
@@ -146,6 +164,9 @@ document.getElementById('id'); // HTML elemanı döndürür (object)
 document.getElementsByTagName('tag_name');  // HTML elemanları dizisi döndürür (HTMLCollection)
 document.getElementsByClassName('class_name'); // HTML elemanları dizisi döndürür (HTMLCollection)
 document.getElementsByName('name');  // HTML elemanları dizisi döndürür (HTMLCollection)
+// id'ler için '#' classlar için '.' kullanılır
+document.querySelector("#content") // İlk elemanı alma
+document.querySelectorAll("span.style-scope.ytd-playlist-video-renderer") // Hepsini alma
 ```
 
 - `Id` *Kimlik verisi*
