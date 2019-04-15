@@ -5,6 +5,7 @@
 - [Merkeze konumlandırma](#merkeze-konumland%C4%B1rma)
 - [VsCode Eklentileri](#vscode-eklentileri)
   - [Code runner ek ayarı](#code-runner-ek-ayar%C4%B1)
+- [Web Automation (Web Otomasyaonu)](#web-automation-web-otomasyaonu)
 - [Karma Linkler](#karma-linkler)
 
 ## Merkeze konumlandırma
@@ -32,8 +33,15 @@ HTML dosyalarını tarayıcı ile çalıştırmak için alttaki kodu vscode json
  }
 ```
 
+## Web Automation (Web Otomasyaonu)
+
+Web otomasyonu için selenium ide kullanılmaktadır.
+
+- Chrome için eklentisini [buraya](https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd) tıklayarak indirebilirsin.
+- Örnek video için [buraya](https://www.youtube.com/watch?v=4I7xay_NV8A) bakabilirsin.
+
 ## Karma Linkler
 
-* [CSS Psudo Sınıfları ve Elemanları](https://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/) (*after, before vs.*)
-* [Responsive Circle](https://codeitdown.com/css-circles/) | Bootstrap
-* [Resimden renk kodunu alma](https://html-color-codes.info/colors-from-image/)
+- [CSS Psudo Sınıfları ve Elemanları](https://fatihhayrioglu.com/pseudo-siniflari-ve-pseudo-elementleri/) (*after, before vs.*)
+- [Responsive Circle](https://codeitdown.com/css-circles/) | Bootstrap
+- [Resimden renk kodunu alma](https://html-color-codes.info/colors-from-image/)

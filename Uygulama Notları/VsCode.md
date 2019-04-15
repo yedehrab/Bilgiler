@@ -204,22 +204,11 @@ Değişkenlerin kullanım şekilleri:
     // Editör Ayarları
     "editor.fontSize": 13.5,
     "editor.fontFamily": "Ubuntu Mono, Roboto Mono",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "explorer.confirmDelete": false,
     // Dosya Gezgini Ayarları
     "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
     // Entegre terminal ayarları
-    "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.fontSize": 14,
-    // Git ayarları
-    "git.autofetch": false,
-    "git.confirmSync": false,
-    // Python ayarları
-    "python.jediEnabled": false,
-    // Vs Intellicode ayarları
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "terminal.integrated.cursorStyle": "line"
 }
 ```
 

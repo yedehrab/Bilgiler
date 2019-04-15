@@ -26,6 +26,7 @@ Birkaç distro örneği:
 - [Linux Değişkenleri](#linux-de%C4%9Fi%C5%9Fkenleri)
   - [Temel Değişkenler](#temel-de%C4%9Fi%C5%9Fkenler)
   - [Komut Çıktısını Ele Alma](#komut-%C3%A7%C4%B1kt%C4%B1s%C4%B1n%C4%B1-ele-alma)
+- [Linux AppImage](#linux-appimage)
 - [Ubuntu 18.10 için Faydalı Bilgiler](#ubuntu-1810-i%C3%A7in-faydal%C4%B1-bilgiler)
   - [Kendi Özelleştirmem](#kendi-%C3%B6zelle%C5%9Ftirmem)
     - [Terminal Özelleştirmem](#terminal-%C3%B6zelle%C5%9Ftirmem)
@@ -210,6 +211,15 @@ echo $(komut)
 
 > Komutlar hakkında detaylı bilgi almak için [buraya](./Linux_Komutları.md) tıklayabilirsin.
 
+## Linux AppImage
+
+AppImage özelliği uygulamaları kurmadan çalıştırabilmemizi sağlar.
+
+```sh
+chmod a+x <appimage_dosyası>
+./<appimage_dosyası>
+```
+
 ## Ubuntu 18.10 için Faydalı Bilgiler
 
 ### Kendi Özelleştirmem
@@ -235,10 +245,10 @@ gnome-tweaks
 ```
 
 - General
-  - Animations: Off
+  - Animations: On
   - Suspend ...: Off
 - Appearance
-  - Applications: Adwaita-dark
+  - Applications: Yaru-Dark
   - Cursor, Icons, Sound: Yaru
 - Desktop
   - Show Icons: On
@@ -313,13 +323,13 @@ Emoji klavyesi ile emojiyi panoya kopyalar, [buradan](https://extensions.gnome.o
 | Uygulama                | Açıklama                                                 |
 | ----------------------- | -------------------------------------------------------- |
 | flameshot 🌟            | Screenshot alma uygulaması lighthot gibi                 |
-| copyq 🌟                | Clipboard (pano) yöneticisi                              |
-| mpv 🌟                  | En çok sevilen video oynatıcısı                          |
 | kolourpaint 🌟          | Paint alternatifi resim düzenleyici                      |
+| copyq 🌟                | Clipboard (pano) yöneticisi                              |
+| vlc 🌟                  | En çok sevilen video oynatıcısı                          |
 | Onlyoffice 🌟           | Office alternatifi sade ve şık arayüzü olan uygulama     |
 | VsCode 🌟               | Çok fonksiyonel microsoft yapımı editör                  |
 | Chrome 🌟               | Google Chrome tarayıcı                                   |
-| Emoji Selector 👌       | Gnome eklentisi olarak indirilebilengelen emoji klavyesi |
+| Emoji Selector 👌       | Gnome eklentisi olarak indirilebilen emoji klavyesi |
 | simplescreenrecorder 🌟 | Sade ekran kaydedicisi                                   |
 | gnome-tweaks 🌟         | Gnome özelleştirme ayarları                              |
 | stacer 🌟               | System Optimizer & Monitor                               |
