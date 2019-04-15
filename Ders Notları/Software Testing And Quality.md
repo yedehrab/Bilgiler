@@ -25,11 +25,12 @@
     - [Usebilirt Testing (Kullanılabilirlik Testi)](#usebilirt-testing-kullan%C4%B1labilirlik-testi)
     - [Interface Testing (Arayüz Testi)](#interface-testing-aray%C3%BCz-testi)
     - [Database Testing (Veritabanı Testi)](#database-testing-veritaban%C4%B1-testi)
-  - [Uygulamalı Testler](#uygulamal%C4%B1-testler)
+    - [Compabilirt Testing (Uygulun Testi)](#compabilirt-testing-uygulun-testi)
+  - [Uygulamalı Web Testleri](#uygulamal%C4%B1-web-testleri)
     - [Cookie Testing](#cookie-testing)
     - [Responsive Testing](#responsive-testing)
-  - [SQL Injected](#sql-injected)
-  - [Diğer Testler](#di%C4%9Fer-testler)
+    - [SQL Injected](#sql-injected)
+    - [Diğer Testler](#di%C4%9Fer-testler)
   - [Kaynaklar](#kaynaklar)
 
 ## Ders Puanlaması
@@ -157,7 +158,11 @@ Web uygulaması için çok kritik yere sahip olan veritabanının testini ele al
 - Sorguların yanıt sürelerinin kontrolü ve gerekirse ince ayarların yapılması
 - Veritabanından gelen verilerin uygulamada düzgün olarak gösterebilmesi
 
-### Uygulamalı Testler
+#### Compabilirt Testing (Uygulun Testi)
+
+
+
+### Uygulamalı Web Testleri
 
 #### Cookie Testing
 
@@ -169,14 +174,14 @@ Web uygulaması için çok kritik yere sahip olan veritabanının testini ele al
 - `oguzhanoztas.com` sitesi test edilecek
 - Ya da html'i indir hazır bak
 
-### SQL Injected
+#### SQL Injected
 
 String atamaları *encode* işlemine uğramadan yapılıyorsa hata verilmesini sağlar.
 
 - `select * from table where password = " "` kısmında *password* alanına `"` karakteri konulursa *string*'i kapatacağından hata verecektir.
 - [Test1](https://tech.io/playgrounds/154/sql-injection-demo/sql-injection-2), [Test2](https://sqlzoo.net/hack/)
 
-### Diğer Testler
+#### Diğer Testler
 
 - [Link1](https://github.com/JustinBonaccorso/parking-calculator-tests), [Link2](https://github.com/lowfr3q/MindbodyParking)
 
