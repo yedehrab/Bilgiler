@@ -74,7 +74,7 @@ git config --global user.name "Your Name"
 
 ```sh
 git config credential.helper store
-git config --global credential.helper "cache --timeout=9999999"
+git config --global credential.helper 'cache --timeout=999999'
 ```
 
 ### Git Kimlik Bilgilerini Sıfırlama
